@@ -12,5 +12,9 @@ tags={
 	"Military"
 	"Utilities"
 }
+replace_path="common/countries"
+replace_path="history/countries"
+replace_path="history/states"
+replace_path="history/units"
 name="AshHistorical"
 supported_version="1.11.*"
