@@ -1,0 +1,16 @@
+version="12.0.0"
+tags={
+	"Historical"
+	"Gameplay"
+	"Graphics"
+	"Balance"
+	"Events"
+	"Fixes"
+	"Technologies"
+	"National Focuses"
+	"Map"
+	"Military"
+	"Utilities"
+}
+name="Ash Historical"
+supported_version="1.11.*"
