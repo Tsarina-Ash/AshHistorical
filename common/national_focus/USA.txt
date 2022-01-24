@@ -21,73 +21,690 @@ focus_tree = {
 		y = 0
 	}
 
+#RESOURCES USED#
+#https://en.wikipedia.org/wiki/New_Deal#The_First_100_Days_(1933)#
+#https://en.wikipedia.org/wiki/New_Deal#Summary_of_First_and_Second_New_Deal_programs#
+#https://hoi4.paradoxwikis.com/National_Focus_modding#
+
+#FLINT SIT-DOWN STRIKE#
+
 focus = {
-	id = <focus id>
-	icon = <icon>
+	id = FLINT_USA_strike
+	icon = focus_generic_paratrooper
 
-	cost = <number>
+	cost = 4
 
-	allow_branch = {
-		<trigger>
-	}
-
-	x = <position>
-	y = <position>
-	relative_position_id = <previous focus>
-
-	prerequisite = {
-		focus = <focus id>
-	}
-
-	mutually_exclusive = {
-		focus = <focus id>
-	}
-
-	available = {
-		<trigger>
-	}
-
-	bypass = {
-		<trigger>
-	}
+	x = -18
+	y = 0
 	
-	historical_ai = {
-		<trigger>
-	}
-	
-	cancel = {
-		<trigger>
-	}
-	
-	available_if_capitulated = <yes/no>
-	cancel_if_invalid = <yes/no>
-	continue_if_invalid = <yes/no>
-	will_lead_to_war_with = <tag>
-	search_filters = { <focus filters, separated by spaces if multiple> }
-
-	select_effect = {
-		<command>
-	}
+	available_if_capitulated =  no
 	
 	completion_reward = {
-		<effect>
+		add_political_power = 50
 	}
-	
-	complete_tooltip = {
-		<effect>
-	}
+}
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			<modifier>
-		}
+focus = {
+	id = FLINT_USA_force_compromise
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = FLINT_USA_strike }
+	relative_position_id = FLINT_USA_strike
+
+	mutually_exclusive = { focus = FLINT_USA_side_with_ford focus = FLINT_USA_wait_and_see }
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FLINT_USA_wagner_act
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 2
+	
+	prerequisite = { focus = FLINT_USA_force_compromise }
+	relative_position_id = FLINT_USA_force_compromise
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FLINT_USA_raise_minimum_wage
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FLINT_USA_force_compromise }
+	relative_position_id = FLINT_USA_force_compromise
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FLINT_USA_fair_labor_standards_act
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 3
+	
+	prerequisite = {  focus = FLINT_USA_raise_minimum_wage }
+	prerequisite = { focus = FLINT_USA_wagner_act }
+	relative_position_id = FLINT_USA_force_compromise
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FLINT_USA_side_with_ford
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = FLINT_USA_strike }
+	relative_position_id = FLINT_USA_strike
+
+	mutually_exclusive = { focus = FLINT_USA_force_compromise focus = FLINT_USA_wait_and_see }
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FLINT_USA_wait_and_see
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FLINT_USA_strike }
+	relative_position_id = FLINT_USA_strike
+
+	mutually_exclusive = { focus = FLINT_USA_side_with_ford focus = FLINT_USA_force_compromise }
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FLINT_USA_mediocre_protections
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FLINT_USA_wait_and_see }
+	relative_position_id = FLINT_USA_wait_and_see
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FLINT_USA_higher_corp_tax
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FLINT_USA_wait_and_see }
+	relative_position_id = FLINT_USA_wait_and_see
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FLINT_USA_lower_minimum__wage
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FLINT_USA_wait_and_see }
+	relative_position_id = FLINT_USA_wait_and_see
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FLINT_USA_loosen_safety_standards
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FLINT_USA_lower_minimum__wage }
+	prerequisite = { focus = FLINT_USA_side_with_ford }
+	relative_position_id = FLINT_USA_lower_minimum__wage
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FLINT_USA_send_in_the_troops
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FLINT_USA_side_with_ford }
+	relative_position_id = FLINT_USA_side_with_ford
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#FDR'S PATH#
+
+focus = {
+	id = FDR_USA_innaugaration_speech
+	icon = focus_generic_paratrooper
+
+	cost = 1
+
+	x = 0
+	y = 0
+	
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_three_rs
+	icon = focus_generic_paratrooper
+
+	cost = 1
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = FDR_USA_innaugaration_speech }
+	relative_position_id = FDR_USA_innaugaration_speech
+	
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_broadcast_fireside_chat
+	icon = focus_generic_paratrooper
+
+	cost = 1
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = FDR_USA_three_rs }
+	relative_position_id = FDR_USA_three_rs
+	
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_first_new_deal
+	icon = focus_generic_paratrooper
+
+	cost = 1
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = FDR_USA_broadcast_fireside_chat }
+	relative_position_id = FDR_USA_broadcast_fireside_chat
+	
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
 	}
 }
 
 
+#FDR'S FIRST NEW DEAL#
+
+focus = {
+	id = FDR_USA_relief
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 4
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_first_new_deal }
+	relative_position_id = FDR_USA_first_new_deal
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_relief
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -6
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_first_new_deal }
+	relative_position_id = FDR_USA_first_new_deal
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_repealing_of_prohibition
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_relief }
+	relative_position_id = FDR_USA_relief
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_securities_act
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_relief }
+	relative_position_id = FDR_USA_relief
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_establish_sec
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_securities_act }
+	relative_position_id = FDR_USA_securities_act
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_off_the_gold_standard
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_relief }
+	relative_position_id = FDR_USA_relief
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_gold_reserve_act
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_off_the_gold_standard }
+	relative_position_id = FDR_USA_off_the_gold_standard
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_banking_fireside_chat
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_relief }
+	relative_position_id = FDR_USA_relief
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_emergency_banking_act
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_banking_fireside_chat }
+	relative_position_id = FDR_USA_banking_fireside_chat
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_glass_steagal_act
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_banking_fireside_chat }
+	relative_position_id = FDR_USA_banking_fireside_chat
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_FDIC
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_emergency_banking_act }
+	relative_position_id = FDR_USA_emergency_banking_act
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_bank_holiday
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_FDIC }
+	relative_position_id = FDR_USA_FDIC
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_recovery
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_first_new_deal }
+	relative_position_id = FDR_USA_first_new_deal
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_reform
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 6
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_first_new_deal }
+	relative_position_id = FDR_USA_first_new_deal
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#FDR'S 2ND NEW DEAL#
+
+focus = {
+	id = FDR_USA_2ND_NEW_DEAL
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 28
+	y = 1
+	
+	#prerequisite = { focus = FDR_USA_first_new_deal }
+	relative_position_id = FDR_USA_first_new_deal
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_industrial_revitalation
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -8
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_2ND_NEW_DEAL }
+	relative_position_id = FDR_USA_2ND_NEW_DEAL
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
 
 
+focus = {
+	id = FDR_USA_social_security
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_2ND_NEW_DEAL }
+	relative_position_id = FDR_USA_2ND_NEW_DEAL
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_public_works
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -4
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_2ND_NEW_DEAL }
+	relative_position_id = FDR_USA_2ND_NEW_DEAL
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
 
 
 
