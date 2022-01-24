@@ -1,0 +1,99 @@
+focus_tree = {
+	id = USA
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA 
+		}
+	}
+
+	default = no
+
+	reset_on_civil_war = no
+
+	continuous_focus_position = { x = -200 y = -200 }
+	
+	initial_show_position = {
+		x = 0
+		y = 0
+	}
+
+focus = {
+	id = <focus id>
+	icon = <icon>
+
+	cost = <number>
+
+	allow_branch = {
+		<trigger>
+	}
+
+	x = <position>
+	y = <position>
+	relative_position_id = <previous focus>
+
+	prerequisite = {
+		focus = <focus id>
+	}
+
+	mutually_exclusive = {
+		focus = <focus id>
+	}
+
+	available = {
+		<trigger>
+	}
+
+	bypass = {
+		<trigger>
+	}
+	
+	historical_ai = {
+		<trigger>
+	}
+	
+	cancel = {
+		<trigger>
+	}
+	
+	available_if_capitulated = <yes/no>
+	cancel_if_invalid = <yes/no>
+	continue_if_invalid = <yes/no>
+	will_lead_to_war_with = <tag>
+	search_filters = { <focus filters, separated by spaces if multiple> }
+
+	select_effect = {
+		<command>
+	}
+	
+	completion_reward = {
+		<effect>
+	}
+	
+	complete_tooltip = {
+		<effect>
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			<modifier>
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
