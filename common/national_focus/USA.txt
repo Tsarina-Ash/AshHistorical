@@ -21,6 +21,13 @@ focus_tree = {
 		y = 0
 	}
 
+#Plan So Far#
+
+#Alt Hist:#
+#James M Cox Path#
+#Early FDR Path#
+#Teddy Roosevelt President#
+
 #RESOURCES USED#
 
 #Historical Wilson#
@@ -28,9 +35,12 @@ focus_tree = {
 #https://en.wikipedia.org/wiki/Woodrow_Wilson#Presidency_(1913%E2%80%931921)#
 #https://www.history.com/topics/us-presidents/woodrow-wilson#
 
+#Possible James M Cox Path#
+#https://en.wikipedia.org/wiki/James_M._Cox#
+#https://en.wikipedia.org/wiki/1920_United_States_presidential_election#
 
-#Possible Teddy Roosevelt Path ?#
-
+#More Alt Paths ?#
+#https://en.wikipedia.org/wiki/1920_United_States_presidential_election#
 
 #Possible Early FDR Path ?#
 
@@ -38,6 +48,7 @@ focus_tree = {
 #Historical Harding Path#
 #https://en.wikipedia.org/wiki/Warren_G._Harding#
 #https://www.whitehouse.gov/about-the-white-house/presidents/warren-g-harding/#
+#https://en.wikipedia.org/wiki/1920_United_States_presidential_election#
 
 #Historical Coolidge Path#
 #https://en.wikipedia.org/wiki/Calvin_Coolidge#
