@@ -21,10 +21,450 @@ focus_tree = {
 		y = 0
 	}
 
+#Plan So Far#
+
+#Alt Hist:#
+#James M Cox Path#
+#Early FDR Path#
+#Teddy Roosevelt President#
+
 #RESOURCES USED#
+
+#Historical Wilson#
+#https://en.wikipedia.org/wiki/Woodrow_Wilson#1920_election#
+#https://en.wikipedia.org/wiki/Woodrow_Wilson#Presidency_(1913%E2%80%931921)#
+#https://www.history.com/topics/us-presidents/woodrow-wilson#
+
+#Possible James M Cox Path#
+#https://en.wikipedia.org/wiki/James_M._Cox#
+#https://en.wikipedia.org/wiki/1920_United_States_presidential_election#
+
+#More Alt Paths ?#
+#https://en.wikipedia.org/wiki/1920_United_States_presidential_election#
+
+#Possible Early FDR Path ?#
+
+
+#Historical Harding Path#
+#https://en.wikipedia.org/wiki/Warren_G._Harding#
+#https://www.whitehouse.gov/about-the-white-house/presidents/warren-g-harding/#
+#https://en.wikipedia.org/wiki/1920_United_States_presidential_election#
+
+#Historical Coolidge Path#
+#https://en.wikipedia.org/wiki/Calvin_Coolidge#
+
+#Historical Hoover Path#
+#https://www.whitehouse.gov/about-the-white-house/presidents/herbert-hoover/#
+#https://en.wikipedia.org/wiki/Herbert_Hoover#
+
+
+#Historical FDR#
 #https://en.wikipedia.org/wiki/New_Deal#The_First_100_Days_(1933)#
 #https://en.wikipedia.org/wiki/New_Deal#Summary_of_First_and_Second_New_Deal_programs#
+
+#Game Knowledge#
 #https://hoi4.paradoxwikis.com/National_Focus_modding#
+
+#1920-1932/33 Below#
+
+#Woodrow Wilson#
+
+focus = {
+	id = WILSON_USA_ill_presidency
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 50
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Wilson Demobilization#
+
+focus = {
+	id = WILSON_USA_begin_demobilization
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_cut_indsutrial_budget
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_begin_demobilization }
+	relative_position_id = WILSON_USA_begin_demobilization
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_military_layoffs
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_begin_demobilization }
+	relative_position_id = WILSON_USA_begin_demobilization
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_veteran_bonus_check
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_military_layoffs }
+	relative_position_id = WILSON_USA_military_layoffs
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_league_of_nations
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_force_joining
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_league_of_nations }
+	relative_position_id = WILSON_USA_league_of_nations
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_compromise_with_reps
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_league_of_nations }
+	relative_position_id = WILSON_USA_league_of_nations
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Wilson Redscare/Palmer Raids#
+
+focus = {
+	id = WILSON_USA_expand_agency_budget
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -4
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_end_palmer_raids
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_expand_agency_budget }
+	relative_position_id = WILSON_USA_expand_agency_budget
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_blame_unions
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_end_palmer_raids }
+	relative_position_id = WILSON_USA_end_palmer_raids
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_calm_anti_immigrant_hysteria
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_expand_agency_budget }
+	relative_position_id = WILSON_USA_expand_agency_budget
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Wilson suffrage#
+
+focus = {
+	id = WILSON_USA_rights_of_man
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 6
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_threathen_senators
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_rights_of_man }
+	relative_position_id = WILSON_USA_rights_of_man
+
+	mutually_exclusive = { focus = WILSON_USA_compromise_with_conservatives }
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_compromise_with_conservatives
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_rights_of_man }
+	relative_position_id = WILSON_USA_rights_of_man
+
+	mutually_exclusive = { focus = WILSON_USA_threathen_senators }
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#HARDING PRESIDENCY#
+
+focus = {
+	id = Harding_USA_innaugaration_speech
+	icon = focus_generic_paratrooper
+
+	cost = 1
+
+	x = 70
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_blame_game_return_to_normalcy
+	icon = focus_generic_paratrooper
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_innaugaration_speech }
+	relative_position_id = Harding_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_hot_potato
+	icon = focus_generic_paratrooper
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_blame_game_return_to_normalcy }
+	relative_position_id = Harding_USA_blame_game_return_to_normalcy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_republicans
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_hot_potato }
+	relative_position_id = Harding_USA_hot_potato
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#1933/32-1940 Below#
 
 #FLINT SIT-DOWN STRIKE#
 
@@ -58,7 +498,7 @@ focus = {
 
 	mutually_exclusive = { focus = FLINT_USA_side_with_ford focus = FLINT_USA_wait_and_see }
 
-	available = { never }
+
 
 	available_if_capitulated = yes
 	
@@ -79,7 +519,7 @@ focus = {
 	prerequisite = { focus = FLINT_USA_force_compromise }
 	relative_position_id = FLINT_USA_force_compromise
 
-	available = { never }
+
 
 	available_if_capitulated = yes
 	
@@ -100,7 +540,7 @@ focus = {
 	prerequisite = { focus = FLINT_USA_force_compromise }
 	relative_position_id = FLINT_USA_force_compromise
 
-	available = { never }
+
 
 	available_if_capitulated = yes
 	
@@ -122,7 +562,7 @@ focus = {
 	prerequisite = { focus = FLINT_USA_wagner_act }
 	relative_position_id = FLINT_USA_force_compromise
 
-	available = { never }
+
 
 	available_if_capitulated = yes
 	
@@ -145,7 +585,7 @@ focus = {
 
 	mutually_exclusive = { focus = FLINT_USA_force_compromise focus = FLINT_USA_wait_and_see }
 
-	available = { never }
+
 
 	available_if_capitulated = yes
 	
@@ -168,7 +608,7 @@ focus = {
 
 	mutually_exclusive = { focus = FLINT_USA_side_with_ford focus = FLINT_USA_force_compromise }
 
-	available = { never }
+
 
 	available_if_capitulated = yes
 	
@@ -189,7 +629,7 @@ focus = {
 	prerequisite = { focus = FLINT_USA_wait_and_see }
 	relative_position_id = FLINT_USA_wait_and_see
 
-	available = { never }
+
 
 	available_if_capitulated = yes
 	
@@ -210,7 +650,7 @@ focus = {
 	prerequisite = { focus = FLINT_USA_wait_and_see }
 	relative_position_id = FLINT_USA_wait_and_see
 
-	available = { never }
+
 
 	available_if_capitulated = yes
 	
@@ -231,7 +671,7 @@ focus = {
 	prerequisite = { focus = FLINT_USA_wait_and_see }
 	relative_position_id = FLINT_USA_wait_and_see
 
-	available = { never }
+
 
 	available_if_capitulated = yes
 	
@@ -253,7 +693,7 @@ focus = {
 	prerequisite = { focus = FLINT_USA_side_with_ford }
 	relative_position_id = FLINT_USA_lower_minimum__wage
 
-	available = { never }
+
 
 	available_if_capitulated = yes
 	
@@ -274,7 +714,7 @@ focus = {
 	prerequisite = { focus = FLINT_USA_side_with_ford }
 	relative_position_id = FLINT_USA_side_with_ford
 
-	available = { never }
+
 
 	available_if_capitulated = yes
 	
@@ -360,25 +800,6 @@ focus = {
 
 
 #FDR'S FIRST NEW DEAL#
-
-focus = {
-	id = FDR_USA_relief
-	icon = focus_generic_paratrooper
-
-	cost = 4
-
-	x = 4
-	y = 1
-	
-	prerequisite = { focus = FDR_USA_first_new_deal }
-	relative_position_id = FDR_USA_first_new_deal
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
 
 focus = {
 	id = FDR_USA_relief
