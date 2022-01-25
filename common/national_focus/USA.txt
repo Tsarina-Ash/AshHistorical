@@ -22,9 +22,389 @@ focus_tree = {
 	}
 
 #RESOURCES USED#
+
+#Wilson#
+#https://en.wikipedia.org/wiki/Woodrow_Wilson#1920_election#
+
+
+#FDR#
 #https://en.wikipedia.org/wiki/New_Deal#The_First_100_Days_(1933)#
 #https://en.wikipedia.org/wiki/New_Deal#Summary_of_First_and_Second_New_Deal_programs#
+
+#Game Knowledge#
 #https://hoi4.paradoxwikis.com/National_Focus_modding#
+
+#1920-1932/33 Below#
+
+#Woodrow Wilson#
+
+focus = {
+	id = WILSON_USA_ill_presidency
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 50
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Wilson Demobilization#
+
+focus = {
+	id = WILSON_USA_begin_demobilization
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_cut_indsutrial_budget
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_begin_demobilization }
+	relative_position_id = WILSON_USA_begin_demobilization
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_military_layoffs
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_begin_demobilization }
+	relative_position_id = WILSON_USA_begin_demobilization
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_veteran_bonus_check
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_military_layoffs }
+	relative_position_id = WILSON_USA_military_layoffs
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_league_of_nations
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_compromise_with_reps
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_league_of_nations }
+	relative_position_id = WILSON_USA_league_of_nations
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Wilson Redscare/Palmer Raids#
+
+focus = {
+	id = WILSON_USA_expand_agency_budget
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_palmer_raids
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_expand_agency_budget }
+	relative_position_id = WILSON_USA_expand_agency_budget
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_blame_unions
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_palmer_raids }
+	relative_position_id = WILSON_USA_palmer_raids
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_calm_anti_immigrant_hysteria
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_expand_agency_budget }
+	relative_position_id = WILSON_USA_expand_agency_budget
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Wilson suffrage#
+
+focus = {
+	id = WILSON_USA_rights_of_man
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_threathen_senators
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_rights_of_man }
+	relative_position_id = WILSON_USA_rights_of_man
+
+	mutually_exclusive = { focus = WILSON_USA_compromise_with_conservatives }
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_issue_of_african_americans
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = WILSON_USA_rights_of_man }
+	relative_position_id = WILSON_USA_rights_of_man
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		#event chain planned#
+	}
+}
+
+focus = {
+	id = WILSON_USA_begin_desegregation
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_issue_of_african_americans }
+	relative_position_id = WILSON_USA_issue_of_african_americans
+
+	mutually_exclusive = { focus = WILSON_USA_ignore_segregation }
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		#event chain planned#
+	}
+}
+
+focus = {
+	id = WILSON_USA_ignore_segregation
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_issue_of_african_americans }
+	relative_position_id = WILSON_USA_issue_of_african_americans
+
+	mutually_exclusive = { focus = WILSON_USA_begin_desegregation }
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		#event chain planned#
+	}
+}
+
+focus = {
+	id = WILSON_USA_compromise_with_conservatives
+	icon = focus_generic_paratrooper
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_rights_of_man }
+	relative_position_id = WILSON_USA_rights_of_man
+
+	mutually_exclusive = { focus = WILSON_USA_threathen_senators }
+
+	available = { never }
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#1933/32-1940 Below#
 
 #FLINT SIT-DOWN STRIKE#
 
@@ -360,25 +740,6 @@ focus = {
 
 
 #FDR'S FIRST NEW DEAL#
-
-focus = {
-	id = FDR_USA_relief
-	icon = focus_generic_paratrooper
-
-	cost = 4
-
-	x = 4
-	y = 1
-	
-	prerequisite = { focus = FDR_USA_first_new_deal }
-	relative_position_id = FDR_USA_first_new_deal
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
 
 focus = {
 	id = FDR_USA_relief
