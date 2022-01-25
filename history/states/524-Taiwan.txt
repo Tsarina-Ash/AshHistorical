@@ -1,22 +1,20 @@
-state=
-{
+
+state={
 	id=524
 	name="STATE_524"
-	manpower = 4592537
-	
-	state_category = large_town
-	history=
-	{
+
+	history={
 		owner = JAP
 		add_core_of = CHI
-		
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3
 			arms_factory = 1
 			air_base = 6
 			12068 = {
 				naval_base = 10
+
 			}
+
 		}
 		victory_points = {
 			7186 5 
@@ -26,9 +24,12 @@ state=
 		}
 
 	}
-	provinces={
-		1091 1175 4096 7186 7214 9955 11914 11959 12027 12068
-		}
 
-	local_supplies=0.0 
+	provinces={
+		1091 1175 4096 7186 7214 9955 11914 11959 12027 12068 
+	}
+	manpower=4592537
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }
