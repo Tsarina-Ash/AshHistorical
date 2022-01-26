@@ -1,12 +1,11 @@
+
 state={
 	id=616
 	name="STATE_616"
 
 	history={
 		owner = CHI
-		
 		add_core_of = CHI
-		
 		buildings = {
 			infrastructure = 1
 
@@ -15,7 +14,8 @@ state={
 			if = {
 				limit = {
 					NOT = {
-						has_dlc = "Waking the Tiger" 
+						has_dlc = Waking
+						the Tiger 
 					}
 
 				}
@@ -31,11 +31,10 @@ state={
 	}
 
 	provinces={
-		3742 5031 5057 5100 7511 8055 8081 8127 10724 12327 12750 12776 
+		1985 3742 5025 7511 8081 8127 10724 12878 
 	}
 	manpower=2077600
 	buildings_max_level_factor=1.000
 	state_category=pastoral
-
-	local_supplies=0.0 
+	local_supplies=0.000
 }
