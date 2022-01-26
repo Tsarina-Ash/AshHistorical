@@ -711,10 +711,9 @@ focus = {
 
 	cost = 4
 
-	x = -2
+	x = -1
 	y = 1
-	
-	prerequisite = { focus = FLINT_USA_lower_minimum__wage }
+
 	prerequisite = { focus = FLINT_USA_side_with_ford }
 	relative_position_id = FLINT_USA_lower_minimum__wage
 
@@ -734,10 +733,53 @@ focus = {
 	cost = 4
 
 	x = -1
+	y = 2
+	
+	prerequisite = { focus = FLINT_USA_side_with_ford }
+	relative_position_id = FLINT_USA_side_with_ford
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FLINT_USA_repeal_minimum_wage
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
 	y = 1
 	
 	prerequisite = { focus = FLINT_USA_side_with_ford }
 	relative_position_id = FLINT_USA_side_with_ford
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FLINT_USA_demonize_unions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FLINT_USA_repeal_minimum_wage }
+	prerequisite = { focus = FLINT_USA_send_in_the_troops }
+	relative_position_id = FLINT_USA_repeal_minimum_wage
 
 
 
@@ -1452,6 +1494,141 @@ focus = {
 	
 	prerequisite = { focus = FDR_USA_recovery }
 	relative_position_id = FDR_USA_recovery
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_AAA_commodities
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_agricultural_adjustment_act }
+	relative_position_id = FDR_USA_agricultural_adjustment_act
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_AAA_southern_democrats
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_agricultural_adjustment_act }
+	relative_position_id = FDR_USA_agricultural_adjustment_act
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_AAA_compromise
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_AAA_southern_democrats }
+	relative_position_id = FDR_USA_AAA_southern_democrats
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_AAA_southern_agriculture
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_AAA_compromise }
+	prerequisite = { focus = FDR_USA_AAA_commodities }
+	relative_position_id = FDR_USA_AAA_compromise
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_AAA_funding
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_AAA_compromise focus = FDR_USA_AAA_push_through }
+	prerequisite = { focus = FDR_USA_AAA_southern_democrats }
+	relative_position_id = FDR_USA_AAA_compromise
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_AAA_push_through
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_AAA_southern_democrats }
+	relative_position_id = FDR_USA_AAA_southern_democrats
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_AAA_threaten_southernern_senators
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_AAA_push_through }
+	relative_position_id = FDR_USA_AAA_push_through
 
 	available_if_capitulated = yes
 
