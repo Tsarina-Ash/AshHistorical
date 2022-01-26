@@ -1,0 +1,32 @@
+BRA_economic_power_struggle = { #industrialization vs coronels
+    icon = GFX_
+
+    # scripted_gui = 
+
+    allowed = {
+        original_tag = BRA
+    }
+    visible = {
+        NOT = {
+            has_country_flag = BRA_economic_power_struggle_resolved
+        }
+    }
+    visible_when_empty = yes
+    priority = 100
+}
+BRA_centralization = { #centralization
+    icon = GFX_
+
+    # scripted_gui = 
+
+    allowed = {
+        original_tag = BRA
+    }
+    visible = {
+        NOT = {
+            has_country_flag = BRA_centralization_complete
+        }
+    }
+    visible_when_empty = yes
+    priority = 99
+}
