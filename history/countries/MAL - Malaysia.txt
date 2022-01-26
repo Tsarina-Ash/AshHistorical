@@ -106,7 +106,7 @@ set_popularities = {
 }
 
 
-set_cosmetic_tag = MAL_UK # British Malaya
+# set_cosmetic_tag = MAL_UK # British Malaya
 
 1939.1.1 = {
 	add_political_power = 1198
