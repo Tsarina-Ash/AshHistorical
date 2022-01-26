@@ -25,8 +25,8 @@ LUX = {
 	color_ui = rgb { 0 145 161 }
 }
 BEL = { 
-	color = rgb { 126 4 129 }
-	color_ui = rgb { 126 4 129 }
+	color = rgb { 203 149 3 }
+	color_ui = rgb { 203 149 3 }
 	}
 HOL = {	
 	color = rgb { 170 140 73 }
@@ -52,8 +52,8 @@ EST = {
 	color_ui = rgb { 99 204 254 }
 }
 LAT = {
-	color = rgb { 75 77 186 }
-	color_ui = rgb { 124 125 184 }
+	color = rgb { 126 4 129 }
+	color_ui = rgb { 126 4 129 }
 }
 SPR = {
 	color = rgb { 175 169 102 }
@@ -260,8 +260,8 @@ USA = {
 	color_ui = rgb { 66 99 150 }
 }
 MON = {
-	color = rgb { 203 149 3 }
-	color_ui = rgb { 203 149 3 }
+	color = rgb { 204 81 39 }
+	color_ui = rgb { 204 81 39 }
 }
 MEN = {
 	color = rgb { 185  255  152 }
