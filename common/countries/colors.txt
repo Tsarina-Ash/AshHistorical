@@ -21,12 +21,12 @@ FRA = {
 	color_ui = rgb { 17 77 153 }
 }
 LUX = {
-	color = rgb { 65 175 179 }
-	color_ui = rgb { 85 228 233 }
+	color = rgb { 0 145 161 }
+	color_ui = rgb { 0 145 161 }
 }
 BEL = { 
-	color = rgb { 220 218 185 }
-	color_ui = rgb { 220 218 185 }
+	color = rgb { 126 4 129 }
+	color_ui = rgb { 126 4 129 }
 	}
 HOL = {	
 	color = rgb { 170 140 73 }
@@ -68,8 +68,8 @@ ROM = {
 	color_ui = rgb { 255 255 120 }
 }
 YUG = {
-	color = rgb { 65 109 167 }
-	color_ui = rgb { 65 109 167 }
+	color = rgb { 149 97 181 }
+	color_ui = rgb { 149 97 181 }
 }
 SWI = {
 	color = rgb { 170 0 0 }
@@ -260,16 +260,16 @@ USA = {
 	color_ui = rgb { 66 99 150 }
 }
 MON = {
-	color = rgb { 165 71 94 }
-	color_ui = rgb { 112 11 23 }
+	color = rgb { 203 149 3 }
+	color_ui = rgb { 203 149 3 }
 }
 MEN = {
 	color = rgb { 185  255  152 }
 	color_ui = rgb { 165  230  132 }
 }
 TAN = {
-	color = rgb { 193 52 87 }
-	color_ui = rgb { 193 52 87 }
+	color = rgb { 169 24 24 }
+	color_ui = rgb { 169 24 24 }
 }
 PAR = {
 	color = rgb { 129 96 134 }
