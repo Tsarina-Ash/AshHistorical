@@ -831,7 +831,7 @@ focus = {
 
 	cost = 4
 
-	x = -3
+	x = -2
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_relief }
@@ -851,7 +851,7 @@ focus = {
 	cost = 4
 
 	x = -1
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = FDR_USA_relief }
 	relative_position_id = FDR_USA_relief
@@ -870,7 +870,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = FDR_USA_securities_act }
 	relative_position_id = FDR_USA_securities_act
@@ -987,6 +987,7 @@ focus = {
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_emergency_banking_act }
+	prerequisite = { focus = FDR_USA_glass_steagal_act }
 	relative_position_id = FDR_USA_emergency_banking_act
 
 	available_if_capitulated = yes
