@@ -1,12 +1,36 @@
+
 state={
 	id=861
 	name="STATE_861"
-	provinces={
-		478 3207 9428 9496 11415 11505 
-	}
-	history = {
+
+	history={
 		owner = GER
 		add_core_of = GER
+		victory_points = {
+			9428 3
+		}
+		victory_points = {
+			4892 5
+		}
+		victory_points = {
+			10832 5
+		}
+		victory_points = {
+			10912 10
+		}
+		victory_points = {
+			11505 3
+		}
+		victory_points = {
+			8080 5
+		}
+		victory_points = {
+			9496 2
+		}
+	}
+
+	provinces={
+		478 3207 4892 8080 8113 9428 9496 10823 10912 11415 11505 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
