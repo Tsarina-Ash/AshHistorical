@@ -76,7 +76,7 @@ focus_tree = {
 
 focus = {
 	id = WILSON_USA_ill_presidency
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -94,7 +94,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_begin_demobilization
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -115,7 +115,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_cut_indsutrial_budget
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -136,7 +136,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_military_layoffs
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -157,7 +157,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_veteran_bonus_check
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -178,7 +178,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_league_of_nations
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -199,7 +199,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_force_joining
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -220,7 +220,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_compromise_with_reps
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -243,7 +243,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_expand_agency_budget
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -264,7 +264,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_end_palmer_raids
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -285,7 +285,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_blame_unions
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -306,7 +306,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_calm_anti_immigrant_hysteria
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -329,7 +329,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_rights_of_man
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -350,7 +350,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_threathen_senators
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -373,7 +373,7 @@ focus = {
 
 focus = {
 	id = WILSON_USA_compromise_with_conservatives
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -398,7 +398,7 @@ focus = {
 
 focus = {
 	id = Harding_USA_innaugaration_speech
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 1
 
@@ -414,7 +414,7 @@ focus = {
 
 focus = {
 	id = Harding_USA_blame_game_return_to_normalcy
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 1
 
@@ -433,7 +433,7 @@ focus = {
 
 focus = {
 	id = Harding_USA_hot_potato
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 1
 
@@ -452,7 +452,7 @@ focus = {
 
 focus = {
 	id = Harding_USA_republicans
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -475,7 +475,7 @@ focus = {
 
 focus = {
 	id = FLINT_USA_strike
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -491,7 +491,7 @@ focus = {
 
 focus = {
 	id = FLINT_USA_force_compromise
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -514,7 +514,7 @@ focus = {
 
 focus = {
 	id = FLINT_USA_wagner_act
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -535,7 +535,7 @@ focus = {
 
 focus = {
 	id = FLINT_USA_raise_minimum_wage
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -556,7 +556,7 @@ focus = {
 
 focus = {
 	id = FLINT_USA_fair_labor_standards_act
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -578,7 +578,7 @@ focus = {
 
 focus = {
 	id = FLINT_USA_side_with_ford
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -601,7 +601,7 @@ focus = {
 
 focus = {
 	id = FLINT_USA_wait_and_see
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -624,7 +624,7 @@ focus = {
 
 focus = {
 	id = FLINT_USA_mediocre_protections
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -645,7 +645,7 @@ focus = {
 
 focus = {
 	id = FLINT_USA_higher_corp_tax
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -666,7 +666,7 @@ focus = {
 
 focus = {
 	id = FLINT_USA_lower_minimum__wage
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -687,7 +687,7 @@ focus = {
 
 focus = {
 	id = FLINT_USA_loosen_safety_standards
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -709,7 +709,7 @@ focus = {
 
 focus = {
 	id = FLINT_USA_send_in_the_troops
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -732,7 +732,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_innaugaration_speech
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 1
 
@@ -748,7 +748,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_three_rs
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 1
 
@@ -767,7 +767,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_broadcast_fireside_chat
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 1
 
@@ -786,7 +786,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_first_new_deal
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 1
 
@@ -808,7 +808,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_relief
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -827,7 +827,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_repealing_of_prohibition
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -846,7 +846,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_securities_act
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -865,7 +865,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_establish_sec
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -884,7 +884,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_off_the_gold_standard
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -903,7 +903,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_gold_reserve_act
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -922,7 +922,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_banking_fireside_chat
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -941,7 +941,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_emergency_banking_act
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -960,7 +960,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_glass_steagal_act
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -979,7 +979,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_FDIC
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -998,7 +998,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_bank_holiday
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -1017,7 +1017,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_recovery
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -1036,7 +1036,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_reform
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -1057,7 +1057,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_2ND_NEW_DEAL
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -1076,7 +1076,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_industrial_revitalation
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -1096,7 +1096,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_social_security
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
@@ -1115,7 +1115,7 @@ focus = {
 
 focus = {
 	id = FDR_USA_public_works
-	icon = focus_generic_paratrooper
+	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
