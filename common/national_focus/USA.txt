@@ -66,6 +66,7 @@ focus_tree = {
 #Historical FDR#
 #https://en.wikipedia.org/wiki/New_Deal#The_First_100_Days_(1933)#
 #https://en.wikipedia.org/wiki/New_Deal#Summary_of_First_and_Second_New_Deal_programs#
+#https://en.wikipedia.org/wiki/First_100_days_of_Franklin_D._Roosevelt%27s_presidency#
 
 #Game Knowledge#
 #https://hoi4.paradoxwikis.com/National_Focus_modding#
@@ -209,7 +210,26 @@ focus = {
 	prerequisite = { focus = WILSON_USA_league_of_nations }
 	relative_position_id = WILSON_USA_league_of_nations
 
+	mutually_exclusive = { focus = WILSON_USA_compromise_with_reps }
 
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = WILSON_USA_join_the_league
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_force_joining }
+	relative_position_id = WILSON_USA_force_joining
 
 	available_if_capitulated = yes
 	
@@ -230,7 +250,7 @@ focus = {
 	prerequisite = { focus = WILSON_USA_league_of_nations }
 	relative_position_id = WILSON_USA_league_of_nations
 
-
+	mutually_exclusive = { focus = WILSON_USA_force_joining }
 
 	available_if_capitulated = yes
 	
@@ -479,7 +499,7 @@ focus = {
 
 	cost = 4
 
-	x = -18
+	x = -20
 	y = 0
 	
 	available_if_capitulated =  no
@@ -812,7 +832,7 @@ focus = {
 
 	cost = 4
 
-	x = -6
+	x = -12
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_first_new_deal }
@@ -1036,12 +1056,436 @@ focus = {
 }
 
 focus = {
-	id = FDR_USA_reform
+	id = FDR_USA_emergency_conservation_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -6
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_recovery }
+	relative_position_id = FDR_USA_recovery
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_expand_forest_service
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_emergency_conservation_act }
+	relative_position_id = FDR_USA_emergency_conservation_act
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_tree_planting_spree
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_expand_forest_service }
+	relative_position_id = FDR_USA_expand_forest_service
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_civilian_coservation_corps
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_emergency_conservation_act }
+	relative_position_id = FDR_USA_emergency_conservation_act
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_aquire_federal_funding
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_civilian_coservation_corps }
+	relative_position_id = FDR_USA_civilian_coservation_corps
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_camp_leaders
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_aquire_federal_funding }
+	relative_position_id = FDR_USA_aquire_federal_funding
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_veterans_conservation_corps
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_aquire_federal_funding }
+	prerequisite = { focus = FDR_USA_camp_leaders }
+	relative_position_id = FDR_USA_camp_leaders
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_food
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_aquire_federal_funding }
+	relative_position_id = FDR_USA_aquire_federal_funding
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_soil_erosion_control
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_aquire_federal_funding }
+	relative_position_id = FDR_USA_aquire_federal_funding
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_combat_dust_bowl
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_soil_erosion_control }
+	relative_position_id = FDR_USA_soil_erosion_control
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_put_them_to_work
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_civilian_coservation_corps }
+	relative_position_id = FDR_USA_civilian_coservation_corps
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_schools_roads_dams_decades
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_put_them_to_work }
+	relative_position_id = FDR_USA_put_them_to_work
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_national_industrial_recovery_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_recovery }
+	relative_position_id = FDR_USA_recovery
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_dealing_with_unemployment
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_national_industrial_recovery_act }
+	relative_position_id = FDR_USA_national_industrial_recovery_act
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_issue_of_unions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_national_industrial_recovery_act }
+	relative_position_id = FDR_USA_national_industrial_recovery_act
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_NIRA_legalistation_of_unions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_issue_of_unions }
+	relative_position_id = FDR_USA_issue_of_unions
+
+	available_if_capitulated = yes
+
+	mutually_exclusive = { focus = FDR_USA_NIRA_banning_of_unions }
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_how_to_deal_with_unions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_NIRA_legalistation_of_unions }
+	relative_position_id = FDR_USA_NIRA_legalistation_of_unions
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_NIRA_banning_of_unions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_issue_of_unions }
+	relative_position_id = FDR_USA_issue_of_unions
+
+	mutually_exclusive = { focus = FDR_USA_NIRA_legalistation_of_unions }
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_regulatory_ability
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_national_industrial_recovery_act }
+	relative_position_id = FDR_USA_national_industrial_recovery_act
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_negotiate_with_companies
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_regulatory_ability }
+	relative_position_id = FDR_USA_regulatory_ability
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+
+focus = {
+	id = FDR_USA_agricultural_adjustment_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_recovery }
+	relative_position_id = FDR_USA_recovery
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_tennesse-valley-authority
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
 	x = 6
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_recovery }
+	relative_position_id = FDR_USA_recovery
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_reform
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 12
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_first_new_deal }
