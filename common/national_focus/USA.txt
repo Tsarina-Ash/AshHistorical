@@ -67,6 +67,7 @@ focus_tree = {
 #https://en.wikipedia.org/wiki/New_Deal#The_First_100_Days_(1933)#
 #https://en.wikipedia.org/wiki/New_Deal#Summary_of_First_and_Second_New_Deal_programs#
 #https://en.wikipedia.org/wiki/First_100_days_of_Franklin_D._Roosevelt%27s_presidency#
+#https://en.wikipedia.org/wiki/Central_Valley_Project#
 
 #Game Knowledge#
 #https://hoi4.paradoxwikis.com/National_Focus_modding#
@@ -893,7 +894,7 @@ focus = {
 
 	cost = 4
 
-	x = -2
+	x = -3
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_relief }
@@ -907,35 +908,16 @@ focus = {
 }
 
 focus = {
-	id = FDR_USA_securities_act
+	id = FDR_USA_federal_emergency_relief_administration
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = -1
+	x = -2
 	y = 2
 	
 	prerequisite = { focus = FDR_USA_relief }
 	relative_position_id = FDR_USA_relief
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = FDR_USA_establish_sec
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = FDR_USA_securities_act }
-	relative_position_id = FDR_USA_securities_act
 
 	available_if_capitulated = yes
 	
@@ -950,7 +932,7 @@ focus = {
 
 	cost = 4
 
-	x = 0
+	x = -1
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_relief }
@@ -988,7 +970,7 @@ focus = {
 
 	cost = 4
 
-	x = 2
+	x = 1
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_relief }
@@ -1638,7 +1620,7 @@ focus = {
 }
 
 focus = {
-	id = FDR_USA_tennesse-valley-authority
+	id = FDR_USA_tennesse_valley_authority
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -1648,6 +1630,63 @@ focus = {
 	
 	prerequisite = { focus = FDR_USA_recovery }
 	relative_position_id = FDR_USA_recovery
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_TVA_farming_schools
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_tennesse_valley_authority }
+	relative_position_id = FDR_USA_tennesse_valley_authority
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_TVA_research_and_development
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_tennesse_valley_authority }
+	relative_position_id = FDR_USA_tennesse_valley_authority
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_TVA_fertilizer
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_TVA_research_and_development  focus = FDR_USA_TVA_farming_schools }
+	relative_position_id = FDR_USA_TVA_research_and_development
 
 	available_if_capitulated = yes
 
@@ -1670,6 +1709,139 @@ focus = {
 
 	available_if_capitulated = yes
 	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_securities_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_reform }
+	relative_position_id = FDR_USA_reform
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_establish_sec
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_securities_act }
+	relative_position_id = FDR_USA_securities_act
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_CCC_projects
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_tennesse_valley_authority }
+	relative_position_id = FDR_USA_tennesse_valley_authority
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_TVA_CCC_dams_bridges_highways
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_CCC_projects }
+	relative_position_id = FDR_USA_CCC_projects
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_central_valley_project
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 9
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_recovery }
+	relative_position_id = FDR_USA_recovery
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_CVP_aqueducts_canals_resouvoirs
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_central_valley_project }
+	relative_position_id = FDR_USA_central_valley_project
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_CVP_CCC_dams
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_central_valley_project }
+	relative_position_id = FDR_USA_central_valley_project
+
+	available_if_capitulated = yes
+
 	completion_reward = {
 		add_political_power = 50
 	}
