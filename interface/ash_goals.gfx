@@ -1,0 +1,9 @@
+spriteTypes = {	
+
+	#### Generic continuous goal icons}
+	SpriteType = { 
+		name = "GFX_focus_USA_placeholder"
+		texturefile = "gfx/interface/goals/USA/focus_usa_placeholder.dds"
+	}
+
+}
