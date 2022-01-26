@@ -4,6 +4,16 @@ state={
 	provinces={
 		1988 13092
 	}
+	history = {
+		owner = GER
+		add_core_of = GER
+		victory_points = {
+			1988 50
+		}
+		victory_points = {
+			13092 30
+		}
+	}
 	manpower=0
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

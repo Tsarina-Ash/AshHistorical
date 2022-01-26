@@ -5,6 +5,11 @@ state={
 	provinces={
 		2031 11531 
 	}
+	history = {
+		owner = GER
+		add_core_of = GER
+		set_demilitarized_zone = yes
+	}
 	manpower=0
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
