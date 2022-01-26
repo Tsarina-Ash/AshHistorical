@@ -1,25 +1,30 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
+
 focus_tree = {
-	id = USA
+	id = usa_focus
 	
 	country = {
 		factor = 0
 		
 		modifier = {
 			add = 10
-			tag = USA 
+			tag = USA
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = USA
 		}
 	}
-
+	continuous_focus_position = { x = 50 y = 1600 }
 	default = no
-
-	reset_on_civil_war = no
-
-	continuous_focus_position = { x = -200 y = -200 }
-	
-	initial_show_position = {
-		x = 0
-		y = 0
-	}
 
 #Plan So Far#
 
@@ -1126,12 +1131,5 @@ focus = {
 		add_political_power = 50
 	}
 }
-
-
-
-
-
-
-
-
+	
 }
