@@ -315,8 +315,8 @@ PRC = {
 }
 
 GXC = {
-	color = rgb { 8 124 156 }
-	color_ui = rgb { 8 124 156 }
+	color = rgb { 8 101 137 }
+	color_ui = rgb { 8 101 137 }
 }
 
 SHX = {
@@ -424,8 +424,8 @@ BLR = {
 	color_ui = rgb { 180 220 190 }
 }
 MAN = {
-	color = rgb { 60 139 188 }
-	color_ui = rgb { 60 139 188 }
+	color = rgb { 44 113 153 }
+	color_ui = rgb { 44 113 153 }
 }
 ANG = {
 	color = rgb { 37 140 61 }
