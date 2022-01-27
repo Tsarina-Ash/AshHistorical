@@ -816,3 +816,9 @@ CHU = {
 	color = rgb { 191 128 64 }
 	color_ui = rgb { 134 89 45 }
 }
+
+#Added
+ZZZ = {
+	color = rgb { 50 50 50 }
+	color_ui = rgb { 50 50 50 }
+}

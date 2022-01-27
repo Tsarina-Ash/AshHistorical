@@ -7,6 +7,31 @@ bookmarks = {
         default_country = "USA"
         default = yes
 
+        effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+
+        "CHI" = {
+            history = "CHI_ROARING_TWENTIES_DESC"
+            ideology = neutrality
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }  
+        "FRA" = {
+            history = "FRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
         "USA" = {
             history = "USA_ROARINTG_TWENTIES_DESC"
             ideology = democratic
@@ -19,49 +44,9 @@ bookmarks = {
 
             }
         }
-        "FRA" = {
-            history = "FRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-
-            }
-        }
         "ENG" = {
             history = "ENG_ROARING_TWENTIES_DESC"
             ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-
-            }
-        }
-        "GER" = {
-            history = "GER_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-
-            }
-        }
-        "ITA" = {
-            history = "ITA_ROARING_TWENTIES_DESC"
-            ideology = neutrality
-            ideas = {
-
-            }
-            focuses = {
-
-            }
-        }
-        "JAP" = {
-            history = "JAP_ROARING_TWENTIES_DESC"
-            ideology = fascism
             ideas = {
 
             }
@@ -79,8 +64,28 @@ bookmarks = {
 
             }
         }
-        "CHI" = {
-            history = "SOV_ROARING_TWENTIES_DESC"
+        "GER" = {
+            history = "GER_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+        "JAP" = {
+            history = "JAP_ROARING_TWENTIES_DESC"
+            ideology = fascism
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+        "ITA" = {
+            history = "ITA_ROARING_TWENTIES_DESC"
             ideology = neutrality
             ideas = {
 
@@ -88,13 +93,14 @@ bookmarks = {
             focuses = {
 
             }
-        }        
+        }
 
         #minors
-
+        #Chilna Row 1
         "MAN" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
+            minor = yes
             ideas = {
 
             }
@@ -106,6 +112,7 @@ bookmarks = {
         "GXC" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
+            minor = yes
             ideas = {
 
             }
@@ -117,94 +124,27 @@ bookmarks = {
         "SHX" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
+            minor = yes
             ideas = {
 
             }
             focuses = {
                 
             }
-        }      
-        
-        "SIK" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }     
-
-        "MEN" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }      
-        
-        "YUN" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }  
-
-        "TIB" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }      
-        
-        "XSM" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }                    
-
-        "SIA" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }      
-        
-        "PHI" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        } 
-
+        }   
+        #Buffer
+        "ZZZ" = { minor = yes history = "" }
+        #France Row 1
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        #Buffer
+        "ZZZ" = { minor = yes history = "" }
+        #US Row 1
         "BRA" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
+            minor = yes
             ideas = {
 
             }
@@ -212,88 +152,25 @@ bookmarks = {
                 
             }
         }
-
+        "ZZZ" = { minor = yes history = "" }
         "MEX" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
+            minor = yes
             ideas = {
 
             }
             focuses = {
                 
             }
-        }   
-
-        "SWE" = {
+        } 
+        #Buffer
+        "ZZZ" = { minor = yes history = "" }
+        #UK Row 1
+        "RAJ" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }             
-    }
-
-        "SWI" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }   
-
-        "MON" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }             
-
-        "HUN" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }   
-
-        "ROM" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }             
-        
-        "FIN" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }   
-
-        "NOR" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
+            minor = yes
             ideas = {
 
             }
@@ -301,76 +178,10 @@ bookmarks = {
                 
             }
         }  
-        
-        "YUG" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }      
-        
-        "BUL" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }                     
-        
-        "SPR" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }      
-        
-        "POR" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        } 
-
-        "RAJ" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        }   
-
-        "AUS" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
-            ideology = democratic
-            ideas = {
-
-            }
-            focuses = {
-                
-            }
-        } 
-
         "SAF" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
+            minor = yes
             ideas = {
 
             }
@@ -382,12 +193,287 @@ bookmarks = {
         "CAN" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
+            minor = yes
             ideas = {
 
             }
             focuses = {
                 
             }
-        }                    
+        } 
+        #Buffer
+        "ZZZ" = { minor = yes history = "" }
+        #Soviet Union row 1
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        #Buffer
+        "ZZZ" = { minor = yes history = "" }
+        #Germany row 1
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        #Buffer
+        "ZZZ" = { minor = yes history = "" }
+        #Japan row 1
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        #Buffer
+        "ZZZ" = { minor = yes history = "" }
+        #Italy row 1
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        #Buffer
+        # "ZZZ" = { minor = yes history = "" }
+        #China row 2
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        #Buffer
+        "ZZZ" = { minor = yes history = "" }
+        #France row 2
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        #Buffer
+        "ZZZ" = { minor = yes history = "" }
+        #USA row 2
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" }
+        #Buffer
+        "ZZZ" = { minor = yes history = "" }
+        #UK row 2
+        "AST" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            minor = yes
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        } 
+        "ZZZ" = { minor = yes history = "" }
+        "NZL" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            minor = yes
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+        
+        # "SIK" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }     
+
+        # "MEN" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }      
+        
+        # "YUN" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }  
+
+        # "TIB" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }      
+        
+        # "XSM" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }                    
+
+        # "SIA" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }      
+        
+
+        # "SWE" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }
+
+        # "SWI" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }   
+
+        # "MON" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }             
+
+        # "HUN" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }   
+
+        # "ROM" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }             
+        
+        # "FIN" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }   
+
+        # "NOR" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }  
+        
+        # "YUG" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }      
+        
+        # "BUL" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }                     
+        
+        # "SPR" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # }      
+        
+        # "POR" = {
+        #     history = "BRA_ROARING_TWENTIES_DESC"
+        #     ideology = democratic
+        #     minor = yes
+        #     ideas = {
+
+        #     }
+        #     focuses = {
+                
+        #     }
+        # } 
+
     }    
 }
