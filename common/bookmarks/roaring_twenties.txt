@@ -11,7 +11,9 @@ bookmarks = {
             history = "USA_ROARINTG_TWENTIES_DESC"
             ideology = democratic
             ideas = {
-
+				WILSON_USA_ill_presidency
+				WILSON_USA_begin_demobilization
+				WILSON_USA_league_of_nations
             }
             focuses = {
 
@@ -77,6 +79,16 @@ bookmarks = {
 
             }
         }
+        "CHI" = {
+            history = "SOV_ROARING_TWENTIES_DESC"
+            ideology = neutrality
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }        
 
         #minors
         "BRA" = {
@@ -89,5 +101,138 @@ bookmarks = {
                 
             }
         }
+
+        "MEX" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }   
+
+        "SWE" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }             
     }
+
+        "SWI" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }   
+
+        "MON" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }             
+
+        "HUN" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }   
+
+        "ROM" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }             
+        
+        "FIN" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }   
+
+        "NOR" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }          
+        
+        "RAJ" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }   
+
+        "AUS" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        } 
+
+        "SAF" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }   
+
+        "CAN" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }                    
+    }    
 }

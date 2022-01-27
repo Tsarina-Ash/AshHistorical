@@ -1,0 +1,36 @@
+focus_tree = {
+    id = canada_focus_tree
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = CAN
+        }
+
+        modifier = {
+            add = 10
+            original_tag = CAN
+        }
+    }
+    continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+focus = {
+	id = CAN_first_focus
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+}

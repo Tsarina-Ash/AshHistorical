@@ -13,6 +13,7 @@ tags={
 	"Utilities"
 }
 replace_path="common/countries"
+replace_path="common/bookmarks"
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="history/units"

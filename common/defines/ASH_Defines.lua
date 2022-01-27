@@ -1,5 +1,5 @@
 ---IndustryModifiers
-NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 10 --lower amount of civs allocated per building
+NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 20 --higher amount of civs allocated per building
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 0.5 --lower based starting production
 ---BegoneClouds
 NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0;  --removes fog
@@ -27,3 +27,5 @@ NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0 --score modifier that shows at end o
 NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
+---MinorBalanceChanges
+NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 1.25 --1 Politcal power gain when not doing a focus (prevents poltical power bloat)
