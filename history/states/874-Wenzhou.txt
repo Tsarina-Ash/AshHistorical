@@ -4,6 +4,14 @@ state={
 	provinces={
 		1055 1195 4013 4099 7086 9944 9972 11920 11947 
 	}
+	history = {
+		owner = CHI
+		add_core_of = CHI
+	}
+	history = {
+		owner = CHI
+		add_core_of = CHI
+	}
 	manpower=0
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

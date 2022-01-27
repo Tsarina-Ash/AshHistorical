@@ -4,7 +4,8 @@ state={
 	name="STATE_756"
 
 	history={
-		owner = CHI
+		owner = XSM
+		add_core_of = XSM
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 1

@@ -2,10 +2,16 @@
 state={
 	id=488
 	name="STATE_488"
-
 	provinces={
 		1034 1531 4074 10367 10507 12300 12432 
 	}
+	history = {
+		owner = SHX
+		add_core_of = SHX
+		add_core_of = CHI
+		# add_core_of = PRC
+	}
 	manpower=0
 	buildings_max_level_factor=1.000
+	local_supplies=0.000
 }

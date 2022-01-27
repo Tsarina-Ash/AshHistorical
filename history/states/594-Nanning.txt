@@ -9,7 +9,8 @@ state={
 	}
 
 	history={
-		owner = CHI
+		owner = GXC
+		add_core_of = GXC
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
