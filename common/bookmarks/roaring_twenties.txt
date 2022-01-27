@@ -91,6 +91,117 @@ bookmarks = {
         }        
 
         #minors
+
+        "MAN" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }      
+        
+        "GXC" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        } 
+
+        "SHX" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }      
+        
+        "SIK" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }     
+
+        "MEN" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }      
+        
+        "YUN" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }  
+
+        "TIB" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }      
+        
+        "XSM" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }                    
+
+        "SIA" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }      
+        
+        "PHI" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        } 
+
         "BRA" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
@@ -189,8 +300,52 @@ bookmarks = {
             focuses = {
                 
             }
-        }          
+        }  
         
+        "YUG" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }      
+        
+        "BUL" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }                     
+        
+        "SPR" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }      
+        
+        "POR" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        } 
+
         "RAJ" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
