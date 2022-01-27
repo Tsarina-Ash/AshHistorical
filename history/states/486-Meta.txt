@@ -6,6 +6,11 @@ state={
 	provinces={
 		1633 4624 5031 7630 8055 12750 
 	}
+	history = {
+		owner = XSM
+		add_core_of = XSM
+		add_core_of = CHI
+	}
 	manpower=0
 	buildings_max_level_factor=1.000
 }

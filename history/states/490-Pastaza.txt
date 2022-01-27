@@ -2,23 +2,17 @@
 state={
 	id=490
 	name="STATE_490"
-	manpower = 70020
-	
-	state_category = pastoral
-
-	history={
-		owner = PRU
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 1
-		}
-		add_core_of = PRU
-	}
 
 	provinces={
-		8149 10942 
+		1458 7314 7659 10880 12356 
 	}
-
-	local_supplies=6.0 
+	history = {
+		owner = SHX
+		add_core_of = SHX
+		add_core_of = CHI
+		# add_core_of = PRC
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=6.000
 }

@@ -6,6 +6,11 @@ state={
 	provinces={
 		517 1647 2052 3745 4939 
 	}
+	history = {
+		owner = SHX
+		add_core_of = SHX
+		add_core_of = CHI
+	}
 	manpower=0
 	buildings_max_level_factor=1.000
 }
