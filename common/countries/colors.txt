@@ -5,12 +5,12 @@ GER = {
 	color_ui = rgb { 91 86 90 }
 }
 ENG = {
-	color = rgb { 153 30 63 }
-	color_ui = rgb { 153 30 63 }
+	color = rgb { 170 25 25 }
+	color_ui = rgb { 170 25 25 }
 }
 SOV = {
-	color = rgb { 130 19 46 }
-	color_ui = rgb { 130 19 46 }
+	color = rgb { 160 0 0 }
+	color_ui = rgb { 160 0 0 }
 }
 SWE = {
 	color = rgb { 0 106 167 }
@@ -40,15 +40,15 @@ POL = {
 	color_ui = rgb { 153 88 102 }
 }
 AUS = {
-	color = rgb { 194 198 215 }
-	color_ui = rgb { 255 255 255 }
+	color = rgb { 150 155 170 }
+	color_ui = rgb { 150 155 170 }
 }
 LIT = {
 	color = rgb { 253 185 19 }
 	color_ui = rgb { 253 185 19 }
 }
 EST = {
-	color = rgb { 50 135 175 }
+	color = rgb { 40 130 180 }
 	color_ui = rgb { 99 204 254 }
 }
 LAT = {
@@ -64,12 +64,12 @@ ITA = {
 	color_ui = rgb { 98 122 69 }
 }
 ROM = {
-	color = rgb { 215 196 72 }
+	color = rgb { 255 180 0 }
 	color_ui = rgb { 255 255 120 }
 }
 YUG = {
-	color = rgb { 149 97 181 }
-	color_ui = rgb { 149 97 181 }
+	color = rgb { 50 75 110 }
+	color_ui = rgb { 50 75 110 }
 }
 SWI = {
 	color = rgb { 170 0 0 }
@@ -120,8 +120,8 @@ AFG = {
 	color_ui = rgb { 83 124 107 }
 }
 ARG = {
-	color = rgb { 140 167 170 }
-	color_ui = rgb { 140 167 170 }
+	color = rgb { 65 75 160 }
+	color_ui = rgb { 65 75 160 }
 }
 AST = {
 	color = rgb { 57 143 97 }
@@ -144,8 +144,8 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = rgb { 108 137 137 }
-	color_ui = rgb { 108 137 137 }
+	color = rgb { 5 90 170 }
+	color_ui = rgb { 5 90 170 }
 }
 CHL = {
 	color = rgb { 0 89 132 }
@@ -180,8 +180,8 @@ HON = {
 	color_ui = rgb { 161 76 65 }
 }
 IRQ = {
-	color = rgb { 98 134 153 }
-	color_ui = rgb { 98 134 153 }
+	color = rgb { 120 65 60 }
+	color_ui = rgb { 120 65 60 }
 }
 JAP = {
 	color = rgb { 234 214 208 }
@@ -192,8 +192,8 @@ LIB = {
 	color_ui = rgb { 129 169 177 }
 }
 MEX = {
-	color = rgb { 80 115 45 }
-	color_ui = rgb { 80 115 45 }
+	color = rgb { 104 152 83 }
+	color_ui = rgb { 104 152 83 }
 }
 NEP = {
 	color = rgb { 152 130 191 }
@@ -232,12 +232,12 @@ SAU = {
 	color_ui = rgb { 76  141  58 }
 }
 SIA = {
-	color = rgb { 140 120 90 }
+	color = rgb { 170 190 160 }
 	color_ui = rgb { 140 120 90 }
 }
 SIK = {
-	color = rgb { 128 128 128 }
-	color_ui = rgb { 128 128 128 }
+	color = rgb { 140 80 70 }
+	color_ui = rgb { 140 80 70 }
 }
 TIB = {
 	color = rgb { 80 115 45}
@@ -252,15 +252,15 @@ VEN = {
 	color_ui = rgb { 170 5 5 }
 }
 YUN = {
-	color = rgb { 114 148 80 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 108 137 137 }
+	color_ui = rgb { 108 137 137 }
 }
 USA = {
 	color = rgb { 66 99 150 }
 	color_ui = rgb { 66 99 150 }
 }
 MON = {
-	color = rgb { 204 81 39 }
+	color = rgb { 115 25 15 }
 	color_ui = rgb { 204 81 39 }
 }
 MEN = {
