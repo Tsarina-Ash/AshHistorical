@@ -1,0 +1,93 @@
+bookmarks = {
+    bookmark = {
+        name = "ROARING_TWENTIES_NAME"
+        name = "ROARING_TWENTIES_DESC"
+        date = 1920.1.1.12
+        # picture = ""
+        default_country = "USA"
+        default = yes
+
+        "USA" = {
+            history = "USA_ROARINTG_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+        "FRA" = {
+            history = "FRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+        "ENG" = {
+            history = "ENG_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+        "GER" = {
+            history = "GER_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+        "ITA" = {
+            history = "ITA_ROARING_TWENTIES_DESC"
+            ideology = neutrality
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+        "JAP" = {
+            history = "JAP_ROARING_TWENTIES_DESC"
+            ideology = fascism
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+        "SOV" = {
+            history = "SOV_ROARING_TWENTIES_DESC"
+            ideology = communism
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+
+        #minors
+        "BRA" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        }
+    }
+}
