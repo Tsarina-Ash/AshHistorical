@@ -472,7 +472,237 @@ focus = {
 }
 
 focus = {
-	id = Harding_USA_republicans
+	id = Harding_USA_internal_affairs
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -6
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_hot_potato }
+	relative_position_id = Harding_USA_hot_potato
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_dealing_with_anti_war_prisoners
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = Harding_USA_internal_affairs }
+	relative_position_id = Harding_USA_internal_affairs
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_leonidas_dyers_federal-anti_lynching_bill
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_internal_affairs }
+	relative_position_id = Harding_USA_internal_affairs
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_per_centum_act_of_1921
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_internal_affairs }
+	relative_position_id = Harding_USA_internal_affairs
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_immigration_act_of_1924
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_per_centum_act_of_1921 }
+	relative_position_id = Harding_USA_per_centum_act_of_1921
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_return_to_normalcy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_hot_potato }
+	relative_position_id = Harding_USA_hot_potato
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+		#unlocks_memeish_decisions; go fishing, watch a movie, etc etc etc each giving a higher chance for him to die of old age doing them
+	}
+}
+
+focus = {
+	id = Harding_USA_voyage_of_understanding
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 3
+	
+	prerequisite = { focus = Harding_USA_return_to_normalcy }
+	relative_position_id = Harding_USA_return_to_normalcy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_finalize_formal_peace_treaty
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_return_to_normalcy }
+	relative_position_id = Harding_USA_return_to_normalcy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+
+focus = {
+	id = Harding_USA_reassure_south_america
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = Harding_USA_finalize_formal_peace_treaty }
+	relative_position_id = Harding_USA_finalize_formal_peace_treaty
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_disarmament
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_finalize_formal_peace_treaty }
+	relative_position_id = Harding_USA_finalize_formal_peace_treaty
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_reduce_reparations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_finalize_formal_peace_treaty }
+	relative_position_id = Harding_USA_finalize_formal_peace_treaty
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_abandon_the_league
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_return_to_normalcy }
+	relative_position_id = Harding_USA_return_to_normalcy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_economy
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -482,6 +712,139 @@ focus = {
 	
 	prerequisite = { focus = Harding_USA_hot_potato }
 	relative_position_id = Harding_USA_hot_potato
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_talk_with_indsutry_leaders
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 6
+	
+	#prerequisite = { focus = Harding_USA_economy }
+	relative_position_id = Harding_USA_economy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_deal-with_strikers
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 6
+	y = 6
+	
+	#prerequisite = { focus = Harding_USA_economy }
+	relative_position_id = Harding_USA_economy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_tax_cuts
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_economy }
+	relative_position_id = Harding_USA_economy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_federal_highway_act_of_1921
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_economy }
+	relative_position_id = Harding_USA_economy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_dealing_with_laborers
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_economy }
+	relative_position_id = Harding_USA_economy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_propose_8_hour_workday
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_dealing_with_laborers }
+	relative_position_id = Harding_USA_dealing_with_laborers
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_dealing_with_unions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = Harding_USA_dealing_with_laborers }
+	relative_position_id = Harding_USA_dealing_with_laborers
 
 	available_if_capitulated = yes
 	
