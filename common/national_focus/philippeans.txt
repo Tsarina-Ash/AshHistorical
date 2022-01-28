@@ -1,0 +1,19 @@
+focus_tree = {
+    id = pilippeans_focus_tree
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = PHI
+        }
+
+        modifier = {
+            add = 10
+            original_tag = PHI
+        }
+    }
+    continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+}

@@ -761,11 +761,11 @@ guiTypes = {
 		#	position = { x = 415 y = 340 }
 		#	spriteType = "GFX_country_selection_clickcover_singleentry"		
 		#}
-		iconType = {
-			name = "countries_clickcover_pakt_1_10_entry"
-			position = { x = 465 y = 340 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"		
-		}
+		#iconType = {
+		#	name = "countries_clickcover_pakt_1_10_entry"
+		#	position = { x = 465 y = 340 }
+		#	spriteType = "GFX_country_selection_clickcover_singleentry"		
+		#}
 		#iconType = {
 		#	name = "countries_clickcover_pakt_1_11_entry"
 		#	position = { x = 515 y = 340 }
@@ -796,16 +796,16 @@ guiTypes = {
 			position = { x = 765 y = 340 }
 			spriteType = "GFX_country_selection_clickcover_singleentry"		
 		}
-		iconType = {
-			name = "countries_clickcover_pakt_1_17_entry"
-			position = { x = 815 y = 340 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"		
-		}
-		iconType = {
-			name = "countries_clickcover_pakt_1_18_entry"
-			position = { x = 865 y = 340 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"		
-		}
+		#iconType = {
+		#	name = "countries_clickcover_pakt_1_17_entry"
+		#	position = { x = 815 y = 340 }
+		#	spriteType = "GFX_country_selection_clickcover_singleentry"		
+		#}
+		#iconType = {
+		#	name = "countries_clickcover_pakt_1_18_entry"
+		#	position = { x = 865 y = 340 }
+		#	spriteType = "GFX_country_selection_clickcover_singleentry"		
+		#}
 		iconType = {
 			name = "countries_clickcover_pakt_1_19_entry"
 			position = { x = 915 y = 340 }
@@ -816,11 +816,11 @@ guiTypes = {
 			position = { x = 965 y = 340 }
 			spriteType = "GFX_country_selection_clickcover_singleentry"		
 		}
-		iconType = {
-			name = "countries_clickcover_pakt_1_21_entry"
-			position = { x = 1015 y = 340 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"		
-		}
+		#iconType = {
+		#	name = "countries_clickcover_pakt_1_21_entry"
+		#	position = { x = 1015 y = 340 }
+		#	spriteType = "GFX_country_selection_clickcover_singleentry"		
+		#}
 		iconType = {
 			name = "countries_clickcover_pakt_1_22_entry"
 			position = { x = 1065 y = 340 }
@@ -871,21 +871,21 @@ guiTypes = {
 			position = { x = 1515 y = 340 }
 			spriteType = "GFX_country_selection_clickcover_singleentry"		
 		}
-		iconType = {
-			name = "countries_clickcover_pakt_2_1_entry"
-			position = { x = 15 y = 380 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"		
-		}
-		iconType = {
-			name = "countries_clickcover_pakt_2_2_entry"
-			position = { x = 65 y = 380 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"		
-		}
-		iconType = {
-			name = "countries_clickcover_pakt_2_3_entry"
-			position = { x = 115 y = 380 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"		
-		}
+		#iconType = {
+		#	name = "countries_clickcover_pakt_2_1_entry"
+		#	position = { x = 15 y = 380 }
+		#	spriteType = "GFX_country_selection_clickcover_singleentry"		
+		#}
+		#iconType = {
+		#	name = "countries_clickcover_pakt_2_2_entry"
+		#	position = { x = 65 y = 380 }
+		#	spriteType = "GFX_country_selection_clickcover_singleentry"		
+		#}
+		#iconType = {
+		#	name = "countries_clickcover_pakt_2_3_entry"
+		#	position = { x = 115 y = 380 }
+		#	spriteType = "GFX_country_selection_clickcover_singleentry"		
+		#}
 		iconType = {
 			name = "countries_clickcover_pakt_2_4_entry"
 			position = { x = 165 y = 380 }
@@ -936,11 +936,11 @@ guiTypes = {
 		#	position = { x = 615 y = 380 }
 		#	spriteType = "GFX_country_selection_clickcover_singleentry"		
 		#}
-		iconType = {
-			name = "countries_clickcover_pakt_2_14_entry"
-			position = { x = 665 y = 380 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"		
-		}
+		#iconType = {
+		#	name = "countries_clickcover_pakt_2_14_entry"
+		#	position = { x = 665 y = 380 }
+		#	spriteType = "GFX_country_selection_clickcover_singleentry"		
+		#}
 		#iconType = {
 		#	name = "countries_clickcover_pakt_2_15_entry"
 		#	position = { x = 715 y = 380 }
