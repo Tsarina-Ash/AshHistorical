@@ -96,7 +96,7 @@ bookmarks = {
         }
 
         #minors
-        #Chilna Row 1
+        #China Row 1
         "MAN" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
@@ -140,7 +140,7 @@ bookmarks = {
         "ZZZ" = { minor = yes history = "" }
         #Buffer
         "ZZZ" = { minor = yes history = "" }
-        #US Row 1
+        #USA Row 1
         "BRA" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
@@ -152,7 +152,17 @@ bookmarks = {
                 
             }
         }
-        "ZZZ" = { minor = yes history = "" }
+        "PHI" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            minor = yes
+            ideas = {
+
+            }
+            focuses = {
+                
+            }
+        } 
         "MEX" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
@@ -204,13 +214,43 @@ bookmarks = {
         #Buffer
         "ZZZ" = { minor = yes history = "" }
         #Soviet Union row 1
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
+        "MON" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = communism
+            minor = yes
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+        "SIK" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = communism
+            minor = yes
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
         "ZZZ" = { minor = yes history = "" }
         #Buffer
         "ZZZ" = { minor = yes history = "" }
         #Germany row 1
-        "ZZZ" = { minor = yes history = "" }
+        "SWE" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            minor = yes
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
         "ZZZ" = { minor = yes history = "" }
         "ZZZ" = { minor = yes history = "" }
         #Buffer
@@ -228,9 +268,39 @@ bookmarks = {
         #Buffer
         # "ZZZ" = { minor = yes history = "" }
         #China row 2
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
+        "TIB" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = neutrality
+            minor = yes
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+        "MEN" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = neutrality
+            minor = yes
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+        "YUN" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = neutrality
+            minor = yes
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
         #Buffer
         "ZZZ" = { minor = yes history = "" }
         #France row 2
@@ -257,7 +327,19 @@ bookmarks = {
                 
             }
         } 
-        "ZZZ" = { minor = yes history = "" }
+
+        "MAL" = {
+            history = "BRA_ROARING_TWENTIES_DESC"
+            ideology = democratic
+            minor = yes
+            ideas = {
+
+            }
+            focuses = {
+
+            }
+        }
+
         "NZL" = {
             history = "BRA_ROARING_TWENTIES_DESC"
             ideology = democratic
@@ -269,211 +351,6 @@ bookmarks = {
 
             }
         }
-        
-        # "SIK" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }     
-
-        # "MEN" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }      
-        
-        # "YUN" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }  
-
-        # "TIB" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }      
-        
-        # "XSM" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }                    
-
-        # "SIA" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }      
-        
-
-        # "SWE" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }
-
-        # "SWI" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }   
-
-        # "MON" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }             
-
-        # "HUN" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }   
-
-        # "ROM" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }             
-        
-        # "FIN" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }   
-
-        # "NOR" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }  
-        
-        # "YUG" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }      
-        
-        # "BUL" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }                     
-        
-        # "SPR" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # }      
-        
-        # "POR" = {
-        #     history = "BRA_ROARING_TWENTIES_DESC"
-        #     ideology = democratic
-        #     minor = yes
-        #     ideas = {
-
-        #     }
-        #     focuses = {
-                
-        #     }
-        # } 
 
     }    
 }
