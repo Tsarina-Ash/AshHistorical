@@ -4,4 +4,19 @@
   #Ideas
   #Events
   #Decisions
+    BRA_political_influence:0 "Political Influence"
   #Other
+    BRA_political_influence_republican_name_text:0 "§2Republican Party§!"
+    BRA_political_influence_republican_influence_text:0 "§YInfluence: [?republican_influence]%§!"
+    BRA_political_influence_republican_popularity_text:0 "§YPopularity: [?republican_popularity]%§!"
+    BRA_political_influence_republican_corruption_text:0 "§YCorruption: [?republican_corruption]%§!"
+
+    BRA_political_influence_liberal_name_text:0 "§8Liberal Alliance§!"
+    BRA_political_influence_liberal_influence_text:0 "§YInfluence: [?liberal_influence]%§!"
+    BRA_political_influence_liberal_popularity_text:0 "§YPopularity: [?liberal_popularity]%§!"
+    BRA_political_influence_liberal_corruption_text:0 "§YCorruption: [?liberal_corruption]%§!"
+
+    BRA_political_influence_tenentist_name_text:0 "§3Tenentists§!"
+    BRA_political_influence_tenentist_influence_text:0 "§YInfluence: [?tenenist_influence]%§!"
+    BRA_political_influence_tenentist_popularity_text:0 "§YPopularity: [?tenenist_popularity]%§!"
+    BRA_political_influence_tenentist_corruption_text:0 "§YCorruption: [?tenenist_corruption]%§!"

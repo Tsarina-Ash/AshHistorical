@@ -1,0 +1,132 @@
+scripted_gui = {
+    BRA_political_influence_gui = {
+        window_name = "BRA_political_influence_gui_window"
+        context_type = decision_category
+        # parent_window_token = decision_tab
+
+        triggers = {
+            # BRA_political_influence_bg_visible = {
+            #     always = yes
+            # }
+            BRA_political_influence_placeholder1_visible = {
+                NOT = {
+                    has_variable = republican_influence
+                }
+            }
+            BRA_political_influence_placeholder2_visible = {
+                NOT = {
+                    has_variable = liberal_influence
+                }
+            }
+            BRA_political_influence_placeholder3_visible = {
+                NOT = {
+                    has_variable = tenenist_influence
+                }
+            }
+            BRA_political_influence_republican_name_visible = {
+                has_variable = republican_influence
+            }
+            # BRA_political_influence_republican_icon_visible = {
+            #     has_variable = republican_influence
+            # }
+            BRA_political_influence_republican_influence_visible = {
+                has_variable = republican_influence
+            }
+            BRA_political_influence_republican_popularity_visible = {
+                has_variable = republican_popularity
+            }
+            BRA_political_influence_republican_corruption_visible = {
+                has_variable = republican_corruption
+            }
+            BRA_political_influence_liberal_name_visible = {
+                has_variable = liberal_influence
+            }
+            # BRA_political_influence_liberal_icon_visible = {
+            #     has_variable = liberal_influence
+            # }
+            BRA_political_influence_liberal_influence_visible = {
+                has_variable = liberal_influence
+            }
+            BRA_political_influence_liberal_popularity_visible = {
+                has_variable = liberal_popularity
+            }
+            BRA_political_influence_liberal_corruption_visible = {
+                has_variable = liberal_corruption
+            }
+            BRA_political_influence_tenentist_name_visible = {
+                has_variable = tenenist_influence
+            }
+            # BRA_political_influence_tenentist_icon_visible = {
+            #     has_variable = tenenist_influence
+            # }
+            BRA_political_influence_tenentist_influence_visible = {
+                has_variable = tenenist_influence
+            }
+            BRA_political_influence_tenentist_popularity_visible = {
+                has_variable = tenenist_popularity
+            }
+            BRA_political_influence_tenentist_corruption_visible = {
+                has_variable = tenenist_corruption
+            }
+        }
+        properties = {
+            BRA_political_influence_bg = {
+                image = "GFX_political_influence_bg"
+            }
+            BRA_political_influence_placeholder1 = {
+                image = "GFX_placeholder_political_influence"
+            }
+            BRA_political_influence_placeholder2 = {
+                image = "GFX_placeholder_political_influence"
+            }
+            BRA_political_influence_placeholder3 = {
+                image = "GFX_placeholder_political_influence"
+            }
+            BRA_political_influence_republican_name = {
+
+            }
+            # BRA_political_influence_republican_icon = {
+            #     image = ""
+            # }
+            BRA_political_influence_republican_influence = {
+
+            }
+            BRA_political_influence_republican_popularity = {
+
+            }
+            BRA_political_influence_republican_corruption = {
+
+            }
+            BRA_political_influence_liberal_name = {
+
+            }
+            # BRA_political_influence_liberal_icon = {
+            #     image = ""
+            # }
+            BRA_political_influence_liberal_influence = {
+
+            }
+            BRA_political_influence_liberal_popularity = {
+
+            }
+            BRA_political_influence_liberal_corruption = {
+                
+            }
+            BRA_political_influence_tenentist_name = {
+
+            }
+            # BRA_political_influence_tenentist_icon = {
+            #     image = ""
+            # }
+            BRA_political_influence_tenentist_influence = {
+
+            }
+            BRA_political_influence_tenentist_popularity = {
+
+            }
+            BRA_political_influence_tenentist_corruption = {
+                
+            }
+        }
+    }
+}

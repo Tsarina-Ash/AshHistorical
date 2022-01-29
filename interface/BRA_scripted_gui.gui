@@ -1,0 +1,144 @@
+@republicanX = 58
+@liberalX = 180
+@tenentistX = 300
+
+@nameY = 10 
+@influenceY = 86
+@popularityY = 132
+@corruptionY = 180
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "BRA_political_influence_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 262 }
+
+		background = {
+			name = "BRA_political_influence_bg"
+			spriteType = "GFX_political_influence_bg"
+			position = { x = 50 y = 0 }
+		}
+
+		iconType = {
+			name = "BRA_political_influence_placeholder1"
+			spriteType = "GFX_placeholder_political_influence"
+			position = { x = 68 y = 12 }
+			scale = 0.75
+			rotation = 0.15
+		}
+		iconType = {
+			name = "BRA_political_influence_placeholder2"
+			spriteType = "GFX_placeholder_political_influence"
+			position = { x = 188 y = 12 }
+			scale = 0.75
+			rotation = 0.15
+		}
+		iconType = {
+			name = "BRA_political_influence_placeholder3"
+			spriteType = "GFX_placeholder_political_influence"
+			position = { x = 316 y = 12 }
+			scale = 0.75
+			rotation = 0.15
+		}
+
+		instantTextBoxType = {
+			name = "BRA_political_influence_republican_name"
+			position = { x = @republicanX y = @nameY }
+			font = "hoi_24header"
+			text = "BRA_political_influence_republican_name_text"
+			format = centre
+			maxWidth = 120
+		}
+		instantTextBoxType = {
+			name = "BRA_political_influence_republican_influence"
+			position = { x = @republicanX y = @influenceY }
+			font = "hoi4_typewriter16"
+			text = "BRA_political_influence_republican_influence_text"
+			format = centre
+			maxWidth = 120
+		}
+		instantTextBoxType = {
+			name = "BRA_political_influence_republican_popularity"
+			position = { x = @republicanX y = @popularityY }
+			font = "hoi4_typewriter16"
+			text = "BRA_political_influence_republican_popularity_text"
+			format = centre
+			maxWidth = 120
+		}
+		instantTextBoxType = {
+			name = "BRA_political_influence_republican_corruption"
+			position = { x = @republicanX y = @corruptionY }
+			font = "hoi4_typewriter16"
+			text = "BRA_political_influence_republican_corruption_text"
+			format = centre
+			maxWidth = 120
+		}
+
+		instantTextBoxType = {
+			name = "BRA_political_influence_liberal_name"
+			position = { x = @liberalX y = @nameY }
+			font = "hoi_24header"
+			text = "BRA_political_influence_liberal_name_text"
+			format = centre
+			maxWidth = 120
+		}
+		instantTextBoxType = {
+			name = "BRA_political_influence_liberal_influence"
+			position = { x = @liberalX y = @influenceY }
+			font = "hoi4_typewriter16"
+			text = "BRA_political_influence_liberal_influence_text"
+			format = centre
+			maxWidth = 120
+		}
+		instantTextBoxType = {
+			name = "BRA_political_influence_liberal_popularity"
+			position = { x = @liberalX y = @popularityY }
+			font = "hoi4_typewriter16"
+			text = "BRA_political_influence_liberal_popularity_text"
+			format = centre
+			maxWidth = 120
+		}
+		instantTextBoxType = {
+			name = "BRA_political_influence_liberal_corruption"
+			position = { x = @liberalX y = @corruptionY }
+			font = "hoi4_typewriter16"
+			text = "BRA_political_influence_liberal_corruption_text"
+			format = centre
+			maxWidth = 120
+		}
+
+		instantTextBoxType = {
+			name = "BRA_political_influence_tenentist_name"
+			position = { x = @tenentistX y = @nameY }
+			font = "hoi_24header"
+			text = "BRA_political_influence_tenentist_name_text"
+			format = centre
+			maxWidth = 120
+		}
+		instantTextBoxType = {
+			name = "BRA_political_influence_tenentist_influence"
+			position = { x = @tenentistX y = @influenceY }
+			font = "hoi4_typewriter16"
+			text = "BRA_political_influence_tenentist_influence_text"
+			format = centre
+			maxWidth = 120
+		}
+		instantTextBoxType = {
+			name = "BRA_political_influence_tenentist_popularity"
+			position = { x = @tenentistX y = @popularityY }
+			font = "hoi4_typewriter16"
+			text = "BRA_political_influence_tenentist_popularity_text"
+			format = centre
+			maxWidth = 120
+		}
+		instantTextBoxType = {
+			name = "BRA_political_influence_tenentist_corruption"
+			position = { x = @tenentistX y = @corruptionY }
+			font = "hoi4_typewriter16"
+			text = "BRA_political_influence_tenentist_corruption_text"
+			format = centre
+			maxWidth = 120
+		}
+	}
+}

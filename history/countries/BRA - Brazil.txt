@@ -6,6 +6,7 @@ oob = "BRA_1936"
 ### Set up Shit ###
 BRA_set_up_economic_power_struggle = yes
 BRA_set_up_centralization = yes
+BRA_set_up_republican_influence = yes
 
 # Starting tech
 set_technology = {

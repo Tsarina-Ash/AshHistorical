@@ -1,7 +1,7 @@
 BRA_political_influence = { #Tenentismo, Liberales, Republicans
     icon = GFX_
 
-    # scripted_gui = 
+    scripted_gui = BRA_political_influence_gui
 
     allowed = {
         original_tag = BRA
