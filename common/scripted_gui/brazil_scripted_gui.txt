@@ -1,0 +1,21 @@
+scripted_gui = {
+    BRA_political_influence_gui = {
+        window_name = BRA_political_influence_scripted_gui
+        context_type = decision_category
+        parent_window_token = decision_tab
+
+        visible = {
+            always = yes #?
+        }
+
+        effects = {
+            #No Effects Needed
+        }
+        triggers = {
+
+        }
+        properties = {
+            
+        }
+    }
+}
