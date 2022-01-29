@@ -4,3 +4,22 @@ BRA_set_up_economic_power_struggle = {
 BRA_set_up_centralization = {
 
 }
+BRA_set_up_republican_influence = {
+    custom_effect_tooltip = BRA_the_republicans_can_influence_our_country_now_tt
+    set_variable = { republican_influence = 80 }
+    set_variable = { republican_corruption = 60 }
+    set_variable = { republican_popularity = 40 }
+    # set_country_flag = BRA_republican_coronel_allegiance
+}
+BRA_set_up_tenentism_influence = {
+    custom_effect_tooltip = BRA_the_tenentists_can_influence_our_country_now_tt
+    set_variable = { tenenist_influence = 4 }
+    set_variable = { tenenist_corruption = 10 }
+    set_variable = { tenenist_popularity = 2 }
+}   
+BRA_set_up_liberal_influence = {
+    custom_effect_tooltip = BRA_the_liberals_can_influence_our_country_now_tt
+    set_variable = { liberal_influence = 40 }
+    set_variable = { liberal_corruption = 20 }
+    set_variable = { liberal_popularity = 50 }
+}

@@ -1,3 +1,18 @@
+BRA_political_influence = { #Tenentismo, Liberales, Republicans
+    icon = GFX_
+
+    # scripted_gui = 
+
+    allowed = {
+        original_tag = BRA
+    }
+    visible = {
+        #Should be always?
+        always = yes
+    }
+    visible_when_empty = yes
+    priority = 110
+}
 BRA_economic_power_struggle = { #industrialization vs coronels
     icon = GFX_
 
@@ -28,5 +43,5 @@ BRA_centralization = { #centralization
         }
     }
     visible_when_empty = yes
-    priority = 99
+    priority = 90
 }
