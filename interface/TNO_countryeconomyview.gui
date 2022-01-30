@@ -1313,55 +1313,55 @@ guiTypes = {
 						}
 
 						# # Policy Selection
-						containerWindowType = {
-							name = "centralBank_policyDisplay"
-							position = { x = 10 y = 73 }
-
-							iconType = {
-								name = "centralBank_policyDisplay_container"
-								spriteType = "GFX_cb_policy_container"
-								position = { x = 0 y = 0 }
-								pdx_tooltip = central_bank_policy_list_tooltip_loc
-							}
-
-							instantTextboxType = {
-								name = "centralBank_policyDisplay_text"
-								position = { x = 2 y = 2 }
-								font = "aldrich_18_outline"
-								text = central_bank_policy_name
-								maxWidth = 161
-								maxHeight = 24
-								format = center
-								vertical_alignment = center
-								pdx_tooltip = central_bank_policy_list_tooltip_loc
-							}
-
-							buttonType = {
-								name = "centralBank_policyDisplay_selector"
-								spriteType = "GFX_cb_policy_selectorarrow"
-								position = { x = 215 y = 6 }
-							}
-
-							iconType = {
-								name = "centralBank_policyDisplay_icon"
-								spriteType = "GFX_cb_policy_icon"
-								position = { x = 168 y = 1 }
-								pdx_tooltip = central_bank_policy_list_tooltip_loc
-							}
-
-							iconType = {
-								name = "centralBank_policyDisplay_lineTimer"
-								spriteType = "GFX_cb_policy_linetimer_progressbar"
-								position = { x = 168 y = 23 }
-								#frame = 65
-							}
-
-							iconType = {
-								name = "centralBank_policyDisplay_lineTimer_complete"
-								spriteType = "GFX_cb_policy_linetimer_complete"
-								position = { x = 168 y = 23 }
-							}
-						}
+						#containerWindowType = {
+						#	name = "centralBank_policyDisplay"
+						#	position = { x = 10 y = 73 }
+#
+						#	iconType = {
+						#		name = "centralBank_policyDisplay_container"
+						#		spriteType = "GFX_cb_policy_container"
+						#		position = { x = 0 y = 0 }
+						#		pdx_tooltip = central_bank_policy_list_tooltip_loc
+						#	}
+#
+						#	instantTextboxType = {
+						#		name = "centralBank_policyDisplay_text"
+						#		position = { x = 2 y = 2 }
+						#		font = "aldrich_18_outline"
+						#		text = central_bank_policy_name
+						#		maxWidth = 161
+						#		maxHeight = 24
+						#		format = center
+						#		vertical_alignment = center
+						#		pdx_tooltip = central_bank_policy_list_tooltip_loc
+						#	}
+#
+						#	buttonType = {
+						#		name = "centralBank_policyDisplay_selector"
+						#		spriteType = "GFX_cb_policy_selectorarrow"
+						#		position = { x = 215 y = 6 }
+						#	}
+#
+						#	iconType = {
+						#		name = "centralBank_policyDisplay_icon"
+						#		spriteType = "GFX_cb_policy_icon"
+						#		position = { x = 168 y = 1 }
+						#		pdx_tooltip = central_bank_policy_list_tooltip_loc
+						#	}
+#
+						#	iconType = {
+						#		name = "centralBank_policyDisplay_lineTimer"
+						#		spriteType = "GFX_cb_policy_linetimer_progressbar"
+						#		position = { x = 168 y = 23 }
+						#		#frame = 65
+						#	}
+#
+						#	iconType = {
+						#		name = "centralBank_policyDisplay_lineTimer_complete"
+						#		spriteType = "GFX_cb_policy_linetimer_complete"
+						#		position = { x = 168 y = 23 }
+						#	}
+						#}
 					}
 				}
 
@@ -7793,20 +7793,20 @@ guiTypes = {
 
 	# # Arrows 
 
-	containerWindowType = {
-		name = "TNO_SG_econ_help_arrows"
-		position = { x = 573 y = 0 }
-		
-		buttonType = {
-			name = "transparent_block"
-			spritetype = "GFX_tno_return_to_diplo_ui_block"
-		}
-		iconType = {
-			name = "arrows"
-			spritetype = "GFX_gui_alert"
-			alwaystransparent = yes
-			scale = 0.5
-			position = { x = 3 y = -17 }
-		}
-	}
+	#containerWindowType = {
+	#	name = "TNO_SG_econ_help_arrows"
+	#	position = { x = 573 y = 0 }
+	#	
+	#	buttonType = {
+	#		name = "transparent_block"
+	#		spritetype = "GFX_tno_return_to_diplo_ui_block"
+	#	}
+	#	iconType = {
+	#		name = "arrows"
+	#		spritetype = "GFX_gui_alert"
+	#		alwaystransparent = yes
+	#		scale = 0.5
+	#		position = { x = 3 y = -17 }
+	#	}
+	#}
 }
