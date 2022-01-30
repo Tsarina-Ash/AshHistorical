@@ -707,7 +707,7 @@ focus = {
 
 	cost = 4
 
-	x = 3
+	x = 4
 	y = 1
 	
 	prerequisite = { focus = Harding_USA_hot_potato }
@@ -821,7 +821,7 @@ focus = {
 
 	cost = 4
 
-	x = 1
+	x = -1
 	y = 1
 	
 	prerequisite = { focus = Harding_USA_dealing_with_laborers }

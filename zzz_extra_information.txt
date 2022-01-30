@@ -32,6 +32,26 @@ France
 
 Germany
 
+Ireland
+
+(1920-1930) Red Terror
+
+Complete focus trees for:
+
+Soviet Union
+
+Finland
+
+Poland
+
+(1920-1930) The Medditeranean Fizzle
+
+Portugal
+
+Spain
+
+Italy
+
 (1920-1930) Crashing Balkans
 
 Complete focus trees for:
@@ -40,9 +60,9 @@ Yugoslavia
 
 Romania
 
-Hungary
+Czechlovakia
 
-Italy
+Hungary
 
 (1920-1930) Roaring Tigers
 
@@ -59,6 +79,10 @@ Guanxi
 Manchukuo
 
 Xibei San Ma
+
+Sinkiang
+
+Mongolia
 
 (1920-1930) East India Co.
 
@@ -88,21 +112,11 @@ Ethiopia
 
 Iraq
 
+Iran
+
 Saudi Arabia
 
 Congo
-
-(1920-1930) Red Terror
-
-Complete focus trees for:
-
-Soviet Union
-
-Iran
-
-Sinkiang
-
-Mongolia
 
 (1920-1930) Exhausted World
 
@@ -111,8 +125,6 @@ Complete focus trees for:
 Norway
 
 Sweden
-
-Finland
 
 Switzerland
 
