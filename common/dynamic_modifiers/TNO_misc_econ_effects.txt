@@ -1,0 +1,48 @@
+BRG_infra_24_misc_income = {
+	misc_income_modifier = BRG.BRG_oil_price_norway
+}
+FEN_SLP_Econ_profits_from_trade_misc_income = {
+	misc_income_modifier = money_stuff
+}
+GLD_union_107_misc_income = {
+	misc_income_modifier = GLD_union_busting_expenses
+}
+GLD_union_18_misc_costs = {
+	misc_costs_modifier = GLD_union_busting_expenses
+}
+GLD68_end_the_program_misc_income = {
+	misc_income_modifier = GLD_union_busting_expenses
+}
+USA_2000_misc_costs = {
+	misc_costs_modifier = gdp_temp
+}
+USA_LBJ_expand_medicare_coverage_misc_costs = {
+	misc_costs_modifier = costs
+}
+USA_LBJ_expand_medicare_coverage_2_misc_costs = {
+	misc_costs_modifier = costs
+}
+USA_LBJ_medicare_spot_checks_misc_costs = {
+	misc_costs_modifier = costs
+}
+USA_gld_68_skin_the_budget_misc_income = {
+	misc_income_modifier = gdp_temp
+}
+USA_sen_bill_1030_misc_income = {
+	misc_income_modifier = gdp_temp
+}
+WFB_51_misc_income = {
+	misc_income_modifier = money_stuff
+}
+
+tax_hike_dynmod = {
+	sales_tax_rate_modifier = tax_hike_value_sales
+	business_tax_rate_modifier = tax_hike_value_business
+	income_tax_rate_modifier_factor = tax_hike_value_income
+}
+
+tax_cut_dynmod = {
+	sales_tax_rate_modifier = tax_cut_value_sales
+	business_tax_rate_modifier = tax_cut_value_business
+	income_tax_rate_modifier_factor = tax_cut_value_income
+}
