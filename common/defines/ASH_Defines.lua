@@ -30,5 +30,7 @@ NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0 --score modifier that shows at end o
 NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
+---ReducedPopulationGrowth
+POPULATION_YEARLY_GROWTH_BASE, 0.01
 ---MinorBalanceChanges
 NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 1.25 --1 Politcal power gain when not doing a focus (prevents poltical power bloat)
