@@ -593,7 +593,7 @@ focus = {
 	cost = 1
 
 	x = 0
-	y = 3
+	y = 4
 	
 	prerequisite = { focus = Harding_USA_return_to_normalcy }
 	relative_position_id = Harding_USA_return_to_normalcy
@@ -726,8 +726,8 @@ focus = {
 
 	cost = 4
 
-	x = 0
-	y = 6
+	x = -1
+	y = 3
 	
 	#prerequisite = { focus = Harding_USA_economy }
 	relative_position_id = Harding_USA_economy
@@ -740,16 +740,16 @@ focus = {
 }
 
 focus = {
-	id = Harding_USA_deal-with_strikers
+	id = Harding_USA_deal_with_strikers
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = 6
-	y = 6
+	x = 2
+	y = 0
 	
 	#prerequisite = { focus = Harding_USA_economy }
-	relative_position_id = Harding_USA_economy
+	relative_position_id = Harding_USA_talk_with_indsutry_leaders
 
 	available_if_capitulated = yes
 	
@@ -802,11 +802,11 @@ focus = {
 
 	cost = 4
 
-	x = 3
+	x = 1
 	y = 1
 	
-	prerequisite = { focus = Harding_USA_economy }
-	relative_position_id = Harding_USA_economy
+	prerequisite = { focus = Harding_USA_talk_with_indsutry_leaders focus = Harding_USA_deal_with_strikers }
+	relative_position_id = Harding_USA_talk_with_indsutry_leaders
 
 	available_if_capitulated = yes
 	
@@ -847,6 +847,132 @@ focus = {
 	relative_position_id = Harding_USA_dealing_with_laborers
 
 	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#COOLIDGE PRESIDENCY#
+
+focus = {
+	id = Coolidge_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 80
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#COOLIDGE EX-VICE-PRESIDENT PRESIDENCY#
+
+focus = {
+	id = Coolidge_USA_EXVICE_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 90
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#SHERMAN PRESIDENCY#
+
+focus = {
+	id = Sherman_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 100
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#EARLY FDR PRESIDENCY#
+
+focus = {
+	id = EARLY_FDR_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 110
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#EARLY HOOVER PRESIDENCY#
+
+focus = {
+	id = EARLY_HOOVER_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 120
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#EARLY HOOVER PRESIDENCY#
+
+focus = {
+	id = JAMES_COX_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 130
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#EXTRA WILSON PPATH ?#
+
+focus = {
+	id = EXTRA_WILSON_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 140
+	y = 0
+	
+	available_if_capitulated =  no
 	
 	completion_reward = {
 		add_political_power = 50
