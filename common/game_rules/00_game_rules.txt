@@ -389,7 +389,6 @@ NZL_ai_behavior = {
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 	}
-	option = {
 }
 RAJ_ai_behavior = {
 	name = "RAJ_AI_BEHAVIOR"
