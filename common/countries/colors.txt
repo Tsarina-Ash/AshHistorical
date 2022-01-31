@@ -817,7 +817,7 @@ CHU = {
 	color_ui = rgb { 134 89 45 }
 }
 
-#Added
+#Custom Countries
 ZZZ = {
 	color = rgb { 50 50 50 }
 	color_ui = rgb { 50 50 50 }
