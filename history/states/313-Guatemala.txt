@@ -13,10 +13,6 @@ state={
 			arms_factory = 1
 			industrial_complex = 2
 			air_base = 1
-			10886 = {
-				naval_base = 1
-
-			}
 			13085 = {
 				naval_base = 1
 
@@ -24,9 +20,6 @@ state={
 
 		}
 		add_core_of = GUA
-		victory_points = {
-			10886 3 
-		}
 
 	}
 

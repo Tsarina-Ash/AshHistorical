@@ -1,22 +1,31 @@
-state = {
-	id = 644
-	name = "STATE_644"
 
-	history = {
-		owner = ZZZ
+state={
+	id=644
+	name="STATE_644"
+
+	history={
+		owner = ITA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
+			dockyard = 2
+			6788 = {
+				naval_base = 8
+
+			}
 		}
-		add_core_of = SOV
+		add_core_of = ITA
+
+		victory_points = {
+			6780 5 
+		}
 
 	}
 
-	provinces = {
-		1722 1745 1819 2853 2877 3184 4006 4229 4455 4878 6085 6211 12549 12592 12634 13060 13061
+	provinces={
+		3772 6788 11891 
 	}
-	manpower = 34182
-	buildings_max_level_factor = 1
-	state_category = "wasteland"
-
-	local_supplies = 0.0 
+	manpower=34182
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

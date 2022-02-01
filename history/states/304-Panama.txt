@@ -13,10 +13,6 @@ state={
 			arms_factory = 1
 			industrial_complex = 2
 			air_base = 1
-			7630 = {
-				naval_base = 4
-
-			}
 			4611 = {
 				naval_base = 1
 
@@ -24,9 +20,6 @@ state={
 
 		}
 		add_core_of = PAN
-		victory_points = {
-			7630 5 
-		}
 		victory_points = {
 			4611 1 
 		}
