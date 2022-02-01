@@ -6,7 +6,7 @@ state={
 	
 	state_category = town
 	resources={
-		steel=25 # was: 40
+		steel=25
 	}
 
 	history={
@@ -19,12 +19,6 @@ state={
 			6338 10
 		}
 		add_core_of = SOV
-		add_core_of = TAT
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 2
-			}
-		}
 	}
 
 	provinces={
