@@ -17,15 +17,10 @@ state = {
 		}
 		add_core_of = SOV
 		add_core_of = UKR
-
-		POL = {
-			set_province_controller = 476
-			set_province_controller = 6455
-		}
 	}
 
 	provinces = {
-		476 6455 6480 9423 9435 9481 
+		6480 9423 9435 9481 
 	}
 
 	local_supplies = 0.0 
