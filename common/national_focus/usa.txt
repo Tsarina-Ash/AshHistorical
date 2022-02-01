@@ -593,7 +593,7 @@ focus = {
 	cost = 1
 
 	x = 0
-	y = 4
+	y = 3
 	
 	prerequisite = { focus = Harding_USA_return_to_normalcy }
 	relative_position_id = Harding_USA_return_to_normalcy
@@ -872,6 +872,25 @@ focus = {
 	}
 }
 
+focus = {
+	id = Harding_USA_stay_cool_with_coolidge
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_innaugaration_speech }
+	relative_position_id = Coolidge_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
 #TEAPOT_SCANDAL#
 
 focus = {
@@ -988,6 +1007,25 @@ focus = {
 }
 
 focus = {
+	id = USA_TEAPOT_SCANDAL_turn_it_into_anti_communist_propoganda
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials }
+	relative_position_id = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
 	id = USA_TEAPOT_SCANDAL_cover_it_up
 	icon = GFX_focus_USA_placeholder
 
@@ -999,25 +1037,6 @@ focus = {
 	mutually_exclusive = { focus = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials }
 	prerequisite = { focus = USA_TEAPOT_SCANDAL }
 	relative_position_id = USA_TEAPOT_SCANDAL
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = USA_TEAPOT_SCANDAL_turn_it_into_anti_communist_propoganda
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = USA_TEAPOT_SCANDAL_cover_it_up }
-	relative_position_id = USA_TEAPOT_SCANDAL_cover_it_up
 
 	available_if_capitulated = yes
 	
@@ -1069,7 +1088,7 @@ focus = {
 
 	cost = 4
 
-	x = 0
+	x = -1
 	y = 1
 	
 	prerequisite = { focus = Coolidge_USA_adress_the_nation }
@@ -1088,8 +1107,8 @@ focus = {
 
 	cost = 4
 
-	x = -2
-	y = 1
+	x = -1
+	y = 2
 	
 	prerequisite = { focus = Coolidge_USA_adress_the_nation }
 	relative_position_id = Coolidge_USA_adress_the_nation
@@ -1107,7 +1126,7 @@ focus = {
 
 	cost = 4
 
-	x = 2
+	x = 1
 	y = 1
 	
 	prerequisite = { focus = Coolidge_USA_adress_the_nation }
