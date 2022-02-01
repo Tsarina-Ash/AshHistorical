@@ -805,7 +805,8 @@ focus = {
 	x = 1
 	y = 1
 	
-	prerequisite = { focus = Harding_USA_talk_with_indsutry_leaders focus = Harding_USA_deal_with_strikers }
+	prerequisite = { focus = Harding_USA_talk_with_indsutry_leaders }
+	prerequisite = { focus  = Harding_USA_deal_with_strikers }
 	relative_position_id = Harding_USA_talk_with_indsutry_leaders
 
 	available_if_capitulated = yes
@@ -861,6 +862,178 @@ focus = {
 
 	cost = 1
 
+	x = 90
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#TEAPOT_SCANDAL#
+
+focus = {
+	id = USA_GREAT_RAILROAD_STRIKE_OF_1922
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 74
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = USA_GREAT_RAILROAD_STRIKE_assess_situation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = USA_GREAT_RAILROAD_STRIKE_OF_1922 }
+	relative_position_id = USA_GREAT_RAILROAD_STRIKE_OF_1922
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = USA_GREAT_RAILROAD_STRIKE_send_army
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	mutually_exclusive = { focus = USA_GREAT_RAILROAD_STRIKE_propose_compromise }
+	prerequisite = { focus = USA_GREAT_RAILROAD_STRIKE_assess_situation }
+	relative_position_id = USA_GREAT_RAILROAD_STRIKE_assess_situation
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = USA_GREAT_RAILROAD_STRIKE_propose_compromise
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+
+	mutually_exclusive = { focus = USA_GREAT_RAILROAD_STRIKE_send_army }
+	prerequisite = { focus = USA_GREAT_RAILROAD_STRIKE_assess_situation }
+	relative_position_id = USA_GREAT_RAILROAD_STRIKE_assess_situation
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#TEAPOT_SCANDAL#
+
+focus = {
+	id = USA_TEAPOT_SCANDAL
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 77
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	mutually_exclusive = { focus = USA_TEAPOT_SCANDAL_cover_it_up }
+	prerequisite = { focus = USA_TEAPOT_SCANDAL }
+	relative_position_id = USA_TEAPOT_SCANDAL
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = USA_TEAPOT_SCANDAL_cover_it_up
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+
+	mutually_exclusive = { focus = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials }
+	prerequisite = { focus = USA_TEAPOT_SCANDAL }
+	relative_position_id = USA_TEAPOT_SCANDAL
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = USA_TEAPOT_SCANDAL_turn_it_into_anti_communist_propoganda
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = USA_TEAPOT_SCANDAL_cover_it_up }
+	relative_position_id = USA_TEAPOT_SCANDAL_cover_it_up
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#COOLIDGE EX-VICE-PRESIDENT PRESIDENCY#
+
+focus = {
+	id = Coolidge_USA_EXVICE_private_innaugaration
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
 	x = 80
 	y = 0
 	
@@ -871,18 +1044,156 @@ focus = {
 	}
 }
 
-#COOLIDGE EX-VICE-PRESIDENT PRESIDENCY#
-
 focus = {
-	id = Coolidge_USA_EXVICE_innaugaration_speech
+	id = Coolidge_USA_adress_the_nation
 	icon = GFX_focus_USA_placeholder
 
-	cost = 1
+	cost = 4
 
-	x = 90
-	y = 0
+	x = 0
+	y = 2
 	
-	available_if_capitulated =  no
+	prerequisite = { focus = Coolidge_USA_EXVICE_private_innaugaration }
+	relative_position_id = Coolidge_USA_EXVICE_private_innaugaration
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_bonus_bill
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_adress_the_nation }
+	relative_position_id = Coolidge_USA_adress_the_nation
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_washington_naval_treaty
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_adress_the_nation }
+	relative_position_id = Coolidge_USA_adress_the_nation
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_deal_with_pennsylvanian_strikers
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_adress_the_nation }
+	relative_position_id = Coolidge_USA_adress_the_nation
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_false_help_pennsylvanian_strikers
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	mutually_exclusive = { focus = Coolidge_USA_suppress_pennsylvanian_strikers }
+	prerequisite = { focus = Coolidge_USA_deal_with_pennsylvanian_strikers }
+	relative_position_id = Coolidge_USA_deal_with_pennsylvanian_strikers
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_suppress_pennsylvanian_strikers
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	mutually_exclusive = { focus = Coolidge_USA_false_help_pennsylvanian_strikers }
+	prerequisite = { focus = Coolidge_USA_deal_with_pennsylvanian_strikers }
+	relative_position_id = Coolidge_USA_deal_with_pennsylvanian_strikers
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_take_control_of_mines
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	mutually_exclusive = { focus = Coolidge_USA_buisness_as_usual }
+	prerequisite = { focus = Coolidge_USA_suppress_pennsylvanian_strikers }
+	relative_position_id = Coolidge_USA_suppress_pennsylvanian_strikers
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_buisness_as_usual
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	mutually_exclusive = { focus = Coolidge_USA_take_control_of_mines }
+	prerequisite = { focus = Coolidge_USA_suppress_pennsylvanian_strikers }
+	relative_position_id = Coolidge_USA_suppress_pennsylvanian_strikers
+
+	available_if_capitulated = yes
 	
 	completion_reward = {
 		add_political_power = 50
