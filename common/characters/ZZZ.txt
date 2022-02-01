@@ -1,0 +1,15 @@
+characters = {
+	ZZZ_anarchy = {
+		name = ZZZ_anarchy
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZZZ_anarchy
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1969.3.1.1"
+			id = -1
+		}
+	}
+}
