@@ -98,7 +98,7 @@ bookmarks = {
         #minors
         #China Row 1
         "MAN" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = democratic
             minor = yes
             ideas = {
@@ -110,7 +110,7 @@ bookmarks = {
         }      
         
         "GXC" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = democratic
             minor = yes
             ideas = {
@@ -122,7 +122,7 @@ bookmarks = {
         } 
 
         "SHX" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = democratic
             minor = yes
             ideas = {
@@ -142,7 +142,7 @@ bookmarks = {
         "ZZZ" = { minor = yes history = "" }
         #USA Row 1
         "BRA" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = democratic
             minor = yes
             ideas = {
@@ -153,7 +153,7 @@ bookmarks = {
             }
         }
         "PHI" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = democratic
             minor = yes
             ideas = {
@@ -164,7 +164,7 @@ bookmarks = {
             }
         } 
         "MEX" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = democratic
             minor = yes
             ideas = {
@@ -178,7 +178,7 @@ bookmarks = {
         "ZZZ" = { minor = yes history = "" }
         #UK Row 1
         "RAJ" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = democratic
             minor = yes
             ideas = {
@@ -189,7 +189,7 @@ bookmarks = {
             }
         }  
         "SAF" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = democratic
             minor = yes
             ideas = {
@@ -201,7 +201,7 @@ bookmarks = {
         }   
 
         "CAN" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = democratic
             minor = yes
             ideas = {
@@ -215,7 +215,7 @@ bookmarks = {
         "ZZZ" = { minor = yes history = "" }
         #Soviet Union row 1
         "MON" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = communism
             minor = yes
             ideas = {
@@ -226,7 +226,7 @@ bookmarks = {
             }
         }
         "SIK" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = communism
             minor = yes
             ideas = {
@@ -241,7 +241,7 @@ bookmarks = {
         "ZZZ" = { minor = yes history = "" }
         #Germany row 1
         "SWE" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = democratic
             minor = yes
             ideas = {
@@ -269,7 +269,7 @@ bookmarks = {
         # "ZZZ" = { minor = yes history = "" }
         #China row 2
         "TIB" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = neutrality
             minor = yes
             ideas = {
@@ -280,7 +280,7 @@ bookmarks = {
             }
         }
         "MEN" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = neutrality
             minor = yes
             ideas = {
@@ -291,7 +291,7 @@ bookmarks = {
             }
         }
         "YUN" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = neutrality
             minor = yes
             ideas = {
@@ -317,7 +317,7 @@ bookmarks = {
         "ZZZ" = { minor = yes history = "" }
         #UK row 2
         "AST" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = democratic
             minor = yes
             ideas = {
@@ -329,7 +329,7 @@ bookmarks = {
         } 
 
         "MAL" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = democratic
             minor = yes
             ideas = {
@@ -341,7 +341,7 @@ bookmarks = {
         }
 
         "NZL" = {
-            history = "BRA_ROARING_TWENTIES_DESC"
+            history = "ROARING_TWENTIES_DESC"
             ideology = democratic
             minor = yes
             ideas = {
