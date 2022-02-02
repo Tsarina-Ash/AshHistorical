@@ -617,7 +617,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
-			text = "FE_SELECT_COUNTRY"
+			text = "ROARING_TWENTIES_NAME"
 			maxWidth = 340
 			maxHeight = 30	
 			format = centre
