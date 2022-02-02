@@ -154,7 +154,6 @@ ideas = {
 			picture = generic_intel_bonus
 			
 			modifier = {
-				#justify_war_goal_time = -0.25
 				communism_drift = 0.1
 			}
 		}
@@ -492,6 +491,7 @@ ideas = {
 
 			modifier = {
 				democratic_drift = -0.02
+				neutrality_drift = -0.01
 			}
 		}
 	
@@ -531,8 +531,7 @@ ideas = {
 			picture = generic_manpower_bonus
 	
 			modifier = {
-				conscription = 0.05
-				resistance_damage_to_garrison = -0.1 
+				conscription = 0.02
 			}
 		}
 	
@@ -625,7 +624,6 @@ ideas = {
 			}
 	
 			modifier = {
-				war_support_factor = 0.05
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
 			}
@@ -669,12 +667,10 @@ ideas = {
 			removal_cost = -1
 	
 			modifier = {
-				#generate_wargoal_tension = 1.00
 				join_faction_tension = 1.00
-				#lend_lease_tension = 0.50
 				send_volunteers_tension = 0.20
 				guarantee_tension = 1.0
-				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
+				ai_badass_factor = 0.01
 				ai_get_ally_desire_factor = -100
 			}
 		}
@@ -698,7 +694,6 @@ ideas = {
 				production_speed_bunker_factor = 0.2
 				production_speed_coastal_bunker_factor = 0.2
 				production_speed_anti_air_building_factor = 0.2
-				production_speed_arms_factory_factor = 0.2
 			}
 		}
 
