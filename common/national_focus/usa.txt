@@ -121,7 +121,7 @@ focus = {
 
 	cost = 4
 
-	x = 0
+	x = 1
 	y = 1
 	
 	prerequisite = { focus = WILSON_USA_begin_demobilization }
@@ -311,7 +311,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = WILSON_USA_end_palmer_raids }
 	relative_position_id = WILSON_USA_end_palmer_raids
@@ -332,7 +332,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = WILSON_USA_expand_agency_budget }
 	relative_position_id = WILSON_USA_expand_agency_budget
@@ -354,7 +354,7 @@ focus = {
 
 	cost = 4
 
-	x = 6
+	x = 7
 	y = 1
 	
 	prerequisite = { focus = WILSON_USA_ill_presidency }
@@ -1107,7 +1107,7 @@ focus = {
 
 	cost = 4
 
-	x = -1
+	x = -2
 	y = 2
 	
 	prerequisite = { focus = Coolidge_USA_adress_the_nation }
@@ -1694,7 +1694,7 @@ focus = {
 
 	cost = 4
 
-	x = -12
+	x = -13
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_first_new_deal }
@@ -1904,7 +1904,7 @@ focus = {
 
 	cost = 4
 
-	x = -6
+	x = -7
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_recovery }
@@ -1980,7 +1980,7 @@ focus = {
 
 	cost = 4
 
-	x = -1
+	x = 0
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_civilian_coservation_corps }
@@ -1999,7 +1999,7 @@ focus = {
 
 	cost = 4
 
-	x = -1
+	x = -2
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_aquire_federal_funding }
@@ -2038,8 +2038,8 @@ focus = {
 
 	cost = 4
 
-	x = 2
-	y = 1
+	x = 1
+	y = 2
 	
 	prerequisite = { focus = FDR_USA_aquire_federal_funding }
 	relative_position_id = FDR_USA_aquire_federal_funding
@@ -2057,7 +2057,7 @@ focus = {
 
 	cost = 4
 
-	x = 1
+	x = 0
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_aquire_federal_funding }
@@ -2077,7 +2077,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = FDR_USA_soil_erosion_control }
 	relative_position_id = FDR_USA_soil_erosion_control
@@ -2387,7 +2387,7 @@ focus = {
 	cost = 4
 
 	x = 1
-	y = 2
+	y = 1
 	
 	prerequisite = { focus = FDR_USA_AAA_compromise focus = FDR_USA_AAA_push_through }
 	prerequisite = { focus = FDR_USA_AAA_southern_democrats }
@@ -2426,7 +2426,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = FDR_USA_AAA_push_through }
 	relative_position_id = FDR_USA_AAA_push_through
