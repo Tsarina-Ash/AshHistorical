@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_portrait_ZZZ_anarchy"
+        texturefile = "gfx/leaders/ZZZ/GFX_portrait_ZZZ_anarchy.dds"
+    }
+}
