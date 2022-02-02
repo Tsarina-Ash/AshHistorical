@@ -117,25 +117,6 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-		
-		containerWindowType = {
-			name = "ruling_party_info"
-			position = { x = 88 y = 305 }
-			size = { width = 255 height = 60 }
-			clipping = no
-			
-			instantTextboxType = {
-				name = "faction_name"
-				position = { x = 105 y = -25 }
-				font = "hoi_18mbs"
-				text = "faction"
-				maxWidth = 195
-				maxHeight = 20
-				multiline = no
-				format = left
-			}		
-			
-		}
 						
 		containerWindowType = {
 			name = "autonomy_progress_view"
