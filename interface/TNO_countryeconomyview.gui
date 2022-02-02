@@ -7790,23 +7790,4 @@ guiTypes = {
 			text = "econ_help_x_d" 
 		}
 	}
-
-	# # Arrows 
-
-	#containerWindowType = {
-	#	name = "TNO_SG_econ_help_arrows"
-	#	position = { x = 573 y = 0 }
-	#	
-	#	buttonType = {
-	#		name = "transparent_block"
-	#		spritetype = "GFX_tno_return_to_diplo_ui_block"
-	#	}
-	#	iconType = {
-	#		name = "arrows"
-	#		spritetype = "GFX_gui_alert"
-	#		alwaystransparent = yes
-	#		scale = 0.5
-	#		position = { x = 3 y = -17 }
-	#	}
-	#}
 }
