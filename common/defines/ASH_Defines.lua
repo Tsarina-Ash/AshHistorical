@@ -1,16 +1,9 @@
----https://hoi4.paradoxwikis.com/Defines#NProduction---
-
 ---Game Start & End Date
 NDefines.NGame.START_DATE = "1920.1.1.1"
 NDefines.NGame.END_DATE = "1970.12.31.1"
 ---IndustryModifiers
 NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 20 --higher amount of civs allocated per building
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 0.5 --lower based starting production
-NDefines.BASE_FACTORY_MAX_EFFICIENCY_FACTOR = 15
-NDefines.BASE_FACTORY_START_EFFICIENCY_FACTOR = 5
-NDefines.BASE_FACTORY_SPEED_NAV = 3 ---IC a dockyard gives
-NDefines.MAX_BUILDING_LEVELS = 50 ---max building level
-NDefines.MAX_SHARED_SLOTS = 50 ---max building slots
 ---BegoneClouds
 NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0;  --removes fog
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0;  --removes fog
