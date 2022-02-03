@@ -1313,55 +1313,55 @@ guiTypes = {
 						}
 
 						# # Policy Selection
-						#containerWindowType = {
-						#	name = "centralBank_policyDisplay"
-						#	position = { x = 10 y = 73 }
-#
-						#	iconType = {
-						#		name = "centralBank_policyDisplay_container"
-						#		spriteType = "GFX_cb_policy_container"
-						#		position = { x = 0 y = 0 }
-						#		pdx_tooltip = central_bank_policy_list_tooltip_loc
-						#	}
-#
-						#	instantTextboxType = {
-						#		name = "centralBank_policyDisplay_text"
-						#		position = { x = 2 y = 2 }
-						#		font = "aldrich_18_outline"
-						#		text = central_bank_policy_name
-						#		maxWidth = 161
-						#		maxHeight = 24
-						#		format = center
-						#		vertical_alignment = center
-						#		pdx_tooltip = central_bank_policy_list_tooltip_loc
-						#	}
-#
-						#	buttonType = {
-						#		name = "centralBank_policyDisplay_selector"
-						#		spriteType = "GFX_cb_policy_selectorarrow"
-						#		position = { x = 215 y = 6 }
-						#	}
-#
-						#	iconType = {
-						#		name = "centralBank_policyDisplay_icon"
-						#		spriteType = "GFX_cb_policy_icon"
-						#		position = { x = 168 y = 1 }
-						#		pdx_tooltip = central_bank_policy_list_tooltip_loc
-						#	}
-#
-						#	iconType = {
-						#		name = "centralBank_policyDisplay_lineTimer"
-						#		spriteType = "GFX_cb_policy_linetimer_progressbar"
-						#		position = { x = 168 y = 23 }
-						#		#frame = 65
-						#	}
-#
-						#	iconType = {
-						#		name = "centralBank_policyDisplay_lineTimer_complete"
-						#		spriteType = "GFX_cb_policy_linetimer_complete"
-						#		position = { x = 168 y = 23 }
-						#	}
-						#}
+						containerWindowType = {
+							name = "centralBank_policyDisplay"
+							position = { x = 10 y = 73 }
+
+							iconType = {
+								name = "centralBank_policyDisplay_container"
+								spriteType = "GFX_cb_policy_container"
+								position = { x = 0 y = 0 }
+								pdx_tooltip = central_bank_policy_list_tooltip_loc
+							}
+
+							instantTextboxType = {
+								name = "centralBank_policyDisplay_text"
+								position = { x = 2 y = 2 }
+								font = "aldrich_18_outline"
+								text = central_bank_policy_name
+								maxWidth = 161
+								maxHeight = 24
+								format = center
+								vertical_alignment = center
+								pdx_tooltip = central_bank_policy_list_tooltip_loc
+							}
+
+							buttonType = {
+								name = "centralBank_policyDisplay_selector"
+								spriteType = "GFX_cb_policy_selectorarrow"
+								position = { x = 215 y = 6 }
+							}
+
+							iconType = {
+								name = "centralBank_policyDisplay_icon"
+								spriteType = "GFX_cb_policy_icon"
+								position = { x = 168 y = 1 }
+								pdx_tooltip = central_bank_policy_list_tooltip_loc
+							}
+
+							iconType = {
+								name = "centralBank_policyDisplay_lineTimer"
+								spriteType = "GFX_cb_policy_linetimer_progressbar"
+								position = { x = 168 y = 23 }
+								#frame = 65
+							}
+
+							iconType = {
+								name = "centralBank_policyDisplay_lineTimer_complete"
+								spriteType = "GFX_cb_policy_linetimer_complete"
+								position = { x = 168 y = 23 }
+							}
+						}
 					}
 				}
 
@@ -5631,26 +5631,26 @@ guiTypes = {
 		}
 	}
 
-	containerWindowType = {
-		name = "production_units_toggle_button_construction"
-		position = { x = 246 y = 0 }
-
-		buttonType = {
-			name = "production_units_toggle_const"
-			position = { x = 62 y = 2 }
-			spriteType = "GFX_production_unit_open_button"
-			clicksound = click_close
-			oversound = ui_menu_over
-			pdx_tooltip = "production_unit_open_tt"
-		}
-
-		iconType = {
-			name = "production_units_toggle_alert"
-			spriteType = "GFX_gui_alert"
-			scale = 0.4
-			position = { x = 69 y = -15 }
-		}
-	}
+	#containerWindowType = {
+	#	name = "production_units_toggle_button_construction"
+	#	position = { x = 246 y = 0 }
+#
+	#	buttonType = {
+	#		name = "production_units_toggle_const"
+	#		position = { x = 62 y = 2 }
+	#		spriteType = "GFX_production_unit_open_button"
+	#		clicksound = click_close
+	#		oversound = ui_menu_over
+	#		pdx_tooltip = "production_unit_open_tt"
+	#	}
+#
+	#	iconType = {
+	#		name = "production_units_toggle_alert"
+	#		spriteType = "GFX_gui_alert"
+	#		scale = 0.4
+	#		position = { x = 69 y = -15 }
+	#	}
+	#}
 
 	containerWindowType = {
 		name = "production_units_toggle_button_production"
@@ -5748,33 +5748,6 @@ guiTypes = {
 					pdx_tooltip = "production_units_allocation_tt"
 					pdx_tooltip_delayed = "economy_topbar_production_units_long_tt"
 				}
-
-				instantTextboxType = {
-					name = "grid_power"
-					alwaystransparent = yes
-					position = { x = 151 y = 5 }
-					font = "aldrich_18_outline"
-					text = grid_power_name_tt
-					maxWidth = 100
-					format = center
-				}
-
-				iconType = {
-					name = "power_icon"
-					position = { x = 195 y = 25 }
-					spriteType = "GFX_power_icon"
-				}
-
-				instantTextboxType = {
-					name = "grid_power_amnt"
-					alwaystransparent = yes
-					position = { x = 151 y = 50 }
-					font = "aldrich_22_outline"
-					text = "grid_power_display"
-					maxWidth = 100
-					format = center
-				}
-				
 
 				iconType = {
 					name = "grid_power_box_outline"
