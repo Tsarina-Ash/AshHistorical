@@ -13,13 +13,15 @@ state={
 
 		}
 		add_core_of = MEX
-
+		victory_points = {
+			2008 10 
+		}
 	}
 
 	provinces={
 		2008 2011 7913 
 	}
-	manpower=0
+	manpower=10
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000
