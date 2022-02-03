@@ -14,6 +14,12 @@ tags={
 }
 replace_path="common/countries"
 replace_path="common/bookmarks"
+replace_path="common/ai_focuses"
+replace_path="common/ai_strategy"
+replace_path="common/country_leader"
+replace_path="common/ai_equipment"
+replace_path="common/ai_strategy_plans"
+replace_path="common/ai_peace"
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="history/units"
