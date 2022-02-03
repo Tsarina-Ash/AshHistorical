@@ -68,6 +68,7 @@ focus_tree = {
 #https://en.wikipedia.org/wiki/New_Deal#Summary_of_First_and_Second_New_Deal_programs#
 #https://en.wikipedia.org/wiki/First_100_days_of_Franklin_D._Roosevelt%27s_presidency#
 #https://en.wikipedia.org/wiki/Central_Valley_Project#
+#https://en.wikipedia.org/wiki/Puerto_Rico_Reconstruction_Administration#
 
 #Game Knowledge#
 #https://hoi4.paradoxwikis.com/National_Focus_modding#
@@ -1703,7 +1704,7 @@ focus = {
 
 	cost = 1
 
-	x = 130
+	x = 120
 	y = 0
 	
 	available_if_capitulated =  no
@@ -1721,7 +1722,7 @@ focus = {
 
 	cost = 1
 
-	x = 140
+	x = 130
 	y = 0
 	
 	available_if_capitulated =  no
@@ -1739,7 +1740,7 @@ focus = {
 
 	cost = 1
 
-	x = 150
+	x = 140
 	y = 0
 	
 	available_if_capitulated =  no
@@ -1757,7 +1758,7 @@ focus = {
 
 	cost = 1
 
-	x = 140
+	x = 150
 	y = 0
 	
 	available_if_capitulated =  no
@@ -2973,6 +2974,63 @@ focus = {
 }
 
 focus = {
+	id = FDR_USA_puerto_rico
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 5
+	y = 0
+	
+	relative_position_id = FDR_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_relief_administration
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico }
+	relative_position_id = FDR_USA_puerto_rico
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_land_reform
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
+	relative_position_id = FDR_USA_puerto_rico_relief_administration
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+
+focus = {
 	id = FDR_USA_reform
 	icon = GFX_focus_USA_placeholder
 
@@ -2992,12 +3050,107 @@ focus = {
 }
 
 focus = {
-	id = FDR_USA_securities_act
+	id = FDR_USA_reform_cabinet
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_reform }
+	relative_position_id = FDR_USA_reform
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_home_owners_loan_corporation
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
 	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_reform }
+	relative_position_id = FDR_USA_reform
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_housing_grants
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_home_owners_loan_corporation }
+	relative_position_id = FDR_USA_home_owners_loan_corporation
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_federal_housing_administration
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_home_owners_loan_corporation }
+	relative_position_id = FDR_USA_home_owners_loan_corporation
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_liberalize_trade_policy_reciprocal_tariff_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_reform_cabinet }
+	relative_position_id = FDR_USA_reform_cabinet
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_securities_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
 	y = 2
 	
 	prerequisite = { focus = FDR_USA_reform }
