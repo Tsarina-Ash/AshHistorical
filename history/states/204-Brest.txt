@@ -5,9 +5,6 @@ state={
 
 	history={
 		victory_points = {
-			3350 3 
-		}
-		victory_points = {
 			11313 1 
 		}
 		owner = POL
