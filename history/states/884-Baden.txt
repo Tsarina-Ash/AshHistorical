@@ -9,7 +9,7 @@ state={
 		add_core_of = GER
 		set_demilitarized_zone = yes
 	}
-	manpower=10
+	manpower=1230322
 	buildings_max_level_factor=1.000
 	state_category = city
 	local_supplies=0.000
