@@ -1681,7 +1681,7 @@ focus = {
 #SHERMAN PRESIDENCY#
 
 focus = {
-	id = Sherman_USA_innaugaration_speech
+	id = Leonard_Wood_USA_innaugaration_speech
 	icon = GFX_focus_USA_placeholder
 
 	cost = 1
@@ -1690,6 +1690,480 @@ focus = {
 	y = 0
 	
 	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_done_with_progressivism
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_innaugaration_speech }
+	relative_position_id = Leonard_Wood_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_restructure_army
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_done_with_progressivism }
+	relative_position_id = Leonard_Wood_USA_done_with_progressivism
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #focus shows up through event#
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_question_of_funding
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_restructure_army }
+	relative_position_id = Leonard_Wood_USA_restructure_army
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #focus shows up through event#
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_ask_for_support_of_southern_senators
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = Leonard_Wood_USA_question_of_funding }
+	relative_position_id = Leonard_Wood_USA_question_of_funding
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #focus shows up through event#
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_awe
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_restructure_army }
+	relative_position_id = Leonard_Wood_USA_restructure_army
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_missipipi_flood_of_1927
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = Leonard_Wood_USA_done_with_progressivism }
+	relative_position_id = Leonard_Wood_USA_done_with_progressivism
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #focus shows up through event#
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_question_of_federal_aid
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_missipipi_flood_of_1927 }
+	relative_position_id = Leonard_Wood_USA_missipipi_flood_of_1927
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_foreign_policy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 4
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_done_with_progressivism }
+	relative_position_id = Leonard_Wood_USA_done_with_progressivism
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_question_of_the_league
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_foreign_policy }
+	relative_position_id = Leonard_Wood_USA_foreign_policy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_genevea_naval_conference
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_question_of_the_league }
+	relative_position_id = Leonard_Wood_USA_question_of_the_league
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_improve_south_american_relations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_question_of_the_league }
+	relative_position_id = Leonard_Wood_USA_question_of_the_league
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_reassure_south_american_allies
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = Leonard_Wood_USA_improve_south_american_relations }
+	relative_position_id = Leonard_Wood_USA_improve_south_american_relations
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_question_of_south_american_occupations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_improve_south_american_relations }
+	relative_position_id = Leonard_Wood_USA_improve_south_american_relations
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_european_relief
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_question_of_the_league }
+	relative_position_id = Leonard_Wood_USA_question_of_the_league
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = Leonard_Wood_USA_dawes_plan
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_european_relief }
+	relative_position_id = Leonard_Wood_USA_european_relief
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_economic_policy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_done_with_progressivism }
+	relative_position_id = Leonard_Wood_USA_done_with_progressivism
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_hoover_hands_free
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	prerequisite = { focus = Leonard_Wood_USA_economic_policy }
+	relative_position_id = Leonard_Wood_USA_economic_policy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_appoint_liazess_faire_economy_positions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_hoover_hands_free }
+	relative_position_id = Leonard_Wood_USA_hoover_hands_free
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_subsidize_military_industry
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_appoint_liazess_faire_economy_positions }
+	relative_position_id = Leonard_Wood_USA_appoint_liazess_faire_economy_positions
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_interventionalist
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = Leonard_Wood_USA_economic_policy }
+	relative_position_id = Leonard_Wood_USA_economic_policy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_mcnary_haugen_farm_relief_bill
+
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_hoover_hands_free focus = Leonard_Wood_USA_interventionalist }
+	relative_position_id = Leonard_Wood_USA_interventionalist
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_appoint_state_capitalist_economists
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = Leonard_Wood_USA_interventionalist }
+	relative_position_id = Leonard_Wood_USA_interventionalist
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_fund_medical_research
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+
+	prerequisite = { focus = Leonard_Wood_USA_economic_policy }
+	relative_position_id = Leonard_Wood_USA_economic_policy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_propse_new_healthcare_system
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = Leonard_Wood_USA_fund_medical_research }
+	relative_position_id = Leonard_Wood_USA_fund_medical_research
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_open_new_hospitals
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+
+	prerequisite = { focus = Leonard_Wood_USA_fund_medical_research }
+	relative_position_id = Leonard_Wood_USA_fund_medical_research
+
+	available_if_capitulated = yes
 	
 	completion_reward = {
 		add_political_power = 50

@@ -22,8 +22,10 @@ NDefines.NMilitary.MAX_AIR_EXPERIENCE = 2000 --higher xp cap
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 1000 --game doesnt slow down until player is X days behind
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100 --game doesnt pause down until player is X days behind
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36  --combat log gets deleted after X days
-NDefines.NCountry.EVENT_PROCESS_OFFSET = 25 --how long events can get held for ?
+NDefines.NGame.AIR_LOG_TIMEOUT_HOURS = 24 ---air combat log gets deleted after X hours
+NDefines.NGame.GARRISON_LOG_MAX_MONTHS = 6 ---garrison log gets delted after X months
 NDefines.NGame.GAME_SPEED_SECONDS = { 0.35, 0.15, 0.1, 0.035, 0.0 } --game speed (5, 4, 3, 2, 1, paused)
+NDefines.NCountry.EVENT_PROCESS_OFFSET = 25 --how long events can get held for ?
 NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
 NDefines.NCountry.ARMY_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
 NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
@@ -31,6 +33,6 @@ NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0 --score modifier that shows at end of
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
 ---ReducedPopulationGrowth
-NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.01
+NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.5
 ---MinorBalanceChanges
 NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 1.25 --1 Politcal power gain when not doing a focus (prevents poltical power bloat)
