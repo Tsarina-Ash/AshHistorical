@@ -2758,7 +2758,7 @@ focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #weaken puerto rican recovery#
 	}
 }
 
@@ -2979,7 +2979,7 @@ focus = {
 
 	cost = 1
 
-	x = 5
+	x = 6
 	y = 0
 	
 	relative_position_id = FDR_USA_innaugaration_speech
@@ -3016,11 +3016,144 @@ focus = {
 
 	cost = 4
 
-	x = -2
+	x = -3
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
 	relative_position_id = FDR_USA_puerto_rico_relief_administration
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_teach_better_agricultural_methods
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_land_reform }
+	relative_position_id = FDR_USA_puerto_rico_land_reform
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_reforestation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_land_reform }
+	relative_position_id = FDR_USA_puerto_rico_land_reform
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_aquire_pricate_comapnies
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
+	relative_position_id = FDR_USA_puerto_rico_relief_administration
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_public_works
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_aquire_pricate_comapnies }
+	relative_position_id = FDR_USA_puerto_rico_aquire_pricate_comapnies
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_provide_jobs_through_factories
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_aquire_pricate_comapnies }
+	relative_position_id = FDR_USA_puerto_rico_aquire_pricate_comapnies
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_reform
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
+	relative_position_id = FDR_USA_puerto_rico_relief_administration
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_public_housing
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_reform }
+	relative_position_id = FDR_USA_puerto_rico_reform
 
 	available_if_capitulated = yes
 	
