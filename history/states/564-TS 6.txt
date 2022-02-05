@@ -12,7 +12,8 @@ state={
 	}
 
 	history={
-		owner = SOV
+		owner = FER
+		add_core_of = FER
 		victory_points = {
 			7835 2 
 		}
