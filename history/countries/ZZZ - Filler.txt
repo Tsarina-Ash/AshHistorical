@@ -1,4 +1,4 @@
-capital = 514
+capital = 273
 
 recruit_character = ZZZ_anarchy
 

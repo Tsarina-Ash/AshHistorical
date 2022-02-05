@@ -9,7 +9,8 @@ state = {
 			1614 1
 		}
 		
-		owner = SOV
+		owner = FER
+		add_core_of = FER
 		
 		buildings = {
 			infrastructure = 2
