@@ -1,4 +1,4 @@
-﻿capital = 563 #Chita
+﻿capital = 218 #Chita
 
 #oob = "FER_1936"
 
