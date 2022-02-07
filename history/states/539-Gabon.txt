@@ -1,10 +1,10 @@
+
 state={
 	id=539
 	name="STATE_539"
 
 	history={
 		owner = FRA
-		
 		victory_points = {
 			5139 1 
 		}
@@ -20,11 +20,10 @@ state={
 	}
 
 	provinces={
-		5139 8207 10948 13210 
+		5136 5139 8207 10948 13210 
 	}
 	manpower=409752
 	buildings_max_level_factor=1.000
 	state_category=pastoral
-
-	local_supplies=1.0 
+	local_supplies=1.000
 }

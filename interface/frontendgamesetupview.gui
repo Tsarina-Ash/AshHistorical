@@ -941,11 +941,11 @@ guiTypes = {
 		#	position = { x = 665 y = 380 }
 		#	spriteType = "GFX_country_selection_clickcover_singleentry"		
 		#}
-		#iconType = {
-		#	name = "countries_clickcover_pakt_2_15_entry"
-		#	position = { x = 715 y = 380 }
-		#	spriteType = "GFX_country_selection_clickcover_singleentry"		
-		#}
+		iconType = {
+			name = "countries_clickcover_pakt_2_15_entry"
+			position = { x = 715 y = 380 }
+			spriteType = "GFX_country_selection_clickcover_singleentry"		
+		}
 		iconType = {
 			name = "countries_clickcover_pakt_2_16_entry"
 			position = { x = 765 y = 380 }

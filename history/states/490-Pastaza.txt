@@ -3,17 +3,18 @@ state={
 	id=490
 	name="STATE_490"
 
-	provinces={
-		1458 7314 7659 10880 12356 
-	}
-	history = {
+	history={
 		owner = SHX
 		add_core_of = SHX
 		add_core_of = CHI
-		# add_core_of = PRC
+
+	}
+
+	provinces={
+		1458 7314 7659 10880 11328 12356 
 	}
 	manpower=10
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category=rural
 	local_supplies=6.000
 }
