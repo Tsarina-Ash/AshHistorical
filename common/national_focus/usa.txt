@@ -1678,6 +1678,25 @@ focus = {
 	}
 }
 
+focus = {
+	id = Coolidge_USA_legacy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = Coolidge_USA_take_control_of_mines focus = Coolidge_USA_buisness_as_usual }
+	relative_position_id = Coolidge_USA_buisness_as_usual
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
 #SHERMAN PRESIDENCY#
 
 focus = {
@@ -1961,6 +1980,26 @@ focus = {
 		add_political_power = 50
 	}
 }
+
+focus = {
+	id = Leonard_Wood_USA_loan_out_money_to_europeans
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Leonard_Wood_USA_european_relief }
+	relative_position_id = Leonard_Wood_USA_european_relief
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
 focus = {
 	id = Leonard_Wood_USA_dawes_plan
 	icon = GFX_focus_USA_placeholder
@@ -2239,6 +2278,312 @@ focus = {
 	
 	completion_reward = {
 		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_wounded_and_battered_nation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_innaugaration_speech }
+	relative_position_id = EXTRA_WILSON_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_unification
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
+	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_speeches_to_the_nation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_unification }
+	relative_position_id = EXTRA_WILSON_USA_unification
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_voyage_of_understanding
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
+	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -5
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_innaugaration_speech }
+	relative_position_id = EXTRA_WILSON_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_increase_union_protections
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
+	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_question_of_minorities
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_increase_union_protections }
+	relative_position_id = EXTRA_WILSON_USA_increase_union_protections
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_secret_deals_with_industry_leaders
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	mutually_exclusive = { focus = EXTRA_WILSON_USA_new_anti_trust_act }
+	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
+	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_lay_out_demands
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_secret_deals_with_industry_leaders }
+	relative_position_id = EXTRA_WILSON_USA_secret_deals_with_industry_leaders
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_new_anti_trust_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	mutually_exclusive = { focus = EXTRA_WILSON_USA_secret_deals_with_industry_leaders }
+	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
+	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_first_female_president
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
+	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_compromising_with_dixiecrats
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_first_female_president }
+	relative_position_id = EXTRA_WILSON_USA_first_female_president
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_foreign_policy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 6
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_innaugaration_speech }
+	relative_position_id = EXTRA_WILSON_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_moral_diplomacy_two_point_o
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
+	relative_position_id = EXTRA_WILSON_USA_foreign_policy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_the_league
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
+	relative_position_id = EXTRA_WILSON_USA_foreign_policy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_ask_congress_for_approval
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_the_league }
+	relative_position_id = EXTRA_WILSON_USA_the_league
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #event will always fail#
 	}
 }
 
