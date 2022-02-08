@@ -1944,7 +1944,7 @@ focus = {
 }
 
 focus = {
-	id = Leonard_Wood_USA_question_of_south_american_occupations
+	id = Leonard_Wood_USA_dominican_failure
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -1954,6 +1954,25 @@ focus = {
 	
 	prerequisite = { focus = Leonard_Wood_USA_improve_south_american_relations }
 	relative_position_id = Leonard_Wood_USA_improve_south_american_relations
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_question_of_south_american_occupations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = Leonard_Wood_USA_dominican_failure }
+	relative_position_id = Leonard_Wood_USA_dominican_failure
 
 	available_if_capitulated = yes
 	
@@ -2550,6 +2569,25 @@ focus = {
 }
 
 focus = {
+	id = EXTRA_WILSON_USA_the_dominican_failure
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_moral_diplomacy_two_point_o }
+	relative_position_id = EXTRA_WILSON_USA_moral_diplomacy_two_point_o
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
 	id = EXTRA_WILSON_USA_the_league
 	icon = GFX_focus_USA_placeholder
 
@@ -2584,6 +2622,24 @@ focus = {
 	
 	completion_reward = {
 		add_political_power = 50 #event will always fail#
+	}
+}
+
+#GENERIC DOMINICAN REPUBLIC PATH#
+
+focus = {
+	id = GENERIC_USA_DOMINICAN_PATH_dealing_with_the_occupation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 115
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
 	}
 }
 
