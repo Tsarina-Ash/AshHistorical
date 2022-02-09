@@ -13,7 +13,7 @@ buildings = {
 		value = 1
 
 		show_modifier = yes
-		max_fuel_building = 1.5 #k
+		max_fuel_building = 1.5
 		allied_build = yes
 
 		infrastructure_construction_effect = yes
@@ -147,7 +147,7 @@ buildings = {
 		anti_air = yes
 		disabled_in_dmz = yes
 		air_defence = 1
-		max_level = 5 # This is the max unlock level
+		max_level = 5
 		damage_factor = 0.1
 		value = 1
 		infrastructure_construction_effect = yes
@@ -157,30 +157,28 @@ buildings = {
 		show_on_map = 1
 		base_cost = 15000
 		icon_frame = 10
-		#local_resources_oil = 1 # May use local_resources_ + any resource name
-		local_resources_rubber = 1 # May use local_resources_ + any resource name
+		local_resources_rubber = 1
 		refinery = yes
-		max_level = 3 # This is the max unlock level
+		max_level = 3
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
 		
 		show_modifier = yes
-		fuel_gain_from_states = 2.0 #per hour
+		fuel_gain_from_states = 2.0
 	}
 
 	fuel_silo = {
 		show_on_map = 1
 		base_cost = 5000
 		icon_frame = 14
-		#max_level = 1
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
 		fuel_silo = yes
 		
 		show_modifier = yes
-		max_fuel_building = 100.0 #k
+		max_fuel_building = 100.0
 	}
 
 	radar_station = {
@@ -188,8 +186,7 @@ buildings = {
 		base_cost = 4000
 		icon_frame = 11
 		radar = yes
-		#max_level = 0 # max: 5
-		max_level = 6 # This is the max unlock level
+		max_level = 6 
 		damage_factor = 0.5
 		value = 4
 		centered = yes

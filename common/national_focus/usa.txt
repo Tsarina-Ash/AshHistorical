@@ -1176,6 +1176,25 @@ focus = {
 }
 
 focus = {
+	id = Coolidge_USA_revenue_act_of_1928
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 2
+	
+	prerequisite = { focus = Coolidge_USA_european_relief }
+	relative_position_id = Coolidge_USA_european_relief
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #Revenue acts of 1926/1928 ?#
+	}
+}
+
+focus = {
 	id = Coolidge_USA_economic_policy
 	icon = GFX_focus_USA_placeholder
 
@@ -1200,11 +1219,10 @@ focus = {
 
 	cost = 4
 
-	x = -1
+	x = 1
 	y = 2
 	
 	prerequisite = { focus = Coolidge_USA_economic_policy } 
-	prerequisite = { focus = Coolidge_USA_hoover_hands_free }
 	relative_position_id = Coolidge_USA_economic_policy
 
 	available_if_capitulated = yes
@@ -1234,34 +1252,14 @@ focus = {
 }
 
 focus = {
-	id = Coolidge_USA_revenue_act_of_1928
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = Coolidge_USA_revenue_act_of_1926 }
-	relative_position_id = Coolidge_USA_revenue_act_of_1926
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50 #Revenue acts of 1926/1928 ?#
-	}
-}
-
-focus = {
 	id = Coolidge_USA_hoover_hands_free
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = -2
+	x = -1
 	y = 1
 
-	mutually_exclusive = { focus = Coolidge_USA_interventionalist }	
 	prerequisite = { focus = Coolidge_USA_economic_policy }
 	relative_position_id = Coolidge_USA_economic_policy
 
@@ -1292,7 +1290,45 @@ focus = {
 }
 
 focus = {
-	id = Coolidge_USA_interventionalist
+	id = Coolidge_USA_cut_funding_to_economic_programs
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_hoover_hands_free }
+	relative_position_id = Coolidge_USA_hoover_hands_free
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_hoover_rugged_self_success
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+
+	prerequisite = { focus = Coolidge_USA_hoover_hands_free }
+	relative_position_id = Coolidge_USA_hoover_hands_free
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_educational_act_of_1925
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -1300,53 +1336,13 @@ focus = {
 	x = 2
 	y = 1
 	
-	mutually_exclusive = { focus = Coolidge_USA_hoover_hands_free }
-	prerequisite = { focus = Coolidge_USA_economic_policy }
+	prerequisite = { focus = Coolidge_USA_economic_policy } 
 	relative_position_id = Coolidge_USA_economic_policy
 
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = Coolidge_USA_mcnary_haugen_farm_relief_bill
-
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-	
-	prerequisite = { focus = Coolidge_USA_interventionalist }
-	relative_position_id = Coolidge_USA_interventionalist
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = Coolidge_USA_appoint_state_capitalist_economists
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = Coolidge_USA_interventionalist }
-	relative_position_id = Coolidge_USA_interventionalist
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #Not A Real Act#
 	}
 }
 
@@ -2065,6 +2061,8 @@ focus = {
 
 	x = -2
 	y = 1
+
+	mutually_exclusive = { focus = Leonard_Wood_USA_interventionalist } 
 	prerequisite = { focus = Leonard_Wood_USA_economic_policy }
 	relative_position_id = Leonard_Wood_USA_economic_policy
 
@@ -2122,6 +2120,7 @@ focus = {
 	x = 0
 	y = 1
 
+	mutually_exclusive = { focus = Leonard_Wood_USA_hoover_hands_free } 
 	prerequisite = { focus = Leonard_Wood_USA_economic_policy }
 	relative_position_id = Leonard_Wood_USA_economic_policy
 
@@ -2144,6 +2143,26 @@ focus = {
 	
 	prerequisite = { focus = Leonard_Wood_USA_hoover_hands_free focus = Leonard_Wood_USA_interventionalist }
 	relative_position_id = Leonard_Wood_USA_interventionalist
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Leonard_Wood_USA_question_of_sharecroppers
+
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = Leonard_Wood_USA_mcnary_haugen_farm_relief_bill }
+	relative_position_id = Leonard_Wood_USA_mcnary_haugen_farm_relief_bill
 
 	available_if_capitulated = yes
 	
