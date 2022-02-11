@@ -1,0 +1,181 @@
+﻿l_english:
+
+#   :0 ""
+#   _desc:0 ""
+
+#WILSON USA LOC#
+
+WILSON_USA_ill_presidency:0 "The Ill Presidency"
+WILSON_USA_ill_presidency_desc:0 "Wilson is ill and can barely function his duties as a president anymore, so his wife has effectively taken over with Wilson acting as her messanger. One could say this is a sick presidency."
+
+WILSON_USA_ennact_prohibition:0 "Enact Prohibition"
+WILSON_USA_ennact_prohibition_desc:0 "Alcohol is ravaging the United States and one way to better society for all would be to remove this vice, finalizing this would only propel our ratings with Conservative Christians further."
+
+WILSON_USA_FBI_prohibition_gangsters:0 "Hunt Prohibition Gangsters"
+WILSON_USA_FBI_prohibition_gangsters_desc:0 "Unfortunately there are those who seek to corrupt and destroy our very way of life, those who break the law and hurt society for their own financial gain, fortunately we have enough resources from our demoblizition to divert some funding here and there to combat these 'Gangsters'."
+
+WILSON_USA_begin_demobilization:0 "Begin Demolization"
+WILSON_USA_begin_demobilization_desc:0 "The economy heavily relies on the military at the momment unfortunately, however it is taking a toll not just on our ratings but on our reserves and economy as a whole. Begining a slow process of demobilizaiton won't be as popular as fully demobilizng fast but it will ease the chance for a reccesion to occur without mass government spendings."
+
+WILSON_USA_cut_industrial_budget:0 "Gut The Indsutrialist's Federal Check"
+WILSON_USA_cut_industrial_budget_desc:0 "The indsutrialists in nobody's mind have not just profited off this war but exploded with their pockets stuffed to the brim with tax-payer's dollars due to the expensive war, while it benefits us with their growth, it'll slowly start causing a drain on our economy. We should stop this soon~ish but wait until the economy is stable enought o beign readjustment to a civilian economy once again."
+
+WILSON_USA_military_layoffs:0 "Begin Military Layoffs"
+WILSON_USA_military_layoffs_desc:0 ""
+
+WILSON_USA_veteran_bonus_check:0 "Propose Veteran's Bonus Check"
+WILSON_USA_veteran_bonus_check_desc:0 ""
+
+WILSON_USA_league_of_nations:0 "Question Of The league"
+WILSON_USA_league_of_nations_desc:0 ""
+
+WILSON_USA_force_joining:0 "Force Joining The League"
+WILSON_USA_force_joining_desc:0 ""
+
+WILSON_USA_join_the_league:0 "Becoming A Member"
+WILSON_USA_join_the_league_desc:0 ""
+
+WILSON_USA_compromise_with_reps:0 "Compromise With Republicans"
+WILSON_USA_compromise_with_reps_desc:0 ""
+
+WILSON_USA_blame_isolationists:0 "Blame Isolationsts For Failure"
+WILSON_USA_blame_isolationists_desc:0 ""
+
+WILSON_USA_expand_agency_budget:0 "Divert Funds To Agents"
+WILSON_USA_expand_agency_budget_desc:0 ""
+
+WILSON_USA_end_palmer_raids:0 "Slow Down There Palmer"
+WILSON_USA_end_palmer_raids_desc:0 ""
+
+WILSON_USA_blame_unions:0 "Blame Unions"
+WILSON_USA_blame_unions_desc:0 ""
+
+WILSON_USA_calm_anti_immigrant_hysteria:0 "Calm War Hysteria"
+WILSON_USA_calm_anti_immigrant_hysteria_desc:0 ""
+
+WILSON_USA_rights_of_man:0 "The Rights Of Man"
+WILSON_USA_rights_of_man_desc:0 ""
+
+WILSON_USA_threathen_senators:0 "Threathen Southern Senators"
+WILSON_USA_threathen_senators_desc:0 ""
+
+WILSON_USA_compromise_with_conservatives:0 "Compromise With Conservatives"
+WILSON_USA_compromise_with_conservatives_desc:0 ""
+
+#EXTRA WILSON#
+
+EXTRA_WILSON_USA_innaugaration_speech:0 "The Coughing 20's"
+EXTRA_WILSON_USA_innaugaration_speech_desc:0 ""
+
+EXTRA_WILSON_USA_wounded_and_battered_nation:0 "Heal The Shot Country"
+EXTRA_WILSON_USA_wounded_and_battered_nation_desc:0 ""
+
+EXTRA_WILSON_USA_unification:0 "Manifest American Unity"
+EXTRA_WILSON_USA_unification_desc:0 ""
+
+EXTRA_WILSON_USA_speeches_to_the_nation:0 "Increase Wife's Speeches"
+EXTRA_WILSON_USA_speeches_to_the_nation_desc:0 ""
+
+EXTRA_WILSON_USA_voyage_of_understanding:0 "Voyage Of Understanding"
+EXTRA_WILSON_USA_voyage_of_understanding_desc:0 ""
+
+EXTRA_WILSON_USA_crack_down_on_poor_industry_practices:0 "Crack Down On Poor Industry Practices"
+EXTRA_WILSON_USA_crack_down_on_poor_industry_practices_desc:0 ""
+
+EXTRA_WILSON_USA_increase_union_protections:0 "Increase Union's Federal Protection"
+EXTRA_WILSON_USA_increase_union_protections_desc:0 ""
+
+EXTRA_WILSON_USA_question_of_minorities:0 "The Question of Minorities"
+EXTRA_WILSON_USA_question_of_minorities_desc:0 ""
+
+EXTRA_WILSON_USA_new_anti_trust_act:0 "Expand Anti-Trust Acts"
+EXTRA_WILSON_USA_new_anti_trust_act_desc:0 ""
+
+EXTRA_WILSON_USA_subsidize_military_industry:0 "Subsudize Military Indsutries"
+EXTRA_WILSON_USA_subsidize_military_industry_desc:0 ""
+
+EXTRA_WILSON_USA_interventionalist:0 "Continue interventionalist Policies"
+EXTRA_WILSON_USA_interventionalist_desc:0 ""
+
+EXTRA_WILSON_USA_mcnary_haugen_farm_relief_bill:0 "Propose Farm Relief Bill"
+EXTRA_WILSON_USA_mcnary_haugen_farm_relief_bill_desc:0 ""
+
+EXTRA_WILSON_USA_question_of_sharecroppers:0 "What About The Sharecroppers ?"
+EXTRA_WILSON_USA_question_of_sharecroppers_desc:0 ""
+
+EXTRA_WILSON_USA_appoint_state_capitalist_economists:0 "Appoint State-Capitalists"
+EXTRA_WILSON_USA_appoint_state_capitalist_economists_desc:0 ""
+
+EXTRA_WILSON_USA_subsudies:0 "Increase Economic Subsidies"
+EXTRA_WILSON_USA_subsudies_desc:0 ""
+
+EXTRA_WILSON_USA_increase_buisness_incentives:0 "Increase Business Incentives"
+EXTRA_WILSON_USA_increase_buisness_incentives_desc:0 ""
+
+EXTRA_WILSON_USA_fund_medical_research:0 "Fund Medical Research"
+EXTRA_WILSON_USA_fund_medical_research_desc:0 ""
+
+EXTRA_WILSON_USA_propse_new_healthcare_system:0 "Propose A Healthcare System"
+EXTRA_WILSON_USA_propse_new_healthcare_system_desc:0 ""
+
+EXTRA_WILSON_USA_open_new_hospitals:0 "A Healthy Population"
+EXTRA_WILSON_USA_open_new_hospitals_desc:0 ""
+
+EXTRA_WILSON_USA_hoover_hands_free:0 "Hoovernomics Will Grow"
+EXTRA_WILSON_USA_hoover_hands_free_desc:0 ""
+
+EXTRA_WILSON_USA_appoint_liazess_faire_economy_positions:0 "Laissez Faire Economists"
+EXTRA_WILSON_USA_appoint_liazess_faire_economy_positions_desc:0 ""
+
+EXTRA_WILSON_USA_endorse_stock_potential:0 "Promote The Papers And Reels"
+EXTRA_WILSON_USA_endorse_stock_potential_desc:0 ""
+
+EXTRA_WILSON_USA_cut_corporate_taxes:0 "Slash The Taxes"
+EXTRA_WILSON_USA_cut_corporate_taxes_desc:0 ""
+
+EXTRA_WILSON_USA_first_female_president:0 "The First Female President"
+EXTRA_WILSON_USA_first_female_president_desc:0 ""
+
+EXTRA_WILSON_USA_compromising_with_dixiecrats:0 "Compromising With Dixiecrats"
+EXTRA_WILSON_USA_compromising_with_dixiecrats_desc:0 ""
+
+EXTRA_WILSON_USA_foreign_policy:0 "The Foreign Policy ?"
+EXTRA_WILSON_USA_foreign_policy_desc:0 ""
+
+EXTRA_WILSON_USA_moral_diplomacy_two_point_o:0 "Moral Diplomacy Wasn't That Bad"
+EXTRA_WILSON_USA_moral_diplomacy_two_point_o_desc:0 ""
+
+EXTRA_WILSON_USA_the_dominican_failure:0 "The Dominican Failure"
+EXTRA_WILSON_USA_the_dominican_failure_desc:0 ""
+
+EXTRA_WILSON_USA_the_league:0 "Push The League"
+EXTRA_WILSON_USA_the_league_desc:0 ""
+
+EXTRA_WILSON_USA_ask_congress_for_approval:0 "Ask Congress Again"
+EXTRA_WILSON_USA_ask_congress_for_approval_desc:0 ""
+
+EXTRA_WILSON_USA_question_of_the_league:0 "Propose Loosening The Treaty"
+EXTRA_WILSON_USA_question_of_the_league_desc:0 ""
+
+EXTRA_WILSON_USA_genevea_naval_conference:0 "Host Naval Conference"
+EXTRA_WILSON_USA_genevea_naval_conference_desc:0 ""
+
+EXTRA_WILSON_USA_improve_south_american_relations:0 "Improve Relations With Neighbors"
+EXTRA_WILSON_USA_improve_south_american_relations_desc:0 ""
+
+EXTRA_WILSON_USA_reassure_south_american_allies:0 "Lets Visit Our Neighbors"
+EXTRA_WILSON_USA_reassure_south_american_allies_desc:0 ""
+
+EXTRA_WILSON_USA_european_relief:0 "The Europeans Need Us Today!"
+EXTRA_WILSON_USA_european_relief_desc:0 ""
+
+EXTRA_WILSON_USA_loan_out_money_to_europeans:0 "Business Opportunities In Europe"
+EXTRA_WILSON_USA_loan_out_money_to_europeans_desc:0 ""
+
+EXTRA_WILSON_USA_dawes_plan:0 "Perhaps We're Too Harsh ?"
+EXTRA_WILSON_USA_dawes_plan_desc:0 ""
+
+EXTRA_WILSON_USA_lower_war_taxes_or_highten_them:0 "The Question Of War Taxes"
+EXTRA_WILSON_USA_lower_war_taxes_or_highten_them_desc:0 ""
+
+#
