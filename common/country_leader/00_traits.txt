@@ -2506,7 +2506,16 @@ leader_traits = {
 		sprite = 13
 		subversive_activites_upkeep = -0.15
 		boost_resistance_factor = 0.1
-		resistance_decay_on_our_occupied_states = -0.1
+		resistance_decay = -0.1
+		#!!!
+		#error
+		#!!!Trigger/Effect/Modifire resistance_decay_on_our_occupied_states = used in wrong scope. In Country but expect State
+		#
+		#Didn't know if this was a auto complete fat finger (based of other use cases in file) or on purpose?
+		#Changing it to get you attention, revert back if it was on purpose.
+		#
+		#resistance_decay_on_our_occupied_states = -0.1
+		#
 		intel_from_operatives_factor = 0.1
 	}
 
@@ -5047,7 +5056,7 @@ leader_traits = {
 	army_armored_1 = { # +4 armor efficiency
 		sprite = 8
 		army_armor_attack_factor = 0.05
-	    army_armor_defence_factor = 0.05		
+		army_armor_defence_factor = 0.05
 		experience_gain_army = 0.06
 		
 		command_cap = @tier1
@@ -5060,7 +5069,7 @@ leader_traits = {
 	army_armored_2 = { # +8 armor efficiency
 		sprite = 8
 		army_armor_attack_factor = 0.1
-	    army_armor_defence_factor = 0.1		
+		army_armor_defence_factor = 0.1
 		experience_gain_army = 0.09
 		
 		command_cap = @tier2
@@ -5073,7 +5082,7 @@ leader_traits = {
 	army_armored_3 = { # +12 armor efficiency
 		sprite = 8
 		army_armor_attack_factor = 0.15
-	    army_armor_defence_factor = 0.15		
+		army_armor_defence_factor = 0.15
 		experience_gain_army = 0.12
 		
 		command_cap = @tier3
@@ -5167,7 +5176,7 @@ leader_traits = {
 	army_commando_1 = { # +4 paratrooper/marine/mountain efficiency
 		sprite = 5
 		special_forces_attack_factor = 0.1
-	    special_forces_defence_factor = 0.1		
+		special_forces_defence_factor = 0.1		
 		experience_gain_army = 0.06
 		
 		command_cap = @tier1
@@ -5180,7 +5189,7 @@ leader_traits = {
 	army_commando_2 = { # +8 paratrooper/marine/mountain efficiency
 		sprite = 5
 		special_forces_attack_factor = 0.15
-	    special_forces_defence_factor = 0.15		
+		special_forces_defence_factor = 0.15		
 		experience_gain_army = 0.09
 		
 		command_cap = @tier2
@@ -5193,7 +5202,7 @@ leader_traits = {
 	army_commando_3 = { # +12 paratrooper/marine/mountain efficiency
 		sprite = 5
 		special_forces_attack_factor = 0.2
-	    special_forces_defence_factor = 0.2		
+		special_forces_defence_factor = 0.2		
 		experience_gain_army = 0.12
 		
 		command_cap = @tier3

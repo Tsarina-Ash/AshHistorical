@@ -910,7 +910,7 @@ calculate_civilian_expenditures = { #Note = in billions
 
 	calculate_civilian_misc_costs = yes 
 	add_to_variable = { civilian_expenditures = civilian_misc_costs_total }
-	 # Adds any extra fixed cost, uses a variable to store expenses coming from non-modifier sources
+		# Adds any extra fixed cost, uses a variable to store expenses coming from non-modifier sources
 	multiply_variable = { civilian_expenditures = modifier@civilian_expenditures_factor } # Used by Civ Boost/Austerity ideas, applied on top of total civ spending
 }
 
@@ -4543,9 +4543,9 @@ econ_backfill_graphs = {
 	set_temp_variable = { curr_inflation = clamped_inflation_rate }
 
 	for_loop_effect = {
-        start = 0
-        end = 17
-        value = i
+	      start = 0
+	      end = 17
+	      value = i
 	
 		add_to_array = { econ_graph_months = econ_graph_month }
 		add_to_temp_variable = { econ_graph_month = 1 }
@@ -5128,17 +5128,17 @@ PU_trade_integration_calculation = {
 
 economic_centralization_calculation = {
 
-  if = {
+	if = {
 		limit = { check_variable = { TNO_economy_type = 1 } }
 		calculate_market_centralization_effect = yes 
-	 }
-  else_if = {
+		}
+	else_if = {
 		limit = { check_variable = { TNO_economy_type = 2 } }
 		calculate_corporatism_centralization_effect = yes 
-	 } 
-  else = {
+		} 
+	else = {
 		calculate_planned_centralization_effect = yes 
-	 }
+		}
 }
 
 calculate_market_centralization_effect = { 
