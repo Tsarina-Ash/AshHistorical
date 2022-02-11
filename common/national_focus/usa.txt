@@ -93,6 +93,49 @@ focus = {
 	}
 }
 
+focus = {
+	id = WILSON_USA_ennact_prohibition
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
+
+focus = {
+	id = WILSON_USA_FBI_prohibition_gangsters
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 3
+	
+	prerequisite = { focus = WILSON_USA_ennact_prohibition }
+	relative_position_id = WILSON_USA_ennact_prohibition
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
 #Wilson Demobilization#
 
 focus = {
@@ -112,12 +155,12 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #demobing too fast can destroy economy
 	}
 }
 
 focus = {
-	id = WILSON_USA_cut_indsutrial_budget
+	id = WILSON_USA_cut_industrial_budget
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -217,7 +260,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #will fail and always lead dems lose popularity and support among isolationists
 	}
 }
 
@@ -228,7 +271,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = WILSON_USA_force_joining }
 	relative_position_id = WILSON_USA_force_joining
@@ -257,9 +300,29 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #will join the league as a minor member and have limited assistance but cant pass civil rights bills for next 10 years
 	}
 }
+
+focus = {
+	id = WILSON_USA_blame_isolationists
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_compromise_with_reps focus = WILSON_USA_force_joining }
+	relative_position_id = WILSON_USA_force_joining
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50#focus shows up after failing to join the league
+	}
+}
+
 
 #Wilson Redscare/Palmer Raids#
 
@@ -301,7 +364,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #venito-vettechi case shooting thingie
 	}
 }
 
@@ -389,7 +452,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #splits the party and weakens chance for wilson & party to win southern victory
 	}
 }
 
@@ -412,7 +475,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #splits northern voters and lose northern/western votes for wilson & party.
 	}
 }
 
@@ -869,7 +932,7 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #does minimal things and after 1st term party favors hoover for buisness additudes
 	}
 }
 
@@ -884,6 +947,25 @@ focus = {
 	
 	prerequisite = { focus = Coolidge_USA_innaugaration_speech }
 	relative_position_id = Coolidge_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_buisness_subsudies
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -6
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_stay_cool_with_coolidge }
+	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
 
 	available_if_capitulated = yes
 	
@@ -908,6 +990,25 @@ focus = {
 	
 	completion_reward = {
 		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_completely_cut_military_spending
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = Coolidge_USA_speed_up_demobilization }
+	relative_position_id = Coolidge_USA_speed_up_demobilization
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #demobilizing will gain rewards but increase racial tensions & instability due to low amount of jobs for returning soldiers and stagnant eco
 	}
 }
 
@@ -1349,34 +1450,15 @@ focus = {
 #TEAPOT_SCANDAL#
 
 focus = {
-	id = USA_GREAT_RAILROAD_STRIKE_OF_1922
+	id = USA_GREAT_RAILROAD_STRIKE_assess_situation
 	icon = GFX_focus_USA_placeholder
 
 	cost = 1
 
-	x = 74
+	x = 73
 	y = 0
 	
 	available_if_capitulated =  no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = USA_GREAT_RAILROAD_STRIKE_assess_situation
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-
-	prerequisite = { focus = USA_GREAT_RAILROAD_STRIKE_OF_1922 }
-	relative_position_id = USA_GREAT_RAILROAD_STRIKE_OF_1922
-
-	available_if_capitulated = yes
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1400,6 +1482,26 @@ focus = {
 	
 	completion_reward = {
 		add_political_power = 50
+	}
+}
+
+
+focus = {
+	id = USA_GREAT_RAILROAD_STRIKE_wait_it_out
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+
+	prerequisite = { focus = USA_GREAT_RAILROAD_STRIKE_assess_situation }
+	relative_position_id = USA_GREAT_RAILROAD_STRIKE_assess_situation
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #focus never allowed however after certain days situation will resolve itself but comes at a poltical/indsutrial cost
 	}
 }
 
@@ -1462,6 +1564,25 @@ focus = {
 }
 
 focus = {
+	id = USA_TEAPOT_SCANDAL_apoligize_on_radio
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = USA_TEAPOT_SCANDAL_cover_it_up focus = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials }
+	relative_position_id = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
 	id = USA_TEAPOT_SCANDAL_turn_it_into_anti_communist_propoganda
 	icon = GFX_focus_USA_placeholder
 
@@ -1470,7 +1591,7 @@ focus = {
 	x = 0
 	y = 2
 	
-	prerequisite = { focus = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials }
+	prerequisite = { focus = USA_TEAPOT_SCANDAL_cover_it_up focus = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials }
 	relative_position_id = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials
 
 	available_if_capitulated = yes
@@ -1707,7 +1828,7 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #he will be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
 	}
 }
 
@@ -2249,7 +2370,7 @@ focus = {
 
 #EARLY FDR PRESIDENCY#
 
-focus = {
+focus = { #FOLLOWS MORE A SOC-CAP MODEL INTERVENTIALIST
 	id = EARLY_FDR_USA_innaugaration_speech
 	icon = GFX_focus_USA_placeholder
 
@@ -2261,7 +2382,7 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #new deal EXTREMELY controversial with indsutry crackdown
 	}
 }
 
@@ -2279,7 +2400,7 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #coolidge 2.0, LIASEZ FIARE
 	}
 }
 
@@ -2297,7 +2418,7 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #wilson dies in 1924
 	}
 }
 
@@ -2454,6 +2575,25 @@ focus = {
 }
 
 focus = {
+	id = EXTRA_WILSON_USA_subsidize_military_industry
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_new_anti_trust_act }
+	relative_position_id = EXTRA_WILSON_USA_new_anti_trust_act
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
 	id = EXTRA_WILSON_USA_interventionalist
 	icon = GFX_focus_USA_placeholder
 
@@ -2481,7 +2621,7 @@ focus = {
 	x = -1
 	y = 1
 	
-	prerequisite = { focus = EXTRA_WILSON_USA_hoover_hands_free focus = EXTRA_WILSON_USA_interventionalist }
+	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist }
 	relative_position_id = EXTRA_WILSON_USA_interventionalist
 
 	available_if_capitulated = yes
@@ -2522,6 +2662,44 @@ focus = {
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist }
 	relative_position_id = EXTRA_WILSON_USA_interventionalist
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_subsudies
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_appoint_state_capitalist_economists }
+	relative_position_id = EXTRA_WILSON_USA_appoint_state_capitalist_economists
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_increase_buisness_incentives
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_appoint_state_capitalist_economists }
+	relative_position_id = EXTRA_WILSON_USA_appoint_state_capitalist_economists
 
 	available_if_capitulated = yes
 	
@@ -2588,6 +2766,82 @@ focus = {
 }
 
 focus = {
+	id = EXTRA_WILSON_USA_hoover_hands_free
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -5
+	y = 1
+
+	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
+	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_appoint_liazess_faire_economy_positions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_hoover_hands_free }
+	relative_position_id = EXTRA_WILSON_USA_hoover_hands_free
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_endorse_stock_potential
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_appoint_liazess_faire_economy_positions }
+	relative_position_id = EXTRA_WILSON_USA_appoint_liazess_faire_economy_positions
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_cut_corporate_taxes
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 3
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_hoover_hands_free }
+	relative_position_id = EXTRA_WILSON_USA_hoover_hands_free
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
 	id = EXTRA_WILSON_USA_first_female_president
 	icon = GFX_focus_USA_placeholder
 
@@ -2631,7 +2885,7 @@ focus = {
 
 	cost = 4
 
-	x = 5
+	x = 4
 	y = 1
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_innaugaration_speech }
@@ -2853,6 +3107,25 @@ focus = {
 	}
 }
 
+focus = {
+	id = EXTRA_WILSON_USA_lower_war_taxes_or_highten_them
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_dawes_plan }
+	relative_position_id = EXTRA_WILSON_USA_dawes_plan
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
 #GENERIC DOMINICAN REPUBLIC PATH#
 
 focus = {
@@ -2890,6 +3163,275 @@ focus = {
 }
 
 #1933/32-1940 Below#
+
+#PUERTO RICO DEPPRESION#
+
+focus = {
+	id = FDR_USA_puerto_rico_relief_administration
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -30
+	y = 0
+	
+	relative_position_id = FDR_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+
+focus = {
+	id = FDR_USA_puerto_rico_teach_better_agricultural_methods
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
+	relative_position_id = FDR_USA_puerto_rico_relief_administration
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_land_reform
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -4
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
+	relative_position_id = FDR_USA_puerto_rico_relief_administration
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_reforestation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_land_reform }
+	relative_position_id = FDR_USA_puerto_rico_land_reform
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_aquire_private_comapnies
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
+	relative_position_id = FDR_USA_puerto_rico_relief_administration
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_hooverite_ideas
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 3
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_aquire_private_comapnies }
+	relative_position_id = FDR_USA_puerto_rico_aquire_private_comapnies
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_public_works
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_aquire_private_comapnies }
+	relative_position_id = FDR_USA_puerto_rico_aquire_private_comapnies
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_send_americans
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_reforestation focus = FDR_USA_puerto_rico_public_works }
+	relative_position_id = FDR_USA_puerto_rico_public_works
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_provide_jobs_through_factories
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_aquire_private_comapnies }
+	relative_position_id = FDR_USA_puerto_rico_aquire_private_comapnies
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_reform
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
+	relative_position_id = FDR_USA_puerto_rico_relief_administration
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_public_housing
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_reform }
+	relative_position_id = FDR_USA_puerto_rico_reform
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_federal_regulations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_reform }
+	relative_position_id = FDR_USA_puerto_rico_reform
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #puerto rico becomes a washington DC~esque area and congress/president directly control it
+	}
+}
+
+
+focus = {
+	id = FDR_USA_puerto_rico_federal_agency
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_federal_regulations }
+	relative_position_id = FDR_USA_puerto_rico_federal_regulations
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 # VERY UNPOPULAR MEASURE BUT HELPS ECONOMY | puerto rico moves towards independence with a governor selected, hoover best option
+	}
+}
+
+focus = {
+	id = FDR_USA_puerto_rico_subsudize_local_economy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_puerto_rico_aquire_private_comapnies }
+	relative_position_id = FDR_USA_puerto_rico_aquire_private_comapnies
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
 
 #FLINT SIT-DOWN STRIKE#
 
@@ -4093,196 +4635,6 @@ focus = {
 		add_political_power = 50
 	}
 }
-
-focus = {
-	id = FDR_USA_puerto_rico
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 6
-	y = 0
-	
-	relative_position_id = FDR_USA_innaugaration_speech
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = FDR_USA_puerto_rico_relief_administration
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = FDR_USA_puerto_rico }
-	relative_position_id = FDR_USA_puerto_rico
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = FDR_USA_puerto_rico_land_reform
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -3
-	y = 1
-	
-	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
-	relative_position_id = FDR_USA_puerto_rico_relief_administration
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = FDR_USA_puerto_rico_teach_better_agricultural_methods
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-	
-	prerequisite = { focus = FDR_USA_puerto_rico_land_reform }
-	relative_position_id = FDR_USA_puerto_rico_land_reform
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = FDR_USA_puerto_rico_reforestation
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 1
-	y = 1
-	
-	prerequisite = { focus = FDR_USA_puerto_rico_land_reform }
-	relative_position_id = FDR_USA_puerto_rico_land_reform
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = FDR_USA_puerto_rico_aquire_pricate_comapnies
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
-	relative_position_id = FDR_USA_puerto_rico_relief_administration
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = FDR_USA_puerto_rico_public_works
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-	
-	prerequisite = { focus = FDR_USA_puerto_rico_aquire_pricate_comapnies }
-	relative_position_id = FDR_USA_puerto_rico_aquire_pricate_comapnies
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = FDR_USA_puerto_rico_provide_jobs_through_factories
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 1
-	y = 1
-	
-	prerequisite = { focus = FDR_USA_puerto_rico_aquire_pricate_comapnies }
-	relative_position_id = FDR_USA_puerto_rico_aquire_pricate_comapnies
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = FDR_USA_puerto_rico_reform
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 2
-	y = 1
-	
-	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
-	relative_position_id = FDR_USA_puerto_rico_relief_administration
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = FDR_USA_puerto_public_housing
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = FDR_USA_puerto_rico_reform }
-	relative_position_id = FDR_USA_puerto_rico_reform
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
 
 focus = {
 	id = FDR_USA_reform
