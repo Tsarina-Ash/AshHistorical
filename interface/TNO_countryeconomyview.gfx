@@ -150,10 +150,10 @@ spriteTypes = {
 			textureFile = "gfx/interface/economy_gui/econ_panel/WT_Activate.dds"
 			noOfFrames = 2
 		}
-		spriteType = {
-			name = "GFX_wt_activate_red"
-			textureFile = "gfx/interface/economy_gui/econ_panel/WT_Activate_Red.dds"
-		}
+		# spriteType = {
+		# 	name = "GFX_wt_activate_red"
+		# 	textureFile = "gfx/interface/economy_gui/econ_panel/WT_Activate_Red.dds"
+		# }
 		spriteType = {
 			name = "GFX_wt_icon"
 			textureFile = "gfx/interface/economy_gui/econ_panel/WT_Icon.dds"
@@ -1193,6 +1193,35 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_econ_help_page_prev"
 		texturefile = "gfx/interface/economy_gui/help/page_prev.dds"
+	}
+
+	spriteType = {
+		name = "GFX_crt_closebutton"
+		texturefile = "gfx/interface/crt_closebutton.dds"
+	}
+	spriteType = {
+		name = "GFX_endgame_flag_overlay"
+		texturefile = "gfx/interface/endgame_flag_overlay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tiled_decisions_bg_crt_small"
+		texturefile = "gfx/interface/tiled_decisions_bg_crt_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tt_overlay_100_40"
+		texturefile = "gfx/interface/tt_overlay_100_40.dds"
+	}
+
+	spriteType = {
+		name = "GFX_COMECON_GUI_Medium_Red_Button"
+		texturefile = "gfx/interface/COMECON_GUI_Small_Red_Button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_COMECON_GUI_Medium_Green_Button"
+		texturefile = "gfx/interface/COMECON_GUI_Small_Green_Button.dds"
 	}
 }
 

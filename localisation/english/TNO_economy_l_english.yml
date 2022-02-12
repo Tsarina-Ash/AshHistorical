@@ -1890,3 +1890,4 @@ econ_help_0_d: "£tt_prod_unit Production Units are your primary resource for mi
 econ_help_1_d: "One of the tools at your disposal are the central bank policies. You can open the list of policies in the inflation quadrant to see your options. Hovering over the policies you can see their effect."
 econ_help_2_d: "The Spending sliders help fine tune your budget. The more you spend, the more effective your policies tied to those sliders are. You can further refine your budget by changing the sub-sliders, which you can reach with the small gear on the left of the slider. Keep an eye on your debt, if your debt-to-gdp ratio gets too high, you might enter a fiscal crisis, which will have drastic consequences on your nation."
 econ_help_3_d: "You can use your political power to temporarily change your income and expenses with the buttons below expenditure and revenue breakdown. These will help you refine your budget better."
+
