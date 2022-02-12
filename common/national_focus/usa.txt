@@ -541,7 +541,7 @@ focus = {
 
 	cost = 1
 
-	x = -6
+	x = -5
 	y = 1
 	
 	prerequisite = { focus = Harding_USA_hot_potato }
@@ -709,7 +709,7 @@ focus = {
 }
 
 focus = {
-	id = Harding_USA_disarmament
+	id = Harding_USA_tackling_disarmament
 	icon = GFX_focus_USA_placeholder
 
 	cost = 1
@@ -747,7 +747,7 @@ focus = {
 }
 
 focus = {
-	id = Harding_USA_abandon_the_league
+	id = Harding_USA_abandon_the_idea_of_the_league
 	icon = GFX_focus_USA_placeholder
 
 	cost = 1
@@ -757,6 +757,25 @@ focus = {
 	
 	prerequisite = { focus = Harding_USA_return_to_normalcy }
 	relative_position_id = Harding_USA_return_to_normalcy
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_can_everyone_just_be_friends
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_abandon_the_idea_of_the_league }
+	relative_position_id = Harding_USA_abandon_the_idea_of_the_league
 
 	available_if_capitulated = yes
 	
@@ -1000,7 +1019,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 2
+	y = 3
 	
 	prerequisite = { focus = Coolidge_USA_speed_up_demobilization }
 	relative_position_id = Coolidge_USA_speed_up_demobilization
@@ -1018,7 +1037,7 @@ focus = {
 
 	cost = 4
 
-	x = 2
+	x = 1
 	y = 1
 	
 	prerequisite = { focus = Coolidge_USA_stay_cool_with_coolidge }
@@ -1037,8 +1056,8 @@ focus = {
 
 	cost = 4
 
-	x = -1
-	y = 1
+	x = 0
+	y = 3
 	
 	prerequisite = { focus = Coolidge_USA_human_rights_issues }
 	relative_position_id = Coolidge_USA_human_rights_issues
@@ -1131,7 +1150,7 @@ focus = {
 
 	cost = 4
 
-	x = 1
+	x = 2
 	y = 1
 	
 	prerequisite = { focus = Coolidge_USA_foreign_policy }
@@ -1934,7 +1953,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 2
+	y = 1
 	
 	prerequisite = { focus = Leonard_Wood_USA_done_with_progressivism }
 	relative_position_id = Leonard_Wood_USA_done_with_progressivism
@@ -1953,7 +1972,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = Leonard_Wood_USA_missipipi_flood_of_1927 }
 	relative_position_id = Leonard_Wood_USA_missipipi_flood_of_1927
@@ -2124,7 +2143,7 @@ focus = {
 	cost = 4
 
 	x = -1
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = Leonard_Wood_USA_european_relief }
 	relative_position_id = Leonard_Wood_USA_european_relief
@@ -2404,7 +2423,7 @@ focus = {
 	}
 }
 
-#EXTRA WILSON PPATH ?#
+#EXTRA WILSON PATH ?#
 
 focus = {
 	id = EXTRA_WILSON_USA_innaugaration_speech
@@ -2412,8 +2431,8 @@ focus = {
 
 	cost = 1
 
-	x = 150
-	y = 0
+	x = 50
+	y = 5
 	
 	available_if_capitulated =  no
 	
@@ -2448,7 +2467,7 @@ focus = {
 	cost = 4
 
 	x = -1
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
 	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
@@ -2467,7 +2486,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 2
+	y = 3
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_unification }
 	relative_position_id = EXTRA_WILSON_USA_unification
@@ -2486,7 +2505,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 2
+	y = 4
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
 	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
@@ -2526,27 +2545,8 @@ focus = {
 	x = 0
 	y = 2
 	
-	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
+	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist } prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
 	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_question_of_minorities
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_increase_union_protections }
-	relative_position_id = EXTRA_WILSON_USA_increase_union_protections
 
 	available_if_capitulated = yes
 	
@@ -2581,7 +2581,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_new_anti_trust_act }
 	relative_position_id = EXTRA_WILSON_USA_new_anti_trust_act
@@ -2695,9 +2695,10 @@ focus = {
 
 	cost = 4
 
-	x = 1
-	y = 2
+	x = 2
+	y = 1
 	
+	prerequisite = { focus = EXTRA_WILSON_USA_subsidize_military_industry }
 	prerequisite = { focus = EXTRA_WILSON_USA_appoint_state_capitalist_economists }
 	relative_position_id = EXTRA_WILSON_USA_appoint_state_capitalist_economists
 
@@ -2829,7 +2830,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 3
+	y = 2
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_hoover_hands_free }
 	relative_position_id = EXTRA_WILSON_USA_hoover_hands_free
@@ -2848,7 +2849,7 @@ focus = {
 	cost = 4
 
 	x = 1
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
 	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
@@ -2867,7 +2868,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 2
+	y = 3
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_first_female_president }
 	relative_position_id = EXTRA_WILSON_USA_first_female_president
@@ -2885,7 +2886,7 @@ focus = {
 
 	cost = 4
 
-	x = 4
+	x = 5
 	y = 1
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_innaugaration_speech }
@@ -2904,7 +2905,7 @@ focus = {
 
 	cost = 4
 
-	x = -2
+	x = -3
 	y = 1
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
@@ -2924,7 +2925,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_moral_diplomacy_two_point_o }
 	relative_position_id = EXTRA_WILSON_USA_moral_diplomacy_two_point_o
@@ -2942,7 +2943,7 @@ focus = {
 
 	cost = 4
 
-	x = 2
+	x = 3
 	y = 1
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
@@ -2962,7 +2963,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_the_league }
 	relative_position_id = EXTRA_WILSON_USA_the_league
@@ -3013,12 +3014,31 @@ focus = {
 }
 
 focus = {
+	id = EXTRA_WILSON_USA_propose_arms_treaty
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_genevea_naval_conference }
+	relative_position_id = EXTRA_WILSON_USA_genevea_naval_conference
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
 	id = EXTRA_WILSON_USA_improve_south_american_relations
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = -1
+	x = -2
 	y = 1
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_question_of_the_league }
@@ -3056,7 +3076,7 @@ focus = {
 
 	cost = 4
 
-	x = 1
+	x = 2
 	y = 1
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_question_of_the_league }
@@ -3095,7 +3115,7 @@ focus = {
 	cost = 4
 
 	x = 0
-	y = 1
+	y = 2
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_european_relief }
 	relative_position_id = EXTRA_WILSON_USA_european_relief

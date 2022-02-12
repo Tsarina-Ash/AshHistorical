@@ -85,9 +85,6 @@ EXTRA_WILSON_USA_crack_down_on_poor_industry_practices_desc:0 ""
 EXTRA_WILSON_USA_increase_union_protections:0 "Increase Union's Federal Protection"
 EXTRA_WILSON_USA_increase_union_protections_desc:0 ""
 
-EXTRA_WILSON_USA_question_of_minorities:0 "The Question of Minorities"
-EXTRA_WILSON_USA_question_of_minorities_desc:0 ""
-
 EXTRA_WILSON_USA_new_anti_trust_act:0 "Expand Anti-Trust Acts"
 EXTRA_WILSON_USA_new_anti_trust_act_desc:0 ""
 
@@ -159,6 +156,9 @@ EXTRA_WILSON_USA_question_of_the_league_desc:0 ""
 
 EXTRA_WILSON_USA_genevea_naval_conference:0 "Host Naval Conference"
 EXTRA_WILSON_USA_genevea_naval_conference_desc:0 ""
+
+EXTRA_WILSON_USA_propose_arms_treaty:0 "Arms and Bombs Away"
+EXTRA_WILSON_USA_propose_arms_treaty_desc:0 ""
 
 EXTRA_WILSON_USA_improve_south_american_relations:0 "Improve Relations With Neighbors"
 EXTRA_WILSON_USA_improve_south_american_relations_desc:0 ""
