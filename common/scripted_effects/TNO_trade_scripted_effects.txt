@@ -131,14 +131,14 @@ update_market_recurring_trade = {
 		end = 9
 		value = resource_type
 
-		set_variable = { TNO_recurring_trade_res^resource_type = TNO_recurring_trade_pus^resource_type  }
+		set_variable = { TNO_recurring_trade_res^resource_type = TNO_recurring_trade_pus^resource_type }
 		multiply_variable = { TNO_recurring_trade_res^resource_type = -1 }
 		multiply_variable = { TNO_recurring_trade_res^resource_type = ZZZ.TNO_export_size^resource_type }
 
-		set_variable = { TNO_recurring_trade_res_import^resource_type = TNO_recurring_trade_res^resource_type  }
+		set_variable = { TNO_recurring_trade_res_import^resource_type = TNO_recurring_trade_res^resource_type }
 		clamp_variable = { var = TNO_recurring_trade_res_import^resource_type min = 0 }
 
-		set_variable = { TNO_recurring_trade_res_export^resource_type = TNO_recurring_trade_res^resource_type  }
+		set_variable = { TNO_recurring_trade_res_export^resource_type = TNO_recurring_trade_res^resource_type }
 		clamp_variable = { var = TNO_recurring_trade_res_export^resource_type max = 0 }
 		multiply_variable = { TNO_recurring_trade_res_export^resource_type = -1 }
 
@@ -508,7 +508,7 @@ single_base_trade_influence = {
 		add_to_temp_variable = { temp_trade_opinion_factor = 1 }
 		multiply_variable = { trade_opinion@PREV = temp_trade_opinion_factor }
 		if = {
-			limit = {  
+			limit = { 
 				OR = { 
 					check_variable = { trade_opinion_embargo@PREV = 1 } 
 					check_variable = { PREV.trade_opinion_embargo@THIS = 1 } 
@@ -771,7 +771,7 @@ update_market = {
 	every_other_country = {
 		limit = { 
 			econ_can_use_economy_system = yes
-			NOT = { ZZZ = {  is_in_array = { array = TNO_trade_nations value = PREV } } }
+			NOT = { ZZZ = { is_in_array = { array = TNO_trade_nations value = PREV } } }
 		}
 		TNO_startup_nation = yes
 		log = "added country to TNO_trade_nations, [?THIS.GetTag]"
@@ -896,7 +896,7 @@ update_market = {
 							check_variable = { trade_opinion@PREV > 0 } 
 						}
 
-						set_temp_variable = { trade_amount = TNO_unfulfilled_trade^resource_type }  # amount TNO_trade_partner wants to export
+						set_temp_variable = { trade_amount = TNO_unfulfilled_trade^resource_type } # amount TNO_trade_partner wants to export
 						set_temp_variable = { trade_break_adder = 0 }
 						if = {
 							limit = { PREV = { check_variable = { trade_amount < TNO_unfulfilled_trade^resource_type } } }
@@ -1001,8 +1001,8 @@ update_market = {
 			end = 9
 			value = resource_type
 
-		    multiply_variable = { TNO_fulfilled_imports^resource_type = ZZZ.TNO_export_size^resource_type }
-		    multiply_variable = { TNO_fulfilled_exports^resource_type = ZZZ.TNO_export_size^resource_type }
+			multiply_variable = { TNO_fulfilled_imports^resource_type = ZZZ.TNO_export_size^resource_type }
+			multiply_variable = { TNO_fulfilled_exports^resource_type = ZZZ.TNO_export_size^resource_type }
 		}
 		
 		set_variable = { TNO_market_oil = TNO_fulfilled_exports^1 }
@@ -1073,7 +1073,7 @@ update_market = {
 		}
 
 		set_variable = { net_put_trade = PU_exports_m }
-		subtract_from_variable = { net_put_trade = PU_imports_m  }
+		subtract_from_variable = { net_put_trade = PU_imports_m }
 		add_to_array = { TNO_net_pu_trade = net_put_trade }
 
 		add_to_array = { TNO_pu_trade_imports = PU_imports_m }

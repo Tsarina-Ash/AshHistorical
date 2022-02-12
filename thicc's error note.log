@@ -1,0 +1,23 @@
+###############
+Reacuring Erros
+Delete .log when fixed
+(or when you feel like it)
+###############
+
+######################## \history\states
+in \history\states every single fucking
+"local_supplies = <value>"
+is 
+"unexpected in state"
+it is causing an error for every one
+lol
+########################
+
+######################## \map\strategicregions
+in \map\strategicregions every 'almost' single fucking 
+"period = {}"
+is missing
+"temperature_day_night = {}"
+it is causing an error for every one
+lol
+########################

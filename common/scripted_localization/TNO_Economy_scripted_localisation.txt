@@ -4006,7 +4006,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				tag = GER
-	 			check_variable = { ECON_SPHERE_LEADER = GER }
+				check_variable = { ECON_SPHERE_LEADER = GER }
 			}
 		}
 		localization_key = TNO_GER_sphere_credit_loc
@@ -4015,19 +4015,19 @@ defined_text = {
 		trigger = {
 			OR = {
 				tag = JAP
-	 			check_variable = { ECON_SPHERE_LEADER = JAP }
+				check_variable = { ECON_SPHERE_LEADER = JAP }
 			}
 		}
 		localization_key = TNO_JAP_sphere_credit_loc
 	}
 	# text = {
-	# 	trigger = {
-	# 		OR = {
-	# 			tag = ITA
-	#  			check_variable = { ECON_SPHERE_LEADER = ITA }
-	# 		}
-	# 	}
-	# 	localization_key = TNO_ITA_sphere_credit_loc
+	#	trigger = {
+	#		OR = {
+	#			tag = ITA
+	#			check_variable = { ECON_SPHERE_LEADER = ITA }
+	#		}
+	#	}
+	#	localization_key = TNO_ITA_sphere_credit_loc
 	# }
 	text = {
 		localization_key = TNO_USA_sphere_credit_loc
@@ -4893,54 +4893,54 @@ defined_text = {
 defined_text = {
 	name = GetCurrency
 	# text = {
-	# 	trigger = {
-	# 		# OR = {
-	# 		# 	tag = GER
-	# 		# 	check_variable = { ECON_SPHERE_LEADER = GER }
-	# 			ROOT = {
-	# 				OR = {
-	# 					tag = GER
-	# 					check_variable = { ECON_SPHERE_LEADER = GER }
-	# 				}
-	# 			}
-	# 		#}
-	# 	}
+	#	trigger = {
+	#		# OR = {
+	#		#	tag = GER
+	#		#	check_variable = { ECON_SPHERE_LEADER = GER }
+	#			ROOT = {
+	#				OR = {
+	#					tag = GER
+	#					check_variable = { ECON_SPHERE_LEADER = GER }
+	#				}
+	#			}
+	#		#}
+	#	}
 
-	# 	localization_key = CURRENCY_REICHSMARK
+	#	localization_key = CURRENCY_REICHSMARK
 	# }
 
 	# text = {
-	# 	trigger = {
-	# 		# OR = {
-	# 		# 	tag = JAP
-	# 		# 	check_variable = { ECON_SPHERE_LEADER = JAP }
-	# 			ROOT = {
-	# 				OR = {
-	# 					tag = JAP
-	# 					check_variable = { ECON_SPHERE_LEADER = JAP }
-	# 				}
-	# 			}
-	# 		#}
-	# 	}
+	#	trigger = {
+	#		# OR = {
+	#		#	tag = JAP
+	#		#	check_variable = { ECON_SPHERE_LEADER = JAP }
+	#			ROOT = {
+	#				OR = {
+	#					tag = JAP
+	#					check_variable = { ECON_SPHERE_LEADER = JAP }
+	#				}
+	#			}
+	#		#}
+	#	}
 
-	# 	localization_key = CURRENCY_YEN
+	#	localization_key = CURRENCY_YEN
 	# }
 
 	# text = { # ask about coding this in for all russian folks
-	# 	trigger = {
-	# 		# OR = {
-	# 		# 	is_russian_nation = yes
-    # 		# 	is_kazakh_nation = yes
-	# 			ROOT = {
-	# 				OR = {
-	# 					is_russian_nation = yes
-    # 					is_kazakh_nation = yes
-	# 				}
-	# 			}
-	# 		#}
-	# 	}
+	#	trigger = {
+	#		# OR = {
+	#		#	is_russian_nation = yes
+	#		#	is_kazakh_nation = yes
+	#			ROOT = {
+	#				OR = {
+	#					is_russian_nation = yes
+	#					is_kazakh_nation = yes
+	#				}
+	#			}
+	#		#}
+	#	}
 
-	# 	localization_key = CURRENCY_RUBLE
+	#	localization_key = CURRENCY_RUBLE
 	# }
 
 	text = {
@@ -4982,7 +4982,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				is_russian_nation = yes
-    			is_kazakh_nation = yes
+				is_kazakh_nation = yes
 			}
 		}
 
@@ -5296,10 +5296,10 @@ defined_text = {
 			# divide_temp_variable = { temp_infra_damaged_effect = 100 } # make it display nice 
 
 			# if = { 
-			# 	limit = {
-			# 		check_variable = { temp_next_month_GDP_growth_value > 1000 }
-			# 	}
-			# 	divide_temp_variable = { temp_next_month_GDP_growth_value = 1000 }
+			#	limit = {
+			#		check_variable = { temp_next_month_GDP_growth_value > 1000 }
+			#	}
+			#	divide_temp_variable = { temp_next_month_GDP_growth_value = 1000 }
 			# }
 		}
 
@@ -5692,11 +5692,11 @@ defined_text = {
 		trigger = { check_variable = { TNO_economy_subtype = 14 } } 
 		localization_key = econ_subtype_permit_raj_title
 	}
-    text = {
+	text = {
 		trigger = { check_variable = { TNO_economy_subtype = 15 } } 
 		localization_key = econ_subtype_christian_anarchism_title
 	}	
-    text = {
+	text = {
 		trigger = { check_variable = { TNO_economy_subtype = 16 } } 
 		localization_key = econ_subtype_social_market_title
 	}
@@ -5909,7 +5909,7 @@ defined_text = {
 		trigger = { check_variable = { TNO_economy_subtype = 17 } }
 		localization_key = econ_subtype_agrarian_spartanism_tt
 	}
-    	text = {
+		text = {
 		trigger = { check_variable = { TNO_economy_subtype = 18 } }
 		localization_key = econ_subtype_futurist_corporatism_tt
 	}
