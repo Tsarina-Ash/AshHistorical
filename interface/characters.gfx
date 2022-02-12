@@ -1,6 +1,6 @@
 spriteTypes = {
     spriteType = {
         name = "GFX_portrait_ZZZ_anarchy"
-        texturefile = "gfx/leaders/ZZZ/portrait_ZZZ_anarchy.dds"
+        texturefile = "gfx/leaders/ZZZ/Portrait_ZZZ_anarchy.dds"
     }
 }

@@ -1,9 +1,9 @@
 bookmarks = {
     bookmark = {
         name = "ROARING_TWENTIES_NAME"
-        name = "ROARING_TWENTIES_DESC"
+        desc = "ROARING_TWENTIES_DESC"
         date = 1920.1.1.12
-        # picture = ""
+        picture = ""
         default_country = "USA"
         default = yes
 
@@ -36,12 +36,12 @@ bookmarks = {
             history = "USA_ROARINTG_TWENTIES_DESC"
             ideology = democratic
             ideas = {
-				WILSON_USA_ill_presidency
-				WILSON_USA_begin_demobilization
-				WILSON_USA_league_of_nations
+
             }
             focuses = {
-
+                WILSON_USA_ill_presidency
+				WILSON_USA_begin_demobilization
+				WILSON_USA_league_of_nations
             }
         }
         "ENG" = {
@@ -133,13 +133,13 @@ bookmarks = {
             }
         }   
         #Buffer
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #France Row 1
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #Buffer
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #USA Row 1
         "BRA" = {
             history = "ROARING_TWENTIES_DESC"
@@ -175,7 +175,7 @@ bookmarks = {
             }
         } 
         #Buffer
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #UK Row 1
         "RAJ" = {
             history = "ROARING_TWENTIES_DESC"
@@ -212,7 +212,7 @@ bookmarks = {
             }
         } 
         #Buffer
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #Soviet Union row 1
         "MON" = {
             history = "ROARING_TWENTIES_DESC"
@@ -236,9 +236,9 @@ bookmarks = {
 
             }
         }
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #Buffer
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #Germany row 1
         "SWE" = {
             history = "ROARING_TWENTIES_DESC"
@@ -251,22 +251,22 @@ bookmarks = {
 
             }
         }
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #Buffer
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #Japan row 1
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #Buffer
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #Italy row 1
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #Buffer
-        # "ZZZ" = { minor = yes history = "" }
+        # "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #China row 2
         "TIB" = {
             history = "ROARING_TWENTIES_DESC"
@@ -302,19 +302,19 @@ bookmarks = {
             }
         }
         #Buffer
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #France row 2
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #Buffer
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #USA row 2
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #Buffer
-        "ZZZ" = { minor = yes history = "" }
+        "ZZZ" = { minor = yes history = "" ideology = neutrality  }
         #UK row 2
         "AST" = {
             history = "ROARING_TWENTIES_DESC"

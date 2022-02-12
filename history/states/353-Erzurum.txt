@@ -20,12 +20,6 @@ state={
 		}
 		if = {
 			limit = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			
-		}
-		if = {
-			limit = {
 				NOT = { has_dlc = "Battle for the Bosporus" }
 			}
 			add_core_of = TUR

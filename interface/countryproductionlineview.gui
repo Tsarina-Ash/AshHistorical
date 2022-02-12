@@ -2266,7 +2266,7 @@ guiTypes = {
 			verticalScrollbar = "right_vertical_slider"
 			smooth_scrolling = yes
 			#!!! TWO TOPS
-			margin = { top = 0 top=13 bottom = 12 left = 2}
+			margin = { top = 0 right=13 bottom = 12 left = 2}
 
 			background = {
 				name = "Background"
