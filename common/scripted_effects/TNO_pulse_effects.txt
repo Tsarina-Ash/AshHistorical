@@ -61,34 +61,6 @@ first_every_month_script = {
 		TNO_div_limiter_calculate_unit_cap = yes
 	}
 
-	#if = {
-	#	limit = {
-	#		KOK = {
-	#			exists = yes
-	#		}
-	#	}
-	#	KOK = {
-	#		#khanate_legitimacy_overflow_check = yes
-	#		khanate_legitimacy_idea_assignment = yes
-	#
-	#		if = {
-	#			limit = {
-	#				NOT = { has_country_flag = KOK_FAIR_KHAN }
-	#			}
-	#			khanate_monthly_unrest_calc = yes
-	#			khanate_vibe_check = yes
-	#			khanate_slave_bonus_scaling = yes
-	#			khanate_monthly_slave_gain = yes
-	#		}
-	#		if = {
-	#			limit = {
-	#				check_variable = { khanate_slave_unrest_monthly > 0.01 }
-	#			}
-	#			khanate_unrest_increase = yes
-	#		}
-	#	}
-	#}
-
 	ZZZ = {
 		econ_recompile_all_spheres = yes
 		generate_econ_rankings = yes
@@ -119,55 +91,6 @@ first_every_month_script = {
 			check_variable = { GDP = 0.0 } #already converted to billion
 		}
 		generate_country_gdp = yes
-	}
-
-	USA = {
-		USA_monthly_pulse_effect = yes
-	}
-
-	#if = {
-		#	limit = {
-			#		NPL = {
-				#			exists = yes
-				#			NOT = {
-					#				has_country_flag = NPL_revolt
-					#			}
-				#		}
-			#	}
-		#	NPL = {
-			#		add_to_variable = { NPL_Polish_Approval = NPL_Polish_Approval_monthly }
-			#		add_to_variable = { NPL_Native_Unrest = NPL_Native_Unrest_monthly }
-			#		add_to_variable = { NPL_Food_Security = NPL_Food_Security_monthly }
-			#		NPL_clamp_all_variables = yes
-			#		NPL_check_all_variables = yes
-			#	}
-		#}
-
-	# if = {
-	# 	limit = {
-	# 		OR = {
-	# 			country_exists = FEN
-	# 			country_exists = ENG
-	# 		}
-	# 	}
-	# 	ParliamentMechanic_GovStab_Calculate = yes
-	# }
-
-	# ARC stuff
-	update_state_population_custom_growth = yes 
-}
-
-#for when monthly_population is less than -1
-properly_reduce_population = {
-	every_controlled_state = {
-		set_temp_variable = { manpower_to_remove_k = PREV.modifier@monthly_population }
-		multiply_temp_variable = { manpower_to_remove_k = 100 } # lmao
-		multiply_temp_variable = { manpower_to_remove_k = 0.015 } # actual pop growth rate expressed as % in 100
-		multiply_temp_variable = { manpower_to_remove_k = state_population_k } # number to add in k x 100 
-		multiply_temp_variable = { manpower_to_remove_k = 10 } 
-		divide_temp_variable = { manpower_to_remove_k = 12 } # occurs monthly! 
-		add_manpower = var:manpower_to_remove_k
-		log = "Added [?manpower_to_remove_k] to [THIS.GETNAME] "
 	}
 }
 
@@ -281,4 +204,121 @@ societal_development_monthly_check = {
 	# 	add_to_variable = { army_professionalism_counter = 240 }
 	# 	multiply_variable = { army_professionalism_monthly_change = 0.25 }
 	# }
+}
+
+calculate_building_variables = {
+	clear_variable = total_synthetic_refinery
+	# clear_variable = total_schools
+	# clear_variable = total_offices
+	# clear_variable = total_hospitals
+	# clear_variable = total_barracks
+	# clear_variable = total_prisons
+	clear_variable = total_thermo_plants
+	clear_variable = total_nuclear_reactors
+	
+	# clear_variable = state_without_racks
+	# clear_variable = state_without_prisons
+	# set_variable = {school_in_best_empty_state = 0}
+	# set_variable = {office_in_best_empty_state = 0}
+	# set_variable = {hospital_in_best_empty_state = 0}
+	
+	# set_variable = { schools_country_effect = 0 }
+	# set_variable = { offices_country_effect = 0 }
+	# set_variable = { hospitals_country_effect = 0 }
+	# set_variable = { barracks_country_effect = 0 }
+	# set_variable = { prisons_country_effect = 0 }
+	# set_variable = {altered_num_owned_states = num_owned_states}
+	set_variable = {total_slot_calculation = 0}
+
+	every_owned_state = {
+		if = { 
+			limit = { NOT = { check_variable = { TNO_lights = 2 } } }
+			add_to_variable = { PREV.total_synthetic_refinery = non_damaged_building_level@synthetic_refinery }
+			# add_to_variable = { PREV.total_schools = non_damaged_building_level@schools }
+			# add_to_variable = { PREV.total_offices = non_damaged_building_level@offices }
+			# add_to_variable = { PREV.total_hospitals = non_damaged_building_level@hospitals }
+			# add_to_variable = { PREV.total_barracks = non_damaged_building_level@barracks }
+			# add_to_variable = { PREV.total_prisons = non_damaged_building_level@prisons }
+		}
+		add_to_variable = { PREV.total_thermo_plants = non_damaged_building_level@thermoelectric_plant }
+		add_to_variable = { PREV.total_nuclear_reactors = non_damaged_building_level@nuclear_reactor }
+	}
+
+	if = {
+		limit = { has_country_flag = TNO_eliminate_building_demand }
+		# set_variable = { schools_research_modifier = 0 }
+		# set_variable = { offices_PP_modifier = 0 }
+		# set_variable = { hospitals_pop_growth_modifier = 0 }
+		# set_variable = { barracks_manpower_modifier = 0 }
+		# set_variable = { barracks_org_modifier = 0 }
+		# set_variable = { prisons_stab_modifier = 0 }
+	}
+	else = {
+		
+		# set_variable = { school_covered_province = 0 }
+		# set_variable = { office_covered_province = 0 }
+		# set_variable = { hospital_covered_province = 0 }
+		# set_variable = { barrack_covered_province = 0 }
+		# set_variable = { prison_covered_province = 0 }
+		set_variable = { slot_multiplier = modifier@global_building_slots_factor }
+		add_to_variable = { slot_multiplier = 1 }
+		set_variable = { slot_addition = modifier@global_building_slots }
+		
+
+		
+		every_owned_state = {
+			set_temp_variable = {local_slot_multiplier = modifier@local_building_slots_factor}
+			add_to_temp_variable = {local_slot_multiplier = 1}
+			set_temp_variable = {local_slots = modifier@local_building_slots}
+			add_to_temp_variable = { local_slots = PREV.slot_addition }
+			multiply_temp_variable = {local_slots = local_slot_multiplier}
+			multiply_temp_variable = {local_slots = PREV.slot_multiplier}
+			if = {limit = {check_variable = {local_slots < 1}}
+				add_to_variable = {PREV.altered_num_owned_states = -1}
+				#If a state has no building slot, it's deduced from your total number of states
+			}
+			#Calculation so that number of building required < number of building you can possibly build
+			if = {limit = {check_variable = {local_slots >1}}
+				round_temp_variable = local_slots
+			}
+			clamp_temp_variable = {
+				var = local_slots
+				max = 5
+				min = 0
+			}
+			add_to_variable = {PREV.total_slot_calculation = local_slots}
+		}
+	}
+
+
+	set_variable = { buildings_power_demand = num_of_enrichment_plants }
+	multiply_variable = { buildings_power_demand = 4 }
+	set_variable = { num_of_silos_power_demand = num_of_silos }
+	multiply_variable = { num_of_silos_power_demand = 2 }
+
+	add_to_variable = { buildings_power_demand = num_of_silos_power_demand }
+	add_to_variable = { buildings_power_demand = used_naval_facs }
+	add_to_variable = { buildings_power_demand = total_synthetic_refinery }
+	# add_to_variable = { buildings_power_demand = total_schools }
+	# add_to_variable = { buildings_power_demand = total_offices }
+	# add_to_variable = { buildings_power_demand = total_hospitals }
+	# add_to_variable = { buildings_power_demand = total_barracks }
+	# add_to_variable = { buildings_power_demand = total_prisons }
+
+	divide_variable = { buildings_power_demand = 2 }
+
+	set_variable = { buildings_oil_demand = total_thermo_plants }
+
+	set_variable = { buildings_uranium_demand = num_of_enrichment_plants }
+	multiply_variable = { buildings_uranium_demand = 6 }
+	set_variable = { num_of_nuclear_reactors_uranium_demand = total_nuclear_reactors }
+	multiply_variable = { num_of_nuclear_reactors_uranium_demand = 4 }
+	add_to_variable = { buildings_uranium_demand = num_of_nuclear_reactors_uranium_demand }
+
+	# calculate_needed_schools = yes
+	# calculate_needed_hospitals = yes
+	# calculate_needed_prisons = yes
+	# calculate_needed_barracks = yes
+	# calculate_needed_offices = yes
+	calculate_building_satisfaction = yes
 }

@@ -2894,34 +2894,6 @@ guiTypes = {
 			alwaysTransparent = yes
 		}
 	}
-
-	# # [OLD] Burgundy Econ View
-	containerWindowType = {
-		name = "economy_view_BRG"
-		position = { x = 0 y = 28 }
-		size = { width = 830 height = -1 }
-		clipping = no
-		
-		background = {
-			name = "Background"
-			quadTextureSprite = "GFX_tiled_window_thin_border2_hollow"
-		}
-		
-		iconType = {
-			name = "BRG_econ_window_overlay"
-			spriteType = "GFX_BRG_econ_window_overlay"
-			position = { x = 4 y = -29 }
-		}
-
-		buttonType = {
-			name = "BRG_economy_close_button"
-			position = { x = 796 y = -25 }
-			quadTextureSprite = "GFX_closebutton_small"
-			buttonFont = "Main_14_black"
-			shortcut = "ESCAPE"
-			clicksound = click_close
-		}
-	}
 }
 
 # # Econ Macro Menu - Line Graphs

@@ -82,11 +82,11 @@ scripted_gui = {
 		parent_window_token = top_bar
 		# dirty = ECON_SPHERE_LEADER # Oopsie.
 
-		visible = {
-			NOT = {
-				has_global_flag = TNO_my_world_is_on_fire_how_about_yours
-			}
-		}
+		# visible = { #For when the nukes go off, just don't worry about it for now - Dina
+		# 	NOT = {
+		# 		has_global_flag = TNO_my_world_is_on_fire_how_about_yours
+		# 	}
+		# }
 
 		properties = {
 			
@@ -120,12 +120,6 @@ scripted_gui = {
 
 		visible = { 
 			always = yes
-			NOT = {
-				AND = {
-					tag = BRG 
-					BRG = { AND = { has_country_flag = BRG_Econ_Off is_ai = no } }
-				}
-			}
 		}
 
 		### Tabs / Base
@@ -808,12 +802,6 @@ scripted_gui = {
 		visible = {
 			econ_macroView = yes
 			econ_can_use_economy_system = yes
-			NOT = {
-				AND = {
-					tag = BRG 
-					BRG = { AND = { has_country_flag = BRG_Econ_Off is_ai = no } }
-				}
-			}
 		}
 
 		### | INDEX | ###
@@ -2702,30 +2690,6 @@ scripted_gui = {
 
 		properties = {
 			central_bank_policy_icon = { image = "[Get_Central_Bank_Policy_icon]" }
-		}
-	}
-
-	# # Burgundy Econ Cover
-	TNO_economy_BRG = {
-		window_name = "economy_view_BRG"
-		context_type = player_context
-		parent_window_token = trade_tab
-
-		visible = {
-			tag = BRG
-			has_country_flag = BRG_Econ_Off
-		}
-		
-		effects = {
-			BRG_economy_close_button_click = {
-				if = {
-					limit = { NOT = { has_country_flag = econ_view_visible } }
-					set_country_flag = econ_view_visible
-				}
-				else = {
-					clr_country_flag = econ_view_visible
-				}
-			}
 		}
 	}
 }
