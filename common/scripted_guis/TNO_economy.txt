@@ -2933,590 +2933,590 @@ scripted_gui = {
 }
 
 # # Construction Menu
-scripted_gui = {
- 	# # Building Satisfaction
-	TNO_building_satisfaction_info = {
-		window_name = "TNO_building_satisfaction_info"
-		context_type = player_context
-		parent_window_token = construction_tab
+# scripted_gui = {
+#  	# # Building Satisfaction
+# 	TNO_building_satisfaction_info = {
+# 		window_name = "TNO_building_satisfaction_info"
+# 		context_type = player_context
+# 		parent_window_token = construction_tab
 
-		visible = {
-			always = yes
-		}
+# 		visible = {
+# 			always = yes
+# 		}
 
-		properties = {
-			schools_prog = { frame = TNO_schools_satisfaction }
-			hospitals_prog = { frame = TNO_hospitals_satisfaction }
-			admins_prog = { frame = TNO_offices_satisfaction }
-			bases_prog = { frame = TNO_barracks_satisfaction }
-			prisons_prog = { frame = TNO_prisons_satisfaction }
-		}
-	}
+# 		properties = {
+# 			schools_prog = { frame = TNO_schools_satisfaction }
+# 			hospitals_prog = { frame = TNO_hospitals_satisfaction }
+# 			admins_prog = { frame = TNO_offices_satisfaction }
+# 			bases_prog = { frame = TNO_barracks_satisfaction }
+# 			prisons_prog = { frame = TNO_prisons_satisfaction }
+# 		}
+# 	}
 
-	# # Production Units Button
-	TNO_production_units_toggle_button_construction = {
-		window_name = "production_units_toggle_button_construction"
-		context_type = player_context
-		parent_window_token = construction_tab
-		dirty = TNO_production_gui_dirty
+# 	# # Production Units Button
+# 	TNO_production_units_toggle_button_construction = {
+# 		window_name = "production_units_toggle_button_construction"
+# 		context_type = player_context
+# 		parent_window_token = construction_tab
+# 		dirty = TNO_production_gui_dirty
 
-		visible = {
-			always = yes
-		}
+# 		visible = {
+# 			always = yes
+# 		}
 
-		triggers = {
-			production_units_toggle_alert_visible = {
-				NOT = { has_country_flag = has_opened_pu_menu }
-			}
-		}
+# 		triggers = {
+# 			production_units_toggle_alert_visible = {
+# 				NOT = { has_country_flag = has_opened_pu_menu }
+# 			}
+# 		}
 
-		effects = {
-			production_units_toggle_const_click = {
-				if = {
-					limit = { has_country_flag = construction_production_units_open }
-					clr_country_flag = construction_production_units_open
-				}
-				else = {
-					set_country_flag = construction_production_units_open
-				}
-				set_country_flag = has_opened_pu_menu
-				update_production_unit_allocation = yes
-				add_to_variable = { TNO_production_gui_dirty = 1 }
-			}
-		}
-	}
+# 		effects = {
+# 			production_units_toggle_const_click = {
+# 				if = {
+# 					limit = { has_country_flag = construction_production_units_open }
+# 					clr_country_flag = construction_production_units_open
+# 				}
+# 				else = {
+# 					set_country_flag = construction_production_units_open
+# 				}
+# 				set_country_flag = has_opened_pu_menu
+# 				update_production_unit_allocation = yes
+# 				add_to_variable = { TNO_production_gui_dirty = 1 }
+# 			}
+# 		}
+# 	}
 
-	# # Production Units Submenu
-	TNO_production_units_info_tab = {
-		window_name = "production_units_info_tab"
-		context_type = player_context
-		parent_window_token = construction_tab
-		dirty = TNO_production_gui_dirty
+# 	# # Production Units Submenu
+# 	TNO_production_units_info_tab = {
+# 		window_name = "production_units_info_tab"
+# 		context_type = player_context
+# 		parent_window_token = construction_tab
+# 		dirty = TNO_production_gui_dirty
 
-		visible = {
-			has_country_flag = construction_production_units_open
-		}
+# 		visible = {
+# 			has_country_flag = construction_production_units_open
+# 		}
 
-		dynamic_lists = {
-			production_squares = {
-				array = prod_units_production_display
-				change_scope = no
-				entry_container = production_units_production_square
-				index = square_idx
-			}
-		}
+# 		dynamic_lists = {
+# 			production_squares = {
+# 				array = prod_units_production_display
+# 				change_scope = no
+# 				entry_container = production_units_production_square
+# 				index = square_idx
+# 			}
+# 		}
 
-		dynamic_lists = {
-			allocation_boxes = {
-				array = prod_units_allocation_types
-				value = good_type
-				entry_container = production_units_allocation_box
-			}
-		}
+# 		dynamic_lists = {
+# 			allocation_boxes = {
+# 				array = prod_units_allocation_types
+# 				value = good_type
+# 				entry_container = production_units_allocation_box
+# 			}
+# 		}
 
-		properties = {
-			box_pus = { frame = prod_units_display_amounts_frame^good_type }
-			box_pus_unfulfilled = { frame = prod_units_display_amounts_frame^good_type }
-			display_5_btn = { frame = prod_units_displaying_5^good_type }
-			display_10_btn = { frame = prod_units_displaying_10^good_type }
-			allocation_type_icon = {
-				image = "[Get_allocation_type_icon]"
-				frame = mils_mult
-			}
-			tokenizer_btn = { frame = mils_mult }
-			mini_workshop_icon = { image = "GFX_production_units_mini_workshop_[?mils_mult]" }
-		}
+# 		properties = {
+# 			box_pus = { frame = prod_units_display_amounts_frame^good_type }
+# 			box_pus_unfulfilled = { frame = prod_units_display_amounts_frame^good_type }
+# 			display_5_btn = { frame = prod_units_displaying_5^good_type }
+# 			display_10_btn = { frame = prod_units_displaying_10^good_type }
+# 			allocation_type_icon = {
+# 				image = "[Get_allocation_type_icon]"
+# 				frame = mils_mult
+# 			}
+# 			tokenizer_btn = { frame = mils_mult }
+# 			mini_workshop_icon = { image = "GFX_production_units_mini_workshop_[?mils_mult]" }
+# 		}
 
-		triggers = {
-			box_pus_visible = {
-				set_temp_variable = { thresh = square_idx }
-				multiply_temp_variable = { thresh = prod_units_display_amounts^good_type }
+# 		triggers = {
+# 			box_pus_visible = {
+# 				set_temp_variable = { thresh = square_idx }
+# 				multiply_temp_variable = { thresh = prod_units_display_amounts^good_type }
 
-				set_temp_variable = { amnt = PU_consumer_goods }
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					set_temp_variable = { amnt = PU_civilian_factories }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					set_temp_variable = { amnt = PU_military_factories }
-				}
+# 				set_temp_variable = { amnt = PU_consumer_goods }
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					set_temp_variable = { amnt = PU_civilian_factories }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					set_temp_variable = { amnt = PU_military_factories }
+# 				}
 
-				check_variable = { amnt > thresh }
-			}
-			box_pus_unfulfilled_visible = {
-				set_temp_variable = { thresh = square_idx }
-				multiply_temp_variable = { thresh = prod_units_display_amounts^good_type }
+# 				check_variable = { amnt > thresh }
+# 			}
+# 			box_pus_unfulfilled_visible = {
+# 				set_temp_variable = { thresh = square_idx }
+# 				multiply_temp_variable = { thresh = prod_units_display_amounts^good_type }
 
-				set_temp_variable = { amnt = PU_consumer_goods }
-				set_temp_variable = { wanted = PU_consumer_goods_desired }
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					set_temp_variable = { amnt = PU_civilian_factories }
-					set_temp_variable = { wanted = PU_civilian_factories_desired }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					set_temp_variable = { amnt = PU_military_factories }
-					set_temp_variable = { wanted = PU_military_factories_desired }
-				}
+# 				set_temp_variable = { amnt = PU_consumer_goods }
+# 				set_temp_variable = { wanted = PU_consumer_goods_desired }
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					set_temp_variable = { amnt = PU_civilian_factories }
+# 					set_temp_variable = { wanted = PU_civilian_factories_desired }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					set_temp_variable = { amnt = PU_military_factories }
+# 					set_temp_variable = { wanted = PU_military_factories_desired }
+# 				}
 
-				NOT = { check_variable = { amnt > thresh } }
-				check_variable = { wanted > thresh }
-			}
-			add_pus_btn_click_enabled = {
-				NOT = { check_variable = { good_type = 2 } }
-			}
-			sub_pus_btn_click_enabled = {
-				NOT = { check_variable = { good_type = 2 } }
-			}
-		}
+# 				NOT = { check_variable = { amnt > thresh } }
+# 				check_variable = { wanted > thresh }
+# 			}
+# 			add_pus_btn_click_enabled = {
+# 				NOT = { check_variable = { good_type = 2 } }
+# 			}
+# 			sub_pus_btn_click_enabled = {
+# 				NOT = { check_variable = { good_type = 2 } }
+# 			}
+# 		}
 
-		effects = {
-			tokenizer_btn_click = {
-				if = { 
-					limit = { has_country_flag = tokenizer_flag_enabled }
-					clr_country_flag = tokenizer_flag_enabled
-					subtract_from_variable = { mils_mult = 1 }
-					update_production_unit_allocation = yes
-				}
-				else = {
-					set_country_flag = tokenizer_flag_enabled
-					add_to_variable = { mils_mult = 1 }
-					update_production_unit_allocation = yes
-				}
-			}
-			production_units_close_btn_click = {
-				clr_country_flag = construction_production_units_open
-			}
+# 		effects = {
+# 			tokenizer_btn_click = {
+# 				if = { 
+# 					limit = { has_country_flag = tokenizer_flag_enabled }
+# 					clr_country_flag = tokenizer_flag_enabled
+# 					subtract_from_variable = { mils_mult = 1 }
+# 					update_production_unit_allocation = yes
+# 				}
+# 				else = {
+# 					set_country_flag = tokenizer_flag_enabled
+# 					add_to_variable = { mils_mult = 1 }
+# 					update_production_unit_allocation = yes
+# 				}
+# 			}
+# 			production_units_close_btn_click = {
+# 				clr_country_flag = construction_production_units_open
+# 			}
 
-			add_pus_btn_click = {
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					add_to_variable = { PU_civilian_factories_desired = 1 }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					add_to_variable = { PU_military_factories_desired = 1 }
-				}
-				else = {
-					add_to_variable = { PU_consumer_goods_desired = 1 }
-				}
-				update_production_unit_allocation = yes
-			}
-			add_pus_btn_control_click = {
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					add_to_variable = { PU_civilian_factories_desired = 5 }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					add_to_variable = { PU_military_factories_desired = 5 }
-				}
-				else = {
-					add_to_variable = { PU_consumer_goods_desired = 5 }
-				}
-				update_production_unit_allocation = yes
-			}
-			add_pus_btn_shift_click = {
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					add_to_variable = { PU_civilian_factories_desired = 10 }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					add_to_variable = { PU_military_factories_desired = 10 }
-				}
-				else = {
-					add_to_variable = { PU_consumer_goods_desired = 10 }
-				}
-				update_production_unit_allocation = yes
-			}
-			sub_pus_btn_click = {
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					subtract_from_variable = { PU_civilian_factories_desired = 1 }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					subtract_from_variable = { PU_military_factories_desired = 1 }
-				}
-				else = {
-					subtract_from_variable = { PU_consumer_goods_desired = 1 }
-				}
-				update_production_unit_allocation = yes
-			}
-			sub_pus_btn_control_click = {
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					subtract_from_variable = { PU_civilian_factories_desired = 5 }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					subtract_from_variable = { PU_military_factories_desired = 5 }
-				}
-				else = {
-					subtract_from_variable = { PU_consumer_goods_desired = 5 }
-				}
-				update_production_unit_allocation = yes
-			}
-			sub_pus_btn_shift_click = {
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					subtract_from_variable = { PU_civilian_factories_desired = 10 }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					subtract_from_variable = { PU_military_factories_desired = 10 }
-				}
-				else = {
-					subtract_from_variable = { PU_consumer_goods_desired = 10 }
-				}
-				update_production_unit_allocation = yes
-			}
+# 			add_pus_btn_click = {
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					add_to_variable = { PU_civilian_factories_desired = 1 }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					add_to_variable = { PU_military_factories_desired = 1 }
+# 				}
+# 				else = {
+# 					add_to_variable = { PU_consumer_goods_desired = 1 }
+# 				}
+# 				update_production_unit_allocation = yes
+# 			}
+# 			add_pus_btn_control_click = {
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					add_to_variable = { PU_civilian_factories_desired = 5 }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					add_to_variable = { PU_military_factories_desired = 5 }
+# 				}
+# 				else = {
+# 					add_to_variable = { PU_consumer_goods_desired = 5 }
+# 				}
+# 				update_production_unit_allocation = yes
+# 			}
+# 			add_pus_btn_shift_click = {
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					add_to_variable = { PU_civilian_factories_desired = 10 }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					add_to_variable = { PU_military_factories_desired = 10 }
+# 				}
+# 				else = {
+# 					add_to_variable = { PU_consumer_goods_desired = 10 }
+# 				}
+# 				update_production_unit_allocation = yes
+# 			}
+# 			sub_pus_btn_click = {
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					subtract_from_variable = { PU_civilian_factories_desired = 1 }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					subtract_from_variable = { PU_military_factories_desired = 1 }
+# 				}
+# 				else = {
+# 					subtract_from_variable = { PU_consumer_goods_desired = 1 }
+# 				}
+# 				update_production_unit_allocation = yes
+# 			}
+# 			sub_pus_btn_control_click = {
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					subtract_from_variable = { PU_civilian_factories_desired = 5 }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					subtract_from_variable = { PU_military_factories_desired = 5 }
+# 				}
+# 				else = {
+# 					subtract_from_variable = { PU_consumer_goods_desired = 5 }
+# 				}
+# 				update_production_unit_allocation = yes
+# 			}
+# 			sub_pus_btn_shift_click = {
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					subtract_from_variable = { PU_civilian_factories_desired = 10 }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					subtract_from_variable = { PU_military_factories_desired = 10 }
+# 				}
+# 				else = {
+# 					subtract_from_variable = { PU_consumer_goods_desired = 10 }
+# 				}
+# 				update_production_unit_allocation = yes
+# 			}
 
-			display_5_btn_click = {
-				if = {
-					limit = { check_variable = { prod_units_display_amounts^good_type = 5 } }
-					set_variable = { prod_units_display_amounts^good_type = 1 }
-					update_prod_units_display = yes
-				}
-				else = {
-					set_variable = { prod_units_display_amounts^good_type = 5 }
-					update_prod_units_display = yes
-				}
-			}
-			display_10_btn_click = {
-				if = {
-					limit = { check_variable = { prod_units_display_amounts^good_type = 10 } }
-					set_variable = { prod_units_display_amounts^good_type = 1 }
-					update_prod_units_display = yes
-				}
-				else = {
-					set_variable = { prod_units_display_amounts^good_type = 10 }
-					update_prod_units_display = yes
-				}
-			}
+# 			display_5_btn_click = {
+# 				if = {
+# 					limit = { check_variable = { prod_units_display_amounts^good_type = 5 } }
+# 					set_variable = { prod_units_display_amounts^good_type = 1 }
+# 					update_prod_units_display = yes
+# 				}
+# 				else = {
+# 					set_variable = { prod_units_display_amounts^good_type = 5 }
+# 					update_prod_units_display = yes
+# 				}
+# 			}
+# 			display_10_btn_click = {
+# 				if = {
+# 					limit = { check_variable = { prod_units_display_amounts^good_type = 10 } }
+# 					set_variable = { prod_units_display_amounts^good_type = 1 }
+# 					update_prod_units_display = yes
+# 				}
+# 				else = {
+# 					set_variable = { prod_units_display_amounts^good_type = 10 }
+# 					update_prod_units_display = yes
+# 				}
+# 			}
 
-			production_box_click = {
-				set_variable = { desired = square_idx }
-				add_to_variable = { desired = 1 }
-				multiply_variable = { desired = prod_units_display_amounts^good_type }
-				clamp_variable = { var = desired min = 0 }
+# 			production_box_click = {
+# 				set_variable = { desired = square_idx }
+# 				add_to_variable = { desired = 1 }
+# 				multiply_variable = { desired = prod_units_display_amounts^good_type }
+# 				clamp_variable = { var = desired min = 0 }
 
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					set_variable = { PU_civilian_factories_desired = desired }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					set_variable = { PU_military_factories_desired = desired }
-				}
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					set_variable = { PU_civilian_factories_desired = desired }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					set_variable = { PU_military_factories_desired = desired }
+# 				}
 
-				update_production_unit_allocation = yes
-			}
+# 				update_production_unit_allocation = yes
+# 			}
 
-			production_box_right_click = {
-				set_variable = { desired = square_idx }
-				multiply_variable = { desired = prod_units_display_amounts^good_type }
-				clamp_variable = { var = desired min = 0 }
+# 			production_box_right_click = {
+# 				set_variable = { desired = square_idx }
+# 				multiply_variable = { desired = prod_units_display_amounts^good_type }
+# 				clamp_variable = { var = desired min = 0 }
 
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					set_variable = { PU_civilian_factories_desired = desired }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					set_variable = { PU_military_factories_desired = desired }
-				}
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					set_variable = { PU_civilian_factories_desired = desired }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					set_variable = { PU_military_factories_desired = desired }
+# 				}
 
-				update_production_unit_allocation = yes
-			}
-		}
-	}
+# 				update_production_unit_allocation = yes
+# 			}
+# 		}
+# 	}
 
-}
+# }
 
 # # Production Menu
-scripted_gui = {
-	# # Production Units Button
-	TNO_production_units_toggle_button_production = {
-		window_name = "production_units_toggle_button_production"
-		context_type = player_context
-		parent_window_token = production_tab
-		dirty = TNO_production_gui_dirty
+# scripted_gui = {
+# 	# # Production Units Button
+# 	TNO_production_units_toggle_button_production = {
+# 		window_name = "production_units_toggle_button_production"
+# 		context_type = player_context
+# 		parent_window_token = production_tab
+# 		dirty = TNO_production_gui_dirty
 
-		visible = {
-			always = yes
-		}
+# 		visible = {
+# 			always = yes
+# 		}
 
-		triggers = {
-			production_units_toggle_alert_visible = {
-				NOT = { has_country_flag = has_opened_pu_menu }
-			}
-		}
+# 		triggers = {
+# 			production_units_toggle_alert_visible = {
+# 				NOT = { has_country_flag = has_opened_pu_menu }
+# 			}
+# 		}
 
-		effects = {
-			production_units_toggle_prod_click = {
-				if = {
-					limit = { has_country_flag = production_production_units_open }
-					clr_country_flag = production_production_units_open
-				}
-				else = {
-					set_country_flag = production_production_units_open
-				}
-				set_country_flag = has_opened_pu_menu
-				update_production_unit_allocation = yes
-				add_to_variable = { TNO_production_gui_dirty = 1 }
-			}
-		}
-	}
+# 		effects = {
+# 			production_units_toggle_prod_click = {
+# 				if = {
+# 					limit = { has_country_flag = production_production_units_open }
+# 					clr_country_flag = production_production_units_open
+# 				}
+# 				else = {
+# 					set_country_flag = production_production_units_open
+# 				}
+# 				set_country_flag = has_opened_pu_menu
+# 				update_production_unit_allocation = yes
+# 				add_to_variable = { TNO_production_gui_dirty = 1 }
+# 			}
+# 		}
+# 	}
 
-	# # Production Units Submenu
-	TNO_production_units_info_tab_3 = {
-		window_name = "production_units_info_tab_3"
-		context_type = player_context
-		parent_window_token = production_tab
-		dirty = TNO_production_gui_dirty
+# 	# # Production Units Submenu
+# 	TNO_production_units_info_tab_3 = {
+# 		window_name = "production_units_info_tab_3"
+# 		context_type = player_context
+# 		parent_window_token = production_tab
+# 		dirty = TNO_production_gui_dirty
 
-		visible = {
-			has_country_flag = production_production_units_open
-		}
+# 		visible = {
+# 			has_country_flag = production_production_units_open
+# 		}
 
-		dynamic_lists = {
-			production_squares = {
-				array = prod_units_production_display
-				change_scope = no
-				entry_container = production_units_production_square
-				index = square_idx
-			}
-		}
+# 		dynamic_lists = {
+# 			production_squares = {
+# 				array = prod_units_production_display
+# 				change_scope = no
+# 				entry_container = production_units_production_square
+# 				index = square_idx
+# 			}
+# 		}
 
-		dynamic_lists = {
-			allocation_boxes = {
-				array = prod_units_allocation_types
-				value = good_type
-				entry_container = production_units_allocation_box
-			}
-		}
+# 		dynamic_lists = {
+# 			allocation_boxes = {
+# 				array = prod_units_allocation_types
+# 				value = good_type
+# 				entry_container = production_units_allocation_box
+# 			}
+# 		}
 
-		properties = {
-			box_pus = { frame = prod_units_display_amounts_frame^good_type }
-			box_pus_unfulfilled = { frame = prod_units_display_amounts_frame^good_type }
-			display_5_btn = { frame = prod_units_displaying_5^good_type }
-			display_10_btn = { frame = prod_units_displaying_10^good_type }
-			allocation_type_icon = {
-				image = "[Get_allocation_type_icon]"
-				frame = mils_mult
-			}
-			tokenizer_btn_3 = { frame = mils_mult }
-			mini_workshop_icon_3 = { image = "GFX_production_units_mini_workshop_[?mils_mult]" }
-		}
+# 		properties = {
+# 			box_pus = { frame = prod_units_display_amounts_frame^good_type }
+# 			box_pus_unfulfilled = { frame = prod_units_display_amounts_frame^good_type }
+# 			display_5_btn = { frame = prod_units_displaying_5^good_type }
+# 			display_10_btn = { frame = prod_units_displaying_10^good_type }
+# 			allocation_type_icon = {
+# 				image = "[Get_allocation_type_icon]"
+# 				frame = mils_mult
+# 			}
+# 			tokenizer_btn_3 = { frame = mils_mult }
+# 			mini_workshop_icon_3 = { image = "GFX_production_units_mini_workshop_[?mils_mult]" }
+# 		}
 
-		triggers = {
-			box_pus_visible = {
-				set_temp_variable = { thresh = square_idx }
-				multiply_temp_variable = { thresh = prod_units_display_amounts^good_type }
+# 		triggers = {
+# 			box_pus_visible = {
+# 				set_temp_variable = { thresh = square_idx }
+# 				multiply_temp_variable = { thresh = prod_units_display_amounts^good_type }
 
-				set_temp_variable = { amnt = PU_consumer_goods }
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					set_temp_variable = { amnt = PU_civilian_factories }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					set_temp_variable = { amnt = PU_military_factories }
-				}
-				check_variable = { amnt > thresh }
-			}
-			box_pus_unfulfilled_visible = {
-				set_temp_variable = { thresh = square_idx }
-				multiply_temp_variable = { thresh = prod_units_display_amounts^good_type }
+# 				set_temp_variable = { amnt = PU_consumer_goods }
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					set_temp_variable = { amnt = PU_civilian_factories }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					set_temp_variable = { amnt = PU_military_factories }
+# 				}
+# 				check_variable = { amnt > thresh }
+# 			}
+# 			box_pus_unfulfilled_visible = {
+# 				set_temp_variable = { thresh = square_idx }
+# 				multiply_temp_variable = { thresh = prod_units_display_amounts^good_type }
 
-				set_temp_variable = { amnt = PU_consumer_goods }
-				set_temp_variable = { wanted = PU_consumer_goods_desired }
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					set_temp_variable = { amnt = PU_civilian_factories }
-					set_temp_variable = { wanted = PU_civilian_factories_desired }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					set_temp_variable = { amnt = PU_military_factories }
-					set_temp_variable = { wanted = PU_military_factories_desired }
-				}
+# 				set_temp_variable = { amnt = PU_consumer_goods }
+# 				set_temp_variable = { wanted = PU_consumer_goods_desired }
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					set_temp_variable = { amnt = PU_civilian_factories }
+# 					set_temp_variable = { wanted = PU_civilian_factories_desired }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					set_temp_variable = { amnt = PU_military_factories }
+# 					set_temp_variable = { wanted = PU_military_factories_desired }
+# 				}
 
-				NOT = { check_variable = { amnt > thresh } }
-				check_variable = { wanted > thresh }
-			}
-			add_pus_btn_click_enabled = {
-				NOT = { check_variable = { good_type = 2 } }
-			}
-			sub_pus_btn_click_enabled = {
-				NOT = { check_variable = { good_type = 2 } }
-			}
-		}
+# 				NOT = { check_variable = { amnt > thresh } }
+# 				check_variable = { wanted > thresh }
+# 			}
+# 			add_pus_btn_click_enabled = {
+# 				NOT = { check_variable = { good_type = 2 } }
+# 			}
+# 			sub_pus_btn_click_enabled = {
+# 				NOT = { check_variable = { good_type = 2 } }
+# 			}
+# 		}
 
-		effects = {
-			tokenizer_btn_3_click = {
-				if = { 
-					limit = { has_country_flag = tokenizer_flag_enabled }
-					clr_country_flag = tokenizer_flag_enabled
-					subtract_from_variable = { mils_mult = 1 }
-					update_production_unit_allocation = yes
-				}
-				else = {
-					set_country_flag = tokenizer_flag_enabled
-					add_to_variable = { mils_mult = 1 }
-					update_production_unit_allocation = yes
-				}
-			}
-			production_units_close_btn_click = {
-				clr_country_flag = production_production_units_open
-			}
-			add_pus_btn_click = {
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					add_to_variable = { PU_civilian_factories_desired = 1 }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					add_to_variable = { PU_military_factories_desired = 1 }
-				}
-				else = {
-					add_to_variable = { PU_consumer_goods_desired = 1 }
-				}
-				update_production_unit_allocation = yes
-			}
-			add_pus_btn_control_click = {
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					add_to_variable = { PU_civilian_factories_desired = 5 }
-					add_to_variable = { PU_military_factories_desired = 5 }
-				}
-				else = {
-					add_to_variable = { PU_consumer_goods_desired = 5 }
-				}
-				update_production_unit_allocation = yes
-			}
-			add_pus_btn_shift_click = {
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					add_to_variable = { PU_civilian_factories_desired = 10 }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					add_to_variable = { PU_military_factories_desired = 10 }
-				}
-				else = {
-					add_to_variable = { PU_consumer_goods_desired = 10 }
-				}
-				update_production_unit_allocation = yes
-			}
-			sub_pus_btn_click = {
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					subtract_from_variable = { PU_civilian_factories_desired = 1 }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					subtract_from_variable = { PU_military_factories_desired = 1 }
-				}
-				else = {
-					subtract_from_variable = { PU_consumer_goods_desired = 1 }
-				}
-				update_production_unit_allocation = yes
-			}
-			sub_pus_btn_control_click = {
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					subtract_from_variable = { PU_civilian_factories_desired = 5 }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					subtract_from_variable = { PU_military_factories_desired = 5 }
-				}
-				else = {
-					subtract_from_variable = { PU_consumer_goods_desired = 5 }
-				}
-				update_production_unit_allocation = yes
-			}
-			sub_pus_btn_shift_click = {
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					subtract_from_variable = { PU_civilian_factories_desired = 10 }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					subtract_from_variable = { PU_military_factories_desired = 10 }
-				}
-				else = {
-					subtract_from_variable = { PU_consumer_goods_desired = 10 }
-				}
-				update_production_unit_allocation = yes
-			}
+# 		effects = {
+# 			tokenizer_btn_3_click = {
+# 				if = { 
+# 					limit = { has_country_flag = tokenizer_flag_enabled }
+# 					clr_country_flag = tokenizer_flag_enabled
+# 					subtract_from_variable = { mils_mult = 1 }
+# 					update_production_unit_allocation = yes
+# 				}
+# 				else = {
+# 					set_country_flag = tokenizer_flag_enabled
+# 					add_to_variable = { mils_mult = 1 }
+# 					update_production_unit_allocation = yes
+# 				}
+# 			}
+# 			production_units_close_btn_click = {
+# 				clr_country_flag = production_production_units_open
+# 			}
+# 			add_pus_btn_click = {
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					add_to_variable = { PU_civilian_factories_desired = 1 }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					add_to_variable = { PU_military_factories_desired = 1 }
+# 				}
+# 				else = {
+# 					add_to_variable = { PU_consumer_goods_desired = 1 }
+# 				}
+# 				update_production_unit_allocation = yes
+# 			}
+# 			add_pus_btn_control_click = {
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					add_to_variable = { PU_civilian_factories_desired = 5 }
+# 					add_to_variable = { PU_military_factories_desired = 5 }
+# 				}
+# 				else = {
+# 					add_to_variable = { PU_consumer_goods_desired = 5 }
+# 				}
+# 				update_production_unit_allocation = yes
+# 			}
+# 			add_pus_btn_shift_click = {
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					add_to_variable = { PU_civilian_factories_desired = 10 }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					add_to_variable = { PU_military_factories_desired = 10 }
+# 				}
+# 				else = {
+# 					add_to_variable = { PU_consumer_goods_desired = 10 }
+# 				}
+# 				update_production_unit_allocation = yes
+# 			}
+# 			sub_pus_btn_click = {
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					subtract_from_variable = { PU_civilian_factories_desired = 1 }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					subtract_from_variable = { PU_military_factories_desired = 1 }
+# 				}
+# 				else = {
+# 					subtract_from_variable = { PU_consumer_goods_desired = 1 }
+# 				}
+# 				update_production_unit_allocation = yes
+# 			}
+# 			sub_pus_btn_control_click = {
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					subtract_from_variable = { PU_civilian_factories_desired = 5 }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					subtract_from_variable = { PU_military_factories_desired = 5 }
+# 				}
+# 				else = {
+# 					subtract_from_variable = { PU_consumer_goods_desired = 5 }
+# 				}
+# 				update_production_unit_allocation = yes
+# 			}
+# 			sub_pus_btn_shift_click = {
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					subtract_from_variable = { PU_civilian_factories_desired = 10 }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					subtract_from_variable = { PU_military_factories_desired = 10 }
+# 				}
+# 				else = {
+# 					subtract_from_variable = { PU_consumer_goods_desired = 10 }
+# 				}
+# 				update_production_unit_allocation = yes
+# 			}
 
-			display_5_btn_click = {
-				if = {
-					limit = { check_variable = { prod_units_display_amounts^good_type = 5 } }
-					set_variable = { prod_units_display_amounts^good_type = 1 }
-					update_prod_units_display = yes
-				}
-				else = {
-					set_variable = { prod_units_display_amounts^good_type = 5 }
-					update_prod_units_display = yes
-				}
-			}
-			display_10_btn_click = {
-				if = {
-					limit = { check_variable = { prod_units_display_amounts^good_type = 10 } }
-					set_variable = { prod_units_display_amounts^good_type = 1 }
-					update_prod_units_display = yes
-				}
-				else = {
-					set_variable = { prod_units_display_amounts^good_type = 10 }
-					update_prod_units_display = yes
-				}
-			}
+# 			display_5_btn_click = {
+# 				if = {
+# 					limit = { check_variable = { prod_units_display_amounts^good_type = 5 } }
+# 					set_variable = { prod_units_display_amounts^good_type = 1 }
+# 					update_prod_units_display = yes
+# 				}
+# 				else = {
+# 					set_variable = { prod_units_display_amounts^good_type = 5 }
+# 					update_prod_units_display = yes
+# 				}
+# 			}
+# 			display_10_btn_click = {
+# 				if = {
+# 					limit = { check_variable = { prod_units_display_amounts^good_type = 10 } }
+# 					set_variable = { prod_units_display_amounts^good_type = 1 }
+# 					update_prod_units_display = yes
+# 				}
+# 				else = {
+# 					set_variable = { prod_units_display_amounts^good_type = 10 }
+# 					update_prod_units_display = yes
+# 				}
+# 			}
 
-			production_box_click = {
-				set_variable = { desired = square_idx }
-				add_to_variable = { desired = 1 }
-				multiply_variable = { desired = prod_units_display_amounts^good_type }
-				clamp_variable = { var = desired min = 0 }
+# 			production_box_click = {
+# 				set_variable = { desired = square_idx }
+# 				add_to_variable = { desired = 1 }
+# 				multiply_variable = { desired = prod_units_display_amounts^good_type }
+# 				clamp_variable = { var = desired min = 0 }
 
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					set_variable = { PU_civilian_factories_desired = desired }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					set_variable = { PU_military_factories_desired = desired }
-				}
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					set_variable = { PU_civilian_factories_desired = desired }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					set_variable = { PU_military_factories_desired = desired }
+# 				}
 
-				update_production_unit_allocation = yes
-			}
+# 				update_production_unit_allocation = yes
+# 			}
 
-			production_box_right_click = {
-				set_variable = { desired = square_idx }
-				multiply_variable = { desired = prod_units_display_amounts^good_type }
-				clamp_variable = { var = desired min = 0 }
+# 			production_box_right_click = {
+# 				set_variable = { desired = square_idx }
+# 				multiply_variable = { desired = prod_units_display_amounts^good_type }
+# 				clamp_variable = { var = desired min = 0 }
 
-				if = {
-					limit = { check_variable = { good_type = 0 } }
-					set_variable = { PU_civilian_factories_desired = desired }
-				}
-				else_if = {
-					limit = { check_variable = { good_type = 1 } }
-					set_variable = { PU_military_factories_desired = desired }
-				}
+# 				if = {
+# 					limit = { check_variable = { good_type = 0 } }
+# 					set_variable = { PU_civilian_factories_desired = desired }
+# 				}
+# 				else_if = {
+# 					limit = { check_variable = { good_type = 1 } }
+# 					set_variable = { PU_military_factories_desired = desired }
+# 				}
 
-				update_production_unit_allocation = yes
-			}
+# 				update_production_unit_allocation = yes
+# 			}
 
-		}
-	}
-}
+# 		}
+# 	}
+# }
 
 # # Tutorial / Help
 scripted_gui = {
@@ -3549,19 +3549,19 @@ scripted_gui = {
 	}
 }
 
-scripted_gui = {
-	TNO_SG_econ_help_arrows = {
-		context_type = player_context
-		parent_window_token = trade_tab
-		window_name = "TNO_SG_econ_help_arrows"
+# scripted_gui = {
+# 	TNO_SG_econ_help_arrows = {
+# 		context_type = player_context
+# 		parent_window_token = trade_tab
+# 		window_name = "TNO_SG_econ_help_arrows"
 		
-		visible = { NOT = { ROOT = { has_country_flag = TNO_econ_help_arrows_dismissed } } }
-		effects = {
-			transparent_block_click = {
-				ROOT = {
-					set_country_flag = TNO_econ_help_arrows_dismissed
-				}
-			}
-		}
-	}
-}
+# 		visible = { NOT = { ROOT = { has_country_flag = TNO_econ_help_arrows_dismissed } } }
+# 		effects = {
+# 			transparent_block_click = {
+# 				ROOT = {
+# 					set_country_flag = TNO_econ_help_arrows_dismissed
+# 				}
+# 			}
+# 		}
+# 	}
+# }
