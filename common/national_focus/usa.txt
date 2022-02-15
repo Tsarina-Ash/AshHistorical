@@ -75,6 +75,18 @@ focus_tree = {
 
 #1920-1932/33 Below#
 
+#IDEAS:
+#SOUTH AMERICAN OCCUPATIONS MADE DECISIONS NOT FOCUSES
+#NEW DEALS GET UNLOCKED WITH DECISIONS
+#
+#
+#
+#
+#
+#
+#
+
+
 #Woodrow Wilson#
 
 focus = {
@@ -2386,34 +2398,15 @@ focus = {
 		add_political_power = 50
 	}
 }
-
-#EARLY FDR PRESIDENCY#
-
-focus = { #FOLLOWS MORE A SOC-CAP MODEL INTERVENTIALIST
-	id = EARLY_FDR_USA_innaugaration_speech
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 120
-	y = 0
-	
-	available_if_capitulated =  no
-	
-	completion_reward = {
-		add_political_power = 50 #new deal EXTREMELY controversial with indsutry crackdown
-	}
-}
-
-#EARLY HOOVER PRESIDENCY#
+#HOOVER PRESIDENCY#
 
 focus = {
-	id = EARLY_HOOVER_USA_innaugaration_speech
+	id = HOOVER_USA_innaugaration_speech
 	icon = GFX_focus_USA_placeholder
 
 	cost = 1
 
-	x = 130
+	x = 160
 	y = 0
 	
 	available_if_capitulated =  no
@@ -2422,6 +2415,26 @@ focus = {
 		add_political_power = 50 #coolidge 2.0, LIASEZ FIARE
 	}
 }
+
+focus = {
+	id = HOOVER_USA_
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_innaugaration_speech }
+	relative_position_id = HOOVER_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
 
 #EXTRA WILSON PATH ?#
 
@@ -3140,42 +3153,6 @@ focus = {
 	relative_position_id = EXTRA_WILSON_USA_dawes_plan
 
 	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-#GENERIC DOMINICAN REPUBLIC PATH#
-
-focus = {
-	id = GENERIC_USA_DOMINICAN_PATH_dealing_with_the_occupation
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 115
-	y = 0
-	
-	available_if_capitulated =  no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-#GENERIC NICARAGUAN REPUBLIC PATH#
-
-focus = {
-	id = GENERIC_USA_NICARAGUAN_PATH_dealing_with_the_occupation
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 114
-	y = 0
-	
-	available_if_capitulated =  no
 	
 	completion_reward = {
 		add_political_power = 50
