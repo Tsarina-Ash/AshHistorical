@@ -8,6 +8,7 @@
 ### search_filters = {FOCUS_FILTER_USA_CONGRESS}
 
 focus_tree = {
+
 	id = usa_focus
 	
 	country = {
@@ -17,13 +18,13 @@ focus_tree = {
 			add = 10
 			tag = USA
 		}
-		
+
 		modifier = {
 			add = 10
 			original_tag = USA
 		}
 	}
-	continuous_focus_position = { x = 50 y = 1600 }
+
 	default = no
 
 #Plan So Far#
@@ -95,7 +96,7 @@ focus = {
 
 	cost = 4
 
-	x = 50
+	x = 0
 	y = 0
 	
 	available_if_capitulated =  no
@@ -499,7 +500,7 @@ focus = {
 
 	cost = 1
 
-	x = 70
+	x = 20
 	y = 0
 	
 	available_if_capitulated =  no
@@ -586,7 +587,7 @@ focus = {
 }
 
 focus = {
-	id = Harding_USA_leonidas_dyers_federal-anti_lynching_bill
+	id = Harding_USA_leonidas_dyers_federal_anti_lynching_bill
 	icon = GFX_focus_USA_placeholder
 
 	cost = 1
@@ -957,7 +958,7 @@ focus = {
 
 	cost = 1
 
-	x = 91
+	x = 55
 	y = 0
 	
 	available_if_capitulated =  no
@@ -1486,7 +1487,7 @@ focus = {
 
 	cost = 1
 
-	x = 73
+	x = 30
 	y = 0
 	
 	available_if_capitulated =  no
@@ -1564,7 +1565,7 @@ focus = {
 
 	cost = 1
 
-	x = 77
+	x = 35
 	y = 0
 	
 	available_if_capitulated =  no
@@ -1660,7 +1661,7 @@ focus = {
 
 	cost = 1
 
-	x = 80
+	x = 45
 	y = 0
 	
 	available_if_capitulated =  no
@@ -1853,7 +1854,7 @@ focus = {
 
 	cost = 1
 
-	x = 110
+	x = 70
 	y = 0
 	
 	available_if_capitulated =  no
@@ -2406,7 +2407,7 @@ focus = {
 
 	cost = 1
 
-	x = 160
+	x = 90
 	y = 0
 	
 	available_if_capitulated =  no
@@ -2436,7 +2437,7 @@ focus = {
 }
 
 
-#EXTRA WILSON PATH ?#
+#WILSON 2ND TERM#
 
 focus = {
 	id = EXTRA_WILSON_USA_innaugaration_speech
@@ -2444,7 +2445,7 @@ focus = {
 
 	cost = 1
 
-	x = 50
+	x = 0
 	y = 5
 	
 	available_if_capitulated =  no
@@ -3169,8 +3170,8 @@ focus = {
 
 	cost = 1
 
-	x = -30
-	y = 0
+	x = -10
+	y = 20
 	
 	relative_position_id = FDR_USA_innaugaration_speech
 
@@ -3438,9 +3439,11 @@ focus = {
 
 	cost = 4
 
-	x = -20
-	y = 0
+	x = 10
+	y = 20
 	
+	relative_position_id = FDR_USA_innaugaration_speech
+
 	available_if_capitulated =  no
 	
 	completion_reward = {
@@ -3737,7 +3740,7 @@ focus = {
 
 	cost = 1
 
-	x = 0
+	x = 180
 	y = 0
 	
 	available_if_capitulated = yes
@@ -4888,8 +4891,8 @@ focus = {
 
 	cost = 4
 
-	x = 28
-	y = 1
+	x = 0
+	y = 10
 	
 	#prerequisite = { focus = FDR_USA_first_new_deal }
 	relative_position_id = FDR_USA_first_new_deal
