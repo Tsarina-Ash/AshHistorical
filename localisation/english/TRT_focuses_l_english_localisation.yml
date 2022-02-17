@@ -39,42 +39,42 @@ WILSON_USA_compromise_with_reps:0 "The Donkey's Wheat"
 WILSON_USA_compromise_with_reps_desc:0 "While for now we hold a popular majority in congress, the Republicans do in size however most of them are akin to our ideals of a liazesse fiarre and an un-interventialist mood to the economy with promises of looking the other way and some ~perhaps~ business incetives we could pursuade them to join our side."
 
 WILSON_USA_blame_isolationists:0 "An Island With Factories"
-WILSON_USA_blame_isolationists_desc:0 "Those darn isolations!!! They pruposefully set us up for failure and backstabbed us... They will pay"
+WILSON_USA_blame_isolationists_desc:0 "Those darn isolations!!! They pruposefully set us up for failure and backstabbed us... They will pay."
 
 WILSON_USA_expand_agency_budget:0 "An Agency's Worth Is In Gold"
-WILSON_USA_expand_agency_budget_desc:0 ""
+WILSON_USA_expand_agency_budget_desc:0 "Spy agencies are slowly showing their worth with espionage and sabatoge becoming more prevalent. Now with tensions of strikes and communists at an all time high we need an agency to combat this."
 
 WILSON_USA_end_palmer_raids:0 "Slow Down There Palmer"
-WILSON_USA_end_palmer_raids_desc:0 ""
+WILSON_USA_end_palmer_raids_desc:0 "Palmer has been on a rampage of terrifying the American public and aressting many accused communists, perhaps he's going too far ?"
 
 WILSON_USA_blame_unions:0 "Blame Unions"
-WILSON_USA_blame_unions_desc:0 ""
+WILSON_USA_blame_unions_desc:0 "Unions sadly must be thrown onto the train tracks to save face from allowing Palmer to run free terrorizing the United States."
 
-WILSON_USA_calm_anti_immigrant_hysteria:0 "Calm War Hysteria"
-WILSON_USA_calm_anti_immigrant_hysteria_desc:0 ""
+WILSON_USA_calm_anti_immigrant_hysteria:0 "Historic Hysteria"
+WILSON_USA_calm_anti_immigrant_hysteria_desc:0 "Immigrants, Germans, Austrians and Communists in recent years have been accused by our government officially for any things however even though it may unify the country it has shown to highten tensions all over the country and we haven't slown down. There are many race riots, its only time before they get too serious to contain."
 
 WILSON_USA_rights_of_man:0 "The Rights Of Man"
-WILSON_USA_rights_of_man_desc:0 ""
+WILSON_USA_rights_of_man_desc:0 "The bill of rights gives every man a right to vote, in revent times we've given women the right to vote so many are now asking what about the other men who're barred from voting from their skin-color, bringing light to this situation will be wonderful and may play us into the new progressive ideals however it will cost us lots of political capital."
 
-WILSON_USA_threathen_senators:0 "Threathen Southern Senators"
-WILSON_USA_threathen_senators_desc:0 ""
+WILSON_USA_threathen_senators:0 "Cotton Or Papers"
+WILSON_USA_threathen_senators_desc:0 "Southern senators have their own ideals and we can compromise often times with their agenda, however this is the one time we will offer them a choice do they 'want to keep your cottonfields and sign a few papers or have a few papers come to light to the American public and have some papers dissapear ?' Through blackmail and some 'convincing' words they will pass any bill we propose for a while however it'll destroy our party's reputation in the South permanently."
 
 WILSON_USA_compromise_with_conservatives:0 "Compromise With Conservatives"
-WILSON_USA_compromise_with_conservatives_desc:0 ""
+WILSON_USA_compromise_with_conservatives_desc:0 "Conservatives have always put up a stiff resistance or even stiff support in some cases as they don't really want things to chage but they want things to get better in their view so if we reduce hte amount of drastic changes in any bills further down the line and limit some of our changes to be drastically reduced they'll agree to assist us."
 
 #EXTRA WILSON#
 
 EXTRA_WILSON_USA_innaugaration_speech:0 "The Coughing 20's"
-EXTRA_WILSON_USA_innaugaration_speech_desc:0 ""
+EXTRA_WILSON_USA_innaugaration_speech_desc:0 "We're going to be rolling into the 20's across the country coughing and wheezing as we try to recover from our 'cold' and try to weed out some of virus's effects and bacteria from our system."
 
-EXTRA_WILSON_USA_wounded_and_battered_nation:0 "Heal The Shot Country"
-EXTRA_WILSON_USA_wounded_and_battered_nation_desc:0 ""
+EXTRA_WILSON_USA_wounded_and_battered_nation:0 "Sick and Crippled Country"
+EXTRA_WILSON_USA_wounded_and_battered_nation_desc:0 "The country feels and seems like it is growing and everyone agrees in that the country has never been in a better position but deep down we're just hiding the sufferring we've been through adn trying to make hte best of it trying to put on a show for everyone else. The only way to get better is to acknowledge the problem adn learn from those mistakes then moving on."
 
 EXTRA_WILSON_USA_unification:0 "Manifest American Unity"
-EXTRA_WILSON_USA_unification_desc:0 ""
+EXTRA_WILSON_USA_unification_desc:0 "The United States while not being born from a single nationality, wager to say it is one of the most if not the most diverse country in the world is united through the ideals of the consitution and the laws we follow to protect the Stars and Stripes on our flag, lets try to get back to a semblance of normalcy and through American patriotism we'll become stronger together."
 
-EXTRA_WILSON_USA_speeches_to_the_nation:0 "Increase Wife's Speeches"
-EXTRA_WILSON_USA_speeches_to_the_nation_desc:0 ""
+EXTRA_WILSON_USA_speeches_to_the_nation:0 "Wilson News Radio"
+EXTRA_WILSON_USA_speeches_to_the_nation_desc:0 "The rad"
 
 EXTRA_WILSON_USA_voyage_of_understanding:0 "Voyage Of Understanding"
 EXTRA_WILSON_USA_voyage_of_understanding_desc:0 ""
@@ -82,7 +82,7 @@ EXTRA_WILSON_USA_voyage_of_understanding_desc:0 ""
 EXTRA_WILSON_USA_crack_down_on_poor_industry_practices:0 "Crack Down On Poor Industry Practices"
 EXTRA_WILSON_USA_crack_down_on_poor_industry_practices_desc:0 ""
 
-EXTRA_WILSON_USA_increase_union_protections:0 "Increase Union's Federal Protection"
+EXTRA_WILSON_USA_increase_union_protections:0 "Union's Federal Protection"
 EXTRA_WILSON_USA_increase_union_protections_desc:0 ""
 
 EXTRA_WILSON_USA_new_anti_trust_act:0 "Expand Anti-Trust Acts"
@@ -91,13 +91,13 @@ EXTRA_WILSON_USA_new_anti_trust_act_desc:0 ""
 EXTRA_WILSON_USA_subsidize_military_industry:0 "Subsudize Military Indsutries"
 EXTRA_WILSON_USA_subsidize_military_industry_desc:0 ""
 
-EXTRA_WILSON_USA_interventionalist:0 "Continue interventionalist Policies"
+EXTRA_WILSON_USA_interventionalist:0 "Continue Interventionalist Policies"
 EXTRA_WILSON_USA_interventionalist_desc:0 ""
 
 EXTRA_WILSON_USA_mcnary_haugen_farm_relief_bill:0 "Propose Farm Relief Bill"
 EXTRA_WILSON_USA_mcnary_haugen_farm_relief_bill_desc:0 ""
 
-EXTRA_WILSON_USA_question_of_sharecroppers:0 "What About The Sharecroppers ?"
+EXTRA_WILSON_USA_question_of_sharecroppers:0 "Sharecroppers ?"
 EXTRA_WILSON_USA_question_of_sharecroppers_desc:0 ""
 
 EXTRA_WILSON_USA_appoint_state_capitalist_economists:0 "Appoint State-Capitalists"

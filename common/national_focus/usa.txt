@@ -2423,7 +2423,7 @@ focus = {
 
 	cost = 4
 
-	x = 0
+	x = -10
 	y = 1
 	
 	prerequisite = { focus = HOOVER_USA_innaugaration_speech }
@@ -2435,6 +2435,7 @@ focus = {
 		add_political_power = 50
 	}
 }
+
 
 
 #WILSON 2ND TERM#
