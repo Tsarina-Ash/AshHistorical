@@ -2,7 +2,6 @@ scripted_gui = {
     BRA_political_influence_gui = {
         window_name = "BRA_political_influence_gui_window"
         context_type = decision_category
-        # parent_window_token = decision_tab
 
         triggers = {
             # BRA_political_influence_bg_visible = {
@@ -126,6 +125,36 @@ scripted_gui = {
             }
             BRA_political_influence_tenentist_corruption = {
                 
+            }
+        }
+    }
+
+    BRA_econ_power_struggle_gui = {
+        window_name = "BRA_econ_power_struggle_gui_window"
+        context_type = decision_category
+
+        properties = {
+            BRA_econ_power_struggle_bg_chart = {
+                # image = ""
+            }
+            BRA_econ_power_struggle_char_pointer = {
+                frame = BRA.power_struggle_frame
+                # image = ""
+            }
+            BRA_econ_power_struggle_coronel_txt = {
+            }
+            BRA_econ_power_struggle_industrialist_txt = {
+            }
+        }
+    }
+
+    BRA_centralization_gui = {
+        window_name = "BRA_centralization_gui_window"
+        context_type = decision_category
+
+        properties = {
+            BRA_centralization_progress_bar = {
+                frame = BRA.centralization_progress
             }
         }
     }

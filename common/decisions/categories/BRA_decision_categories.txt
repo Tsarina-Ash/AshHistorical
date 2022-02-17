@@ -16,7 +16,7 @@ BRA_political_influence = { #Tenentismo, Liberales, Republicans
 BRA_economic_power_struggle = { #industrialization vs coronels
     icon = GFX_
 
-    # scripted_gui = 
+    scripted_gui = BRA_econ_power_struggle_gui
 
     allowed = {
         original_tag = BRA
@@ -32,7 +32,7 @@ BRA_economic_power_struggle = { #industrialization vs coronels
 BRA_centralization = { #centralization
     icon = GFX_
 
-    # scripted_gui = 
+    scripted_gui = BRA_centralization_gui
 
     allowed = {
         original_tag = BRA

@@ -141,4 +141,60 @@ guiTypes = {
 			maxWidth = 120
 		}
 	}
+
+	containerWindowType = {
+		name = "BRA_econ_power_struggle_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 300 }
+
+		background = {
+			name = "BRA_econ_power_struggle_bg_chart"
+			spriteType = ""
+			position = { x = 0 y = 100 }
+		}
+		iconType = {
+			name = "BRA_econ_power_struggle_char_pointer"
+		}
+
+		instantTextBoxType = {
+			name = "BRA_econ_power_struggle_coronel_txt"
+		}
+		instantTextBoxType = {
+			name = "BRA_econ_power_struggle_industrialist_txt"
+		}
+	}
+
+	containerWindowType = {
+		name = "BRA_centralization_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 300 }
+
+		instantTextBoxType = {
+			name = "BRA_decentralized_txt"
+			position = { x = -20 y = 20 }
+			maxWidth = 538
+			font = "aldrich_36_outline"
+			text = "BRA_decentralized_tt"
+			format = center
+		}
+		instantTextBoxType = {
+			name = "BRA_centralized_txt"
+			position = { x = -30 y = 65 }
+			font = "aldrich_36_outline"
+			text = "BRA_centralized_tt"
+			format = center
+		}
+		iconType = {
+			name = "BRA_centralization_progress_bar_frame"
+			spriteType = "GFX_BRA_centralization_progress_bar_frame"
+			position = { x = 48 y = 93 }
+		}
+		iconType = {
+			name = "BRA_centralization_progress_bar"
+			spriteType = "GFX_BRA_progress_bar"
+			pdx_tooltip = "BRA_centralization_bar"
+			pdx_tooltip_delayed = "BRA_centralization_bar_desc"
+			position = { x = 51 y = 95 }
+		}
+	}
 }

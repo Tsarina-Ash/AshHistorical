@@ -1,8 +1,11 @@
 BRA_set_up_economic_power_struggle = {
-    
+    set_variable = { coronel_influence = 80 }
+    set_variable = { industrialist_influence = 20 }
+    set_variable = { power_struggle_frame = 1 }
+    BRA_update_economic_power_struggle = yes
 }
 BRA_set_up_centralization = {
-
+    set_variable = { centralization_progress = 10 }
 }
 BRA_set_up_republican_influence = {
     custom_effect_tooltip = BRA_the_republicans_can_influence_our_country_now_tt
@@ -22,4 +25,13 @@ BRA_set_up_liberal_influence = {
     set_variable = { liberal_influence = 40 }
     set_variable = { liberal_corruption = 20 }
     set_variable = { liberal_popularity = 50 }
+}
+BRA_update_economic_power_struggle = {
+    set_temp_variable = { temp_econ_frame = industrtialist_influence }
+    divide_temp_variable = {
+        var = temp_econ_frame
+        value = 20
+    }
+    round_temp_variable = temp_econ_frame
+    set_variable = { power_struggle_frame = temp_econ_frame }
 }
