@@ -19,7 +19,17 @@
       BRA_political_influence_tenentist_influence_text:0 "§YInfluence: [?tenenist_influence]%§!"
       BRA_political_influence_tenentist_popularity_text:0 "§YPopularity: [?tenenist_popularity]%§!"
       BRA_political_influence_tenentist_corruption_text:0 "§YCorruption: [?tenenist_corruption]%§!"
+
     BRA_economic_power_struggle:0 "Economic Power Struggle"
+      BRA_econ_power_struggle_coronel_title:0 "Coronels"
+      BRA_econ_power_struggle_coronel_tt:0 "The Coronels"
+      BRA_econ_power_struggle_coronel_desc:0 "The Coronels are a political and economic interest group that prioritizes plantation farming and securing their profits over expanding industry or the quality of life of the average Brazilian."
+
+      BRA_econ_power_struggle_industrialist_title:0 "Industrialists"
+      BRA_econ_power_struggle_industrialist_tt:0 "The Industrialists"
+      BRA_econ_power_struggle_industrialist_desc:0 "The industrialists are an economic interest group that call for worker reform, industrial expansion, and the end of plantation based agriculture."
+
+
     BRA_centralization:0 "Centralizing the Country"
       BRA_centralization_title_tt:0 "Centralization"
       BRA_decentralized_tt:0 "Decentralized"

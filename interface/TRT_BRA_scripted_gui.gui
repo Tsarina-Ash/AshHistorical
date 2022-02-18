@@ -147,20 +147,63 @@ guiTypes = {
 		position = { x = 0 y = 0 }
 		size = { width = 100% height = 300 }
 
-		background = {
+		iconType = {
 			name = "BRA_econ_power_struggle_bg_chart"
-			spriteType = ""
-			position = { x = 0 y = 100 }
+			spriteType = "GFX_semi_circle_bg"
+			position = { x = 25 y = 20 }
+			scale = 1.6
 		}
 		iconType = {
-			name = "BRA_econ_power_struggle_char_pointer"
+			name = "BRA_econ_power_struggle_char_pointer1"
+			spriteType = "GFX_semi_circle_pointer"
+			position = { x = 216 y = 180 }
+			rotation = 1.5708
+			scale = 1.6
+		}
+		iconType = {
+			name = "BRA_econ_power_struggle_char_pointer2"
+			spriteType = "GFX_semi_circle_pointer"
+			position = { x = 226 y = 166 }
+			rotation = 0.7854
+			scale = 1.6
+		}
+		iconType = {
+			name = "BRA_econ_power_struggle_char_pointer3"
+			spriteType = "GFX_semi_circle_pointer"
+			position = { x = 238 y = 158 }
+			rotation = 0
+			scale = 1.6
+		}
+		iconType = {
+			name = "BRA_econ_power_struggle_char_pointer4"
+			spriteType = "GFX_semi_circle_pointer"
+			position = { x = 256 y = 158 }
+			rotation = -0.7854
+			scale = 1.6
+		}
+		iconType = {
+			name = "BRA_econ_power_struggle_char_pointer5"
+			spriteType = "GFX_semi_circle_pointer"
+			position = { x = 268 y = 170 }
+			rotation = -1.5708
+			scale = 1.6
 		}
 
 		instantTextBoxType = {
 			name = "BRA_econ_power_struggle_coronel_txt"
+			position = { x = 20 y = 260 }
+			font = "aldrich_28_outline"
+			text = "BRA_econ_power_struggle_coronel_title"
+			pdx_tooltip = "BRA_econ_power_struggle_coronel_tt"
+			pdx_tooltip_delayed = "BRA_econ_power_struggle_coronel_desc"
 		}
 		instantTextBoxType = {
 			name = "BRA_econ_power_struggle_industrialist_txt"
+			position = { x = 330 y = 260 }
+			font = "aldrich_28_outline"
+			text = "BRA_econ_power_struggle_industrialist_title"
+			pdx_tooltip = "BRA_econ_power_struggle_industrialist_tt"
+			pdx_tooltip_delayed = "BRA_econ_power_struggle_industrialist_desc"
 		}
 	}
 

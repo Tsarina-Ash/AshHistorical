@@ -135,15 +135,43 @@ scripted_gui = {
 
         properties = {
             BRA_econ_power_struggle_bg_chart = {
-                # image = ""
+                image = "GFX_semi_circle_bg"
             }
-            BRA_econ_power_struggle_char_pointer = {
-                frame = BRA.power_struggle_frame
-                # image = ""
+            BRA_econ_power_struggle_char_pointer1 = {
+                image = "GFX_semi_circle_pointer"
+            }
+            BRA_econ_power_struggle_char_pointer2 = {
+                image = "GFX_semi_circle_pointer"
+            }
+            BRA_econ_power_struggle_char_pointer3 = {
+                image = "GFX_semi_circle_pointer"
+            }
+            BRA_econ_power_struggle_char_pointer4 = {
+                image = "GFX_semi_circle_pointer"
+            }
+            BRA_econ_power_struggle_char_pointer5 = {
+                image = "GFX_semi_circle_pointer"
             }
             BRA_econ_power_struggle_coronel_txt = {
             }
             BRA_econ_power_struggle_industrialist_txt = {
+            }
+        }
+        triggers = {
+            BRA_econ_power_struggle_char_pointer1_visible = {
+                check_variable = { power_struggle_frame = 1 }
+            }
+            BRA_econ_power_struggle_char_pointer2_visible = {
+                check_variable = { power_struggle_frame = 2 }
+            }
+            BRA_econ_power_struggle_char_pointer3_visible = {
+                check_variable = { power_struggle_frame = 3 }
+            }
+            BRA_econ_power_struggle_char_pointer4_visible = {
+                check_variable = { power_struggle_frame = 4 }
+            }
+            BRA_econ_power_struggle_char_pointer5_visible = {
+                check_variable = { power_struggle_frame = 5 }
             }
         }
     }

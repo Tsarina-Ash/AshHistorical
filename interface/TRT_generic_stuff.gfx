@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_semi_circle_bg"
+		texturefile = "gfx/interface/scripted_guis/semi_circle_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_semi_circle_pointer"
+		texturefile = "gfx/interface/scripted_guis/semi_circle_pointer.dds"
+	}
+}
