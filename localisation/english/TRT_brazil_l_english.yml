@@ -3,20 +3,28 @@
   brazil_focus_tree:0 "Brazilian Focus Tree"
   #Ideas
   #Events
-  #Decisions
+  #Decisions + associated scripted guis
     BRA_political_influence:0 "Political Influence"
+      BRA_political_influence_republican_name_text:0 "§2Republican Party§!"
+      BRA_political_influence_republican_influence_text:0 "§YInfluence: [?republican_influence]%§!"
+      BRA_political_influence_republican_popularity_text:0 "§YPopularity: [?republican_popularity]%§!"
+      BRA_political_influence_republican_corruption_text:0 "§YCorruption: [?republican_corruption]%§!"
+
+      BRA_political_influence_liberal_name_text:0 "§8Liberal Alliance§!"
+      BRA_political_influence_liberal_influence_text:0 "§YInfluence: [?liberal_influence]%§!"
+      BRA_political_influence_liberal_popularity_text:0 "§YPopularity: [?liberal_popularity]%§!"
+      BRA_political_influence_liberal_corruption_text:0 "§YCorruption: [?liberal_corruption]%§!"
+
+      BRA_political_influence_tenentist_name_text:0 "§3Tenentists§!"
+      BRA_political_influence_tenentist_influence_text:0 "§YInfluence: [?tenenist_influence]%§!"
+      BRA_political_influence_tenentist_popularity_text:0 "§YPopularity: [?tenenist_popularity]%§!"
+      BRA_political_influence_tenentist_corruption_text:0 "§YCorruption: [?tenenist_corruption]%§!"
+    BRA_economic_power_struggle:0 "Economic Power Struggle"
+    BRA_centralization:0 "Centralizing the Country"
+      BRA_centralization_title_tt:0 "Centralization"
+      BRA_decentralized_tt:0 "Decentralized"
+      BRA_centralized_tt:0 "Centralized"
+      BRA_centralization_bar_tt:0 "Centralization"
+      BRA_centralization_bar_desc:0 "Centralizing the country will shift the power from local states to the federal government. While some level of centralization is good, right now it is the large states within Brazil which hold most the political power."
   #Other
-    BRA_political_influence_republican_name_text:0 "§2Republican Party§!"
-    BRA_political_influence_republican_influence_text:0 "§YInfluence: [?republican_influence]%§!"
-    BRA_political_influence_republican_popularity_text:0 "§YPopularity: [?republican_popularity]%§!"
-    BRA_political_influence_republican_corruption_text:0 "§YCorruption: [?republican_corruption]%§!"
-
-    BRA_political_influence_liberal_name_text:0 "§8Liberal Alliance§!"
-    BRA_political_influence_liberal_influence_text:0 "§YInfluence: [?liberal_influence]%§!"
-    BRA_political_influence_liberal_popularity_text:0 "§YPopularity: [?liberal_popularity]%§!"
-    BRA_political_influence_liberal_corruption_text:0 "§YCorruption: [?liberal_corruption]%§!"
-
-    BRA_political_influence_tenentist_name_text:0 "§3Tenentists§!"
-    BRA_political_influence_tenentist_influence_text:0 "§YInfluence: [?tenenist_influence]%§!"
-    BRA_political_influence_tenentist_popularity_text:0 "§YPopularity: [?tenenist_popularity]%§!"
-    BRA_political_influence_tenentist_corruption_text:0 "§YCorruption: [?tenenist_corruption]%§!"
+    

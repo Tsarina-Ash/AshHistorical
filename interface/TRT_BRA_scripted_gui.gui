@@ -167,34 +167,42 @@ guiTypes = {
 	containerWindowType = {
 		name = "BRA_centralization_gui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height = 300 }
+		size = { width = 100% height = 200 }
 
 		instantTextBoxType = {
-			name = "BRA_decentralized_txt"
+			name = "BRA_centralization_title"
 			position = { x = -20 y = 20 }
 			maxWidth = 538
 			font = "aldrich_36_outline"
+			text = "BRA_centralization_title_tt"
+			format = center
+		}
+		instantTextBoxType = {
+			name = "BRA_decentralized_txt"
+			position = { x = -200 y = 65 }
+			maxWidth = 538
+			font = "aldrich_16_outline"
 			text = "BRA_decentralized_tt"
 			format = center
 		}
 		instantTextBoxType = {
 			name = "BRA_centralized_txt"
-			position = { x = -30 y = 65 }
-			font = "aldrich_36_outline"
+			position = { x = 320 y = 65 }
+			font = "aldrich_16_outline"
 			text = "BRA_centralized_tt"
 			format = center
 		}
 		iconType = {
 			name = "BRA_centralization_progress_bar_frame"
 			spriteType = "GFX_BRA_centralization_progress_bar_frame"
-			position = { x = 48 y = 93 }
+			position = { x = 52 y = 88 }
 		}
 		iconType = {
 			name = "BRA_centralization_progress_bar"
 			spriteType = "GFX_BRA_progress_bar"
-			pdx_tooltip = "BRA_centralization_bar"
+			pdx_tooltip = "BRA_centralization_bar_tt"
 			pdx_tooltip_delayed = "BRA_centralization_bar_desc"
-			position = { x = 51 y = 95 }
+			position = { x = 55 y = 90 }
 		}
 	}
 }

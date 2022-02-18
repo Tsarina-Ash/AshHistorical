@@ -5,7 +5,7 @@ BRA_set_up_economic_power_struggle = {
     BRA_update_economic_power_struggle = yes
 }
 BRA_set_up_centralization = {
-    set_variable = { centralization_progress = 10 }
+    set_variable = { centralization_progress = 5 }
 }
 BRA_set_up_republican_influence = {
     custom_effect_tooltip = BRA_the_republicans_can_influence_our_country_now_tt
