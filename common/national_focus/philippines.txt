@@ -15,4 +15,298 @@ focus_tree = {
         }
     }
 	default = no
+
+#MANUEL QUEZON#
+
+focus = {
+	id = MANUEL_QUEZON_all_is_normal
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_dealing_with_factions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 6
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_all_is_normal }
+	relative_position_id = MANUEL_QUEZON_all_is_normal
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_concesions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_dealing_with_factions }
+	relative_position_id = MANUEL_QUEZON_dealing_with_factions
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_request_peace
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_concesions }
+	relative_position_id = MANUEL_QUEZON_concesions
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_grant_amnesties
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_concesions }
+	relative_position_id = MANUEL_QUEZON_concesions
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_invitations_to_government_positions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_request_peace }
+    prerequisite = { focus = MANUEL_QUEZON_grant_amnesties }
+	relative_position_id = MANUEL_QUEZON_request_peace
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_apeasing_americans
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 2
+	
+	prerequisite = { focus = MANUEL_QUEZON_dealing_with_factions }
+	relative_position_id = MANUEL_QUEZON_dealing_with_factions
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_amongus
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_apeasing_americans focus = MANUEL_QUEZON_pacific_wild_west }
+	relative_position_id = MANUEL_QUEZON_apeasing_americans
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_expand_anti_guerilla_ops
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_amongus }
+	relative_position_id = MANUEL_QUEZON_amongus
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_expand_naval_bases
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_expand_anti_guerilla_ops }
+	relative_position_id = MANUEL_QUEZON_expand_anti_guerilla_ops
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_attract_american_investors
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_amongus }
+	relative_position_id = MANUEL_QUEZON_amongus
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_pacific_wild_west
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 6
+	y = 2
+	
+	prerequisite = { focus = MANUEL_QUEZON_dealing_with_factions }
+	relative_position_id = MANUEL_QUEZON_dealing_with_factions
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_filler
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_pacific_wild_west }
+	relative_position_id = MANUEL_QUEZON_pacific_wild_west
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_nothing_bad_ever
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_attract_american_investors }
+    prerequisite = { focus = MANUEL_QUEZON_expand_naval_bases }
+	relative_position_id = MANUEL_QUEZON_expand_naval_bases
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+	}
+}
+
 }
