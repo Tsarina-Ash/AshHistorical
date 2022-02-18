@@ -4924,7 +4924,6 @@ focus = {
 	}
 }
 
-
 focus = {
 	id = FDR_USA_social_security
 	icon = GFX_focus_USA_placeholder
@@ -4963,4 +4962,60 @@ focus = {
 	}
 }
 	
+#LBJ#
+
+focus = {
+	id = LBJ_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 250
+	y = 0
+	
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = LBJ_USA_civil_rights
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -10
+	y = 1
+	
+	prerequisite = { focus = LBJ_USA_innaugaration_speech }
+	relative_position_id = LBJ_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = LBJ_USA_2nd_new_deal
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = LBJ_USA_innaugaration_speech }
+	relative_position_id = LBJ_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
 }

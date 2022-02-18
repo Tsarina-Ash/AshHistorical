@@ -74,7 +74,7 @@ EXTRA_WILSON_USA_unification:0 "Manifest American Unity"
 EXTRA_WILSON_USA_unification_desc:0 "The United States while not being born from a single nationality, wager to say it is one of the most if not the most diverse country in the world is united through the ideals of the consitution and the laws we follow to protect the Stars and Stripes on our flag, lets try to get back to a semblance of normalcy and through American patriotism we'll become stronger together."
 
 EXTRA_WILSON_USA_speeches_to_the_nation:0 "Wilson News Radio"
-EXTRA_WILSON_USA_speeches_to_the_nation_desc:0 "The rad"
+EXTRA_WILSON_USA_speeches_to_the_nation_desc:0 "The radio has been the best invention however we haven't taken advantage by promting our own radio station we could improve ours and our party's public image through reaching thousands of Americans."
 
 EXTRA_WILSON_USA_voyage_of_understanding:0 "Voyage Of Understanding"
 EXTRA_WILSON_USA_voyage_of_understanding_desc:0 ""
@@ -251,3 +251,8 @@ Harding_USA_propose_8_hour_workday_desc:0 ""
 
 Harding_USA_dealing_with_unions:0 ""
 Harding_USA_dealing_with_unions_desc:0 ""
+
+#LBJ FOCUSES
+
+LBJ_USA_innaugaration_speech:0 "A Great Society"
+LBJ_USA_innaugaration_speech_desc:0 "Your imagination, your initiative, and your indignation will determine whether we build a society where progress is the servant of our needs, or a society where old values and new visions are buried under unbridled growth. For in your time we have the opportunity to move not only toward the rich society and the powerful society, but upward to the Great Society."
