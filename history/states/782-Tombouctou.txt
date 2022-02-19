@@ -4,19 +4,20 @@ state={
 	name="STATE_782"
 
 	history={
-		owner = FRA
+		owner = CHI
+		add_core_of = CHI
 		buildings = {
-			infrastructure = 0
+			infrastructure = 3
 
 		}
 
 	}
 
 	provinces={
-		1958 5095 7041 8088 12849 
+		996 3184 4042 4692 7120 10034 10076 11913 11982 12052 13142 
 	}
 	manpower=79243
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=city
 	local_supplies=0.000
 }
