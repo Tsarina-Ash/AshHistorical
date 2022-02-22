@@ -51,6 +51,9 @@ focus_tree = {
 #Possible Early FDR Path ?#
 
 
+#Nye Committee#
+#https://en.wikipedia.org/wiki/Nye_Committee#
+
 #Historical Harding Path#
 #https://en.wikipedia.org/wiki/Warren_G._Harding#
 #https://www.whitehouse.gov/about-the-white-house/presidents/warren-g-harding/#
@@ -112,11 +115,11 @@ focus = {
 
 	cost = 4
 
-	x = 1
+	x = -2
 	y = 1
 	
-	prerequisite = { focus = WILSON_USA_ill_presidency }
-	relative_position_id = WILSON_USA_ill_presidency
+	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
+	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
 
 
 
@@ -160,8 +163,8 @@ focus = {
 	x = 3
 	y = 1
 	
-	prerequisite = { focus = WILSON_USA_ill_presidency }
-	relative_position_id = WILSON_USA_ill_presidency
+	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
+	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
 
 
 
@@ -178,11 +181,11 @@ focus = {
 
 	cost = 4
 
-	x = 1
+	x = 0
 	y = 1
 	
-	prerequisite = { focus = WILSON_USA_begin_demobilization }
-	relative_position_id = WILSON_USA_begin_demobilization
+	prerequisite = { focus = EXTRA_WILSON_USA_innaugaration_speech }
+	relative_position_id = EXTRA_WILSON_USA_innaugaration_speech
 
 
 
@@ -199,7 +202,7 @@ focus = {
 
 	cost = 4
 
-	x = -1
+	x = 0
 	y = 1
 	
 	prerequisite = { focus = WILSON_USA_begin_demobilization }
@@ -241,8 +244,8 @@ focus = {
 
 	cost = 4
 
-	x = -1
-	y = 1
+	x = -4
+	y = 2
 	
 	prerequisite = { focus = WILSON_USA_ill_presidency }
 	relative_position_id = WILSON_USA_ill_presidency
@@ -345,11 +348,11 @@ focus = {
 
 	cost = 4
 
-	x = -4
+	x = 2
 	y = 1
 	
-	prerequisite = { focus = WILSON_USA_ill_presidency }
-	relative_position_id = WILSON_USA_ill_presidency
+	prerequisite = { focus = EXTRA_WILSON_USA_innaugaration_speech }
+	relative_position_id = EXTRA_WILSON_USA_innaugaration_speech
 
 
 
@@ -366,7 +369,7 @@ focus = {
 
 	cost = 4
 
-	x = -1
+	x = 1
 	y = 1
 	
 	prerequisite = { focus = WILSON_USA_expand_agency_budget }
@@ -431,11 +434,11 @@ focus = {
 
 	cost = 4
 
-	x = 7
+	x = 5
 	y = 1
 	
-	prerequisite = { focus = WILSON_USA_ill_presidency }
-	relative_position_id = WILSON_USA_ill_presidency
+	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
+	relative_position_id = EXTRA_WILSON_USA_foreign_policy
 
 
 
@@ -506,7 +509,7 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #teapot scandal and railroad strike are events/decisions
 	}
 }
 
@@ -817,44 +820,6 @@ focus = {
 }
 
 focus = {
-	id = Harding_USA_talk_with_indsutry_leaders
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 3
-	
-	#prerequisite = { focus = Harding_USA_economy }
-	relative_position_id = Harding_USA_economy
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = Harding_USA_deal_with_strikers
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 2
-	y = 0
-	
-	#prerequisite = { focus = Harding_USA_economy }
-	relative_position_id = Harding_USA_talk_with_indsutry_leaders
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
 	id = Harding_USA_tax_cuts
 	icon = GFX_focus_USA_placeholder
 
@@ -884,64 +849,6 @@ focus = {
 	
 	prerequisite = { focus = Harding_USA_economy }
 	relative_position_id = Harding_USA_economy
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = Harding_USA_dealing_with_laborers
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 1
-	y = 1
-	
-	prerequisite = { focus = Harding_USA_talk_with_indsutry_leaders }
-	prerequisite = { focus  = Harding_USA_deal_with_strikers }
-	relative_position_id = Harding_USA_talk_with_indsutry_leaders
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = Harding_USA_propose_8_hour_workday
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-	
-	prerequisite = { focus = Harding_USA_dealing_with_laborers }
-	relative_position_id = Harding_USA_dealing_with_laborers
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = Harding_USA_dealing_with_unions
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = Harding_USA_dealing_with_laborers }
-	relative_position_id = Harding_USA_dealing_with_laborers
 
 	available_if_capitulated = yes
 	
@@ -1479,180 +1386,6 @@ focus = {
 	}
 }
 
-#TEAPOT_SCANDAL#
-
-focus = {
-	id = USA_GREAT_RAILROAD_STRIKE_assess_situation
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 30
-	y = 0
-	
-	available_if_capitulated =  no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = USA_GREAT_RAILROAD_STRIKE_send_army
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-
-	mutually_exclusive = { focus = USA_GREAT_RAILROAD_STRIKE_propose_compromise }
-	prerequisite = { focus = USA_GREAT_RAILROAD_STRIKE_assess_situation }
-	relative_position_id = USA_GREAT_RAILROAD_STRIKE_assess_situation
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-
-focus = {
-	id = USA_GREAT_RAILROAD_STRIKE_wait_it_out
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-
-	prerequisite = { focus = USA_GREAT_RAILROAD_STRIKE_assess_situation }
-	relative_position_id = USA_GREAT_RAILROAD_STRIKE_assess_situation
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50 #focus never allowed however after certain days situation will resolve itself but comes at a poltical/indsutrial cost
-	}
-}
-
-focus = {
-	id = USA_GREAT_RAILROAD_STRIKE_propose_compromise
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 1
-	y = 1
-
-	mutually_exclusive = { focus = USA_GREAT_RAILROAD_STRIKE_send_army }
-	prerequisite = { focus = USA_GREAT_RAILROAD_STRIKE_assess_situation }
-	relative_position_id = USA_GREAT_RAILROAD_STRIKE_assess_situation
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-#TEAPOT_SCANDAL#
-
-focus = {
-	id = USA_TEAPOT_SCANDAL
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 35
-	y = 0
-	
-	available_if_capitulated =  no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-	
-	mutually_exclusive = { focus = USA_TEAPOT_SCANDAL_cover_it_up }
-	prerequisite = { focus = USA_TEAPOT_SCANDAL }
-	relative_position_id = USA_TEAPOT_SCANDAL
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = USA_TEAPOT_SCANDAL_apoligize_on_radio
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 1
-	y = 1
-	
-	prerequisite = { focus = USA_TEAPOT_SCANDAL_cover_it_up focus = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials }
-	relative_position_id = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = USA_TEAPOT_SCANDAL_turn_it_into_anti_communist_propoganda
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = USA_TEAPOT_SCANDAL_cover_it_up focus = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials }
-	relative_position_id = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = USA_TEAPOT_SCANDAL_cover_it_up
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 1
-	y = 1
-
-	mutually_exclusive = { focus = USA_TEAPOT_SCANDAL_fire_the_corrupt_officials }
-	prerequisite = { focus = USA_TEAPOT_SCANDAL }
-	relative_position_id = USA_TEAPOT_SCANDAL
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
 #COOLIDGE EX-VICE-PRESIDENT PRESIDENCY#
 
 focus = {
@@ -1661,7 +1394,7 @@ focus = {
 
 	cost = 1
 
-	x = 45
+	x = 35
 	y = 0
 	
 	available_if_capitulated =  no
@@ -2413,17 +2146,17 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		add_political_power = 50 #coolidge 2.0, LIASEZ FIARE
+		add_political_power = 50 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
 	}
 }
 
 focus = {
-	id = HOOVER_USA_
+	id = HOOVER_USA_the_economy
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = -10
+	x = 0
 	y = 1
 	
 	prerequisite = { focus = HOOVER_USA_innaugaration_speech }
@@ -2432,11 +2165,28 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #allows raising of tarrifs | unlock agricultural act of 1929 and federal farm board and allows the funding of some private commisions
 	}
 }
 
+focus = {
+	id = HOOVER_USA_the_hibernating_giant
+	icon = GFX_focus_USA_placeholder
 
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_the_economy }
+	relative_position_id = HOOVER_USA_the_economy
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50 #final focus for hoover, hopefully player only elects them in 1928, most of his time will be through events & decisions & crisis focus tree
+	}
+}
 
 #WILSON 2ND TERM#
 
@@ -2446,8 +2196,11 @@ focus = {
 
 	cost = 1
 
-	x = 0
-	y = 5
+	x = -10
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
 	
 	available_if_capitulated =  no
 	
@@ -2465,8 +2218,8 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = EXTRA_WILSON_USA_innaugaration_speech }
-	relative_position_id = EXTRA_WILSON_USA_innaugaration_speech
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
 
 	available_if_capitulated = yes
 	
@@ -2901,16 +2654,16 @@ focus = {
 
 	cost = 4
 
-	x = 5
+	x = 6
 	y = 1
 	
-	prerequisite = { focus = EXTRA_WILSON_USA_innaugaration_speech }
-	relative_position_id = EXTRA_WILSON_USA_innaugaration_speech
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
 
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #only unlocks if reelected
 	}
 }
 
@@ -3005,7 +2758,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #dont unlock before doing the first league focus
 	}
 }
 
