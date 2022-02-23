@@ -126,7 +126,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 #is a decision but with focus to visualize | extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
 	}
 }
 
@@ -148,7 +148,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #decision but focus visualizes
 	}
 }
 
@@ -503,7 +503,7 @@ focus = {
 
 	cost = 1
 
-	x = 20
+	x = 22
 	y = 0
 	
 	available_if_capitulated =  no
@@ -2132,61 +2132,6 @@ focus = {
 		add_political_power = 50
 	}
 }
-#HOOVER PRESIDENCY#
-
-focus = {
-	id = HOOVER_USA_innaugaration_speech
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 90
-	y = 0
-	
-	available_if_capitulated =  no
-	
-	completion_reward = {
-		add_political_power = 50 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
-	}
-}
-
-focus = {
-	id = HOOVER_USA_the_economy
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = HOOVER_USA_innaugaration_speech }
-	relative_position_id = HOOVER_USA_innaugaration_speech
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50 #allows raising of tarrifs | unlock agricultural act of 1929 and federal farm board and allows the funding of some private commisions
-	}
-}
-
-focus = {
-	id = HOOVER_USA_the_hibernating_giant
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = HOOVER_USA_the_economy }
-	relative_position_id = HOOVER_USA_the_economy
-	
-	available_if_capitulated =  no
-	
-	completion_reward = {
-		add_political_power = 50 #final focus for hoover, hopefully player only elects them in 1928, most of his time will be through events & decisions & crisis focus tree
-	}
-}
 
 #WILSON 2ND TERM#
 
@@ -2914,6 +2859,62 @@ focus = {
 	}
 }
 
+#HOOVER PRESIDENCY#
+
+focus = {
+	id = HOOVER_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 90
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
+	}
+}
+
+focus = {
+	id = HOOVER_USA_the_economy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_innaugaration_speech }
+	relative_position_id = HOOVER_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #allows raising of tarrifs | unlock agricultural act of 1929 and federal farm board and allows the funding of some private commisions
+	}
+}
+
+focus = { #last focus for 1928 president
+	id = HOOVER_USA_the_hibernating_giant
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_the_economy }
+	relative_position_id = HOOVER_USA_the_economy
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50 #final focus for hoover, hopefully player only elects them in 1928, most of his time will be through events & decisions & crisis focus tree
+	}
+}
+
 #1933/32-1940 Below#
 
 #PUERTO RICO DEPPRESION#
@@ -3500,7 +3501,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #most focuses are just visualizations of decisions
 	}
 }
 

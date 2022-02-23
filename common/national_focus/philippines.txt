@@ -51,7 +51,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 
 	}
 }
 
@@ -72,7 +72,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 
 	}
 }
 
@@ -93,7 +93,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 
 	}
 }
 
@@ -114,7 +114,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 
 	}
 }
 
@@ -136,7 +136,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 
 	}
 }
 
@@ -157,7 +157,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 
 	}
 }
 
@@ -178,7 +178,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 
 	}
 }
 
@@ -199,7 +199,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 
 	}
 }
 
@@ -220,7 +220,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 
 	}
 }
 
@@ -241,7 +241,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 
 	}
 }
 
@@ -262,7 +262,28 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_pacific_wild_west }
+	relative_position_id = MANUEL_QUEZON_pacific_wild_west
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 
 	}
 }
 
@@ -283,7 +304,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 
 	}
 }
 
@@ -305,7 +326,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		add_political_power = 50 
 	}
 }
 
