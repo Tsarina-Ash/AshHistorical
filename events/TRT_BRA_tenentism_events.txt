@@ -1,8 +1,0 @@
-add_namespace = BRA_tentenism
-
-# country_event = { #
-#     id = BRA_tentenism.1
-#     title = BRA_tentenism.1.t
-#     desc = BRA_tentenism.1.d
-#     #picture = GFX_
-# }
