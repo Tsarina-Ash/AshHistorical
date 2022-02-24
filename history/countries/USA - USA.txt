@@ -161,7 +161,9 @@ add_ideas = {
 	tot_economic_mobilisation
 	service_by_requirement
 	free_trade
+
 	home_of_the_free
+	add_timed_idea = { idea = roaring_twenties  days = 3588 }
 }
 
 

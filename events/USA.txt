@@ -1,0 +1,61 @@
+country_event = {
+	id = event.usaWilson.1
+        title = usaWilson.1.t
+        desc = usaWilson.1.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaWilsonFirsth.1.a
+	}
+}
+
+country_event = {
+	id = event.usaWilson.2
+        title = usaWilson.2.t
+        desc = usaWilson.2.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaWilsonRights.1.a
+	}
+}
+
+
+country_event = {
+	id = event.usaWilson.3
+        title = usaWilson.3.t
+        desc = usaWilson.3.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaWilsonSecondSpeech.1.a
+	}
+}
+
+country_event = {
+	id = event.usaWilson.4
+        title = usaWilson.4.t
+        desc = usaWilson.4.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaWilsonInnaugSpeech.1.a
+	}
+}
+

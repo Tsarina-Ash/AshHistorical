@@ -97,16 +97,14 @@ focus = {
 	id = WILSON_USA_ill_presidency
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 1
 
 	x = 0
 	y = 0
 	
 	available_if_capitulated =  no
 	
-	completion_reward = {
-		add_political_power = 50
-	}
+	completion_reward = { event.usaWilson.1 }
 }
 
 focus = {
@@ -242,7 +240,7 @@ focus = {
 	id = WILSON_USA_league_of_nations
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 7
 
 	x = -4
 	y = 2
@@ -432,7 +430,7 @@ focus = {
 	id = WILSON_USA_rights_of_man
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 1
 
 	x = 5
 	y = 1
@@ -444,9 +442,7 @@ focus = {
 
 	available_if_capitulated = yes
 	
-	completion_reward = {
-		add_political_power = 50
-	}
+	completion_reward = { event.usaWilson.2 }
 }
 
 focus = {
@@ -2149,9 +2145,7 @@ focus = {
 	
 	available_if_capitulated =  no
 	
-	completion_reward = {
-		add_political_power = 50 #wilson dies in 1924
-	}
+	completion_reward = { event.usaWilson.4 }
 }
 
 focus = {
@@ -2168,9 +2162,7 @@ focus = {
 
 	available_if_capitulated = yes
 	
-	completion_reward = {
-		add_political_power = 50
-	}
+	completion_reward = { event.usaWilson.3 }
 }
 
 focus = {
@@ -2859,6 +2851,62 @@ focus = {
 	}
 }
 
+#EARLY HOOVER#
+
+focus = {
+	id = EARLY_HOOVER_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 90
+	y = 0
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_the_economy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_innaugaration_speech }
+	relative_position_id = EARLY_HOOVER_USA_innaugaration_speech
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #allows raising of tarrifs | unlock agricultural act of 1929 and federal farm board and allows the funding of some private commisions
+	}
+}
+
+focus = { #last focus for 1924 president
+	id = EARLY_HOOVER_USA_the_hibernating_giant
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_the_economy }
+	relative_position_id = EARLY_HOOVER_USA_the_economy
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+		add_political_power = 50 #final focus for hoover, hopefully player only elects them in 1928, most of his time will be through events & decisions & crisis focus tree
+	}
+}
+
 #HOOVER PRESIDENCY#
 
 focus = {
@@ -2867,7 +2915,7 @@ focus = {
 
 	cost = 1
 
-	x = 90
+	x = 100
 	y = 0
 	
 	available_if_capitulated =  no
@@ -3188,7 +3236,7 @@ focus = {
 
 #FLINT SIT-DOWN STRIKE#
 
-focus = {
+focus = { #through events just a visualization for now
 	id = FLINT_USA_strike
 	icon = GFX_focus_USA_placeholder
 
