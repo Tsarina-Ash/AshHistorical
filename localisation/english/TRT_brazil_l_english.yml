@@ -3,6 +3,10 @@
   brazil_focus_tree:0 "Brazilian Focus Tree"
   #Ideas
   #Events
+    #BRA_false_letters
+      BRA_false_letters.1.t:0 "The Morning Post Makes Interesting Publications"
+      BRA_false_letters.1.d:0 ""
+      BRA_false_letters.1.a:0 "Interesting Publications Indeed..."
   #Decisions + associated scripted guis
     BRA_political_influence:0 "Political Influence"
       BRA_political_influence_republican_name_text:0 "§2Republican Party§!"

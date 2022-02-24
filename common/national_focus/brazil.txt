@@ -17,7 +17,8 @@ focus_tree = {
     continuous_focus_position = { x = 50 y = 1600 }
 	default = no
 
-    focus = { #Before the tenentist revolt
+#Epitácio Pessoa Tree
+    focus = { 
         id = BRA_epitacio_pessoa_presidency
         icon = GFX_
         x = 5

@@ -1,2 +1,23 @@
 add_namespace = BRA
 add_namespace = BRA_tentenism
+add_namespace = BRA_false_letters
+
+country_event = { #The Morning Post publishes letters
+	id = BRA_false_letters.1
+	title = BRA_false_letters.1.t
+	desc = BRA_false_letters.1.d
+	#picture = GFX_
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1921.3.1
+	}
+
+	option = { 
+		name = BRA_false_letters.1.a
+		ai_chance = {
+			factor = 60
+		}
+	}
+}
