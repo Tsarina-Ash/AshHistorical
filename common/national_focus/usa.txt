@@ -2865,7 +2865,7 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		add_political_power = 50 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
+		usaHoover.1 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
 	}
 }
 
@@ -2921,7 +2921,7 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		add_political_power = 50 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
+		usaHoover.2 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
 	}
 }
 

@@ -35,6 +35,29 @@ focus = {
 }
 
 focus = {
+	id = MANUEL_QUEZON_replace_this_with_political_tree
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_all_is_normal }
+	relative_position_id = MANUEL_QUEZON_all_is_normal
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+#Right Side Of Quezon#
+
+focus = {
 	id = MANUEL_QUEZON_dealing_with_factions
 	icon = GFX_focus_USA_placeholder
 
@@ -45,6 +68,69 @@ focus = {
 	
 	prerequisite = { focus = MANUEL_QUEZON_all_is_normal }
 	relative_position_id = MANUEL_QUEZON_all_is_normal
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_escelation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_dealing_with_factions }
+	relative_position_id = MANUEL_QUEZON_dealing_with_factions
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_request_armaments_from_washington
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_escelation }
+	relative_position_id = MANUEL_QUEZON_escelation
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_napalm
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_request_armaments_from_washington }
+	relative_position_id = MANUEL_QUEZON_request_armaments_from_washington
 
 
 
@@ -170,7 +256,7 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_apeasing_americans focus = MANUEL_QUEZON_pacific_wild_west }
+	prerequisite = { focus = MANUEL_QUEZON_apeasing_americans }
 	relative_position_id = MANUEL_QUEZON_apeasing_americans
 
 
@@ -267,7 +353,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON
+	id = MANUEL_QUEZON_let_economy_go_wild
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -288,7 +374,49 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_filler
+	id = MANUEL_QUEZON_lessen_union_influence
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_let_economy_go_wild }
+	relative_position_id = MANUEL_QUEZON_let_economy_go_wild
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_shorten_military_spending
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_let_economy_go_wild focus = MANUEL_QUEZON_filler_a_new_deal}
+	relative_position_id = MANUEL_QUEZON_let_economy_go_wild
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_filler_a_new_deal
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -299,6 +427,25 @@ focus = {
 	prerequisite = { focus = MANUEL_QUEZON_pacific_wild_west }
 	relative_position_id = MANUEL_QUEZON_pacific_wild_west
 
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_expand_ssa
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_filler_a_new_deal }
+	relative_position_id = MANUEL_QUEZON_filler_a_new_deal
+
 
 
 	available_if_capitulated = yes
@@ -307,6 +454,28 @@ focus = {
 		add_political_power = 50 
 	}
 }
+
+focus = {
+	id = MANUEL_QUEZON_business_subsudies
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 2
+	
+	prerequisite = { focus = MANUEL_QUEZON_filler_a_new_deal }
+	relative_position_id = MANUEL_QUEZON_filler_a_new_deal
+
+
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
 
 focus = {
 	id = MANUEL_QUEZON_nothing_bad_ever

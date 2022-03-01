@@ -1,0 +1,10 @@
+acts_and_laws = {
+     icon = generic_prospect_for_resources
+
+     visible_when_empty = yes
+
+
+
+
+
+}
