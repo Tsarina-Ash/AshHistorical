@@ -19,7 +19,7 @@ focus_tree = {
 #MANUEL QUEZON#
 
 focus = {
-	id = MANUEL_QUEZON_all_is_normal
+	id = GENERIC_PHILIPPINES_all_is_normal
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -35,7 +35,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_replace_this_with_political_tree
+	id = GENERIC_PHILIPPINES_replace_this_with_political_tree
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -43,12 +43,12 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_all_is_normal }
-	relative_position_id = MANUEL_QUEZON_all_is_normal
+	prerequisite = { focus = GENERIC_PHILIPPINES_all_is_normal }
+	relative_position_id = GENERIC_PHILIPPINES_all_is_normal
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -58,7 +58,7 @@ focus = {
 #Right Side Of Quezon#
 
 focus = {
-	id = MANUEL_QUEZON_dealing_with_factions
+	id = GENERIC_PHILIPPINES_dealing_with_factions
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -66,12 +66,12 @@ focus = {
 	x = 6
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_all_is_normal }
-	relative_position_id = MANUEL_QUEZON_all_is_normal
+	prerequisite = { focus = GENERIC_PHILIPPINES_all_is_normal }
+	relative_position_id = GENERIC_PHILIPPINES_all_is_normal
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -79,7 +79,26 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_escelation
+	id = GENERIC_PHILIPPINES_buy_american_ships
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 4
+	y = 1
+	
+	prerequisite = { focus = GENERIC_PHILIPPINES_dealing_with_factions }
+	relative_position_id = GENERIC_PHILIPPINES_dealing_with_factions
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50 #will be a decision to ask/buy ships from the US (BB's, CV's, DD's, ETC) but US has to accept (will be event scripted)
+	}
+}
+
+focus = {
+	id = GENERIC_PHILIPPINES_escelation
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -87,12 +106,12 @@ focus = {
 	x = -3
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_dealing_with_factions }
-	relative_position_id = MANUEL_QUEZON_dealing_with_factions
+	prerequisite = { focus = GENERIC_PHILIPPINES_dealing_with_factions }
+	relative_position_id = GENERIC_PHILIPPINES_dealing_with_factions
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -100,7 +119,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_request_armaments_from_washington
+	id = GENERIC_PHILIPPINES_request_armaments_from_washington
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -108,10 +127,8 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_escelation }
-	relative_position_id = MANUEL_QUEZON_escelation
-
-
+	prerequisite = { focus = GENERIC_PHILIPPINES_escelation }
+	relative_position_id = GENERIC_PHILIPPINES_escelation
 
 	available_if_capitulated = yes
 	
@@ -121,7 +138,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_napalm
+	id = GENERIC_PHILIPPINES_napalm
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -129,20 +146,18 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_request_armaments_from_washington }
-	relative_position_id = MANUEL_QUEZON_request_armaments_from_washington
-
-
-
-	available_if_capitulated = yes
+	prerequisite = { focus = GENERIC_PHILIPPINES_request_armaments_from_washington }
+	relative_position_id = GENERIC_PHILIPPINES_request_armaments_from_washington
 	
+	available_if_capitulated = yes
+
 	completion_reward = {
-		add_political_power = 50 
+		add_political_power = 50 #unlocks technology: napalm which'll increase damage on bombers & CAS JETS
 	}
 }
 
 focus = {
-	id = MANUEL_QUEZON_concesions
+	id = GENERIC_PHILIPPINES_concesions
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -150,12 +165,12 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_dealing_with_factions }
-	relative_position_id = MANUEL_QUEZON_dealing_with_factions
+	prerequisite = { focus = GENERIC_PHILIPPINES_dealing_with_factions }
+	relative_position_id = GENERIC_PHILIPPINES_dealing_with_factions
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -163,7 +178,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_request_peace
+	id = GENERIC_PHILIPPINES_request_peace
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -171,12 +186,12 @@ focus = {
 	x = -1
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_concesions }
-	relative_position_id = MANUEL_QUEZON_concesions
+	prerequisite = { focus = GENERIC_PHILIPPINES_concesions }
+	relative_position_id = GENERIC_PHILIPPINES_concesions
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -184,7 +199,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_grant_amnesties
+	id = GENERIC_PHILIPPINES_grant_amnesties
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -192,12 +207,12 @@ focus = {
 	x = 1
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_concesions }
-	relative_position_id = MANUEL_QUEZON_concesions
+	prerequisite = { focus = GENERIC_PHILIPPINES_concesions }
+	relative_position_id = GENERIC_PHILIPPINES_concesions
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -205,7 +220,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_invitations_to_government_positions
+	id = GENERIC_PHILIPPINES_invitations_to_government_positions
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -213,13 +228,13 @@ focus = {
 	x = 1
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_request_peace }
-    prerequisite = { focus = MANUEL_QUEZON_grant_amnesties }
-	relative_position_id = MANUEL_QUEZON_request_peace
+	prerequisite = { focus = GENERIC_PHILIPPINES_request_peace }
+    prerequisite = { focus = GENERIC_PHILIPPINES_grant_amnesties }
+	relative_position_id = GENERIC_PHILIPPINES_request_peace
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -227,7 +242,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_apeasing_americans
+	id = GENERIC_PHILIPPINES_apeasing_americans
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -235,12 +250,12 @@ focus = {
 	x = 3
 	y = 2
 	
-	prerequisite = { focus = MANUEL_QUEZON_dealing_with_factions }
-	relative_position_id = MANUEL_QUEZON_dealing_with_factions
+	prerequisite = { focus = GENERIC_PHILIPPINES_dealing_with_factions }
+	relative_position_id = GENERIC_PHILIPPINES_dealing_with_factions
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -248,7 +263,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_amongus
+	id = GENERIC_PHILIPPINES_amongus
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -256,12 +271,12 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_apeasing_americans }
-	relative_position_id = MANUEL_QUEZON_apeasing_americans
+	prerequisite = { focus = GENERIC_PHILIPPINES_apeasing_americans }
+	relative_position_id = GENERIC_PHILIPPINES_apeasing_americans
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -269,7 +284,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_expand_anti_guerilla_ops
+	id = GENERIC_PHILIPPINES_expand_anti_guerilla_ops
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -277,12 +292,12 @@ focus = {
 	x = -2
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_amongus }
-	relative_position_id = MANUEL_QUEZON_amongus
+	prerequisite = { focus = GENERIC_PHILIPPINES_amongus }
+	relative_position_id = GENERIC_PHILIPPINES_amongus
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -290,7 +305,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_expand_naval_bases
+	id = GENERIC_PHILIPPINES_expand_naval_bases
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -298,12 +313,12 @@ focus = {
 	x = 1
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_expand_anti_guerilla_ops }
-	relative_position_id = MANUEL_QUEZON_expand_anti_guerilla_ops
+	prerequisite = { focus = GENERIC_PHILIPPINES_expand_anti_guerilla_ops }
+	relative_position_id = GENERIC_PHILIPPINES_expand_anti_guerilla_ops
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -311,7 +326,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_attract_american_investors
+	id = GENERIC_PHILIPPINES_attract_american_investors
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -319,12 +334,12 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_amongus }
-	relative_position_id = MANUEL_QUEZON_amongus
+	prerequisite = { focus = GENERIC_PHILIPPINES_amongus }
+	relative_position_id = GENERIC_PHILIPPINES_amongus
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -332,7 +347,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_pacific_wild_west
+	id = GENERIC_PHILIPPINES_pacific_wild_west
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -340,12 +355,12 @@ focus = {
 	x = 6
 	y = 2
 	
-	prerequisite = { focus = MANUEL_QUEZON_dealing_with_factions }
-	relative_position_id = MANUEL_QUEZON_dealing_with_factions
+	prerequisite = { focus = GENERIC_PHILIPPINES_dealing_with_factions }
+	relative_position_id = GENERIC_PHILIPPINES_dealing_with_factions
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -353,7 +368,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_let_economy_go_wild
+	id = GENERIC_PHILIPPINES_let_economy_go_wild
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -361,12 +376,12 @@ focus = {
 	x = -1
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_pacific_wild_west }
-	relative_position_id = MANUEL_QUEZON_pacific_wild_west
+	prerequisite = { focus = GENERIC_PHILIPPINES_pacific_wild_west }
+	relative_position_id = GENERIC_PHILIPPINES_pacific_wild_west
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -374,7 +389,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_lessen_union_influence
+	id = GENERIC_PHILIPPINES_lessen_union_influence
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -382,12 +397,12 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_let_economy_go_wild }
-	relative_position_id = MANUEL_QUEZON_let_economy_go_wild
+	prerequisite = { focus = GENERIC_PHILIPPINES_let_economy_go_wild }
+	relative_position_id = GENERIC_PHILIPPINES_let_economy_go_wild
 
 
 
-	available_if_capitulated = yes
+	
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -395,7 +410,7 @@ focus = {
 }
 
 focus = {
-	id = MANUEL_QUEZON_shorten_military_spending
+	id = GENERIC_PHILIPPINES_shorten_military_spending
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -403,13 +418,92 @@ focus = {
 	x = 2
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_let_economy_go_wild focus = MANUEL_QUEZON_filler_a_new_deal}
-	relative_position_id = MANUEL_QUEZON_let_economy_go_wild
+	prerequisite = { focus = GENERIC_PHILIPPINES_let_economy_go_wild }
+	relative_position_id = GENERIC_PHILIPPINES_let_economy_go_wild
 
 
 
-	available_if_capitulated = yes
 	
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = GENERIC_PHILIPPINES_nothing_bad_ever
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = GENERIC_PHILIPPINES_attract_american_investors }
+    prerequisite = { focus = GENERIC_PHILIPPINES_expand_naval_bases }
+	relative_position_id = GENERIC_PHILIPPINES_expand_naval_bases
+
+
+
+	
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_innaugaration
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 40
+	y = 0
+	
+	#the barred out place is where the tree is going to be replacing the replace political thing#
+
+	#x = 0
+	#y = 1
+
+	#prerequisite = { focus = GENERIC_PHILIPPINES_all_is_normal }
+	#relative_position_id = GENERIC_PHILIPPINES_all_is_normal
+
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+
+focus = {
+	id = MANUEL_QUEZON_national_situation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_innaugaration }
+	relative_position_id = MANUEL_QUEZON_innaugaration
+
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = MANUEL_QUEZON_economic_disrepair
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -5
+	y = 1
+	
+	prerequisite = { focus = MANUEL_QUEZON_national_situation }
+	relative_position_id = MANUEL_QUEZON_national_situation
+
 	completion_reward = {
 		add_political_power = 50 
 	}
@@ -424,13 +518,11 @@ focus = {
 	x = 3
 	y = 1
 	
-	prerequisite = { focus = MANUEL_QUEZON_pacific_wild_west }
-	relative_position_id = MANUEL_QUEZON_pacific_wild_west
-
-	available_if_capitulated = yes
+	prerequisite = { focus = MANUEL_QUEZON_economic_disrepair }
+	relative_position_id = MANUEL_QUEZON_economic_disrepair
 	
 	completion_reward = {
-		add_political_power = 50 
+		add_ideas = first_new_deal
 	}
 }
 
@@ -445,10 +537,6 @@ focus = {
 	
 	prerequisite = { focus = MANUEL_QUEZON_filler_a_new_deal }
 	relative_position_id = MANUEL_QUEZON_filler_a_new_deal
-
-
-
-	available_if_capitulated = yes
 	
 	completion_reward = {
 		add_political_power = 50 
@@ -466,37 +554,11 @@ focus = {
 	
 	prerequisite = { focus = MANUEL_QUEZON_filler_a_new_deal }
 	relative_position_id = MANUEL_QUEZON_filler_a_new_deal
-
-
-
-	available_if_capitulated = yes
 	
 	completion_reward = {
 		add_political_power = 50 
 	}
 }
 
-
-focus = {
-	id = MANUEL_QUEZON_nothing_bad_ever
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 1
-	y = 1
-	
-	prerequisite = { focus = MANUEL_QUEZON_attract_american_investors }
-    prerequisite = { focus = MANUEL_QUEZON_expand_naval_bases }
-	relative_position_id = MANUEL_QUEZON_expand_naval_bases
-
-
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50 
-	}
-}
 
 }

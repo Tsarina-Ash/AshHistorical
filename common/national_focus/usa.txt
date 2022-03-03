@@ -119,9 +119,9 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
 	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
 
+	available { never }
 
-
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #is a decision but with focus to visualize | extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
@@ -143,7 +143,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #decision but focus visualizes
@@ -166,10 +166,10 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50 #demobing too fast can destroy economy
+		add_political_power = 50 #demobing too fast can destroy economy and unlocks decisions to begin getting rid of massive_army idea
 	}
 }
 
@@ -187,7 +187,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -208,7 +208,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -229,7 +229,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -250,7 +250,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -271,7 +271,7 @@ focus = {
 
 	mutually_exclusive = { focus = WILSON_USA_compromise_with_reps }
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #will fail and always lead dems lose popularity and support among isolationists
@@ -290,7 +290,7 @@ focus = {
 	prerequisite = { focus = WILSON_USA_force_joining }
 	relative_position_id = WILSON_USA_force_joining
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -311,7 +311,7 @@ focus = {
 
 	mutually_exclusive = { focus = WILSON_USA_force_joining }
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #will join the league as a minor member and have limited assistance but cant pass civil rights bills for next 10 years
@@ -330,7 +330,7 @@ focus = {
 	prerequisite = { focus = WILSON_USA_compromise_with_reps focus = WILSON_USA_force_joining }
 	relative_position_id = WILSON_USA_force_joining
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50#focus shows up after failing to join the league
@@ -354,7 +354,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -375,7 +375,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #venito-vettechi case shooting thingie
@@ -396,7 +396,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -417,7 +417,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -440,7 +440,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = { event.usaWilson.2 }
 }
@@ -461,7 +461,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #splits the party and weakens chance for wilson & party to win southern victory
@@ -484,7 +484,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #splits northern voters and lose northern/western votes for wilson & party.
@@ -505,7 +505,7 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		add_political_power = 50 #teapot scandal and railroad strike are events/decisions
+		usaHarding.1 #teapot scandal and railroad strike are events/decisions
 	}
 }
 
@@ -521,7 +521,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_innaugaration_speech }
 	relative_position_id = Harding_USA_innaugaration_speech
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -540,7 +540,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_blame_game_return_to_normalcy }
 	relative_position_id = Harding_USA_blame_game_return_to_normalcy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -559,7 +559,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_hot_potato }
 	relative_position_id = Harding_USA_hot_potato
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -578,7 +578,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_internal_affairs }
 	relative_position_id = Harding_USA_internal_affairs
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -597,7 +597,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_internal_affairs }
 	relative_position_id = Harding_USA_internal_affairs
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -616,7 +616,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_internal_affairs }
 	relative_position_id = Harding_USA_internal_affairs
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -635,7 +635,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_per_centum_act_of_1921 }
 	relative_position_id = Harding_USA_per_centum_act_of_1921
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -654,7 +654,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_hot_potato }
 	relative_position_id = Harding_USA_hot_potato
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -674,7 +674,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_return_to_normalcy }
 	relative_position_id = Harding_USA_return_to_normalcy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -693,7 +693,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_return_to_normalcy }
 	relative_position_id = Harding_USA_return_to_normalcy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -713,7 +713,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_finalize_formal_peace_treaty }
 	relative_position_id = Harding_USA_finalize_formal_peace_treaty
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -732,7 +732,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_finalize_formal_peace_treaty }
 	relative_position_id = Harding_USA_finalize_formal_peace_treaty
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -751,7 +751,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_finalize_formal_peace_treaty }
 	relative_position_id = Harding_USA_finalize_formal_peace_treaty
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -770,7 +770,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_return_to_normalcy }
 	relative_position_id = Harding_USA_return_to_normalcy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -789,7 +789,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_abandon_the_idea_of_the_league }
 	relative_position_id = Harding_USA_abandon_the_idea_of_the_league
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -800,7 +800,7 @@ focus = {
 	id = Harding_USA_economy
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 2
 
 	x = 4
 	y = 1
@@ -808,7 +808,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_hot_potato }
 	relative_position_id = Harding_USA_hot_potato
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -827,7 +827,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_economy }
 	relative_position_id = Harding_USA_economy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -846,7 +846,7 @@ focus = {
 	prerequisite = { focus = Harding_USA_economy }
 	relative_position_id = Harding_USA_economy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -867,7 +867,7 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		add_political_power = 50 #does minimal things and after 1st term party favors hoover for buisness additudes
+		usaCoolidge.1 #does minimal things and after 1st term party favors hoover for buisness additudes
 	}
 }
 
@@ -883,10 +883,10 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_innaugaration_speech }
 	relative_position_id = Coolidge_USA_innaugaration_speech
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		custom_effect_tooltip = "Gone Are The Days of Proggressivism, In Are The Days Of Normalcy. Stay Cool With Coolidge"
 	}
 }
 
@@ -902,7 +902,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_stay_cool_with_coolidge }
 	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -921,7 +921,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_stay_cool_with_coolidge }
 	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -940,7 +940,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_speed_up_demobilization }
 	relative_position_id = Coolidge_USA_speed_up_demobilization
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #demobilizing will gain rewards but increase racial tensions & instability due to low amount of jobs for returning soldiers and stagnant eco
@@ -959,7 +959,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_stay_cool_with_coolidge }
 	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #focus shows up through event#
@@ -978,7 +978,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_human_rights_issues }
 	relative_position_id = Coolidge_USA_human_rights_issues
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -997,7 +997,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_human_rights_issues }
 	relative_position_id = Coolidge_USA_human_rights_issues
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1015,7 +1015,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_stay_cool_with_coolidge }
 	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #focus shows up through event#
@@ -1034,7 +1034,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_missipipi_flood_of_1927 }
 	relative_position_id = Coolidge_USA_missipipi_flood_of_1927
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1053,7 +1053,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_stay_cool_with_coolidge }
 	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1072,7 +1072,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_foreign_policy }
 	relative_position_id = Coolidge_USA_foreign_policy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1091,7 +1091,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_foreign_policy }
 	relative_position_id = Coolidge_USA_foreign_policy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1110,7 +1110,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_question_of_the_league }
 	relative_position_id = Coolidge_USA_question_of_the_league
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1129,7 +1129,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_question_of_the_league }
 	relative_position_id = Coolidge_USA_question_of_the_league
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1148,7 +1148,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_improve_south_american_relations }
 	relative_position_id = Coolidge_USA_improve_south_american_relations
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1167,7 +1167,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_improve_south_american_relations }
 	relative_position_id = Coolidge_USA_improve_south_american_relations
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1186,7 +1186,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_question_of_the_league }
 	relative_position_id = Coolidge_USA_question_of_the_league
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1204,7 +1204,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_european_relief }
 	relative_position_id = Coolidge_USA_european_relief
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1223,7 +1223,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_european_relief }
 	relative_position_id = Coolidge_USA_european_relief
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #Revenue acts of 1926/1928 ?#
@@ -1242,7 +1242,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_stay_cool_with_coolidge }
 	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1261,7 +1261,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_economic_policy } 
 	relative_position_id = Coolidge_USA_economic_policy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #Revenue acts of 1926/1928 ?#
@@ -1280,7 +1280,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_revenue_act_of_1924 }
 	relative_position_id = Coolidge_USA_revenue_act_of_1924
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #Revenue acts of 1926/1928 ?#
@@ -1299,7 +1299,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_economic_policy }
 	relative_position_id = Coolidge_USA_economic_policy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1318,7 +1318,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_hoover_hands_free }
 	relative_position_id = Coolidge_USA_hoover_hands_free
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1337,7 +1337,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_hoover_hands_free }
 	relative_position_id = Coolidge_USA_hoover_hands_free
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1356,7 +1356,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_hoover_hands_free }
 	relative_position_id = Coolidge_USA_hoover_hands_free
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1375,7 +1375,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_economic_policy } 
 	relative_position_id = Coolidge_USA_economic_policy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #Not A Real Act#
@@ -1412,10 +1412,10 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_EXVICE_private_innaugaration }
 	relative_position_id = Coolidge_USA_EXVICE_private_innaugaration
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		usaCoolidge.2
 	}
 }
 
@@ -1431,7 +1431,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_adress_the_nation }
 	relative_position_id = Coolidge_USA_adress_the_nation
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1450,7 +1450,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_adress_the_nation }
 	relative_position_id = Coolidge_USA_adress_the_nation
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1469,7 +1469,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_adress_the_nation }
 	relative_position_id = Coolidge_USA_adress_the_nation
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1489,7 +1489,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_deal_with_pennsylvanian_strikers }
 	relative_position_id = Coolidge_USA_deal_with_pennsylvanian_strikers
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1509,7 +1509,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_deal_with_pennsylvanian_strikers }
 	relative_position_id = Coolidge_USA_deal_with_pennsylvanian_strikers
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1529,7 +1529,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_suppress_pennsylvanian_strikers }
 	relative_position_id = Coolidge_USA_suppress_pennsylvanian_strikers
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1549,7 +1549,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_suppress_pennsylvanian_strikers }
 	relative_position_id = Coolidge_USA_suppress_pennsylvanian_strikers
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1568,7 +1568,7 @@ focus = {
 	prerequisite = { focus = Coolidge_USA_take_control_of_mines focus = Coolidge_USA_buisness_as_usual }
 	relative_position_id = Coolidge_USA_buisness_as_usual
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1589,7 +1589,7 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		add_political_power = 50 #he will be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
+		usaLeonardWood.1 #he will be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
 	}
 }
 
@@ -1605,7 +1605,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_innaugaration_speech }
 	relative_position_id = Leonard_Wood_USA_innaugaration_speech
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1624,7 +1624,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_done_with_progressivism }
 	relative_position_id = Leonard_Wood_USA_done_with_progressivism
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #focus shows up through event#
@@ -1643,7 +1643,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_restructure_army }
 	relative_position_id = Leonard_Wood_USA_restructure_army
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #focus shows up through event#
@@ -1662,7 +1662,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_question_of_funding }
 	relative_position_id = Leonard_Wood_USA_question_of_funding
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #focus shows up through event#
@@ -1681,7 +1681,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_restructure_army }
 	relative_position_id = Leonard_Wood_USA_restructure_army
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1700,7 +1700,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_done_with_progressivism }
 	relative_position_id = Leonard_Wood_USA_done_with_progressivism
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #focus shows up through event#
@@ -1719,7 +1719,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_missipipi_flood_of_1927 }
 	relative_position_id = Leonard_Wood_USA_missipipi_flood_of_1927
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1738,7 +1738,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_done_with_progressivism }
 	relative_position_id = Leonard_Wood_USA_done_with_progressivism
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1757,7 +1757,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_foreign_policy }
 	relative_position_id = Leonard_Wood_USA_foreign_policy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1776,7 +1776,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_question_of_the_league }
 	relative_position_id = Leonard_Wood_USA_question_of_the_league
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1795,7 +1795,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_question_of_the_league }
 	relative_position_id = Leonard_Wood_USA_question_of_the_league
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1814,7 +1814,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_improve_south_american_relations }
 	relative_position_id = Leonard_Wood_USA_improve_south_american_relations
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1833,7 +1833,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_improve_south_american_relations }
 	relative_position_id = Leonard_Wood_USA_improve_south_american_relations
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1852,7 +1852,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_dominican_failure }
 	relative_position_id = Leonard_Wood_USA_dominican_failure
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1871,7 +1871,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_question_of_the_league }
 	relative_position_id = Leonard_Wood_USA_question_of_the_league
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1890,7 +1890,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_european_relief }
 	relative_position_id = Leonard_Wood_USA_european_relief
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1909,7 +1909,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_european_relief }
 	relative_position_id = Leonard_Wood_USA_european_relief
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1928,7 +1928,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_done_with_progressivism }
 	relative_position_id = Leonard_Wood_USA_done_with_progressivism
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1948,7 +1948,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_economic_policy }
 	relative_position_id = Leonard_Wood_USA_economic_policy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1967,7 +1967,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_hoover_hands_free }
 	relative_position_id = Leonard_Wood_USA_hoover_hands_free
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -1986,7 +1986,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_appoint_liazess_faire_economy_positions }
 	relative_position_id = Leonard_Wood_USA_appoint_liazess_faire_economy_positions
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2006,7 +2006,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_economic_policy }
 	relative_position_id = Leonard_Wood_USA_economic_policy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2026,7 +2026,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_hoover_hands_free focus = Leonard_Wood_USA_interventionalist }
 	relative_position_id = Leonard_Wood_USA_interventionalist
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2046,7 +2046,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_mcnary_haugen_farm_relief_bill }
 	relative_position_id = Leonard_Wood_USA_mcnary_haugen_farm_relief_bill
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2065,7 +2065,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_interventionalist }
 	relative_position_id = Leonard_Wood_USA_interventionalist
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2084,7 +2084,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_economic_policy }
 	relative_position_id = Leonard_Wood_USA_economic_policy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2103,7 +2103,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_fund_medical_research }
 	relative_position_id = Leonard_Wood_USA_fund_medical_research
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2122,7 +2122,7 @@ focus = {
 	prerequisite = { focus = Leonard_Wood_USA_fund_medical_research }
 	relative_position_id = Leonard_Wood_USA_fund_medical_research
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2160,7 +2160,7 @@ focus = {
 	prerequisite = { focus = WILSON_USA_ill_presidency }
 	relative_position_id = WILSON_USA_ill_presidency
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = { event.usaWilson.3 }
 }
@@ -2177,7 +2177,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
 	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2196,7 +2196,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_unification }
 	relative_position_id = EXTRA_WILSON_USA_unification
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2215,7 +2215,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
 	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2234,7 +2234,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_innaugaration_speech }
 	relative_position_id = EXTRA_WILSON_USA_innaugaration_speech
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2253,7 +2253,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist } prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
 	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2272,7 +2272,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
 	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2291,7 +2291,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_new_anti_trust_act }
 	relative_position_id = EXTRA_WILSON_USA_new_anti_trust_act
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2309,7 +2309,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
 	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2329,7 +2329,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist }
 	relative_position_id = EXTRA_WILSON_USA_interventionalist
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2349,7 +2349,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_mcnary_haugen_farm_relief_bill }
 	relative_position_id = EXTRA_WILSON_USA_mcnary_haugen_farm_relief_bill
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2368,7 +2368,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist }
 	relative_position_id = EXTRA_WILSON_USA_interventionalist
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2376,7 +2376,7 @@ focus = {
 }
 
 focus = {
-	id = EXTRA_WILSON_USA_subsudies
+	id = EXTRA_WILSON_USA_subsidies
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -2387,10 +2387,11 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_appoint_state_capitalist_economists }
 	relative_position_id = EXTRA_WILSON_USA_appoint_state_capitalist_economists
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		misc_income_modifier = 0.01
+		gdp_growth_modifier = 0.02
 	}
 }
 
@@ -2407,7 +2408,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_appoint_state_capitalist_economists }
 	relative_position_id = EXTRA_WILSON_USA_appoint_state_capitalist_economists
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2426,7 +2427,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
 	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2445,7 +2446,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_fund_medical_research }
 	relative_position_id = EXTRA_WILSON_USA_fund_medical_research
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2464,7 +2465,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_fund_medical_research }
 	relative_position_id = EXTRA_WILSON_USA_fund_medical_research
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2483,7 +2484,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
 	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2502,7 +2503,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_hoover_hands_free }
 	relative_position_id = EXTRA_WILSON_USA_hoover_hands_free
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2521,7 +2522,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_appoint_liazess_faire_economy_positions }
 	relative_position_id = EXTRA_WILSON_USA_appoint_liazess_faire_economy_positions
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2540,7 +2541,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_hoover_hands_free }
 	relative_position_id = EXTRA_WILSON_USA_hoover_hands_free
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2559,7 +2560,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
 	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2578,7 +2579,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_first_female_president }
 	relative_position_id = EXTRA_WILSON_USA_first_female_president
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2597,7 +2598,7 @@ focus = {
 	prerequisite = { focus = WILSON_USA_ill_presidency }
 	relative_position_id = WILSON_USA_ill_presidency
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #only unlocks if reelected
@@ -2616,7 +2617,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
 	relative_position_id = EXTRA_WILSON_USA_foreign_policy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2635,7 +2636,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_moral_diplomacy_two_point_o }
 	relative_position_id = EXTRA_WILSON_USA_moral_diplomacy_two_point_o
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2654,7 +2655,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
 	relative_position_id = EXTRA_WILSON_USA_foreign_policy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2673,7 +2674,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_the_league }
 	relative_position_id = EXTRA_WILSON_USA_the_league
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #event will always fail#
@@ -2692,7 +2693,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
 	relative_position_id = EXTRA_WILSON_USA_foreign_policy
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #dont unlock before doing the first league focus
@@ -2711,7 +2712,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_question_of_the_league }
 	relative_position_id = EXTRA_WILSON_USA_question_of_the_league
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2730,7 +2731,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_genevea_naval_conference }
 	relative_position_id = EXTRA_WILSON_USA_genevea_naval_conference
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2749,7 +2750,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_question_of_the_league }
 	relative_position_id = EXTRA_WILSON_USA_question_of_the_league
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2768,7 +2769,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_improve_south_american_relations }
 	relative_position_id = EXTRA_WILSON_USA_improve_south_american_relations
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2787,7 +2788,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_question_of_the_league }
 	relative_position_id = EXTRA_WILSON_USA_question_of_the_league
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2806,7 +2807,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_european_relief }
 	relative_position_id = EXTRA_WILSON_USA_european_relief
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2825,7 +2826,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_european_relief }
 	relative_position_id = EXTRA_WILSON_USA_european_relief
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2844,7 +2845,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_dawes_plan }
 	relative_position_id = EXTRA_WILSON_USA_dawes_plan
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2881,7 +2882,7 @@ focus = {
 	prerequisite = { focus = EARLY_HOOVER_USA_innaugaration_speech }
 	relative_position_id = EARLY_HOOVER_USA_innaugaration_speech
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #allows raising of tarrifs | unlock agricultural act of 1929 and federal farm board and allows the funding of some private commisions
@@ -2937,7 +2938,7 @@ focus = {
 	prerequisite = { focus = HOOVER_USA_innaugaration_speech }
 	relative_position_id = HOOVER_USA_innaugaration_speech
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #allows raising of tarrifs | unlock agricultural act of 1929 and federal farm board and allows the funding of some private commisions
@@ -2978,7 +2979,7 @@ focus = {
 	
 	relative_position_id = FDR_USA_innaugaration_speech
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -2998,7 +2999,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
 	relative_position_id = FDR_USA_puerto_rico_relief_administration
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3017,7 +3018,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
 	relative_position_id = FDR_USA_puerto_rico_relief_administration
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3036,7 +3037,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_puerto_rico_land_reform }
 	relative_position_id = FDR_USA_puerto_rico_land_reform
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3055,7 +3056,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
 	relative_position_id = FDR_USA_puerto_rico_relief_administration
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3074,7 +3075,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_puerto_rico_aquire_private_comapnies }
 	relative_position_id = FDR_USA_puerto_rico_aquire_private_comapnies
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3093,7 +3094,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_puerto_rico_aquire_private_comapnies }
 	relative_position_id = FDR_USA_puerto_rico_aquire_private_comapnies
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3112,7 +3113,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_puerto_rico_reforestation focus = FDR_USA_puerto_rico_public_works }
 	relative_position_id = FDR_USA_puerto_rico_public_works
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3131,7 +3132,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_puerto_rico_aquire_private_comapnies }
 	relative_position_id = FDR_USA_puerto_rico_aquire_private_comapnies
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3150,7 +3151,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_puerto_rico_relief_administration }
 	relative_position_id = FDR_USA_puerto_rico_relief_administration
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3169,7 +3170,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_puerto_rico_reform }
 	relative_position_id = FDR_USA_puerto_rico_reform
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3188,7 +3189,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_puerto_rico_reform }
 	relative_position_id = FDR_USA_puerto_rico_reform
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 #puerto rico becomes a washington DC~esque area and congress/president directly control it
@@ -3208,7 +3209,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_puerto_rico_federal_regulations }
 	relative_position_id = FDR_USA_puerto_rico_federal_regulations
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50 # VERY UNPOPULAR MEASURE BUT HELPS ECONOMY | puerto rico moves towards independence with a governor selected, hoover best option
@@ -3227,7 +3228,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_puerto_rico_aquire_private_comapnies }
 	relative_position_id = FDR_USA_puerto_rico_aquire_private_comapnies
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3270,7 +3271,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3291,7 +3292,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3312,7 +3313,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3334,7 +3335,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3357,7 +3358,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3380,7 +3381,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3401,7 +3402,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3422,7 +3423,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3443,7 +3444,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3464,7 +3465,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3485,7 +3486,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3506,7 +3507,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3528,7 +3529,7 @@ focus = {
 
 
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3546,10 +3547,10 @@ focus = {
 	x = 180
 	y = 0
 	
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50 #most focuses are just visualizations of decisions
+		usaFDR.1 #most focuses are just visualizations of decisions
 	}
 }
 
@@ -3565,7 +3566,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_innaugaration_speech }
 	relative_position_id = FDR_USA_innaugaration_speech
 	
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3584,7 +3585,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_three_rs }
 	relative_position_id = FDR_USA_three_rs
 	
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3603,7 +3604,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_broadcast_fireside_chat }
 	relative_position_id = FDR_USA_broadcast_fireside_chat
 	
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3625,7 +3626,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_first_new_deal }
 	relative_position_id = FDR_USA_first_new_deal
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3644,7 +3645,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_relief }
 	relative_position_id = FDR_USA_relief
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3663,7 +3664,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_relief }
 	relative_position_id = FDR_USA_relief
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3682,7 +3683,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_relief }
 	relative_position_id = FDR_USA_relief
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3701,7 +3702,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_off_the_gold_standard }
 	relative_position_id = FDR_USA_off_the_gold_standard
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3720,7 +3721,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_relief }
 	relative_position_id = FDR_USA_relief
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3739,7 +3740,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_banking_fireside_chat }
 	relative_position_id = FDR_USA_banking_fireside_chat
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3758,7 +3759,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_banking_fireside_chat }
 	relative_position_id = FDR_USA_banking_fireside_chat
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3778,7 +3779,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_glass_steagal_act }
 	relative_position_id = FDR_USA_emergency_banking_act
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3797,7 +3798,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_FDIC }
 	relative_position_id = FDR_USA_FDIC
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3816,7 +3817,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_first_new_deal }
 	relative_position_id = FDR_USA_first_new_deal
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3835,7 +3836,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_recovery }
 	relative_position_id = FDR_USA_recovery
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -3854,7 +3855,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_emergency_conservation_act }
 	relative_position_id = FDR_USA_emergency_conservation_act
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -3873,7 +3874,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_expand_forest_service }
 	relative_position_id = FDR_USA_expand_forest_service
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -3892,7 +3893,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_emergency_conservation_act }
 	relative_position_id = FDR_USA_emergency_conservation_act
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -3911,7 +3912,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_civilian_coservation_corps }
 	relative_position_id = FDR_USA_civilian_coservation_corps
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -3930,7 +3931,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_aquire_federal_funding }
 	relative_position_id = FDR_USA_aquire_federal_funding
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -3950,7 +3951,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_camp_leaders }
 	relative_position_id = FDR_USA_camp_leaders
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -3969,7 +3970,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_aquire_federal_funding }
 	relative_position_id = FDR_USA_aquire_federal_funding
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -3988,7 +3989,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_aquire_federal_funding }
 	relative_position_id = FDR_USA_aquire_federal_funding
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4007,7 +4008,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_soil_erosion_control }
 	relative_position_id = FDR_USA_soil_erosion_control
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4026,7 +4027,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_civilian_coservation_corps }
 	relative_position_id = FDR_USA_civilian_coservation_corps
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4045,7 +4046,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_put_them_to_work }
 	relative_position_id = FDR_USA_put_them_to_work
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4064,7 +4065,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_recovery }
 	relative_position_id = FDR_USA_recovery
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4083,7 +4084,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_national_industrial_recovery_act }
 	relative_position_id = FDR_USA_national_industrial_recovery_act
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4102,7 +4103,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_national_industrial_recovery_act }
 	relative_position_id = FDR_USA_national_industrial_recovery_act
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4121,7 +4122,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_issue_of_unions }
 	relative_position_id = FDR_USA_issue_of_unions
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	mutually_exclusive = { focus = FDR_USA_NIRA_banning_of_unions }
 
@@ -4142,7 +4143,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_NIRA_legalistation_of_unions }
 	relative_position_id = FDR_USA_NIRA_legalistation_of_unions
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4163,7 +4164,7 @@ focus = {
 
 	mutually_exclusive = { focus = FDR_USA_NIRA_legalistation_of_unions }
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4182,7 +4183,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_national_industrial_recovery_act }
 	relative_position_id = FDR_USA_national_industrial_recovery_act
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4201,7 +4202,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_regulatory_ability }
 	relative_position_id = FDR_USA_regulatory_ability
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4221,7 +4222,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_recovery }
 	relative_position_id = FDR_USA_recovery
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50 #weaken puerto rican recovery#
@@ -4240,7 +4241,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_agricultural_adjustment_act }
 	relative_position_id = FDR_USA_agricultural_adjustment_act
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4259,7 +4260,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_agricultural_adjustment_act }
 	relative_position_id = FDR_USA_agricultural_adjustment_act
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4278,7 +4279,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_AAA_southern_democrats }
 	relative_position_id = FDR_USA_AAA_southern_democrats
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4298,7 +4299,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_AAA_commodities }
 	relative_position_id = FDR_USA_AAA_compromise
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4318,7 +4319,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_AAA_southern_democrats }
 	relative_position_id = FDR_USA_AAA_compromise
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4337,7 +4338,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_AAA_southern_democrats }
 	relative_position_id = FDR_USA_AAA_southern_democrats
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4356,7 +4357,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_AAA_push_through }
 	relative_position_id = FDR_USA_AAA_push_through
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4375,7 +4376,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_recovery }
 	relative_position_id = FDR_USA_recovery
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4394,7 +4395,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_tennesse_valley_authority }
 	relative_position_id = FDR_USA_tennesse_valley_authority
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4413,7 +4414,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_tennesse_valley_authority }
 	relative_position_id = FDR_USA_tennesse_valley_authority
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4432,7 +4433,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_TVA_research_and_development  focus = FDR_USA_TVA_farming_schools }
 	relative_position_id = FDR_USA_TVA_research_and_development
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4451,7 +4452,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_first_new_deal }
 	relative_position_id = FDR_USA_first_new_deal
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4470,7 +4471,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_reform }
 	relative_position_id = FDR_USA_reform
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4489,7 +4490,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_reform }
 	relative_position_id = FDR_USA_reform
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4508,7 +4509,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_home_owners_loan_corporation }
 	relative_position_id = FDR_USA_home_owners_loan_corporation
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4527,7 +4528,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_home_owners_loan_corporation }
 	relative_position_id = FDR_USA_home_owners_loan_corporation
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4546,7 +4547,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_reform_cabinet }
 	relative_position_id = FDR_USA_reform_cabinet
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4565,7 +4566,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_reform }
 	relative_position_id = FDR_USA_reform
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4584,7 +4585,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_securities_act }
 	relative_position_id = FDR_USA_securities_act
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4603,7 +4604,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_tennesse_valley_authority }
 	relative_position_id = FDR_USA_tennesse_valley_authority
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4622,7 +4623,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_CCC_projects }
 	relative_position_id = FDR_USA_CCC_projects
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4641,7 +4642,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_recovery }
 	relative_position_id = FDR_USA_recovery
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4660,7 +4661,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_central_valley_project }
 	relative_position_id = FDR_USA_central_valley_project
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4679,7 +4680,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_central_valley_project }
 	relative_position_id = FDR_USA_central_valley_project
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_political_power = 50
@@ -4700,7 +4701,7 @@ focus = {
 	#prerequisite = { focus = FDR_USA_first_new_deal }
 	relative_position_id = FDR_USA_first_new_deal
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4719,7 +4720,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_2ND_NEW_DEAL }
 	relative_position_id = FDR_USA_2ND_NEW_DEAL
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4738,7 +4739,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_2ND_NEW_DEAL }
 	relative_position_id = FDR_USA_2ND_NEW_DEAL
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4757,7 +4758,7 @@ focus = {
 	prerequisite = { focus = FDR_USA_2ND_NEW_DEAL }
 	relative_position_id = FDR_USA_2ND_NEW_DEAL
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4775,7 +4776,7 @@ focus = {
 	x = 250
 	y = 0
 	
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4794,7 +4795,7 @@ focus = {
 	prerequisite = { focus = LBJ_USA_innaugaration_speech }
 	relative_position_id = LBJ_USA_innaugaration_speech
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4813,7 +4814,7 @@ focus = {
 	prerequisite = { focus = LBJ_USA_innaugaration_speech }
 	relative_position_id = LBJ_USA_innaugaration_speech
 
-	available_if_capitulated = yes
+	available_if_capitulated = no
 	
 	completion_reward = {
 		add_political_power = 50

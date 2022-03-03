@@ -1,14 +1,42 @@
+#Back End Stuff#
+
+country_event = {
+	id = usaEndOfTwenties.1
+	picture = GFX_news_event_nuke
+
+	mean_time_to_happen = {
+		days = 3588
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = {
+				tag = USA
+			}
+			hidden_effect = {
+				remove_ideas = roaring_twenties
+			}
+		}
+	}
+	
+	option = {
+		name = usaEndOfTwenties.1
+	}
+}
+
 #Acts#
 
-news_event = {
+country_event = {
 	id = usaAct.1
 	picture = GFX_news_event_nuke
 
 	mean_time_to_happen = {
 		days = 16
 	}
-
-	major = yes
 
 	is_triggered_only = yes
 
@@ -30,6 +58,41 @@ news_event = {
 	}
 }
 
+
+has_idea
+
+#Act backlash#
+
+country_event = {
+	id = usaBacklash.1
+	picture = GFX_news_event_nuke
+
+	mean_time_to_happen = {
+		days = 200
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = {
+				tag = USA
+			}
+			hidden_effect = {
+				swap_ideas = {
+					remove_ideas = prohibition_happy
+					add_ideas = prohibition_despised
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = usaProhibitionBacklash.1
+	}
+}
 
 #WILSON#
 
@@ -94,7 +157,7 @@ country_event = {
 	}
 }
 
-#HOOVER#
+#1924 HOOVER#
 
 country_event = {
 	id = event.usaHoover.1
@@ -111,6 +174,8 @@ country_event = {
 	}
 }
 
+#1928 ELECTION#
+
 country_event = {
 	id = event.usaHoover.2
         title = usaHoover.2.t
@@ -123,5 +188,90 @@ country_event = {
 	
 	option = {
 		name = usaHooverInnaugarationSpeechtwo.1.a
+	}
+}
+
+#HARDING#
+
+country_event = {
+	id = event.usaHarding.1
+        title = usaHarding.1.t
+        desc = usaHarding.1.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaHardingInnaugarationSpeech.1.a
+	}
+}
+
+#COOLIDGE#
+
+country_event = {
+	id = event.usaCoolidge.1
+        title = usaCoolidge.1.t
+        desc = usaCoolidge.1.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaCoolidgeInnaugarationSpeech.1.a
+	}
+}
+
+#EMERGENCY COOLIDGE#
+
+country_event = {
+	id = event.usaCoolidge.2
+        title = usaCoolidge.2.t
+        desc = usaCoolidge.2.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaCoolidgeEmergencyInnaugarationSpeech.1.a
+	}
+}
+
+#LEONARD WOOD#
+
+country_event = {
+	id = event.usaLeonardWood.1
+        title = usaLeonardWood.1.t
+        desc = usaLeonardWood.1.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaLeonardWoodInnaugarationSpeech.1.a
+	}
+}
+
+#FDR#
+
+country_event = {
+	id = event.usaFDR.1
+        title = usaFDR.1.t
+        desc = usaFDR.1.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaFDRInnaugarationSpeech.1.a
 	}
 }

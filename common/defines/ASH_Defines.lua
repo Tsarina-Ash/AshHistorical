@@ -18,7 +18,7 @@ NDefines.NMilitary.STRATEGIC_SPEED_BASE = 10.0 --planes relocate faster
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 2000 --higher xp cap
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 2000 --higher xp cap 
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 2000 --higher xp cap
----SpeedGoZoomMaybe
+---Optimization
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 1000 --game doesnt slow down until player is X days behind
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100 --game doesnt pause down until player is X days behind
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36  --combat log gets deleted after X days
