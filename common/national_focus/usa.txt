@@ -90,6 +90,19 @@ focus_tree = {
 #
 #
 
+# FOCUS TREE INDEX (CTRL+F)
+# 1920-1924 # - WILSON_USA_ill_presidency
+#1920-1924 # - Harding_USA_innaugaration_speech
+#1923-1924 # - Coolidge_USA_EXVICE_private_innaugaration
+#1920-1928 # - Coolidge_USA_innaugaration_speech
+#1920-1924 # - Leonard_Wood_USA_innaugaration_speech
+#1920-1924 # - EARLY_HOOVER_USA_innaugaration_speech
+#1924-1928 # - HOOVER_USA_innaugaration_speech
+#1932-1944# - FDR_USA_innaugaration_speech
+#1932-1944# - FDR_USA_puerto_rico_relief_administration
+#1932-1944# - FLINT_USA_strike
+#???-???# - LBJ_USA_innaugaration_speech
+
 
 #Woodrow Wilson#
 
