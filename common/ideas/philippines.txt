@@ -58,7 +58,7 @@ ideas = {
 			
 
 			modifier = {
-				tariff_tax_rate_modifier = 0.02
+				annual_gdp_growth_factor = -0.005
 			}
 		}
 
