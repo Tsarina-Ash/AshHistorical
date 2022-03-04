@@ -33,6 +33,6 @@ NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0 --score modifier that shows at end of
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
 ---ReducedPopulationGrowth
-NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.5--Reduce Pop bloat and lag from late game HOI trying to calculate pops
+NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.008--Reduce Pop bloat and lag from late game HOI trying to calculate pops
 ---MinorBalanceChanges
 NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 1.25 --1 Politcal power gain when not doing a focus (prevents poltical power bloat)
