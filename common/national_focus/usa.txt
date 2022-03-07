@@ -27,6 +27,8 @@ focus_tree = {
 
 	default = no
 
+	continuous_focus_position = { x = 10 y = 10000 }
+
 #Plan So Far#
 
 #Alt Hist:#
@@ -117,7 +119,11 @@ focus = {
 	
 	available_if_capitulated =  no
 	
-	completion_reward = { event.usaWilson.1 }
+	completion_reward = { 
+		country_event = {
+			id = usaWilson.1 
+		}
+	}
 }
 
 focus = {
@@ -132,7 +138,7 @@ focus = {
 	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
 	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
 
-	available { never }
+	available = { always = no }
 
 	available_if_capitulated = no
 	
@@ -455,7 +461,11 @@ focus = {
 
 	available_if_capitulated = no
 	
-	completion_reward = { event.usaWilson.2 }
+	completion_reward = { 
+		country_event = {
+			id = usaWilson.2 
+		}
+	}
 }
 
 focus = {
@@ -518,7 +528,9 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		usaHarding.1 #teapot scandal and railroad strike are events/decisions
+		country_event = {
+			id = usaHarding.1 #teapot scandal and railroad strike are events/decisions
+		}
 	}
 }
 
@@ -880,7 +892,9 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		usaCoolidge.1 #does minimal things and after 1st term party favors hoover for buisness additudes
+		country_event = {
+			id = usaCoolidge.1 #does minimal things and after 1st term party favors hoover for buisness additudes
+		}
 	}
 }
 
@@ -1428,7 +1442,9 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		usaCoolidge.2
+		country_event = {
+			id = usaCoolidge.2
+		}
 	}
 }
 
@@ -1602,7 +1618,9 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		usaLeonardWood.1 #he will be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
+		country_event = {
+			id = usaLeonardWood.1 #he will be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
+		}
 	}
 }
 
@@ -2158,7 +2176,7 @@ focus = {
 	
 	available_if_capitulated =  no
 	
-	completion_reward = { event.usaWilson.4 }
+	completion_reward = { country_event = { id = usaWilson.4 } }
 }
 
 focus = {
@@ -2175,7 +2193,7 @@ focus = {
 
 	available_if_capitulated = no
 	
-	completion_reward = { event.usaWilson.3 }
+	completion_reward = { country_event = { id = usaWilson.3 } }
 }
 
 focus = {
@@ -2403,8 +2421,8 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		misc_income_modifier = 0.01
-		gdp_growth_modifier = 0.02
+		add_to_variable = { misc_income_modifier = 0.01 }
+		add_to_variable = { gdp_growth_modifier = 0.02 }
 	}
 }
 
@@ -2879,7 +2897,9 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		usaHoover.1 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
+		country_event = {
+			id = usaHoover.1 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
+		}
 	}
 }
 
@@ -2935,7 +2955,9 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		usaHoover.2 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
+		country_event = {
+			id = usaHoover.2 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
+		}
 	}
 }
 
@@ -3563,7 +3585,9 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		usaFDR.1 #most focuses are just visualizations of decisions
+		country_event = {
+			id = usaFDR.1 #most focuses are just visualizations of decisions
+		}
 	}
 }
 
