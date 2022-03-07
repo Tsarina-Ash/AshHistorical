@@ -1,0 +1,5 @@
+USA_home_of_the_free_variables = {
+    set_variable = { annual_gdp_growth_factor = 0.02 }
+    set_variable = { consumer_goods_use_modifier = 0.05 }
+    set_variable = { conscription_factor = -0.5 }
+}

@@ -1,0 +1,9 @@
+USA_home_of_the_free = {
+    icon = generic_pp_unity_bonus
+    enable = { tag = USA }
+    remove_trigger = { always = no }
+
+    annual_gdp_growth_factor = gdp_growth_var
+    consumer_goods_use_modifier = consumer_goods_var
+    conscription_factor = conscription_var
+}

@@ -2,58 +2,6 @@ ideas = {
 
 	country = {
 
-		home_of_the_free = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			removal_cost = -1
-
-			rule = {
-				can_join_factions = no
-				can_create_factions = no
-			}
-
-			picture = generic_pp_unity_bonus
-			modifier = {
-				annual_gdp_growth_factor = 0.02
-				consumer_goods_use_modifier = 0.05
-				conscription_factor = -0.5
-
-			}
-		}	
-
-		home_of_the_free_two = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			removal_cost = -1
-
-			rule = {
-				can_join_opposite_factions = no
-				can_create_factions = yes
-			}
-
-			picture = generic_pp_unity_bonus
-			modifier = {
-				annual_gdp_growth_factor = 0.02
-				consumer_goods_use_modifier = 0.05
-				conscription_factor = -0.5
-
-			}
-		}	
-
 		roaring_twenties = {
 			
 			allowed = {
