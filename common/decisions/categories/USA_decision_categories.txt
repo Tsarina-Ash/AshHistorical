@@ -1,10 +1,31 @@
 acts_and_laws = {
+
+     priority = 9
+
      icon = generic_prospect_for_resources
+
+     allowed = {
+          always = yes
+     }
 
      visible_when_empty = yes
 
+     visible = {}
 
+}
 
+colonial_administration = {
 
+     priority = 8
+
+     icon = generic_prospect_for_resources
+
+     allowed = {
+          always = yes
+     }
+
+     visible_when_empty = no
+
+     visible = { num_subjects >0 }
 
 }

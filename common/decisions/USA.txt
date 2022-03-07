@@ -1,0 +1,61 @@
+acts_and_laws = {
+
+    example_law = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        visible = {
+            #has X president
+        }
+
+        cost = 200
+
+        complete_effect = {
+            #begins congress game
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    Tydings_McDuffie_Act = { #Fillipino election
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        visible = {
+            tag = PHI {
+                is_subject_of = USA
+            }
+        }
+
+        cost = 200
+
+        complete_effect = {
+            #begins congress game
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+}
+
+colonial_administration = {
+
+}

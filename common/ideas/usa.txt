@@ -2,26 +2,6 @@ ideas = {
 
 	country = {
 
-		roaring_twenties = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			removal_cost = -1
-
-			picture = Economy_Civilian_Budget_Boost
-			
-			modifier = {
-				annual_gdp_growth_factor = 0.1
-				political_power_factor = 0.05
-			}
-		}		
-
 		massive_army_3 = {
 			
 			allowed = {

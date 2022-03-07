@@ -3,7 +3,26 @@ USA_home_of_the_free = {
     enable = { tag = USA }
     remove_trigger = { always = no }
 
-    annual_gdp_growth_factor = gdp_growth_var
-    consumer_goods_factor = consumer_goods_var
-    conscription_factor = conscription_var
+    annual_gdp_growth_factor = gdp_home_growth_var
+    consumer_goods_factor = consumer_home_goods_var
+    conscription_factor = conscription_home_var
+}
+
+USA_roaring_twenties = {
+    icon = Economy_Civilian_Budget_Boost
+    enable = { tag = USA }
+    remove_trigger = { always = no }
+
+    annual_gdp_growth_factor = gdp_roaring_growth_var
+    political_power_factor = political_roaring__var
+}
+
+USA_new_deal = {
+    icon = Economy_Civilian_Budget_Boost
+    enable = { tag = USA }
+    remove_trigger = { always = no }
+
+    annual_gdp_growth_factor = gdp_roaring_growth_var
+    political_power_factor = political_roaring__var
+    misc_costs_modifier = USA_industry_misc_costs
 }

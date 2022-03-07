@@ -18,7 +18,7 @@ country_event = {
 				tag = USA
 			}
 			hidden_effect = {
-				remove_ideas = roaring_twenties
+				remove_ideas = USA_roaring_twenties
 			}
 		}
 	}

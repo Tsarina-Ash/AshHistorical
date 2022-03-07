@@ -3,3 +3,14 @@ USA_home_of_the_free_variables = {
     set_variable = { consumer_goods_use_modifier = 0.05 }
     set_variable = { conscription_factor = -0.5 }
 }
+
+USA_roaring_twenties_variables = {
+    set_variable = { annual_gdp_growth_factor = 0.1 }
+    set_variable = { political_power_factor = 0.05 }
+}
+
+USA_new_deal_variables = {
+    set_variable = { annual_gdp_growth_factor = 0 }
+    set_variable = { political_power_factor = 0 }
+    set_variable = { USA_industry_misc_costs = 0 }
+}

@@ -836,7 +836,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #unlocks decisions
 	}
 }
 
@@ -855,7 +855,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_to_variable = { gdp_roaring_growth_var = 0.01 }
 	}
 }
 
@@ -3266,7 +3266,11 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		607 = {
+			set_temp_variable = { state_value_multiplier_temp = 1.1 }
+			econ_state_value_change_multiply_specified_state = yes
+		}
+		add_to_variable = { USA_industry_misc_costs = 0.1 }
 	}
 }
 
