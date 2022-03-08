@@ -37,18 +37,18 @@ recruit_character = PHI_juan_sumulong
 recruit_character = PHI_sergio_osmena
 
 add_ideas = {
+	political_corruption
 	add_timed_idea = { idea = roaring_twenties  days = 3588 }
 }
 
 #doesnt have elections until 1935 https://en.wikipedia.org/wiki/List_of_elections_in_the_Philippines#
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1895.12.10"
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 52
+	neutrality = 61
 	democratic = 39
-	communism = 9
 }

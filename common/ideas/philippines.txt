@@ -20,28 +20,6 @@ ideas = {
 			}
 		}		
 
-		political_corruption = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			removal_cost = -1
-
-			picture = Economy_Military_Austerity
-			
-			rule = {
-
-			}
-			modifier = {
-
-			}
-		}
-
 		smoot_hawley_act_other_nation = {
 			
 			allowed = {

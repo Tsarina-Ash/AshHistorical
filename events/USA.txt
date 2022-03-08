@@ -275,3 +275,20 @@ country_event = {
 		name = usaFDRInnaugarationSpeech.1.a
 	}
 }
+
+#LBJ#
+
+country_event = {
+	id = event.usaLBJ.1
+        title = usaLBJ.1.t
+        desc = usaLBJ.1.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaLBJInnaugarationSpeech.1.a
+	}
+}

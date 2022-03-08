@@ -5,6 +5,18 @@ oob = "USA_1920"
 starting_train_buffer = 5
 
 if = {
+	limit = { has_dlc = "La_Resistance"}
+		create_intelligence_agency = yes
+	else = {
+		add_decryption = {		
+   			target = GER
+   			amount = 20
+		}
+	}
+}
+
+
+if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1920_naval_mtg"
 	else = {
@@ -24,6 +36,16 @@ set_variable = { var = quorum_low value = 39 }
 set_variable = { var = quorum_medium value = 49 }
 set_variable = { var = quorum_high value = 58 }
 
+#starting stockpile#
+
+add_equipment_to_stockpile = {
+	type = infantry_weapons
+		amount = 20000
+}
+
+
+#starting variables
+
 USA_home_of_the_free_variables = yes
 add_dynamic_modifier = {
     modifier = USA_home_of_the_free
@@ -33,6 +55,12 @@ add_dynamic_modifier = {
 USA_roaring_twenties_variables = yes
 add_dynamic_modifier = {
     modifier = USA_roaring_twenties
+    scope = USA
+}
+
+USA_bloated_army_variables = yes
+add_dynamic_modifier = {
+    modifier = USA_bloated_army
     scope = USA
 }
 
@@ -74,9 +102,9 @@ if = {
 	}
 	set_technology = {
 		gwtank = 1
-
 	}
 }
+
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -104,6 +132,7 @@ if = {
 		transport = 1
 	}
 }
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {

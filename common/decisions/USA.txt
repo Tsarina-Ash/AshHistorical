@@ -59,3 +59,85 @@ acts_and_laws = {
 colonial_administration = {
 
 }
+
+bloated_army = {
+
+    small_industry = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 50
+
+        complete_effect = {
+            
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    big_industry = { 
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 75
+
+        complete_effect = {
+            
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+    
+    destroy_industry = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 500
+
+        complete_effect = {
+            set_variable = {
+	            var = bloated_industrial_capacity_factory_var
+	            value = 0
+            }   
+            set_variable = {
+	            var = bloated_industrial_capacity_dockyard_var
+	            value = 0
+            }   
+                add_to_variable = { bloated_army_cost_modifier_var = -0.4 } 
+            hidden_effect = {
+                add_to_variable = { bloated_army_cost_modifier_var = -0.4 } 
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+
+}

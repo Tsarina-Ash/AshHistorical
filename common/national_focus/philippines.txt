@@ -97,6 +97,10 @@ focus = {
 
 	x = 4
 	y = 1
+
+	available = {
+		is_subject_of = USA
+	}
 	
 	prerequisite = { focus = PHI_GENERIC_dealing_with_factions }
 	relative_position_id = PHI_GENERIC_dealing_with_factions
@@ -104,7 +108,10 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 50 #will be a decision to ask/buy ships from the US (BB's, CV's, DD's, ETC) but US has to accept (will be event scripted)
+		custom_effect_tooltip = "Asks The United States For Some Ships, At A Reasonable Price"
+		USA = {
+			phiUnitedStatesAid.1
+		}
 	}
 }
 

@@ -2,105 +2,7 @@ ideas = {
 
 	country = {
 
-		massive_army_3 = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			removal_cost = -1
-
-			picture = Economy_Military_Budget_Boost
-			
-			modifier = {
-				army_cost_modifier = 1
-				military_expenditures_factor = 0.6
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
-				training_time_army_factor = 1.0
-			}
-		}			
-
-		massive_army_2 = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			removal_cost = -1
-
-			picture = Economy_Military_Budget_Boost
-			
-			modifier = {
-				army_cost_modifier = 0.8
-				military_expenditures_factor = 0.3
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
-				training_time_army_factor = 1.4
-			}
-		}	
-
-		massive_army_1 = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			removal_cost = -1
-
-			picture = Economy_Military_Budget_Boost
-
-			modifier = {
-				army_cost_modifier = 0.6
-				military_expenditures_factor = 0.1
-				army_org_factor = -0.15
-				defence = -0.15
-				offence = -0.15
-				industrial_capacity_factory = -0.3
-				industrial_capacity_dockyard = -0.3
-				training_time_army_factor = 1.8
-			}
-		}	
-
-		massive_army_0 = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			removal_cost = -1
-
-			picture = Economy_Military_Budget_Boost
-
-			modifier = {
-				army_cost_modifier = 0.4
-				military_expenditures_factor = 0
-				army_org_factor = -0.15
-				defence = -0.2
-				offence = -0.2
-				industrial_capacity_factory = -0.4
-				industrial_capacity_dockyard = -0.4
-				training_time_army_factor = 2.0
-			}
-		}	
-
-		massive_army_neg1 = {
+		political_corruption = {
 			
 			allowed = {
 				always = no
@@ -114,63 +16,15 @@ ideas = {
 
 			picture = Economy_Military_Austerity
 			
+			rule = {
+
+			}
 			modifier = {
-				army_org_factor = -0.3
-				defence = -0.3
-				offence = -0.3
-				industrial_capacity_factory = -0.4
-				industrial_capacity_dockyard = -0.4
-				training_time_army_factor = 2.0
+				interest_rate_modifier = 0.05
+				inflation_rate_modifier = 0.1
+				GDP_effect_on_poverty_modifier = 0.2
 			}
-		}	
-
-		massive_army_neg2 = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			removal_cost = -1
-
-			picture = Economy_Military_Austerity
-			
-			modifier = {
-				army_org_factor = -0.4
-				defence = -0.5
-				offence = -0.5
-				industrial_capacity_factory = -0.65
-				industrial_capacity_dockyard = -0.65
-				training_time_army_factor = 2.0
-			}
-		}			
-
-		massive_army_neg3 = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			removal_cost = -1
-
-			picture = Economy_Military_Austerity
-
-			modifier = {
-				army_org_factor = -0.60
-				defence = -0.60
-				offence = -0.60
-				industrial_capacity_factory = -0.65
-				industrial_capacity_dockyard = -0.65
-				training_time_army_factor = 2.0
-			}
-		}	
+		}
 
 		political_corruption = {
 			
@@ -190,7 +44,7 @@ ideas = {
 
 			}
 			modifier = {
-
+				political_power_factor = 0.1
 			}
 		}
 

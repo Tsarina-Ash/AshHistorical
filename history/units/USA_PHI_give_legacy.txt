@@ -1,0 +1,17 @@
+﻿
+units= {
+
+	#UNITS GAINED FROM ASKING FROM THE US#
+
+	fleet = {
+		name = "Battle Force"			
+		naval_base = 10265 # Manila
+		task_force = {				
+			name = "Battleships, Battle Force"
+			location = 10265 # Manila				
+			ship = { name = "USS Nevada" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
+			ship = { name = "USS Monaghan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+			ship = { name = "USS Aylwin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		}
+	}
+}

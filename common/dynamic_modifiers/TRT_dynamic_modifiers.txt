@@ -1,3 +1,7 @@
+
+
+#UNITED STATES DYNAMIC MODIFIERS#
+
 USA_home_of_the_free = {
     icon = generic_pp_unity_bonus
     enable = { tag = USA }
@@ -23,6 +27,18 @@ USA_new_deal = {
     remove_trigger = { always = no }
 
     annual_gdp_growth_factor = gdp_roaring_growth_var
-    political_power_factor = political_roaring__var
-    misc_costs_modifier = USA_industry_misc_costs
+    political_power_factor = political_roaring_var
+    misc_costs_modifier = USA_industry_misc_costs_var
+}
+
+USA_bloated_army = {
+    icon = Economy_Military_Budget_Boost
+    enable = { tag = USA }
+    remove_trigger = { always = no }
+
+    army_cost_modifier = bloated_army_cost_modifier_var
+    military_expenditures_factor = bloated_military_expenditures_factor_var
+    industrial_capacity_factory = bloated_industrial_capacity_factory_var
+    industrial_capacity_dockyard = bloated_industrial_capacity_dockyard_var
+    training_time_army_factor = bloated_training_time_army_factor_var
 }
