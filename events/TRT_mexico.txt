@@ -1,0 +1,29 @@
+add_namespace = MEX_carranzas
+
+country_event = {
+	id = MEX_carranzas.1
+	title = MEX_carranzas.1.t
+	desc = MEX_carranzas.1.d
+	#picture = GFX_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Ignacio Bonillas
+		name = MEX_carranzas.1.a
+		#leads to a coup but gives a bonus
+		recruit_character = MEX_ignacio_bonillas
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+	}
+	option = { #Adolfo de la Huerta
+		name = MEX_carranzas.1.b
+		#does nothing, but doens't lead to a coup
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.03
+		}
+	}
+}
