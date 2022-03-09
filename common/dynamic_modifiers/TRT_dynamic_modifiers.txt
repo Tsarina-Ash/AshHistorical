@@ -1,4 +1,11 @@
-
+#INDEX OF COUNTRIES#
+#UNITED STATES DYNAMIC MODIFIERS#
+#PHILLIPINES DYNAMIC MODIFIERS#
+#GERMANY DYNAMIC MODIFIERS#
+##
+##
+##
+##
 
 #UNITED STATES DYNAMIC MODIFIERS#
 
@@ -26,9 +33,11 @@ USA_new_deal = {
     enable = { tag = USA }
     remove_trigger = { always = no }
 
-    annual_gdp_growth_factor = gdp_roaring_growth_var
-    political_power_factor = political_roaring_var
-    misc_costs_modifier = USA_industry_misc_costs_var
+    stability = new_deal_stability
+    production_speed_infrastructure_factor = production_speed_infrastructure_factor_new_deal_var
+    annual_gdp_growth_factor = gdp_new_deal_growth_var
+    political_power_factor = political_new_deal_var
+    misc_costs_modifier = new_deal_misc_costs_var
 }
 
 USA_bloated_army = {
@@ -42,3 +51,16 @@ USA_bloated_army = {
     industrial_capacity_dockyard = bloated_industrial_capacity_dockyard_var
     training_time_army_factor = bloated_training_time_army_factor_var
 }
+
+USA_nye_comitee_variables = {
+    icon = Economy_Military_Budget_Boost
+    enable = { tag = USA }
+    remove_trigger = { always = no }
+
+}
+
+#PHILLIPINES DYNAMIC MODIFIERS#
+
+#GERMANY DYNAMIC MODIFIERS#
+
+#GDP_to_sphere_leader_modifier

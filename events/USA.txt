@@ -1,3 +1,16 @@
+add_namespace = usaEndOfTwenties
+add_namespace = usaAct
+add_namespace = usaBacklash
+add_namespace = usaRailroadedEvents
+add_namespace = usaGreatDeppression
+add_namespace = usaWilson
+add_namespace = usaHoover
+add_namespace = usaHarding
+add_namespace = usaCoolidge
+add_namespace = usaLeonardWood
+add_namespace = usaFDR
+add_namespace = usaLBJ
+
 #Back End Stuff#
 
 country_event = {
@@ -18,13 +31,74 @@ country_event = {
 				tag = USA
 			}
 			hidden_effect = {
-				remove_ideas = USA_roaring_twenties
+				clear_variable = USA_roaring_twenties
 			}
 		}
 	}
 	
 	option = {
 		name = usaEndOfTwenties.1
+	}
+}
+
+#Railroaded Acts#
+
+news_event = {
+	id = usaRailroadedEvents.1
+	picture = GFX_news_event_nuke
+
+	mean_time_to_happen = {
+		days = 4850 
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = {
+				tag = USA
+			}
+			hidden_effect = {
+				war_support = -0.1
+			}
+		}
+	}
+	
+	option = {
+		name = usaNyeCommiteeBegins.1
+	}
+}
+
+news_event = {
+	id = usaRailroadedEvents.2
+	picture = GFX_news_event_nuke
+
+	mean_time_to_happen = {
+		days = 5898 
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = {
+				tag = USA
+			}
+			hidden_effect = {
+				war_support = -0.1
+			}
+		}
+	}
+	
+	option = {
+		name = usaNyeCommiteeFindings.1
+			hidden_effect = {
+				
+			}
 	}
 }
 
@@ -49,6 +123,7 @@ country_event = {
 			}
 			hidden_effect = {
 				add_ideas = prohibition_happy
+				complete_national_focus = WILSON_USA_ennact_prohibition
 			}
 		}
 	}
@@ -57,9 +132,6 @@ country_event = {
 		name = usaVolsteadAct.1
 	}
 }
-
-
-has_idea
 
 #Act backlash#
 
@@ -91,6 +163,41 @@ country_event = {
 	
 	option = {
 		name = usaProhibitionBacklash.1
+	}
+}
+
+#Great_Deppression#
+
+news_event = {
+	id = usaGreatDeppression.1
+	picture = GFX_news_event_nuke
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+			}
+			hidden_effect = {
+				add_ideas = worlds_effect
+			}
+		}
+	}
+	
+	option = {
+		name = usaVolsteadAct.1
+		hidden_effect {
+			tag = USA
+			swap_ideas {
+				remove_idea = 
+				add_idea =
+			}
+		}
 	}
 }
 

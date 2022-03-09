@@ -65,6 +65,7 @@ add_dynamic_modifier = {
 }
 
 USA_new_deal_variables = yes
+USA_nye_comitee_variables = yes
 
 USA_recalc_congress_icon_frames = yes
 USA = {

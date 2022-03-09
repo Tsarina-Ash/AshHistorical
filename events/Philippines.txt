@@ -1,3 +1,6 @@
+add_namespace = phiEndOfTwenties
+add_namespace = phiUnitedStatesAid
+
 #Back End Stuff#
 
 country_event = {
@@ -18,7 +21,7 @@ country_event = {
 				tag = PHI
 			}
 			hidden_effect = {
-				remove_ideas = roaring_twenties
+				clear_variable = USA_roaring_twenties
 			}
 		}
 	}
@@ -167,5 +170,57 @@ country_event = {
 	option = {
 		name = usDenyAid.3
 	}
+
+#MANEL QUEZON#
+
+country_event = {
+	id = event.usaMQ.1
+        title = usaMQ.1.t
+        desc = usaMQ.1.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaMQInnaugarationSpeech.1.a
+	}
+}
+
+#Emilio Aguinaldo#
+
+country_event = {
+	id = event.usaEA.1
+        title = usaEA.1.t
+        desc = usaEA.1.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaEAInnaugarationSpeech.1.a
+	}
+}
+
+#Gregorio Aglipay#
+
+country_event = {
+	id = event.usaGA.1
+        title = usaGA.1.t
+        desc = usaGA.1.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaGAInnaugarationSpeech.1.a
+	}
+}
+
 
 }

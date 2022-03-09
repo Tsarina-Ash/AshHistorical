@@ -84,7 +84,7 @@ focus_tree = {
 #IDEAS:
 #SOUTH AMERICAN OCCUPATIONS MADE DECISIONS NOT FOCUSES
 #NEW DEALS GET UNLOCKED WITH DECISIONS
-#
+#ACTS DONE WITH DECISIONS
 #
 #
 #
@@ -119,9 +119,13 @@ focus = {
 	
 	available_if_capitulated =  no
 	
-	completion_reward = { 
-		country_event = {
-			id = usaWilson.1 
+	completion_reward = {
+		
+		hidden_effect {
+			custom_effect_tooltip = "*Cough* We'll Be Fine *Cough*"
+			country_event = {
+				id = usaWilson.1 
+			}
 		}
 	}
 }
@@ -143,7 +147,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50 #is a decision but with focus to visualize | extremely popular but slowly gains debuffs and harder to remove due to christian voters wanting it
+		custom_effect_tooltip = "Prohibition In The United States"
 	}
 }
 

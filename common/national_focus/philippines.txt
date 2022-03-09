@@ -489,7 +489,7 @@ focus = {
 	id = PHI_MANUEL_QUEZON_innaugaration
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 1
 
 	x = 40
 	y = 0
@@ -555,7 +555,7 @@ focus = {
 	relative_position_id = PHI_MANUEL_QUEZON_economic_disrepair
 	
 	completion_reward = {
-		add_ideas = first_new_deal
+		
 	}
 }
 

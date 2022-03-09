@@ -54,6 +54,66 @@ acts_and_laws = {
 
     }
 
+    smoot_hawley_act = { #Fillipino election
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        visible = {
+            OR = {
+            has_completed_focus = EARLY_HOOVER_USA_the_economy
+            has_completed_focus = HOOVER_USA_the_economy
+            }
+        }
+
+        cost = 200
+
+        complete_effect = {
+            
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+#allows raising of tarrifs | unlock agricultural act of 1929 and federal farm board and allows the funding of some private commisions
+
+    smoot_hawley_act = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        visible = {
+            has_idea = great_deppression_filler
+        }
+
+        cost = 200
+
+        complete_effect = {
+            add_ideas = smoot_hawley_act
+            hidden_effect = {
+
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
 }
 
 colonial_administration = {

@@ -38,8 +38,15 @@ recruit_character = PHI_sergio_osmena
 
 add_ideas = {
 	political_corruption
-	add_timed_idea = { idea = roaring_twenties  days = 3588 }
 }
+
+USA_roaring_twenties_variables = yes
+add_dynamic_modifier = {
+    modifier = USA_roaring_twenties
+    scope = PHI
+}
+
+USA_new_deal_variables = yes
 
 #doesnt have elections until 1935 https://en.wikipedia.org/wiki/List_of_elections_in_the_Philippines#
 

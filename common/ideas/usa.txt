@@ -110,27 +110,69 @@ ideas = {
 			}
 		}
 
-		first_new_deal = {
-
+		smoot_hawley_act_world_retaliated = {
+			
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-
+				
 			}
-
+			
 			removal_cost = -1
 
 			picture = Economy_Military_Austerity
+			
 
 			modifier = {
-				stability = 0.1
-				production_speed_infrastructure_factor = 0.2\
-				civilian_expenditures_factor = 0.1
+				tariff_tax_rate_modifier = 0.02
+				annual_gdp_growth_factor = -0.05
+				inflation_rate_modifier = 0.1
+			}
+		}
+
+		worlds_effect = {
+			
+			allowed = {
+				always = no
 			}
 
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = Economy_Military_Austerity
+			
+
+			modifier = {
+				annual_gdp_growth_factor = -0.05
+				inflation_rate_modifier = 0.1
+			}
 		}
+
+		great_deppression_filler = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = Economy_Military_Austerity
+			
+
+			modifier = {
+				tariff_tax_rate_modifier = 0.02
+			}
+		}
+
 	}
 
 
