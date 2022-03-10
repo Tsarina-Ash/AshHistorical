@@ -1,0 +1,88 @@
+characters={
+#Modded 
+	#PRESIDENTS#
+	USA_woodrow_wilson = {
+		name = USA_woodrow_wilson
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = Proggressivism
+			traits = { }
+			expire = "1924.2.3.1"
+		}
+	}
+
+	USA_edith_wilson = {
+		name = USA_edith_wilson
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			traits = { first_lady }
+			expire = "1961.9.3.1"
+		}
+	}		
+
+	USA_william_harding = {
+		name = USA_woodrow_wilson
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			traits = { }
+			expire = "1923.8.3.1"
+		}
+	}
+
+	USA_calvin_coolidge = {
+		name = USA_calvin_coolidge
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			traits = { }
+			expire = "193.1.1.1"
+		}
+	}
+
+	USA_leonard_wood = {
+		name = USA_leonard_wood
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			traits = { }
+			expire = "1932.2.3.1"
+		}
+	}
+
+	USA_herbert_hoover = {
+		name = USA_herbert_hoover
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			traits = { economist }
+			expire = "1964.2.3.1"
+		}
+	}	
+
+}

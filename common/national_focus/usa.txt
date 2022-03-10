@@ -215,7 +215,9 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_to_variable = { bloated_military_expenditures_factor_var = -0.3 }
+		add_to_variable = { bloated_industrial_capacity_factory_var = -0.1 }
+		add_to_variable = { bloated_industrial_capacity_dockyard_var = -0.1 }
 	}
 }
 
@@ -236,7 +238,8 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_to_variable = { bloated_military_expenditures_factor_var = -0.15 }
+		add_to_variable = { conscription_bloated_var = -0.3 }
 	}
 }
 
@@ -257,7 +260,14 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_to_variable = { gdp_roaring_growth_var = 0.01 }
+		add_to_variable = { political_roaring__var = 0.03 }
+		set_temp_variable = { temp_econ_spending_amount = GDP }
+		multiply_temp_variable = { temp_econ_spending_amount = 0.03 }
+		econ_spend_money_once_effect_raw_money = yes
+		hidden_effect = {
+			add_to_variable = { bloated_military_expenditures_factor_var = 0.5 }
+		}
 	}
 }
 
@@ -278,7 +288,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #unlocks decision to join league
 	}
 }
 
@@ -708,7 +718,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		custom_effect_tooltip = "Unlocks Decisions To Visit The United States For Stability"
+		unlock_decision_category_tooltip = harding_voyage_of_understanding
 	}
 }
 
@@ -1470,7 +1480,25 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		#if = has_variable {USA_roaring_twenties_variables} (
+		add_to_variable = { gdp_roaring_growth_var = 0.01 }
+		add_to_variable = { political_roaring__var = 0.03 }
+		set_temp_variable = { temp_econ_spending_amount = GDP }
+		multiply_temp_variable = { temp_econ_spending_amount = 0.03 }
+		econ_spend_money_once_effect_raw_money = yes
+		hidden_effect = {
+			add_to_variable = { bloated_military_expenditures_factor_var = 0.5 }
+		}
+		#)
+		#else = {
+		#add_stability = 0.05
+		#set_temp_variable = { temp_econ_spending_amount = GDP }
+		#multiply_temp_variable = { temp_econ_spending_amount = 0.03 }
+		#econ_spend_money_once_effect_raw_money = yes
+		#hidden_effect = {
+		#	add_to_variable = { bloated_military_expenditures_factor_var = 0.5 }
+		#	}
+		#}
 	}
 }
 
@@ -2032,7 +2060,9 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_to_variable = { bloated_military_expenditures_factor_var = 0.2 }
+		add_to_variable = { bloated_industrial_capacity_factory_var = 0.1 }
+		add_to_variable = { bloated_industrial_capacity_dockyard_var = 0.05 }
 	}
 }
 
@@ -2242,7 +2272,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #like voyage of understanding but can get assasinated
 	}
 }
 
@@ -2261,7 +2291,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		custom_effect_tooltip = "Unlocks Decisions To Visit The United States For Stability"
+		unlock_decision_category_tooltip = wilson_voyage_of_understanding
 	}
 }
 
@@ -2280,7 +2310,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #advances workers protections, lowers throughput
 	}
 }
 
@@ -2299,7 +2329,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #advances workers protections, lowers throughput
 	}
 }
 
@@ -2318,7 +2348,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #disables ford as a potential indsutrial company for 4 years and makes then uncooperative with party until henry dies
 	}
 }
 
@@ -2337,7 +2367,9 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_to_variable = { bloated_military_expenditures_factor_var = 0.2 }
+		add_to_variable = { bloated_industrial_capacity_factory_var = 0.1 }
+		add_to_variable = { bloated_industrial_capacity_dockyard_var = 0.05 }
 	}
 }
 
@@ -2454,7 +2486,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #increases roaring 20's effect, worsens deppression effects though
 	}
 }
 
@@ -2473,7 +2505,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #upgrades R&D PROGRESS
 	}
 }
 
@@ -2492,7 +2524,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #advance healthcare
 	}
 }
 
@@ -2511,7 +2543,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #builds hospital buildings
 	}
 }
 
@@ -2530,7 +2562,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #hoover advances in party
 	}
 }
 
@@ -2549,7 +2581,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #unlocks advisors
 	}
 }
 
@@ -2568,7 +2600,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = 50 #depending on how many people are invested = more/less effect on the US
 	}
 }
 
@@ -2606,7 +2638,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		custom_effect_tooltip = "Wilson's Wife Will Run For Election In His Place"
 	}
 }
 

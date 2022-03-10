@@ -50,6 +50,7 @@ USA_bloated_army = {
     industrial_capacity_factory = bloated_industrial_capacity_factory_var
     industrial_capacity_dockyard = bloated_industrial_capacity_dockyard_var
     training_time_army_factor = bloated_training_time_army_factor_var
+    conscription_factor = conscription_bloated_var
 }
 
 USA_nye_comitee_variables = {

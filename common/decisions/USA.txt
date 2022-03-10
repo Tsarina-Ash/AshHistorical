@@ -199,5 +199,300 @@ bloated_army = {
 
     }
 
+wilson_voyage_of_understanding = {
+
+    wilson_visit_california = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 500
+
+        complete_effect = {
+            hidden_effect = {
+                random_list = {
+                    35 = { retire_country_leader = yes }
+                    65 = { }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    wilson_visit_alaska = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 500
+
+        complete_effect = {
+            hidden_effect = {
+                random_list = {
+                    50 = { retire_country_leader = yes }
+                    50 = { }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    wilson_visit_texas = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 500
+
+        complete_effect = {
+            hidden_effect = {
+                random_list = {
+                    40 = { retire_country_leader = yes }
+                    60 = { }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    wilson_visit_hawaii = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 500
+
+        complete_effect = {
+            hidden_effect = {
+                random_list = {
+                    55 = { retire_country_leader = yes }
+                    45 = { }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    wilson_visit_the_phillipines = {
+
+        icon = GFX_decision_icon_default
+
+        available = { tag = PHI is_subject_of = USA}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 500
+
+        complete_effect = {
+            #if tag = PHI { has_idea  = rebels_dealt_with } (
+            hidden_effect = {
+                random_list = {
+                    70 = { retire_country_leader = yes }
+                    30 = { }
+                }
+            }
+            #)
+
+            #NOT = {
+            #    hidden_effect = {
+            #        random_list = {
+            #            85 = { retire_country_leader = yes }
+            #            15 = { }
+            #        }
+            #    }
+            #}
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+harding_voyage_of_understanding = {
+
+    harding_visit_california = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 500
+
+        complete_effect = {
+            hidden_effect = {
+                random_list = {
+                    35 = { retire_country_leader = yes }
+                    65 = { }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    harding_visit_alaska = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 500
+
+        complete_effect = {
+            hidden_effect = {
+                random_list = {
+                    50 = { retire_country_leader = yes }
+                    50 = { }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    harding_visit_texas = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 500
+
+        complete_effect = {
+            hidden_effect = {
+                random_list = {
+                    40 = { retire_country_leader = yes }
+                    60 = { }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    harding_visit_hawaii = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 500
+
+        complete_effect = {
+            hidden_effect = {
+                random_list = {
+                    55 = { retire_country_leader = yes }
+                    45 = { }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    harding_visit_the_phillipines = {
+
+        icon = GFX_decision_icon_default
+
+        available = { tag = PHI is_subject_of = USA}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 500
+
+        complete_effect = {
+            #if tag = PHI { has_idea  = rebels_dealt_with } (
+            hidden_effect = {
+                random_list = {
+                    70 = { retire_country_leader = yes }
+                    30 = { }
+                }
+            }
+            #)
+
+            #NOT = {
+            #    hidden_effect = {
+            #        random_list = {
+            #            85 = { retire_country_leader = yes }
+            #            15 = { }
+            #        }
+            #    }
+            #}
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
 
 }

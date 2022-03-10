@@ -21,6 +21,7 @@ USA_roaring_twenties_variables = {
 }
 
 USA_bloated_army_variables = {
+    set_variable = { conscription_bloated_var = 0.8 }
     set_variable = { bloated_army_cost_modifier_var = 1 }
     set_variable = { bloated_military_expenditures_factor_var = 0.6 }
     set_variable = { bloated_industrial_capacity_factory_var = 0.3 }
