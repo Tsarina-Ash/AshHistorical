@@ -45,7 +45,10 @@ country_event = {
 		name = phiGivePhiShips.1
 		hidden_effect = {
 			PHI = {
-				phiUnitedStatesAid.3
+				country_event = {
+					id = phiUnitedStatesAid.3
+				}
+				
 			}
 		}
 	}
@@ -53,7 +56,10 @@ country_event = {
 		name = phiNoShips.1
 		hidden_effect = {
 			PHI = {
-				phiUnitedStatesAid.2
+				country_event = {
+					id = phiUnitedStatesAid.2
+				}
+				
 			}
 		}
 	}
@@ -82,7 +88,7 @@ country_event = {
 	
 	option = {
 		name = usAcceptAid.1
-			hidden_effect {
+			hidden_effect = {
 				if = {
 					limit = { has_dlc = "Man the Guns" }
 						load_oob = "USA_PHI_give_mtg"
@@ -91,8 +97,8 @@ country_event = {
 					}
 				}
 			add_equipment_to_stockpile = {
-        		type = convoys
-        			amount = 100
+				type = convoys
+				amount = 100
 			}
 		}
 	}
@@ -124,7 +130,9 @@ country_event = {
 		name = phiNoGuns.4
 		hidden_effect = {
 			PHI = {
-				phiUnitedStatesAid.5
+				country_event = {
+					id = phiUnitedStatesAid.5
+				}
 			}
 		}
 	}
@@ -153,7 +161,7 @@ country_event = {
 	
 	option = {
 		name = usAcceptAid.2
-			hidden_effect {
+			hidden_effect = {
 				add_equipment_to_stockpile = {
 					type = infantry_weapons
 					amount = 20000
@@ -170,6 +178,7 @@ country_event = {
 	option = {
 		name = usDenyAid.3
 	}
+}
 
 #MANEL QUEZON#
 

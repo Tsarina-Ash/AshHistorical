@@ -120,13 +120,15 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		
-		hidden_effect {
-			custom_effect_tooltip = "*Cough* We'll Be Fine *Cough*"
+		custom_effect_tooltip = "*Cough* We'll Be Fine *Cough*"
+		hidden_effect = {
 			country_event = {
 				id = usaWilson.1 
 			}
 		}
+		set_temp_variable = { temp_econ_spending_amount = GDP }
+		multiply_temp_variable = { temp_econ_spending_amount = 0.03 }
+		econ_spend_money_once_effect_raw_money = yes
 	}
 }
 

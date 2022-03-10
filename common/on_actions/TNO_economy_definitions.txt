@@ -1900,7 +1900,9 @@ on_actions = {
 				set_variable = { base_inflation_rate = 0 }
 
 				initiate_display_vars = yes
-			}							
+			}		
+		}
+	}
 
 #OFFMAP#
 #
@@ -2103,7 +2105,6 @@ on_actions = {
 #
 #				initiate_display_vars = yes
 #			}
-		}
 
 	#STATE GDP DEFINES
 	#To use this, provide a state ID and set its GDP to a number.
@@ -2113,10 +2114,6 @@ on_actions = {
 	#	set_variable = { state_value = 1501 }
 	#}
 
-	on_startup = {
-		effect = {
-		}
-	}
 
 	on_annex = {
 		effect = {

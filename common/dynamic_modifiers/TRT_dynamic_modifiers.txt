@@ -33,7 +33,7 @@ USA_new_deal = {
     enable = { tag = USA }
     remove_trigger = { always = no }
 
-    stability = new_deal_stability
+    stability_factor = new_deal_stability
     production_speed_infrastructure_factor = production_speed_infrastructure_factor_new_deal_var
     annual_gdp_growth_factor = gdp_new_deal_growth_var
     political_power_factor = political_new_deal_var

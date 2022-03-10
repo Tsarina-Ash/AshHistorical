@@ -10,32 +10,32 @@
 #NINETEEN_TWENTY#
 
 USA_home_of_the_free_variables = {
-    set_variable = { annual_gdp_growth_factor = 0.02 }
-    set_variable = { consumer_goods_use_modifier = 0.05 }
-    set_variable = { conscription_factor = -0.5 }
+    set_variable = { gdp_home_growth_var = 0.02 }
+    set_variable = { consumer_home_goods_var = 0.05 }
+    set_variable = { conscription_home_var = -0.5 }
 }
 
 USA_roaring_twenties_variables = {
-    set_variable = { annual_gdp_growth_factor = 0.1 }
-    set_variable = { political_power_factor = 0.05 }
+    set_variable = { gdp_roaring_growth_var = 0.1 }
+    set_variable = { political_roaring__var = 0.05 }
 }
 
 USA_bloated_army_variables = {
-    set_variable = { army_cost_modifier = 1 }
-    set_variable = { military_expenditures_factor = 0.6 }
-    set_variable = { industrial_capacity_factory = 0.3 }
-    set_variable = { industrial_capacity_dockyard = 0.3 }
-    set_variable = { training_time_army_factor = 2 }
+    set_variable = { bloated_army_cost_modifier_var = 1 }
+    set_variable = { bloated_military_expenditures_factor_var = 0.6 }
+    set_variable = { bloated_industrial_capacity_factory_var = 0.3 }
+    set_variable = { bloated_industrial_capacity_dockyard_var = 0.3 }
+    set_variable = { bloated_training_time_army_factor_var = 2 }
 }
 
 #NINETEEN_THIRTHY#
 
 USA_new_deal_variables = {
-    set_variable = { stability = 0 }
-    set_variable = { production_speed_infrastructure_factor = 0 }   
-    set_variable = { annual_gdp_growth_factor = 0 }
-    set_variable = { political_power_factor = 0 }
-    set_variable = { misc_costs_modifier = 0 }
+    set_variable = { new_deal_stability = 0 }
+    set_variable = { production_speed_infrastructure_factor_new_deal_var = 0 }   
+    set_variable = { gdp_new_deal_growth_var = 0 }
+    set_variable = { political_new_deal_var = 0 }
+    set_variable = { new_deal_misc_costs_var = 0 }
 }
 
 USA_nye_comitee_variables = {

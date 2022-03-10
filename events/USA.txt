@@ -191,13 +191,13 @@ news_event = {
 	
 	option = {
 		name = usaVolsteadAct.1
-		hidden_effect {
-			tag = USA
-			swap_ideas {
-				remove_idea = 
-				add_idea =
-			}
-		}
+		# hidden_effect = {
+		# 	tag = USA
+		# 	swap_ideas = {
+		# 		remove_idea = 
+		# 		add_idea =
+		# 	}
+		# }
 	}
 }
 

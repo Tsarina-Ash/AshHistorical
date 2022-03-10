@@ -16,6 +16,8 @@ focus_tree = {
     }
 	default = no
 
+	continuous_focus_position = { y = 50 x = 1000 }
+
 # FOCUS TREE INDEX (CTRL+F)
 # 1920-end of game # - PHI_GENERIC_all_is_normal
 # 1920-end of game # - PHI_MANUEL_QUEZON_innaugaration
@@ -110,7 +112,9 @@ focus = {
 	completion_reward = {
 		custom_effect_tooltip = "Asks The United States For Some Ships, At A Reasonable Price"
 		USA = {
-			phiUnitedStatesAid.1
+			country_event = {
+				id = phiUnitedStatesAid.1
+			}
 		}
 	}
 }

@@ -49,19 +49,19 @@ add_equipment_to_stockpile = {
 USA_home_of_the_free_variables = yes
 add_dynamic_modifier = {
     modifier = USA_home_of_the_free
-    scope = USA
+    # scope = USA
 }
 
 USA_roaring_twenties_variables = yes
 add_dynamic_modifier = {
     modifier = USA_roaring_twenties
-    scope = USA
+    # scope = USA
 }
 
 USA_bloated_army_variables = yes
 add_dynamic_modifier = {
     modifier = USA_bloated_army
-    scope = USA
+    # scope = USA
 }
 
 USA_new_deal_variables = yes
