@@ -12,7 +12,7 @@ country_event = {
 	option = { #Ignacio Bonillas
 		name = MEX_carranzas.1.a
 		#leads to a coup but gives a bonus
-		recruit_character = MEX_ignacio_bonillas
+		hidden_effect = { recruit_character = MEX_ignacio_bonillas }
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.03
