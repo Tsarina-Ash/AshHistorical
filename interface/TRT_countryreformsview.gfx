@@ -4,4 +4,21 @@ spriteTypes = {
 		textureFile = "gfx/interface/reforms_gui/reforms_header.dds"
 		noOfFrames = 2
 	}
+
+	spriteType = {
+		name = "GFX_ReformsBase_Tabs"
+		textureFile = "gfx/interface/reforms_gui/reforms_tabs.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_ReformsBase_TabsMask"
+		textureFile = "gfx/interface/reforms_gui/reforms_tabs_mask.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_ReformsBase_Background"
+		textureFile = "gfx/interface/reforms_gui/reforms_window_bg.dds"
+	}
 }

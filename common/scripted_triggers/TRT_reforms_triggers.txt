@@ -1,6 +1,6 @@
 reforms_tab_visible = {
-	check_variable = { RS_active_tab = 2 }
+	check_variable = { RS_active_tab = 1 }
 }
 cabnent_tab_visible = {
-	check_variable = { RS_active_tab = 1 }
+	check_variable = { RS_active_tab = 2 }
 }

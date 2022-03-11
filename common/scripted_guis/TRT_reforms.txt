@@ -1,5 +1,10 @@
 ### Overview ###
 
+#	ReformsBase:
+#	-Reforms tabs
+#	-Window
+#	ReformsButtons:
+#	-Reform Buttons
 
 scripted_gui = {
 	TRT_reforms_base = {
@@ -13,17 +18,17 @@ scripted_gui = {
 
 		### Tabs / Base
 		properties = {
-			ReformsBase_InactiveTabs      = { frame = RS_active_tab?1 }
-			ReformsBase_InactiveTabsMask  = { frame = RS_active_tab?1 }
-			ReformsBase_ActiveTabs_Header = { frame = RS_active_tab?1 }
+			ReformsBase_InactiveTabs      = { frame = RS_active_tab?2 }
+			ReformsBase_InactiveTabsMask  = { frame = RS_active_tab?2 }
+			ReformsBase_ActiveTabs_Header = { frame = RS_active_tab?2 }
 		}
 
 		effects = {
 			ReformsBase_Button_Reforms_click = {
-				set_variable = { RS_active_tab = 2 }
+				set_variable = { RS_active_tab = 1 }
 			}
 			ReformsBase_Button_Cabnent_click = {
-				set_variable = { RS_active_tab = 1 }
+				set_variable = { RS_active_tab = 2 }
 			}
 		}
 
@@ -39,6 +44,13 @@ scripted_gui = {
 			}
 			ReformsBase_Active_Cabnent_visible = {
 				cabnent_tab_visible = yes
+			}
+		}
+
+		### Background
+		triggers = {
+			ReformsBase_Background_visible = {
+				reforms_tab_visible = yes
 			}
 		}
 	}
