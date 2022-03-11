@@ -1,0 +1,23 @@
+#INDEX#
+#PRE DEPPRESSION DYNAMIC MODIFIERS#
+#GREAT DEPPRESSION DYNAMIC MODIFIERS#
+
+
+#PRE DEPPRESSION DYNAMIC MODIFIERS#
+
+smoot_hawley_dm = {
+    set_variable = { gdp_home_growth_var = 0 }
+    set_variable = { consumer_home_goods_var = 0 }
+    set_variable = { conscription_home_var = 0 }
+}
+
+#GREAT DEPPRESSION DYNAMIC MODIFIERS#
+
+great_deppression_dm = {
+    set_variable = { gdp_growth_depression_var = 0 }
+    set_variable = { consumer_goods_factor_var = 0 }
+    set_variable = { poverty_monthly_growth_var = 0 }
+    set_variable = { resource_factor_var = 0 }
+    set_variable = { consumer_goods_production_var = 0 }
+    set_variable = { factory_efficiency_factor_var = 0 }
+}

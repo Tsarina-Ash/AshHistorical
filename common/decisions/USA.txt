@@ -26,7 +26,7 @@ acts_and_laws = {
 
     }
 
-    Tydings_McDuffie_Act = { #Fillipino election
+    Tydings_McDuffie_Act = {
 
         icon = GFX_decision_icon_default
 
@@ -54,7 +54,7 @@ acts_and_laws = {
 
     }
 
-    smoot_hawley_act = { #Fillipino election
+    smoot_hawley_act = { 
 
         icon = GFX_decision_icon_default
 
@@ -85,35 +85,6 @@ acts_and_laws = {
 
 #allows raising of tarrifs | unlock agricultural act of 1929 and federal farm board and allows the funding of some private commisions
 
-    smoot_hawley_act = {
-
-        icon = GFX_decision_icon_default
-
-        available = {}
-
-        fire_only_once = no
-
-        days_re_enable = 100
-
-        visible = {
-            has_idea = great_deppression_filler
-        }
-
-        cost = 200
-
-        complete_effect = {
-            add_ideas = smoot_hawley_act
-            hidden_effect = {
-
-            }
-        }
-
-        ai_will_do = {
-            factor = 10
-        }
-
-    }
-
 }
 
 colonial_administration = {
@@ -121,6 +92,79 @@ colonial_administration = {
 }
 
 bloated_army = {
+
+    small_army = {
+
+        icon = GFX_decision_icon_default
+    
+        available = {}
+    
+        fire_only_once = no
+    
+        days_re_enable = 100
+    
+        cost = 50
+    
+        complete_effect = {
+            
+        }
+    
+        ai_will_do = {
+            factor = 10
+        }
+    
+    }
+    
+    big_army = { 
+    
+        icon = GFX_decision_icon_default
+    
+        available = {}
+    
+        fire_only_once = no
+    
+        days_re_enable = 100
+    
+        cost = 75
+    
+        complete_effect = {
+            
+        }
+    
+        ai_will_do = {
+            factor = 10
+        }
+    
+    }
+    
+    destroy_army = {
+    
+        icon = GFX_decision_icon_default
+    
+        available = {}
+    
+        fire_only_once = no
+    
+        days_re_enable = 100
+    
+        cost = 70
+    
+        complete_effect = {
+            set_variable = {
+                var = bloated_industrial_capacity_factory_var
+                value = 0
+            }   
+            set_variable = {
+                var = bloated_industrial_capacity_dockyard_var
+                value = 0
+            }   
+                add_to_variable = { bloated_army_cost_modifier_var = -0.4 } 
+        }
+    
+        ai_will_do = {
+            factor = 10
+        }
+    }
 
     small_industry = {
 
@@ -166,17 +210,18 @@ bloated_army = {
 
     }
     
-    destroy_industry = {
+
+    destroy_industry_and_military = {
 
         icon = GFX_decision_icon_default
 
-        available = {}
+        available = { has_completed_focus = Coolidge_USA_completely_cut_military_spending }
 
         fire_only_once = no
 
         days_re_enable = 100
 
-        cost = 500
+        cost = 70
 
         complete_effect = {
             set_variable = {
@@ -188,16 +233,48 @@ bloated_army = {
 	            value = 0
             }   
                 add_to_variable = { bloated_army_cost_modifier_var = -0.4 } 
-            hidden_effect = {
-                add_to_variable = { bloated_army_cost_modifier_var = -0.4 } 
-            }
         }
 
         ai_will_do = {
             factor = 10
         }
-
     }
+
+#has completed = Coolidge_USA_completely_cut_military_spending
+
+    destroy_industry = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 70
+
+        complete_effect = {
+            set_variable = {
+	            var = bloated_industrial_capacity_factory_var
+	            value = 0
+            }   
+            set_variable = {
+	            var = bloated_industrial_capacity_dockyard_var
+	            value = 0
+            }   
+                add_to_variable = { bloated_army_cost_modifier_var = -0.4 } 
+                set_temp_variable = { temp_econ_spending_amount = GDP }
+                multiply_temp_variable = { temp_econ_spending_amount = -0.03 }
+                econ_spend_money_once_effect_raw_money = yes
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+}
 
 wilson_voyage_of_understanding = {
 
@@ -211,7 +288,7 @@ wilson_voyage_of_understanding = {
 
         days_re_enable = 100
 
-        cost = 500
+        cost = 70
 
         complete_effect = {
             hidden_effect = {
@@ -238,7 +315,7 @@ wilson_voyage_of_understanding = {
 
         days_re_enable = 100
 
-        cost = 500
+        cost = 70
 
         complete_effect = {
             hidden_effect = {
@@ -265,7 +342,7 @@ wilson_voyage_of_understanding = {
 
         days_re_enable = 100
 
-        cost = 500
+        cost = 70
 
         complete_effect = {
             hidden_effect = {
@@ -292,7 +369,7 @@ wilson_voyage_of_understanding = {
 
         days_re_enable = 100
 
-        cost = 500
+        cost = 70
 
         complete_effect = {
             hidden_effect = {
@@ -319,7 +396,7 @@ wilson_voyage_of_understanding = {
 
         days_re_enable = 100
 
-        cost = 500
+        cost = 70
 
         complete_effect = {
             #if tag = PHI { has_idea  = rebels_dealt_with } (
@@ -346,6 +423,156 @@ wilson_voyage_of_understanding = {
         }
 
     }
+}
+
+wilson_national_speeches = {
+
+    wilson_visit_california = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 70
+
+        complete_effect = {
+            hidden_effect = {
+                random_list = {
+                    35 = { retire_country_leader = yes }
+                    65 = { }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    wilson_visit_alaska = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 70
+
+        complete_effect = {
+            hidden_effect = {
+                random_list = {
+                    50 = { retire_country_leader = yes }
+                    50 = { }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    wilson_visit_texas = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 70
+
+        complete_effect = {
+            hidden_effect = {
+                random_list = {
+                    40 = { retire_country_leader = yes }
+                    60 = { }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    wilson_visit_hawaii = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 70
+
+        complete_effect = {
+            hidden_effect = {
+                random_list = {
+                    55 = { retire_country_leader = yes }
+                    45 = { }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    wilson_speech_to_the_phillipines = {
+
+        icon = GFX_decision_icon_default
+
+        available = { tag = PHI is_subject_of = USA}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 70
+
+        complete_effect = {
+            #if tag = PHI { has_idea  = rebels_dealt_with } (
+            hidden_effect = {
+                random_list = {
+                    70 = { retire_country_leader = yes }
+                    30 = { }
+                }
+            }
+            #)
+
+            #NOT = {
+            #    hidden_effect = {
+            #        random_list = {
+            #            85 = { retire_country_leader = yes }
+            #            15 = { }
+            #        }
+            #    }
+            #}
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+}
 
 harding_voyage_of_understanding = {
 
@@ -364,7 +591,7 @@ harding_voyage_of_understanding = {
         complete_effect = {
             hidden_effect = {
                 random_list = {
-                    35 = { retire_country_leader = yes }
+                    35 = { usaMajorNewsEvents.5 }
                     65 = { }
                 }
             }
@@ -391,7 +618,7 @@ harding_voyage_of_understanding = {
         complete_effect = {
             hidden_effect = {
                 random_list = {
-                    50 = { retire_country_leader = yes }
+                    50 = { usaMajorNewsEvents.5 }
                     50 = { }
                 }
             }
@@ -418,7 +645,7 @@ harding_voyage_of_understanding = {
         complete_effect = {
             hidden_effect = {
                 random_list = {
-                    40 = { retire_country_leader = yes }
+                    40 = { usaMajorNewsEvents.5 }
                     60 = { }
                 }
             }
@@ -445,7 +672,7 @@ harding_voyage_of_understanding = {
         complete_effect = {
             hidden_effect = {
                 random_list = {
-                    55 = { retire_country_leader = yes }
+                    55 = { usaMajorNewsEvents.5 }
                     45 = { }
                 }
             }
@@ -473,7 +700,7 @@ harding_voyage_of_understanding = {
             #if tag = PHI { has_idea  = rebels_dealt_with } (
             hidden_effect = {
                 random_list = {
-                    70 = { retire_country_leader = yes }
+                    70 = { usaMajorNewsEvents.6 }
                     30 = { }
                 }
             }
@@ -482,7 +709,7 @@ harding_voyage_of_understanding = {
             #NOT = {
             #    hidden_effect = {
             #        random_list = {
-            #            85 = { retire_country_leader = yes }
+            #            85 = { usaMajorNewsEvents.7 }
             #            15 = { }
             #        }
             #    }

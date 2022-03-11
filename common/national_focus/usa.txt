@@ -94,17 +94,23 @@ focus_tree = {
 
 # FOCUS TREE INDEX (CTRL+F)
 # 1920-1924 # - WILSON_USA_ill_presidency
-#1920-1924 # - Harding_USA_innaugaration_speech
-#1923-1924 # - Coolidge_USA_EXVICE_private_innaugaration
-#1920-1928 # - Coolidge_USA_innaugaration_speech
-#1920-1924 # - Leonard_Wood_USA_innaugaration_speech
-#1920-1924 # - EARLY_HOOVER_USA_innaugaration_speech
-#1924-1928 # - HOOVER_USA_innaugaration_speech
-#1932-1944# - FDR_USA_innaugaration_speech
-#1932-1944# - FDR_USA_puerto_rico_relief_administration
-#1932-1944# - FLINT_USA_strike
+# 1924-1928 # - EXTRA_WILSON_USA_innaugaration_speech
+# 1920-1924 # - Harding_USA_innaugaration_speech
+# 1923-1924 # - Coolidge_USA_EXVICE_private_innaugaration
+# 1920-1928 # - Coolidge_USA_innaugaration_speech
+# 1920-1924 # - Leonard_Wood_USA_innaugaration_speech
+# 1920-1924 # - EARLY_HOOVER_USA_innaugaration_speech
+# 1924-1928 # - HOOVER_USA_innaugaration_speech
+# 1932-1944 # - FDR_USA_innaugaration_speech
+# 1932-1944 # - FDR_USA_puerto_rico_relief_administration
+# 1932-1944 # - FLINT_USA_strike
 #???-???# - LBJ_USA_innaugaration_speech
 
+
+#custom_effect_tooltip = economy_misc_costs_tt #"Increased Industry Misc. Costs by §Y$[?gdp_industry_misc_costs_var_temp]§!"
+#custom_effect_tooltip = economy_gdp_growth_tt #Increases National GDP Growth by §G[?gdp_roaring_growth_var_temp]%§!	
+#set_temp_variable = { gdp_roaring_growth_var_temp = 0.03 }
+#set_temp_variable = { gdp_industry_misc_costs_var_temp = 0.02 }
 
 #Woodrow Wilson#
 
@@ -126,9 +132,6 @@ focus = {
 				id = event.event.usaWilson.1
 			}
 		}
-		set_temp_variable = { temp_econ_spending_amount = GDP }
-		multiply_temp_variable = { temp_econ_spending_amount = 0.03 }
-		econ_spend_money_once_effect_raw_money = yes
 	}
 }
 
@@ -194,7 +197,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50 #demobing too fast can destroy economy and unlocks decisions to begin getting rid of massive_army idea
+		unlock_decision_category_tooltip = bloated_army #demobing too fast can destroy economy and unlocks decisions to begin getting rid of massive_army idea
 	}
 }
 
@@ -263,10 +266,10 @@ focus = {
 		add_to_variable = { gdp_roaring_growth_var = 0.01 }
 		add_to_variable = { political_roaring__var = 0.03 }
 		set_temp_variable = { temp_econ_spending_amount = GDP }
-		multiply_temp_variable = { temp_econ_spending_amount = 0.03 }
+		multiply_temp_variable = { temp_econ_spending_amount = 0.08 }
 		econ_spend_money_once_effect_raw_money = yes
 		hidden_effect = {
-			add_to_variable = { bloated_military_expenditures_factor_var = 0.5 }
+			add_to_variable = { bloated_military_expenditures_factor_var = 0.25 }
 		}
 	}
 }
@@ -527,6 +530,741 @@ focus = {
 	
 	completion_reward = {
 		add_political_power = 50 #splits northern voters and lose northern/western votes for wilson & party.
+	}
+}
+
+
+#WILSON 2ND TERM#
+
+focus = {
+	id = EXTRA_WILSON_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -10
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
+	
+	available_if_capitulated =  no
+	
+	completion_reward = { country_event = { id = event.usaWilson.4 } }
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_wounded_and_battered_nation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
+
+	available_if_capitulated = no
+	
+	completion_reward = { country_event = { id = event.usaWilson.3 } }
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_unification
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
+	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_speeches_to_the_nation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 3
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_unification }
+	relative_position_id = EXTRA_WILSON_USA_unification
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		unlock_decision_category_tooltip = wilson_national_speeches
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_voyage_of_understanding
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 4
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
+	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		unlock_decision_category_tooltip = wilson_voyage_of_understanding
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_innaugaration_speech }
+	relative_position_id = EXTRA_WILSON_USA_innaugaration_speech
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #advances workers protections, lowers throughput
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_increase_union_protections
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist } prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
+	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #advances workers protections, lowers throughput
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_new_anti_trust_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
+	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #disables ford as a potential indsutrial company for 4 years and makes then uncooperative with party until henry dies
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_subsidize_military_industry
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_new_anti_trust_act }
+	relative_position_id = EXTRA_WILSON_USA_new_anti_trust_act
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		set_temp_variable = { temp_econ_spending_amount = GDP }
+		multiply_temp_variable = { temp_econ_spending_amount = 0.01 }
+		econ_spend_money_once_effect_raw_money = yes
+		add_to_variable = { bloated_military_expenditures_factor_var = 0.2 }
+		add_to_variable = { bloated_industrial_capacity_factory_var = 0.1 }
+		add_to_variable = { bloated_industrial_capacity_dockyard_var = 0.05 }
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_interventionalist
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
+	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_mcnary_haugen_farm_relief_bill
+
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist }
+	relative_position_id = EXTRA_WILSON_USA_interventionalist
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_question_of_sharecroppers
+
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_mcnary_haugen_farm_relief_bill }
+	relative_position_id = EXTRA_WILSON_USA_mcnary_haugen_farm_relief_bill
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_appoint_state_capitalist_economists
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist }
+	relative_position_id = EXTRA_WILSON_USA_interventionalist
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_subsidies
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_appoint_state_capitalist_economists }
+	relative_position_id = EXTRA_WILSON_USA_appoint_state_capitalist_economists
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		custom_effect_tooltip = economy_misc_costs_tt #"Increased Industry Misc. Costs by §Y$[?gdp_industry_misc_costs_var_temp]§!"
+		custom_effect_tooltip = economy_gdp_growth_tt #Increases National GDP Growth by §G[?gdp_roaring_growth_var_temp]%§!	
+
+		set_temp_variable = { gdp_roaring_growth_var_temp = 0.03 }
+		#add_to_variable = { gdp_roaring_growth_var = gdp_raoring_growth_war_temp }
+		set_temp_variable = { gdp_industry_misc_costs_var_temp = 0.02 }
+		#add_to_variable = { gdp_industry_misc_costs_var = gdp_industry_misc_costs_var_temp }
+
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_increase_buisness_incentives
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_subsidize_military_industry }
+	prerequisite = { focus = EXTRA_WILSON_USA_appoint_state_capitalist_economists }
+	relative_position_id = EXTRA_WILSON_USA_appoint_state_capitalist_economists
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #increases roaring 20's effect, worsens deppression effects though
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_fund_medical_research
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+
+	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
+	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #upgrades R&D PROGRESS
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_propse_new_healthcare_system
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = EXTRA_WILSON_USA_fund_medical_research }
+	relative_position_id = EXTRA_WILSON_USA_fund_medical_research
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #advance healthcare
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_open_new_hospitals
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+
+	prerequisite = { focus = EXTRA_WILSON_USA_fund_medical_research }
+	relative_position_id = EXTRA_WILSON_USA_fund_medical_research
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #builds hospital buildings
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_hoover_hands_free
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -5
+	y = 1
+
+	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
+	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #hoover advances in party
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_appoint_liazess_faire_economy_positions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_hoover_hands_free }
+	relative_position_id = EXTRA_WILSON_USA_hoover_hands_free
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #unlocks advisors
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_endorse_stock_potential
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_appoint_liazess_faire_economy_positions }
+	relative_position_id = EXTRA_WILSON_USA_appoint_liazess_faire_economy_positions
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #depending on how many people are invested = more/less effect on the US
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_cut_corporate_taxes
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_hoover_hands_free }
+	relative_position_id = EXTRA_WILSON_USA_hoover_hands_free
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_first_female_president
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
+	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		custom_effect_tooltip = "Wilson's Wife Will Run For Election In His Place"
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_compromising_with_dixiecrats
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 3
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_first_female_president }
+	relative_position_id = EXTRA_WILSON_USA_first_female_president
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_foreign_policy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 6
+	y = 1
+	
+	prerequisite = { focus = WILSON_USA_ill_presidency }
+	relative_position_id = WILSON_USA_ill_presidency
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #only unlocks if reelected
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_moral_diplomacy_two_point_o
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
+	relative_position_id = EXTRA_WILSON_USA_foreign_policy
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_the_dominican_failure
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_moral_diplomacy_two_point_o }
+	relative_position_id = EXTRA_WILSON_USA_moral_diplomacy_two_point_o
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_the_league
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
+	relative_position_id = EXTRA_WILSON_USA_foreign_policy
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_ask_congress_for_approval
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_the_league }
+	relative_position_id = EXTRA_WILSON_USA_the_league
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #event will always fail#
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_question_of_the_league
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
+	relative_position_id = EXTRA_WILSON_USA_foreign_policy
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #dont unlock before doing the first league focus
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_genevea_naval_conference
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_question_of_the_league }
+	relative_position_id = EXTRA_WILSON_USA_question_of_the_league
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_propose_arms_treaty
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_genevea_naval_conference }
+	relative_position_id = EXTRA_WILSON_USA_genevea_naval_conference
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_improve_south_american_relations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_question_of_the_league }
+	relative_position_id = EXTRA_WILSON_USA_question_of_the_league
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_reassure_south_american_allies
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_improve_south_american_relations }
+	relative_position_id = EXTRA_WILSON_USA_improve_south_american_relations
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_european_relief
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_question_of_the_league }
+	relative_position_id = EXTRA_WILSON_USA_question_of_the_league
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_loan_out_money_to_europeans
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_european_relief }
+	relative_position_id = EXTRA_WILSON_USA_european_relief
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_dawes_plan
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_european_relief }
+	relative_position_id = EXTRA_WILSON_USA_european_relief
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = EXTRA_WILSON_USA_lower_war_taxes_or_highten_them
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_dawes_plan }
+	relative_position_id = EXTRA_WILSON_USA_dawes_plan
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
 	}
 }
 
@@ -987,7 +1725,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50 #demobilizing will gain rewards but increase racial tensions & instability due to low amount of jobs for returning soldiers and stagnant eco
+		unlock_decision_tooltip = destroy_industry_and_military #demobilizing will gain rewards but increase racial tensions & instability due to low amount of jobs for returning soldiers and stagnant eco
 	}
 }
 
@@ -2202,734 +2940,6 @@ focus = {
 	}
 }
 
-#WILSON 2ND TERM#
-
-focus = {
-	id = EXTRA_WILSON_USA_innaugaration_speech
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = -10
-	y = 1
-	
-	prerequisite = { focus = WILSON_USA_ill_presidency }
-	relative_position_id = WILSON_USA_ill_presidency
-	
-	available_if_capitulated =  no
-	
-	completion_reward = { country_event = { id = event.usaWilson.4 } }
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_wounded_and_battered_nation
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = WILSON_USA_ill_presidency }
-	relative_position_id = WILSON_USA_ill_presidency
-
-	available_if_capitulated = no
-	
-	completion_reward = { country_event = { id = event.usaWilson.3 } }
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_unification
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
-	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_speeches_to_the_nation
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 3
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_unification }
-	relative_position_id = EXTRA_WILSON_USA_unification
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #like voyage of understanding but can get assasinated
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_voyage_of_understanding
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 4
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
-	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		unlock_decision_category_tooltip = wilson_voyage_of_understanding
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -3
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_innaugaration_speech }
-	relative_position_id = EXTRA_WILSON_USA_innaugaration_speech
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #advances workers protections, lowers throughput
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_increase_union_protections
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist } prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
-	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #advances workers protections, lowers throughput
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_new_anti_trust_act
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 1
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
-	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #disables ford as a potential indsutrial company for 4 years and makes then uncooperative with party until henry dies
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_subsidize_military_industry
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_new_anti_trust_act }
-	relative_position_id = EXTRA_WILSON_USA_new_anti_trust_act
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_to_variable = { bloated_military_expenditures_factor_var = 0.2 }
-		add_to_variable = { bloated_industrial_capacity_factory_var = 0.1 }
-		add_to_variable = { bloated_industrial_capacity_dockyard_var = 0.05 }
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_interventionalist
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
-	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_mcnary_haugen_farm_relief_bill
-
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist }
-	relative_position_id = EXTRA_WILSON_USA_interventionalist
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_question_of_sharecroppers
-
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_mcnary_haugen_farm_relief_bill }
-	relative_position_id = EXTRA_WILSON_USA_mcnary_haugen_farm_relief_bill
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_appoint_state_capitalist_economists
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist }
-	relative_position_id = EXTRA_WILSON_USA_interventionalist
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-##DINASAVE
-
-focus = {
-	id = EXTRA_WILSON_USA_subsidies
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_appoint_state_capitalist_economists }
-	relative_position_id = EXTRA_WILSON_USA_appoint_state_capitalist_economists
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		custom_effect_tooltip = "Wilson's Wife Will Run For Election In His Place"
-		add_variable = { gdp_roaring_growth_var = 0.03 } 
-		add_variable = { USA_industry_misc_costs_var = 0.02 } 
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_increase_buisness_incentives
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 2
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_subsidize_military_industry }
-	prerequisite = { focus = EXTRA_WILSON_USA_appoint_state_capitalist_economists }
-	relative_position_id = EXTRA_WILSON_USA_appoint_state_capitalist_economists
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #increases roaring 20's effect, worsens deppression effects though
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_fund_medical_research
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -3
-	y = 1
-
-	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
-	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #upgrades R&D PROGRESS
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_propse_new_healthcare_system
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-
-	prerequisite = { focus = EXTRA_WILSON_USA_fund_medical_research }
-	relative_position_id = EXTRA_WILSON_USA_fund_medical_research
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #advance healthcare
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_open_new_hospitals
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-
-	prerequisite = { focus = EXTRA_WILSON_USA_fund_medical_research }
-	relative_position_id = EXTRA_WILSON_USA_fund_medical_research
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #builds hospital buildings
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_hoover_hands_free
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -5
-	y = 1
-
-	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
-	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #hoover advances in party
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_appoint_liazess_faire_economy_positions
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_hoover_hands_free }
-	relative_position_id = EXTRA_WILSON_USA_hoover_hands_free
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #unlocks advisors
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_endorse_stock_potential
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_appoint_liazess_faire_economy_positions }
-	relative_position_id = EXTRA_WILSON_USA_appoint_liazess_faire_economy_positions
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #depending on how many people are invested = more/less effect on the US
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_cut_corporate_taxes
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_hoover_hands_free }
-	relative_position_id = EXTRA_WILSON_USA_hoover_hands_free
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_first_female_president
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 1
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_wounded_and_battered_nation }
-	relative_position_id = EXTRA_WILSON_USA_wounded_and_battered_nation
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		custom_effect_tooltip = "Wilson's Wife Will Run For Election In His Place"
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_compromising_with_dixiecrats
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 3
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_first_female_president }
-	relative_position_id = EXTRA_WILSON_USA_first_female_president
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_foreign_policy
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 6
-	y = 1
-	
-	prerequisite = { focus = WILSON_USA_ill_presidency }
-	relative_position_id = WILSON_USA_ill_presidency
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #only unlocks if reelected
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_moral_diplomacy_two_point_o
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -3
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
-	relative_position_id = EXTRA_WILSON_USA_foreign_policy
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_the_dominican_failure
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_moral_diplomacy_two_point_o }
-	relative_position_id = EXTRA_WILSON_USA_moral_diplomacy_two_point_o
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_the_league
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 3
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
-	relative_position_id = EXTRA_WILSON_USA_foreign_policy
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_ask_congress_for_approval
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_the_league }
-	relative_position_id = EXTRA_WILSON_USA_the_league
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #event will always fail#
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_question_of_the_league
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
-	relative_position_id = EXTRA_WILSON_USA_foreign_policy
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #dont unlock before doing the first league focus
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_genevea_naval_conference
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_question_of_the_league }
-	relative_position_id = EXTRA_WILSON_USA_question_of_the_league
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_propose_arms_treaty
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_genevea_naval_conference }
-	relative_position_id = EXTRA_WILSON_USA_genevea_naval_conference
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_improve_south_american_relations
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -2
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_question_of_the_league }
-	relative_position_id = EXTRA_WILSON_USA_question_of_the_league
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_reassure_south_american_allies
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_improve_south_american_relations }
-	relative_position_id = EXTRA_WILSON_USA_improve_south_american_relations
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_european_relief
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 2
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_question_of_the_league }
-	relative_position_id = EXTRA_WILSON_USA_question_of_the_league
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_loan_out_money_to_europeans
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_european_relief }
-	relative_position_id = EXTRA_WILSON_USA_european_relief
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_dawes_plan
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_european_relief }
-	relative_position_id = EXTRA_WILSON_USA_european_relief
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_lower_war_taxes_or_highten_them
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_dawes_plan }
-	relative_position_id = EXTRA_WILSON_USA_dawes_plan
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
 #EARLY HOOVER#
 
 focus = {
@@ -3064,7 +3074,21 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		597 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			set_temp_variable = { state_value_multiplier_temp = 1.1 }
+			econ_state_value_change_multiply_specified_state = yes
+			add_state_modifier = {
+				modifier = {
+					state_GDP_growth_factor_modifier = 0.10
+				}
+			}
+		}
 	}
 }
 
@@ -3141,7 +3165,9 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		set_temp_variable = { temp_econ_spending_amount = GDP }
+		multiply_temp_variable = { temp_econ_spending_amount = 0.04 }
+		econ_spend_money_once_effect_raw_money = yes
 	}
 }
 
@@ -3179,7 +3205,9 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		set_temp_variable = { temp_econ_spending_amount = GDP }
+		multiply_temp_variable = { temp_econ_spending_amount = 0.005 }
+		econ_spend_money_once_effect_raw_money = yes
 	}
 }
 
@@ -3255,7 +3283,9 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		set_temp_variable = { temp_econ_spending_amount = GDP }
+		multiply_temp_variable = { temp_econ_spending_amount = 0.007 }
+		econ_spend_money_once_effect_raw_money = yes
 	}
 }
 
@@ -3909,6 +3939,67 @@ focus = {
 	
 	completion_reward = {
 		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_federal_investments
+	icon = GFX_focus_USA_placeholder
+
+	cost = 6
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_recovery }
+	relative_position_id = FDR_USA_recovery
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		set_temp_variable = { temp_econ_spending_amount = GDP }
+		multiply_temp_variable = { temp_econ_spending_amount = 0.04 }
+		econ_spend_money_once_effect_raw_money = yes
+		607 = {
+			add_extra_state_shared_building_slots = 1
+			set_temp_variable = { state_value_multiplier_temp = 1.05 }
+			econ_state_value_change_multiply_specified_state = yes
+			add_state_modifier = {
+				modifier = {
+					state_GDP_growth_factor_modifier = 0.05
+				}
+			}
+		}		
+		607 = {
+			add_extra_state_shared_building_slots = 1
+			set_temp_variable = { state_value_multiplier_temp = 1.05 }
+			econ_state_value_change_multiply_specified_state = yes
+			add_state_modifier = {
+				modifier = {
+					state_GDP_growth_factor_modifier = 0.05
+				}
+			}
+		}	
+		607 = {
+			add_extra_state_shared_building_slots = 1
+			set_temp_variable = { state_value_multiplier_temp = 1.05 }
+			econ_state_value_change_multiply_specified_state = yes
+			add_state_modifier = {
+				modifier = {
+					state_GDP_growth_factor_modifier = 0.05
+				}
+			}
+		}	
+		607 = {
+			add_extra_state_shared_building_slots = 1
+			set_temp_variable = { state_value_multiplier_temp = 1.05 }
+			econ_state_value_change_multiply_specified_state = yes
+			add_state_modifier = {
+				modifier = {
+					state_GDP_growth_factor_modifier = 0.05
+				}
+			}
+		}	
 	}
 }
 

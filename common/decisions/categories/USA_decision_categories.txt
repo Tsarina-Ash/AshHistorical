@@ -42,7 +42,7 @@ bloated_army = {
         original_tag = USA
     }
 
-    visible = {}
+    visible = { has_completed_focus = WILSON_USA_begin_demobilization }
 
      visible_when_empty = no
 
@@ -61,6 +61,22 @@ wilson_voyage_of_understanding = {
     visible = { has_completed_focus = EXTRA_WILSON_USA_voyage_of_understanding }
 
      visible_when_empty = no
+
+}
+
+wilson_national_speeches = {
+
+    priority = 6
+
+    icon = generic_prospect_for_resources
+
+   allowed = {
+       original_tag = USA
+   }
+
+   visible = { has_completed_focus = EXTRA_WILSON_USA_speeches_to_the_nation }
+
+    visible_when_empty = no
 
 }
 

@@ -1,11 +1,38 @@
 #INDEX OF COUNTRIES#
+#PRE DEPPRESSION DYNAMIC MODIFIERS#
+#GREAT DEPPRESSION DYNAMIC MODIFIERS#
 #UNITED STATES DYNAMIC MODIFIERS#
 #PHILLIPINES DYNAMIC MODIFIERS#
 #GERMANY DYNAMIC MODIFIERS#
-##
-##
-##
-##
+#
+#
+#
+#
+
+#PRE DEPPRESSION DYNAMIC MODIFIERS#
+
+smoot_hawley_dm = {
+    icon = generic_pp_unity_bonus
+    remove_trigger = { always = no }
+
+    annual_gdp_growth_factor = gdp_home_growth_var
+    consumer_goods_factor = consumer_home_goods_var
+    conscription_factor = conscription_home_var
+}
+
+#GREAT DEPPRESSION DYNAMIC MODIFIERS#
+
+great_deppression_dm = {
+    icon = generic_pp_unity_bonus
+    remove_trigger = { always = no }
+
+    annual_gdp_growth_factor = gdp_growth_depression_var
+    consumer_goods_factor = consumer_goods_factor_var
+    poverty_monthly_rate = poverty_monthly_growth_var
+    local_resources_factor = resource_factor_var
+    consumer_goods_production_factor = consumer_goods_production_var
+    production_factory_max_efficiency_factor = factory_efficiency_factor_var
+}
 
 #UNITED STATES DYNAMIC MODIFIERS#
 

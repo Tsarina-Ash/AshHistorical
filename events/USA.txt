@@ -3,6 +3,7 @@ add_namespace = usaAct
 add_namespace = usaBacklash
 add_namespace = usaRailroadedEvents
 add_namespace = usaGreatDeppression
+add_namespace = usaMajorNewsEvents
 add_namespace = eventusaWilson
 add_namespace = eventusaHoover
 add_namespace = eventusaHarding
@@ -10,6 +11,198 @@ add_namespace = eventusaCoolidge
 add_namespace = eventusaLeonardWood
 add_namespace = eventusaFDR
 add_namespace = eventusaLBJ
+
+#Major News Events#
+
+news_event = {
+	id = usaMajorNewsEvents.1
+	picture = GFX_news_event_nuke
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	if {
+		TAG = USA {
+			option = {
+				name = wilsonassasinated.1
+					hidden_effect = {
+						retire_country_leader = yes
+					}
+			}
+		}
+		NOT {
+			option = {
+				name = wilsonassasinated.2
+			}
+		}
+	}
+}
+
+news_event = {
+	id = usaMajorNewsEvents.2
+	picture = GFX_news_event_nuke
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	if {
+		TAG = USA {
+			option = {
+				name = wilsondies.1
+					hidden_effect = {
+						retire_country_leader = yes
+					}
+			}
+		}
+		NOT {
+			option = {
+				name = wilsondies.2
+			}
+		}
+	}
+}
+
+news_event = {
+	id = usaMajorNewsEvents.3
+	picture = GFX_news_event_nuke
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	if {
+		TAG = USA {
+			option = {
+				name = wilsonassasinatedphillipines.1
+					hidden_effect = {
+						retire_country_leader = yes
+					}
+			}
+		}
+		NOT {
+			option = {
+				name = wilsonassasinatedphillipines.2
+			}
+		}
+	}
+}
+
+news_event = {
+	id = usaMajorNewsEvents.4
+	picture = GFX_news_event_nuke
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	if {
+		TAG = USA {
+			option = {
+				name = wilsondiesphillipines.1
+					hidden_effect = {
+						retire_country_leader = yes
+					}
+			}
+		}
+		NOT {
+			option = {
+				name = wilsondiesphillipines.2
+			}
+		}
+	}
+}
+
+
+news_event = {
+	id = usaMajorNewsEvents.5
+	picture = GFX_news_event_nuke
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	if {
+		TAG = USA {
+			option = {
+				name = hardingdies.1
+					hidden_effect = {
+						retire_country_leader = yes
+					}
+			}
+		}
+		NOT {
+			option = {
+				name = hardingdies.2
+			}
+		}
+	}
+}
+
+news_event = {
+	id = usaMajorNewsEvents.6
+	picture = GFX_news_event_nuke
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	if {
+		TAG = USA {
+			option = {
+				name = hardingdiesphillipines.1
+					hidden_effect = {
+						retire_country_leader = yes
+					}
+			}
+		}
+		NOT {
+			option = {
+				name = hardingdiesphillipines.2
+			}
+		}
+	}
+}
+
+news_event = {
+	id = usaMajorNewsEvents.7
+	picture = GFX_news_event_nuke
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	if {
+		TAG = USA {
+			option = {
+				name = hardingassasinatedsphillipines.1
+					hidden_effect = {
+						retire_country_leader = yes
+					}
+			}
+		}
+		NOT {
+			option = {
+				name = hardingassasinatedsphillipines.2
+			}
+		}
+	}
+}
 
 #Back End Stuff#
 
@@ -102,6 +295,32 @@ news_event = {
 	}
 }
 
+#Side Missions/Fun Stuff#
+
+country_event = {
+	id = usaAct.1
+	picture = GFX_news_event_nuke
+
+	mean_time_to_happen = {
+		days = 16
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = {
+				tag = USA
+			}
+			hidden_effect = {
+				add_ideas = prohibition_happy
+				complete_national_focus = WILSON_USA_ennact_prohibition
+			}
+		}
+	}
+
 #Acts#
 
 country_event = {
@@ -166,7 +385,8 @@ country_event = {
 	}
 }
 
-#Great_Deppression#
+#Great_Deppression Hitting Globally#
+#WILL BE VERY DEVASTATING GLOBALY#
 
 news_event = {
 	id = usaGreatDeppression.1
@@ -174,30 +394,12 @@ news_event = {
 
 	is_triggered_only = yes
 
-	fire_only_once = yes
+	major = yes
 
-	immediate = {
-		if = {
-			limit = {
-				NOT = {
-					tag = USA
-				}
-			}
-			hidden_effect = {
-				add_ideas = worlds_effect
-			}
-		}
-	}
+	fire_only_once = yes
 	
 	option = {
-		name = usaVolsteadAct.1
-		# hidden_effect = {
-		# 	tag = USA
-		# 	swap_ideas = {
-		# 		remove_idea = 
-		# 		add_idea =
-		# 	}
-		# }
+		name = usaWhatHaveWeDone.1
 	}
 }
 

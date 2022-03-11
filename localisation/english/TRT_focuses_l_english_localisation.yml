@@ -3,6 +3,26 @@
 #   :0 ""
 #   _desc:0 ""
 
+# LOCALISTATION INDEX (CTRL+F)
+# WILSON USA LOC # -WILSON
+# EXTRA WILSON # -WILSON 
+# HARDING USA LOC # -HARDING
+#
+#
+#
+#
+#
+#
+#
+#
+# LBJ USA LOC # -LBJ
+
+
+#EFFECT TOOLTIPS#
+
+economy_gdp_growth_tt: "Increases National GDP Growth by §G[?gdp_roaring_growth_var_temp]%§!"
+economy_misc_costs_tt: "Increased Industry Misc. Costs by §Y$[?gdp_industry_misc_costs_var_temp]§!"
+
 #WILSON USA LOC#
 
 WILSON_USA_ill_presidency:0 "The Ill Presidency"
@@ -179,8 +199,6 @@ EXTRA_WILSON_USA_dawes_plan_desc:0 "Germany has been devastated by the 'Treaty O
 EXTRA_WILSON_USA_lower_war_taxes_or_highten_them:0 "The Question Of War Taxes"
 EXTRA_WILSON_USA_lower_war_taxes_or_highten_them_desc:0 "Taxes have gone up dramatically as a recourse of the war and most Americans obviously disprove but with our budget mostly relying on them right now and our oversized army it may not be wise to lower them... Atleast not yet... It could cause a massive budget deficit..."
 
-
-
 #HARDING USA LOC#
 
 Harding_USA_innaugaration_speech:0 "Atmosphere With A Strange Mingling"
@@ -255,7 +273,7 @@ Harding_USA_propose_8_hour_workday_desc:0 ""
 Harding_USA_dealing_with_unions:0 ""
 Harding_USA_dealing_with_unions_desc:0 ""
 
-#LBJ FOCUSES
+#LBJ USA LOC#
 
 LBJ_USA_innaugaration_speech:0 "A Great Society"
 LBJ_USA_innaugaration_speech_desc:0 "Your imagination, your initiative, and your indignation will determine whether we build a society where progress is the servant of our needs, or a society where old values and new visions are buried under unbridled growth. For in your time we have the opportunity to move not only toward the rich society and the powerful society, but upward to the Great Society."
