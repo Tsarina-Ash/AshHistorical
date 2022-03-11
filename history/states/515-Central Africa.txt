@@ -4,19 +4,31 @@ state={
 	name="STATE_515"
 
 	history={
-		owner = FRA
+		owner = ROM
+		add_core_of = ROM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			dockyard = 1
+			657 = {
+				naval_base = 8
 
+			}
+			687 = {
+				naval_base = 1
+
+			}
+		}
+		victory_points = {
+			657 3 
 		}
 
 	}
 
 	provinces={
-		8028 10758 10780 10805 10917 
+		657 687 3076 9635 
 	}
 	manpower=1456356
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=town
 	local_supplies=0.000
 }
