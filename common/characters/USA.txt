@@ -9,7 +9,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = Proggressivism
+			ideology = Conservatism
 			traits = { }
 			expire = "1924.2.3.1"
 		}

@@ -1,10 +1,10 @@
-add_namespace = phiEndOfTwenties
-add_namespace = phiUnitedStatesAid
+add_namespace = eventphiEndOfTwenties
+add_namespace = eventphiUnitedStatesAid
 
 #Back End Stuff#
 
 country_event = {
-	id = phiEndOfTwenties.1
+	id = eventphiEndOfTwenties.1
 	picture = GFX_news_event_nuke
 
 	mean_time_to_happen = {
@@ -34,7 +34,7 @@ country_event = {
 #USA-Phillipines navy#
 
 country_event = {
-	id = phiUnitedStatesAid.1
+	id = eventphiUnitedStatesAid.1
 	picture = GFX_news_event_nuke
 
 	is_triggered_only = yes
@@ -46,7 +46,7 @@ country_event = {
 		hidden_effect = {
 			PHI = {
 				country_event = {
-					id = phiUnitedStatesAid.3
+					id = eventphiUnitedStatesAid.3
 				}
 				
 			}
@@ -57,7 +57,7 @@ country_event = {
 		hidden_effect = {
 			PHI = {
 				country_event = {
-					id = phiUnitedStatesAid.2
+					id = eventphiUnitedStatesAid.2
 				}
 				
 			}
@@ -66,7 +66,7 @@ country_event = {
 }
 
 country_event = {
-	id = phiUnitedStatesAid.2
+	id = eventphiUnitedStatesAid.2
 	picture = GFX_news_event_nuke
 
 	is_triggered_only = yes
@@ -79,7 +79,7 @@ country_event = {
 }
 
 country_event = {
-	id = phiUnitedStatesAid.3
+	id = eventphiUnitedStatesAid.3
 	picture = GFX_news_event_nuke
 
 	is_triggered_only = yes
@@ -111,7 +111,7 @@ country_event = {
 #USA-Phillipines infantry equipment#
 
 country_event = {
-	id = phiUnitedStatesAid.4
+	id = eventphiUnitedStatesAid.4
 	picture = GFX_news_event_nuke
 
 	is_triggered_only = yes
@@ -131,7 +131,7 @@ country_event = {
 		hidden_effect = {
 			PHI = {
 				country_event = {
-					id = phiUnitedStatesAid.5
+					id = eventphiUnitedStatesAid.5
 				}
 			}
 		}
@@ -139,7 +139,7 @@ country_event = {
 }
 
 country_event = {
-	id = phiUnitedStatesAid.5
+	id = eventphiUnitedStatesAid.5
 	picture = GFX_news_event_nuke
 
 	is_triggered_only = yes
@@ -152,7 +152,7 @@ country_event = {
 }
 
 country_event = {
-	id = phiUnitedStatesAid.6
+	id = eventphiUnitedStatesAid.6
 	picture = GFX_news_event_nuke
 
 	is_triggered_only = yes
@@ -183,7 +183,7 @@ country_event = {
 #MANEL QUEZON#
 
 country_event = {
-	id = event.usaMQ.1
+	id = eventusaMQ.1
         title = usaMQ.1.t
         desc = usaMQ.1.d
 	picture = GFX_report_event_election_vote
@@ -200,7 +200,7 @@ country_event = {
 #Emilio Aguinaldo#
 
 country_event = {
-	id = event.usaEA.1
+	id = eventusaEA.1
         title = usaEA.1.t
         desc = usaEA.1.d
 	picture = GFX_report_event_election_vote
@@ -217,7 +217,7 @@ country_event = {
 #Gregorio Aglipay#
 
 country_event = {
-	id = event.usaGA.1
+	id = eventusaGA.1
         title = usaGA.1.t
         desc = usaGA.1.d
 	picture = GFX_report_event_election_vote
@@ -229,7 +229,4 @@ country_event = {
 	option = {
 		name = usaGAInnaugarationSpeech.1.a
 	}
-}
-
-
 }

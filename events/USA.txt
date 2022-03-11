@@ -3,13 +3,13 @@ add_namespace = usaAct
 add_namespace = usaBacklash
 add_namespace = usaRailroadedEvents
 add_namespace = usaGreatDeppression
-add_namespace = usaWilson
-add_namespace = usaHoover
-add_namespace = usaHarding
-add_namespace = usaCoolidge
-add_namespace = usaLeonardWood
-add_namespace = usaFDR
-add_namespace = usaLBJ
+add_namespace = eventusaWilson
+add_namespace = eventusaHoover
+add_namespace = eventusaHarding
+add_namespace = eventusaCoolidge
+add_namespace = eventusaLeonardWood
+add_namespace = eventusaFDR
+add_namespace = eventusaLBJ
 
 #Back End Stuff#
 
@@ -204,7 +204,7 @@ news_event = {
 #WILSON#
 
 country_event = {
-	id = event.usaWilson.1
+	id = eventusaWilson.1
         title = usaWilson.1.t
         desc = usaWilson.1.d
 	picture = GFX_report_event_election_vote
@@ -219,7 +219,7 @@ country_event = {
 }
 
 country_event = {
-	id = event.usaWilson.2
+	id = eventusaWilson.2
         title = usaWilson.2.t
         desc = usaWilson.2.d
 	picture = GFX_report_event_election_vote
@@ -235,7 +235,7 @@ country_event = {
 
 
 country_event = {
-	id = event.usaWilson.3
+	id = eventusaWilson.3
         title = usaWilson.3.t
         desc = usaWilson.3.d
 	picture = GFX_report_event_election_vote
@@ -250,7 +250,7 @@ country_event = {
 }
 
 country_event = {
-	id = event.usaWilson.4
+	id = eventusaWilson.4
         title = usaWilson.4.t
         desc = usaWilson.4.d
 	picture = GFX_report_event_election_vote
@@ -267,7 +267,7 @@ country_event = {
 #1924 HOOVER#
 
 country_event = {
-	id = event.usaHoover.1
+	id = eventusaHoover.1
         title = usaHoover.1.t
         desc = usaHoover.1.d
 	picture = GFX_report_event_election_vote
@@ -284,7 +284,7 @@ country_event = {
 #1928 ELECTION#
 
 country_event = {
-	id = event.usaHoover.2
+	id = eventusaHoover.2
         title = usaHoover.2.t
         desc = usaHoover.2.d
 	picture = GFX_report_event_election_vote
@@ -301,7 +301,7 @@ country_event = {
 #HARDING#
 
 country_event = {
-	id = event.usaHarding.1
+	id = eventusaHarding.1
         title = usaHarding.1.t
         desc = usaHarding.1.d
 	picture = GFX_report_event_election_vote
@@ -318,7 +318,7 @@ country_event = {
 #COOLIDGE#
 
 country_event = {
-	id = event.usaCoolidge.1
+	id = eventusaCoolidge.1
         title = usaCoolidge.1.t
         desc = usaCoolidge.1.d
 	picture = GFX_report_event_election_vote
@@ -335,7 +335,7 @@ country_event = {
 #EMERGENCY COOLIDGE#
 
 country_event = {
-	id = event.usaCoolidge.2
+	id = eventusaCoolidge.2
         title = usaCoolidge.2.t
         desc = usaCoolidge.2.d
 	picture = GFX_report_event_election_vote
@@ -352,7 +352,7 @@ country_event = {
 #LEONARD WOOD#
 
 country_event = {
-	id = event.usaLeonardWood.1
+	id = eventusaLeonardWood.1
         title = usaLeonardWood.1.t
         desc = usaLeonardWood.1.d
 	picture = GFX_report_event_election_vote
@@ -369,7 +369,7 @@ country_event = {
 #FDR#
 
 country_event = {
-	id = event.usaFDR.1
+	id = eventusaFDR.1
         title = usaFDR.1.t
         desc = usaFDR.1.d
 	picture = GFX_report_event_election_vote
@@ -386,7 +386,7 @@ country_event = {
 #LBJ#
 
 country_event = {
-	id = event.usaLBJ.1
+	id = eventusaLBJ.1
         title = usaLBJ.1.t
         desc = usaLBJ.1.d
 	picture = GFX_report_event_election_vote
