@@ -123,7 +123,7 @@ focus = {
 		custom_effect_tooltip = "*Cough* We'll Be Fine *Cough*"
 		hidden_effect = {
 			country_event = {
-				id = usaWilson.1 
+				id = event.event.usaWilson.1
 			}
 		}
 		set_temp_variable = { temp_econ_spending_amount = GDP }
@@ -479,7 +479,7 @@ focus = {
 	
 	completion_reward = { 
 		country_event = {
-			id = usaWilson.2 
+			id = event.usaWilson.2 
 		}
 	}
 }
@@ -545,7 +545,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = usaHarding.1 #teapot scandal and railroad strike are events/decisions
+			id = event.usaHarding.1#teapot scandal and railroad strike are events/decisions
 		}
 	}
 }
@@ -909,7 +909,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = usaCoolidge.1 #does minimal things and after 1st term party favors hoover for buisness additudes
+			id = event.usaCoolidge.1#does minimal things and after 1st term party favors hoover for buisness additudes
 		}
 	}
 }
@@ -1460,7 +1460,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = usaCoolidge.2
+			id = event.usaCoolidge.2
 		}
 	}
 }
@@ -1659,7 +1659,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = usaLeonardWood.1 #he will be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
+			id = event.usaLeonardWood.1#he will be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
 		}
 	}
 }
@@ -2218,7 +2218,7 @@ focus = {
 	
 	available_if_capitulated =  no
 	
-	completion_reward = { country_event = { id = usaWilson.4 } }
+	completion_reward = { country_event = { id = event.usaWilson.4 } }
 }
 
 focus = {
@@ -2235,7 +2235,7 @@ focus = {
 
 	available_if_capitulated = no
 	
-	completion_reward = { country_event = { id = usaWilson.3 } }
+	completion_reward = { country_event = { id = event.usaWilson.3 } }
 }
 
 focus = {
@@ -2450,6 +2450,8 @@ focus = {
 	}
 }
 
+##DINASAVE
+
 focus = {
 	id = EXTRA_WILSON_USA_subsidies
 	icon = GFX_focus_USA_placeholder
@@ -2465,8 +2467,9 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		set_temp_variable = { gdp_roaring_growth_var = 0.03 } 
-		set_temp_variable = { USA_industry_misc_costs_var = 0.02 } 
+		custom_effect_tooltip = "Wilson's Wife Will Run For Election In His Place"
+		add_variable = { gdp_roaring_growth_var = 0.03 } 
+		add_variable = { USA_industry_misc_costs_var = 0.02 } 
 	}
 }
 
@@ -2942,7 +2945,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = usaHoover.1 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
+			id = event.usaHoover.1#coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
 		}
 	}
 }
@@ -3000,7 +3003,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = usaHoover.2 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
+			id = event.usaHoover.2 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
 		}
 	}
 }
@@ -3634,7 +3637,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = usaFDR.1 #most focuses are just visualizations of decisions
+			id = event.usaFDR.1 #most focuses are just visualizations of decisions
 		}
 	}
 }
@@ -4865,7 +4868,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = usaLBJ.1
+			id = event.usaLBJ.1
 		}
 	}
 }
