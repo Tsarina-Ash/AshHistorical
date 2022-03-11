@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ReformsBase_Header"
+		textureFile = "gfx/interface/reforms_gui/reforms_header.dds"
+		noOfFrames = 2
+	}
+}

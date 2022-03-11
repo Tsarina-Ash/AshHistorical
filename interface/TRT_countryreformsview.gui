@@ -1,0 +1,114 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ReformsBase"
+		position = { x = 10 y = 440 }
+		scale = 0.9
+
+		containerWindowType = {
+			name = "EconBase_Tabs"
+			position = { x = 0 y = 42 }
+
+			### Inactive ###
+				iconType = { 
+					name = "ReformsBase_InactiveTabs"
+					spriteType = "GFX_EconBase_Tabs"
+					position = { x = -23 y = 3 }    
+				}
+
+				## Text ##
+					instantTextBoxType = {
+						name = "ReformsBase_Inactive_Reforms"
+						position = { x = 50 y = 13 }
+						maxWidth = 173
+						font = "Bomb_24"
+						format = center
+						text = EconBase_Reform_text_tt
+					}
+
+					#instantTextBoxType = { 
+					#	name = "EconBase_Inactive_Social"
+					#	position = { x = 200 y = 13 }
+					#	maxWidth = 173
+					#	font = "Bomb_24"
+					#	format = center
+					#	text = "Social"
+					#}
+
+					instantTextBoxType = {
+						name = "ReformsBase_Inactive_Cabnent"
+						position = { x = 350 y = 13 }
+						maxWidth = 173
+						font = "Bomb_24"
+						format = center
+						text = EconBase_Cabnent_text_tt
+					}
+				## Text ##
+
+				iconType = {
+					name = "EconBase_InactiveTabsMask"
+					spriteType = "GFX_EconBase_TabsMask"
+					position = { x = -70 y = 3 }
+				}
+			### Inactive ###
+
+			### Active ###
+				iconType = {
+					name = "EconBase_ActiveTabs_Header"
+					spriteType = "GFX_ReformsBase_Header"
+				}
+
+				## Text ##
+					instantTextBoxType = {
+						name = "ReformsBase_Active_Reforms"
+						position = { x = 50 y = 11 }
+						maxWidth = 173
+						font = "Bomb_24"
+						format = center
+						text = EconBase_Reform_text_tt
+					}
+
+					#instantTextBoxType = {
+					#	name = "EconBase_Active_Social"
+					#	position = { x = 200 y = 11 }
+					#	maxWidth = 173
+					#	font = "Bomb_24"
+					#	format = center
+					#	text = "Social"
+					#}
+
+					instantTextBoxType = {
+						name = "ReformsBase_Active_Cabnent"
+						position = { x = 350 y = 11 }
+						maxWidth = 173
+						font = "Bomb_24"
+						format = center
+						text = EconBase_Cabnent_text_tt
+					}
+				## Text ##
+			### Active ###
+
+			## Buttons ##
+				buttonType = { 
+					name = "ReformsBase_Button_Reforms"
+					spriteType = "GFX_EconBase_TabsButton"
+					position = { x = 0 y = -2 }
+					shortcut = "shift+a"
+				}
+
+				#buttonType = {
+				#	name = "EconBase_Button_Social"
+				#	spriteType = "GFX_EconBase_TabsButton"
+				#	position = { x = 191 y = -2 }
+				#	shortcut = "shift+r"
+				#}
+
+				buttonType = {
+					name = "ReformsBase_Button_Cabnent"
+					spriteType = "GFX_EconBase_TabsButton"
+					position = { x = 286 y = -2 }
+					shortcut = "shift+s"
+				}
+			## Buttons ##
+		}
+	}
+}

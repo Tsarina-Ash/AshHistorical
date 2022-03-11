@@ -1,0 +1,45 @@
+### Overview ###
+
+
+scripted_gui = {
+	TRT_reforms_base = {
+		window_name = "ReformsBase"
+		context_type = player_context
+		parent_window_token = politics_tab
+
+		visible = {
+			always = yes
+		}
+
+		### Tabs / Base
+		properties = {
+			ReformsBase_InactiveTabs      = { frame = RS_active_tab?1 }
+			ReformsBase_InactiveTabsMask  = { frame = RS_active_tab?1 }
+			ReformsBase_ActiveTabs_Header = { frame = RS_active_tab?1 }
+		}
+
+		effects = {
+			ReformsBase_Button_Reforms_click = {
+				set_variable = { RS_active_tab = 2 }
+			}
+			ReformsBase_Button_Cabnent_click = {
+				set_variable = { RS_active_tab = 1 }
+			}
+		}
+
+		triggers = {
+			ReformsBase_Inactive_Reforms_visible = {
+				NOT = { reforms_tab_visible = yes }
+			}
+			ReformsBase_Inactive_Cabnent_visilbe = {
+				NOT = { cabnent_tab_visible = yes }
+			}
+			ReformsBase_Active_Reforms_visible = {
+				reforms_tab_visible = yes
+			}
+			ReformsBase_Active_Cabnent_visible = {
+				cabnent_tab_visible = yes
+			}
+		}
+	}
+}
