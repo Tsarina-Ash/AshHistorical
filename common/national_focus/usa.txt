@@ -1055,7 +1055,9 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		country_event = {
+			id = event.usaSouthAmerica.1
+		}
 	}
 }
 
@@ -1342,6 +1344,7 @@ focus = {
 	
 	completion_reward = {
 		add_political_power = 50
+		#increase buruacratic effiency and lowers poverty gain
 	}
 }
 
@@ -1360,7 +1363,11 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_stability_factor = 0.5
+		add_war_support_factor = -0.5
+		#hidden_effect = {
+		#	adds_party_popularity = 0.5 = neutrality CHANGE TO CONSERVATIVES LATER
+		#}
 	}
 }
 
@@ -1379,7 +1386,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		#advances civil rights and prison system to modern and reformist
 	}
 }
 
@@ -1398,7 +1405,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		#increases governmnet income is a TAX LAW
 	}
 }
 
@@ -1417,7 +1424,10 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		#decreases immigration idea and lowers gain on everything
+		#hidden_effect = {
+		#	adds_party_popularity = 0.5 = neutrality CHANGE TO CONSERVATIVES LATER
+		#}
 	}
 }
 
@@ -1469,13 +1479,15 @@ focus = {
 	x = -2
 	y = 1
 	
+	available = { never }
+
 	prerequisite = { focus = Harding_USA_return_to_normalcy }
 	relative_position_id = Harding_USA_return_to_normalcy
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		#GERMAN PEACE TREATY
 	}
 }
 
@@ -1495,7 +1507,107 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		#Improves relations and stimulates GDP growth in US and South american nations + adds to debt
+		completion_reward = {
+
+			add_to_variable = { gdp_roaring_growth_var = 0.01 }
+
+			#MEX = {
+			#	add_to_variable = { gdp_roaring_growth_var = 0.01 }
+			#}
+			#
+			#BRA = {
+			#	add_to_variable = { gdp_roaring_growth_var = 0.01 }
+			#}
+			#
+			#CUB = {
+			#	add_to_variable = { gdp_roaring_growth_var = 0.01 }
+			#}
+			#
+			#VEN = {
+			#	add_to_variable = { gdp_roaring_growth_var = 0.01 }
+			#}
+
+			set_temp_variable = { temp_econ_spending_amount = GDP }
+			multiply_temp_variable = { temp_econ_spending_amount = 0.04 }
+			econ_spend_money_once_effect_raw_money = yes
+
+			597 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				set_temp_variable = { state_value_multiplier_temp = 1.1 }
+				econ_state_value_change_multiply_specified_state = yes
+				add_state_modifier = {
+					modifier = {
+						state_GDP_growth_factor_modifier = 0.10
+					}
+				}
+			}
+			597 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				set_temp_variable = { state_value_multiplier_temp = 1.1 }
+				econ_state_value_change_multiply_specified_state = yes
+				add_state_modifier = {
+					modifier = {
+						state_GDP_growth_factor_modifier = 0.10
+					}
+				}
+			}
+			597 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				set_temp_variable = { state_value_multiplier_temp = 1.1 }
+				econ_state_value_change_multiply_specified_state = yes
+				add_state_modifier = {
+					modifier = {
+						state_GDP_growth_factor_modifier = 0.10
+					}
+				}
+			}
+			597 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				set_temp_variable = { state_value_multiplier_temp = 1.1 }
+				econ_state_value_change_multiply_specified_state = yes
+				add_state_modifier = {
+					modifier = {
+						state_GDP_growth_factor_modifier = 0.10
+					}
+				}
+			}
+			597 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				set_temp_variable = { state_value_multiplier_temp = 1.1 }
+				econ_state_value_change_multiply_specified_state = yes
+				add_state_modifier = {
+					modifier = {
+						state_GDP_growth_factor_modifier = 0.10
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -1514,7 +1626,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		#focuses on disarming army rather than industry
 	}
 }
 
@@ -1590,7 +1702,22 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50 #unlocks decisions
+		#OR = {
+		#	has_tag = PROMISED TO NOT INFERFERE {
+		#		add_political_power = -100
+		#	}		
+		#	ELSE = {
+		#		does stuff
+		#	}
+		#}	
+
+		#unlock_decision_tooltip = EXAMPLE TOOLTIP #gives federal money out
+
+		hidden_effect = { #teapot scandal
+			country_event = {
+				id = event.eventusaHarding.2
+			}
+		}
 	}
 }
 
@@ -3037,7 +3164,7 @@ focus = {
 	}
 }
 
-focus = { #last focus for 1928 president
+focus = { #last focus for 1928 president for today
 	id = HOOVER_USA_the_hibernating_giant
 	icon = GFX_focus_USA_placeholder
 

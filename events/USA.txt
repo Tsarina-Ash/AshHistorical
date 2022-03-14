@@ -4,6 +4,7 @@ add_namespace = usaBacklash
 add_namespace = usaRailroadedEvents
 add_namespace = usaGreatDeppression
 add_namespace = usaMajorNewsEvents
+add_namespace = usaSouthAmerica
 add_namespace = eventusaWilson
 add_namespace = eventusaHoover
 add_namespace = eventusaHarding
@@ -11,6 +12,35 @@ add_namespace = eventusaCoolidge
 add_namespace = eventusaLeonardWood
 add_namespace = eventusaFDR
 add_namespace = eventusaLBJ
+
+#South American interventions#
+
+country_event = {
+	id = usaSouthAmerica.1
+	picture = GFX_news_event_nuke
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = {
+				tag = USA
+			}
+			hidden_effect = {
+				clear_variable = USA_roaring_twenties
+			}
+		}
+	}
+	
+	option = {
+		name = usadominicanfailure.1
+	}
+	option = {
+		name = usadominicanfailure.2
+	}
+}
 
 #Major News Events#
 
@@ -320,7 +350,7 @@ country_event = {
 			}
 		}
 	}
-
+}
 #Acts#
 
 country_event = {
@@ -514,6 +544,20 @@ country_event = {
 	
 	option = {
 		name = usaHardingInnaugarationSpeech.1.a
+	}
+}
+
+news_event = {
+	id = eventusaHarding.2
+	picture = GFX_news_event_nuke
+
+	fire_only_once = yes
+
+	option = {
+		name = usaTeapotscandal.1
+			hidden_effect = {
+				stability_factor = -0.5
+			}
 	}
 }
 

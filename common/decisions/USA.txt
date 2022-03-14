@@ -87,6 +87,125 @@ acts_and_laws = {
 
 }
 
+harding_memes = {
+
+    go_fishing = {
+
+        icon = GFX_decision_icon_default
+    
+        available = {}
+    
+        fire_only_once = no
+    
+        days_re_enable = 100
+    
+        complete_effect = {
+            add_stability_factor = 0.01
+            hidden_effect = {
+                #harding loses health, health mechanic?????
+            }
+        }
+    
+        ai_will_do = {
+            factor = 10
+        }
+    
+    }
+
+    watch_movies = {
+
+        icon = GFX_decision_icon_default
+    
+        available = {}
+    
+        fire_only_once = no
+    
+        days_re_enable = 100
+    
+        complete_effect = {
+            add_stability_factor = 0.01
+            hidden_effect = {
+                #harding loses health, health mechanic?????
+            }
+        }
+    
+        ai_will_do = {
+            factor = 10
+        }
+    
+    }
+
+    go_camping = {
+
+        icon = GFX_decision_icon_default
+    
+        available = {}
+    
+        fire_only_once = no
+    
+        days_re_enable = 100
+    
+        complete_effect = {
+            add_stability_factor = 0.01
+            hidden_effect = {
+                #harding loses health, health mechanic?????
+            }
+        }
+    
+        ai_will_do = {
+            factor = 10
+        }
+    
+    }
+
+    play_poker = {
+
+        icon = GFX_decision_icon_default
+    
+        available = {}
+    
+        fire_only_once = no
+    
+        days_re_enable = 100
+    
+        complete_effect = {
+            add_stability_factor = 0.01
+            hidden_effect = {
+                #harding loses health, health mechanic?????
+            }
+        }
+    
+        ai_will_do = {
+            factor = 10
+        }
+    
+    }
+
+    talk_to_neighbors = {
+
+        icon = GFX_decision_icon_default
+    
+        available = {}
+    
+        fire_only_once = no
+    
+        days_re_enable = 100
+    
+        complete_effect = {
+            add_stability_factor = 0.01
+            hidden_effect = {
+                #harding loses health, health mechanic?????
+            }
+        }
+    
+        ai_will_do = {
+            factor = 10
+        }
+    
+    }
+
+}
+
 colonial_administration = {
 
 }
