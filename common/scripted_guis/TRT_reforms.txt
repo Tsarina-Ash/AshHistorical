@@ -6,6 +6,7 @@
 #	ReformsButtons:
 #	-Reform Buttons
 
+#ReformsBase
 scripted_gui = {
 	TRT_reforms_base = {
 		window_name = "ReformsBase"
@@ -52,6 +53,22 @@ scripted_gui = {
 			ReformsBase_Background_visible = {
 				reforms_tab_visible = yes
 			}
+		}
+	}
+}
+###Buttons
+scripted_gui = {
+	TRT_reforms_buttons = {
+		window_name = "ReformsButtons"
+		context_type = player_context
+		parent_window_token = politics_tab
+
+		visible = {
+			reforms_tab_visible = yes
+		}
+
+		effects = {
+			
 		}
 	}
 }

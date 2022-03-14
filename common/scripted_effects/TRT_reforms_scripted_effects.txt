@@ -1,0 +1,79 @@
+select_sufferage_1 = {
+
+}
+select_sufferage_2 = {
+
+}
+select_sufferage_3 = {
+
+}
+
+select_civil_rights_1 = {
+
+}
+select_civil_rights_2 = {
+
+}
+select_civil_rights_3 = {
+
+}
+
+select_lbgt_rights_1 = {
+
+}
+select_lbgt_rights_2 = {
+
+}
+select_lbgt_rights_3 = {
+
+}
+
+select_healthcare_1 = {
+
+}
+select_healthcare_2 = {
+
+}
+select_healthcare_3 = {
+
+}
+
+select_minimum_wage_1 = {
+
+}
+select_minimum_wage_2 = {
+
+}
+select_minimum_wage_3 = {
+
+}
+
+select_safety_regulations_1 = {
+
+}
+select_safety_regulations_2 = {
+
+}
+select_safety_regulations_3 = {
+
+}
+
+select_environmental_regulations_1 = {
+
+}
+select_environmental_regulations_2 = {
+
+}
+select_environmental_regulations_3 = {
+
+}
+
+select_unemployment_subsidies_1 = {
+
+}
+select_unemployment_subsidies_2 = {
+
+}
+select_unemployment_subsidies_3 = {
+
+}

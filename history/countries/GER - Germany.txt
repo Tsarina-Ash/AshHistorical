@@ -139,12 +139,6 @@ set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3
 
-#Trade
-create_import = {
-		resource = tungsten
-		factories = 1
-		exporter = SWE
-}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1919.3.5"
@@ -152,25 +146,17 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 20
-	fascism = 60
+	democratic = 60
+	fascism = 20
 	communism = 20
 }
 
-create_faction = Axis
-add_to_faction = GER
-
 
 add_ideas = {
-	sour_loser
-	general_staff
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
+	sour_loser #Keep this, but change it's effects
+	# general_staff
+	disarmed_nation
 }
-add_ideas = GER_mefo_bills_1
-
-activate_mission = GER_mefo_bills_mission
 
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer

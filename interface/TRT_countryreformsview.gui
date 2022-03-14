@@ -121,4 +121,9 @@ guiTypes = {
 			}
 		}
 	}
+
+	containerWindowType = {
+		name = "ReformsButtons"
+		position = { x = 0 y = 524 }
+	}
 }

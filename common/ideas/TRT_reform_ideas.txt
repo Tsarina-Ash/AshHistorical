@@ -1,0 +1,104 @@
+ideas = {
+	#Key:
+	#	Political/Social Reforms
+	#	-Sufferage
+	#	-Civil Rights
+	#	-LGBTQ+ Rights
+	#	-Healthcare
+	#	-
+	#	Economic Reforms
+	#	-Minimum Wage
+	#	-Safety Regulations
+	#	-Enviromental Regulations
+	#	-Unemployment Subsidies
+	#	-
+	#
+	hidden_ideas = {
+		#Political/Social Reforms
+
+		#-Sufferage
+		TRT_reforms_sufferage_1 = { #No voting
+
+		}
+		TRT_reforms_sufferage_2 = { #Male vote
+
+		}
+		TRT_reforms_sufferage_3 = { #Universal Voting
+
+		}
+
+		#-Civil Rights
+		TRT_reforms_civil_rights_1 = { #Legal Discrimination
+
+		}
+		TRT_reforms_civil_rights_2 = { #Limited Protections Against Discrimination
+
+		}
+		TRT_reforms_civil_rights_3 = { #Illegalized Discrimination
+
+		}
+
+		#-LGBTQ+ Rights
+		TRT_reforms_lgbt_rights_1 = { #No Rights
+
+		}
+		TRT_reforms_lgbt_rights_2 = { #Limited Rights
+
+		}
+		TRT_reforms_lgbt_rights_3 = { #Equal Rights
+
+		}
+
+		#-Healthcare
+		TRT_reforms_healthcare_1 = { #No Government Subsidies
+
+		}
+		TRT_reforms_healthcare_2 = { #Partial Government Subsidies
+
+		}
+		TRT_reforms_healthcare_3 = { #Universally Subsidized Healthcare
+
+		}
+		#Economic Reforms
+		#-Minimum Wage
+		TRT_reforms_minimum_wage_1 = { #No Minimum Wage
+
+		}
+		TRT_reforms_minimum_wage_2 = { #Acceptable Minimum Wage
+
+		}
+		TRT_reforms_minimum_wage_3 = { #Good Minimum Wage
+
+		}
+		#-Safety Regulations
+		TRT_reforms_safety_regulations_1 = { #No Safety Regulations
+
+		}
+		TRT_reforms_safety_regulations_2 = { #Limited Safety Regulations
+
+		}
+		TRT_reforms_safety_regulations_3 = { #Extensive Safety Regulations
+
+		}
+		#-Enviromental Regulations
+		TRT_reforms_enviromental_regulations_1 = { #No Enviromental Regulations
+
+		}
+		TRT_reforms_enviromental_regulations_2 = { #Light Enviromental Regulations
+
+		}
+		TRT_reforms_enviromental_regulations_3 = { #Harsh Rregulations and Fines
+
+		}
+		#-Unemployment Subsidies
+		TRT_reforms_unemployment_subsidies_1 = { #No Unemployment Subsidies
+
+		}
+		TRT_reforms_unemployment_subsidies_2 = { #Trinket Unemployment Subsidies
+			
+		}
+		TRT_reforms_unemployment_subsidies_3 = { #Generous Unemployment Subsidies
+
+		}
+	}
+}
