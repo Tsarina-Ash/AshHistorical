@@ -126,7 +126,7 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		custom_effect_tooltip = "*Cough* We'll Be Fine *Cough*"
+		custom_effect_tooltip = wilson_ill_presidency_tt
 		hidden_effect = {
 			country_event = {
 				id = event.event.usaWilson.1
@@ -152,7 +152,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		custom_effect_tooltip = "Prohibition In The United States"
+		custom_effect_tooltip = prohibition_tt
 	}
 }
 
@@ -198,6 +198,7 @@ focus = {
 	
 	completion_reward = {
 		unlock_decision_category_tooltip = bloated_army #demobing too fast can destroy economy and unlocks decisions to begin getting rid of massive_army idea
+		custom_effect_tooltip = demob_warning_tt
 	}
 }
 
@@ -979,7 +980,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		custom_effect_tooltip = "Wilson's Wife Will Run For Election In His Place"
+		custom_effect_tooltip = wilson_wife_president_tt
 	}
 }
 
@@ -1446,8 +1447,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
-		#unlocks_memeish_decisions; go fishing, watch a movie, etc etc etc each giving a higher chance for him to die of old age doing them
+		unlock_decision_category_tooltip = harding_memes
 	}
 }
 
@@ -1794,7 +1794,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		custom_effect_tooltip = "Gone Are The Days of Proggressivism, In Are The Days Of Normalcy. Stay Cool With Coolidge"
+		custom_effect_tooltip = coolidge_stay_cool_tt
 	}
 }
 
@@ -1814,7 +1814,9 @@ focus = {
 	
 	completion_reward = {
 		set_temp_variable = { gdp_roaring_growth_var = 0.03 } 
-		set_temp_variable = { USA_industry_misc_costs_var = 0.02 } 
+		set_temp_variable = { temp_econ_spending_amount = GDP }
+		multiply_temp_variable = { temp_econ_spending_amount = 0.04 }
+		econ_spend_money_once_effect_raw_money = yes
 	}
 }
 
@@ -1833,7 +1835,8 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		set_country_flag = can_do_small_demob
+		custom_effect_tooltip = demob_warning_tt
 	}
 }
 
@@ -2483,7 +2486,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		custom_effect_tooltip = "Business As Usual..."
+		custom_effect_tooltip = coolidge_business_as_usual_tt
 		hidden_effect = { 
 			add_to_variable = { gdp_roaring_growth_var = -0.07 } 
 		}
@@ -3474,7 +3477,9 @@ focus = {
 			set_temp_variable = { state_value_multiplier_temp = 1.1 }
 			econ_state_value_change_multiply_specified_state = yes
 		}
-		add_to_variable = { USA_industry_misc_costs_var = 0.1 }
+		set_temp_variable = { temp_econ_spending_amount = GDP }
+		multiply_temp_variable = { temp_econ_spending_amount = 0.01 }
+		econ_spend_money_once_effect_raw_money = yes
 	}
 }
 

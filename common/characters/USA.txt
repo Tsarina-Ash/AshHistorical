@@ -30,7 +30,7 @@ characters={
 	}		
 
 	USA_william_harding = {
-		name = USA_woodrow_wilson
+		name = USA_william_harding
 		portraits = {
 			civilian = {
 				large = ""
@@ -53,7 +53,7 @@ characters={
 		country_leader = {
 			ideology = Conservatism
 			traits = { }
-			expire = "193.1.1.1"
+			expire = "1945.1.1.1"
 		}
 	}
 

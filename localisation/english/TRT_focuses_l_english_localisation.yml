@@ -23,6 +23,19 @@
 economy_gdp_growth_tt: "Increases National GDP Growth by §G[?gdp_roaring_growth_var_temp]%§!"
 economy_misc_costs_tt: "Increased Industry Misc. Costs by §Y$[?gdp_industry_misc_costs_var_temp]§!"
 
+#USA TOOLTIPS#
+
+wilson_ill_presidency_tt: "A Quick Catching up on the State of the Union and the current situation."
+wilson_wife_president_tt: "Edith Wilson will run in Woodrow Wilson's place."
+
+coolidge_stay_cool_tt: "Gone are the days of progressivism, a return to normalcy is in effect."
+coolidge_business_as_usual_tt: "Business as usual..."
+
+prohibition_tt: "The Enactment Of Prohibition"
+demob_warning_tt: "Demobilizing too fast may cause the economy to crash and heighten racial tensions, take it slow. Low employment and stagnation for returning veterans may cause some unwelcome sentiments..."
+
+demobilizing will gain rewards but increase racial tensions & instability due to low amount of jobs for returning soldiers and stagnant eco
+
 #WILSON USA LOC#
 
 WILSON_USA_ill_presidency:0 "The Ill Presidency"
@@ -220,7 +233,7 @@ Harding_USA_leonidas_dyers_federal_anti_lynching_bill:0 "Advance Anti-Lynching"
 Harding_USA_leonidas_dyers_federal_anti_lynching_bill_desc:0 "Lynching, a horrible practice of hanging a fellow human being infront of crowds of people, truly inhumane and medevial, this practice is purely discriminatory and inhumane as a treatment towards a fellow human being."
 
 Harding_USA_per_centum_act_of_1921:0 "Per-Centum Act"
-Harding_USA_per_centum_act_of_1921_desc:0 ""
+Harding_USA_per_centum_act_of_1921_desc:0 "The Per-Centum Act will severely limit the amount of immigrants that flood into our country leaving us hopefully in a better position and detering the masses of war refugees and overall immigrants."
 
 Harding_USA_immigration_act_of_1924:0 "Immigration Act"
 Harding_USA_immigration_act_of_1924_desc:0 ""

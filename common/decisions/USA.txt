@@ -1,3 +1,51 @@
+new_freedom = {
+
+    wilson_join_the_league = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 500
+
+        complete_effect = {
+
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    wilson_join_the_league_asking_again = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 500
+
+        complete_effect = {
+
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+}
+
 acts_and_laws = {
 
     example_law = {
@@ -212,6 +260,28 @@ colonial_administration = {
 
 bloated_army = {
 
+    tiny_army = {
+
+        icon = GFX_decision_icon_default
+    
+        available = {}
+    
+        fire_only_once = no
+    
+        days_re_enable = 100
+    
+        cost = 50
+    
+        complete_effect = {
+            
+        }
+    
+        ai_will_do = {
+            factor = 10
+        }
+    
+    }
+
     small_army = {
 
         icon = GFX_decision_icon_default
@@ -233,7 +303,29 @@ bloated_army = {
         }
     
     }
+
+    medium_army = { 
     
+        icon = GFX_decision_icon_default
+    
+        available = {}
+    
+        fire_only_once = no
+    
+        days_re_enable = 100
+    
+        cost = 75
+    
+        complete_effect = {
+            
+        }
+    
+        ai_will_do = {
+            factor = 10
+        }
+    
+    }
+
     big_army = { 
     
         icon = GFX_decision_icon_default
@@ -285,6 +377,28 @@ bloated_army = {
         }
     }
 
+    tiny_industry = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 50
+
+        complete_effect = {
+            
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
     small_industry = {
 
         icon = GFX_decision_icon_default
@@ -296,6 +410,28 @@ bloated_army = {
         days_re_enable = 100
 
         cost = 50
+
+        complete_effect = {
+            
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    medium_industry = { 
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = no
+
+        days_re_enable = 100
+
+        cost = 75
 
         complete_effect = {
             
