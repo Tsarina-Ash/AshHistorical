@@ -29,6 +29,28 @@ USA_bloated_army_variables = {
     set_variable = { bloated_training_time_army_factor_var = 2 }
 }
 
+great_deppression_dm = {
+    icon = generic_pp_unity_bonus
+    remove_trigger = { always = no }
+
+    annual_gdp_growth_factor = gdp_growth_depression_var
+    consumer_goods_factor = consumer_goods_factor_depression_var
+    poverty_monthly_rate = poverty_monthly_growth_depression_var
+    local_resources_factor = resource_factor_depression_var
+    consumer_goods_production_factor = consumer_goods_production_depression_var
+    production_factory_max_efficiency_factor = factory_efficiency_depression_factor_var
+}
+
+great_deppression_variables = {
+    set_variable = { gdp_growth_depression_var = 0 }
+    set_variable = { consumer_goods_factor_depression_var = 0 }   
+    set_variable = { poverty_monthly_growth_depression_var = 0 }
+    set_variable = { resource_factor_depression_var = 0 }
+    set_variable = { consumer_goods_production_depression_var = 0 }
+    set_variable = { factory_efficiency_depression_factor_var = 0 }
+}
+
+
 #NINETEEN_THIRTHY#
 
 USA_new_deal_variables = {

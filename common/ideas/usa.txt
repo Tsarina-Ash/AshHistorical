@@ -2,6 +2,29 @@ ideas = {
 
 	country = {
 
+		ger_reparations = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = Economy_Military_Austerity
+			
+			rule = {
+
+			}
+			modifier = {
+				GDP_to_sphere_leader_modifier = 0.4
+			}
+		}
+
+
 		political_corruption = {
 			
 			allowed = {

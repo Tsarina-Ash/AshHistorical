@@ -828,7 +828,14 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50 #increases roaring 20's effect, worsens deppression effects though
+		custom_effect_tooltip = economy_gdp_growth_tt
+		add_to_variable = { gdp_roaring_growth_var = 0.01 }
+		hidden_effect = {
+			set_country_flag = {
+				flag = worse_deppression_one
+			value = 1
+			}	
+		}
 	}
 }
 
@@ -922,8 +929,13 @@ focus = {
 
 	available_if_capitulated = no
 	
-	completion_reward = {
-		add_political_power = 50 #unlocks advisors
+	completion_reward = { #unlocks liaze fiare advisors
+		hidden_effect = {
+			set_country_flag = {
+				flag = worse_deppression_three
+			value = 1
+			}	
+		}
 	}
 }
 
@@ -942,7 +954,14 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50 #depending on how many people are invested = more/less effect on the US
+		custom_effect_tooltip = economy_gdp_growth_tt
+		add_to_variable = { gdp_roaring_growth_var = 0.03 }
+		hidden_effect = {
+			set_country_flag = {
+				flag = worse_deppression_two
+			value = 1
+			}	
+		}
 	}
 }
 
@@ -1172,7 +1191,25 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		custom_effect_tooltip = improves_relations_with_south_america_tt
+		hidden_effect {
+			add_opinion_modifier = { target = MEX modifier = medium_increase }
+			add_opinion_modifier = { target = GUA modifier = medium_increase }
+			add_opinion_modifier = { target = NIC modifier = medium_increase }
+			add_opinion_modifier = { target = ELS modifier = medium_increase }
+			add_opinion_modifier = { target = HON modifier = medium_increase }
+			add_opinion_modifier = { target = COS modifier = medium_increase }
+			add_opinion_modifier = { target = PAN modifier = medium_increase }
+			add_opinion_modifier = { target = COL modifier = medium_increase }
+			add_opinion_modifier = { target = VEN modifier = medium_increase }
+			add_opinion_modifier = { target = PRU modifier = medium_increase }
+			add_opinion_modifier = { target = ECU modifier = medium_increase }
+			add_opinion_modifier = { target = BOL modifier = medium_increase }
+			add_opinion_modifier = { target = BRA modifier = medium_increase }	
+			add_opinion_modifier = { target = CHL modifier = medium_increase }
+			add_opinion_modifier = { target = ARG modifier = medium_increase }
+			add_opinion_modifier = { target = ECU modifier = medium_increase }			
+		}
 	}
 }
 
@@ -1191,7 +1228,25 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		custom_effect_tooltip = improves_relations_with_south_america_tt
+		hidden_effect {
+			add_opinion_modifier = { target = MEX modifier = medium_increase }
+			add_opinion_modifier = { target = GUA modifier = medium_increase }
+			add_opinion_modifier = { target = NIC modifier = medium_increase }
+			add_opinion_modifier = { target = ELS modifier = medium_increase }
+			add_opinion_modifier = { target = HON modifier = medium_increase }
+			add_opinion_modifier = { target = COS modifier = medium_increase }
+			add_opinion_modifier = { target = PAN modifier = medium_increase }
+			add_opinion_modifier = { target = COL modifier = medium_increase }
+			add_opinion_modifier = { target = VEN modifier = medium_increase }
+			add_opinion_modifier = { target = PRU modifier = medium_increase }
+			add_opinion_modifier = { target = ECU modifier = medium_increase }
+			add_opinion_modifier = { target = BOL modifier = medium_increase }
+			add_opinion_modifier = { target = BRA modifier = medium_increase }	
+			add_opinion_modifier = { target = CHL modifier = medium_increase }
+			add_opinion_modifier = { target = ARG modifier = medium_increase }
+			add_opinion_modifier = { target = ECU modifier = medium_increase }			
+		}
 	}
 }
 
@@ -1507,8 +1562,25 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		#Improves relations and stimulates GDP growth in US and South american nations + adds to debt
-		completion_reward = {
+		custom_effect_tooltip = improves_relations_with_south_america_tt
+		hidden_effect {
+			add_opinion_modifier = { target = MEX modifier = medium_increase }
+			add_opinion_modifier = { target = GUA modifier = medium_increase }
+			add_opinion_modifier = { target = NIC modifier = medium_increase }
+			add_opinion_modifier = { target = ELS modifier = medium_increase }
+			add_opinion_modifier = { target = HON modifier = medium_increase }
+			add_opinion_modifier = { target = COS modifier = medium_increase }
+			add_opinion_modifier = { target = PAN modifier = medium_increase }
+			add_opinion_modifier = { target = COL modifier = medium_increase }
+			add_opinion_modifier = { target = VEN modifier = medium_increase }
+			add_opinion_modifier = { target = PRU modifier = medium_increase }
+			add_opinion_modifier = { target = ECU modifier = medium_increase }
+			add_opinion_modifier = { target = BOL modifier = medium_increase }
+			add_opinion_modifier = { target = BRA modifier = medium_increase }	
+			add_opinion_modifier = { target = CHL modifier = medium_increase }
+			add_opinion_modifier = { target = ARG modifier = medium_increase }
+			add_opinion_modifier = { target = ECU modifier = medium_increase }
+		}
 
 			add_to_variable = { gdp_roaring_growth_var = 0.01 }
 
@@ -1609,7 +1681,6 @@ focus = {
 			}
 		}
 	}
-}
 
 focus = {
 	id = Harding_USA_tackling_disarmament
@@ -1837,6 +1908,14 @@ focus = {
 	completion_reward = {
 		set_country_flag = can_do_small_demob
 		custom_effect_tooltip = demob_warning_tt
+		custom_effect_tooltip = economy_gdp_growth_tt
+		add_to_variable = { gdp_roaring_growth_var = 0.03}
+		hidden_effect = {
+			set_country_flag = {
+				flag = worse_deppression_four
+			value = 1
+			}	
+		}
 	}
 }
 
@@ -2063,7 +2142,26 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		add_political_power = -20
+		custom_effect_tooltip = improves_relations_with_south_america_tt
+		hidden_effect {
+			add_opinion_modifier = { target = MEX modifier = medium_increase }
+			add_opinion_modifier = { target = GUA modifier = medium_increase }
+			add_opinion_modifier = { target = NIC modifier = medium_increase }
+			add_opinion_modifier = { target = ELS modifier = medium_increase }
+			add_opinion_modifier = { target = HON modifier = medium_increase }
+			add_opinion_modifier = { target = COS modifier = medium_increase }
+			add_opinion_modifier = { target = PAN modifier = medium_increase }
+			add_opinion_modifier = { target = COL modifier = medium_increase }
+			add_opinion_modifier = { target = VEN modifier = medium_increase }
+			add_opinion_modifier = { target = PRU modifier = medium_increase }
+			add_opinion_modifier = { target = ECU modifier = medium_increase }
+			add_opinion_modifier = { target = BOL modifier = medium_increase }
+			add_opinion_modifier = { target = BRA modifier = medium_increase }	
+			add_opinion_modifier = { target = CHL modifier = medium_increase }
+			add_opinion_modifier = { target = ARG modifier = medium_increase }
+			add_opinion_modifier = { target = ECU modifier = medium_increase }
+		}
 	}
 }
 
@@ -2214,7 +2312,14 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_to_variable = { gdp_roaring_growth_var = 0.03 } 
+		custom_effect_tooltip = economy_gdp_growth_tt
+		add_to_variable = { gdp_roaring_growth_var = 0.03 }
+		hidden_effect = {
+			set_country_flag = {
+				flag = worse_deppression_five
+			value = 1
+			}	
+		}
 	}
 }
 
@@ -2232,7 +2337,7 @@ focus = {
 
 	available_if_capitulated = no
 	
-	completion_reward = {
+	completion_reward = { #forces a cabinet of businessmen that cant be removed
 		add_political_power = 50
 	}
 }
@@ -2890,7 +2995,14 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		custom_effect_tooltip = economy_gdp_growth_tt
+		add_to_variable = { gdp_roaring_growth_var = 0.01 }
+		hidden_effect = {
+			set_country_flag = {
+				flag = worse_deppression_six
+			value = 1
+			}	
+		}
 	}
 }
 
@@ -3106,6 +3218,14 @@ focus = {
 	
 	completion_reward = {
 		add_political_power = 50 #allows raising of tarrifs | unlock agricultural act of 1929 and federal farm board and allows the funding of some private commisions
+		custom_effect_tooltip = economy_gdp_growth_tt
+		add_to_variable = { gdp_roaring_growth_var = 0.01 }
+		hidden_effect = {
+			set_country_flag = {
+				flag = worse_deppression_hoover_one
+			value = 1
+			}	
+		}
 	}
 }
 
@@ -3164,6 +3284,14 @@ focus = {
 	
 	completion_reward = {
 		add_political_power = 50 #allows raising of tarrifs | unlock agricultural act of 1929 and federal farm board and allows the funding of some private commisions
+		custom_effect_tooltip = economy_gdp_growth_tt
+		add_to_variable = { gdp_roaring_growth_var = 0.01 }
+		hidden_effect = {
+			set_country_flag = {
+				flag = worse_deppression_hoover_two
+			value = 1
+			}	
+		}
 	}
 }
 

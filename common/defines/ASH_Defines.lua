@@ -28,15 +28,8 @@ NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.06 --AA very slightly buffed
 NDefines.NNavy.BASE_CARRIER_SORTIE_EFFICIENCY = 0.55 --Carrier Planes Fly "Better"
 NDefines.NNavy.CARRIER_STACK_PENALTY = 5 --Encourages Expensive Carrier Stacks + Light Cruisers
 NDefines.NNavy.ANTI_AIR_TARGETING = 0.85 --Ships Hit Planes less often
--- NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN_MIN = 30, --Minimum cooldown time for spotting
--- NDefines.NNavy.CONVOY_SPOTTING_COOLDOWN_MAX = 160, --Maximum cooldown time for spotting
 NDefines.NNavy.OUT_OF_FUEL_SPEED_FACTOR = -0.8 --Slower navy
 NDefines.NNavy.OUT_OF_FUEL_ATTACK_FACTOR = -0.4 --Navy isnt completely dead when out of fuel
--- NDefines.NNavy.AGGRESSION_HEAVY_GUN_EFFICIENCY_ON_LIGHT_SHIPS = 0.23 --Heavy Guns bad at hitting light ships
--- NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_LIGHT_SHIPS = 0.15 --Torps better at hitting small ships
--- NDefines.NNavy.AGGRESSION_LIGHT_GUN_EFFICIENCY_ON_HEAVY_SHIPS = 0.08, --Light guns arent as good against big ships
--- NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_HEAVY_SHIPS = 0.7 --Sitting Ducks
--- NDefines.NNavy.BASE_SPOTTING = 1.1 --Slightly better spotting
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
     1.5,	-- big guns
     5.0,	-- torpedos

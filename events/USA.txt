@@ -433,6 +433,53 @@ news_event = {
 	}
 }
 
+#STOCK MARKET CRASHES#
+
+country_event = {
+	id = eventusaStockMarketCrashes.1
+        title = usaStockMarketCrashes.1.t
+        desc = usaStockMarketCrashes.1.d
+		picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = greatDeppresionStockCrash.1.a
+
+		tag = USA {
+			hidden_effect = {
+				has_country_flag = worse_deppression_one {
+					add_to_variable = { gdp_growth_depression_var = -0.04 }
+				}
+				has_country_flag = worse_deppression_two {
+					add_to_variable = { gdp_growth_depression_var = -0.04 }
+				}
+				has_country_flag = worse_deppression_three {
+					add_to_variable = { gdp_growth_depression_var = -0.04 }
+				}
+				has_country_flag = worse_deppression_four {
+					add_to_variable = { gdp_growth_depression_var = -0.04 }
+				}
+				has_country_flag = worse_deppression_five {
+					add_to_variable = { gdp_growth_depression_var = -0.04 }
+				}
+				has_country_flag = worse_deppression_six {
+					add_to_variable = { gdp_growth_depression_var = -0.04 }
+				}
+				has_country_flag = worse_deppression_hoover_one {
+					add_to_variable = { gdp_growth_depression_var = -0.04 poverty_monthly_growth_depression_var = 0.01 }
+				}
+				has_country_flag = worse_deppression_hoover_two {
+					add_to_variable = { gdp_growth_depression_var = -0.04 poverty_monthly_growth_depression_var = 0.01 }
+				}				
+			}
+		}
+
+	}
+}
+
 #WILSON#
 
 country_event = {

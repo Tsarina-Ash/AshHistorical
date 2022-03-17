@@ -108,9 +108,7 @@ acts_and_laws = {
 
         available = {}
 
-        fire_only_once = no
-
-        days_re_enable = 100
+        fire_only_once = yes
 
         visible = {
             OR = {
@@ -119,7 +117,38 @@ acts_and_laws = {
             }
         }
 
-        cost = 200
+        cost = 50
+
+        complete_effect = {
+            custom_effect_tooltip = economy_gdp_growth_tt
+            add_to_variable = { gdp_roaring_growth_var = 0.01 }
+            hidden_effect = {
+                usaGreatDeppression.1
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }
+
+    the_1929_agricultural_act = { 
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = yes
+
+        visible = {
+            OR = {
+            has_completed_focus = EARLY_HOOVER_USA_the_economy
+            has_completed_focus = HOOVER_USA_the_economy
+            }
+        }
+
+        cost = 50
 
         complete_effect = {
             
@@ -131,7 +160,32 @@ acts_and_laws = {
 
     }
 
-#allows raising of tarrifs | unlock agricultural act of 1929 and federal farm board and allows the funding of some private commisions
+    federal_farm_board_act = { 
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = yes
+
+        visible = {
+            OR = {
+            has_completed_focus = EARLY_HOOVER_USA_the_economy
+            has_completed_focus = HOOVER_USA_the_economy
+            }
+        }
+
+        cost = 50
+
+        complete_effect = {
+           
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }    
 
 }
 

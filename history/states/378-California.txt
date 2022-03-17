@@ -36,7 +36,10 @@ state={
 		victory_points = {
 			9713 1 
 		}
+	}
 
+	gateway_to_america = { 
+		recruitable_population_factor = -0.3
 	}
 
 	provinces={
