@@ -272,7 +272,7 @@ focus = {
 	available_if_capitulated = no
 	
 	available = {
-		never
+		always = no
 	}
 
 	completion_reward = {
@@ -290,7 +290,7 @@ focus = {
 	y = 2
 	
 	available = {
-		never
+		always = no
 	}
 
 	prerequisite = { focus = WILSON_USA_force_joining }
@@ -320,7 +320,7 @@ focus = {
 	available_if_capitulated = no
 	
 	available = {
-		never
+		always = no
 	}
 
 	completion_reward = {
@@ -341,7 +341,7 @@ focus = {
 	relative_position_id = WILSON_USA_force_joining
 
 	available = { 
-		never 
+		always = no 
 	}
 
 	available_if_capitulated = no
@@ -390,7 +390,7 @@ focus = {
 	relative_position_id = WILSON_USA_expand_agency_budget
 
 	available = {
-		never
+		always = no
 	}
 
 	available_if_capitulated = no
@@ -416,7 +416,7 @@ focus = {
 	relative_position_id = WILSON_USA_escalate_palmer_raids
 
 	available = {
-		never
+		always = no
 	}
 
 	available_if_capitulated = no
@@ -442,7 +442,7 @@ focus = {
 	relative_position_id = WILSON_USA_expand_agency_budget
 
 	available = {
-		never
+		always = no
 	}
 
 	available_if_capitulated = no
@@ -525,7 +525,7 @@ focus = {
 	mutually_exclusive = { focus = WILSON_USA_compromise_with_conservatives }
 
 	available = {
-		never
+		always = no
 	}
 
 	available_if_capitulated = no
@@ -550,7 +550,7 @@ focus = {
 	mutually_exclusive = { focus = WILSON_USA_threathen_senators }
 
 	available = {
-		never
+		always = no
 	}
 
 	available_if_capitulated = no
@@ -1079,7 +1079,7 @@ focus = {
 	relative_position_id = WILSON_USA_ill_presidency
 
 	available = {
-		never
+		always = no
 	}
 	
 	available_if_capitulated = no
@@ -1144,7 +1144,7 @@ focus = { #MIGHT TAKE THIS OUT :/
 	relative_position_id = EXTRA_WILSON_USA_foreign_policy
 
 	available = {
-		never
+		always = no
 	}
 
 	available_if_capitulated = no
@@ -1588,7 +1588,7 @@ focus = {
 	x = -2
 	y = 1
 	
-	available = { never }
+	available = { always = no }
 
 	prerequisite = { focus = Harding_USA_return_to_normalcy }
 	relative_position_id = Harding_USA_return_to_normalcy
