@@ -29,15 +29,22 @@ economy_misc_costs_tt: "Increased Industry Misc. Costs by §Y$[?gdp_industry_mis
 
 #  HARLET SMOOT TARIFF   economy_gdp_growth_tt: "Will improve competition with our companies and should rescue the agricultural industry"
 
+dont_do_this_focus_tt: "Bringing the idea of civil rights to the table may split the party and endanger national security... Proceed with caution..."
+
 improves_relations_with_south_america_tt: "Improves relations with all South-American nations"
 
 wilson_ill_presidency_tt: "A Quick Catching up on the State of the Union and the current situation."
+
 wilson_wife_president_tt: "Edith Wilson will run in Woodrow Wilson's place."
 
+ending_palmer_raids_tt: "Ending the palmer raids will prompt stability in urban settings."
+
+blaming_people_bad_tt: "Playing the blame game can be dangerous... Be cautious or it may backfire..."
+
 coolidge_stay_cool_tt: "Gone are the days of progressivism, a return to normalcy is in effect."
+
 coolidge_business_as_usual_tt: "Business as usual..."
 
-prohibition_tt: "The Enactment Of Prohibition"
 demob_warning_tt: "Demobilizing too fast may cause the economy to crash and heighten racial tensions, take it slow. Low employment and stagnation for returning veterans may cause some unwelcome sentiments..."
 
 demobilizing will gain rewards but increase racial tensions & instability due to low amount of jobs for returning soldiers and stagnant eco
@@ -46,12 +53,6 @@ demobilizing will gain rewards but increase racial tensions & instability due to
 
 WILSON_USA_ill_presidency:0 "The Ill Presidency"
 WILSON_USA_ill_presidency_desc:0 "Wilson is ill and can barely function his duties as a president anymore, so his wife has effectively taken over with Wilson acting as her messanger. One could say this is a sick presidency."
-
-WILSON_USA_ennact_prohibition:0 "Enact Prohibition"
-WILSON_USA_ennact_prohibition_desc:0 "Alcohol is ravaging the United States and one way to better society for all would be to remove this vice, finalizing this would only propel our ratings with Conservative Christians further."
-
-WILSON_USA_FBI_prohibition_gangsters:0 "Hunt Prohibition Gangsters"
-WILSON_USA_FBI_prohibition_gangsters_desc:0 "Unfortunately there are those who seek to corrupt and destroy our very way of life, those who break the law and hurt society for their own financial gain, fortunately we have enough resources from our demoblizition to divert some funding here and there to combat these 'Gangsters'."
 
 WILSON_USA_begin_demobilization:0 "Begin Demolization"
 WILSON_USA_begin_demobilization_desc:0 "The economy heavily relies on the military at the momment unfortunately, however it is taking a toll not just on our ratings but on our reserves and economy as a whole. Begining a slow process of demobilizaiton won't be as popular as fully demobilizng fast but it will ease the chance for a reccesion to occur without mass government spendings."

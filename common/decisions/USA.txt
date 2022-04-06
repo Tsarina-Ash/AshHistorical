@@ -74,6 +74,26 @@ acts_and_laws = {
 
     }
 
+    repeal_prohibition = {
+
+        icon = GFX_decision_icon_default
+
+        available = {}
+
+        fire_only_once = yes
+
+        cost = 500
+
+        complete_effect = {
+            #begins congress game
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+    }    
+
     Tydings_McDuffie_Act = {
 
         icon = GFX_decision_icon_default

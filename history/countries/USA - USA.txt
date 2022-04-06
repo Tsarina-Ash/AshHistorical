@@ -190,6 +190,7 @@ add_ideas = {
 	service_by_requirement
 	free_trade
 
+	moral_diplomacy
 }
 
 

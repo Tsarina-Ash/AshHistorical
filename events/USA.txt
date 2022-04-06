@@ -325,6 +325,69 @@ news_event = {
 	}
 }
 
+country_event = {
+	id = usaRailroadedEvents.3
+	picture = GFX_news_event_nuke
+
+	mean_time_to_happen = {
+		days = 506 
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = usaSaccoAndVanzetticase.1
+		complete_national_focus = WILSON_USA_end_palmer_raids
+		hidden_effect = {
+			add_stability = 0.03
+			set_temp_variable = { gdp_industry_misc_costs_var_temp = -0.01 }
+		}
+	}
+
+	option = {
+		name = usaSaccoAndVanzetticase.2
+		complete_national_focus = WILSON_USA_escalate_palmer_raids
+		hidden_effect = {
+			country_event = {
+				id = event.usaRailroadedEvents.4
+			}
+
+			#make an anti-communist variable/red scare
+
+			set_temp_variable = { gdp_industry_misc_costs_var_temp = 0.01 }
+		}
+	}
+}
+
+country_event = {
+	id = usaRailroadedEvents.4
+	picture = GFX_news_event_nuke
+
+	mean_time_to_happen = {
+		days = 506 
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #leave unions alone
+		name = usaBlameUnions.1
+	}
+
+	option = {
+		name = usaBlameUnions.2
+		complete_national_focus = WILSON_USA_blame_unions
+		#reduce workers protections
+		hidden_effect = {
+			#add to anti-communist variable/red scare
+		}
+	}
+
+}
+
 #Side Missions/Fun Stuff#
 
 country_event = {
@@ -372,7 +435,6 @@ country_event = {
 			}
 			hidden_effect = {
 				add_ideas = prohibition_happy
-				complete_national_focus = WILSON_USA_ennact_prohibition
 			}
 		}
 	}
@@ -509,7 +571,18 @@ country_event = {
 	
 	option = {
 		name = usaWilsonRights.1.a
+		complete_national_focus = WILSON_USA_threathen_senators
+		#advances minority rights slightly
+		#splits the party and weakens chance for wilson & party to win southern victory
 	}
+
+	option = {
+		name = usaWilsonRights.2.a
+		complete_national_focus = WILSON_USA_compromise_with_conservatives
+		#puts off civil rights for a while
+		#splits northern voters and lose northern/western votes for wilson & party.
+	}
+
 }
 
 
@@ -541,6 +614,98 @@ country_event = {
 	option = {
 		name = usaWilsonInnaugSpeech.1.a
 	}
+}
+
+country_event = {
+	id = eventusaWilson.5
+        title = usaWilson.5.t
+        desc = usaWilson.5.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaWilsonleague.1.a
+		complete_national_focus = WILSON_USA_force_joining
+		hidden_effect = {
+			add_ideas = joining_league_forcefully
+			set_country_flag = force_joining
+			add_stability = -0.03
+			country_event = {
+				id = event.usaWilson.6
+			}
+		}
+	}
+	option = {
+		name = usaWilsonleague.2.a
+		complete_national_focus = WILSON_USA_compromise_with_reps
+		hidden_effect = {
+			add_ideas = joining_league
+			set_country_flag = attempt_compromise
+			country_event = {
+				id = event.usaWilson.7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eventusaWilson.6
+        title = usaWilson.6.t
+        desc = usaWilson.6.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaWilsonblamecommunists.1.a
+		complete_national_focus = WILSON_USA_blame_isolationists
+		hidden_effect = {
+			add_stability = -0.03
+			drift_defence_factor = 0.05
+			fascism_acceptance = 10
+			communism_acceptance = -20
+		}
+	}
+
+	option = {
+		name = usaWilsonblamecommunists.2.a
+		hidden_effect = {
+		}
+	}
+
+}
+
+country_event = { #choosing foreign diplomat
+	id = eventusaWilson.7
+        title = usaWilson.7.t
+        desc = usaWilson.7.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {#isolationalist
+		name = usaWilsonForeignDiplomacy.1.a
+	}
+
+	option = {#interventionalist
+		name = usaWilsonForeignDiplomacy.2.a
+	}
+
+	option = {#pacifist
+		name = usaWilsonForeignDiplomacy.1.a
+	}
+
+	option = {#reactionary
+		name = usaWilsonForeignDiplomacy.2.a
+	}
+
 }
 
 #1924 HOOVER#

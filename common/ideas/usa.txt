@@ -24,8 +24,30 @@ ideas = {
 			}
 		}
 
+		moral_diplomacy = {
+			
+			allowed = {
+				always = no
+			}
 
-		political_corruption = {
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = Economy_Military_Austerity
+			
+			rule = {
+
+			}
+			modifier = {
+				stability_factor = 0.05
+				ai_focus_peaceful_factor = 0.1
+			}
+		}
+
+		bad_economy = {
 			
 			allowed = {
 				always = no
@@ -577,6 +599,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = USA
+				NOT = {
+					has_country_flag = major_anti_trust_law
+				}
 			}
 			
 
@@ -622,6 +647,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = USA
+				NOT = {
+					has_country_flag = major_anti_trust_law
+				}
 			}
 			
 
@@ -642,6 +670,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = USA
+				NOT = {
+					has_country_flag = major_anti_trust_law
+				}
 			}
 			
 
@@ -660,12 +691,14 @@ ideas = {
 			picture = usa_general_motors
 			allowed = {
 				original_tag = USA
-			}
-			available = {
-				has_completed_focus = USA_wartime_industry
+				NOT = {
+					has_country_flag = major_anti_trust_law
+				}
 			}
 			
-
+			visible = { #an event later will make it visible
+				has_completed_focus = EXTRA_WILSON_USA_new_anti_trust_act
+			}
 			
 			research_bonus = {
 				industry = 0.15
