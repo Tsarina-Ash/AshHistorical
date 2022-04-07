@@ -21,4 +21,9 @@ spriteTypes = {
 		name = "GFX_ReformsBase_Background"
 		textureFile = "gfx/interface/reforms_gui/reforms_window_bg.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ReformsButtons_Button"
+		textureFile = "gfx/interface/reforms_gui/reforms_button.dds"
+	}
 }

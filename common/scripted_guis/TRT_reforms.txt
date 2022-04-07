@@ -68,7 +68,85 @@ scripted_gui = {
 		}
 
 		effects = {
-			
+			TRT_reforms_button_sufferage_1_click = {
+				select_sufferage_1 = yes
+			}
+			TRT_reforms_button_sufferage_2_click = {
+				select_sufferage_2 = yes
+			}
+			TRT_reforms_button_sufferage_3_click = {
+				select_sufferage_3 = yes
+			}
+
+			TRT_reforms_button_civil_rights_1_click = {
+				select_civil_rights_1 = yes
+			}
+			TRT_reforms_button_civil_rights_2_click = {
+				select_civil_rights_2 = yes
+			}
+			TRT_reforms_button_civil_rights_3_click = {
+				select_civil_rights_3 = yes
+			}
+
+			TRT_reforms_button_lgbt_rights_1_click = {
+				select_lgbt_rights_1 = yes
+			}
+			TRT_reforms_button_lgbt_rights_2_click = {
+				select_lgbt_rights_2 = yes
+			}
+			TRT_reforms_button_lgbt_rights_2_click = {
+				select_lgbt_rights_3 = yes
+			}
+
+			TRT_reforms_button_healthcare_1_click = {
+				select_healthcare_1 = yes
+			}
+			TRT_reforms_button_healthcare_2_click = {
+				select_healthcare_2 = yes
+			}
+			TRT_reforms_button_healthcare_3_click = {
+				select_healthcare_3 = yes
+			}
+
+			TRT_reforms_button_minimum_wage_1_click = {
+				select_minimum_wage_1 = yes
+			}
+			TRT_reforms_button_minimum_wage_2_click = {
+				select_minimum_wage_2 = yes
+			}
+			TRT_reforms_button_minimum_wage_3_click = {
+				select_minimum_wage_3 = yes
+			}
+
+			TRT_reforms_button_safety_regulations_1_click = {
+				select_safety_regulations_1 = yes
+			}
+			TRT_reforms_button_safety_regulations_2_click = {
+				select_safety_regulations_2 = yes
+			}
+			TRT_reforms_button_safety_regulations_3_click = {
+				select_safety_regulations_3 = yes
+			}
+
+			TRT_reforms_button_enviromental_regulations_1_click = {
+				select_environmental_regulations_1 = yes
+			}
+			TRT_reforms_button_enviromental_regulations_2_click = {
+				select_environmental_regulations_2 = yes
+			}
+			TRT_reforms_button_enviromental_regulations_3_click = {
+				select_environmental_regulations_3 = yes
+			}
+
+			TRT_reforms_button_unemployment_subsidies_1_click = {
+				select_unemployment_subsidies_1 = yes
+			}
+			TRT_reforms_button_unemployment_subsidies_2_click = {
+				select_unemployment_subsidies_2 = yes
+			}
+			TRT_reforms_button_unemployment_subsidies_3_click = {
+				select_unemployment_subsidies_3 = yes
+			}
 		}
 	}
 }

@@ -1,79 +1,127 @@
 select_sufferage_1 = {
-
+	remove_ideas = TRT_reforms_sufferage_2
+	remove_ideas = TRT_reforms_sufferage_3
+	add_ideas = TRT_reforms_sufferage_1
 }
 select_sufferage_2 = {
-
+	add_ideas = TRT_reforms_sufferage_2
+	remove_ideas = TRT_reforms_sufferage_3
+	remove_ideas = TRT_reforms_sufferage_1
 }
 select_sufferage_3 = {
-
+	remove_ideas = TRT_reforms_sufferage_2
+	add_ideas = TRT_reforms_sufferage_3
+	remove_ideas = TRT_reforms_sufferage_1
 }
 
 select_civil_rights_1 = {
-
+	add_ideas = TRT_reforms_civil_rights_1
+	remove_ideas = TRT_reforms_civil_rights_2
+	remove_ideas = TRT_reforms_civil_rights_3
 }
 select_civil_rights_2 = {
-
+	remove_ideas = TRT_reforms_civil_rights_1
+	add_ideas = TRT_reforms_civil_rights_2
+	remove_ideas = TRT_reforms_civil_rights_3
 }
 select_civil_rights_3 = {
-
+	remove_ideas = TRT_reforms_civil_rights_1
+	remove_ideas = TRT_reforms_civil_rights_2
+	add_ideas = TRT_reforms_civil_rights_3
 }
 
-select_lbgt_rights_1 = {
-
+select_lgbt_rights_1 = {
+	add_ideas = TRT_reforms_lgbt_rights_1
+	remove_ideas = TRT_reforms_lgbt_rights_2
+	remove_ideas = TRT_reforms_lgbt_rights_3
 }
-select_lbgt_rights_2 = {
-
+select_lgbt_rights_2 = {
+	remove_ideas = TRT_reforms_lgbt_rights_1
+	add_ideas = TRT_reforms_lgbt_rights_2
+	remove_ideas = TRT_reforms_lgbt_rights_3
 }
-select_lbgt_rights_3 = {
-
-}
+select_lgbt_rights_3 = {
+	remove_ideas = TRT_reforms_lgbt_rights_1
+	remove_ideas = TRT_reforms_lgbt_rights_2
+	add_ideas = TRT_reforms_lgbt_rights_3
+}	
 
 select_healthcare_1 = {
-
+	add_ideas = TRT_reforms_healthcare_1
+	remove_ideas = TRT_reforms_healthcare_2
+	remove_ideas = TRT_reforms_healthcare_3
 }
 select_healthcare_2 = {
-
+	remove_ideas = TRT_reforms_healthcare_1
+	add_ideas = TRT_reforms_healthcare_2
+	remove_ideas = TRT_reforms_healthcare_3
 }
 select_healthcare_3 = {
-
+	remove_ideas = TRT_reforms_healthcare_1
+	remove_ideas = TRT_reforms_healthcare_2
+	add_ideas = TRT_reforms_healthcare_3
 }
 
 select_minimum_wage_1 = {
-
+	add_ideas = TRT_reforms_minimum_wage_1
+	remove_ideas = TRT_reforms_minimum_wage_2
+	remove_ideas = TRT_reforms_minimum_wage_3
 }
 select_minimum_wage_2 = {
-
+	remove_ideas = TRT_reforms_minimum_wage_1
+	add_ideas = TRT_reforms_minimum_wage_2
+	remove_ideas = TRT_reforms_minimum_wage_3
 }
 select_minimum_wage_3 = {
-
+	remove_ideas = TRT_reforms_minimum_wage_1
+	remove_ideas = TRT_reforms_minimum_wage_2
+	add_ideas = TRT_reforms_minimum_wage_3
 }
 
 select_safety_regulations_1 = {
-
+	add_ideas = TRT_reforms_safety_regulations_1
+	remove_ideas = TRT_reforms_safety_regulations_2
+	remove_ideas = TRT_reforms_safety_regulations_3
 }
 select_safety_regulations_2 = {
-
+	remove_ideas = TRT_reforms_safety_regulations_1
+	add_ideas = TRT_reforms_safety_regulations_2
+	remove_ideas = TRT_reforms_safety_regulations_3
 }
 select_safety_regulations_3 = {
-
+	remove_ideas = TRT_reforms_safety_regulations_1
+	remove_ideas = TRT_reforms_safety_regulations_2
+	add_ideas = TRT_reforms_safety_regulations_3
 }
 
 select_environmental_regulations_1 = {
-
+	add_ideas = TRT_reforms_enviromental_regulations_1
+	remove_ideas = TRT_reforms_enviromental_regulations_2
+	remove_ideas = TRT_reforms_enviromental_regulations_3
 }
 select_environmental_regulations_2 = {
-
+	remove_ideas = TRT_reforms_enviromental_regulations_1
+	add_ideas = TRT_reforms_enviromental_regulations_2
+	remove_ideas = TRT_reforms_enviromental_regulations_3
 }
 select_environmental_regulations_3 = {
-
+	remove_ideas = TRT_reforms_enviromental_regulations_1
+	remove_ideas = TRT_reforms_enviromental_regulations_2
+	add_ideas = TRT_reforms_enviromental_regulations_3
 }
 
 select_unemployment_subsidies_1 = {
-
+	add_ideas = TRT_reforms_unemployment_subsidies_1
+	remove_ideas = TRT_reforms_unemployment_subsidies_2
+	remove_ideas = TRT_reforms_unemployment_subsidies_3
 }
 select_unemployment_subsidies_2 = {
-
+	remove_ideas = TRT_reforms_unemployment_subsidies_1
+	add_ideas = TRT_reforms_unemployment_subsidies_2
+	remove_ideas = TRT_reforms_unemployment_subsidies_3
 }
 select_unemployment_subsidies_3 = {
-
+	remove_ideas = TRT_reforms_unemployment_subsidies_1
+	remove_ideas = TRT_reforms_unemployment_subsidies_2
+	add_ideas = TRT_reforms_unemployment_subsidies_3
 }
