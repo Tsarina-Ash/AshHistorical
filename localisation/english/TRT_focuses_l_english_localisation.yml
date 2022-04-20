@@ -25,6 +25,9 @@ gateway_to_america: "Gateway To America"
 economy_gdp_growth_tt: "Increases National GDP Growth by §G[?gdp_roaring_growth_var_temp]%§!"
 economy_misc_costs_tt: "Increased Industry Misc. Costs by §Y$[?gdp_industry_misc_costs_var_temp]§!"
 
+
+fdr_first_new_deal_tt: "Political momentumn for any programs wanting to be passed wil be high, use it wisely."
+
 #USA TOOLTIPS#
 
 #  HARLET SMOOT TARIFF   economy_gdp_growth_tt: "Will improve competition with our companies and should rescue the agricultural industry"
@@ -185,12 +188,6 @@ EXTRA_WILSON_USA_moral_diplomacy_two_point_o_desc:0 "Well moral diplomacy wasn't
 
 EXTRA_WILSON_USA_the_dominican_failure:0 "Sugar And Spice"
 EXTRA_WILSON_USA_the_dominican_failure_desc:0 "Most of Us Just want to forget the fact that we occupy the DR and Nicaragua at the momment as they're our current 'failures' we could rectify the situation by repairing these nations but this would be a costly endevor however could provide a massive business opportunity and a strong ally in the future and within our personal backyard region."
-
-EXTRA_WILSON_USA_the_league:0 "Push The League"
-EXTRA_WILSON_USA_the_league_desc:0 "Pushing the league should be our top priority at all costs, it is our legacy as a country, the solution to world peace, should it fail the world will be doomed to collapse, go to war, get strife with famine... No-one knows..."
-
-EXTRA_WILSON_USA_ask_congress_for_approval:0 "Ask Congress Again"
-EXTRA_WILSON_USA_ask_congress_for_approval_desc:0 "'I am once again asking for your legislative support' an adress to the union may be the only way to convince voters that it is their only choice... Although we sound like a madman at this point..."
 
 EXTRA_WILSON_USA_question_of_the_league:0 "Propose Loosening The Treaty"
 EXTRA_WILSON_USA_question_of_the_league_desc:0 "'Perhaps I was too harsh on you' is the sentiment many Americans on the East coast and the Mid-West have towards Germany and their economy says it all, theyre currently struggling proposing a loosening of the treaty's stipulations could improve ht ecurrent situation."

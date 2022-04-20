@@ -492,8 +492,8 @@ focus = {
 
 	cost = 1
 
-	x = 5
-	y = 1
+	x = 4
+	y = 2
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
 	relative_position_id = EXTRA_WILSON_USA_foreign_policy
@@ -1062,7 +1062,12 @@ focus = {
 	
 	completion_reward = {
 		#increases party unity
-		#reduces support for civil rights laws later
+		hidden_effect = {
+			set_country_flag = {
+				flag = reduced_civil_rights_support_1
+			value = 1
+			}	
+		}
 	}
 }
 
@@ -1106,7 +1111,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		#I NEED IDEAS
+		#I NEED IDEAS ON WHAT TO DO WITH THIS FOCUS
 	}
 }
 
@@ -1128,48 +1133,6 @@ focus = {
 		country_event = {
 			id = event.usaSouthAmerica.1
 		}
-	}
-}
-
-focus = { #MIGHT TAKE THIS OUT :/
-	id = EXTRA_WILSON_USA_the_league
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 3
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
-	relative_position_id = EXTRA_WILSON_USA_foreign_policy
-
-	available = {
-		always = no
-	}
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_ask_congress_for_approval
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_the_league }
-	relative_position_id = EXTRA_WILSON_USA_the_league
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #event will always fail#
 	}
 }
 
@@ -4001,7 +3964,9 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		country_event = {
+			id = event.usaFDR.2
+		}
 	}
 }
 
@@ -4020,7 +3985,9 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		country_event = {
+			id = event.usaFDR.3
+		}
 	}
 }
 
@@ -4028,7 +3995,7 @@ focus = {
 	id = FDR_USA_first_new_deal
 	icon = GFX_focus_USA_placeholder
 
-	cost = 1
+	cost = 6
 
 	x = 0
 	y = 1
@@ -4036,10 +4003,16 @@ focus = {
 	prerequisite = { focus = FDR_USA_broadcast_fireside_chat }
 	relative_position_id = FDR_USA_broadcast_fireside_chat
 	
+	cancelable = no
+
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+
+		add_political_power = 100
+
+		custom_effect_tooltip = fdr_first_new_deal_tt
+
 	}
 }
 
@@ -4052,7 +4025,7 @@ focus = {
 
 	cost = 4
 
-	x = -13
+	x = -26
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_first_new_deal }
@@ -4243,7 +4216,7 @@ focus = {
 
 	cost = 4
 
-	x = 0
+	x = -13
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_first_new_deal }
@@ -4939,7 +4912,7 @@ focus = {
 
 	cost = 4
 
-	x = 12
+	x = 0
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_first_new_deal }
@@ -5188,10 +5161,10 @@ focus = {
 
 	cost = 4
 
-	x = 0
-	y = 10
+	x = 18
+	y = 1
 	
-	#prerequisite = { focus = FDR_USA_first_new_deal }
+	prerequisite = { focus = FDR_USA_first_new_deal }
 	relative_position_id = FDR_USA_first_new_deal
 
 	available_if_capitulated = no
@@ -5217,6 +5190,330 @@ focus = {
 	
 	completion_reward = {
 		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_second_agricultural_adjustment_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_industrial_revitalation }
+	relative_position_id = FDR_USA_industrial_revitalation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_union_recognition_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_industrial_revitalation }
+	relative_position_id = FDR_USA_industrial_revitalation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_robinson_patman_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_industrial_revitalation }
+	relative_position_id = FDR_USA_industrial_revitalation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#https://www.britannica.com/topic/Robinson-Patman-Act
+	}
+}
+
+focus = {
+	id = FDR_USA_walsh_heatly_public_contracts_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_industrial_revitalation }
+	relative_position_id = FDR_USA_industrial_revitalation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#https://www.dol.gov/agencies/whd/government-contracts/pca#:~:text=The%20Walsh%2DHealey%20Public%20Contracts,or%20the%20District%20of%20Columbia.
+	}
+}
+
+focus = {
+	id = FDR_USA_economic_policy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_industrial_revitalation }
+	relative_position_id = FDR_USA_industrial_revitalation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaFDR.4
+		}
+	}
+}
+
+focus = {
+	id = FDR_USA_pursue_kenyesian_economics
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_economic_policy }
+	relative_position_id = FDR_USA_economic_policy
+
+	available_if_capitulated = no
+	
+	mutually_exclusive = {
+		focus = FDR_USA_pursue_a_more_balanced_budget
+	}
+
+	available = {
+		always = no
+	}
+
+	completion_reward = {
+		add_political_power = 50 #money printer go brr (eco becomes more reliant on gov)
+	}
+}
+
+focus = {
+	id = FDR_USA_pursue_a_more_balanced_budget
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	mutually_exclusive = {
+		focus = FDR_USA_pursue_kenyesian_economics
+	}
+
+	prerequisite = { focus = FDR_USA_economic_policy }
+	relative_position_id = FDR_USA_economic_policy
+
+	available_if_capitulated = no
+	
+	available = {
+		always = no
+	}
+
+	completion_reward = {
+		add_political_power = 50 #sets a cap on how much can be spent, can still do massive projects but will be more frowned upon
+	}
+}
+
+focus = {
+	id = FDR_USA_ask_businesses_what_they_want
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = FDR_USA_pursue_a_more_balanced_budget focus = FDR_USA_pursue_kenyesian_economics }
+	relative_position_id = FDR_USA_pursue_kenyesian_economics
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_propose_more_infrastructure_acts
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+
+	prerequisite = { focus = FDR_USA_ask_businesses_what_they_want } 
+	prerequisite = { focus = FDR_USA_evaluate_infrastructure_sites }
+	relative_position_id = FDR_USA_ask_businesses_what_they_want
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50 #unlocks more infra acts to build more
+	}
+}
+
+focus = {
+	id = FDR_USA_american_recovery_plan
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = FDR_USA_propose_more_infrastructure_acts }
+	relative_position_id = FDR_USA_propose_more_infrastructure_acts
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50 #unlocks more infra acts to build more
+	}
+}
+
+focus = {
+	id = FDR_USA_economic_reshuffling
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+
+	prerequisite = { focus = FDR_USA_pursue_a_more_balanced_budget focus = FDR_USA_pursue_kenyesian_economics }
+	relative_position_id = FDR_USA_pursue_kenyesian_economics
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_heighten_military_spending
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+
+	prerequisite = { focus = FDR_USA_economic_reshuffling }
+	relative_position_id = FDR_USA_economic_reshuffling
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_infrastructure_developments
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+
+	prerequisite = { focus = FDR_USA_pursue_a_more_balanced_budget focus = FDR_USA_pursue_kenyesian_economics }
+	relative_position_id = FDR_USA_pursue_kenyesian_economics
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_evaluate_infrastructure_sites
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_infrastructure_developments }
+	relative_position_id = FDR_USA_infrastructure_developments
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#gets decisions to build railways and infrastructure (VERY EXPENSIVE yet each one helps improve relations with indsutries and population + reduces some effects in some states)
+	}
+}
+
+focus = {
+	id = FDR_USA_expand_mining_contracts
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_evaluate_infrastructure_sites }
+	relative_position_id = FDR_USA_evaluate_infrastructure_sites
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#sells land to mining companies (worse environment, helps get more jobs + more resources + better relations with everyone ?)
+	}
+}
+
+focus = {
+	id = FDR_USA_propose_massive_infrastructure_projects
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 3
+	
+	prerequisite = { focus = FDR_USA_evaluate_infrastructure_sites }
+	prerequisite = { focus = FDR_USA_propose_more_infrastructure_acts }
+	relative_position_id = FDR_USA_evaluate_infrastructure_sites
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		#paving way to build what we know as the highway system
 	}
 }
 
@@ -5258,6 +5555,804 @@ focus = {
 	}
 }
 	
+focus = {
+	id = FDR_USA_civil_liberties
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 5
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_2ND_NEW_DEAL }
+	relative_position_id = FDR_USA_2ND_NEW_DEAL
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_fair_emploment_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_civil_liberties }
+	relative_position_id = FDR_USA_civil_liberties
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_health
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 8
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_2ND_NEW_DEAL }
+	relative_position_id = FDR_USA_2ND_NEW_DEAL
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50 #healthcare and stuff
+	}
+}
+
+#FDR USA MORE TRADITIONAL WW2 TREE
+
+focus = {
+	id = FDR_USA_proclaim_neutrality
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 32
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_first_new_deal }
+	relative_position_id = FDR_USA_first_new_deal
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_ideas = american_neutrality #allows signing of neutrality acts
+	}
+}
+
+focus = {
+	id = FDR_USA_proibit_arms_sales
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_proclaim_neutrality }
+	relative_position_id = FDR_USA_proclaim_neutrality
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_curb_neutrality
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_proclaim_neutrality }
+	relative_position_id = FDR_USA_proclaim_neutrality
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_cash_and_carry_amendment
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_curb_neutrality }
+	relative_position_id = FDR_USA_curb_neutrality
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_global_superpower
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_curb_neutrality }
+	relative_position_id = FDR_USA_curb_neutrality
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_rearmament
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 35
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_first_new_deal }
+	relative_position_id = FDR_USA_first_new_deal
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_the_pacific
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_rearmament }
+	relative_position_id = FDR_USA_rearmament
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_appoint_macarthur
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_the_pacific }
+	relative_position_id = FDR_USA_the_pacific
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_defense_of_the_pacific
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_appoint_macarthur }
+	relative_position_id = FDR_USA_appoint_macarthur
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#builds lots of forts
+	}
+}
+
+focus = {
+	id = FDR_USA_readiness_report
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_appoint_macarthur }
+	relative_position_id = FDR_USA_appoint_macarthur
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#bad report will be given however commanders will ask for certain equipment such as napalm, adding new contracts for companies in decision tab
+	}
+}
+
+focus = {
+	id = FDR_USA_send_help_to_philipines
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 3
+	
+	prerequisite = { focus = FDR_USA_appoint_macarthur }
+	relative_position_id = FDR_USA_appoint_macarthur
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_ignore_phillipines
+	icon = GFX_focus_USA_placeholder
+
+	cost = 8
+
+	x = -1
+	y = 1
+	
+	mutually_exclusive = {focus = FDR_USA_philipino_acts }
+
+	prerequisite = { focus = FDR_USA_send_help_to_philipines }
+	relative_position_id = FDR_USA_send_help_to_philipines
+
+	cancelable = no
+
+	available = {
+		NOT = {
+			has_completed_focus = FDR_USA_phillipines_economic_dev
+			has_completed_focus = FDR_USA_phillipines_military_dev
+		}
+	}
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#disallows use of this part of focus tree (meant to overwealm player with too many choices that they skip important stuff)
+	}
+}
+
+focus = {
+	id = FDR_USA_philipino_acts
+	icon = GFX_focus_USA_placeholder
+
+	cost = 8
+
+	x = 1
+	y = 1
+	
+	mutually_exclusive = {focus = FDR_USA_ignore_phillipines }
+
+	prerequisite = { focus = FDR_USA_send_help_to_philipines }
+	relative_position_id = FDR_USA_send_help_to_philipines
+
+	cancelable = no
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#an act to allow the US to govern the phillipines more directly
+	}
+}
+
+focus = {
+	id = FDR_USA_phillipines_military_dev
+	icon = GFX_focus_USA_placeholder
+
+	cost = 8
+
+	x = -3
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_send_help_to_philipines }
+	relative_position_id = FDR_USA_send_help_to_philipines
+
+	cancelable = no
+
+	available_if_capitulated = no
+	
+	available = {
+		NOT = {
+			has_completed_focus = FDR_USA_ignore_phillipines
+		}
+	}
+
+	completion_reward = {
+		#an act to allow the US to govern the phillipines more directly
+	}
+}
+
+focus = {
+	id = FDR_USA_phillipines_economic_dev
+	icon = GFX_focus_USA_placeholder
+
+	cost = 8
+
+	x = 3
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_send_help_to_philipines }
+	relative_position_id = FDR_USA_send_help_to_philipines
+
+	cancelable = no
+
+	available_if_capitulated = no
+	
+	available = {
+		NOT = {
+			has_completed_focus = FDR_USA_ignore_phillipines
+		}
+	}
+
+	completion_reward = {
+		#an act to allow the US to govern the phillipines more directly
+	}
+}
+
+focus = {
+	id = FDR_USA_sino_japanese_war
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_the_pacific }
+	relative_position_id = FDR_USA_the_pacific
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_begin_shipments_of_equipment
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_sino_japanese_war }
+	relative_position_id = FDR_USA_sino_japanese_war
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_begin_shipments_of_money
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_sino_japanese_war }
+	relative_position_id = FDR_USA_sino_japanese_war
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_question_of_volunteers
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_begin_shipments_of_equipment }
+	relative_position_id = FDR_USA_begin_shipments_of_equipment
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_agent_x
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 3
+	
+	prerequisite = { focus = FDR_USA_sino_japanese_war }
+	relative_position_id = FDR_USA_sino_japanese_war
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#allows 1 more spy and increased influence in asia
+	}
+}
+
+focus = {
+	id = FDR_USA_lost_but_not_forgotten
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_agent_x }
+	relative_position_id = FDR_USA_agent_x
+
+	available_if_capitulated = no
+	
+	available = {
+		tag = JAP { 
+			has_flag = JAP_won_sino_jap_war
+		}
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_budgetary_expansion
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 4
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_rearmament }
+	relative_position_id = FDR_USA_rearmament
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_the_atlantic
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 7
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_rearmament }
+	relative_position_id = FDR_USA_rearmament
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_growing_tensions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_the_atlantic }
+	relative_position_id = FDR_USA_the_atlantic
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#opens more dimplomatic decisions to cool things down
+	}
+}
+
+focus = {
+	id = FDR_USA_expand_naval_precense
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_growing_tensions }
+	relative_position_id = FDR_USA_growing_tensions
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#opens more dimplomatic decisions to cool things down with show of force (may do opposite)
+	}
+}
+
+focus = {
+	id = FDR_USA_ask_for_docking_acess
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_growing_tensions }
+	relative_position_id = FDR_USA_growing_tensions
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = FDR_USA_ask_denmark_for_islands
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_ask_for_docking_acess }
+	relative_position_id = FDR_USA_ask_for_docking_acess
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#gets iceland and greenland
+	}
+}
+
+focus = {
+	id = FDR_USA_reevaluation_of_war_industry
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_rearmament }
+	relative_position_id = FDR_USA_rearmament
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_appoint_war_industrialists
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_reevaluation_of_war_industry }
+	relative_position_id = FDR_USA_reevaluation_of_war_industry
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#unpopular with isolationalists, appoints war indsutrialists to cabinet (helps relations with companies and helps rearment)
+	}
+}
+
+focus = {
+	id = FDR_USA_limited_rearmament
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_reevaluation_of_war_industry }
+	relative_position_id = FDR_USA_reevaluation_of_war_industry
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_rubber_reserve_company
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_limited_rearmament }
+	relative_position_id = FDR_USA_limited_rearmament
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = FDR_USA_begin_negoatiations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_limited_rearmament }
+	relative_position_id = FDR_USA_limited_rearmament
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#unlocks decisions to negotiate with CEOS of big companies
+	}
+}
+
+focus = {
+	id = FDR_USA_set_out_contracts_for_military_equipment
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_begin_negoatiations }
+	relative_position_id = FDR_USA_begin_negoatiations
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_little_rock_arsenal
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_limited_rearmament }
+	relative_position_id = FDR_USA_limited_rearmament
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_selective_service_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_limited_rearmament }
+	relative_position_id = FDR_USA_limited_rearmament
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_ideas = american_neutrality
+	}
+}
+
+focus = {
+	id = FDR_USA_naval_act_of_blank
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 14
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_rearmament }
+	relative_position_id = FDR_USA_rearmament
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_expand_the_USMC
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_naval_act_of_blank }
+	relative_position_id = FDR_USA_naval_act_of_blank
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
 #LBJ#
 
 focus = {

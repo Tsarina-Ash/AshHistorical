@@ -218,6 +218,30 @@ ideas = {
 			}
 		}
 
+		american_neutrality = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = Economy_Military_Austerity
+			
+
+			modifier = {
+				ai_focus_peaceful_factor 100
+
+				infantry_eq_production_speed_factor = -0.2
+				anti_tank_eq_production_speed_factor = -0.2
+				artillery_eq_production_speed_factor = -0.2
+			}
+		}
+
 	}
 
 

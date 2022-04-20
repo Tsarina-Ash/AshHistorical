@@ -2,6 +2,8 @@
 NDefines.NGame.START_DATE = "1920.1.1.1"
 NDefines.NGame.END_DATE = "1970.12.31.1"
 ---IndustryModifiers
+NDefines.NBuildings.MAX_SHARED_SLOTS = 156
+NDefines.NBuildings.MAX_BUILDING_LEVELS = 156
 NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 20 --higher amount of civs allocated per building
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 0.5 --lower based starting production
 ---BegoneClouds

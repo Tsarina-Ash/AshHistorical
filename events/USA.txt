@@ -841,6 +841,58 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = eventusaFDR.2
+        title = usaFDR.2.t
+        desc = usaFDR.2.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaFDRThreeRs.1.a
+	}
+}
+
+country_event = {
+	id = eventusaFDR.3
+        title = usaFDR.3.t
+        desc = usaFDR.3.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaFDRFirstfireside.1.a
+
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = eventusaFDR.4
+        title = usaFDR.4.t
+        desc = usaFDR.4.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaFDRLKenyesian.1.a
+		complete_national_focus = FDR_USA_pursue_kenyesian_economics
+	}
+	option = {
+		name = usaFDRLBalanced.1.a
+		complete_national_focus = FDR_USA_pursue_a_more_balanced_budget
+	}
+}
+
 #LBJ#
 
 country_event = {
