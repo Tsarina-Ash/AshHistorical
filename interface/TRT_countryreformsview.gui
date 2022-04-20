@@ -1,5 +1,31 @@
-@btn_x_1 = 10
-@btn_x_2 = 110
+@btn_x_1 = 40
+@btn_x_2 = 300
+
+@btn_y_1 = 30
+@btn_y_2 = 60
+@btn_y_3 = 90
+@btn_y_4 = 140
+@btn_y_5 = 170
+@btn_y_6 = 200
+@btn_y_7 = 250
+@btn_y_8 = 280
+@btn_y_9 = 310
+@btn_y_10 = 360
+@btn_y_11 = 390
+@btn_y_12 = 420
+
+# @btn_t_1 = 39
+# @btn_t_2 = 69
+# @btn_t_3 = 99
+# @btn_t_4 = 149
+# @btn_t_5 = 179
+# @btn_t_6 = 209
+# @btn_t_7 = 259
+# @btn_t_8 = 289
+# @btn_t_9 = 319
+# @btn_t_10 = 369
+# @btn_t_11 = 399
+# @btn_t_12 = 429
 
 guiTypes = {
 	containerWindowType = {
@@ -131,129 +157,177 @@ guiTypes = {
 
 		buttonType = {
 			name = "TRT_reforms_button_sufferage_1"
-			position = { x = btn_x_1 y = 20 }
+			position = { x = @btn_x_1 y = @btn_y_1 }
 			spriteType = "GFX_ReformsButtons_Button"
+			buttonFont = "Bomb_20"
+			buttonText = TRT_reforms_button_sufferage_1_txt
+			pdx_tooltip = TRT_reforms_button_sufferage_1_tt
+			pdx_tooltip_delayed = TRT_reforms_button_sufferage_1_d_tt
 		}
 		buttonType = {
 			name = "TRT_reforms_button_sufferage_2"
-			position = { x = btn_x_1 y = 40 }
+			position = { x = @btn_x_1 y = @btn_y_2 }
 			spriteType = "GFX_ReformsButtons_Button"
+			buttonFont = "Bomb_20"
+			buttonText = TRT_reforms_button_sufferage_2_txt
+			pdx_tooltip = TRT_reforms_button_sufferage_2_tt
+			pdx_tooltip_delayed = TRT_reforms_button_sufferage_2_d_tt
 		}
 		buttonType = {
 			name = "TRT_reforms_button_sufferage_3"
-			position = { x = btn_x_1 y = 60 }
+			position = { x = @btn_x_1 y = @btn_y_3 }
 			spriteType = "GFX_ReformsButtons_Button"
+			buttonFont = "Bomb_20"
+			buttonText = TRT_reforms_button_sufferage_3_txt
+			pdx_tooltip = TRT_reforms_button_sufferage_3_tt
+			pdx_tooltip_delayed = TRT_reforms_button_sufferage_3_d_tt
 		}
 
 		buttonType = {
 			name = "TRT_reforms_button_civil_rights_1"
-			position = { x = btn_x_1 y = btn_x_10 }
+			position = { x = @btn_x_1 y = @btn_y_4 }
 			spriteType = "GFX_ReformsButtons_Button"
+			buttonFont = "Bomb_20"
+			buttonText = TRT_reforms_button_civil_rights_1_txt
+			pdx_tooltip = TRT_reforms_button_civil_rights_1_tt
+			pdx_tooltip_delayed = TRT_reforms_button_civil_rights_1_d_tt
 		}
 		buttonType = {
 			name = "TRT_reforms_button_civil_rights_2"
-			position = { x = btn_x_1 y = 120 }
+			position = { x = @btn_x_1 y = @btn_y_5 }
 			spriteType = "GFX_ReformsButtons_Button"
+			buttonFont = "Bomb_20"
+			buttonText = TRT_reforms_button_civil_rights_2_txt
+			pdx_tooltip = TRT_reforms_button_civil_rights_2_tt
+			pdx_tooltip_delayed = TRT_reforms_button_civil_rights_2_d_tt
 		}
 		buttonType = {
 			name = "TRT_reforms_button_civil_rights_3"
-			position = { x = btn_x_1 y = 140 }
+			position = { x = @btn_x_1 y = @btn_y_6 }
 			spriteType = "GFX_ReformsButtons_Button"
+			buttonFont = "Bomb_20"
+			buttonText = TRT_reforms_button_civil_rights_3_txt
+			pdx_tooltip = TRT_reforms_button_civil_rights_3_tt
+			pdx_tooltip_delayed = TRT_reforms_button_civil_rights_3_d_tt
 		}
 
 		buttonType = {
 			name = "TRT_reforms_button_lgbt_rights_1"
-			position = { x = btn_x_1 y = 180 }
+			position = { x = @btn_x_1 y = @btn_y_7 }
 			spriteType = "GFX_ReformsButtons_Button"
+			buttonFont = "Bomb_20"
+			buttonText = TRT_reforms_button_lgbt_rights_1_txt
+			pdx_tooltip = TRT_reforms_button_lgbt_rights_1_tt
+			pdx_tooltip_delayed = TRT_reforms_button_lgbt_rights_1_d_tt
 		}
 		buttonType = {
 			name = "TRT_reforms_button_lgbt_rights_2"
-			position = { x = btn_x_1 y = 200 }
+			position = { x = @btn_x_1 y = @btn_y_8 }
 			spriteType = "GFX_ReformsButtons_Button"
+			buttonFont = "Bomb_20"
+			buttonText = TRT_reforms_button_lgbt_rights_2_txt
+			pdx_tooltip = TRT_reforms_button_lgbt_rights_2_tt
+			pdx_tooltip_delayed = TRT_reforms_button_lgbt_rights_2_d_tt
 		}
 		buttonType = {
 			name = "TRT_reforms_button_lgbt_rights_3"
-			position = { x = btn_x_1 y = 220 }
+			position = { x = @btn_x_1 y = @btn_y_9 }
 			spriteType = "GFX_ReformsButtons_Button"
+			buttonFont = "Bomb_20"
+			buttonText = TRT_reforms_button_lgbt_rights_3_txt
+			pdx_tooltip = TRT_reforms_button_lgbt_rights_3_tt
+			pdx_tooltip_delayed = TRT_reforms_button_lgbt_rights_3_d_tt
 		}
 
 		buttonType = {
 			name = "TRT_reforms_button_healthcare_1"
-			position = { x = btn_x_1 y = 260 }
+			position = { x = @btn_x_1 y = @btn_y_10 }
 			spriteType = "GFX_ReformsButtons_Button"
+			buttonFont = "Bomb_20"
+			buttonText = TRT_reforms_button_healthcare_1_txt
+			pdx_tooltip = TRT_reforms_button_healthcare_1_tt
+			pdx_tooltip_delayed = TRT_reforms_button_healthcare_1_d_tt
 		}
 		buttonType = {
 			name = "TRT_reforms_button_healthcare_2"
-			position = { x = btn_x_1 y = 280 }
+			position = { x = @btn_x_1 y = @btn_y_11 }
 			spriteType = "GFX_ReformsButtons_Button"
+			buttonFont = "Bomb_20"
+			buttonText = TRT_reforms_button_healthcare_2_txt
+			pdx_tooltip = TRT_reforms_button_healthcare_2_tt
+			pdx_tooltip_delayed = TRT_reforms_button_healthcare_2_d_tt
 		}
 		buttonType = {
 			name = "TRT_reforms_button_healthcare_3"
-			position = { x = btn_x_1 y = 300 }
+			position = { x = @btn_x_1 y = @btn_y_12 }
 			spriteType = "GFX_ReformsButtons_Button"
+			buttonFont = "Bomb_20"
+			buttonText = TRT_reforms_button_healthcare_3_txt
+			pdx_tooltip = TRT_reforms_button_healthcare_3_tt
+			pdx_tooltip_delayed = TRT_reforms_button_healthcare_3_d_tt
 		}
 
 		buttonType = {
 			name = "TRT_reforms_button_minimum_wage_1"
-			position = { x = btn_x_2 y = 20 }
+			position = { x = @btn_x_2 y = @btn_y_1 }
 			spriteType = "GFX_ReformsButtons_Button"
 		}
 		buttonType = {
 			name = "TRT_reforms_button_minimum_wage_2"
-			position = { x = btn_x_2 y = 40 }
+			position = { x = @btn_x_2 y = @btn_y_2 }
 			spriteType = "GFX_ReformsButtons_Button"
 		}
 		buttonType = {
 			name = "TRT_reforms_button_minimum_wage_3"
-			position = { x = btn_x_2 y = 60 }
+			position = { x = @btn_x_2 y = @btn_y_3 }
 			spriteType = "GFX_ReformsButtons_Button"
 		}
 
 		buttonType = {
 			name = "TRT_reforms_button_safety_regulations_1"
-			position = { x = btn_x_2 y = 20 }
+			position = { x = @btn_x_2 y = @btn_y_4 }
 			spriteType = "GFX_ReformsButtons_Button"
 		}
 		buttonType = {
 			name = "TRT_reforms_button_safety_regulations_2"
-			position = { x = btn_x_2 y = 40 }
+			position = { x = @btn_x_2 y = @btn_y_5 }
 			spriteType = "GFX_ReformsButtons_Button"
 		}
 		buttonType = {
 			name = "TRT_reforms_button_safety_regulations_3"
-			position = { x = btn_x_2 y = 60 }
+			position = { x = @btn_x_2 y = @btn_y_6 }
 			spriteType = "GFX_ReformsButtons_Button"
 		}
 
 		buttonType = {
 			name = "TRT_reforms_button_enviromental_regulations_1"
-			position = { x = btn_x_2 y = 20 }
+			position = { x = @btn_x_2 y = @btn_y_7 }
 			spriteType = "GFX_ReformsButtons_Button"
 		}
 		buttonType = {
 			name = "TRT_reforms_button_enviromental_regulations_2"
-			position = { x = btn_x_2 y = 40 }
+			position = { x = @btn_x_2 y = @btn_y_8 }
 			spriteType = "GFX_ReformsButtons_Button"
 		}
 		buttonType = {
 			name = "TRT_reforms_button_enviromental_regulations_3"
-			position = { x = btn_x_2 y = 60 }
+			position = { x = @btn_x_2 y = @btn_y_9 }
 			spriteType = "GFX_ReformsButtons_Button"
 		}
 
 		buttonType = {
 			name = "TRT_reforms_button_unemployment_subsidies_1"
-			position = { x = btn_x_2 y = 20 }
+			position = { x = @btn_x_2 y = @btn_y_10 }
 			spriteType = "GFX_ReformsButtons_Button"
 		}
 		buttonType = {
 			name = "TRT_reforms_button_unemployment_subsidies_2"
-			position = { x = btn_x_2 y = 40 }
+			position = { x = @btn_x_2 y = @btn_y_11 }
 			spriteType = "GFX_ReformsButtons_Button"
 		}
 		buttonType = {
 			name = "TRT_reforms_button_unemployment_subsidies_3"
-			position = { x = btn_x_2 y = 60 }
+			position = { x = @btn_x_2 y = @btn_y_12 }
 			spriteType = "GFX_ReformsButtons_Button"
 		}
 	}

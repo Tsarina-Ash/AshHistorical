@@ -5,13 +5,12 @@ ideas = {
 	#	-Civil Rights
 	#	-LGBTQ+ Rights
 	#	-Healthcare
-	#	-
+	
 	#	Economic Reforms
 	#	-Minimum Wage
 	#	-Safety Regulations
 	#	-Enviromental Regulations
 	#	-Unemployment Subsidies
-	#	-
 	#
 	hidden_ideas = {
 		#Political/Social Reforms
