@@ -3,28 +3,21 @@
   EconBase_Cabnent_text_tt:0 "Laws"
 
 #Reforms Text
-TRT_reforms_button_sufferage_1_txt:0 "No Voting"
-TRT_reforms_button_sufferage_1_tt:0 "Suffrage Reform Level 1.\nNo one is able to vote within the country"
-TRT_reforms_button_sufferage_1_d_tt:0 "69% towards passing this reform\n\nEffects go here"
+ReformsButtons_political_reforms_tx:0 "Political Reforms"
+ReformsButtons_economic_reforms_tx:0 "Economic Reforms"
 
-TRT_reforms_button_sufferage_2_txt:0 "Male Suffrage"
+ReformsButtons_sufferage_pop_out_txt:0 "Suffrage"
 
-TRT_reforms_button_sufferage_3_txt:0 "Universal Suffrage"
+ReformsButtons_civil_rights_pop_out_txt:0 "Civil Rights"
 
-TRT_reforms_button_civil_rights_1_txt:0 "Discrimination Legal"
+ReformsButtons_lgbt_rights_pop_out_txt:0 "LGBTQ+ Rights"
 
-TRT_reforms_button_civil_rights_2_txt:0 "Limited Protections"
+ReformsButtons_healthcare_pop_out_txt:0 "Healthcare"
 
-TRT_reforms_button_civil_rights_3_txt:0 "Full Protections"
+ReformsButtons_minimum_wage_pop_out_txt:0 "Minimum Wage"
 
-TRT_reforms_button_lgbt_rights_1_txt:0 "Criminalized"
+ReformsButtons_safety_regulations_pop_out_txt:0 "Safety Regulations"
 
-TRT_reforms_button_lgbt_rights_2_txt:0 "Limited Rights"
+ReformsButtons_enviromental_regulations_pop_out_txt:0 "Environmental Regulations"
 
-TRT_reforms_button_lgbt_rights_3_txt:0 "Equal Rights"
-
-TRT_reforms_button_healthcare_1_txt:0 "Privatized Healthcare"
-
-TRT_reforms_button_healthcare_2_txt:0 "Subsidized Healthcare"
-
-TRT_reforms_button_healthcare_3_txt:0 "Universal Healthcare"
+ReformsButtons_unemployment_subsidies_pop_out_txt:0 "Unemployment Subsidies"

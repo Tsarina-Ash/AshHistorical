@@ -1,127 +1,249 @@
-select_sufferage_1 = {
-	remove_ideas = TRT_reforms_sufferage_2
-	remove_ideas = TRT_reforms_sufferage_3
-	add_ideas = TRT_reforms_sufferage_1
-}
-select_sufferage_2 = {
-	add_ideas = TRT_reforms_sufferage_2
-	remove_ideas = TRT_reforms_sufferage_3
-	remove_ideas = TRT_reforms_sufferage_1
-}
-select_sufferage_3 = {
-	remove_ideas = TRT_reforms_sufferage_2
-	add_ideas = TRT_reforms_sufferage_3
-	remove_ideas = TRT_reforms_sufferage_1
-}
+#selction
+	select_sufferage_1 = {
+		remove_ideas = TRT_reforms_sufferage_2
+		remove_ideas = TRT_reforms_sufferage_3
+		add_ideas = TRT_reforms_sufferage_1
+	}
+	select_sufferage_2 = {
+		add_ideas = TRT_reforms_sufferage_2
+		remove_ideas = TRT_reforms_sufferage_3
+		remove_ideas = TRT_reforms_sufferage_1
+	}
+	select_sufferage_3 = {
+		remove_ideas = TRT_reforms_sufferage_2
+		add_ideas = TRT_reforms_sufferage_3
+		remove_ideas = TRT_reforms_sufferage_1
+	}
 
-select_civil_rights_1 = {
-	add_ideas = TRT_reforms_civil_rights_1
-	remove_ideas = TRT_reforms_civil_rights_2
-	remove_ideas = TRT_reforms_civil_rights_3
-}
-select_civil_rights_2 = {
-	remove_ideas = TRT_reforms_civil_rights_1
-	add_ideas = TRT_reforms_civil_rights_2
-	remove_ideas = TRT_reforms_civil_rights_3
-}
-select_civil_rights_3 = {
-	remove_ideas = TRT_reforms_civil_rights_1
-	remove_ideas = TRT_reforms_civil_rights_2
-	add_ideas = TRT_reforms_civil_rights_3
-}
+	select_civil_rights_1 = {
+		add_ideas = TRT_reforms_civil_rights_1
+		remove_ideas = TRT_reforms_civil_rights_2
+		remove_ideas = TRT_reforms_civil_rights_3
+	}
+	select_civil_rights_2 = {
+		remove_ideas = TRT_reforms_civil_rights_1
+		add_ideas = TRT_reforms_civil_rights_2
+		remove_ideas = TRT_reforms_civil_rights_3
+	}
+	select_civil_rights_3 = {
+		remove_ideas = TRT_reforms_civil_rights_1
+		remove_ideas = TRT_reforms_civil_rights_2
+		add_ideas = TRT_reforms_civil_rights_3
+	}
 
-select_lgbt_rights_1 = {
-	add_ideas = TRT_reforms_lgbt_rights_1
-	remove_ideas = TRT_reforms_lgbt_rights_2
-	remove_ideas = TRT_reforms_lgbt_rights_3
-}
-select_lgbt_rights_2 = {
-	remove_ideas = TRT_reforms_lgbt_rights_1
-	add_ideas = TRT_reforms_lgbt_rights_2
-	remove_ideas = TRT_reforms_lgbt_rights_3
-}
-select_lgbt_rights_3 = {
-	remove_ideas = TRT_reforms_lgbt_rights_1
-	remove_ideas = TRT_reforms_lgbt_rights_2
-	add_ideas = TRT_reforms_lgbt_rights_3
-}	
+	select_lgbt_rights_1 = {
+		add_ideas = TRT_reforms_lgbt_rights_1
+		remove_ideas = TRT_reforms_lgbt_rights_2
+		remove_ideas = TRT_reforms_lgbt_rights_3
+	}
+	select_lgbt_rights_2 = {
+		remove_ideas = TRT_reforms_lgbt_rights_1
+		add_ideas = TRT_reforms_lgbt_rights_2
+		remove_ideas = TRT_reforms_lgbt_rights_3
+	}
+	select_lgbt_rights_3 = {
+		remove_ideas = TRT_reforms_lgbt_rights_1
+		remove_ideas = TRT_reforms_lgbt_rights_2
+		add_ideas = TRT_reforms_lgbt_rights_3
+	}	
 
-select_healthcare_1 = {
-	add_ideas = TRT_reforms_healthcare_1
-	remove_ideas = TRT_reforms_healthcare_2
-	remove_ideas = TRT_reforms_healthcare_3
-}
-select_healthcare_2 = {
-	remove_ideas = TRT_reforms_healthcare_1
-	add_ideas = TRT_reforms_healthcare_2
-	remove_ideas = TRT_reforms_healthcare_3
-}
-select_healthcare_3 = {
-	remove_ideas = TRT_reforms_healthcare_1
-	remove_ideas = TRT_reforms_healthcare_2
-	add_ideas = TRT_reforms_healthcare_3
-}
+	select_healthcare_1 = {
+		add_ideas = TRT_reforms_healthcare_1
+		remove_ideas = TRT_reforms_healthcare_2
+		remove_ideas = TRT_reforms_healthcare_3
+	}
+	select_healthcare_2 = {
+		remove_ideas = TRT_reforms_healthcare_1
+		add_ideas = TRT_reforms_healthcare_2
+		remove_ideas = TRT_reforms_healthcare_3
+	}
+	select_healthcare_3 = {
+		remove_ideas = TRT_reforms_healthcare_1
+		remove_ideas = TRT_reforms_healthcare_2
+		add_ideas = TRT_reforms_healthcare_3
+	}
 
-select_minimum_wage_1 = {
-	add_ideas = TRT_reforms_minimum_wage_1
-	remove_ideas = TRT_reforms_minimum_wage_2
-	remove_ideas = TRT_reforms_minimum_wage_3
-}
-select_minimum_wage_2 = {
-	remove_ideas = TRT_reforms_minimum_wage_1
-	add_ideas = TRT_reforms_minimum_wage_2
-	remove_ideas = TRT_reforms_minimum_wage_3
-}
-select_minimum_wage_3 = {
-	remove_ideas = TRT_reforms_minimum_wage_1
-	remove_ideas = TRT_reforms_minimum_wage_2
-	add_ideas = TRT_reforms_minimum_wage_3
-}
+	select_minimum_wage_1 = {
+		add_ideas = TRT_reforms_minimum_wage_1
+		remove_ideas = TRT_reforms_minimum_wage_2
+		remove_ideas = TRT_reforms_minimum_wage_3
+	}
+	select_minimum_wage_2 = {
+		remove_ideas = TRT_reforms_minimum_wage_1
+		add_ideas = TRT_reforms_minimum_wage_2
+		remove_ideas = TRT_reforms_minimum_wage_3
+	}
+	select_minimum_wage_3 = {
+		remove_ideas = TRT_reforms_minimum_wage_1
+		remove_ideas = TRT_reforms_minimum_wage_2
+		add_ideas = TRT_reforms_minimum_wage_3
+	}
 
-select_safety_regulations_1 = {
-	add_ideas = TRT_reforms_safety_regulations_1
-	remove_ideas = TRT_reforms_safety_regulations_2
-	remove_ideas = TRT_reforms_safety_regulations_3
-}
-select_safety_regulations_2 = {
-	remove_ideas = TRT_reforms_safety_regulations_1
-	add_ideas = TRT_reforms_safety_regulations_2
-	remove_ideas = TRT_reforms_safety_regulations_3
-}
-select_safety_regulations_3 = {
-	remove_ideas = TRT_reforms_safety_regulations_1
-	remove_ideas = TRT_reforms_safety_regulations_2
-	add_ideas = TRT_reforms_safety_regulations_3
-}
+	select_safety_regulations_1 = {
+		add_ideas = TRT_reforms_safety_regulations_1
+		remove_ideas = TRT_reforms_safety_regulations_2
+		remove_ideas = TRT_reforms_safety_regulations_3
+	}
+	select_safety_regulations_2 = {
+		remove_ideas = TRT_reforms_safety_regulations_1
+		add_ideas = TRT_reforms_safety_regulations_2
+		remove_ideas = TRT_reforms_safety_regulations_3
+	}
+	select_safety_regulations_3 = {
+		remove_ideas = TRT_reforms_safety_regulations_1
+		remove_ideas = TRT_reforms_safety_regulations_2
+		add_ideas = TRT_reforms_safety_regulations_3
+	}
 
-select_environmental_regulations_1 = {
-	add_ideas = TRT_reforms_enviromental_regulations_1
-	remove_ideas = TRT_reforms_enviromental_regulations_2
-	remove_ideas = TRT_reforms_enviromental_regulations_3
-}
-select_environmental_regulations_2 = {
-	remove_ideas = TRT_reforms_enviromental_regulations_1
-	add_ideas = TRT_reforms_enviromental_regulations_2
-	remove_ideas = TRT_reforms_enviromental_regulations_3
-}
-select_environmental_regulations_3 = {
-	remove_ideas = TRT_reforms_enviromental_regulations_1
-	remove_ideas = TRT_reforms_enviromental_regulations_2
-	add_ideas = TRT_reforms_enviromental_regulations_3
-}
+	select_environmental_regulations_1 = {
+		add_ideas = TRT_reforms_enviromental_regulations_1
+		remove_ideas = TRT_reforms_enviromental_regulations_2
+		remove_ideas = TRT_reforms_enviromental_regulations_3
+	}
+	select_environmental_regulations_2 = {
+		remove_ideas = TRT_reforms_enviromental_regulations_1
+		add_ideas = TRT_reforms_enviromental_regulations_2
+		remove_ideas = TRT_reforms_enviromental_regulations_3
+	}
+	select_environmental_regulations_3 = {
+		remove_ideas = TRT_reforms_enviromental_regulations_1
+		remove_ideas = TRT_reforms_enviromental_regulations_2
+		add_ideas = TRT_reforms_enviromental_regulations_3
+	}
 
-select_unemployment_subsidies_1 = {
-	add_ideas = TRT_reforms_unemployment_subsidies_1
-	remove_ideas = TRT_reforms_unemployment_subsidies_2
-	remove_ideas = TRT_reforms_unemployment_subsidies_3
-}
-select_unemployment_subsidies_2 = {
-	remove_ideas = TRT_reforms_unemployment_subsidies_1
-	add_ideas = TRT_reforms_unemployment_subsidies_2
-	remove_ideas = TRT_reforms_unemployment_subsidies_3
-}
-select_unemployment_subsidies_3 = {
-	remove_ideas = TRT_reforms_unemployment_subsidies_1
-	remove_ideas = TRT_reforms_unemployment_subsidies_2
-	add_ideas = TRT_reforms_unemployment_subsidies_3
-}
+	select_unemployment_subsidies_1 = {
+		add_ideas = TRT_reforms_unemployment_subsidies_1
+		remove_ideas = TRT_reforms_unemployment_subsidies_2
+		remove_ideas = TRT_reforms_unemployment_subsidies_3
+	}
+	select_unemployment_subsidies_2 = {
+		remove_ideas = TRT_reforms_unemployment_subsidies_1
+		add_ideas = TRT_reforms_unemployment_subsidies_2
+		remove_ideas = TRT_reforms_unemployment_subsidies_3
+	}
+	select_unemployment_subsidies_3 = {
+		remove_ideas = TRT_reforms_unemployment_subsidies_1
+		remove_ideas = TRT_reforms_unemployment_subsidies_2
+		add_ideas = TRT_reforms_unemployment_subsidies_3
+	}
+#Pop-out Window
+	ReformsButtons_open_sufferage = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = reforms_sufferage_open }
+			}
+			set_country_flag = reforms_sufferage_open
+		}
+		if = { limit = { has_country_flag = reforms_civl_rights_open} clr_country_flag = reforms_civl_rights_open}
+		if = { limit = { has_country_flag = reforms_lbgt_rights_open} clr_country_flag = reforms_lbgt_rights_open}
+		if = { limit = { has_country_flag = reforms_healthcare_open} clr_country_flag = reforms_healthcare_open}
+		if = { limit = { has_country_flag = reforms_minimum_wage_open} clr_country_flag = reforms_minimum_wage_open}
+		if = { limit = { has_country_flag = reforms_safety_regulations_open} clr_country_flag = reforms_safety_regulations_open}
+		if = { limit = { has_country_flag = reforms_enviromental_regulations_open} clr_country_flag = reforms_enviromental_regulations_open}
+		if = { limit = { has_country_flag = reforms_unemployment_subsidies_open} clr_country_flag = reforms_unemployment_subsidies_open}
+	}
+	ReformsButtons_open_cvil_rights = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = reforms_civl_rights_open }
+			}
+			set_country_flag = reforms_civl_rights_open
+		}
+		if = { limit = { has_country_flag = reforms_sufferage_open} clr_country_flag = reforms_sufferage_open}
+		if = { limit = { has_country_flag = reforms_lbgt_rights_open} clr_country_flag = reforms_lbgt_rights_open}
+		if = { limit = { has_country_flag = reforms_healthcare_open} clr_country_flag = reforms_healthcare_open}
+		if = { limit = { has_country_flag = reforms_minimum_wage_open} clr_country_flag = reforms_minimum_wage_open}
+		if = { limit = { has_country_flag = reforms_safety_regulations_open} clr_country_flag = reforms_safety_regulations_open}
+		if = { limit = { has_country_flag = reforms_enviromental_regulations_open} clr_country_flag = reforms_enviromental_regulations_open}
+		if = { limit = { has_country_flag = reforms_unemployment_subsidies_open} clr_country_flag = reforms_unemployment_subsidies_open}
+	}
+	ReformsButtons_open_lgbt_rights = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = reforms_lbgt_rights_open }
+			}
+			set_country_flag = reforms_lbgt_rights_open
+		}
+		if = { limit = { has_country_flag = reforms_sufferage_open} clr_country_flag = reforms_sufferage_open}
+		if = { limit = { has_country_flag = reforms_civl_rights_open} clr_country_flag = reforms_civl_rights_open}
+		if = { limit = { has_country_flag = reforms_healthcare_open} clr_country_flag = reforms_healthcare_open}
+		if = { limit = { has_country_flag = reforms_minimum_wage_open} clr_country_flag = reforms_minimum_wage_open}
+		if = { limit = { has_country_flag = reforms_safety_regulations_open} clr_country_flag = reforms_safety_regulations_open}
+		if = { limit = { has_country_flag = reforms_enviromental_regulations_open} clr_country_flag = reforms_enviromental_regulations_open}
+		if = { limit = { has_country_flag = reforms_unemployment_subsidies_open} clr_country_flag = reforms_unemployment_subsidies_open}
+	}
+	ReformsButtons_open_healthcare = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = reforms_healthcare_open }
+			}
+			set_country_flag = reforms_healthcare_open
+		}
+		if = { limit = { has_country_flag = reforms_sufferage_open} clr_country_flag = reforms_sufferage_open}
+		if = { limit = { has_country_flag = reforms_civl_rights_open} clr_country_flag = reforms_civl_rights_open}
+		if = { limit = { has_country_flag = reforms_lbgt_rights_open} clr_country_flag = reforms_lbgt_rights_open}
+		if = { limit = { has_country_flag = reforms_minimum_wage_open} clr_country_flag = reforms_minimum_wage_open}
+		if = { limit = { has_country_flag = reforms_safety_regulations_open} clr_country_flag = reforms_safety_regulations_open}
+		if = { limit = { has_country_flag = reforms_enviromental_regulations_open} clr_country_flag = reforms_enviromental_regulations_open}
+		if = { limit = { has_country_flag = reforms_unemployment_subsidies_open} clr_country_flag = reforms_unemployment_subsidies_open}
+	}
+	ReformsButtons_open_minimum_wage = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = reforms_minimum_wage_open }
+			}
+			set_country_flag = reforms_minimum_wage_open
+		}
+		if = { limit = { has_country_flag = reforms_sufferage_open} clr_country_flag = reforms_sufferage_open}
+		if = { limit = { has_country_flag = reforms_civl_rights_open} clr_country_flag = reforms_civl_rights_open}
+		if = { limit = { has_country_flag = reforms_lbgt_rights_open} clr_country_flag = reforms_lbgt_rights_open}
+		if = { limit = { has_country_flag = reforms_healthcare_open} clr_country_flag = reforms_healthcare_open}
+		if = { limit = { has_country_flag = reforms_safety_regulations_open} clr_country_flag = reforms_safety_regulations_open}
+		if = { limit = { has_country_flag = reforms_enviromental_regulations_open} clr_country_flag = reforms_enviromental_regulations_open}
+		if = { limit = { has_country_flag = reforms_unemployment_subsidies_open} clr_country_flag = reforms_unemployment_subsidies_open}
+	}
+	ReformsButtons_open_safety_regulations = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = reforms_safety_regulations_open }
+			}
+			set_country_flag = reforms_safety_regulations_open
+		}
+		if = { limit = { has_country_flag = reforms_sufferage_open} clr_country_flag = reforms_sufferage_open}
+		if = { limit = { has_country_flag = reforms_civl_rights_open} clr_country_flag = reforms_civl_rights_open}
+		if = { limit = { has_country_flag = reforms_lbgt_rights_open} clr_country_flag = reforms_lbgt_rights_open}
+		if = { limit = { has_country_flag = reforms_healthcare_open} clr_country_flag = reforms_healthcare_open}
+		if = { limit = { has_country_flag = reforms_minimum_wage_open} clr_country_flag = reforms_minimum_wage_open}
+		if = { limit = { has_country_flag = reforms_enviromental_regulations_open} clr_country_flag = reforms_enviromental_regulations_open}
+		if = { limit = { has_country_flag = reforms_unemployment_subsidies_open} clr_country_flag = reforms_unemployment_subsidies_open}
+	}
+	ReformsButtons_open_enviromental_regulations = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = reforms_enviromental_regulations_open }
+			}
+			set_country_flag = reforms_enviromental_regulations_open
+		}
+		if = { limit = { has_country_flag = reforms_sufferage_open} clr_country_flag = reforms_sufferage_open}
+		if = { limit = { has_country_flag = reforms_civl_rights_open} clr_country_flag = reforms_civl_rights_open}
+		if = { limit = { has_country_flag = reforms_lbgt_rights_open} clr_country_flag = reforms_lbgt_rights_open}
+		if = { limit = { has_country_flag = reforms_healthcare_open} clr_country_flag = reforms_healthcare_open}
+		if = { limit = { has_country_flag = reforms_minimum_wage_open} clr_country_flag = reforms_minimum_wage_open}
+		if = { limit = { has_country_flag = reforms_safety_regulations_open} clr_country_flag = reforms_safety_regulations_open}
+		if = { limit = { has_country_flag = reforms_unemployment_subsidies_open} clr_country_flag = reforms_unemployment_subsidies_open}
+	}
+	ReformsButtons_open_unemployment_subsidies = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = reforms_unemployment_subsidies_open }
+			}
+			set_country_flag = reforms_unemployment_subsidies_open
+		}
+		if = { limit = { has_country_flag = reforms_sufferage_open} clr_country_flag = reforms_sufferage_open}
+		if = { limit = { has_country_flag = reforms_civl_rights_open} clr_country_flag = reforms_civl_rights_open}
+		if = { limit = { has_country_flag = reforms_lbgt_rights_open} clr_country_flag = reforms_lbgt_rights_open}
+		if = { limit = { has_country_flag = reforms_healthcare_open} clr_country_flag = reforms_healthcare_open}
+		if = { limit = { has_country_flag = reforms_minimum_wage_open} clr_country_flag = reforms_minimum_wage_open}
+		if = { limit = { has_country_flag = reforms_safety_regulations_open} clr_country_flag = reforms_safety_regulations_open}
+		if = { limit = { has_country_flag = reforms_enviromental_regulations_open} clr_country_flag = reforms_enviromental_regulations_open}
+	}

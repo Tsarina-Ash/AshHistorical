@@ -26,4 +26,16 @@ spriteTypes = {
 		name = "GFX_ReformsButtons_Button"
 		textureFile = "gfx/interface/reforms_gui/reforms_button.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ReformsButtons_progress_bg"
+		textureFile = "gfx/interface/reforms_gui/reforms_progress_bg.dds"
+	}
+	progressbartype = {
+		name = "GFX_ReformsButtons_progress_bar"
+		textureFile1 = "gfx/interface/reforms_gui/reforms_progress_positive.dds"
+		textureFile2 = "gfx/interface/reforms_gui/reforms_progress_negative.dds"
+		size = { x = 175 y = 9 }
+		effectFile = "gfx/FX/progress.lua"
+	}
 }
