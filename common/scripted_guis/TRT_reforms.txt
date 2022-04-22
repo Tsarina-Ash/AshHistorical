@@ -131,7 +131,7 @@ scripted_gui = {
 		}
 
 		effects = {
-			RefromsButtons_political_close_click = {
+			ReformsButtons_political_close_click = {
 				ReformsButtons_close = yes
 			}
 		}
@@ -178,7 +178,7 @@ scripted_gui = {
 		}
 
 		effects = {
-			RefromsButtons_economic_close_click = {
+			ReformsButtons_economic_close_click = {
 				ReformsButtons_close = yes
 			}
 		}

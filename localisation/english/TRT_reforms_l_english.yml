@@ -18,6 +18,57 @@ ReformsButtons_minimum_wage_pop_out_txt:0 "Minimum Wage"
 
 ReformsButtons_safety_regulations_pop_out_txt:0 "Safety Regulations"
 
-ReformsButtons_enviromental_regulations_pop_out_txt:0 "Environmental Regulations"
+ReformsButtons_enviromental_regulations_pop_out_txt:0 "Environment"
 
-ReformsButtons_unemployment_subsidies_pop_out_txt:0 "Unemployment Subsidies"
+ReformsButtons_unemployment_subsidies_pop_out_txt:0 "Unemployment"
+
+#Subwindow
+ReformsButtons_sufferage_title_txt:0 "Suffrage Reforms"
+  ReformsButtons_sufferage_level1_txt:0 "No Voting"
+    ReformsButtons_sufferage_level1_tt:0 "No one is able to vote within our Country"
+    ReformsButtons_sufferage_level1_d_tt:0 "(Effects go here)"
+  ReformsButtons_sufferage_level2_txt:0 "Male Suffrage"
+  ReformsButtons_sufferage_level3_txt:0 "Universal Suffrage"
+  ReformsButtons_sufferage_desc_txt:0 "Suffrage is the right for our people to vote in elections, if we have any."
+
+ReformsButtons_civil_rights_title_txt:0 "Civil Rights Reforms"
+  ReformsButtons_civil_rights_level1_txt:0 "Segregation Legislation"
+  ReformsButtons_civil_rights_level2_txt:0 "Limited Protections"
+  ReformsButtons_civil_rights_level3_txt:0 "Total Protections"
+  ReformsButtons_civil_rights_desc_txt:0 "Civil Rights is a measure of how politically protected our minorities our, especially cultural and racial minorities."
+
+ReformsButtons_lgbt_rights_title_txt:0 "LGBTQ+ Rights"
+  ReformsButtons_lgbt_rights_level1_txt:0 "Homosexuality Illegal"
+  ReformsButtons_lgbt_rights_level2_txt:0 "Limited Rights"
+  ReformsButtons_lgbt_rights_level3_txt:0 "Legal Protections"
+  ReformsButtons_lgbt_rights_desc_txt:0 "LGBTQ+ Rights is how protected people who aren't heterosexual or cisgender are against discrimination and hate crimes."
+
+ReformsButtons_healthcare_title_txt:0 "Healthcare Reforms"
+  ReformsButtons_healthcare_level1_txt:0 "Privatize Healthcare"
+  ReformsButtons_healthcare_level2_txt:0 "Subsidized Healthcare"
+  ReformsButtons_healthcare_level3_txt:0 "Universal Healthcare"
+  ReformsButtons_healthcare_desc_txt:0 "Healthcare determines how easy it is for our population to access affordable care."
+
+ReformsButtons_minimum_wage_title_txt:0 "Minimum Wage"
+  ReformsButtons_minimum_wage_level1_txt:0 "No Minimum Wage"
+  ReformsButtons_minimum_wage_level2_txt:0 "Acceptable Wages"
+  ReformsButtons_minimum_wage_level3_txt:0 "Good Wages"
+  ReformsButtons_minimum_wage_desc_txt:0 "Minimum Wage is how much our workers are mandated to be paid by their employers. Whether that be the government, or private business."
+
+ReformsButtons_safety_regulations_title_txt:0 "Safety Regulations"
+  ReformsButtons_safety_regulations_level1_txt:0 "No Regulations"
+  ReformsButtons_safety_regulations_level2_txt:0 "Limited Regulations"
+  ReformsButtons_safety_regulations_level3_txt:0 "Extensive Regulations"
+  ReformsButtons_safety_regulations_desc_txt:0 "Safety Regulations protects our workers from harm during the workplace and helps to protect against many unsafe work practices."
+
+ReformsButtons_environmental_regulations_title_txt:0 "Environmental Protections"
+  ReformsButtons_environmental_regulations_level1_txt:0 "Exploitation Policy"
+  ReformsButtons_environmental_regulations_level2_txt:0 "Grants and Licenses"
+  ReformsButtons_environmental_regulations_level3_txt:0 "Complete Protection"
+  ReformsButtons_environmental_regulations_desc_txt:0 "Environmental Regulations protects our environment from unchecked exploitation and helps preserve it."
+
+ReformsButtons_unemployment_subsidies_txt:0 "Unemployment Subsidies"
+  ReformsButtons_unemployment_subsidies_level1_txt:0 "No Subsidies"
+  ReformsButtons_unemployment_subsidies_level2_txt:0 "Pensions and Securities"
+  ReformsButtons_unemployment_subsidies_level3_txt:0 "Universal Basic Income"
+  ReformsButtons_unemployment_subsidies_desc_txt:0 "Unemployment Subsidies ranges from old-age economic security, unemployment benefits, and even a consistent stream of money for everyone at high levels"

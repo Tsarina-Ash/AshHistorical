@@ -18,10 +18,13 @@
 @btn_b_4_1 = 414
 @btn_b_4_2 = 415
 
-@sw_btn_x = 100
-@sw_btn_y_1 = 100
-@sw_btn_y_2 = 200
-@sw_btn_y_3 = 300
+@sw_btn_x = 40
+@sw_desc_x = 8
+@sw_ttl_y = 20
+@sw_desc_y = 350
+@sw_btn_y_1 = 70
+@sw_btn_y_2 = 140
+@sw_btn_y_3 = 210
 
 guiTypes = {
 	containerWindowType = {
@@ -172,8 +175,6 @@ guiTypes = {
 			spriteType = "GFX_ReformsButtons_Button"
 			buttonFont = "Bomb_20"
 			buttonText = ReformsButtons_sufferage_pop_out_txt
-			pdx_tooltip = ReformsButtons_sufferage_pop_out_tt
-			pdx_tooltip_delayed = ReformsButtons_sufferage_1_d_tt
 		}
 		iconType = {
 			name = "ReformsButtons_sufferage_progress_bg"
@@ -193,8 +194,6 @@ guiTypes = {
 			spriteType = "GFX_ReformsButtons_Button"
 			buttonFont = "Bomb_20"
 			buttonText = ReformsButtons_civil_rights_pop_out_txt
-			pdx_tooltip = ReformsButtons_civil_rights_pop_out_tt
-			pdx_tooltip_delayed = ReformsButtons_civil_rights_pop_out_d_tt
 		}
 		iconType = {
 			name = "ReformsButtons_civil_rights_progress_bg"
@@ -214,8 +213,6 @@ guiTypes = {
 			spriteType = "GFX_ReformsButtons_Button"
 			buttonFont = "Bomb_20"
 			buttonText = ReformsButtons_lgbt_rights_pop_out_txt
-			pdx_tooltip = ReformsButtons_lgbt_rights_pop_out_tt
-			pdx_tooltip_delayed = ReformsButtons_lgbt_rights_pop_out_d_tt
 		}
 		iconType = {
 			name = "ReformsButtons_lgbt_rights_progress_bg"
@@ -235,8 +232,6 @@ guiTypes = {
 			spriteType = "GFX_ReformsButtons_Button"
 			buttonFont = "Bomb_20"
 			buttonText = ReformsButtons_healthcare_pop_out_txt
-			pdx_tooltip = ReformsButtons_healthcare_pop_out_tt
-			pdx_tooltip_delayed = ReformsButtons_healthcare_pop_out_d_tt
 		}
 		iconType = {
 			name = "ReformsButtons_healthcare_progress_bg"
@@ -256,8 +251,6 @@ guiTypes = {
 			spriteType = "GFX_ReformsButtons_Button"
 			buttonFont = "Bomb_20"
 			buttonText = ReformsButtons_minimum_wage_pop_out_txt
-			pdx_tooltip = ReformsButtons_minimum_wage_pop_out_tt
-			pdx_tooltip_delayed = ReformsButtons_minimum_wage_pop_out_d_tt
 		}
 		iconType = {
 			name = "ReformsButtons_minimum_wage_progress_bg"
@@ -277,8 +270,6 @@ guiTypes = {
 			spriteType = "GFX_ReformsButtons_Button"
 			buttonFont = "Bomb_20"
 			buttonText = ReformsButtons_safety_regulations_pop_out_txt
-			pdx_tooltip = ReformsButtons_safety_regulations_pop_out_tt
-			pdx_tooltip_delayed = ReformsButtons_safety_regulations_pop_out_d_tt
 		}
 		iconType = {
 			name = "ReformsButtons_safety_regulations_progress_bg"
@@ -298,8 +289,6 @@ guiTypes = {
 			spriteType = "GFX_ReformsButtons_Button"
 			buttonFont = "Bomb_20"
 			buttonText = ReformsButtons_enviromental_regulations_pop_out_txt
-			pdx_tooltip = ReformsButtons_enviromental_regulations_pop_out_tt
-			pdx_tooltip_delayed = ReformsButtons_enviromental_regulations_pop_out_d_tt
 		}
 		iconType = {
 			name = "ReformsButtons_enviromental_regulations_progress_bg"
@@ -319,8 +308,6 @@ guiTypes = {
 			spriteType = "GFX_ReformsButtons_Button"
 			buttonFont = "Bomb_20"
 			buttonText = ReformsButtons_unemployment_subsidies_pop_out_txt
-			pdx_tooltip = ReformsButtons_unemployment_subsidies_pop_out_tt
-			pdx_tooltip_delayed = ReformsButtons_unemployment_subsidies_pop_out_d_tt
 		}
 		iconType = {
 			name = "ReformsButtons_unemployment_subsidies_progress_bg"
@@ -346,7 +333,7 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "RefromsButtons_political_close"
+			name = "ReformsButtons_political_close"
 			position = { x = 234 y = 5 }
 			spriteType = "GFX_econ_help_exit_button"
 			clicksound = click_close
@@ -354,14 +341,194 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "ReformsButtons_sufferage_title"
-			position = { x = 100 y = 10 }
+			position = { x = @sw_btn_x y = @sw_ttl_y }
 			font = "Bomb_24"
 			format = center
 			text = ReformsButtons_sufferage_title_txt
 		}
 		buttonType = {
 			name = "ReformsButtons_sufferage_reform1"
-			position = { x = 100 y = 100 }
+			position = { x = @sw_btn_x y = @sw_btn_y_1 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_sufferage_level1_txt
+			pdx_tooltip = ReformsButtons_sufferage_level1_tt
+			pdx_tooltip_delayed = ReformsButtons_sufferage_level1_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_sufferage_reform2"
+			position = { x = @sw_btn_x y = @sw_btn_y_2 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_sufferage_level2_txt
+			pdx_tooltip = ReformsButtons_sufferage_level2_tt
+			pdx_tooltip_delayed = ReformsButtons_sufferage_level2_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_sufferage_reform3"
+			position = { x = @sw_btn_x y = @sw_btn_y_3 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_sufferage_level3_txt
+			pdx_tooltip = ReformsButtons_sufferage_level3_tt
+			pdx_tooltip_delayed = ReformsButtons_sufferage_level3_d_tt
+		}
+		instantTextBoxType = {
+			name = "ReformsButtons_sufferage_desc"
+			position = { x = @sw_desc_x y = @sw_desc_y }
+			font = "Bomb_18"
+			format = center
+			maxWidth = 258
+			text = ReformsButtons_sufferage_desc_txt
+		}
+
+		instantTextBoxType = {
+			name = "ReformsButtons_civil_rights_title"
+			position = { x = @sw_btn_x y = @sw_ttl_y }
+			font = "Bomb_24"
+			format = center
+			text = ReformsButtons_civil_rights_title_txt
+		}
+		buttonType = {
+			name = "ReformsButtons_civil_rights_reform1"
+			position = { x = @sw_btn_x y = @sw_btn_y_1 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_civil_rights_level1_txt
+			pdx_tooltip = ReformsButtons_civil_rights_level1_tt
+			pdx_tooltip_delayed = ReformsButtons_civil_rights_level1_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_civil_rights_reform2"
+			position = { x = @sw_btn_x y = @sw_btn_y_2 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_civil_rights_level2_txt
+			pdx_tooltip = ReformsButtons_civil_rights_level2_tt
+			pdx_tooltip_delayed = ReformsButtons_civil_rights_level2_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_civil_rights_reform3"
+			position = { x = @sw_btn_x y = @sw_btn_y_3 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_civil_rights_level3_txt
+			pdx_tooltip = ReformsButtons_civil_rights_level3_tt
+			pdx_tooltip_delayed = ReformsButtons_civil_rights_level3_d_tt
+		}
+		instantTextBoxType = {
+			name = "ReformsButtons_civil_rights_desc"
+			position = { x = @sw_desc_x y = @sw_desc_y }
+			font = "Bomb_18"
+			format = center
+			maxWidth = 258
+			text = ReformsButtons_civil_rights_desc_txt
+		}
+		
+		instantTextBoxType = {
+			name = "ReformsButtons_lgbt_rights_title"
+			position = { x = @sw_btn_x y = @sw_ttl_y }
+			font = "Bomb_24"
+			format = center
+			text = ReformsButtons_lgbt_rights_title_txt
+		}
+		buttonType = {
+			name = "ReformsButtons_lgbt_rights_reform1"
+			position = { x = @sw_btn_x y = @sw_btn_y_1 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_lgbt_rights_level1_txt
+			pdx_tooltip = ReformsButtons_lgbt_rights_level1_tt
+			pdx_tooltip_delayed = ReformsButtons_lgbt_rights_level1_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_lgbt_rights_reform2"
+			position = { x = @sw_btn_x y = @sw_btn_y_2 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_lgbt_rights_level2_txt
+			pdx_tooltip = ReformsButtons_lgbt_rights_level2_tt
+			pdx_tooltip_delayed = ReformsButtons_lgbt_rights_level2_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_lgbt_rights_reform3"
+			position = { x = @sw_btn_x y = @sw_btn_y_3 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_lgbt_rights_level3_txt
+			pdx_tooltip = ReformsButtons_lgbt_rights_level3_tt
+			pdx_tooltip_delayed = ReformsButtons_lgbt_rights_level3_d_tt
+		}
+		instantTextBoxType = {
+			name = "ReformsButtons_lgbt_rights_desc"
+			position = { x = @sw_desc_x y = @sw_desc_y }
+			font = "Bomb_18"
+			format = center
+			maxWidth = 258
+			text = ReformsButtons_lgbt_rights_desc_txt
+		}
+
+		instantTextBoxType = {
+			name = "ReformsButtons_healthcare_title"
+			position = { x = @sw_btn_x y = @sw_ttl_y }
+			font = "Bomb_24"
+			format = center
+			text = ReformsButtons_healthcare_title_txt
+		}
+		buttonType = {
+			name = "ReformsButtons_healthcare_reform1"
+			position = { x = @sw_btn_x y = @sw_btn_y_1 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_healthcare_level1_txt
+			pdx_tooltip = ReformsButtons_healthcare_level1_tt
+			pdx_tooltip_delayed = ReformsButtons_healthcare_level1_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_healthcare_reform2"
+			position = { x = @sw_btn_x y = @sw_btn_y_2 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_healthcare_level2_txt
+			pdx_tooltip = ReformsButtons_healthcare_level2_tt
+			pdx_tooltip_delayed = ReformsButtons_healthcare_level2_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_healthcare_reform3"
+			position = { x = @sw_btn_x y = @sw_btn_y_3 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_healthcare_level3_txt
+			pdx_tooltip = ReformsButtons_healthcare_level3_tt
+			pdx_tooltip_delayed = ReformsButtons_healthcare_level3_d_tt
+		}
+		instantTextBoxType = {
+			name = "ReformsButtons_healthcare_desc"
+			position = { x = @sw_desc_x y = @sw_desc_y }
+			font = "Bomb_18"
+			format = center
+			maxWidth = 258
+			text = ReformsButtons_healthcare_desc_txt
 		}
 	}
 	containerWindowType = {
@@ -375,10 +542,202 @@ guiTypes = {
 		}
 
 		buttonType = {
-			name = "RefromsButtons_economic_close"
+			name = "ReformsButtons_economic_close"
 			position = { x = 234 y = 5 }
 			spriteType = "GFX_econ_help_exit_button"
 			clicksound = click_close
+		}
+
+		instantTextBoxType = {
+			name = "ReformsButtons_minimum_wage_title"
+			position = { x = @sw_btn_x y = @sw_ttl_y }
+			font = "Bomb_24"
+			format = center
+			text = ReformsButtons_minimum_wage_title_txt
+		}
+		buttonType = {
+			name = "ReformsButtons_minimum_wage_reform1"
+			position = { x = @sw_btn_x y = @sw_btn_y_1 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_minimum_wage_level1_txt
+			pdx_tooltip = ReformsButtons_minimum_wage_level1_tt
+			pdx_tooltip_delayed = ReformsButtons_minimum_wage_level1_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_minimum_wage_reform2"
+			position = { x = @sw_btn_x y = @sw_btn_y_2 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_minimum_wage_level2_txt
+			pdx_tooltip = ReformsButtons_minimum_wage_level2_tt
+			pdx_tooltip_delayed = ReformsButtons_minimum_wage_level2_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_minimum_wage_reform3"
+			position = { x = @sw_btn_x y = @sw_btn_y_3 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_minimum_wage_level3_txt
+			pdx_tooltip = ReformsButtons_minimum_wage_level3_tt
+			pdx_tooltip_delayed = ReformsButtons_minimum_wage_level3_d_tt
+		}
+		instantTextBoxType = {
+			name = "ReformsButtons_minimum_wage_desc"
+			position = { x = @sw_desc_x y = @sw_desc_y }
+			font = "Bomb_18"
+			format = center
+			maxWidth = 258
+			text = ReformsButtons_minimum_wage_desc_txt
+		}
+
+		instantTextBoxType = {
+			name = "ReformsButtons_safety_regulations_title"
+			position = { x = @sw_btn_x y = @sw_ttl_y }
+			font = "Bomb_24"
+			format = center
+			text = ReformsButtons_safety_regulations_title_txt
+		}
+		buttonType = {
+			name = "ReformsButtons_safety_regulations_reform1"
+			position = { x = @sw_btn_x y = @sw_btn_y_1 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_safety_regulations_level1_txt
+			pdx_tooltip = ReformsButtons_safety_regulations_level1_tt
+			pdx_tooltip_delayed = ReformsButtons_safety_regulations_level1_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_safety_regulations_reform2"
+			position = { x = @sw_btn_x y = @sw_btn_y_2 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_safety_regulations_level2_txt
+			pdx_tooltip = ReformsButtons_safety_regulations_level2_tt
+			pdx_tooltip_delayed = ReformsButtons_safety_regulations_level2_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_safety_regulations_reform3"
+			position = { x = @sw_btn_x y = @sw_btn_y_3 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_safety_regulations_level3_txt
+			pdx_tooltip = ReformsButtons_safety_regulations_level3_tt
+			pdx_tooltip_delayed = ReformsButtons_safety_regulations_level3_d_tt
+		}
+		instantTextBoxType = {
+			name = "ReformsButtons_safety_regulations_desc"
+			position = { x = @sw_desc_x y = @sw_desc_y }
+			font = "Bomb_18"
+			format = center
+			maxWidth = 258
+			text = ReformsButtons_safety_regulations_desc_txt
+		}
+
+		instantTextBoxType = {
+			name = "ReformsButtons_environmental_regulations_title"
+			position = { x = @sw_btn_x y = @sw_ttl_y }
+			font = "Bomb_24"
+			format = center
+			text = ReformsButtons_environmental_regulations_title_txt
+		}
+		buttonType = {
+			name = "ReformsButtons_environmental_regulations_reform1"
+			position = { x = @sw_btn_x y = @sw_btn_y_1 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_environmental_regulations_level1_txt
+			pdx_tooltip = ReformsButtons_environmental_regulations_level1_tt
+			pdx_tooltip_delayed = ReformsButtons_environmental_regulations_level1_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_environmental_regulations_reform2"
+			position = { x = @sw_btn_x y = @sw_btn_y_2 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_environmental_regulations_level2_txt
+			pdx_tooltip = ReformsButtons_environmental_regulations_level2_tt
+			pdx_tooltip_delayed = ReformsButtons_environmental_regulations_level2_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_environmental_regulations_reform3"
+			position = { x = @sw_btn_x y = @sw_btn_y_3 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_environmental_regulations_level3_txt
+			pdx_tooltip = ReformsButtons_environmental_regulations_level3_tt
+			pdx_tooltip_delayed = ReformsButtons_environmental_regulations_level3_d_tt
+		}
+		instantTextBoxType = {
+			name = "ReformsButtons_environmental_regulations_desc"
+			position = { x = @sw_desc_x y = @sw_desc_y }
+			font = "Bomb_18"
+			format = center
+			maxWidth = 258
+			text = ReformsButtons_environmental_regulations_desc_txt
+		}
+
+		instantTextBoxType = {
+			name = "ReformsButtons_unemployment_subsidies_title"
+			position = { x = @sw_btn_x y = @sw_ttl_y }
+			font = "Bomb_24"
+			format = center
+			text = ReformsButtons_unemployment_subsidies_txt
+		}
+		buttonType = {
+			name = "ReformsButtons_unemployment_subsidies_reform1"
+			position = { x = @sw_btn_x y = @sw_btn_y_1 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_unemployment_subsidies_level1_txt
+			pdx_tooltip = ReformsButtons_unemployment_subsidies_level1_tt
+			pdx_tooltip_delayed = ReformsButtons_unemployment_subsidies_level1_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_unemployment_subsidies_reform2"
+			position = { x = @sw_btn_x y = @sw_btn_y_2 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_unemployment_subsidies_level2_txt
+			pdx_tooltip = ReformsButtons_unemployment_subsidies_level2_tt
+			pdx_tooltip_delayed = ReformsButtons_unemployment_subsidies_level2_d_tt
+		}
+		
+		buttonType = {
+			name = "ReformsButtons_unemployment_subsidies_reform3"
+			position = { x = @sw_btn_x y = @sw_btn_y_3 }
+			spriteType = "GFX_ReformsButtons_Button"
+			font = "Bomb_20"
+			format = center
+			text = ReformsButtons_unemployment_subsidies_level3_txt
+			pdx_tooltip = ReformsButtons_unemployment_subsidies_level3_tt
+			pdx_tooltip_delayed = ReformsButtons_unemployment_subsidies_level3_d_tt
+		}
+		instantTextBoxType = {
+			name = "ReformsButtons_unemployment_subsidies_desc"
+			position = { x = @sw_desc_x y = @sw_desc_y }
+			font = "Bomb_18"
+			format = center
+			maxWidth = 258
+			text = ReformsButtons_unemployment_subsidies_desc_txt
 		}
 	}
 }
