@@ -18,6 +18,11 @@
 @btn_b_4_1 = 414
 @btn_b_4_2 = 415
 
+@sw_btn_x = 100
+@sw_btn_y_1 = 100
+@sw_btn_y_2 = 200
+@sw_btn_y_3 = 300
+
 guiTypes = {
 	containerWindowType = {
 		name = "ReformsBase"
@@ -331,24 +336,49 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "ReformsSubWindow"
-		position = { x = 500 y = 529 }
-		clipping = yes
+		name = "ReformsSubWindow_political"
+		position = { x = 274 y = 525 }
+		size = { width = 275 height = 480 }
 
-		containerWindowType = {
-			name = "ReformsSubWindow_container"
-			size = { width = 320 height = 660 }
-			
-			position = { x = -600 y = 0 }
-			show_position = { x = 0 y = 0 }
-			show_animation_type = decelerated
-			hide_animation_type = accelerated
-			animation_time = 300
+		background = {
+			name = "ReformsSubWindow_political_reforms_bg"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
 
-			background = {
-				name = "ReformsSubWindow_bg"
-				quadTextureSprite = "GFX_tiled_window_thin_border2"
-			}
+		buttonType = {
+			name = "RefromsButtons_political_close"
+			position = { x = 234 y = 5 }
+			spriteType = "GFX_econ_help_exit_button"
+			clicksound = click_close
+		}
+
+		instantTextBoxType = {
+			name = "ReformsButtons_sufferage_title"
+			position = { x = 100 y = 10 }
+			font = "Bomb_24"
+			format = center
+			text = ReformsButtons_sufferage_title_txt
+		}
+		buttonType = {
+			name = "ReformsButtons_sufferage_reform1"
+			position = { x = 100 y = 100 }
+		}
+	}
+	containerWindowType = {
+		name = "ReformsSubWindow_economic"
+		position = { x = 5 y = 525}
+		size = { width = 275 height = 476 }
+
+		background = {
+			name = "ReformsSubWindow_economic_reforms_bg"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+
+		buttonType = {
+			name = "RefromsButtons_economic_close"
+			position = { x = 234 y = 5 }
+			spriteType = "GFX_econ_help_exit_button"
+			clicksound = click_close
 		}
 	}
 }

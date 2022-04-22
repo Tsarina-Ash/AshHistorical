@@ -28,9 +28,11 @@ scripted_gui = {
 		effects = {
 			ReformsBase_Button_Reforms_click = {
 				set_variable = { RS_active_tab = 1 }
+				ReformsButtons_close = yes
 			}
 			ReformsBase_Button_Cabnent_click = {
 				set_variable = { RS_active_tab = 2 }
+				ReformsButtons_close = yes
 			}
 		}
 
@@ -113,13 +115,98 @@ scripted_gui = {
 }
 #Popout Window
 scripted_gui = {
-	TRT_reforms_subwindow = {
-		window_name = "ReformsSubWindow"
+	TRT_reforms_subwindow_political = {
+		window_name = "ReformsSubWindow_political"
 		context_type = player_context
 		parent_window_token = politics_tab
 
 		visible = {
 			has_country_flag = reforms_open
+			OR = {
+				has_country_flag = reforms_sufferage_open
+				has_country_flag = reforms_civl_rights_open
+				has_country_flag = reforms_lbgt_rights_open
+				has_country_flag = reforms_healthcare_open
+			}
+		}
+
+		effects = {
+			RefromsButtons_political_close_click = {
+				ReformsButtons_close = yes
+			}
+		}
+
+		triggers = {
+			ReformsButtons_sufferage_title_visible = { has_country_flag = reforms_sufferage_open }
+			ReformsButtons_sufferage_reform1_visible = { has_country_flag = reforms_sufferage_open }
+			ReformsButtons_sufferage_reform2_visible = { has_country_flag = reforms_sufferage_open }
+			ReformsButtons_sufferage_reform3_visible = { has_country_flag = reforms_sufferage_open }
+			ReformsButtons_sufferage_desc_visible = { has_country_flag = reforms_sufferage_open }
+			
+			ReformsButtons_civil_rights_title_visible = { has_country_flag = reforms_civl_rights_open }
+			ReformsButtons_civil_rights_reform1_visible = { has_country_flag = reforms_civl_rights_open }
+			ReformsButtons_civil_rights_reform2_visible = { has_country_flag = reforms_civl_rights_open }
+			ReformsButtons_civil_rights_reform3_visible = { has_country_flag = reforms_civl_rights_open }
+			ReformsButtons_civil_rights_desc_visible = { has_country_flag = reforms_civl_rights_open }
+			
+			ReformsButtons_lgbt_rights_title_visible = { has_country_flag = reforms_lbgt_rights_open }
+			ReformsButtons_lgbt_rights_reform1_visible = { has_country_flag = reforms_lbgt_rights_open }
+			ReformsButtons_lgbt_rights_reform2_visible = { has_country_flag = reforms_lbgt_rights_open }
+			ReformsButtons_lgbt_rights_reform3_visible = { has_country_flag = reforms_lbgt_rights_open }
+			ReformsButtons_lgbt_rights_desc_visible = { has_country_flag = reforms_lbgt_rights_open }
+			
+			ReformsButtons_healthcare_title_visible = { has_country_flag = reforms_healthcare_open }
+			ReformsButtons_healthcare_reform1_visible = { has_country_flag = reforms_healthcare_open }
+			ReformsButtons_healthcare_reform2_visible = { has_country_flag = reforms_healthcare_open }
+			ReformsButtons_healthcare_reform3_visible = { has_country_flag = reforms_healthcare_open }
+			ReformsButtons_healthcare_desc_visible = { has_country_flag = reforms_healthcare_open }
+		}
+	}
+	TRT_reforms_subwindow_economic = {
+		window_name = "ReformsSubWindow_economic"
+		context_type = player_context
+		parent_window_token = politics_tab
+
+		visible = {
+			has_country_flag = reforms_open
+			OR = {
+				has_country_flag = reforms_minimum_wage_open
+				has_country_flag = reforms_safety_regulations_open
+				has_country_flag = reforms_enviromental_regulations_open
+				has_country_flag = reforms_unemployment_subsidies_open
+			}
+		}
+
+		effects = {
+			RefromsButtons_economic_close_click = {
+				ReformsButtons_close = yes
+			}
+		}
+
+		triggers = {
+			ReformsButtons_minimum_wage_title_visible = { has_country_flag = reforms_minimum_wage_open }
+			ReformsButtons_minimum_wage_reform1_visible = { has_country_flag = reforms_minimum_wage_open }
+			ReformsButtons_minimum_wage_reform2_visible = { has_country_flag = reforms_minimum_wage_open }
+			ReformsButtons_minimum_wage_reform3_visible = { has_country_flag = reforms_minimum_wage_open }
+			ReformsButtons_minimum_wage_desc_visible = { has_country_flag = reforms_minimum_wage_open }
+			
+			ReformsButtons_safety_regulations_title_visible = { has_country_flag = reforms_safety_regulations_open }
+			ReformsButtons_safety_regulations_reform1_visible = { has_country_flag = reforms_safety_regulations_open }
+			ReformsButtons_safety_regulations_reform2_visible = { has_country_flag = reforms_safety_regulations_open }
+			ReformsButtons_safety_regulations_reform3_visible = { has_country_flag = reforms_safety_regulations_open }
+			ReformsButtons_safety_regulations_desc_visible = { has_country_flag = reforms_safety_regulations_open }
+			
+			ReformsButtons_environmental_regulations_title_visible = { has_country_flag = reforms_enviromental_regulations_open }
+			ReformsButtons_environmental_regulations_reform1_visible = { has_country_flag = reforms_enviromental_regulations_open }
+			ReformsButtons_environmental_regulations_reform2_visible = { has_country_flag = reforms_enviromental_regulations_open }
+			ReformsButtons_environmental_regulations_reform3_visible = { has_country_flag = reforms_enviromental_regulations_open }
+			ReformsButtons_environmental_regulations_desc_visible = { has_country_flag = reforms_enviromental_regulations_open }
+			
+			ReformsButtons_unemployment_subsidies_title_visible = { has_country_flag = reforms_unemployment_subsidies_open }
+			ReformsButtons_unemployment_subsidies_reform1_visible = { has_country_flag = reforms_unemployment_subsidies_open }
+			ReformsButtons_unemployment_subsidies_reform2_visible = { has_country_flag = reforms_unemployment_subsidies_open }
+			ReformsButtons_unemployment_subsidies_reform3_visible = { has_country_flag = reforms_unemployment_subsidies_open }
+			ReformsButtons_unemployment_subsidies_desc_visible = { has_country_flag = reforms_unemployment_subsidies_open }
 		}
 	}
 }

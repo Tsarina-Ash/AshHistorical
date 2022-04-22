@@ -247,3 +247,14 @@
 		if = { limit = { has_country_flag = reforms_safety_regulations_open} clr_country_flag = reforms_safety_regulations_open}
 		if = { limit = { has_country_flag = reforms_enviromental_regulations_open} clr_country_flag = reforms_enviromental_regulations_open}
 	}
+	ReformsButtons_close = {
+		clr_country_flag = reforms_open
+		if = { limit = { has_country_flag = reforms_sufferage_open} clr_country_flag = reforms_sufferage_open}
+		if = { limit = { has_country_flag = reforms_civl_rights_open} clr_country_flag = reforms_civl_rights_open}
+		if = { limit = { has_country_flag = reforms_lbgt_rights_open} clr_country_flag = reforms_lbgt_rights_open}
+		if = { limit = { has_country_flag = reforms_healthcare_open} clr_country_flag = reforms_healthcare_open}
+		if = { limit = { has_country_flag = reforms_minimum_wage_open} clr_country_flag = reforms_minimum_wage_open}
+		if = { limit = { has_country_flag = reforms_safety_regulations_open} clr_country_flag = reforms_safety_regulations_open}
+		if = { limit = { has_country_flag = reforms_enviromental_regulations_open} clr_country_flag = reforms_enviromental_regulations_open}
+		if = { limit = { has_country_flag = reforms_unemployment_subsidies_open} clr_country_flag = reforms_unemployment_subsidies_open}
+	}
