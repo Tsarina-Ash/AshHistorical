@@ -6089,6 +6089,83 @@ focus = {
 }
 
 focus = {
+	id = FDR_USA_destroyer_effort
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_the_atlantic }
+	relative_position_id = FDR_USA_the_atlantic
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_asw_funding
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_destroyer_effort }
+	relative_position_id = FDR_USA_destroyer_effort
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_cruiser_effort
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_the_atlantic }
+	relative_position_id = FDR_USA_the_atlantic
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_expand_light_carrier_fleet
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_destroyer_effort }
+	prerequisite = { focus = FDR_USA_cruiser_effort }
+	relative_position_id = FDR_USA_destroyer_effort
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = FDR_USA_growing_tensions
 	icon = GFX_focus_USA_placeholder
 
@@ -6326,6 +6403,105 @@ focus = {
 	
 	prerequisite = { focus = FDR_USA_rearmament }
 	relative_position_id = FDR_USA_rearmament
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_dockyard_battalions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_naval_act_of_blank }
+	relative_position_id = FDR_USA_naval_act_of_blank
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_expand_fleet
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_naval_act_of_blank }
+	relative_position_id = FDR_USA_naval_act_of_blank
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_modernization_program
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 4
+	
+	prerequisite = { focus = FDR_USA_two_ocean_navy_act }
+	prerequisite = { focus = FDR_USA_expand_fleet }
+	relative_position_id = FDR_USA_expand_fleet
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_expand_important_ports
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_expand_the_USMC }
+	prerequisite = { focus = FDR_USA_expand_fleet }
+	relative_position_id = FDR_USA_expand_fleet
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_two_ocean_navy_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 4
+	
+	prerequisite = { focus = FDR_USA_expand_fleet } 
+	prerequisite = { focus = FDR_USA_growing_tensions } 
+	prerequisite = { focus = FDR_USA_dockyard_battalions }
+	relative_position_id = FDR_USA_growing_tensions
 
 	available_if_capitulated = no
 	
