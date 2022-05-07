@@ -3997,7 +3997,7 @@ focus = {
 
 	cost = 6
 
-	x = 0
+	x = -20
 	y = 1
 
 	prerequisite = { focus = FDR_USA_broadcast_fireside_chat }
@@ -4025,7 +4025,7 @@ focus = {
 
 	cost = 4
 
-	x = -26
+	x = -13
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_first_new_deal }
@@ -4216,7 +4216,7 @@ focus = {
 
 	cost = 4
 
-	x = -13
+	x = 0
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_first_new_deal }
@@ -4912,7 +4912,7 @@ focus = {
 
 	cost = 4
 
-	x = 0
+	x = 13
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_first_new_deal }
@@ -5164,8 +5164,8 @@ focus = {
 	x = 18
 	y = 1
 	
-	prerequisite = { focus = FDR_USA_first_new_deal }
-	relative_position_id = FDR_USA_first_new_deal
+	prerequisite = { focus = FDR_USA_broadcast_fireside_chat }
+	relative_position_id = FDR_USA_broadcast_fireside_chat
 
 	available_if_capitulated = no
 	
@@ -5180,7 +5180,7 @@ focus = {
 
 	cost = 4
 
-	x = -8
+	x = -13
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_2ND_NEW_DEAL }
@@ -5345,36 +5345,16 @@ focus = {
 }
 
 focus = {
-	id = FDR_USA_ask_businesses_what_they_want
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-
-	prerequisite = { focus = FDR_USA_pursue_a_more_balanced_budget focus = FDR_USA_pursue_kenyesian_economics }
-	relative_position_id = FDR_USA_pursue_kenyesian_economics
-
-	available_if_capitulated = no
-
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
 	id = FDR_USA_propose_more_infrastructure_acts
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = 0
-	y = 2
+	x = -1
+	y = 1
 
-	prerequisite = { focus = FDR_USA_ask_businesses_what_they_want } 
 	prerequisite = { focus = FDR_USA_evaluate_infrastructure_sites }
-	relative_position_id = FDR_USA_ask_businesses_what_they_want
+	relative_position_id = FDR_USA_evaluate_infrastructure_sites
 
 	available_if_capitulated = no
 
@@ -5403,54 +5383,16 @@ focus = {
 }
 
 focus = {
-	id = FDR_USA_economic_reshuffling
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -3
-	y = 1
-
-	prerequisite = { focus = FDR_USA_pursue_a_more_balanced_budget focus = FDR_USA_pursue_kenyesian_economics }
-	relative_position_id = FDR_USA_pursue_kenyesian_economics
-
-	available_if_capitulated = no
-
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = FDR_USA_heighten_military_spending
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 2
-	y = 1
-
-	prerequisite = { focus = FDR_USA_economic_reshuffling }
-	relative_position_id = FDR_USA_economic_reshuffling
-
-	available_if_capitulated = no
-
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
 	id = FDR_USA_infrastructure_developments
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = 2
-	y = 1
+	x = -3
+	y = 2
 
-	prerequisite = { focus = FDR_USA_pursue_a_more_balanced_budget focus = FDR_USA_pursue_kenyesian_economics }
-	relative_position_id = FDR_USA_pursue_kenyesian_economics
+	prerequisite = { focus = FDR_USA_revive_core_industry }
+	relative_position_id = FDR_USA_revive_core_industry
 
 	available_if_capitulated = no
 
@@ -5479,6 +5421,178 @@ focus = {
 }
 
 focus = {
+	id = FDR_USA_revive_core_industry
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+
+	prerequisite = { focus = FDR_USA_pursue_a_more_balanced_budget focus = FDR_USA_pursue_kenyesian_economics }
+	relative_position_id = FDR_USA_pursue_kenyesian_economics
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_heavy_industry_revival
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = FDR_USA_revive_core_industry }
+	relative_position_id = FDR_USA_revive_core_industry
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_growth_of_the_home_industry
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = FDR_USA_arsenal_of_democracy }
+	relative_position_id = FDR_USA_arsenal_of_democracy
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_industry_modernization
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+
+	prerequisite = { focus = FDR_USA_heavy_industry_revival }
+	relative_position_id = FDR_USA_heavy_industry_revival
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_public_utilities_holding_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = FDR_USA_industry_modernization }
+	relative_position_id = FDR_USA_industry_modernization
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_federal_oil_grants
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = FDR_USA_utilizing_the_land }
+	relative_position_id = FDR_USA_utilizing_the_land
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_endorse_synthetic_rubber_refineries
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = FDR_USA_federal_oil_grants }
+	relative_position_id = FDR_USA_federal_oil_grants
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_arsenal_of_democracy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 2
+
+	prerequisite = { focus = FDR_USA_industry_modernization }
+	relative_position_id = FDR_USA_industry_modernization
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_utilizing_the_land
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_revive_core_industry }
+	relative_position_id = FDR_USA_revive_core_industry
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#sells land to mining companies (worse environment, helps get more jobs + more resources + better relations with everyone ?)
+	}
+}
+
+
+focus = {
 	id = FDR_USA_expand_mining_contracts
 	icon = GFX_focus_USA_placeholder
 
@@ -5487,8 +5601,8 @@ focus = {
 	x = 1
 	y = 1
 	
-	prerequisite = { focus = FDR_USA_evaluate_infrastructure_sites }
-	relative_position_id = FDR_USA_evaluate_infrastructure_sites
+	prerequisite = { focus = FDR_USA_utilizing_the_land }
+	relative_position_id = FDR_USA_utilizing_the_land
 
 	available_if_capitulated = no
 	
@@ -5498,39 +5612,57 @@ focus = {
 }
 
 focus = {
-	id = FDR_USA_propose_massive_infrastructure_projects
+	id = FDR_USA_soilidify_US_steel
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = -1
-	y = 3
-	
-	prerequisite = { focus = FDR_USA_evaluate_infrastructure_sites }
-	prerequisite = { focus = FDR_USA_propose_more_infrastructure_acts }
-	relative_position_id = FDR_USA_evaluate_infrastructure_sites
+	x = 0
+	y = 2
+
+	prerequisite = { focus = FDR_USA_expand_mining_contracts }
+	relative_position_id = FDR_USA_expand_mining_contracts
 
 	available_if_capitulated = no
 
 	completion_reward = {
-		#paving way to build what we know as the highway system
+		add_political_power = 50
 	}
 }
 
 focus = {
-	id = FDR_USA_social_security
+	id = FDR_USA_lower_tariffs
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 2
+
+	prerequisite = { focus = FDR_USA_soilidify_US_steel }
+	relative_position_id = FDR_USA_soilidify_US_steel
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_propose_industry_subsudies
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
 	x = 0
 	y = 1
-	
-	prerequisite = { focus = FDR_USA_2ND_NEW_DEAL }
-	relative_position_id = FDR_USA_2ND_NEW_DEAL
+
+	prerequisite = { focus = FDR_USA_soilidify_US_steel }
+	relative_position_id = FDR_USA_soilidify_US_steel
 
 	available_if_capitulated = no
-	
+
 	completion_reward = {
 		add_political_power = 50
 	}
@@ -5542,11 +5674,11 @@ focus = {
 
 	cost = 4
 
-	x = -4
+	x = 5
 	y = 1
 	
-	prerequisite = { focus = FDR_USA_2ND_NEW_DEAL }
-	relative_position_id = FDR_USA_2ND_NEW_DEAL
+	prerequisite = { focus = FDR_USA_revive_core_industry }
+	relative_position_id = FDR_USA_revive_core_industry
 
 	available_if_capitulated = no
 	
@@ -5554,6 +5686,219 @@ focus = {
 		add_political_power = 50
 	}
 }
+
+focus = {
+	id = FDR_USA_farm_security_administration
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_public_works }
+	relative_position_id = FDR_USA_public_works
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_federal_emergency_relief_administration_and_the_resettlement_administration
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_farm_security_administration }
+	relative_position_id = FDR_USA_farm_security_administration
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_expand_the_pwa
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_public_works }
+	relative_position_id = FDR_USA_public_works
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_we_will_build
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_expand_the_pwa }
+	relative_position_id = FDR_USA_expand_the_pwa
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_schools
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_we_will_build }
+	relative_position_id = FDR_USA_we_will_build
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_hospitals
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_schools }
+	relative_position_id = FDR_USA_schools
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_bridges
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_we_will_build }
+	relative_position_id = FDR_USA_we_will_build
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_roads
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_bridges }
+	relative_position_id = FDR_USA_bridges
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_and_the_soul_of_america
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_hospitals }
+	prerequisite = { focus = FDR_USA_roads }
+	relative_position_id = FDR_USA_roads
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = FDR_USA_rebuilding_america
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 5
+	y = 6
+
+	prerequisite = { focus = FDR_USA_lower_tariffs }
+	prerequisite = { focus = FDR_USA_growth_of_the_home_industry }
+	prerequisite = { focus = FDR_USA_and_the_soul_of_america }
+	relative_position_id = FDR_USA_heavy_industry_revival
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+	
+focus = {
+	id = FDR_USA_rural_electrification_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = FDR_USA_rebuilding_america }
+	relative_position_id = FDR_USA_rebuilding_america
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
 	
 focus = {
 	id = FDR_USA_civil_liberties
@@ -5612,6 +5957,25 @@ focus = {
 	}
 }
 
+focus = {
+	id = FDR_USA_social_security
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_health }
+	relative_position_id = FDR_USA_health
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
 #FDR USA MORE TRADITIONAL WW2 TREE
 
 focus = {
@@ -5623,8 +5987,8 @@ focus = {
 	x = 32
 	y = 1
 	
-	prerequisite = { focus = FDR_USA_first_new_deal }
-	relative_position_id = FDR_USA_first_new_deal
+	prerequisite = { focus = FDR_USA_broadcast_fireside_chat }
+	relative_position_id = FDR_USA_broadcast_fireside_chat
 
 	available_if_capitulated = no
 	
@@ -5710,6 +6074,140 @@ focus = {
 }
 
 focus = {
+	id = FDR_USA_war_department
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_global_superpower }
+	relative_position_id = FDR_USA_global_superpower
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_new_chief_of_staff
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_war_department }
+	relative_position_id = FDR_USA_war_department
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_reorganization
+	icon = GFX_focus_USA_placeholder
+
+	cost = 2
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_new_chief_of_staff }
+	relative_position_id = FDR_USA_new_chief_of_staff
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_the_pentagon
+	icon = GFX_focus_USA_placeholder
+
+	cost = 2
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_new_chief_of_staff }
+	relative_position_id = FDR_USA_new_chief_of_staff
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_office_of_strategic_services
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_new_chief_of_staff }
+	prerequisite = { focus = FDR_USA_war_plans_division }
+	relative_position_id = FDR_USA_new_chief_of_staff
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_war_powers_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_war_department }
+	relative_position_id = FDR_USA_war_department
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_war_plans_division
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_war_department }
+	relative_position_id = FDR_USA_war_department
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = FDR_USA_rearmament
 	icon = GFX_focus_USA_placeholder
 
@@ -5718,8 +6216,8 @@ focus = {
 	x = 35
 	y = 2
 	
-	prerequisite = { focus = FDR_USA_first_new_deal }
-	relative_position_id = FDR_USA_first_new_deal
+	prerequisite = { focus = FDR_USA_broadcast_fireside_chat }
+	relative_position_id = FDR_USA_broadcast_fireside_chat
 
 	available_if_capitulated = no
 	
@@ -5805,6 +6303,25 @@ focus = {
 }
 
 focus = {
+	id = FDR_USA_marines_all_the_way
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_readiness_report }
+	relative_position_id = FDR_USA_readiness_report
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = FDR_USA_send_help_to_philipines
 	icon = GFX_focus_USA_placeholder
 
@@ -5829,7 +6346,7 @@ focus = {
 
 	cost = 8
 
-	x = -1
+	x = 1
 	y = 1
 	
 	mutually_exclusive = {focus = FDR_USA_philipino_acts }
@@ -5859,7 +6376,7 @@ focus = {
 
 	cost = 8
 
-	x = 1
+	x = -1
 	y = 1
 	
 	mutually_exclusive = {focus = FDR_USA_ignore_phillipines }
@@ -5900,6 +6417,206 @@ focus = {
 
 	completion_reward = {
 		#an act to allow the US to govern the phillipines more directly
+	}
+}
+
+focus = {
+	id = FDR_USA_filipino_airforce
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = FDR_USA_phillipines_military_dev }
+	relative_position_id = FDR_USA_phillipines_military_dev
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_fighting_filipinos
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = FDR_USA_phillipines_military_dev }
+	relative_position_id = FDR_USA_phillipines_military_dev
+
+	available_if_capitulated = yes
+
+	available = {
+		tag = PHI {
+			has_capitulated = yes
+		}
+	}
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_authorize_fighter_plane_shipments
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = FDR_USA_filipino_airforce }
+	relative_position_id = FDR_USA_filipino_airforce
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_authorize_bomber_shipments
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 2
+
+	prerequisite = { focus = FDR_USA_filipino_airforce }
+	relative_position_id = FDR_USA_filipino_airforce
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_begin_testing_new_weapons
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+
+	prerequisite = { focus = FDR_USA_philipino_acts }
+	prerequisite = { focus = FDR_USA_phillipines_military_dev }
+	relative_position_id = FDR_USA_phillipines_military_dev
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_army_modernization_program
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = FDR_USA_begin_testing_new_weapons }
+	relative_position_id = FDR_USA_begin_testing_new_weapons
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_new_doctrinal_direction
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = FDR_USA_army_modernization_program }
+	relative_position_id = FDR_USA_army_modernization_program
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_combined_arms_warfare
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = FDR_USA_authorize_fighter_plane_shipments }
+	prerequisite = { focus = FDR_USA_authorize_bomber_shipments }
+	prerequisite = { focus = FDR_USA_new_doctrinal_direction }
+	relative_position_id = FDR_USA_new_doctrinal_direction
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_increase_research_spending
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 2
+
+	prerequisite = { focus = FDR_USA_begin_testing_new_weapons  focus = FDR_USA_phillipines_economic_dev }
+	relative_position_id = FDR_USA_begin_testing_new_weapons
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_artillery_modernization_program
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = FDR_USA_army_modernization_program }
+	prerequisite = { focus = FDR_USA_increase_research_spending }
+	relative_position_id = FDR_USA_increase_research_spending
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
 	}
 }
 
@@ -6031,7 +6748,7 @@ focus = {
 
 	cost = 4
 
-	x = -1
+	x = 0
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_agent_x }
@@ -6080,6 +6797,83 @@ focus = {
 	
 	prerequisite = { focus = FDR_USA_rearmament }
 	relative_position_id = FDR_USA_rearmament
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_destroyer_effort
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_the_atlantic }
+	relative_position_id = FDR_USA_the_atlantic
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_asw_funding
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_destroyer_effort }
+	relative_position_id = FDR_USA_destroyer_effort
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_cruiser_effort
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_the_atlantic }
+	relative_position_id = FDR_USA_the_atlantic
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_expand_light_carrier_fleet
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_destroyer_effort }
+	prerequisite = { focus = FDR_USA_cruiser_effort }
+	relative_position_id = FDR_USA_destroyer_effort
 
 	available_if_capitulated = no
 	
@@ -6202,6 +6996,25 @@ focus = {
 }
 
 focus = {
+	id = FDR_USA_well_supplied_and_motivated
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_appoint_war_industrialists }
+	relative_position_id = FDR_USA_appoint_war_industrialists
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = FDR_USA_limited_rearmament
 	icon = GFX_focus_USA_placeholder
 
@@ -6278,16 +7091,195 @@ focus = {
 }
 
 focus = {
+	id = FDR_USA_revive_springfield_armory
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_set_out_contracts_for_military_equipment }
+	relative_position_id = FDR_USA_set_out_contracts_for_military_equipment
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_30_second_response_time
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 3
+	
+	prerequisite = { focus = FDR_USA_revive_springfield_armory }
+	relative_position_id = FDR_USA_revive_springfield_armory
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_willow_run
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_revive_springfield_armory }
+	relative_position_id = FDR_USA_revive_springfield_armory
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_operation_meetinghouse
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_willow_run }
+	relative_position_id = FDR_USA_willow_run
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_detroit_vehicle_arsenal
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_set_out_contracts_for_military_equipment }
+	relative_position_id = FDR_USA_set_out_contracts_for_military_equipment
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_quantity_and_quality
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_detroit_vehicle_arsenal }
+	relative_position_id = FDR_USA_detroit_vehicle_arsenal
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_the_sword_is_stronger_than_the_shield
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = FDR_USA_quantity_and_quality }
+	relative_position_id = FDR_USA_quantity_and_quality
+
+	available_if_capitulated = no
+	
+	mutually_exclusive = {
+		focus = FDR_USA_the_shield_is_stronger_than_the_sword
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_the_shield_is_stronger_than_the_sword
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = FDR_USA_quantity_and_quality }
+	relative_position_id = FDR_USA_quantity_and_quality
+
+	mutually_exclusive = {
+		focus = FDR_USA_the_sword_is_stronger_than_the_shield
+	}
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = FDR_USA_little_rock_arsenal
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = 2
+	x = -3
 	y = 1
 	
-	prerequisite = { focus = FDR_USA_limited_rearmament }
-	relative_position_id = FDR_USA_limited_rearmament
+	prerequisite = { focus = FDR_USA_set_out_contracts_for_military_equipment }
+	relative_position_id = FDR_USA_set_out_contracts_for_military_equipment
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_set_out_contracts_for_guns
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_little_rock_arsenal }
+	relative_position_id = FDR_USA_little_rock_arsenal
 
 	available_if_capitulated = no
 	
@@ -6302,11 +7294,72 @@ focus = {
 
 	cost = 4
 
-	x = -3
+	x = 0
 	y = 1
 	
-	prerequisite = { focus = FDR_USA_limited_rearmament }
-	relative_position_id = FDR_USA_limited_rearmament
+	prerequisite = { focus = FDR_USA_global_superpower }
+	relative_position_id = FDR_USA_global_superpower
+
+	available = {
+		has_completed_focus = { focus= FDR_USA_the_pentagon }
+	}
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_ideas = american_neutrality
+	}
+}
+
+focus = {
+	id = FDR_USA_rangers_lead_the_war
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_selective_service_act }
+	relative_position_id = FDR_USA_selective_service_act
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_ideas = american_neutrality
+	}
+}
+
+focus = {
+	id = FDR_USA_airborne_divisions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_selective_service_act }
+	relative_position_id = FDR_USA_selective_service_act
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_ideas = american_neutrality
+	}
+}
+
+focus = {
+	id = FDR_USA_begin_lousiana_maneuvers
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_selective_service_act }
+	relative_position_id = FDR_USA_selective_service_act
 
 	available_if_capitulated = no
 	
@@ -6335,6 +7388,282 @@ focus = {
 }
 
 focus = {
+	id = FDR_USA_dockyard_battalions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_naval_act_of_blank }
+	relative_position_id = FDR_USA_naval_act_of_blank
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_expand_fleet
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_naval_act_of_blank }
+	relative_position_id = FDR_USA_naval_act_of_blank
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_adhere_to_mahan
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_expand_fleet }
+	relative_position_id = FDR_USA_expand_fleet
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_increase_ONI_funding
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_adhere_to_mahan }
+	relative_position_id = FDR_USA_adhere_to_mahan
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+
+focus = {
+	id = FDR_USA_naval_war_games
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_expand_fleet }
+	relative_position_id = FDR_USA_expand_fleet
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_naval_aircraft_modernization_plan
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_naval_war_games }
+	relative_position_id = FDR_USA_naval_war_games
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_age_of_the_carrier
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_naval_war_games }
+	relative_position_id = FDR_USA_naval_war_games
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_naval_think_tanks
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_age_of_the_carrier }
+	relative_position_id = FDR_USA_age_of_the_carrier
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_modernization_program
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 4
+	
+	prerequisite = { focus = FDR_USA_naval_think_tanks }
+	prerequisite = { focus = FDR_USA_two_ocean_navy_act }
+	prerequisite = { focus = FDR_USA_expand_fleet }
+	relative_position_id = FDR_USA_expand_fleet
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_never_at_a_disadvantage
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_faster_and_stronger_battleships }
+	prerequisite = { focus = FDR_USA_two_ocean_navy_act }
+	prerequisite = { focus = FDR_USA_modernization_program }
+	relative_position_id = FDR_USA_modernization_program
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_expand_important_ports
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_expand_the_USMC }
+	prerequisite = { focus = FDR_USA_expand_fleet }
+	relative_position_id = FDR_USA_expand_fleet
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_expand_airbases
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_expand_important_ports }
+	prerequisite = { focus = FDR_USA_expand_important_ports }
+	relative_position_id = FDR_USA_expand_important_ports
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_two_ocean_navy_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 4
+	
+	prerequisite = { focus = FDR_USA_naval_aircraft_modernization_plan } 
+	prerequisite = { focus = FDR_USA_expand_fleet } 
+	prerequisite = { focus = FDR_USA_growing_tensions } 
+	prerequisite = { focus = FDR_USA_dockyard_battalions }
+	relative_position_id = FDR_USA_growing_tensions
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_faster_and_stronger_battleships
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = FDR_USA_two_ocean_navy_act }
+	relative_position_id = FDR_USA_two_ocean_navy_act
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = FDR_USA_expand_the_USMC
 	icon = GFX_focus_USA_placeholder
 
@@ -6353,6 +7682,257 @@ focus = {
 	}
 }
 
+focus = {
+	id = FDR_USA_expand_the_airforce
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 19
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_rearmament }
+	relative_position_id = FDR_USA_rearmament
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_modernize_training_facilities
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_expand_the_airforce }
+	relative_position_id = FDR_USA_expand_the_airforce
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_incentivize_aircraft_production
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_expand_the_airforce }
+	relative_position_id = FDR_USA_expand_the_airforce
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_heavy_bomber_program
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_incentivize_aircraft_production }
+	relative_position_id = FDR_USA_incentivize_aircraft_production
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_long_range_escorts
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_heavy_bomber_program }
+	relative_position_id = FDR_USA_heavy_bomber_program
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_mass_bombing_offensives
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = FDR_USA_heavy_bomber_program }
+	relative_position_id = FDR_USA_heavy_bomber_program
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_eigth_aircorps
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_heavy_bomber_program }
+	relative_position_id = FDR_USA_heavy_bomber_program
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_tuskeegee_airmen
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_eigth_aircorps }
+	prerequisite = { focus = FDR_USA_mass_bombing_offensives }
+	relative_position_id = FDR_USA_mass_bombing_offensives
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_modern_aircraft
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_incentivize_aircraft_production }
+	relative_position_id = FDR_USA_incentivize_aircraft_production
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FDR_USA_put_out_contracts_for_equipment
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = FDR_USA_modern_aircraft }
+	relative_position_id = FDR_USA_modern_aircraft
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+#TRUMAN#
+
+focus = {
+	id = TRU_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 250
+	y = 0
+	
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaLBJ.1
+		}
+	}
+}
+
+#EISENHOWER#
+
+focus = {
+	id = EIS_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 300
+	y = 0
+	
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaLBJ.1
+		}
+	}
+}
+
+#JFK#
+
+focus = {
+	id = JFK_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 350
+	y = 0
+	
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaLBJ.1
+		}
+	}
+}
+
 #LBJ#
 
 focus = {
@@ -6361,7 +7941,7 @@ focus = {
 
 	cost = 1
 
-	x = 250
+	x = 400
 	y = 0
 	
 	available_if_capitulated = no
@@ -6411,4 +7991,86 @@ focus = {
 	}
 }
 
+#NIXON#
+
+focus = {
+	id = NIX_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 450
+	y = 0
+	
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaLBJ.1
+		}
+	}
 }
+
+#FORD#
+
+focus = {
+	id = FOR_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 500
+	y = 0
+	
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaLBJ.1
+		}
+	}
+}
+
+#CARTER#
+
+focus = {
+	id = CAR_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 550
+	y = 0
+	
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaLBJ.1
+		}
+	}
+}
+
+#REAGAN#
+
+focus = {
+	id = REA_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 600
+	y = 0
+	
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaLBJ.1
+		}
+	}
+}
+
+}
+
+
