@@ -16,14 +16,403 @@ focus_tree = {
     }
 	default = no
 
+##################################
+######1920's Political Trees######
+##################################
+
+###Intro###
 focus = {
-	id = CAN_first_focus
+	id = CAN_pass_the_dominions_election_act
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 5
+
+	x = 10
+	y = 0
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_the_vacation_ends
+	icon = GFX_focus_USA_placeholder
+
+	cost = 10
 
 	x = 0
 	y = 1
+
+    prerequisite = { focus = CAN_pass_the_dominions_election_act }
+	relative_position_id = CAN_pass_the_dominions_election_act
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#White's Subpath
+focus = {
+	id = CAN_pressure_white
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -1
+	y = 1
+
+    prerequisite = { focus = CAN_the_vacation_ends }
+    mutually_exclusive = { focus = CAN_accept_the_refusal }
+	relative_position_id = CAN_the_vacation_ends
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_the_strike_issue
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -2
+	y = 1
+
+    prerequisite = { focus = CAN_pressure_white }
+	relative_position_id = CAN_pressure_white
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_repeal_immigrant_act_alterations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -1
+	y = 1
+
+    prerequisite = { focus = CAN_the_strike_issue }
+    mutually_exclusive = { focus = CAN_threaten_to_enact }
+	relative_position_id = CAN_the_strike_issue
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_threaten_to_enact
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 1
+	y = 1
+
+    prerequisite = { focus = CAN_the_strike_issue }
+    mutually_exclusive = { focus = CAN_repeal_immigrant_act_alterations }
+	relative_position_id = CAN_the_strike_issue
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_the_strike_issue_resolved
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 1
+	y = 1
+
+    prerequisite = { focus = CAN_repeal_immigrant_act_alterations focus = CAN_threaten_to_enact }
+	relative_position_id = CAN_repeal_immigrant_act_alterations
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Shared Path
+focus = {
+	id = CAN_end_the_wartime_tax
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+    prerequisite = { focus = CAN_pressure_white focus = CAN_accept_the_refusal}
+    mutually_exclusive = { focus = CAN_keep_the_wartime_tax }
+	relative_position_id = CAN_pressure_white
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_keep_the_wartime_tax
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+    prerequisite = { focus = CAN_pressure_white focus = CAN_accept_the_refusal}
+    mutually_exclusive = { focus = CAN_end_the_wartime_tax }
+	relative_position_id = CAN_accept_the_refusal
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_the_regulation_question
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 1
+	y = 1
+
+    prerequisite = { focus = CAN_end_the_wartime_tax focus = CAN_keep_the_wartime_tax}
+	relative_position_id = CAN_end_the_wartime_tax
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_lift_all_regulations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -1
+	y = 1
+
+    prerequisite = { focus = CAN_the_regulation_question }
+    mutually_exclusive = { focus = CAN_continue_the_regulations }
+	relative_position_id = CAN_the_regulation_question
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_continue_the_regulations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 1
+	y = 1
+
+    prerequisite = { focus = CAN_the_regulation_question }
+    mutually_exclusive = { focus = CAN_lift_all_regulations }
+	relative_position_id = CAN_the_regulation_question
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Meighen's Subpath 
+focus = {
+	id = CAN_accept_the_refusal
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 1
+	y = 1
+
+    prerequisite = { focus = CAN_the_vacation_ends }
+    mutually_exclusive = { focus = CAN_pressure_white }
+	relative_position_id = CAN_the_vacation_ends
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_the_wheat_issue
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 2
+	y = 1
+
+    prerequisite = { focus = CAN_accept_the_refusal }
+	relative_position_id = CAN_accept_the_refusal
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}  
+}
+
+focus = {
+	id = CAN_reinstall_the_board
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -1
+	y = 1
+
+    prerequisite = { focus = CAN_the_wheat_issue }
+    mutually_exclusive = { focus = CAN_leave_to_the_market }
+	relative_position_id = CAN_the_wheat_issue
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_leave_to_the_market
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 1
+	y = 1
+
+    prerequisite = { focus = CAN_the_wheat_issue }
+    mutually_exclusive = { focus = CAN_reinstall_the_board }
+	relative_position_id = CAN_the_wheat_issue
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_the_wheat_issue_resolved
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 1
+	y = 1
+
+    prerequisite = { focus = CAN_reinstall_the_board focus = CAN_leave_to_the_market }
+	relative_position_id = CAN_reinstall_the_board
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#End of Intro
+focus = {
+	id = CAN_maintain_the_unionists
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 1
+	y = 1
+
+    prerequisite = { focus = CAN_the_strike_issue_resolved focus = CAN_the_wheat_issue_resolved }
+    prerequisite = { focus = CAN_continue_the_regulations focus = CAN_lift_all_regulations }
+    mutually_exclusive = { focus = CAN_create_the_tory_party }
+    mutually_exclusive = { focus = CAN_create_the_NLCP }
+	relative_position_id = CAN_lift_all_regulations 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_create_the_tory_party
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 1
+	y = 1
+
+    prerequisite = { focus = CAN_the_strike_issue_resolved }
+    prerequisite = { focus = CAN_continue_the_regulations focus = CAN_lift_all_regulations }
+    mutually_exclusive = { focus = CAN_maintain_the_unionists }
+    mutually_exclusive = { focus = CAN_create_the_NLCP }
+	relative_position_id = CAN_the_strike_issue_resolved 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_create_the_NLCP
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -1
+	y = 1
+
+    prerequisite = { focus = CAN_the_wheat_issue_resolved }
+    prerequisite = { focus = CAN_continue_the_regulations focus = CAN_lift_all_regulations }
+    mutually_exclusive = { focus = CAN_create_the_tory_party }
+    mutually_exclusive = { focus = CAN_maintain_the_unionists }
+	relative_position_id = CAN_the_wheat_issue_resolved 
 
 	available_if_capitulated = yes
 	
