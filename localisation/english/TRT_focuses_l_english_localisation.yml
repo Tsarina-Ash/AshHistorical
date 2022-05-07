@@ -50,6 +50,8 @@ coolidge_business_as_usual_tt: "Business as usual..."
 
 demob_warning_tt: "Demobilizing too fast may cause the economy to crash and heighten racial tensions, take it slow. Low employment and stagnation for returning veterans may cause some unwelcome sentiments..."
 
+demobilizing will gain rewards but increase racial tensions & instability due to low amount of jobs for returning soldiers and stagnant eco
+
 #WILSON USA LOC#
 
 WILSON_USA_ill_presidency:0 "The Ill Presidency"
@@ -80,7 +82,7 @@ WILSON_USA_compromise_with_reps:0 "The Donkey's Wheat"
 WILSON_USA_compromise_with_reps_desc:0 "While for now we hold a popular majority in congress, the Republicans do in size however most of them are akin to our ideals of a liazesse fiarre and an un-interventialist mood to the economy with promises of looking the other way and some ~perhaps~ business incetives we could pursuade them to join our side."
 
 WILSON_USA_blame_isolationists:0 "An Island With Factories"
-WILSON_USA_blame_isolationists_desc:0 "Those darn isolations! They pruposefully set us up for failure and backstabbed us... They will pay."
+WILSON_USA_blame_isolationists_desc:0 "Those darn isolations!!! They pruposefully set us up for failure and backstabbed us... They will pay."
 
 WILSON_USA_expand_agency_budget:0 "An Agency's Worth Is In Gold"
 WILSON_USA_expand_agency_budget_desc:0 "Spy agencies are slowly showing their worth with espionage and sabatoge becoming more prevalent. Now with tensions of strikes and communists at an all time high we need an agency to combat this."
@@ -124,7 +126,8 @@ EXTRA_WILSON_USA_crack_down_on_poor_industry_practices:0 "The End Of The Gilded 
 EXTRA_WILSON_USA_crack_down_on_poor_industry_practices_desc:0 "The gilded age will go down in American history as a massive failure by the federal government due to us just letting thes emonopolies trample over us and even break several federal and state laws across the country."
 
 EXTRA_WILSON_USA_increase_union_protections:0 "Union's Federal Protection"
-EXTRA_WILSON_USA_increase_union_protections_desc:0 "Unions, while having been demonized by the far-right and combined with the fear of communists, radicals and immgrants are generally good for workers and have made huge strides in workers' rights, we should back them fully potentially saving or creaitng disasters."
+EXTRA_WILSON_USA_increase_union_protections_desc:0 "Unions, while having been demonized by the far-right and combined with the fear of communists, radicals and immgrants are generally good for workers and have made huge strides in workers' rights, we should back them fully potentially saving or creaitng disasters.
+"
 
 EXTRA_WILSON_USA_new_anti_trust_act:0 "Expand Anti-Trust Acts"
 EXTRA_WILSON_USA_new_anti_trust_act_desc:0 "While we've broken up the biggest and the most amount of trusts Teddy has been almost fully credited with ending these practices, to establish ourselves as the true trustbreakers we must grab them and smash them into the corporate leader's heads watching them bleed as they fail to copphrehend what happened in the barrages of lawsuits for poor industry practices."
