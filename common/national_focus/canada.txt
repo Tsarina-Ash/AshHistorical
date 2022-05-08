@@ -42,7 +42,7 @@ focus = {
 	id = CAN_the_vacation_ends
 	icon = GFX_focus_USA_placeholder
 
-	cost = 10
+	cost = 5
 
 	x = 0
 	y = 1
@@ -357,7 +357,7 @@ focus = {
 
 #End of Intro
 focus = {
-	id = CAN_maintain_the_unionists
+	id = CAN_maintain_the_union
 	icon = GFX_focus_USA_placeholder
 
 	cost = 5
@@ -379,7 +379,7 @@ focus = {
 }
 
 focus = {
-	id = CAN_create_the_tory_party
+	id = CAN_break_the_union
 	icon = GFX_focus_USA_placeholder
 
 	cost = 5
@@ -389,7 +389,7 @@ focus = {
 
     prerequisite = { focus = CAN_the_strike_issue_resolved }
     prerequisite = { focus = CAN_continue_the_regulations focus = CAN_lift_all_regulations }
-    mutually_exclusive = { focus = CAN_maintain_the_unionists }
+    mutually_exclusive = { focus = CAN_maintain_the_union }
     mutually_exclusive = { focus = CAN_create_the_NLCP }
 	relative_position_id = CAN_the_strike_issue_resolved 
 
@@ -412,7 +412,7 @@ focus = {
     prerequisite = { focus = CAN_the_wheat_issue_resolved }
     prerequisite = { focus = CAN_continue_the_regulations focus = CAN_lift_all_regulations }
     mutually_exclusive = { focus = CAN_create_the_tory_party }
-    mutually_exclusive = { focus = CAN_maintain_the_unionists }
+    mutually_exclusive = { focus = CAN_break_the_union }
 	relative_position_id = CAN_the_wheat_issue_resolved 
 
 	available_if_capitulated = yes
@@ -421,5 +421,411 @@ focus = {
 		add_political_power = 50
 	}
 }
+###Intro Ends###
+
+###1921 Elections###
+focus = {
+	id = CAN_the_campaigning_begins
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+    prerequisite = { focus = CAN_break_the_union focus = CAN_maintain_the_union focus = CAN_create_the_NLCP }
+	relative_position_id = CAN_maintain_the_union 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Progressive Subpath
+focus = {
+	id = CAN_rally_the_progressives
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -7
+	y = 1
+
+    prerequisite = { focus = CAN_the_campaigning_begins }
+	mutually_exclusive = { focus = CAN_rally_the_liberals }
+	mutually_exclusive = { focus = CAN_rally_the_unionists }
+	mutually_exclusive = { focus = CAN_rally_the_conversatives }
+	relative_position_id = CAN_the_campaigning_begins 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_ally_with_labour
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+    prerequisite = { focus = CAN_rally_the_progressives }
+	relative_position_id = CAN_rally_the_progressives 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_woolsworth_as_candidate
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -3
+	y = 1
+
+    prerequisite = { focus = CAN_ally_with_labour}
+	mutually_exclusive = { focus = CAN_maharg_as_candidate }
+	mutually_exclusive = { focus = CAN_crerar_as_candidate }
+	mutually_exclusive = { focus = CAN_forke_as_candidate }
+	relative_position_id = CAN_ally_with_labour 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_maharg_as_candidate
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -1
+	y = 1
+
+    prerequisite = { focus = CAN_ally_with_labour }
+	mutually_exclusive = { focus = CAN_woolsworth_as_candidate }
+	mutually_exclusive = { focus = CAN_crerar_as_candidate }
+	mutually_exclusive = { focus = CAN_forke_as_candidate }
+	relative_position_id = CAN_ally_with_labour 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_crerar_as_candidate
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 1
+	y = 1
+
+    prerequisite = { focus = CAN_ally_with_labour }
+	mutually_exclusive = { focus = CAN_woolsworth_as_candidate }
+	mutually_exclusive = { focus = CAN_maharg_as_candidate }
+	mutually_exclusive = { focus = CAN_forke_as_candidate }
+	relative_position_id = CAN_ally_with_labour 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_forke_as_candidate
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 3
+	y = 1
+
+    prerequisite = { focus = CAN_ally_with_labour }
+	mutually_exclusive = { focus = CAN_woolsworth_as_candidate }
+	mutually_exclusive = { focus = CAN_maharg_as_candidate }
+	mutually_exclusive = { focus = CAN_crerar_as_candidate }
+	relative_position_id = CAN_ally_with_labour 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Liberal Subpath
+focus = {
+	id = CAN_rally_the_liberals
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+    prerequisite = { focus = CAN_the_campaigning_begins }
+	mutually_exclusive = { focus = CAN_rally_the_progressives }
+	mutually_exclusive = { focus = CAN_rally_the_unionists }
+	mutually_exclusive = { focus = CAN_rally_the_conversatives }
+	relative_position_id = CAN_the_campaigning_begins 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_1919_liberal_convention
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+    prerequisite = { focus = CAN_rally_the_liberals }
+	relative_position_id = CAN_rally_the_liberals 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_laurier_as_candidate
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -2
+	y = 1
+
+    prerequisite = { focus = CAN_1919_liberal_convention}
+	mutually_exclusive = { focus = CAN_perry_as_candidate }
+	mutually_exclusive = { focus = CAN_king_as_candidate }
+
+	relative_position_id = CAN_1919_liberal_convention 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_perry_as_candidate
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+    prerequisite = { focus = CAN_1919_liberal_convention}
+	mutually_exclusive = { focus = CAN_laurier_as_candidate }
+	mutually_exclusive = { focus = CAN_king_as_candidate }
+
+	relative_position_id = CAN_1919_liberal_convention 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_king_as_candidate
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 2
+	y = 1
+
+    prerequisite = { focus = CAN_1919_liberal_convention}
+	mutually_exclusive = { focus = CAN_laurier_as_candidate }
+	mutually_exclusive = { focus = CAN_perry_as_candidate }
+
+	relative_position_id = CAN_1919_liberal_convention 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Unionist Subpath
+focus = {
+	id = CAN_rally_the_unionists
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 5
+	y = 1
+
+    prerequisite = { focus = CAN_the_campaigning_begins }
+	mutually_exclusive = { focus = CAN_rally_the_progressives }
+	mutually_exclusive = { focus = CAN_rally_the_liberals }
+	mutually_exclusive = { focus = CAN_rally_the_conversatives }
+	relative_position_id = CAN_the_campaigning_begins 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_1919_unionist_convention
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+    prerequisite = { focus = CAN_rally_the_unionists }
+	relative_position_id = CAN_rally_the_unionists 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Conversative Subpath
+focus = {
+	id = CAN_rally_the_conversatives
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 7
+	y = 1
+
+    prerequisite = { focus = CAN_the_campaigning_begins }
+	mutually_exclusive = { focus = CAN_rally_the_progressives }
+	mutually_exclusive = { focus = CAN_rally_the_liberals }
+	mutually_exclusive = { focus = CAN_rally_the_unionists }
+	relative_position_id = CAN_the_campaigning_begins 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_1919_conversative_convention
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+    prerequisite = { focus = CAN_rally_the_conversatives }
+	relative_position_id = CAN_rally_the_conversatives 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+focus = {
+	id = CAN_white_as_candidate
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -1
+	y = 1
+
+    prerequisite = {focus = CAN_1919_unionist_convention } 
+	mutually_exclusive = { focus = CAN_meighen_as_candidate }
+	relative_position_id = CAN_1919_unionist_convention
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_meighen_as_candidate
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -1
+	y = 1
+
+    prerequisite = { focus = CAN_1919_conversative_convention focus = CAN_1919_unionist_convention}
+	mutually_exclusive = { focus = CAN_white_as_candidate }
+	mutually_exclusive = { focus = CAN_guthrie_as_candidate }
+	relative_position_id = CAN_1919_conversative_convention 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_guthrie_as_candidate
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 1
+	y = 1
+
+    prerequisite = { focus = CAN_1919_conversative_convention }
+	mutually_exclusive = { focus = CAN_meighen_as_candidate }
+	relative_position_id = CAN_1919_conversative_convention 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Campaigning in States
+
 
 }
