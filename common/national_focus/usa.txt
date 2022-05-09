@@ -1968,9 +1968,14 @@ focus = {
 	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
 
 	available_if_capitulated = no
+
+
+	available = {
+		always = no
+	}
 	
 	completion_reward = {
-		add_political_power = 50 #focus shows up through event#
+		add_political_power = 50 #focus activates through event#
 	}
 }
 
