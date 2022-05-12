@@ -242,6 +242,28 @@ ideas = {
 			}
 		}
 
+		american_malaise = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = Economy_Military_Austerity
+			
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.3
+			}
+		}
+
+
 	}
 
 

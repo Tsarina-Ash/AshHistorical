@@ -692,6 +692,9 @@ country_event = { #choosing foreign diplomat
 	
 	option = {#isolationalist
 		name = usaWilsonForeignDiplomacy.1.a
+		hidden_effect = {
+			complete_national_focus = EXTRA_WILSON_USA_question_of_the_league
+		}
 	}
 
 	option = {#interventionalist
@@ -699,11 +702,63 @@ country_event = { #choosing foreign diplomat
 	}
 
 	option = {#pacifist
-		name = usaWilsonForeignDiplomacy.1.a
+		name = usaWilsonForeignDiplomacy.3.a
 	}
 
 	option = {#reactionary
-		name = usaWilsonForeignDiplomacy.2.a
+		name = usaWilsonForeignDiplomacy.4.a
+	}
+
+}
+
+country_event = { #question of the league
+	id = eventusaWilson.8
+        title = usaWilson.8.t
+        desc = usaWilson.8.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {#abandon it
+		name = usaWilsonQuestionOfTheLeague.1.a
+	}
+
+	option = {#keep pushing foward with it
+		name = usaWilsonQuestionOfTheLeague.2.a
+	}
+
+}
+
+country_event = { #war taxes
+	id = eventusaWilson.9
+        title = usaWilson.9.t
+        desc = usaWilson.9.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {#lower
+		name = usaWilsonWarTaxes.1.a
+		set_temp_variable = { business_tax_temp = -0.1 }
+		econ_business_tax_rate_change = yes
+	}
+
+	option = {#remain
+		name = usaWilsonWarTaxes.2.a
+		add_stability = -0.01
+	}
+
+	option = {#heighten
+		name = usaWilsonWarTaxes.3.a
+
+		set_temp_variable = { business_tax_temp = 0.1 }
+		econ_business_tax_rate_change = yes
+
+		add_stability = -0.08
 	}
 
 }

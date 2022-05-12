@@ -531,6 +531,16 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
 		add_political_power = 50 #splits the party and weakens chance for wilson & party to win southern victory
 	}
 }
@@ -556,6 +566,10 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.12
+		}
 		add_political_power = 50 #splits northern voters and lose northern/western votes for wilson & party.
 	}
 }
@@ -1097,46 +1111,6 @@ focus = {
 }
 
 focus = {
-	id = EXTRA_WILSON_USA_moral_diplomacy_two_point_o
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -3
-	y = 1
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
-	relative_position_id = EXTRA_WILSON_USA_foreign_policy
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		#I NEED IDEAS ON WHAT TO DO WITH THIS FOCUS
-	}
-}
-
-focus = {
-	id = EXTRA_WILSON_USA_the_dominican_failure
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = EXTRA_WILSON_USA_moral_diplomacy_two_point_o }
-	relative_position_id = EXTRA_WILSON_USA_moral_diplomacy_two_point_o
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		country_event = {
-			id = event.usaSouthAmerica.1
-		}
-	}
-}
-
-focus = {
 	id = EXTRA_WILSON_USA_question_of_the_league
 	icon = GFX_focus_USA_placeholder
 
@@ -1144,6 +1118,10 @@ focus = {
 
 	x = 0
 	y = 1
+
+	available = {
+		has_completed_focus = WILSON_USA_league_of_nations
+	}
 	
 	prerequisite = { focus = EXTRA_WILSON_USA_foreign_policy }
 	relative_position_id = EXTRA_WILSON_USA_foreign_policy
@@ -1151,7 +1129,10 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50 #dont unlock before doing the first league focus
+		#if you got isolationalist you skip this focus
+		country_event = {
+			id = event.eventusaWilson.8
+		}
 	}
 }
 
@@ -1231,6 +1212,27 @@ focus = {
 }
 
 focus = {
+	id = EXTRA_WILSON_USA_the_dominican_failure
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = EXTRA_WILSON_USA_improve_south_american_relations }
+	relative_position_id = EXTRA_WILSON_USA_improve_south_american_relations
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaSouthAmerica.1
+		}
+	}
+}
+
+focus = {
 	id = EXTRA_WILSON_USA_reassure_south_american_allies
 	icon = GFX_focus_USA_placeholder
 
@@ -1282,7 +1284,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		unlock_decision_category_tooltip = postwar_european_recovery_plans
 	}
 }
 
@@ -1301,7 +1303,27 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		set_temp_variable = { money_reserves_temp = GDP }
+		multiply_temp_variable = { money_reserves_temp = -0.24 }
+
+		every_country = {
+			limit = {
+				any_owned_state = {
+					is_on_continent = [europe]
+				}
+			}
+			[		
+				set_temp_variable = { money_reserves_temp = GDP } 
+				multiply_temp_variable = { money_reserves_temp = 0.04 }
+				hidden_effect = {
+					random_list = {
+						10 = { inflation_temp = 0.005 }
+						90 = { }
+					}
+				}
+			]
+		}
+		
 	}
 }
 
@@ -1339,7 +1361,9 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		country_event = {
+			id = event.usaWilson.9
+		}
 	}
 }
 
@@ -2296,6 +2320,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
+		add_to_variable = { poverty_monthly_change = 0.01 }
 		add_political_power = 50 #Revenue acts of 1926/1928 ?#
 	}
 }
@@ -2315,6 +2340,7 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
+		add_to_variable = { poverty_monthly_change = 0.01 }
 		add_political_power = 50 #Revenue acts of 1926/1928 ?#
 	}
 }
@@ -3346,10 +3372,11 @@ focus = {
 
 	cost = 1
 
-	x = -10
-	y = 20
+	x = 0
+	y = 2
 	
-	relative_position_id = FDR_USA_innaugaration_speech
+	prerequisite = { focus = FDR_USA_three_rs }
+	relative_position_id = FDR_USA_three_rs
 
 	available_if_capitulated = no
 	
@@ -3460,13 +3487,25 @@ focus = {
 	x = -1
 	y = 3
 	
+	available = {
+		NOT = {
+			has_flag = hoover_has_job
+		}
+	}
+
 	prerequisite = { focus = FDR_USA_puerto_rico_aquire_private_comapnies }
 	relative_position_id = FDR_USA_puerto_rico_aquire_private_comapnies
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		597 = {
+			add_state_modifier = {
+				modifier = {
+					state_GDP_growth_factor_modifier = 0.01
+				}
+			}
+		}
 	}
 }
 
@@ -4937,7 +4976,7 @@ focus = {
 	cost = 4
 
 	x = 2
-	y = 1
+	y = 3
 	
 	prerequisite = { focus = FDR_USA_reform }
 	relative_position_id = FDR_USA_reform
@@ -5166,7 +5205,7 @@ focus = {
 
 	cost = 4
 
-	x = 18
+	x = 19
 	y = 1
 	
 	prerequisite = { focus = FDR_USA_broadcast_fireside_chat }

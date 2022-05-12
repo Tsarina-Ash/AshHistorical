@@ -1052,3 +1052,204 @@ harding_voyage_of_understanding = {
     }
 
 }
+
+postwar_european_recovery_plans = {
+
+    postwar_relief_england = {
+
+        icon = GFX_decision_icon_default
+
+        fire_only_once = no
+
+        available = {
+            NOT = {
+                has_idea = american_malaise
+            }
+            has_opinion = {
+                target = ENG
+                value > 100
+            }
+        }
+
+        days_re_enable = 100
+
+        cost = 100
+
+        complete_effect = {
+            set_temp_variable = { temp_econ_spending_amount = GDP }
+            multiply_temp_variable = { temp_econ_spending_amount = 0.08 }
+            set_temp_variable = { money_reserves_temp = GDP }
+            multiply_temp_variable = { money_reserves_temp = -0.02 }
+
+            hidden_effect = {
+                random_list = {
+                    1 = {
+                        ENG = {
+                            set_temp_variable = { inflation_temp = -2.0 }
+                            }
+                    }
+                    5 = {
+                        ENG = {
+                            set_temp_variable = { inflation_temp = -2.0 }
+                            }
+                    }
+                    5 = {
+                        ENG = {
+                            set_temp_variable = { inflation_temp = -2.0 }
+                            }
+                    }
+                    10 = { 
+                        ENG = {
+                        set_temp_variable = { inflation_temp = -2.0 }
+                        }
+                    }
+                    14 = {
+                        ENG = {
+                            set_temp_variable = { inflation_temp = -2.0 }
+                            }
+                    }
+                    15 = {
+                        ENG = {
+                            set_temp_variable = { inflation_temp = -2.0 }
+                            }
+                    }
+                    30 = {
+                        ENG = {
+                            set_temp_variable = { inflation_temp = -2.0 }
+                            }
+                    }
+
+                    20 = {
+                        ENG = {
+                            set_temp_variable = { inflation_temp = -2.0 }
+                            }
+                    }
+                }
+            }
+        }
+
+    }
+
+    postwar_relief_england = {
+
+        icon = GFX_decision_icon_default
+
+        fire_only_once = no
+
+        available = {
+            NOT = {
+                has_idea = american_malaise
+            }
+        }
+
+        days_re_enable = 100
+
+        cost = 100
+
+        complete_effect = {
+            set_temp_variable = { temp_econ_spending_amount = GDP }
+            multiply_temp_variable = { temp_econ_spending_amount = 0.05 }
+            set_temp_variable = { money_reserves_temp = GDP }
+            multiply_temp_variable = { money_reserves_temp = -0.02 }
+
+            hidden_effect = {
+                random_list = {
+                    10 = {
+                        597 = {
+                            add_state_modifier = {
+                                modifier = {
+                                    state_GDP_growth_factor_modifier = 0.03
+                                }
+                            }
+                        }
+                    }
+                    10 = {
+                        597 = {
+                            add_state_modifier = {
+                                modifier = {
+                                    state_GDP_growth_factor_modifier = 0.03
+                                }
+                            }
+                        }
+                    }
+                    10 = {
+                        597 = {
+                            add_state_modifier = {
+                                modifier = {
+                                    state_GDP_growth_factor_modifier = 0.03
+                                }
+                            }
+                        }
+                    }
+                    10 = { 
+                        597 = {
+                            add_state_modifier = {
+                                modifier = {
+                                    state_GDP_growth_factor_modifier = 0.03
+                                }
+                            }
+                        }
+                    }
+                    10 = {
+                        597 = {
+                            add_state_modifier = {
+                                modifier = {
+                                    state_GDP_growth_factor_modifier = 0.03
+                                }
+                            }
+                        }
+                    }
+                    10 = {
+                        597 = {
+                            add_state_modifier = {
+                                modifier = {
+                                    state_GDP_growth_factor_modifier = 0.03
+                                }
+                            }
+                        }
+                    }
+                    10 = {
+                        597 = {
+                            add_state_modifier = {
+                                modifier = {
+                                    state_GDP_growth_factor_modifier = 0.03
+                                }
+                            }
+                        }
+                    }
+
+                    10 = {
+                        597 = {
+                            add_state_modifier = {
+                                modifier = {
+                                    state_GDP_growth_factor_modifier = 0.03
+                                }
+                            }
+                        }
+                    }
+                    10 = {
+                        597 = {
+                            add_state_modifier = {
+                                modifier = {
+                                    state_GDP_growth_factor_modifier = 0.03
+                                }
+                            }
+                        }
+                    }
+
+                    10 = {
+                        597 = {
+                            add_state_modifier = {
+                                modifier = {
+                                    state_GDP_growth_factor_modifier = 0.03
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
