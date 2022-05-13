@@ -477,10 +477,10 @@ focus = {
 	completion_reward = {
 		add_stability = 0.02
 		#increase support with minorities
-		hidden_effect = {
-			fascism_acceptance = -5
-			communism_acceptance = -5
-		}
+		# hidden_effect = {
+		# 	fascism_acceptance = -5
+		# 	communism_acceptance = -5
+		# }
 	}
 }
 
@@ -1214,7 +1214,7 @@ focus = {
 	
 	completion_reward = {
 		custom_effect_tooltip = improves_relations_with_south_america_tt
-		hidden_effect {
+		hidden_effect = {
 			add_opinion_modifier = { target = MEX modifier = medium_increase }
 			add_opinion_modifier = { target = GUA modifier = medium_increase }
 			add_opinion_modifier = { target = NIC modifier = medium_increase }
@@ -1272,7 +1272,7 @@ focus = {
 	
 	completion_reward = {
 		custom_effect_tooltip = improves_relations_with_south_america_tt
-		hidden_effect {
+		hidden_effect = {
 			add_opinion_modifier = { target = MEX modifier = medium_increase }
 			add_opinion_modifier = { target = GUA modifier = medium_increase }
 			add_opinion_modifier = { target = NIC modifier = medium_increase }
@@ -1333,7 +1333,7 @@ focus = {
 		every_country = {
 			limit = {
 				any_owned_state = {
-					is_on_continent = [europe]
+					is_on_continent = europe
 				}
 			}
 			[		
@@ -1406,7 +1406,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaHarding.1#teapot scandal and railroad strike are events/decisions
+			id = event.usaHarding.1 #teapot scandal and railroad strike are events/decisions
 		}
 	}
 }
@@ -1634,7 +1634,7 @@ focus = {
 	
 	completion_reward = {
 		custom_effect_tooltip = improves_relations_with_south_america_tt
-		hidden_effect {
+		hidden_effect = {
 			add_opinion_modifier = { target = MEX modifier = medium_increase }
 			add_opinion_modifier = { target = GUA modifier = medium_increase }
 			add_opinion_modifier = { target = NIC modifier = medium_increase }
@@ -1916,7 +1916,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaCoolidge.1#does minimal things and after 1st term party favors hoover for buisness additudes
+			id = event.usaCoolidge.1 #does minimal things and after 1st term party favors hoover for buisness additudes
 		}
 	}
 }
@@ -2220,7 +2220,7 @@ focus = {
 	completion_reward = {
 		add_political_power = -20
 		custom_effect_tooltip = improves_relations_with_south_america_tt
-		hidden_effect {
+		hidden_effect = {
 			add_opinion_modifier = { target = MEX modifier = medium_increase }
 			add_opinion_modifier = { target = GUA modifier = medium_increase }
 			add_opinion_modifier = { target = NIC modifier = medium_increase }
@@ -2710,7 +2710,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaLeonardWood.1#he will be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
+			id = event.usaLeonardWood.1 #he will be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
 		}
 	}
 }
@@ -3275,7 +3275,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaHoover.1#coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
+			id = event.usaHoover.1 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
 		}
 	}
 }
@@ -3519,7 +3519,7 @@ focus = {
 	
 	available = {
 		NOT = {
-			has_flag = hoover_has_job
+			has_country_flag = hoover_has_job
 		}
 	}
 
@@ -6528,7 +6528,7 @@ focus = {
 	available_if_capitulated = yes
 
 	available = {
-		tag = PHI {
+		PHI = {
 			has_capitulated = yes
 		}
 	}
@@ -6831,7 +6831,7 @@ focus = {
 	available_if_capitulated = no
 	
 	available = {
-		tag = JAP { 
+		JAP = { 
 			has_flag = JAP_won_sino_jap_war
 		}
 	}
@@ -7375,7 +7375,7 @@ focus = {
 	relative_position_id = FDR_USA_global_superpower
 
 	available = {
-		has_completed_focus = { focus= FDR_USA_the_pentagon }
+		has_completed_focus = FDR_USA_the_pentagon
 	}
 
 	available_if_capitulated = no
