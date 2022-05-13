@@ -787,7 +787,7 @@ focus = {
 	y = 1
 
 	prerequisite = { focus = CAN_progressives_win }
-	
+	mutually_exclusive = { focus = CAN_work_with_the_right }
 	relative_position_id = CAN_progressives_win 
 
 	available_if_capitulated = yes
@@ -958,7 +958,7 @@ focus = {
 }
 
 focus = {
-	id = CAN_maintain_current_system
+	id = CAN_a_new_system
 	icon = GFX_focus_USA_placeholder
 
 	cost = 10
@@ -968,7 +968,7 @@ focus = {
 
 	prerequisite = { focus = CAN_never_another_1917 focus = CAN_create_unemployment_insurance }
 	prerequisite = { focus = CAN_draft_the_national_health_act }
-	mutually_exclusive = { focus = CAN_a_new_system }
+	mutually_exclusive = { focus = CAN_maintain_current_system }
 	
 	relative_position_id = CAN_draft_the_national_health_act 
 
@@ -980,7 +980,7 @@ focus = {
 }
 
 focus = {
-	id = CAN_a_new_system
+	id = CAN_maintain_current_system
 	icon = GFX_focus_USA_placeholder
 
 	cost = 10
@@ -990,7 +990,7 @@ focus = {
 
 	prerequisite = { focus = CAN_never_another_1917 focus = CAN_create_unemployment_insurance }
 	prerequisite = { focus = CAN_draft_the_national_health_act }
-	mutually_exclusive = { focus = CAN_maintain_current_system }
+	mutually_exclusive = { focus = CAN_a_new_system }
 	
 	relative_position_id = CAN_draft_the_national_health_act 
 
@@ -1009,7 +1009,7 @@ focus = {
 	cost = 5
 
 	x = 0
-	y = 1
+	y = 2
 
 	prerequisite = { focus = CAN_progressives_win }
 	
@@ -1169,12 +1169,34 @@ focus = {
 
 	cost = 5
 
-	x = 2
+	x = 1
 	y = 1
 
 	prerequisite = { focus = CAN_maintain_current_system focus = CAN_a_new_system }
 	prerequisite = { focus = CAN_create_a_national_bank focus = CAN_pass_on_the_bank }
-	relative_position_id = CAN_a_new_system 
+	prerequisite = { focus = CAN_create_a_national_bank focus = CAN_pass_on_the_bank }
+	relative_position_id = CAN_create_a_national_bank 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Work with the Right Subpath
+focus = {
+	id = CAN_work_with_the_right
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 6
+	y = 1
+
+	prerequisite = { focus = CAN_progressives_win }
+	mutually_exclusive = { focus = CAN_work_with_the_left }
+	relative_position_id = CAN_progressives_win 
 
 	available_if_capitulated = yes
 	
@@ -1190,10 +1212,11 @@ focus = {
 
 	cost = 5
 
-	x = -4
+	x = -6
 	y = 1
 
 	prerequisite = { focus = CAN_a_new_party }
+	mutually_exclusive = { focus = CAN_the_labour_farmers_party }
 	relative_position_id = CAN_a_new_party 
 
 	available_if_capitulated = yes
@@ -1207,12 +1230,13 @@ focus = {
 	id = CAN_barrel_forward
 	icon = GFX_focus_USA_placeholder
 
-	cost = 5
+	cost = 10
 
 	x = -1
 	y = 1
 
 	prerequisite = { focus = CAN_the_socialist_farmers_party }
+	mutually_exclusive = { focus = CAN_placate_the_opposition}
 	relative_position_id = CAN_the_socialist_farmers_party 
 
 	available_if_capitulated = yes
@@ -1223,31 +1247,12 @@ focus = {
 }
 
 focus = {
-	id = CAN_placate_the_opposition
+	id = CAN_groundwork_for_a_workers_parliment
 	icon = GFX_focus_USA_placeholder
 
-	cost = 5
+	cost = 10
 
-	x = 1
-	y = 1
-
-	prerequisite = { focus = CAN_the_socialist_farmers_party }
-	relative_position_id = CAN_the_socialist_farmers_party 
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-ocus = {
-	id = CAN_placate_the_opposition
-	icon = GFX_focus_USA_placeholder
-
-	cost = 5
-
-	x = 1
+	x = 0
 	y = 1
 
 	prerequisite = { focus = CAN_barrel_forward }
@@ -1260,7 +1265,29 @@ ocus = {
 	}
 }
 
-ocus = {
+focus = {
+	id = CAN_socialists_run
+	icon = GFX_focus_USA_placeholder
+
+	cost = 10
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = CAN_ask_for_removal_of_governor focus = CAN_request_a_new_governor }
+	prerequisite = { focus = CAN_groundwork_for_a_workers_parliment }
+	mutually_exclusive = { focus = CAN_the_left_unites }
+	relative_position_id = CAN_ask_for_removal_of_governor 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Shared Socialist-Labour Subpath
+focus = {
 	id = CAN_placate_the_opposition
 	icon = GFX_focus_USA_placeholder
 
@@ -1269,7 +1296,9 @@ ocus = {
 	x = 1
 	y = 1
 
-	prerequisite = { focus = CAN_the_socialist_farmers_party }
+	prerequisite = { focus = CAN_the_socialist_farmers_party focus = CAN_the_labour_farmers_party }
+	mutually_exclusive = { focus = CAN_barrel_forward }
+	mutually_exclusive = { focus = CAN_steady_as_the_tortoise } 
 	relative_position_id = CAN_the_socialist_farmers_party 
 
 	available_if_capitulated = yes
@@ -1279,8 +1308,109 @@ ocus = {
 	}
 }
 
-ocus = {
-	id = CAN_placate_the_opposition
+focus = {
+	id = CAN_keep_the_balance
+	icon = GFX_focus_USA_placeholder
+
+	cost = 10
+
+	x = 0
+	y = 1
+
+	prerequisite = {focus = CAN_placate_the_opposition }
+	relative_position_id = CAN_placate_the_opposition 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_ask_for_removal_of_governor
+	icon = GFX_focus_USA_placeholder
+
+	cost = 10
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = CAN_groundwork_for_a_workers_parliment focus = CAN_keep_the_balance focus = CAN_work_with_british_labour }
+	mutually_exclusive = { focus = CAN_request_a_new_governor }
+	relative_position_id = CAN_groundwork_for_a_workers_parliment 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_request_a_new_governor
+	icon = GFX_focus_USA_placeholder
+
+	cost = 10
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = CAN_groundwork_for_a_workers_parliment focus = CAN_keep_the_balance focus = CAN_work_with_british_labour }
+	mutually_exclusive = { focus = CAN_ask_for_removal_of_governor}
+	relative_position_id = CAN_keep_the_balance 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_the_left_unites
+	icon = GFX_focus_USA_placeholder
+
+	cost = 10
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = CAN_ask_for_removal_of_governor focus = CAN_request_a_new_governor }
+	mutually_exclusive = { focus = CAN_socialists_run }
+	mutually_exclusive = { focus = CAN_labour_runs }
+	relative_position_id = CAN_request_a_new_governor 
+	
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Labour-Farmers Party Subpath
+focus = {
+	id = CAN_the_labour_farmers_party
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -4
+	y = 1
+
+	prerequisite = { focus = CAN_a_new_party }
+	mutually_exclusive = { focus = CAN_the_socialist_farmers_party }
+	relative_position_id = CAN_a_new_party 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_steady_as_the_tortoise
 	icon = GFX_focus_USA_placeholder
 
 	cost = 5
@@ -1288,8 +1418,210 @@ ocus = {
 	x = 1
 	y = 1
 
-	prerequisite = { focus = CAN_the_socialist_farmers_party }
-	relative_position_id = CAN_the_socialist_farmers_party 
+	prerequisite = { focus = CAN_the_labour_farmers_party }
+	mutually_exclusive = { focus = CAN_barrel_forward }
+	relative_position_id = CAN_the_labour_farmers_party 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_work_with_british_labour
+	icon = GFX_focus_USA_placeholder
+
+	cost = 10
+
+	x = 0
+	y = 1
+
+	prerequisite = {focus = CAN_steady_as_the_tortoise }
+	relative_position_id = CAN_steady_as_the_tortoise 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_labour_runs
+	icon = GFX_focus_USA_placeholder
+
+	cost = 10
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = CAN_ask_for_removal_of_governor focus = CAN_request_a_new_governor }
+	prerequisite = { focus = CAN_work_with_british_labour }
+	mutually_exclusive = { focus = CAN_the_left_unites }
+	relative_position_id = CAN_request_a_new_governor 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+#Farmers Party Subpath
+focus = {
+	id = CAN_the_farmers_party
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = CAN_a_new_party }
+	mutually_exclusive = { focus = CAN_the_socialist_farmers_party }
+	mutually_exclusive = { focus = CAN_the_labour_farmers_party }
+	relative_position_id = CAN_a_new_party 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_work_broadly
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = CAN_the_farmers_party }
+	mutually_exclusive = { focus = CAN_work_centrally }
+	relative_position_id = CAN_the_farmers_party 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_work_the_lands
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = CAN_work_broadly focus = CAN_work_centrally }
+	mutually_exclusive = { focus = CAN_work_the_floors }
+	relative_position_id = CAN_work_broadly 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_expand_agriculture
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = CAN_work_the_lands focus = CAN_work_the_floors }
+	mutually_exclusive = { focus = CAN_expand_industry }
+	relative_position_id = CAN_work_the_lands 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_work_centrally
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = CAN_the_farmers_party }
+	mutually_exclusive = { focus = CAN_work_broadly }
+	relative_position_id = CAN_the_farmers_party 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_work_the_floors
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = CAN_work_broadly focus = CAN_work_centrally }
+	mutually_exclusive = { focus = CAN_work_the_lands }
+	relative_position_id = CAN_work_centrally 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_expand_industry
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = CAN_work_the_lands focus = CAN_work_the_floors }
+	mutually_exclusive = { focus = CAN_expand_agriculture }
+	relative_position_id = CAN_work_the_floors 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_the_populist_promise
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = CAN_expand_agriculture focus = CAN_expand_industry }
+	relative_position_id = CAN_expand_agriculture 
 
 	available_if_capitulated = yes
 	
