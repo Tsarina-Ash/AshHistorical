@@ -541,7 +541,8 @@ focus = {
 				popularity = 0.1
 			}
 		}
-		add_political_power = 50 #splits the party and weakens chance for wilson & party to win southern victory
+		add_political_power = -30 
+		#splits the party and weakens chance for wilson & party to win southern victory
 	}
 }
 
@@ -566,11 +567,11 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_popularity = {
-			ideology = democratic
-			popularity = -0.12
+		add_stability = 0.02
+		country_event = { 
+			id = event.usaMajorNewsEvents.8
 		}
-		add_political_power = 50 #splits northern voters and lose northern/western votes for wilson & party.
+		#splits northern voters and lose northern/western votes for wilson & party.
 	}
 }
 
@@ -608,7 +609,11 @@ focus = {
 
 	available_if_capitulated = no
 	
-	completion_reward = { country_event = { id = event.usaWilson.3 } }
+	completion_reward = { 
+		country_event = { 
+			id = event.usaWilson.3 
+		}
+ 	}
 }
 
 focus = {
@@ -626,6 +631,11 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
+		add_stability = 0.02
+		
+		country_event = { 
+			id = event.usaMajorNewsEvents.9
+		}
 		#unifies all political parties slightly and decreases resentment
 	}
 }
@@ -921,7 +931,16 @@ focus = {
 	completion_reward = {
 		set_temp_variable = { temp_econ_spending_amount = GDP }
 		multiply_temp_variable = { temp_econ_spending_amount = 0.02 }
-		#increases support of party
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+		}
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.01
+			}
+		}
 		#increases medical growth progress
 		#increases cost of health
 	}
@@ -1075,7 +1094,12 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		#increases party unity
+		hidden_effect = {
+			country_event = {
+				id = event.usaBacklash.2
+			}
+		}
+		add_stability = 0.02
 		hidden_effect = {
 			set_country_flag = {
 				flag = reduced_civil_rights_support_1
@@ -1462,9 +1486,12 @@ focus = {
 	completion_reward = {
 		add_stability_factor = 0.5
 		add_war_support_factor = -0.5
-		#hidden_effect = {
-		#	adds_party_popularity = 0.5 = neutrality CHANGE TO CONSERVATIVES LATER
-		#}
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}
+		}
 	}
 }
 
@@ -1522,9 +1549,12 @@ focus = {
 	
 	completion_reward = {
 		#decreases immigration idea and lowers gain on everything
-		#hidden_effect = {
-		#	adds_party_popularity = 0.5 = neutrality CHANGE TO CONSERVATIVES LATER
-		#}
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.01
+			}
+		}
 	}
 }
 

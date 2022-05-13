@@ -234,9 +234,76 @@ news_event = {
 	}
 }
 
+news_event = { #splits northern voters and lose northern/western votes for wilson & party.
+	id = usaMajorNewsEvents.8
+	picture = GFX_news_event_nuke
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = usaWilsonCompromisingWorking.1
+		immediate = {
+			if = {
+				limit = {
+					tag = USA
+				}
+				hidden_effect = {
+					add_popularity = {
+						ideology = democratic
+						popularity = -0.05
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = -0.05
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.04
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					tag = USA
+					has_dynamic_modifier = USA_red_scare 
+				}
+				hidden_effect = {
+					red_scare_communism_drift_var = 0.01
+				}
+				else = {
+					add_popularity = {
+						ideology = Communism
+						popularity = 0.03
+					}
+				}
+			}
+		}
+	}
+}
+
+news_event = { #wilson tries to unite the coutry
+	id = usaMajorNewsEvents.9
+	picture = GFX_news_event_nuke
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+		option = {
+			name = usaWilsonUnity.1
+		}
+}
+
 #Back End Stuff#
 
-country_event = {
+country_event = { 
 	id = usaEndOfTwenties.1
 	picture = GFX_news_event_nuke
 
@@ -255,6 +322,7 @@ country_event = {
 			}
 			hidden_effect = {
 				clear_variable = USA_roaring_twenties
+				multiply_temp_variable = { money_reserves_temp = 0.03 }
 			}
 		}
 	}
@@ -325,7 +393,7 @@ news_event = {
 	}
 }
 
-country_event = {
+country_event = { #sacco and vanzetti case
 	id = usaRailroadedEvents.3
 	picture = GFX_news_event_nuke
 
@@ -337,12 +405,27 @@ country_event = {
 
 	fire_only_once = yes
 
-	option = {
+	option = { #dont prosecute/going too far
 		name = usaSaccoAndVanzetticase.1
 		complete_national_focus = WILSON_USA_end_palmer_raids
+		add_stability = -0.03
+
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+
 		hidden_effect = {
-			add_stability = 0.03
 			set_temp_variable = { gdp_industry_misc_costs_var_temp = -0.01 }
+
+			#ADDS HEAVILY TO RED SCARE
+			add_to_variable = { 
+				red_scare_stability_weekly_var = -0.03
+			}
+			add_to_variable = { 
+				red_scare_communism_drift_var = -0.04
+			}
+
 		}
 	}
 
@@ -354,14 +437,24 @@ country_event = {
 				id = event.usaRailroadedEvents.4
 			}
 
-			#make an anti-communist variable/red scare
+			#ADDS MODERATELY TO RED SCARE
+			add_to_variable = { 
+				red_scare_stability_weekly_var = -0.01
+			}
+			add_to_variable = { 
+				red_scare_drift_defense_var = 0.05
+			}
+			add_to_variable = { 
+				red_scare_communism_drift_var = -0.03
+			}
 
+			}
 			set_temp_variable = { gdp_industry_misc_costs_var_temp = 0.01 }
 		}
 	}
 }
 
-country_event = {
+country_event = { #aftermath of saco and vanzetti case
 	id = usaRailroadedEvents.4
 	picture = GFX_news_event_nuke
 
@@ -375,6 +468,16 @@ country_event = {
 
 	option = { #leave unions alone
 		name = usaBlameUnions.1
+
+		hidden_effect = {
+			#add to anti-communist variable/red scare
+
+			add_to_variable = { 
+				red_scare_communism_drift_var = 0.04
+			}
+
+		}
+
 	}
 
 	option = {
@@ -383,10 +486,16 @@ country_event = {
 		#reduce workers protections
 		hidden_effect = {
 			#add to anti-communist variable/red scare
+
+			add_to_variable = { 
+				red_scare_communism_drift_var = -0.01
+			}
+
 		}
 	}
 
 }
+
 
 #Side Missions/Fun Stuff#
 
@@ -474,6 +583,23 @@ country_event = {
 	
 	option = {
 		name = usaProhibitionBacklash.1
+	}
+}
+
+country_event = { #compromising with dixiecrats makes african-american leaders speak out
+	id = usaBacklash.2
+	picture = GFX_news_event_nuke
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+
+	}
+	
+	option = {
+		name = usaWilsonCompromiseBacklash.1
 	}
 }
 

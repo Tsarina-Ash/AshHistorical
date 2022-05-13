@@ -9,6 +9,12 @@
 
 #NINETEEN_TWENTY#
 
+USA_red_scare = {
+    set_variable = { red_scare_stability_weekly_var = 0 }
+    set_variable = { red_scare_drift_defense_var = 0.05 }
+    set_variable = { red_scare_communism_drift_var = 0 }
+}
+
 USA_home_of_the_free_variables = {
     set_variable = { gdp_home_growth_var = 0.02 }
     set_variable = { consumer_home_goods_var = 0.05 }
@@ -30,15 +36,12 @@ USA_bloated_army_variables = {
 }
 
 great_deppression_dm = {
-    icon = generic_pp_unity_bonus
-    remove_trigger = { always = no }
-
-    annual_gdp_growth_factor = gdp_growth_depression_var
-    consumer_goods_factor = consumer_goods_factor_depression_var
-    poverty_monthly_rate = poverty_monthly_growth_depression_var
-    local_resources_factor = resource_factor_depression_var
-    consumer_goods_production_factor = consumer_goods_production_depression_var
-    production_factory_max_efficiency_factor = factory_efficiency_depression_factor_var
+    set_variable = { gdp_growth_depression_var = 0 }
+    set_variable = { consumer_goods_factor_depression_var = 0 }
+    set_variable = { poverty_monthly_growth_depression_var = 0 }
+    set_variable = { resource_factor_depression_var = 0 }
+    set_variable = { consumer_goods_production_depression_var = 0 }
+    set_variable = { factory_efficiency_depression_factor_var = 0 }
 }
 
 great_deppression_variables = {

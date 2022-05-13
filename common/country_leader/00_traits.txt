@@ -2,24 +2,128 @@
 @tier2 = 20
 @tier3 = 10
 
-leader_traits = {
-#Modded Traits
-	mexican_revolutionary_general = {
-		random = no
-		war_support_factor = 0.05
-		stability_factor = 0.05
-	}
-	defeated_pancho_villa = {
-		random = no
-		war_support_factor = 0.05
-	}
-	civilian_reformer = {
-		random = no
-		democratic_drift = 0.03
-		production_speed_buildings_factor = 0.05
-	}
+##############
+#INDEX CTRL+F#
+##############
 
-#Vinalla Traits
+#ECONOMIC TRAITS
+
+#Modified Economic Leader Traits#
+	#Vanilla Traits That Have Been Modified#
+
+#SOCIAL TRAITS#
+
+
+
+#MIXED TRAITS#
+
+#Modded Leader Traits#
+	#Completely New Traits#
+
+#Base Game Leader Traits#
+	#Untouched Vanilla Traits#
+
+leader_traits = {
+
+#Modified Economic Leader Traits#
+
+economic_reformer = {
+	random = no
+	trade_laws_cost_factor = -0.33
+	economy_cost_factor = -0.33
+	consumer_goods_production_factor = 0.05
+}
+
+strict_austerity_adherent = {
+	random = no
+	stability_factor = -0.15
+	economy_cost_factor = 0.5
+	consumer_goods_production_factor = 0.1
+}
+
+industry_reformer = {
+	random = no
+	sprite = 10
+	debt_effect_on_GDP_growth_modifier = 0.1
+	production_speed_infrastructure_factor = 0.05
+	consumer_goods_production_factor = 0.03
+}
+
+vapsid_economist = {
+	random = no
+	sprite = 13
+	fascism_drift = 0.05
+	consumer_goods_production_factor = 0.05
+}
+
+agricultural_capitalist = {
+	random = no
+	sprite = 13
+	consumer_goods_production_factor = 0.05
+	neutrality_drift = 0.05
+}
+
+ambitious_union_boss = {
+	random = no
+	sprite = 13
+
+	communism_drift = 0.1
+	consumer_goods_production_factor = 0.05
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+financial_expert = {
+	sprite = 10
+	random = yes
+	consumer_goods_production_factor = 0.05
+	
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+finance_graduate = {
+	sprite = 10
+	random = no
+	consumer_goods_production_factor = 0.02
+	
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+economic_organizer = {
+	random = no
+	sprite = 10
+
+	stability_factor = 0.05
+	consumer_goods_production_factor = 0.05
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#Modded Leader Traits#
+mexican_revolutionary_general = {
+	random = no
+	war_support_factor = 0.05
+	stability_factor = 0.05
+}
+defeated_pancho_villa = {
+	random = no
+	war_support_factor = 0.05
+}
+civilian_reformer = {
+	random = no
+	democratic_drift = 0.03
+	production_speed_buildings_factor = 0.05
+}
+
+#Base Game Leader Traits#
 	dictator = {
 		random = no
 		political_power_factor = 0.25
@@ -987,20 +1091,6 @@ leader_traits = {
 		generate_wargoal_tension = 0.20
 	}
 
-	economic_reformer = {
-		random = no
-		trade_laws_cost_factor = -0.33
-		economy_cost_factor = -0.33
-		consumer_goods_factor = -0.05
-	}
-
-	strict_austerity_adherent = {
-		random = no
-		stability_factor = -0.15
-		economy_cost_factor = 0.5
-		consumer_goods_factor = -0.1
-	}
-
 	defeatist = {
 		random = no
 		war_support_factor = -0.1
@@ -1913,14 +2003,6 @@ leader_traits = {
 		min_export = -0.1
 	}
 
-	industry_reformer = {
-		random = no
-		sprite = 10
-		production_speed_industrial_complex_factor = 0.1
-		production_speed_infrastructure_factor = 0.05
-		consumer_goods_factor = -0.03
-	}
-
 	womens_rights_activist = {
 		random = no
 		sprite = 13
@@ -2705,18 +2787,6 @@ leader_traits = {
 		}
 	}
 
-	ambitious_union_boss = {
-		random = no
-		sprite = 13
-
-		communism_drift = 0.1
-		consumer_goods_factor = -0.05
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	popular_figurehead = {
 		sprite = 13
 		stability_factor = 0.15 
@@ -2854,15 +2924,6 @@ leader_traits = {
 		}
 	}
 
-	financial_expert = {
-		sprite = 10
-		random = yes
-		consumer_goods_factor = -0.05
-		
-		ai_will_do = {
-			factor = 2
-		}
-	}
 	economist = {
 		sprite = 10
 		random = yes
@@ -3046,16 +3107,6 @@ leader_traits = {
 			factor = 1
 		}
 	}
-
-	finance_graduate = {
-		sprite = 10
-		random = no
-		consumer_goods_factor = -0.02
-		
-		ai_will_do = {
-			factor = 2
-		}
-	}
 	
 	
 	armaments_aficionado = {
@@ -3161,18 +3212,6 @@ leader_traits = {
 
 		war_support_factor = 0.1
 		neutrality_drift = 0.1
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	economic_organizer = {
-		random = no
-		sprite = 10
-
-		stability_factor = 0.05
-		consumer_goods_factor = -0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -3493,13 +3532,6 @@ leader_traits = {
 		fascism_drift = -0.05
 	}
 
-	agricultural_capitalist = {
-		random = no
-		sprite = 13
-		consumer_goods_factor = -0.05
-		neutrality_drift = 0.05
-	}
-
 	anti_german_personality = {
 		random = no
 		sprite = 13
@@ -3552,13 +3584,6 @@ leader_traits = {
 		high_command_cost_factor = -0.15
 		max_command_power = 20
 		command_power_gain_mult = 0.1
-	}
-
-	vapsid_economist = {
-		random = no
-		sprite = 13
-		fascism_drift = 0.05
-		consumer_goods_factor = -0.05
 	}
 
 	subservient_ultranationalist = {

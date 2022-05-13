@@ -11,6 +11,23 @@
 
 #PRE DEPPRESSION DYNAMIC MODIFIERS#
 
+USA_red_scare = {
+    icon = Economy_Civilian_Budget_Boost
+    remove_trigger = { always = no }
+
+    stability_weekly_factor = red_scare_stability_weekly_var
+    drift_defence_factor = red_scare_drift_defense_var
+    communism_drift = red_scare_communism_drift_var
+}
+
+USA_roaring_twenties = {
+    icon = Economy_Civilian_Budget_Boost
+    remove_trigger = { always = no }
+
+    annual_gdp_growth_factor = gdp_roaring_growth_var
+    political_power_factor = political_roaring__var
+}
+
 smoot_hawley_dm = {
     icon = generic_pp_unity_bonus
     remove_trigger = { always = no }
@@ -36,6 +53,15 @@ great_deppression_dm = {
 
 #UNITED STATES DYNAMIC MODIFIERS#
 
+smoot_hawley_dm = {
+    icon = generic_pp_unity_bonus
+    remove_trigger = { always = no }
+
+    annual_gdp_growth_factor = gdp_home_growth_var
+    consumer_goods_factor = consumer_home_goods_var
+    conscription_factor = conscription_home_var
+}
+
 USA_home_of_the_free = {
     icon = generic_pp_unity_bonus
     enable = { tag = USA }
@@ -44,15 +70,6 @@ USA_home_of_the_free = {
     annual_gdp_growth_factor = gdp_home_growth_var
     consumer_goods_factor = consumer_home_goods_var
     conscription_factor = conscription_home_var
-}
-
-USA_roaring_twenties = {
-    icon = Economy_Civilian_Budget_Boost
-    enable = { tag = USA }
-    remove_trigger = { always = no }
-
-    annual_gdp_growth_factor = gdp_roaring_growth_var
-    political_power_factor = political_roaring__var
 }
 
 USA_new_deal = {
