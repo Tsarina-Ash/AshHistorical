@@ -10,8 +10,8 @@ state={
 		owner = CHL
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 7
+			
+			
 			air_base = 3
 			8222 = {
 				naval_base = 5

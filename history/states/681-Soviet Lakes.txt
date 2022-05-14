@@ -7,7 +7,7 @@ state={
 		owner = SAF
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
+			
 			air_base = 1
 			12589 = {
 				naval_base = 4
