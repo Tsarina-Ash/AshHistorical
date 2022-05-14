@@ -8,8 +8,8 @@ state={
 		add_core_of = BRA
 		buildings = {
 			infrastructure = 3
-			
-			
+			arms_factory = 2
+			industrial_complex = 4
 			dockyard = 2
 			air_base = 7
 			10980 = {

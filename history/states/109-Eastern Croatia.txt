@@ -10,7 +10,7 @@ state={
 		owner = YUG
 		buildings = {
 			infrastructure = 3
-			
+			industrial_complex = 3
 		}
 		victory_points = {
 			11581 3 
