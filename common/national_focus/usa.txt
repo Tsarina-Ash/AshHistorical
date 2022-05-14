@@ -1335,17 +1335,15 @@ focus = {
 				any_owned_state = {
 					is_on_continent = europe
 				}
-			}
-			[		
+			}	
 				set_temp_variable = { money_reserves_temp = GDP } 
 				multiply_temp_variable = { money_reserves_temp = 0.04 }
 				hidden_effect = {
-					random_list = {
-						10 = { inflation_temp = 0.005 }
-						90 = { }
-					}
+					# random_list = {
+					# 	10 = { inflation_temp = 0.005 }
+					# 	90 = { }
+					# }
 				}
-			]
 		}
 		
 	}
