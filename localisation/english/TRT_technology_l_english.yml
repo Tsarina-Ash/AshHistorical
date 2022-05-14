@@ -1,2 +1,21 @@
 ﻿l_english:
-  ARMOUR_TITLE_SUPER_HEAVY:0 "SUPER HEAVY"
+ARMOUR_TITLE_SUPER_HEAVY:0 "SUPER HEAVY"
+
+gw_light_tank:0 "Great War Light Tank"
+gw_light_tank_equipment:0 "Great War Light Tank"
+
+gw_medium_tank:0 "Great War Medium Tank"
+gw_medium_tank_equipment:0 "Great War Medium Tank"
+
+gw_heavy_tank:0 "Great War Heavy Tank"
+gw_heavy_tank_equipment:0 "Great War Heavy Tank"
+
+interwar_light_tank_equipment_1:0 "Interwar Light Tank"
+
+interwar_super_heavy_tank_equipment:0 "Interwar Super Heavy"
+
+interwar_medium_tank_equipment:0 "Interwar Medium Tank"
+
+interwar_heavy_tank_equipment:0 "Interwar Heavy Tank"
+
+interwar_light_tank_equipment_2:0 "Early Light Tank"

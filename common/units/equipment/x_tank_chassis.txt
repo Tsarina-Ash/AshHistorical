@@ -207,6 +207,7 @@ equipments = {
 		archetype = light_tank_chassis
 		priority = 5
 		visual_level = 0
+		is_convertable = yes
 		
 		upgrades = {
 			tank_reliability_upgrade
@@ -216,8 +217,8 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 6
-		reliability = 0.8
+		maximum_speed = 4
+		reliability = 0.4
 
 		#Defensive Abilities
 		defense = 4
@@ -677,9 +678,9 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 5
-		breakthrough = 36
+		breakthrough = 28
 		hardness = 0.9
-		armor_value = 60
+		armor_value = 40
 
 		#Offensive Abilities
 		soft_attack = 19
@@ -690,7 +691,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 12
 		
-		build_cost_ic = 12 
+		build_cost_ic = 14 
 		resources = {
 			#oil = 1
 			tungsten = 2

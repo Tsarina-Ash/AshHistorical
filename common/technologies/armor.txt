@@ -15,18 +15,18 @@ technologies = {
 	@1943 = 20
 	@1944 = 22 #Cruiser Tank 3 
 	@1946 = 26 #Main Battle Tank Experiments (Mix of Infantry and Cruiser Tanks)
-	@1958 #Main Battle Tanks become dummy good
+	@1958 = 30 #Main Battle Tanks become dummy good
 	
-	experimental_light_tank = {
+	gwtank = { #Mark I
 		enable_equipments = {
-			experimental_light_tanks
+			gw_tank_equipment
+
 		}
 		enable_subunits = {
 			light_armor
 		}
-
 		path = {
-			leads_to_tech = gwtank
+			leads_to_tech = gw_light_tank
 			research_cost_coeff = 1
 		}
 		path = {
@@ -70,32 +70,6 @@ technologies = {
 			name = armour_folder
 			position = { x = -4 y = @1916 }
 		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	gwtank = { #Leichttraktor
-		enable_equipments = {
-			gw_tank_equipment
-
-		}
-		path = {
-			leads_to_tech = early_light_tank
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 1918
-		folder = {
-			name = armour_folder
-			position = { x = -4 y = @1918 }
-		}
 		
 		ai_will_do = {
 			factor = 1
@@ -121,6 +95,33 @@ technologies = {
 			}
 		}
 		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+
+	gw_light_tank = { #Mark V
+		enable_equipments = {
+			gw_light_tank_equipment
+		}
+
+		path = {
+			leads_to_tech = early_light_tank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1918
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = @1918 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
 		categories = {
 			armor
 			cat_light_armor
@@ -294,7 +295,7 @@ technologies = {
 
 	interwar_light_tank = {
 		enable_equipments = {
-			interwar_light_tank
+			interwar_light_tank_equipment_2
 		}
 
 		path = {
@@ -322,9 +323,6 @@ technologies = {
 
 		enable_equipments = {
 			light_tank_equipment_1 
-		}
-		enable_subunits = {
-			light_armor
 		}
 
 		on_research_complete_limit = {
