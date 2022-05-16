@@ -423,7 +423,9 @@ focus = {
 	
 	completion_reward = {
 		#reduce workers protections
+
 		hidden_effect = {
+			add_to_variable = { red_scare_stability_weekly_var = -0.02 }
 			#add to anti-communist variable/red scare
 		}
 	}
@@ -477,10 +479,6 @@ focus = {
 	completion_reward = {
 		add_stability = 0.02
 		#increase support with minorities
-		# hidden_effect = {
-		# 	fascism_acceptance = -5
-		# 	communism_acceptance = -5
-		# }
 	}
 }
 
@@ -1424,7 +1422,18 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		custom_effect_tooltip = destabilize_american_politics_tt
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			add_stability = 0.01
+		}
 	}
 }
 
@@ -1443,7 +1452,12 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		custom_effect_tooltip = harding_begin_event_chain_tt
+		hidden_effect = {
+			country_event = {
+				id = event.eventusaHarding.2
+			}
+		}
 	}
 }
 
