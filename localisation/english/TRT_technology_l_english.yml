@@ -1,5 +1,7 @@
 ﻿l_english:
 ARMOUR_TITLE_SUPER_HEAVY:0 "SUPER HEAVY"
+ARMOUR_TITLE_INFANTRY:0 "INFANTRY"
+ARMOUR_TITLE_CRUISER:0 "CRUISER"
 
 gw_light_tank:0 "Great War Light Tank"
 gw_light_tank_equipment:0 "Great War Light Tank"

@@ -4,6 +4,9 @@
 technology_categories = {
 	#Modded Categories
 	cat_super_heavy_armor
+	cat_infantry_armor
+	cat_cruiser_armor
+	cat_main_battle_armor
 
 	#Vanilla Categories
 	light_air
