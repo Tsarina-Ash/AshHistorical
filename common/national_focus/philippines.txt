@@ -16,23 +16,24 @@ focus_tree = {
     }
 	default = no
 
-	continuous_focus_position = { y = 50 x = 1000 }
+	continuous_focus_position = { y = 5000 x = 1000 }
 
 # FOCUS TREE INDEX (CTRL+F)
-# 1920-end of game # - PHI_GENERIC_all_is_normal
+# 1920-end of game # - US_Military_Occupation_all_is_normal
 # 1920-end of game # - PHI_MANUEL_QUEZON_innaugaration
 
 #Good Info#
 #Phillipines didnt have an election until 1935, US allowed it to have one, perhaps a US/Fillipino mechanic#
 
 #Info Links#
+#https://www.jstor.org/stable/10.3998/mpub.11903511.11?seq=1#
 #https://en.wikipedia.org/wiki/1935_Philippine_presidential_election#
 #https://en.wikipedia.org/wiki/Manuel_L._Quezon#
 
 #Generic Tree#
 
 focus = {
-	id = PHI_GENERIC_all_is_normal
+	id = US_Military_Occupation_all_is_normal
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -48,7 +49,7 @@ focus = {
 }
 
 focus = {
-	id = PHI_GENERIC_replace_this_with_political_tree
+	id = US_Military_Occupation_replace_this_with_political_tree
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -56,8 +57,8 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = PHI_GENERIC_all_is_normal }
-	relative_position_id = PHI_GENERIC_all_is_normal
+	prerequisite = { focus = US_Military_Occupation_all_is_normal }
+	relative_position_id = US_Military_Occupation_all_is_normal
 
 
 
@@ -71,16 +72,16 @@ focus = {
 #Right Side Of Quezon#
 
 focus = {
-	id = PHI_GENERIC_dealing_with_factions
+	id = US_Military_Occupation_dealing_with_factions
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = 6
+	x = -6
 	y = 1
 	
-	prerequisite = { focus = PHI_GENERIC_all_is_normal }
-	relative_position_id = PHI_GENERIC_all_is_normal
+	prerequisite = { focus = US_Military_Occupation_pacific_wild_west }
+	relative_position_id = US_Military_Occupation_pacific_wild_west
 
 
 
@@ -92,7 +93,7 @@ focus = {
 }
 
 focus = {
-	id = PHI_GENERIC_buy_american_ships
+	id = US_Military_Occupation_buy_american_ships
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -104,8 +105,8 @@ focus = {
 		is_subject_of = USA
 	}
 	
-	prerequisite = { focus = PHI_GENERIC_dealing_with_factions }
-	relative_position_id = PHI_GENERIC_dealing_with_factions
+	prerequisite = { focus = US_Military_Occupation_dealing_with_factions }
+	relative_position_id = US_Military_Occupation_dealing_with_factions
 
 	available_if_capitulated = yes
 	
@@ -120,7 +121,7 @@ focus = {
 }
 
 focus = {
-	id = PHI_GENERIC_escelation
+	id = US_Military_Occupation_escelation
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -128,8 +129,8 @@ focus = {
 	x = -3
 	y = 1
 	
-	prerequisite = { focus = PHI_GENERIC_dealing_with_factions }
-	relative_position_id = PHI_GENERIC_dealing_with_factions
+	prerequisite = { focus = US_Military_Occupation_dealing_with_factions }
+	relative_position_id = US_Military_Occupation_dealing_with_factions
 
 
 
@@ -141,7 +142,7 @@ focus = {
 }
 
 focus = {
-	id = PHI_GENERIC_request_armaments_from_washington
+	id = US_Military_Occupation_request_armaments_from_washington
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -149,8 +150,8 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = PHI_GENERIC_escelation }
-	relative_position_id = PHI_GENERIC_escelation
+	prerequisite = { focus = US_Military_Occupation_escelation }
+	relative_position_id = US_Military_Occupation_escelation
 
 	available_if_capitulated = yes
 	
@@ -160,7 +161,7 @@ focus = {
 }
 
 focus = {
-	id = PHI_GENERIC_napalm
+	id = US_Military_Occupation_napalm
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -168,8 +169,8 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = PHI_GENERIC_request_armaments_from_washington }
-	relative_position_id = PHI_GENERIC_request_armaments_from_washington
+	prerequisite = { focus = US_Military_Occupation_request_armaments_from_washington }
+	relative_position_id = US_Military_Occupation_request_armaments_from_washington
 	
 	available_if_capitulated = yes
 
@@ -179,7 +180,7 @@ focus = {
 }
 
 focus = {
-	id = PHI_GENERIC_concesions
+	id = US_Military_Occupation_concesions
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -187,8 +188,8 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = PHI_GENERIC_dealing_with_factions }
-	relative_position_id = PHI_GENERIC_dealing_with_factions
+	prerequisite = { focus = US_Military_Occupation_dealing_with_factions }
+	relative_position_id = US_Military_Occupation_dealing_with_factions
 
 
 
@@ -200,7 +201,7 @@ focus = {
 }
 
 focus = {
-	id = PHI_GENERIC_request_peace
+	id = US_Military_Occupation_request_peace
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -208,8 +209,8 @@ focus = {
 	x = -1
 	y = 1
 	
-	prerequisite = { focus = PHI_GENERIC_concesions }
-	relative_position_id = PHI_GENERIC_concesions
+	prerequisite = { focus = US_Military_Occupation_concesions }
+	relative_position_id = US_Military_Occupation_concesions
 
 
 
@@ -221,7 +222,7 @@ focus = {
 }
 
 focus = {
-	id = PHI_GENERIC_grant_amnesties
+	id = US_Military_Occupation_grant_amnesties
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -229,8 +230,8 @@ focus = {
 	x = 1
 	y = 1
 	
-	prerequisite = { focus = PHI_GENERIC_concesions }
-	relative_position_id = PHI_GENERIC_concesions
+	prerequisite = { focus = US_Military_Occupation_concesions }
+	relative_position_id = US_Military_Occupation_concesions
 
 
 
@@ -242,7 +243,7 @@ focus = {
 }
 
 focus = {
-	id = PHI_GENERIC_invitations_to_government_positions
+	id = US_Military_Occupation_invitations_to_government_positions
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -250,9 +251,9 @@ focus = {
 	x = 1
 	y = 1
 	
-	prerequisite = { focus = PHI_GENERIC_request_peace }
-    prerequisite = { focus = PHI_GENERIC_grant_amnesties }
-	relative_position_id = PHI_GENERIC_request_peace
+	prerequisite = { focus = US_Military_Occupation_request_peace }
+    prerequisite = { focus = US_Military_Occupation_grant_amnesties }
+	relative_position_id = US_Military_Occupation_request_peace
 
 
 
@@ -264,16 +265,16 @@ focus = {
 }
 
 focus = {
-	id = PHI_GENERIC_apeasing_americans
+	id = US_Military_Occupation_pacific_wild_west
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = 3
+	x = 12
 	y = 2
 	
-	prerequisite = { focus = PHI_GENERIC_dealing_with_factions }
-	relative_position_id = PHI_GENERIC_dealing_with_factions
+	prerequisite = { focus = US_Military_Occupation_all_is_normal }
+	relative_position_id = US_Military_Occupation_all_is_normal
 
 
 
@@ -285,100 +286,16 @@ focus = {
 }
 
 focus = {
-	id = PHI_GENERIC_amongus
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = PHI_GENERIC_apeasing_americans }
-	relative_position_id = PHI_GENERIC_apeasing_americans
-
-
-
-	
-	
-	completion_reward = {
-		add_political_power = 50 
-	}
-}
-
-focus = {
-	id = PHI_GENERIC_expand_anti_guerilla_ops
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -2
-	y = 1
-	
-	prerequisite = { focus = PHI_GENERIC_amongus }
-	relative_position_id = PHI_GENERIC_amongus
-
-
-
-	
-	
-	completion_reward = {
-		add_political_power = 50 
-	}
-}
-
-focus = {
-	id = PHI_GENERIC_expand_naval_bases
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 1
-	y = 1
-	
-	prerequisite = { focus = PHI_GENERIC_expand_anti_guerilla_ops }
-	relative_position_id = PHI_GENERIC_expand_anti_guerilla_ops
-
-
-
-	
-	
-	completion_reward = {
-		add_political_power = 50 
-	}
-}
-
-focus = {
-	id = PHI_GENERIC_attract_american_investors
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = PHI_GENERIC_amongus }
-	relative_position_id = PHI_GENERIC_amongus
-
-
-
-	
-	
-	completion_reward = {
-		add_political_power = 50 
-	}
-}
-
-focus = {
-	id = PHI_GENERIC_pacific_wild_west
+	id = US_Military_Occupation_endorse_agricultiral_industries
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
 	x = 6
-	y = 2
+	y = 1
 	
-	prerequisite = { focus = PHI_GENERIC_dealing_with_factions }
-	relative_position_id = PHI_GENERIC_dealing_with_factions
+	prerequisite = { focus = US_Military_Occupation_propose_economic_plans }
+	relative_position_id = US_Military_Occupation_propose_economic_plans
 
 
 
@@ -390,7 +307,28 @@ focus = {
 }
 
 focus = {
-	id = PHI_GENERIC_let_economy_go_wild
+	id = US_Military_Occupation_the_pineapple_army
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = US_Military_Occupation_endorse_agricultiral_industries }
+	relative_position_id = US_Military_Occupation_endorse_agricultiral_industries
+
+
+
+	
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = US_Military_Occupation_increase_rubber_permits
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -398,67 +336,37 @@ focus = {
 	x = -1
 	y = 1
 	
-	prerequisite = { focus = PHI_GENERIC_pacific_wild_west }
-	relative_position_id = PHI_GENERIC_pacific_wild_west
+	prerequisite = { focus = US_Military_Occupation_endorse_agricultiral_industries }
+	relative_position_id = US_Military_Occupation_endorse_agricultiral_industries
 
 
 
 	
 	
 	completion_reward = {
-		add_political_power = 50 
+		add_resource = {
+			type = rubber
+			amount = 18
+			state = 600
+		}
+		600 = {
+			set_temp_variable = { state_value_multiplier_temp = 1.05 }
+			econ_state_value_change_multiply_specified_state = yes
+		}
 	}
 }
 
 focus = {
-	id = PHI_GENERIC_lessen_union_influence
+	id = US_Military_Occupation_education
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = 0
+	x = 6
 	y = 1
 	
-	prerequisite = { focus = PHI_GENERIC_let_economy_go_wild }
-	relative_position_id = PHI_GENERIC_let_economy_go_wild
-
-
-
-	
-	
-	completion_reward = {
-		add_political_power = 50 
-	}
-}
-
-focus = {
-	id = PHI_GENERIC_shorten_military_spending
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 2
-	y = 1
-	
-	prerequisite = { focus = PHI_GENERIC_let_economy_go_wild }
-	relative_position_id = PHI_GENERIC_let_economy_go_wild
-	
-	completion_reward = {
-		add_political_power = 50 
-	}
-}
-
-focus = {
-	id = PHI_GENERIC_propose_economic_plans
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 3
-	
-	prerequisite = { focus = PHI_GENERIC_pacific_wild_west }
-	relative_position_id = PHI_GENERIC_pacific_wild_west
+	prerequisite = { focus = US_Military_Occupation_pacific_wild_west }
+	relative_position_id = US_Military_Occupation_pacific_wild_west
 
 	completion_reward = {
 		add_political_power = 50 #unlocks decisions 
@@ -466,17 +374,33 @@ focus = {
 }
 
 focus = {
-	id = PHI_GENERIC_nothing_bad_ever
+	id = US_Military_Occupation_propose_economic_plans
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = 1
+	x = 0
+	y = 5
+	
+	prerequisite = { focus = US_Military_Occupation_pacific_wild_west }
+	relative_position_id = US_Military_Occupation_pacific_wild_west
+
+	completion_reward = {
+		add_political_power = 50 #unlocks decisions 
+	}
+}
+
+focus = {
+	id = US_Military_Occupation_let_economy_go_wild
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
 	y = 1
 	
-	prerequisite = { focus = PHI_GENERIC_attract_american_investors }
-    prerequisite = { focus = PHI_GENERIC_expand_naval_bases }
-	relative_position_id = PHI_GENERIC_expand_naval_bases
+	prerequisite = { focus = US_Military_Occupation_propose_economic_plans }
+	relative_position_id = US_Military_Occupation_propose_economic_plans
 
 
 
@@ -486,6 +410,133 @@ focus = {
 		add_political_power = 50 
 	}
 }
+
+focus = {
+	id = US_Military_Occupation_attract_industry
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 2
+	
+	prerequisite = { focus = US_Military_Occupation_let_economy_go_wild }
+	relative_position_id = US_Military_Occupation_let_economy_go_wild
+
+
+
+	
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = US_Military_Occupation_apeasing_americans
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 2
+	
+	prerequisite = { focus = US_Military_Occupation_let_economy_go_wild }
+	relative_position_id = US_Military_Occupation_let_economy_go_wild
+
+
+
+	
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = US_Military_Occupation_attract_american_investors
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -4
+	y = 1
+	
+	prerequisite = { focus = US_Military_Occupation_apeasing_americans }
+	relative_position_id = US_Military_Occupation_apeasing_americans
+
+
+
+	
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = US_Military_Occupation_expand_national_parks_service
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -6
+	y = 1
+	
+	prerequisite = { focus = US_Military_Occupation_propose_economic_plans }
+	relative_position_id = US_Military_Occupation_propose_economic_plans
+
+
+
+	
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = US_Military_Occupation_expand_anti_guerilla_ops
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = US_Military_Occupation_request_armaments_from_washington }
+	relative_position_id = US_Military_Occupation_request_armaments_from_washington
+
+
+
+	
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = US_Military_Occupation_expand_naval_bases
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = US_Military_Occupation_expand_anti_guerilla_ops }
+	relative_position_id = US_Military_Occupation_expand_anti_guerilla_ops
+
+
+
+	
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
 
 #Manuel Quezon#
 
@@ -503,8 +554,8 @@ focus = {
 	#x = 0
 	#y = 1
 
-	#prerequisite = { focus = PHI_GENERIC_all_is_normal }
-	#relative_position_id = PHI_GENERIC_all_is_normal
+	#prerequisite = { focus = US_Military_Occupation_all_is_normal }
+	#relative_position_id = US_Military_Occupation_all_is_normal
 
 	completion_reward = {
 		add_political_power = 50 

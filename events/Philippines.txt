@@ -1,5 +1,6 @@
 add_namespace = eventphiEndOfTwenties
 add_namespace = eventphiUnitedStatesAid
+add_namespace = eventUS_Military_Occupation
 
 #Back End Stuff#
 
@@ -180,6 +181,25 @@ country_event = {
 	}
 }
 
+#MILITARY OCCUPATION#
+
+eventUS_Military_Occupation
+
+country_event = {
+	id = eventUS_Military_Occupation.1
+        title = eventUS_Military_Occupation.1.t
+        desc = usaeventUS_Military_OccupationMQ.1.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = usaMilitaryOccupationEconomicPlans.1.a
+	}
+}
+
 #MANEL QUEZON#
 
 country_event = {
@@ -230,3 +250,4 @@ country_event = {
 		name = usaGAInnaugarationSpeech.1.a
 	}
 }
+

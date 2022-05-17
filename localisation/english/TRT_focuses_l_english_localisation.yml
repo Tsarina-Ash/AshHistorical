@@ -22,19 +22,22 @@ gateway_to_america: "Gateway To America"
 
 #EFFECT TOOLTIPS#
 
+
 economy_gdp_growth_tt: "Increases National GDP Growth by §G[?gdp_roaring_growth_var_temp]%§!"
 economy_misc_costs_tt: "Increased Industry Misc. Costs by §Y$[?gdp_industry_misc_costs_var_temp]§!"
 
 
 fdr_first_new_deal_tt: "Political momentumn for any programs wanting to be passed wil be high, use it wisely."
 
-#USA TOOLTIPS#
+#TOOLTIPS#
 
-#  HARLET SMOOT TARIFF   economy_gdp_growth_tt: "Will improve competition with our companies and should rescue the agricultural industry"
+economy_gdp_growth_tt: "Will improve competition with our companies and should rescue the agricultural industry"
 
-dont_do_this_focus_tt: "Bringing the idea of civil rights to the table may split the party and endanger national security... Proceed with caution..."
+dont_do_this_focus_tt: "Bringing the idea of civil rights to the table may split the party and endanger national security... §RProceed with caution...§R"
 
 improves_relations_with_south_america_tt: "Improves relations with all South-American nations"
+
+wilson_liazess_faire_economists_tt: "§RAppointing laissez-faire belieiving individuals may cause harm to our country...§R"
 
 wilson_ill_presidency_tt: "A Quick Catching up on the State of the Union and the current situation."
 
@@ -42,19 +45,17 @@ wilson_wife_president_tt: "Edith Wilson will run in Woodrow Wilson's place."
 
 ending_palmer_raids_tt: "Ending the palmer raids will prompt stability in urban settings."
 
-blaming_people_bad_tt: "Playing the blame game can be dangerous... Be cautious or it may backfire..."
+blaming_people_bad_tt: "Playing the blame game can be dangerous... §RBe cautious or it may backfire...§R"
 
 harding_begin_event_chain_tt: "Doing this will begin a massive event chain"
 
-coolidge_stay_cool_tt: "Gone are the days of progressivism, a return to normalcy is in effect."
+coolidge_stay_cool_tt: "Gone are the days of §Bprogressivism§B, a return to normalcy is in effect."
 
 coolidge_business_as_usual_tt: "Business as usual..."
 
 destabilize_american_politics_tt: "Doing this will create instability within the political system" #work on wording
 
-demob_warning_tt: "Demobilizing too fast may cause the economy to crash and heighten racial tensions, take it slow. Low employment and stagnation for returning veterans may cause some unwelcome sentiments..."
-
-demobilizing will gain rewards but increase racial tensions & instability due to low amount of jobs for returning soldiers and stagnant eco
+demob_warning_tt: "Demobilizing too fast may cause the economy to crash and heighten racial tensions, §ttake it slow§t. Low employment and stagnation, for returning veterans §Rmay cause some unwelcome sentiments...§R"
 
 #WILSON USA LOC#
 

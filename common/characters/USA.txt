@@ -85,4 +85,32 @@ characters={
 		}
 	}	
 
+	USA_dranklin_delano_roosevelt = {
+		name = USA_dranklin_delano_roosevelt
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			traits = {  }
+			expire = "1945.4.12.1"
+		}
+	}
+	
+	USA_harry_truman = {
+		name = USA_harry_truman
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			traits = {  }
+			expire = "1972.12.26.1"
+		}
+	}
+
 }
