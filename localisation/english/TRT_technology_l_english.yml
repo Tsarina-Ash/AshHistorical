@@ -21,3 +21,51 @@ interwar_medium_tank_equipment:0 "Interwar Medium Tank"
 interwar_heavy_tank_equipment:0 "Interwar Heavy Tank"
 
 interwar_light_tank_equipment_2:0 "Early Light Tank"
+
+infantry_tank_chasis:0 "Infantry Tank Chassis"
+infantry_tank_chasis_desc:0 "Infantry Tanks are primarily infantry support vehicles. They are extremely slow tanks with decent firepower."
+
+infantry_tank_equipment_1:0 "Infantry Tank I"
+infantry_tank_equipment_1_short:0 "I. Tank I"
+
+infantry_tank_equipment_2:0 "Infantry Tank II"
+infantry_tank_equipment_2_short:0 "I. Tank II"
+
+infantry_tank_equipment_3:0 "Infantry Tank III"
+infantry_tank_equipment_3_short:0 "I. Tank III"
+
+infantry_tank_aa_chassis:0 "Infantry Tank Anti-Air Chassis"
+infantry_tank_aa_chassis_desc:0 "Infantry Tanks specialized with an anti-air support role."
+
+infantry_tank_aa_equipment_1:0 "Infantry SP Anti-Air I"
+infantry_tank_aa_equipment_1_desc:0 "Infantry Tanks specialized with an anti-air support role."
+
+infantry_tank_aa_equipment_2:0 "Infantry SP Anti-Air II"
+infantry_tank_aa_equipment_2_desc:0 "Infantry Tanks specialized with an anti-air support role."
+
+infantry_tank_aa_equipment_3:0 "Infantry SP Anti-Air III"
+infantry_tank_aa_equipment_3_desc:0 "Infantry Tanks specialized with an anti-air support role."
+
+infantry_tank_artillery_chassis:0 "Infantry Tank Artillery Chassis"
+infantry_tank_artillery_chassis_desc:0 "Infantry Tanks specialized with the support role of an artillery cannon."
+
+infantry_tank_artillery_equipment_1:0 "Infantry SP Artillery I"
+infantry_tank_artillery_equipment_1_desc:0 "Infantry Tanks specialized with the support role of an artillery cannon."
+
+infantry_tank_artillery_equipment_2:0 "Infantry SP Artillery II"
+infantry_tank_artillery_equipment_2_desc:0 "Infantry Tanks specialized with the support role of an artillery cannon."
+
+infantry_tank_artillery_equipment_3:0 "Infantry SP Artillery III"
+infantry_tank_artillery_equipment_3_desc:0 "Infantry Tanks specialized with the support role of an artillery cannon."
+
+infantry_tank_destroyer_chassis:0 "Infantry Tank Destroyer Chassis"
+infantry_tank_destroyer_chassis_desc:0 "Infantry Tanks specialized with an anti-tank support role."
+
+infantry_tank_destroyer_equipment_1:0 "Infantry Anti-Tank I"
+infantry_tank_destroyer_equipment_1_desc:0 "Infantry Tanks specialized with an anti-tank support role."
+
+infantry_tank_destroyer_equipment_2:0 "Infantry Anti-Tank II"
+infantry_tank_destroyer_equipment_2_desc:0 "Infantry Tanks specialized with an anti-tank support role."
+
+infantry_tank_destroyer_equipment_3:0 "Infantry Anti-Tank III"
+infantry_tank_destroyer_equipment_3_desc:0 "Infantry Tanks specialized with an anti-tank support role."
