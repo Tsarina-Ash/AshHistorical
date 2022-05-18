@@ -1542,7 +1542,7 @@ equipments = {
 	}
 
 	modern_tank_equipment_1 = {
-		year = 1945
+		year = 1946
 
 		archetype = modern_tank_chassis
 		priority = 170
