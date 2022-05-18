@@ -1948,7 +1948,7 @@ focus = {
 	cost = 1
 
 	x = 55
-	y = 0
+	y = 20
 	
 	available_if_capitulated =  no
 	
@@ -1975,6 +1975,63 @@ focus = {
 	
 	completion_reward = {
 		custom_effect_tooltip = coolidge_stay_cool_tt
+	}
+}
+
+focus = {
+	id = Coolidge_USA_dont_rock_the_boat
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 12
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_stay_cool_with_coolidge }
+	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #political unity
+	id = Coolidge_USA_step_by_step
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_dont_rock_the_boat }
+	relative_position_id = Coolidge_USA_dont_rock_the_boat
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = Coolidge_USA_crack_down_further_on_radicalism
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_dont_rock_the_boat }
+	relative_position_id = Coolidge_USA_dont_rock_the_boat
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
 	}
 }
 
@@ -2595,8 +2652,8 @@ focus = {
 
 	cost = 4
 
-	x = -1
-	y = 1
+	x = 1
+	y = 2
 	
 	prerequisite = { focus = Coolidge_USA_address_the_nation }
 	relative_position_id = Coolidge_USA_address_the_nation
@@ -2632,11 +2689,69 @@ focus = {
 
 	cost = 4
 
-	x = -2
+	x = -1
 	y = 2
 	
 	prerequisite = { focus = Coolidge_USA_address_the_nation }
 	relative_position_id = Coolidge_USA_address_the_nation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_moving_past_wilson
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_address_the_nation }
+	relative_position_id = Coolidge_USA_address_the_nation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_remain_calm
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_moving_past_wilson }
+	relative_position_id = Coolidge_USA_moving_past_wilson
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Coolidge_USA_curbing_radicalism
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = Coolidge_USA_remain_calm }
+	prerequisite = { focus = Coolidge_USA_moving_past_wilson }
+	relative_position_id = Coolidge_USA_moving_past_wilson
 
 	available_if_capitulated = no
 	
@@ -2651,7 +2766,7 @@ focus = {
 
 	cost = 4
 
-	x = 1
+	x = 4
 	y = 1
 	
 	prerequisite = { focus = Coolidge_USA_address_the_nation }
@@ -2665,17 +2780,18 @@ focus = {
 }
 
 focus = {
-	id = Coolidge_USA_false_help_pennsylvanian_strikers
+	id = Coolidge_USA_kiss_the_curb
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = 1
+	x = -1
 	y = 1
 	
-	mutually_exclusive = { focus = Coolidge_USA_suppress_pennsylvanian_strikers }
 	prerequisite = { focus = Coolidge_USA_deal_with_pennsylvanian_strikers }
 	relative_position_id = Coolidge_USA_deal_with_pennsylvanian_strikers
+	mutually_exclusive = { focus = Coolidge_USA_business_as_usual } 
+	
 
 	available_if_capitulated = no
 	
@@ -2685,17 +2801,17 @@ focus = {
 }
 
 focus = {
-	id = Coolidge_USA_suppress_pennsylvanian_strikers
+	id = Coolidge_USA_business_as_usual
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = -1
+	x = 1
 	y = 1
 	
-	mutually_exclusive = { focus = Coolidge_USA_false_help_pennsylvanian_strikers }
 	prerequisite = { focus = Coolidge_USA_deal_with_pennsylvanian_strikers }
 	relative_position_id = Coolidge_USA_deal_with_pennsylvanian_strikers
+	mutually_exclusive = { focus = Coolidge_USA_kiss_the_curb } 
 
 	available_if_capitulated = no
 	
@@ -2705,7 +2821,7 @@ focus = {
 }
 
 focus = {
-	id = Coolidge_USA_take_control_of_mines
+	id = Coolidge_USA_save_the_legacy_of_harding
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -2713,53 +2829,28 @@ focus = {
 	x = -1
 	y = 1
 	
-	mutually_exclusive = { focus = Coolidge_USA_buisness_as_usual }
-	prerequisite = { focus = Coolidge_USA_suppress_pennsylvanian_strikers }
-	relative_position_id = Coolidge_USA_suppress_pennsylvanian_strikers
+	prerequisite = { focus = Coolidge_USA_kiss_the_curb focus = Coolidge_USA_business_as_usual }
+	relative_position_id = Coolidge_USA_business_as_usual
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		hidden_effect = { 
-			add_to_variable = { gdp_roaring_growth_var = -0.07 } 
-		}
+		add_political_power = 50
 	}
 }
 
 focus = {
-	id = Coolidge_USA_buisness_as_usual
+	id = Coolidge_USA_legacy_of_coolidge
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = 1
-	y = 1
+	x = 0
+	y = 4
 	
-	mutually_exclusive = { focus = Coolidge_USA_take_control_of_mines }
-	prerequisite = { focus = Coolidge_USA_suppress_pennsylvanian_strikers }
-	relative_position_id = Coolidge_USA_suppress_pennsylvanian_strikers
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		custom_effect_tooltip = coolidge_business_as_usual_tt
-		hidden_effect = { 
-			add_to_variable = { gdp_roaring_growth_var = -0.07 } 
-		}
-	}
-}
-
-focus = {
-	id = Coolidge_USA_legacy
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-
-	prerequisite = { focus = Coolidge_USA_take_control_of_mines focus = Coolidge_USA_buisness_as_usual }
-	relative_position_id = Coolidge_USA_buisness_as_usual
+	prerequisite = { focus = Coolidge_USA_save_the_legacy_of_harding }
+	prerequisite = { focus = Coolidge_USA_curbing_radicalism }
+	relative_position_id = Coolidge_USA_address_the_nation
 
 	available_if_capitulated = no
 	
@@ -3355,7 +3446,26 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_the_economy
+	id = EARLY_HOOVER_USA_dealing_with_labor_unions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_innaugaration_speech }
+	relative_position_id = EARLY_HOOVER_USA_innaugaration_speech
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_dealing_pyramid_schemes
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3363,8 +3473,282 @@ focus = {
 	x = 0
 	y = 1
 	
+	prerequisite = { focus = EARLY_HOOVER_USA_dealing_with_labor_unions }
+	relative_position_id = EARLY_HOOVER_USA_dealing_with_labor_unions
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+
+focus = {
+	id = EARLY_HOOVER_USA_launch_investigations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_dealing_pyramid_schemes }
+	relative_position_id = EARLY_HOOVER_USA_dealing_pyramid_schemes
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_fbi_infiltration
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_dealing_pyramid_schemes }
+	relative_position_id = EARLY_HOOVER_USA_dealing_pyramid_schemes
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_start_blacklisting_unionizers
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_launch_investigations }
+	prerequisite = { focus = EARLY_HOOVER_USA_fbi_infiltration }
+	relative_position_id = EARLY_HOOVER_USA_fbi_infiltration
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_tighten_requirements
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_launch_investigations }
+	prerequisite = { focus = EARLY_HOOVER_USA_fbi_infiltration }
+	relative_position_id = EARLY_HOOVER_USA_fbi_infiltration
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #UAW & USW (united auto workers and united steel workers)
+	id = EARLY_HOOVER_USA_the_big_scary_wolves
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_dealing_with_labor_unions }
+	relative_position_id = EARLY_HOOVER_USA_dealing_with_labor_unions
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = EARLY_HOOVER_USA_shift_national_spotlight
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_the_big_scary_wolves }
+	relative_position_id = EARLY_HOOVER_USA_the_big_scary_wolves
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = EARLY_HOOVER_USA_proceed_with_building_case
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 2
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_the_big_scary_wolves }
+	relative_position_id = EARLY_HOOVER_USA_the_big_scary_wolves
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+#economic path ???
+
+focus = {
+	id = EARLY_HOOVER_USA_economic_reform
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
 	prerequisite = { focus = EARLY_HOOVER_USA_innaugaration_speech }
 	relative_position_id = EARLY_HOOVER_USA_innaugaration_speech
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_fix_exchange_rates
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_economic_reform }
+	relative_position_id = EARLY_HOOVER_USA_economic_reform
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_increase_tariffs
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_not_too_much }
+	prerequisite = { focus = EARLY_HOOVER_USA_fix_exchange_rates }
+	relative_position_id = EARLY_HOOVER_USA_fix_exchange_rates
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_the_freer_the_market_the_freer_the_people
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_fix_exchange_rates }
+	relative_position_id = EARLY_HOOVER_USA_fix_exchange_rates
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_not_too_much
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_economic_reform }
+	relative_position_id = EARLY_HOOVER_USA_economic_reform
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_build_up_our_reserve
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_not_too_much }
+	relative_position_id = EARLY_HOOVER_USA_not_too_much
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_the_economy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_the_freer_the_market_the_freer_the_people }
+	prerequisite = { focus = EARLY_HOOVER_USA_increase_tariffs }
+	prerequisite = { focus = EARLY_HOOVER_USA_build_up_our_reserve }
+	relative_position_id = EARLY_HOOVER_USA_build_up_our_reserve
 
 	available_if_capitulated = no
 	
@@ -3381,56 +3765,39 @@ focus = {
 	}
 }
 
-focus = { #last focus for 1924 president
+focus = { #focus named "the gold standard" ?
 	id = EARLY_HOOVER_USA_the_hibernating_giant
 	icon = GFX_focus_USA_placeholder
 
 	cost = 1
 
-	x = 0
+	x = -3
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_the_economy }
-	relative_position_id = EARLY_HOOVER_USA_the_economy
+	prerequisite = { focus = EARLY_HOOVER_USA_the_freer_the_market_the_freer_the_people }
+	prerequisite = { focus = EARLY_HOOVER_USA_increase_tariffs }
+	prerequisite = { focus = EARLY_HOOVER_USA_build_up_our_reserve }
+	relative_position_id = EARLY_HOOVER_USA_build_up_our_reserve
 	
 	available_if_capitulated =  no
 	
 	completion_reward = {
-		add_political_power = 50 #final focus for hoover, hopefully player only elects them in 1928, most of his time will be through events & decisions & crisis focus tree
-	}
-}
-
-#HOOVER PRESIDENCY#
-
-focus = {
-	id = HOOVER_USA_innaugaration_speech
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 100
-	y = 0
-	
-	available_if_capitulated =  no
-	
-	completion_reward = {
-		country_event = {
-			id = event.usaHoover.2 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
-		}
+		add_political_power = 50 #hopefully player only elects them in 1928, most of his time will be through events & decisions & crisis focus tree
 	}
 }
 
 focus = {
-	id = HOOVER_USA_the_economy
+	id = EARLY_HOOVER_USA_the_gold_standard
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = 0
+	x = -1
 	y = 1
 	
-	prerequisite = { focus = HOOVER_USA_innaugaration_speech }
-	relative_position_id = HOOVER_USA_innaugaration_speech
+	prerequisite = { focus = EARLY_HOOVER_USA_the_hibernating_giant }
+	prerequisite = { focus = EARLY_HOOVER_USA_the_economy }
+	relative_position_id = EARLY_HOOVER_USA_the_economy
 
 	available_if_capitulated = no
 	
@@ -3440,29 +3807,226 @@ focus = {
 		add_to_variable = { gdp_roaring_growth_var = 0.01 }
 		hidden_effect = {
 			set_country_flag = {
-				flag = worse_deppression_hoover_two
+				flag = worse_deppression_hoover_one
 			value = 1
 			}	
 		}
 	}
 }
 
-focus = { #last focus for 1928 president for today
-	id = HOOVER_USA_the_hibernating_giant
+focus = {
+	id = EARLY_HOOVER_USA_lift_yourself_up_by_the_bootstraps
 	icon = GFX_focus_USA_placeholder
 
-	cost = 1
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_the_gold_standard }
+	relative_position_id = EARLY_HOOVER_USA_the_gold_standard
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_our_work_is_never_done
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_lift_yourself_up_by_the_bootstraps }
+	relative_position_id = EARLY_HOOVER_USA_lift_yourself_up_by_the_bootstraps
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_lower_business_tax
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_our_work_is_never_done }
+	relative_position_id = EARLY_HOOVER_USA_our_work_is_never_done
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_prevent_currency_devaluation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
 
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = HOOVER_USA_the_economy }
-	relative_position_id = HOOVER_USA_the_economy
-	
-	available_if_capitulated =  no
+	prerequisite = { focus = EARLY_HOOVER_USA_the_gold_standard }
+	relative_position_id = EARLY_HOOVER_USA_the_gold_standard
+
+	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50 #final focus for hoover, hopefully player only elects them in 1928, most of his time will be through events & decisions & crisis focus tree
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_the_power_of_a_handshake
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_prevent_currency_devaluation }
+	relative_position_id = EARLY_HOOVER_USA_prevent_currency_devaluation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_the_beacon_of_freedon_demovracy_and_businesses
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 5
+
+
+	prerequisite = { focus = EARLY_HOOVER_USA_prevent_currency_devaluation }
+	prerequisite = { focus = EARLY_HOOVER_USA_lower_business_tax }
+	prerequisite = { focus = EARLY_HOOVER_USA_our_troubles_are_many }
+	prerequisite = { focus = EARLY_HOOVER_USA_implement_stopgap_measures }
+	prerequisite = { focus = EARLY_HOOVER_USA_price_stabilization_mechanisms }
+	relative_position_id = EARLY_HOOVER_USA_prevent_currency_devaluation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_our_troubles_are_many
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 2
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_our_work_is_never_done }
+	prerequisite = { focus = EARLY_HOOVER_USA_the_power_of_a_handshake }
+	relative_position_id = EARLY_HOOVER_USA_the_power_of_a_handshake
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_implement_stopgap_measures
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 2
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_the_unfortunate_political_realities }
+	prerequisite = { focus = EARLY_HOOVER_USA_the_power_of_a_handshake }
+	relative_position_id = EARLY_HOOVER_USA_the_power_of_a_handshake
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_the_burden_of_being_strong
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_the_gold_standard }
+	relative_position_id = EARLY_HOOVER_USA_the_gold_standard
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_the_unfortunate_political_realities
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_the_burden_of_being_strong }
+	relative_position_id = EARLY_HOOVER_USA_the_burden_of_being_strong
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = EARLY_HOOVER_USA_price_stabilization_mechanisms
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = EARLY_HOOVER_USA_the_unfortunate_political_realities }
+	relative_position_id = EARLY_HOOVER_USA_the_unfortunate_political_realities
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
 	}
 }
 
