@@ -3428,12 +3428,12 @@ focus = {
 #EARLY HOOVER#
 
 focus = {
-	id = EARLY_HOOVER_USA_innaugaration_speech
+	id = HOOVER_USA_innaugaration_speech
 	icon = GFX_focus_USA_placeholder
 
 	cost = 1
 
-	x = 90
+	x = 95
 	y = 0
 	
 	available_if_capitulated =  no
@@ -3445,27 +3445,10 @@ focus = {
 	}
 }
 
-focus = {
-	id = EARLY_HOOVER_USA_dealing_with_labor_unions
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 3
-	y = 1
-	
-	prerequisite = { focus = EARLY_HOOVER_USA_innaugaration_speech }
-	relative_position_id = EARLY_HOOVER_USA_innaugaration_speech
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-
-	}
-}
+#great deppression section ???
 
 focus = {
-	id = EARLY_HOOVER_USA_dealing_pyramid_schemes
+	id = HOOVER_USA_what_unites_us
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3473,8 +3456,8 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_dealing_with_labor_unions }
-	relative_position_id = EARLY_HOOVER_USA_dealing_with_labor_unions
+	prerequisite = { focus = HOOVER_USA_innaugaration_speech }
+	relative_position_id = HOOVER_USA_innaugaration_speech
 
 	available_if_capitulated = no
 	
@@ -3483,18 +3466,17 @@ focus = {
 	}
 }
 
-
-focus = {
-	id = EARLY_HOOVER_USA_launch_investigations
+focus = { 
+	id = HOOVER_USA_public_works
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = -1
+	x = -3
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_dealing_pyramid_schemes }
-	relative_position_id = EARLY_HOOVER_USA_dealing_pyramid_schemes
+	prerequisite = { focus = HOOVER_USA_what_unites_us }
+	relative_position_id = HOOVER_USA_what_unites_us
 
 	available_if_capitulated = no
 	
@@ -3503,27 +3485,8 @@ focus = {
 	}
 }
 
-focus = {
-	id = EARLY_HOOVER_USA_fbi_infiltration
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 1
-	y = 1
-	
-	prerequisite = { focus = EARLY_HOOVER_USA_dealing_pyramid_schemes }
-	relative_position_id = EARLY_HOOVER_USA_dealing_pyramid_schemes
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-
-	}
-}
-
-focus = {
-	id = EARLY_HOOVER_USA_start_blacklisting_unionizers
+focus = { 
+	id = HOOVER_USA_subsudize_construction
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3531,9 +3494,297 @@ focus = {
 	x = -2
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_launch_investigations }
-	prerequisite = { focus = EARLY_HOOVER_USA_fbi_infiltration }
-	relative_position_id = EARLY_HOOVER_USA_fbi_infiltration
+	prerequisite = { focus = HOOVER_USA_public_works }
+	relative_position_id = HOOVER_USA_public_works
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_face_the_economic_realities
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_public_works }
+	relative_position_id = HOOVER_USA_public_works
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_meet_with_industry_leaders
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_public_works }
+	relative_position_id = HOOVER_USA_public_works
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_lower_business_taxes_again
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = HOOVER_USA_subsudize_construction }
+	prerequisite = { focus = HOOVER_USA_meet_with_industry_leaders }
+	relative_position_id = HOOVER_USA_public_works
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_stop_being_annoying
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_lower_business_taxes_again }
+	relative_position_id = HOOVER_USA_lower_business_taxes_again
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_states_above_the_federal_government
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_stop_being_annoying }
+	relative_position_id = HOOVER_USA_stop_being_annoying
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_work_for_yourself
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_states_above_the_federal_government }
+	relative_position_id = HOOVER_USA_states_above_the_federal_government
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_the_right_to_spend_in_pursuit_of_happiness
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_work_for_yourself }
+	relative_position_id = HOOVER_USA_work_for_yourself
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_troubles_are_few_when_you_work
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_work_for_yourself }
+	relative_position_id = HOOVER_USA_work_for_yourself
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+focus = { 
+	id = HOOVER_USA_steel_belt_revival
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_lower_business_taxes_again }
+	relative_position_id = HOOVER_USA_lower_business_taxes_again
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_promote_working
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_steel_belt_revival }
+	relative_position_id = HOOVER_USA_steel_belt_revival
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_recovery_through_production
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_promote_working }
+	relative_position_id = HOOVER_USA_promote_working
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_test_the_waters
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+
+	prerequisite = { focus = HOOVER_USA_recovery_through_production }
+	prerequisite = { focus = HOOVER_USA_promote_working }
+	relative_position_id = HOOVER_USA_promote_working
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_reality_hurts
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 3
+	
+	prerequisite = { focus = HOOVER_USA_lower_business_taxes_again }
+	relative_position_id = HOOVER_USA_lower_business_taxes_again
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_the_american_dream
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 6
+	
+	prerequisite = { focus = HOOVER_USA_test_the_waters }
+	prerequisite = { focus = HOOVER_USA_troubles_are_few_when_you_work }
+	prerequisite = { focus = HOOVER_USA_the_right_to_spend_in_pursuit_of_happiness }
+	relative_position_id = HOOVER_USA_lower_business_taxes_again
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_rugged_individualism
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_what_unites_us }
+	relative_position_id = HOOVER_USA_what_unites_us
 
 	available_if_capitulated = no
 	
@@ -3543,7 +3794,30 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_tighten_requirements
+	id = HOOVER_USA_first_60_days_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 4
+	
+	prerequisite = { focus = HOOVER_USA_moral_obligation }
+	prerequisite = { focus = HOOVER_USA_cross_the_country }
+	prerequisite = { focus = HOOVER_USA_tackling_the_effects }
+	prerequisite = { focus = HOOVER_USA_managing_unemployment }
+	prerequisite = { focus = HOOVER_USA_increase_tariffs_again }
+	relative_position_id = HOOVER_USA_rugged_individualism
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = HOOVER_USA_its_going_down
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3551,9 +3825,321 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_launch_investigations }
-	prerequisite = { focus = EARLY_HOOVER_USA_fbi_infiltration }
-	relative_position_id = EARLY_HOOVER_USA_fbi_infiltration
+	prerequisite = { focus = HOOVER_USA_first_60_days_speech }
+	relative_position_id = HOOVER_USA_first_60_days_speech
+
+	available = {
+		always = no
+	}
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_time_to_roll_up_our_sleeves
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_rugged_individualism }
+	relative_position_id = HOOVER_USA_rugged_individualism
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_helping_the_poor
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_time_to_roll_up_our_sleeves }
+	relative_position_id = HOOVER_USA_time_to_roll_up_our_sleeves
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_increase_tariffs_again
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_helping_the_poor }
+	relative_position_id = HOOVER_USA_helping_the_poor
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_working_men_should_work
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_time_to_roll_up_our_sleeves }
+	relative_position_id = HOOVER_USA_time_to_roll_up_our_sleeves
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_managing_unemployment
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_working_men_should_work }
+	relative_position_id = HOOVER_USA_working_men_should_work
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #start giving speeches to help people ?
+	id = HOOVER_USA_calling_from_sea_to_sea
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_rugged_individualism }
+	relative_position_id = HOOVER_USA_rugged_individualism
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = HOOVER_USA_tackling_the_effects
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_calling_from_sea_to_sea }
+	relative_position_id = HOOVER_USA_calling_from_sea_to_sea
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = HOOVER_USA_cross_the_country
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = HOOVER_USA_calling_from_sea_to_sea }
+	relative_position_id = HOOVER_USA_calling_from_sea_to_sea
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = HOOVER_USA_rally_the_nation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_calling_from_sea_to_sea }
+	relative_position_id = HOOVER_USA_calling_from_sea_to_sea
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = HOOVER_USA_moral_obligation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_rally_the_nation }
+	relative_position_id = HOOVER_USA_rally_the_nation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+#dealing with labor unions#
+
+focus = { 
+	id = HOOVER_USA_dealing_with_labor_unions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 9
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_innaugaration_speech }
+	relative_position_id = HOOVER_USA_innaugaration_speech
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = HOOVER_USA_dealing_pyramid_schemes
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_dealing_with_labor_unions }
+	relative_position_id = HOOVER_USA_dealing_with_labor_unions
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+
+focus = {
+	id = HOOVER_USA_launch_investigations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_dealing_pyramid_schemes }
+	relative_position_id = HOOVER_USA_dealing_pyramid_schemes
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = HOOVER_USA_fbi_infiltration
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_dealing_pyramid_schemes }
+	relative_position_id = HOOVER_USA_dealing_pyramid_schemes
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = HOOVER_USA_start_blacklisting_unionizers
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 2
+	
+	prerequisite = { focus = HOOVER_USA_launch_investigations }
+	prerequisite = { focus = HOOVER_USA_fbi_infiltration }
+	relative_position_id = HOOVER_USA_fbi_infiltration
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = HOOVER_USA_tighten_requirements
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_launch_investigations }
+	prerequisite = { focus = HOOVER_USA_fbi_infiltration }
+	relative_position_id = HOOVER_USA_fbi_infiltration
 
 	available_if_capitulated = no
 	
@@ -3563,7 +4149,7 @@ focus = {
 }
 
 focus = { #UAW & USW (united auto workers and united steel workers)
-	id = EARLY_HOOVER_USA_the_big_scary_wolves
+	id = HOOVER_USA_the_big_scary_wolves
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3571,8 +4157,8 @@ focus = { #UAW & USW (united auto workers and united steel workers)
 	x = 3
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_dealing_with_labor_unions }
-	relative_position_id = EARLY_HOOVER_USA_dealing_with_labor_unions
+	prerequisite = { focus = HOOVER_USA_dealing_with_labor_unions }
+	relative_position_id = HOOVER_USA_dealing_with_labor_unions
 
 	available_if_capitulated = no
 	
@@ -3582,7 +4168,7 @@ focus = { #UAW & USW (united auto workers and united steel workers)
 }
 
 focus = { 
-	id = EARLY_HOOVER_USA_shift_national_spotlight
+	id = HOOVER_USA_shift_national_spotlight
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3590,8 +4176,8 @@ focus = {
 	x = 0
 	y = 2
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_the_big_scary_wolves }
-	relative_position_id = EARLY_HOOVER_USA_the_big_scary_wolves
+	prerequisite = { focus = HOOVER_USA_the_big_scary_wolves }
+	relative_position_id = HOOVER_USA_the_big_scary_wolves
 
 	available_if_capitulated = no
 	
@@ -3601,7 +4187,7 @@ focus = {
 }
 
 focus = { 
-	id = EARLY_HOOVER_USA_proceed_with_building_case
+	id = HOOVER_USA_proceed_with_building_case
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3609,8 +4195,1065 @@ focus = {
 	x = 2
 	y = 2
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_the_big_scary_wolves }
-	relative_position_id = EARLY_HOOVER_USA_the_big_scary_wolves
+	prerequisite = { focus = HOOVER_USA_the_big_scary_wolves }
+	relative_position_id = HOOVER_USA_the_big_scary_wolves
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_fabricate_evidence
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	available = {
+		always = no
+	}
+
+	prerequisite = { focus = HOOVER_USA_proceed_with_building_case }
+	relative_position_id = HOOVER_USA_proceed_with_building_case
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_unions_are_harming_the_worker
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = HOOVER_USA_fabricate_evidence }
+	relative_position_id = HOOVER_USA_fabricate_evidence
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_self_made_evidence
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = HOOVER_USA_fabricate_evidence }
+	relative_position_id = HOOVER_USA_fabricate_evidence
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+
+focus = { 
+	id = HOOVER_USA_target_union_leaders
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_unions_are_harming_the_worker }
+	prerequisite = { focus = HOOVER_USA_self_made_evidence }
+	relative_position_id = HOOVER_USA_self_made_evidence
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_clean_trial
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	available = {
+		always = no
+	}
+
+	prerequisite = { focus = HOOVER_USA_proceed_with_building_case }
+	relative_position_id = HOOVER_USA_proceed_with_building_case
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_dig_up_evidence
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_clean_trial }
+	relative_position_id = HOOVER_USA_clean_trial
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_a_limited_path
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = HOOVER_USA_dig_up_evidence }
+	relative_position_id = HOOVER_USA_dig_up_evidence
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #blames those who are hated
+	id = HOOVER_USA_check_union_affiliations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_target_union_leaders }
+	prerequisite = { focus = HOOVER_USA_a_limited_path }
+	relative_position_id = HOOVER_USA_a_limited_path
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_us_gov_v_uaw_usw
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	available = {
+		always = no
+	}
+	
+	prerequisite = { focus = HOOVER_USA_check_union_affiliations }
+	relative_position_id = HOOVER_USA_check_union_affiliations
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+#foreign_policy#
+
+focus = { 
+	id = HOOVER_USA_america_abroad
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 30
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_innaugaration_speech }
+	relative_position_id = HOOVER_USA_innaugaration_speech
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #stops all other focuses
+	id = HOOVER_USA_return_to_isolationism
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_america_abroad }
+	relative_position_id = HOOVER_USA_america_abroad
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_dealing_with_europe
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 7
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_america_abroad }
+	relative_position_id = HOOVER_USA_america_abroad
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_find_alliances
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_dealing_with_europe }
+	relative_position_id = HOOVER_USA_dealing_with_europe
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_anglo_saxon_unity
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = HOOVER_USA_find_alliances }
+	prerequisite = { focus = HOOVER_USA_expand_european_relief }
+	relative_position_id = HOOVER_USA_dealing_with_europe
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+
+focus = { 
+	id = HOOVER_USA_begin_the_conversation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_expand_european_relief }
+	prerequisite = { focus = HOOVER_USA_find_alliances }
+	prerequisite = { focus = HOOVER_USA_anglo_saxon_unity }
+	relative_position_id = HOOVER_USA_anglo_saxon_unity
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_why
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_begin_the_conversation }
+	relative_position_id = HOOVER_USA_begin_the_conversation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_who
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = HOOVER_USA_begin_the_conversation }
+	relative_position_id = HOOVER_USA_begin_the_conversation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+
+focus = { 
+	id = HOOVER_USA_and_why
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = HOOVER_USA_why }
+	prerequisite = { focus = HOOVER_USA_who }
+	relative_position_id = HOOVER_USA_who
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_devastated_and_indebted
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_expand_european_relief }
+	prerequisite = { focus = HOOVER_USA_find_alliances }
+	prerequisite = { focus = HOOVER_USA_anglo_saxon_unity }
+	relative_position_id = HOOVER_USA_anglo_saxon_unity
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_ask_for_money_now
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	mutually_exclusive = { focus = HOOVER_USA_pay_some_debt_for_britian }
+	prerequisite = { focus = HOOVER_USA_devastated_and_indebted }
+	relative_position_id = HOOVER_USA_devastated_and_indebted
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_pay_some_debt_for_britian
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	mutually_exclusive = { focus = HOOVER_USA_ask_for_money_now }
+	prerequisite = { focus = HOOVER_USA_devastated_and_indebted }
+	relative_position_id = HOOVER_USA_devastated_and_indebted
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #generic eco focus
+	id = HOOVER_USA_treaty_of_london
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_devastated_and_indebted }
+	relative_position_id = HOOVER_USA_devastated_and_indebted
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_little_america
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_treaty_of_london }
+	relative_position_id = HOOVER_USA_treaty_of_london
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_invest_in_businesses
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_treaty_of_london }
+	relative_position_id = HOOVER_USA_treaty_of_london
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_a_television_in_every_store
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_treaty_of_london }
+	prerequisite = { focus = HOOVER_USA_invest_in_businesses }
+	relative_position_id = HOOVER_USA_invest_in_businesses
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+
+focus = { 
+	id = HOOVER_USA_expand_european_relief
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_dealing_with_europe }
+	relative_position_id = HOOVER_USA_dealing_with_europe
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_alleviate_european_debts
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_expand_european_relief }
+	relative_position_id = HOOVER_USA_expand_european_relief
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_lowered_debt_for_lowered_tariffs
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_alleviate_european_debts }
+	relative_position_id = HOOVER_USA_alleviate_european_debts
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_all_is_booming
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_alleviate_european_debts }
+	relative_position_id = HOOVER_USA_alleviate_european_debts
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_force_an_increase_in_interest_rates
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = HOOVER_USA_all_is_booming }
+	prerequisite = { focus = HOOVER_USA_lowered_debt_for_lowered_tariffs }
+	relative_position_id = HOOVER_USA_lowered_debt_for_lowered_tariffs
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_cashing_in
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = HOOVER_USA_ask_for_money_now }
+	prerequisite = { focus = HOOVER_USA_force_an_increase_in_interest_rates }
+	relative_position_id = HOOVER_USA_force_an_increase_in_interest_rates
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_dealing_with_asia
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -7
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_america_abroad }
+	relative_position_id = HOOVER_USA_america_abroad
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_investments_in_india
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -4
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_dealing_with_asia }
+	relative_position_id = HOOVER_USA_dealing_with_asia
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_waves_of_dollars
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_investments_in_india }
+	relative_position_id = HOOVER_USA_investments_in_india
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #have secretary visit india
+	id = HOOVER_USA_warm_welcome_to_india
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_waves_of_dollars }
+	relative_position_id = HOOVER_USA_waves_of_dollars
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_those_who_pay_get_money
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 2
+	
+	prerequisite = { focus = HOOVER_USA_made_in_america }
+	prerequisite = { focus = HOOVER_USA_free_trade_zone }
+	prerequisite = { focus = HOOVER_USA_waves_of_dollars }
+	relative_position_id = HOOVER_USA_waves_of_dollars
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #event chain with all nations to negotiate trade agreement
+	id = HOOVER_USA_negotiate_with_all_countries
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_those_who_pay_get_money }
+	prerequisite = { focus = HOOVER_USA_propose_special_trade_agreements }
+	relative_position_id = HOOVER_USA_those_who_pay_get_money
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #china
+	id = HOOVER_USA_the_whimpering_tiger
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_dealing_with_asia }
+	relative_position_id = HOOVER_USA_dealing_with_asia
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_made_in_america
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = HOOVER_USA_the_whimpering_tiger }
+	relative_position_id = HOOVER_USA_the_whimpering_tiger
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_free_trade_zone
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_the_whimpering_tiger }
+	relative_position_id = HOOVER_USA_the_whimpering_tiger
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_the_chinese_market
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_the_whimpering_tiger }
+	relative_position_id = HOOVER_USA_the_whimpering_tiger
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_strengthening_ties_in_australasia
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 4
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_dealing_with_asia }
+	relative_position_id = HOOVER_USA_dealing_with_asia
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_guage_our_interests
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_strengthening_ties_in_australasia }
+	relative_position_id = HOOVER_USA_strengthening_ties_in_australasia
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #for coal
+	id = HOOVER_USA_propose_special_trade_agreements
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_the_chinese_market }
+	prerequisite = { focus = HOOVER_USA_guage_our_interests }
+	relative_position_id = HOOVER_USA_guage_our_interests
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = HOOVER_USA_buy_up_rights_for_bases
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_propose_special_trade_agreements }
+	relative_position_id = HOOVER_USA_propose_special_trade_agreements
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_our_closest_relatives
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	prerequisite = { focus = HOOVER_USA_find_alliances }
+	prerequisite = { focus = HOOVER_USA_strengthening_ties_in_australasia }
+	relative_position_id = HOOVER_USA_strengthening_ties_in_australasia
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_australia
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -2
+	y = 1
+	prerequisite = { focus = HOOVER_USA_our_closest_relatives }
+	relative_position_id = HOOVER_USA_our_closest_relatives
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_expand_sydney_port
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	prerequisite = { focus = HOOVER_USA_australia }
+	relative_position_id = HOOVER_USA_australia
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_fort_australia
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	prerequisite = { focus = HOOVER_USA_australia }
+	relative_position_id = HOOVER_USA_australia
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+
+focus = { 
+	id = HOOVER_USA_canada
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	prerequisite = { focus = HOOVER_USA_our_closest_relatives }
+	relative_position_id = HOOVER_USA_our_closest_relatives
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_expand_quebecian_ports
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	prerequisite = { focus = HOOVER_USA_canada }
+	relative_position_id = HOOVER_USA_canada
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_interconnected_economy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	prerequisite = { focus = HOOVER_USA_expand_quebecian_ports }
+	relative_position_id = HOOVER_USA_expand_quebecian_ports
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #investing in canadian lumber indsutry#
+	id = HOOVER_USA_feeding_the_sawills
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	prerequisite = { focus = HOOVER_USA_expand_quebecian_ports }
+	relative_position_id = HOOVER_USA_expand_quebecian_ports
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_never_another_ypres_and_gallipoli
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 4
+
+	prerequisite = { focus = HOOVER_USA_fort_australia }
+	prerequisite = { focus = HOOVER_USA_interconnected_economy }
+	prerequisite = { focus = HOOVER_USA_feeding_the_sawills }
+	relative_position_id = HOOVER_USA_our_closest_relatives
 
 	available_if_capitulated = no
 	
@@ -3622,16 +5265,16 @@ focus = {
 #economic path ???
 
 focus = {
-	id = EARLY_HOOVER_USA_economic_reform
+	id = HOOVER_USA_economic_reform
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = -3
+	x = -9
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_innaugaration_speech }
-	relative_position_id = EARLY_HOOVER_USA_innaugaration_speech
+	prerequisite = { focus = HOOVER_USA_innaugaration_speech }
+	relative_position_id = HOOVER_USA_innaugaration_speech
 
 	available_if_capitulated = no
 	
@@ -3641,7 +5284,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_fix_exchange_rates
+	id = HOOVER_USA_fix_exchange_rates
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3649,8 +5292,8 @@ focus = {
 	x = -1
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_economic_reform }
-	relative_position_id = EARLY_HOOVER_USA_economic_reform
+	prerequisite = { focus = HOOVER_USA_economic_reform }
+	relative_position_id = HOOVER_USA_economic_reform
 
 	available_if_capitulated = no
 	
@@ -3660,7 +5303,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_increase_tariffs
+	id = HOOVER_USA_increase_tariffs
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3668,9 +5311,9 @@ focus = {
 	x = 1
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_not_too_much }
-	prerequisite = { focus = EARLY_HOOVER_USA_fix_exchange_rates }
-	relative_position_id = EARLY_HOOVER_USA_fix_exchange_rates
+	prerequisite = { focus = HOOVER_USA_not_too_much }
+	prerequisite = { focus = HOOVER_USA_fix_exchange_rates }
+	relative_position_id = HOOVER_USA_fix_exchange_rates
 
 	available_if_capitulated = no
 	
@@ -3680,7 +5323,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_the_freer_the_market_the_freer_the_people
+	id = HOOVER_USA_the_freer_the_market_the_freer_the_people
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3688,8 +5331,8 @@ focus = {
 	x = -1
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_fix_exchange_rates }
-	relative_position_id = EARLY_HOOVER_USA_fix_exchange_rates
+	prerequisite = { focus = HOOVER_USA_fix_exchange_rates }
+	relative_position_id = HOOVER_USA_fix_exchange_rates
 
 	available_if_capitulated = no
 	
@@ -3699,7 +5342,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_not_too_much
+	id = HOOVER_USA_not_too_much
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3707,8 +5350,8 @@ focus = {
 	x = 1
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_economic_reform }
-	relative_position_id = EARLY_HOOVER_USA_economic_reform
+	prerequisite = { focus = HOOVER_USA_economic_reform }
+	relative_position_id = HOOVER_USA_economic_reform
 
 	available_if_capitulated = no
 	
@@ -3718,7 +5361,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_build_up_our_reserve
+	id = HOOVER_USA_build_up_our_reserve
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3726,8 +5369,8 @@ focus = {
 	x = 1
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_not_too_much }
-	relative_position_id = EARLY_HOOVER_USA_not_too_much
+	prerequisite = { focus = HOOVER_USA_not_too_much }
+	relative_position_id = HOOVER_USA_not_too_much
 
 	available_if_capitulated = no
 	
@@ -3737,7 +5380,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_the_economy
+	id = HOOVER_USA_the_economy
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3745,10 +5388,10 @@ focus = {
 	x = -1
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_the_freer_the_market_the_freer_the_people }
-	prerequisite = { focus = EARLY_HOOVER_USA_increase_tariffs }
-	prerequisite = { focus = EARLY_HOOVER_USA_build_up_our_reserve }
-	relative_position_id = EARLY_HOOVER_USA_build_up_our_reserve
+	prerequisite = { focus = HOOVER_USA_the_freer_the_market_the_freer_the_people }
+	prerequisite = { focus = HOOVER_USA_increase_tariffs }
+	prerequisite = { focus = HOOVER_USA_build_up_our_reserve }
+	relative_position_id = HOOVER_USA_build_up_our_reserve
 
 	available_if_capitulated = no
 	
@@ -3766,7 +5409,7 @@ focus = {
 }
 
 focus = { #focus named "the gold standard" ?
-	id = EARLY_HOOVER_USA_the_hibernating_giant
+	id = HOOVER_USA_the_hibernating_giant
 	icon = GFX_focus_USA_placeholder
 
 	cost = 1
@@ -3774,10 +5417,10 @@ focus = { #focus named "the gold standard" ?
 	x = -3
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_the_freer_the_market_the_freer_the_people }
-	prerequisite = { focus = EARLY_HOOVER_USA_increase_tariffs }
-	prerequisite = { focus = EARLY_HOOVER_USA_build_up_our_reserve }
-	relative_position_id = EARLY_HOOVER_USA_build_up_our_reserve
+	prerequisite = { focus = HOOVER_USA_the_freer_the_market_the_freer_the_people }
+	prerequisite = { focus = HOOVER_USA_increase_tariffs }
+	prerequisite = { focus = HOOVER_USA_build_up_our_reserve }
+	relative_position_id = HOOVER_USA_build_up_our_reserve
 	
 	available_if_capitulated =  no
 	
@@ -3787,7 +5430,7 @@ focus = { #focus named "the gold standard" ?
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_the_gold_standard
+	id = HOOVER_USA_the_gold_standard
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3795,9 +5438,9 @@ focus = {
 	x = -1
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_the_hibernating_giant }
-	prerequisite = { focus = EARLY_HOOVER_USA_the_economy }
-	relative_position_id = EARLY_HOOVER_USA_the_economy
+	prerequisite = { focus = HOOVER_USA_the_hibernating_giant }
+	prerequisite = { focus = HOOVER_USA_the_economy }
+	relative_position_id = HOOVER_USA_the_economy
 
 	available_if_capitulated = no
 	
@@ -3815,7 +5458,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_lift_yourself_up_by_the_bootstraps
+	id = HOOVER_USA_lift_yourself_up_by_the_bootstraps
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3823,8 +5466,8 @@ focus = {
 	x = -2
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_the_gold_standard }
-	relative_position_id = EARLY_HOOVER_USA_the_gold_standard
+	prerequisite = { focus = HOOVER_USA_the_gold_standard }
+	relative_position_id = HOOVER_USA_the_gold_standard
 
 	available_if_capitulated = no
 	
@@ -3834,7 +5477,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_our_work_is_never_done
+	id = HOOVER_USA_our_work_is_never_done
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3842,8 +5485,8 @@ focus = {
 	x = 0
 	y = 2
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_lift_yourself_up_by_the_bootstraps }
-	relative_position_id = EARLY_HOOVER_USA_lift_yourself_up_by_the_bootstraps
+	prerequisite = { focus = HOOVER_USA_lift_yourself_up_by_the_bootstraps }
+	relative_position_id = HOOVER_USA_lift_yourself_up_by_the_bootstraps
 
 	available_if_capitulated = no
 	
@@ -3853,7 +5496,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_lower_business_tax
+	id = HOOVER_USA_lower_business_tax
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3861,8 +5504,8 @@ focus = {
 	x = 0
 	y = 2
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_our_work_is_never_done }
-	relative_position_id = EARLY_HOOVER_USA_our_work_is_never_done
+	prerequisite = { focus = HOOVER_USA_our_work_is_never_done }
+	relative_position_id = HOOVER_USA_our_work_is_never_done
 
 	available_if_capitulated = no
 	
@@ -3872,7 +5515,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_prevent_currency_devaluation
+	id = HOOVER_USA_prevent_currency_devaluation
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3880,8 +5523,8 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_the_gold_standard }
-	relative_position_id = EARLY_HOOVER_USA_the_gold_standard
+	prerequisite = { focus = HOOVER_USA_the_gold_standard }
+	relative_position_id = HOOVER_USA_the_gold_standard
 
 	available_if_capitulated = no
 	
@@ -3891,7 +5534,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_the_power_of_a_handshake
+	id = HOOVER_USA_the_power_of_a_handshake
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3899,8 +5542,8 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_prevent_currency_devaluation }
-	relative_position_id = EARLY_HOOVER_USA_prevent_currency_devaluation
+	prerequisite = { focus = HOOVER_USA_prevent_currency_devaluation }
+	relative_position_id = HOOVER_USA_prevent_currency_devaluation
 
 	available_if_capitulated = no
 	
@@ -3910,7 +5553,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_the_beacon_of_freedon_demovracy_and_businesses
+	id = HOOVER_USA_the_beacon_of_freedon_democracy_and_businesses
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3919,12 +5562,31 @@ focus = {
 	y = 5
 
 
-	prerequisite = { focus = EARLY_HOOVER_USA_prevent_currency_devaluation }
-	prerequisite = { focus = EARLY_HOOVER_USA_lower_business_tax }
-	prerequisite = { focus = EARLY_HOOVER_USA_our_troubles_are_many }
-	prerequisite = { focus = EARLY_HOOVER_USA_implement_stopgap_measures }
-	prerequisite = { focus = EARLY_HOOVER_USA_price_stabilization_mechanisms }
-	relative_position_id = EARLY_HOOVER_USA_prevent_currency_devaluation
+	prerequisite = { focus = HOOVER_USA_prevent_currency_devaluation }
+	prerequisite = { focus = HOOVER_USA_lower_business_tax }
+	prerequisite = { focus = HOOVER_USA_our_troubles_are_many }
+	prerequisite = { focus = HOOVER_USA_implement_stopgap_measures }
+	prerequisite = { focus = HOOVER_USA_price_stabilization_mechanisms }
+	relative_position_id = HOOVER_USA_prevent_currency_devaluation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_a_rising_graph
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = HOOVER_USA_the_beacon_of_freedon_democracy_and_businesses }
+	relative_position_id = HOOVER_USA_the_beacon_of_freedon_democracy_and_businesses
 
 	available_if_capitulated = no
 	
@@ -3934,7 +5596,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_our_troubles_are_many
+	id = HOOVER_USA_our_troubles_are_many
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3942,9 +5604,9 @@ focus = {
 	x = -1
 	y = 2
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_our_work_is_never_done }
-	prerequisite = { focus = EARLY_HOOVER_USA_the_power_of_a_handshake }
-	relative_position_id = EARLY_HOOVER_USA_the_power_of_a_handshake
+	prerequisite = { focus = HOOVER_USA_our_work_is_never_done }
+	prerequisite = { focus = HOOVER_USA_the_power_of_a_handshake }
+	relative_position_id = HOOVER_USA_the_power_of_a_handshake
 
 	available_if_capitulated = no
 	
@@ -3954,7 +5616,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_implement_stopgap_measures
+	id = HOOVER_USA_implement_stopgap_measures
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3962,9 +5624,9 @@ focus = {
 	x = 1
 	y = 2
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_the_unfortunate_political_realities }
-	prerequisite = { focus = EARLY_HOOVER_USA_the_power_of_a_handshake }
-	relative_position_id = EARLY_HOOVER_USA_the_power_of_a_handshake
+	prerequisite = { focus = HOOVER_USA_the_unfortunate_political_realities }
+	prerequisite = { focus = HOOVER_USA_the_power_of_a_handshake }
+	relative_position_id = HOOVER_USA_the_power_of_a_handshake
 
 	available_if_capitulated = no
 	
@@ -3974,7 +5636,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_the_burden_of_being_strong
+	id = HOOVER_USA_the_burden_of_being_strong
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3982,8 +5644,8 @@ focus = {
 	x = 2
 	y = 1
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_the_gold_standard }
-	relative_position_id = EARLY_HOOVER_USA_the_gold_standard
+	prerequisite = { focus = HOOVER_USA_the_gold_standard }
+	relative_position_id = HOOVER_USA_the_gold_standard
 
 	available_if_capitulated = no
 	
@@ -3993,7 +5655,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_the_unfortunate_political_realities
+	id = HOOVER_USA_the_unfortunate_political_realities
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -4001,8 +5663,8 @@ focus = {
 	x = 0
 	y = 2
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_the_burden_of_being_strong }
-	relative_position_id = EARLY_HOOVER_USA_the_burden_of_being_strong
+	prerequisite = { focus = HOOVER_USA_the_burden_of_being_strong }
+	relative_position_id = HOOVER_USA_the_burden_of_being_strong
 
 	available_if_capitulated = no
 	
@@ -4012,7 +5674,7 @@ focus = {
 }
 
 focus = {
-	id = EARLY_HOOVER_USA_price_stabilization_mechanisms
+	id = HOOVER_USA_price_stabilization_mechanisms
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -4020,8 +5682,8 @@ focus = {
 	x = 0
 	y = 2
 	
-	prerequisite = { focus = EARLY_HOOVER_USA_the_unfortunate_political_realities }
-	relative_position_id = EARLY_HOOVER_USA_the_unfortunate_political_realities
+	prerequisite = { focus = HOOVER_USA_the_unfortunate_political_realities }
+	relative_position_id = HOOVER_USA_the_unfortunate_political_realities
 
 	available_if_capitulated = no
 	
