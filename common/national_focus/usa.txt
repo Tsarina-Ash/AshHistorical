@@ -2874,7 +2874,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaLeonardWood.1 #he will be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
+			id = event.usaLeonardWood.1 #he will have a 40% chance to be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
 		}
 	}
 }
@@ -3470,7 +3470,7 @@ focus = {
 	id = HOOVER_USA_public_works
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 8
 
 	x = -3
 	y = 1
@@ -3546,7 +3546,7 @@ focus = {
 	id = HOOVER_USA_lower_business_taxes_again
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 8
 
 	x = 0
 	y = 2
@@ -3566,7 +3566,7 @@ focus = {
 	id = HOOVER_USA_stop_being_annoying
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 8
 
 	x = 1
 	y = 1
@@ -3757,7 +3757,7 @@ focus = {
 	id = HOOVER_USA_the_american_dream
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 2
 
 	x = 0
 	y = 6
@@ -4035,7 +4035,7 @@ focus = {
 	id = HOOVER_USA_dealing_with_labor_unions
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 6
 
 	x = 9
 	y = 1
@@ -4152,7 +4152,7 @@ focus = { #UAW & USW (united auto workers and united steel workers)
 	id = HOOVER_USA_the_big_scary_wolves
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 8
 
 	x = 3
 	y = 1
@@ -4372,7 +4372,7 @@ focus = {
 	id = HOOVER_USA_us_gov_v_uaw_usw
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 10
 
 	x = 0
 	y = 1
@@ -4397,7 +4397,7 @@ focus = {
 	id = HOOVER_USA_america_abroad
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 1
 
 	x = 30
 	y = 1
@@ -4886,7 +4886,7 @@ focus = { #have secretary visit india
 	id = HOOVER_USA_warm_welcome_to_india
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 1
 
 	x = 0
 	y = 1
@@ -5197,6 +5197,25 @@ focus = {
 	y = 1
 	prerequisite = { focus = HOOVER_USA_canada }
 	relative_position_id = HOOVER_USA_canada
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = HOOVER_USA_hemisphere_defense
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 3
+	
+	prerequisite = { focus = HOOVER_USA_expand_quebecian_ports }
+	relative_position_id = HOOVER_USA_expand_quebecian_ports
 
 	available_if_capitulated = no
 	
