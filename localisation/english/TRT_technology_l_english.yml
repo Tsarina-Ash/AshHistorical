@@ -69,3 +69,53 @@ infantry_tank_destroyer_equipment_2_desc:0 "Infantry Tanks specialized with an a
 
 infantry_tank_destroyer_equipment_3:0 "Infantry Anti-Tank III"
 infantry_tank_destroyer_equipment_3_desc:0 "Infantry Tanks specialized with an anti-tank support role."
+
+cruiser_tank_chassis:0 "Cruiser Tank Chassis"
+cruiser_tank_chassis_desc:0 "Cruiser Tanks are light recon vehicles that are better are getting around and behind enemy lines than actually fighting. Their high speed comes at the cost of armor"
+
+cruiser_tank_equipment_1:0 "Cruiser Tank I"
+cruiser_tank_equipment_1_short:0 "C. Tank I"
+
+cruiser_tank_equipment_2:0 "Cruiser Tank II"
+cruiser_tank_equipment_2_short:0 "C. Tank II"
+cruiser_tank_equipment_2_desc:0 "With advancements in engine and armor technology, much heavier armor and a much heavier gun is able to be mounted onto these cruiser tank designs without a loss in their incredible speed"
+
+cruiser_tank_equipment_3:0 "Cruiser Tank III"
+cruiser_tank_equipment_3_short:0 "C. Tank III"
+cruiser_tank_equipment_3_desc:0 "These cruiser tanks designs are able to wield guns normally carried by heavy tanks with speed similar to light tanks"
+
+cruiser_tank_aa_chassis:0 "Cruiser Tank Anti-Air Chassis"
+cruiser_tank_aa_chassis_desc:0 "Mounted with a gun that's more suited for air-combat, these tanks are able to bring their speed with plane killing ability."
+
+cruiser_tank_aa_equipment_1:0 "Cruiser Anti-Tank I"
+cruiser_tank_aa_equipment_1_desc:0 "Mounted with a gun that's more suited for air-combat, these tanks are able to bring their speed with plane killing ability."
+
+cruiser_tank_aa_equipment_2:0 "Cruiser Anti-Tank II"
+cruiser_tank_aa_equipment_2_desc:0 "Mounted with a gun that's more suited for air-combat, these tanks are able to bring their speed with plane killing ability."
+
+cruiser_tank_aa_equipment_3:0 "Cruiser Anti-Tank III"
+cruiser_tank_aa_equipment_3_desc:0 "Mounted with a gun that's more suited for air-combat, these tanks are able to bring their speed with plane killing ability."
+
+cruiser_tank_artillery_chassis:0 "Cruiser Tank SP Artillery Chassis"
+cruiser_tank_artillery_chassis_desc:0 "Specialized for killing infantry and mounted with an artillery gun, these tanks offer a highly mobile artillery solution."
+
+cruiser_tank_artillery_equipment_1:0 "Cruiser SP Artillery I"
+cruiser_tank_artillery_equipment_1_desc:0 "Specialized for killing infantry and mounted with an artillery gun, these tanks offer a highly mobile artillery solution."
+
+cruiser_tank_artillery_equipment_2:0 "Cruiser SP Artillery II"
+cruiser_tank_artillery_equipment_2_desc:0 "Specialized for killing infantry and mounted with an artillery gun, these tanks offer a highly mobile artillery solution."
+
+cruiser_tank_artillery_equipment_3:0 "Cruiser SP Artillery III"
+cruiser_tank_artillery_equipment_3_desc:0 "Specialized for killing infantry and mounted with an artillery gun, these tanks offer a highly mobile artillery solution."
+
+cruiser_tank_destroyer_chassis:0 "Cruiser Tank Destroyer Chassis"
+cruiser_tank_destroyer_chassis_desc:0 "Cruiser Tanks Destroyers manage to bring the firepower to an otherwise under powered tank. They are able to pierce heavily armored tanks and maintain their mobile speed."
+
+cruiser_tank_destroyer_equipment_1:0 "Cruiser Tank Destroyer I"
+cruiser_tank_destroyer_equipment_1_desc:0 "Cruiser Tanks Destroyers manage to bring the firepower to an otherwise under powered tank. They are able to pierce heavily armored tanks and maintain their mobile speed."
+
+cruiser_tank_destroyer_equipment_2:0 "Cruiser Tank Destroyer II"
+cruiser_tank_destroyer_equipment_2_desc:0 "Cruiser Tanks Destroyers manage to bring the firepower to an otherwise under powered tank. They are able to pierce heavily armored tanks and maintain their mobile speed."
+
+cruiser_tank_destroyer_equipment_3:0 "Cruiser Tank Destroyer III"
+cruiser_tank_destroyer_equipment_3_desc:0 "Cruiser Tanks Destroyers manage to bring the firepower to an otherwise under powered tank. They are able to pierce heavily armored tanks and maintain their mobile speed."

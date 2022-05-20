@@ -1584,7 +1584,7 @@ equipments = {
 	}
 
 	modern_tank_artillery_equipment_1 = {
-		year = 1945
+		year = 1946
 
 		archetype = modern_tank_artillery_chassis
 		priority = 180
@@ -1625,7 +1625,7 @@ equipments = {
 	}
 
 	modern_tank_destroyer_equipment_1 = {
-		year = 1945
+		year = 1946
 
 		archetype = modern_tank_destroyer_chassis
 		priority = 200
@@ -1667,7 +1667,7 @@ equipments = {
 	}
 
 	modern_tank_aa_equipment_1 = {
-		year = 1945
+		year = 1946
 
 		archetype = modern_tank_aa_chassis
 		priority = 190
