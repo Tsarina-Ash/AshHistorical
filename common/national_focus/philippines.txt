@@ -433,6 +433,104 @@ focus = {
 }
 
 focus = {
+	id = US_Military_Occupation_open_to_washington
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 3
+	
+	prerequisite = { focus = US_Military_Occupation_let_economy_go_wild }
+	relative_position_id = US_Military_Occupation_let_economy_go_wild
+
+
+
+	
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = US_Military_Occupation_begin_liberalization_of_economy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = US_Military_Occupation_open_to_washington }
+	relative_position_id = US_Military_Occupation_open_to_washington
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = US_Military_Occupation_stimulate_national_economy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = US_Military_Occupation_begin_liberalization_of_economy }
+	relative_position_id = US_Military_Occupation_begin_liberalization_of_economy
+
+
+
+	
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = US_Military_Occupation_stick_to_conservative_economic_policies
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = US_Military_Occupation_open_to_washington }
+	relative_position_id = US_Military_Occupation_open_to_washington
+
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+focus = {
+	id = US_Military_Occupation_us_loans
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = US_Military_Occupation_stick_to_conservative_economic_policies }
+	relative_position_id = US_Military_Occupation_stick_to_conservative_economic_policies
+
+
+
+	
+	
+	completion_reward = {
+		add_political_power = 50 
+	}
+}
+
+
+focus = {
 	id = US_Military_Occupation_apeasing_americans
 	icon = GFX_focus_USA_placeholder
 
