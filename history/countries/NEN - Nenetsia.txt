@@ -1,6 +1,6 @@
-﻿capital = 825 #Naryan-Mar
+﻿capital = 331 #St. John
 
-#oob = "NEN_1936"  # Troops should probably not be able to use nen
+#oob = "NEN_1936" 
 
 set_research_slots = 3
 
@@ -81,10 +81,10 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 50
-	fascism = 0
-	communism = 20
-	neutrality = 30
+	democratic = 55
+	fascism = 5
+	communism = 15
+	neutrality = 25
 }
 
 

@@ -769,8 +769,8 @@ OVO = {
 	color_ui = rgb { 0 102 34 }
 }
 NEN = {
-	color = rgb { 204 255 204 }
-	color_ui = rgb { 102 255 102 }
+	color = rgb { 215 25 175 }
+	color_ui = rgb { 130 0 90 }
 }
 KOM = {
 	color = rgb { 0 230 184 }
