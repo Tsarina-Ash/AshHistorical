@@ -704,7 +704,8 @@ focus = {
 	x = 0
 	y = 2
 	
-	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist } prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
+	prerequisite = { focus = EXTRA_WILSON_USA_interventionalist } 
+	prerequisite = { focus = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices }
 	relative_position_id = EXTRA_WILSON_USA_crack_down_on_poor_industry_practices
 
 	available_if_capitulated = no
@@ -2611,7 +2612,7 @@ focus = { #not a real act (No child left behind ???)
 
 focus = {
 	id = Coolidge_USA_EXVICE_private_innaugaration
-	icon = GFX_focus_USA_placeholder
+	icon = GFX_focus_generic_self_management
 
 	cost = 1
 
@@ -2648,7 +2649,7 @@ focus = {
 
 focus = {
 	id = Coolidge_USA_bonus_bill
-	icon = GFX_focus_USA_placeholder
+	icon = GFX_focus_generic_treaty
 
 	cost = 4
 
@@ -2685,7 +2686,7 @@ focus = {
 
 focus = {
 	id = Coolidge_USA_washington_naval_treaty
-	icon = GFX_focus_USA_placeholder
+	icon = GFX_goal_generic_navy_battleship
 
 	cost = 4
 
@@ -2704,7 +2705,7 @@ focus = {
 
 focus = {
 	id = Coolidge_USA_moving_past_wilson
-	icon = GFX_focus_USA_placeholder
+	icon = GFX_focus_generic_strike_at_democracy2
 
 	cost = 4
 
@@ -2723,7 +2724,7 @@ focus = {
 
 focus = {
 	id = Coolidge_USA_remain_calm
-	icon = GFX_focus_USA_placeholder
+	icon = GFX_goal_generic_improve_relations
 
 	cost = 4
 
@@ -2742,7 +2743,7 @@ focus = {
 
 focus = {
 	id = Coolidge_USA_curbing_radicalism
-	icon = GFX_focus_USA_placeholder
+	icon = GFX_focus_eng_move_to_secure_the_dominions
 
 	cost = 4
 
@@ -2762,7 +2763,7 @@ focus = {
 
 focus = {
 	id = Coolidge_USA_deal_with_pennsylvanian_strikers
-	icon = GFX_focus_USA_placeholder
+	icon = GFX_focus_generic_steel
 
 	cost = 4
 
@@ -2781,7 +2782,7 @@ focus = {
 
 focus = {
 	id = Coolidge_USA_kiss_the_curb
-	icon = GFX_focus_USA_placeholder
+	icon = GFX_focus_SOV_organize_wreckers
 
 	cost = 4
 
@@ -2802,7 +2803,7 @@ focus = {
 
 focus = {
 	id = Coolidge_USA_business_as_usual
-	icon = GFX_focus_USA_placeholder
+	icon = GFX_focus_generic_manpower
 
 	cost = 4
 
@@ -2822,7 +2823,7 @@ focus = {
 
 focus = {
 	id = Coolidge_USA_save_the_legacy_of_harding
-	icon = GFX_focus_USA_placeholder
+	icon = GFX_goal_support_democracy
 
 	cost = 4
 
@@ -2841,7 +2842,7 @@ focus = {
 
 focus = {
 	id = Coolidge_USA_legacy_of_coolidge
-	icon = GFX_focus_USA_placeholder
+	icon = GFX_focus_generic_women_in_military
 
 	cost = 4
 
