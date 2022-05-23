@@ -34,7 +34,45 @@ focus_tree = {
 #Alt Hist:#
 #James M Cox Path#
 #Early FDR Path#
-#Teddy Roosevelt President#
+#Leonard Wood#
+#Alf Landon#
+#Wendel Wilkie#
+#Huey Long#
+#Thomas Dewey#
+
+# D = Democrat
+# R = Republican
+# P = Progressive
+# S = Socialist
+
+#1920 pres election (not much variation from hist because it is election year# (May Add Socialist Party ?)
+#Wilson (D) Pres
+#James Cox (D) Pres
+#FDR (D) Vice 
+#Harding (R)
+#Leonard Wood (R)
+#Cooldige (R) Vice
+
+#1924 pres election (May add More parties and candidates)
+#John W Davis (D) Pres
+#Al Smith (D) Pres
+#Charles W Bryan  (D) Vice 
+#Robert M La Follete (P) Pres /only spawns in if Robert doesnt win republican primaries
+#Burton K Wheeler (P) Vice /only spawns in if Robert doesnt win republican primaries
+#Calvin Coolidge (R) Pres
+#Robert M La Follete (R) Pres /pulls a tedy roosevelt and splits party if doesnt get primary 
+#Frank Lorren Owen (R) Pres
+#Charles G Dawes (R) Vice 
+
+#1928 pres election (May add More parties and candidates)
+#Herbert Hoover (R) Pres
+#Frank Orren Lowden (R) Pres
+#Charles Curtis (R) Pres
+#Charles Curtis (R) Vice
+
+#Al Smith (D) Pres
+#FDR (D) Pres
+#Joseph T Robbinson (D) Vice 
 
 #RESOURCES USED#
 
@@ -1396,6 +1434,7 @@ focus = {
 }
 
 #HARDING PRESIDENCY#
+#dont really know what to do with him
 
 focus = {
 	id = Harding_USA_innaugaration_speech
@@ -1416,7 +1455,7 @@ focus = {
 }
 
 focus = {
-	id = Harding_USA_blame_game_return_to_normalcy
+	id = Harding_USA_balancing_the_country
 	icon = GFX_focus_USA_placeholder
 
 	cost = 1
@@ -1430,18 +1469,47 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		custom_effect_tooltip = destabilize_american_politics_tt
-		hidden_effect = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = -0.02
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = -0.02
-			}
-			add_stability = 0.01
-		}
+		#increases governmnet income is a TAX LAW
+	}
+}
+
+
+focus = { #"begining with the budget"
+	id = Harding_USA_per_centum_act_of_1921
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_balancing_the_country }
+	relative_position_id = Harding_USA_balancing_the_country
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#increases governmnet income is a TAX LAW
+	}
+}
+
+
+focus = { #"house divded cannot stand"
+	id = Harding_USA_house_divided
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -4
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_innaugaration_speech }
+	relative_position_id = Harding_USA_innaugaration_speech
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
 	}
 }
 
@@ -1454,8 +1522,8 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = Harding_USA_blame_game_return_to_normalcy }
-	relative_position_id = Harding_USA_blame_game_return_to_normalcy
+	prerequisite = { focus = Harding_USA_house_divided }
+	relative_position_id = Harding_USA_house_divided
 
 	available_if_capitulated = no
 	
@@ -1469,361 +1537,17 @@ focus = {
 	}
 }
 
-focus = {
-	id = Harding_USA_internal_affairs
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = -5
-	y = 1
-	
-	prerequisite = { focus = Harding_USA_hot_potato }
-	relative_position_id = Harding_USA_hot_potato
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		set_temp_variable = { temp_econ_spending_amount = GDP }
-		multiply_temp_variable = { temp_econ_spending_amount = 0.01 }
-		econ_spend_money_once_effect_raw_money = yes
-		TNO_improve_poverty_high = yes
-	}
-}
-
-focus = {
-	id = Harding_USA_dealing_with_anti_war_prisoners
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = Harding_USA_internal_affairs }
-	relative_position_id = Harding_USA_internal_affairs
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_stability_factor = 0.5
-		add_war_support_factor = -0.5
-		hidden_effect = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.02
-			}
-		}
-	}
-}
-
-focus = {
-	id = Harding_USA_leonidas_dyers_federal_anti_lynching_bill
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 1
-	y = 1
-	
-	prerequisite = { focus = Harding_USA_internal_affairs }
-	relative_position_id = Harding_USA_internal_affairs
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		#advances civil rights and prison system to modern and reformist
-	}
-}
-
-focus = {
-	id = Harding_USA_per_centum_act_of_1921
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = -2
-	y = 1
-	
-	prerequisite = { focus = Harding_USA_internal_affairs }
-	relative_position_id = Harding_USA_internal_affairs
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		#increases governmnet income is a TAX LAW
-	}
-}
-
-focus = {
-	id = Harding_USA_immigration_act_of_1924
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = Harding_USA_per_centum_act_of_1921 }
-	relative_position_id = Harding_USA_per_centum_act_of_1921
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		#decreases immigration idea and lowers gain on everything
-		hidden_effect = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.01
-			}
-		}
-	}
-}
-
-focus = {
-	id = Harding_USA_return_to_normalcy
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = Harding_USA_hot_potato }
-	relative_position_id = Harding_USA_hot_potato
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		unlock_decision_category_tooltip = harding_memes
-	}
-}
-
-focus = {
-	id = Harding_USA_voyage_of_understanding
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 0
-	y = 3
-	
-	prerequisite = { focus = Harding_USA_return_to_normalcy }
-	relative_position_id = Harding_USA_return_to_normalcy
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		unlock_decision_category_tooltip = harding_voyage_of_understanding
-	}
-}
-
-focus = {
-	id = Harding_USA_finalize_formal_peace_treaty
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = -2
-	y = 1
-	
-	available = { always = no }
-
-	prerequisite = { focus = Harding_USA_return_to_normalcy }
-	relative_position_id = Harding_USA_return_to_normalcy
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		#GERMAN PEACE TREATY
-	}
-}
-
-
-focus = {
-	id = Harding_USA_reassure_south_america
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 0
-	y = 2
-	
-	prerequisite = { focus = Harding_USA_finalize_formal_peace_treaty }
-	relative_position_id = Harding_USA_finalize_formal_peace_treaty
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		custom_effect_tooltip = improves_relations_with_south_america_tt
-		hidden_effect = {
-			add_opinion_modifier = { target = MEX modifier = medium_increase }
-			add_opinion_modifier = { target = GUA modifier = medium_increase }
-			add_opinion_modifier = { target = NIC modifier = medium_increase }
-			add_opinion_modifier = { target = ELS modifier = medium_increase }
-			add_opinion_modifier = { target = HON modifier = medium_increase }
-			add_opinion_modifier = { target = COS modifier = medium_increase }
-			add_opinion_modifier = { target = PAN modifier = medium_increase }
-			add_opinion_modifier = { target = COL modifier = medium_increase }
-			add_opinion_modifier = { target = VEN modifier = medium_increase }
-			add_opinion_modifier = { target = PRU modifier = medium_increase }
-			add_opinion_modifier = { target = ECU modifier = medium_increase }
-			add_opinion_modifier = { target = BOL modifier = medium_increase }
-			add_opinion_modifier = { target = BRA modifier = medium_increase }	
-			add_opinion_modifier = { target = CHL modifier = medium_increase }
-			add_opinion_modifier = { target = ARG modifier = medium_increase }
-			add_opinion_modifier = { target = ECU modifier = medium_increase }
-		}
-
-			add_to_variable = { gdp_roaring_growth_var = 0.01 }
-
-			#MEX = {
-			#	add_to_variable = { gdp_roaring_growth_var = 0.01 }
-			#}
-			#
-			#BRA = {
-			#	add_to_variable = { gdp_roaring_growth_var = 0.01 }
-			#}
-			#
-			#CUB = {
-			#	add_to_variable = { gdp_roaring_growth_var = 0.01 }
-			#}
-			#
-			#VEN = {
-			#	add_to_variable = { gdp_roaring_growth_var = 0.01 }
-			#}
-
-			set_temp_variable = { temp_econ_spending_amount = GDP }
-			multiply_temp_variable = { temp_econ_spending_amount = 0.04 }
-			econ_spend_money_once_effect_raw_money = yes
-
-			597 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				set_temp_variable = { state_value_multiplier_temp = 1.1 }
-				econ_state_value_change_multiply_specified_state = yes
-				add_state_modifier = {
-					modifier = {
-						state_GDP_growth_factor_modifier = 0.10
-					}
-				}
-			}
-			597 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				set_temp_variable = { state_value_multiplier_temp = 1.1 }
-				econ_state_value_change_multiply_specified_state = yes
-				add_state_modifier = {
-					modifier = {
-						state_GDP_growth_factor_modifier = 0.10
-					}
-				}
-			}
-			597 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				set_temp_variable = { state_value_multiplier_temp = 1.1 }
-				econ_state_value_change_multiply_specified_state = yes
-				add_state_modifier = {
-					modifier = {
-						state_GDP_growth_factor_modifier = 0.10
-					}
-				}
-			}
-			597 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				set_temp_variable = { state_value_multiplier_temp = 1.1 }
-				econ_state_value_change_multiply_specified_state = yes
-				add_state_modifier = {
-					modifier = {
-						state_GDP_growth_factor_modifier = 0.10
-					}
-				}
-			}
-			597 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				set_temp_variable = { state_value_multiplier_temp = 1.1 }
-				econ_state_value_change_multiply_specified_state = yes
-				add_state_modifier = {
-					modifier = {
-						state_GDP_growth_factor_modifier = 0.10
-					}
-				}
-			}
-		}
-	}
-
-focus = {
-	id = Harding_USA_tackling_disarmament
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = 1
-	y = 1
-	
-	prerequisite = { focus = Harding_USA_finalize_formal_peace_treaty }
-	relative_position_id = Harding_USA_finalize_formal_peace_treaty
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		#focuses on disarming army rather than industry
-	}
-}
-
-focus = {
-	id = Harding_USA_reduce_reparations
-	icon = GFX_focus_USA_placeholder
-
-	cost = 1
-
-	x = -1
-	y = 1
-	
-	prerequisite = { focus = Harding_USA_finalize_formal_peace_treaty }
-	relative_position_id = Harding_USA_finalize_formal_peace_treaty
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
+focus = { #idea of league seen as tearing country apart
 	id = Harding_USA_abandon_the_idea_of_the_league
 	icon = GFX_focus_USA_placeholder
 
 	cost = 1
 
-	x = 1
+	x = 0
 	y = 1
 	
-	prerequisite = { focus = Harding_USA_return_to_normalcy }
-	relative_position_id = Harding_USA_return_to_normalcy
+	prerequisite = { focus = Harding_USA_hot_potato }
+	relative_position_id = Harding_USA_hot_potato
 
 	available_if_capitulated = no
 	
@@ -1852,16 +1576,36 @@ focus = {
 }
 
 focus = {
+	id = Harding_USA_return_to_normalcy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -2
+	y = 2
+		
+	prerequisite = { focus = Harding_USA_hot_potato }
+	prerequisite = { focus = Harding_USA_house_divided }
+	relative_position_id = Harding_USA_house_divided
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		unlock_decision_category_tooltip = harding_memes
+	}
+}
+
+focus = {
 	id = Harding_USA_can_everyone_just_be_friends
 	icon = GFX_focus_USA_placeholder
 
 	cost = 1
 
-	x = 0
+	x = -1
 	y = 1
 	
-	prerequisite = { focus = Harding_USA_abandon_the_idea_of_the_league }
-	relative_position_id = Harding_USA_abandon_the_idea_of_the_league
+	prerequisite = { focus = Harding_USA_return_to_normalcy }
+	relative_position_id = Harding_USA_return_to_normalcy
 
 	available_if_capitulated = no
 	
@@ -1874,76 +1618,517 @@ focus = {
 }
 
 focus = {
-	id = Harding_USA_economy
+	id = Harding_USA_blame_game_return_to_normalcy
 	icon = GFX_focus_USA_placeholder
 
-	cost = 2
+	cost = 1
 
-	x = 4
-	y = 1
+	x = 0
+	y = 2
 	
-	prerequisite = { focus = Harding_USA_hot_potato }
-	relative_position_id = Harding_USA_hot_potato
+	prerequisite = { focus = Harding_USA_return_to_normalcy }
+	relative_position_id = Harding_USA_return_to_normalcy
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		country_event = {
-			id = event.usaHarding.1 
+		custom_effect_tooltip = destabilize_american_politics_tt
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			add_stability = 0.01
 		}
+	}
+}
+
+focus = { #'those who speak'
+	id = Harding_USA_dealing_with_anti_war_prisoners
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_return_to_normalcy }
+	relative_position_id = Harding_USA_return_to_normalcy
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_stability_factor = 0.5
+		add_war_support_factor = -0.5
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}
+		}
+	}
+}
+
+focus = {
+	id = Harding_USA_encourage_private_investment
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 4
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_innaugaration_speech }
+	relative_position_id = Harding_USA_innaugaration_speech
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = Harding_USA_federal_highway_act_of_blank
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_encourage_private_investment }
+	relative_position_id = Harding_USA_encourage_private_investment
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+
+focus = { #not a real act just an excuse to create an economic tree
+	id = Harding_USA_economic_incentives_act
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_encourage_private_investment }
+	relative_position_id = Harding_USA_encourage_private_investment
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
 
 	}
 }
 
 focus = {
-	id = Harding_USA_tax_cuts
+	id = Harding_USA_dealing_with_the_steel_belt
 	icon = GFX_focus_USA_placeholder
 
-	cost = 4
+	cost = 1
 
 	x = -1
 	y = 1
 	
-	prerequisite = { focus = Harding_USA_economy }
-	relative_position_id = Harding_USA_economy
+	prerequisite = { focus = Harding_USA_economic_incentives_act }
+	relative_position_id = Harding_USA_economic_incentives_act
 
-	available_if_capitulated = no
+	available_if_capitulated =  no
 	
 	completion_reward = {
-		set_temp_variable = { business_tax_temp = -0.1 }
-		econ_business_tax_rate_change = yes
-		set_temp_variable = { gdp_growth_temp = 1.5 }
-		econ_gdp_growth_change = yes
-		set_temp_variable = { temp_econ_GDP_boost_percentage = 0.02 }
-		econ_GDP_boost_once_percentage = yes
+
 	}
 }
 
-focus = { #massive investment- harding is supposed to die before this focus completes
-	id = Harding_USA_federal_highway_act_of_1921
+focus = { #"Unions ? Onions ? I See No Difference"
+	id = Harding_USA_dealing_unions
 	icon = GFX_focus_USA_placeholder
 
-	cost = 15
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_dealing_with_the_steel_belt }
+	relative_position_id = Harding_USA_dealing_with_the_steel_belt
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = Harding_USA_car_every_five_minutes
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_dealing_unions }
+	relative_position_id = Harding_USA_dealing_unions
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #need better focus name but this work for now (asks industry leaders to slow down production to prevent overproduction)
+	id = Harding_USA_uhm_slow_down
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_car_every_five_minutes }
+	relative_position_id = Harding_USA_car_every_five_minutes
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = Harding_USA_the_american_worker
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
 
 	x = 1
 	y = 1
 	
-	prerequisite = { focus = Harding_USA_economy }
-	relative_position_id = Harding_USA_economy
+	prerequisite = { focus = Harding_USA_car_every_five_minutes }
+	relative_position_id = Harding_USA_car_every_five_minutes
 
-	available_if_capitulated = no
+	available_if_capitulated =  no
 	
 	completion_reward = {
 
-		hidden_effect = {
-		}
+	}
+}
+
+focus = { #may alleviate depression effects and even extend its time period of when it happens
+	id = Harding_USA_dealing_with_the_agricultural_sector
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_economic_incentives_act }
+	relative_position_id = Harding_USA_economic_incentives_act
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = Harding_USA_assist_struggling_farmers
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_dealing_with_the_agricultural_sector }
+	relative_position_id = Harding_USA_dealing_with_the_agricultural_sector
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = Harding_USA_loan_relief
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_assist_struggling_farmers }
+	relative_position_id = Harding_USA_assist_struggling_farmers
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #complete farmer relief (will have a 99% chance of failing)
+	id = Harding_USA_foolproof_plan
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_loan_relief }
+	relative_position_id = Harding_USA_loan_relief
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = Harding_USA_bread_basket
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_assist_struggling_farmers }
+	relative_position_id = Harding_USA_assist_struggling_farmers
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #something along the lines of "more money & less gold = more inflation"
+	id = Harding_USA_build_up_our_reserves_of_precious_metals
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_encourage_private_investment }
+	relative_position_id = Harding_USA_encourage_private_investment
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { #abuses position of global economic dominance hurting all global ecos and boosting US's
+	id = Harding_USA_rig_exchange_rates
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_build_up_our_reserves_of_precious_metals }
+	relative_position_id = Harding_USA_build_up_our_reserves_of_precious_metals
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id = Harding_USA_raise_tariffs
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_rig_exchange_rates }
+	relative_position_id = Harding_USA_rig_exchange_rates
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = Harding_USA_increase_federal_reserve_independence
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_build_up_our_reserves_of_precious_metals }
+	relative_position_id = Harding_USA_build_up_our_reserves_of_precious_metals
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+
+focus = {
+	id = Harding_USA_curbing_inflation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_increase_federal_reserve_independence }
+	relative_position_id = Harding_USA_increase_federal_reserve_independence
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = Harding_USA_stem_the_tide
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_increase_federal_reserve_independence }
+	relative_position_id = Harding_USA_increase_federal_reserve_independence
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = Harding_USA_repudiate_unionization
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_increase_federal_reserve_independence }
+	relative_position_id = Harding_USA_increase_federal_reserve_independence
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = Harding_USA_managing_unemployment
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = Harding_USA_increase_federal_reserve_independence }	
+	prerequisite = { focus = Harding_USA_curbing_inflation }
+	relative_position_id = Harding_USA_curbing_inflation
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = Harding_USA_tackle_abusive_practices
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = Harding_USA_increase_federal_reserve_independence }	
+	prerequisite = { focus = Harding_USA_repudiate_unionization }
+	relative_position_id = Harding_USA_repudiate_unionization
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = Harding_USA_leaving_it_all_alone
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = Harding_USA_managing_unemployment }	
+	prerequisite = { focus = Harding_USA_tackle_abusive_practices }
+	relative_position_id = Harding_USA_tackle_abusive_practices
+
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
 	}
 }
 
 #COOLIDGE PRESIDENCY#
 
+#notes on him
+#only wanted to serve one term refused to serve another one
+#considered moderate /atleast socially/ progressive ? (reasons below)
+#fiscal conservative
+#advocate for suffrage
+#indian citizenship act of 1924
+#his economic policies seen as cause of deppression with hoover just accelerating it
+#"for six years that man has given me unsolicited advice – all of it bad."
+#-coolidge when talking about hoover
+
 focus = {
-	id = Coolidge_USA_innaugaration_speech
+	id = Coolidge_USA_stay_cool_with_coolidge
 	icon = GFX_focus_USA_placeholder
 
 	cost = 1
@@ -1954,6 +2139,7 @@ focus = {
 	available_if_capitulated =  no
 	
 	completion_reward = {
+		custom_effect_tooltip = coolidge_stay_cool_tt
 		country_event = {
 			id = event.usaCoolidge.1 #does minimal things and after 1st term party favors hoover for buisness additudes
 		}
@@ -1961,105 +2147,7 @@ focus = {
 }
 
 focus = {
-	id = Coolidge_USA_stay_cool_with_coolidge
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = Coolidge_USA_innaugaration_speech }
-	relative_position_id = Coolidge_USA_innaugaration_speech
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		custom_effect_tooltip = coolidge_stay_cool_tt
-	}
-}
-
-focus = {
-	id = Coolidge_USA_dont_rock_the_boat
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 12
-	y = 1
-	
-	prerequisite = { focus = Coolidge_USA_stay_cool_with_coolidge }
-	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-
-	}
-}
-
-focus = { #political unity
-	id = Coolidge_USA_step_by_step
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 2
-	y = 1
-	
-	prerequisite = { focus = Coolidge_USA_dont_rock_the_boat }
-	relative_position_id = Coolidge_USA_dont_rock_the_boat
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-
-	}
-}
-
-focus = {
-	id = Coolidge_USA_crack_down_further_on_radicalism
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = Coolidge_USA_dont_rock_the_boat }
-	relative_position_id = Coolidge_USA_dont_rock_the_boat
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-
-	}
-}
-
-focus = {
-	id = Coolidge_USA_buisness_subsudies
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -6
-	y = 1
-	
-	prerequisite = { focus = Coolidge_USA_stay_cool_with_coolidge }
-	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		set_temp_variable = { gdp_roaring_growth_var = 0.03 } 
-		set_temp_variable = { temp_econ_spending_amount = GDP }
-		multiply_temp_variable = { temp_econ_spending_amount = 0.04 }
-		econ_spend_money_once_effect_raw_money = yes
-	}
-}
-
-focus = {
-	id = Coolidge_USA_speed_up_demobilization
+	id = Coolidge_USA_meet_with_progressives
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -2073,40 +2161,12 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		set_country_flag = can_do_small_demob
-		custom_effect_tooltip = demob_warning_tt
-		custom_effect_tooltip = economy_gdp_growth_tt
-		add_to_variable = { gdp_roaring_growth_var = 0.03}
-		hidden_effect = {
-			set_country_flag = {
-				flag = worse_deppression_four
-			value = 1
-			}	
-		}
+		
 	}
 }
 
 focus = {
-	id = Coolidge_USA_completely_cut_military_spending
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 3
-	
-	prerequisite = { focus = Coolidge_USA_speed_up_demobilization }
-	relative_position_id = Coolidge_USA_speed_up_demobilization
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		unlock_decision_tooltip = destroy_industry_and_military #demobilizing will gain rewards but increase racial tensions & instability due to low amount of jobs for returning soldiers and stagnant eco
-	}
-}
-
-focus = {
-	id = Coolidge_USA_human_rights_issues
+	id = Coolidge_USA_uniting_the_public
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -2118,56 +2178,14 @@ focus = {
 	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
 
 	available_if_capitulated = no
-
-
-	available = {
-		always = no
-	}
 	
 	completion_reward = {
-		add_political_power = 50 #focus activates through event#
+		
 	}
 }
 
 focus = {
-	id = Coolidge_USA_indian_citizenship_act
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 3
-	
-	prerequisite = { focus = Coolidge_USA_human_rights_issues }
-	relative_position_id = Coolidge_USA_human_rights_issues
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = Coolidge_USA_propose_banning_lynchings
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 1
-	y = 1
-	
-	prerequisite = { focus = Coolidge_USA_human_rights_issues }
-	relative_position_id = Coolidge_USA_human_rights_issues
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-focus = {
-	id = Coolidge_USA_missipipi_flood_of_1927
+	id = Coolidge_USA_remember_the_past
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -2181,12 +2199,31 @@ focus = {
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50 #focus shows up through event#
+		
 	}
 }
 
 focus = {
-	id = Coolidge_USA_question_of_federal_aid
+	id = Coolidge_USA_the_great_divide
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_remember_the_past }
+	relative_position_id = Coolidge_USA_remember_the_past
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = Coolidge_USA_strong_and_united
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -2194,56 +2231,38 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = Coolidge_USA_missipipi_flood_of_1927 }
-	relative_position_id = Coolidge_USA_missipipi_flood_of_1927
+	prerequisite = { focus = Coolidge_USA_the_great_divide }
+	relative_position_id = Coolidge_USA_the_great_divide
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		
 	}
 }
 
+
 focus = {
-	id = Coolidge_USA_foreign_policy
+	id = Coolidge_USA_speak_to_congress
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = 4
+	x = -1
 	y = 1
 	
-	prerequisite = { focus = Coolidge_USA_stay_cool_with_coolidge }
-	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
+	prerequisite = { focus = Coolidge_USA_remember_the_past }
+	relative_position_id = Coolidge_USA_remember_the_past
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		
 	}
 }
 
 focus = {
-	id = Coolidge_USA_permament_court_of_justice
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 2
-	y = 1
-	
-	prerequisite = { focus = Coolidge_USA_foreign_policy }
-	relative_position_id = Coolidge_USA_foreign_policy
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = {
-	id = Coolidge_USA_question_of_the_league
+	id = Coolidge_USA_touring_the_nation
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -2251,18 +2270,77 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = Coolidge_USA_foreign_policy }
-	relative_position_id = Coolidge_USA_foreign_policy
+	prerequisite = { focus = Coolidge_USA_speak_to_congress }
+	relative_position_id = Coolidge_USA_speak_to_congress
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		
+	}
+}
+
+
+focus = {
+	id = Coolidge_USA_rallying_the_base
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_strong_and_united focus = Coolidge_USA_touring_the_nation }
+	relative_position_id = Coolidge_USA_touring_the_nation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
 	}
 }
 
 focus = {
-	id = Coolidge_USA_genevea_naval_conference
+	id = Coolidge_USA_for_the_good_of_the_people
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_strong_and_united }
+	prerequisite = { focus = Coolidge_USA_touring_the_nation }
+	relative_position_id = Coolidge_USA_touring_the_nation
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = Coolidge_USA_newfound_power
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_strong_and_united focus = Coolidge_USA_touring_the_nation }
+	relative_position_id = Coolidge_USA_strong_and_united
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = Coolidge_USA_there_is_work_to_be_done
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -2270,18 +2348,20 @@ focus = {
 	x = 0
 	y = 1
 	
-	prerequisite = { focus = Coolidge_USA_question_of_the_league }
-	relative_position_id = Coolidge_USA_question_of_the_league
+	prerequisite = { focus = Coolidge_USA_newfound_power }
+	prerequisite = { focus = Coolidge_USA_rallying_the_base }
+	prerequisite = { focus = Coolidge_USA_for_the_good_of_the_people }
+	relative_position_id = Coolidge_USA_for_the_good_of_the_people
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		
 	}
 }
 
 focus = {
-	id = Coolidge_USA_improve_south_american_relations
+	id = Coolidge_USA_hands_off
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -2289,56 +2369,56 @@ focus = {
 	x = -2
 	y = 1
 	
-	prerequisite = { focus = Coolidge_USA_question_of_the_league }
-	relative_position_id = Coolidge_USA_question_of_the_league
+	prerequisite = { focus = Coolidge_USA_there_is_work_to_be_done }
+	relative_position_id = Coolidge_USA_there_is_work_to_be_done
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		
 	}
 }
 
 focus = {
-	id = Coolidge_USA_reassure_south_american_allies
+	id = Coolidge_USA_no_more_excessive_spending
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_hands_off }
+	relative_position_id = Coolidge_USA_hands_off
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = Coolidge_USA_virtues_of_small_government
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
 	x = 0
-	y = 2
+	y = 1
 	
-	prerequisite = { focus = Coolidge_USA_improve_south_american_relations }
-	relative_position_id = Coolidge_USA_improve_south_american_relations
+	prerequisite = { focus = Coolidge_USA_no_more_excessive_spending }
+	relative_position_id = Coolidge_USA_no_more_excessive_spending
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = -20
-		custom_effect_tooltip = improves_relations_with_south_america_tt
-		hidden_effect = {
-			add_opinion_modifier = { target = MEX modifier = medium_increase }
-			add_opinion_modifier = { target = GUA modifier = medium_increase }
-			add_opinion_modifier = { target = NIC modifier = medium_increase }
-			add_opinion_modifier = { target = ELS modifier = medium_increase }
-			add_opinion_modifier = { target = HON modifier = medium_increase }
-			add_opinion_modifier = { target = COS modifier = medium_increase }
-			add_opinion_modifier = { target = PAN modifier = medium_increase }
-			add_opinion_modifier = { target = COL modifier = medium_increase }
-			add_opinion_modifier = { target = VEN modifier = medium_increase }
-			add_opinion_modifier = { target = PRU modifier = medium_increase }
-			add_opinion_modifier = { target = ECU modifier = medium_increase }
-			add_opinion_modifier = { target = BOL modifier = medium_increase }
-			add_opinion_modifier = { target = BRA modifier = medium_increase }	
-			add_opinion_modifier = { target = CHL modifier = medium_increase }
-			add_opinion_modifier = { target = ARG modifier = medium_increase }
-			add_opinion_modifier = { target = ECU modifier = medium_increase }
-		}
+		
 	}
 }
 
 focus = {
-	id = Coolidge_USA_question_of_south_american_occupations
+	id = Coolidge_USA_growth_for_the_people
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -2346,18 +2426,116 @@ focus = {
 	x = 1
 	y = 1
 	
-	prerequisite = { focus = Coolidge_USA_improve_south_american_relations }
-	relative_position_id = Coolidge_USA_improve_south_american_relations
+	prerequisite = { focus = Coolidge_USA_hands_off }
+	relative_position_id = Coolidge_USA_hands_off
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		
 	}
 }
 
 focus = {
-	id = Coolidge_USA_european_relief
+	id = Coolidge_USA_growth_of_the_people
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_growth_for_the_people }
+	relative_position_id = Coolidge_USA_growth_for_the_people
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = { 
+	id = Coolidge_USA_for_domestic_tranquility
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = Coolidge_USA_growth_of_the_people  focus = Coolidge_USA_virtues_of_small_government }
+	relative_position_id = Coolidge_USA_virtues_of_small_government
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = { 
+	id = Coolidge_USA_working_out_our_differences
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = Coolidge_USA_for_domestic_tranquility }
+	relative_position_id = Coolidge_USA_for_domestic_tranquility
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+
+focus = { 
+	id = Coolidge_USA_a_place_to_do_business
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = Coolidge_USA_growth_of_the_people }
+	prerequisite = { focus = Coolidge_USA_virtues_of_small_government }
+	relative_position_id = Coolidge_USA_virtues_of_small_government
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = { 
+	id = Coolidge_USA_steady_she_goes
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = Coolidge_USA_a_place_to_do_business }
+	prerequisite = { focus = Coolidge_USA_working_out_our_differences }
+	relative_position_id = Coolidge_USA_working_out_our_differences
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = Coolidge_USA_all_are_sacred
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -2365,192 +2543,18 @@ focus = {
 	x = 2
 	y = 1
 	
-	prerequisite = { focus = Coolidge_USA_question_of_the_league }
-	relative_position_id = Coolidge_USA_question_of_the_league
+	prerequisite = { focus = Coolidge_USA_there_is_work_to_be_done }
+	relative_position_id = Coolidge_USA_there_is_work_to_be_done
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
-	}
-}
-focus = {
-	id = Coolidge_USA_dawes_plan
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = Coolidge_USA_european_relief }
-	relative_position_id = Coolidge_USA_european_relief
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
+		
 	}
 }
 
-focus = {
-	id = Coolidge_USA_revenue_act_of_1928
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 2
-	
-	prerequisite = { focus = Coolidge_USA_european_relief }
-	relative_position_id = Coolidge_USA_european_relief
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50 #Revenue acts of 1926/1928 ?#
-	}
-}
-
-focus = {
-	id = Coolidge_USA_economic_policy
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -4
-	y = 1
-	
-	prerequisite = { focus = Coolidge_USA_stay_cool_with_coolidge }
-	relative_position_id = Coolidge_USA_stay_cool_with_coolidge
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		country_event = {
-			id = event.usaCoolidge.3
-		}
-	}
-}
-
-focus = {
-	id = Coolidge_USA_revenue_act_of_1924
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 1
-	y = 2
-	
-	prerequisite = { focus = Coolidge_USA_economic_policy } 
-	relative_position_id = Coolidge_USA_economic_policy
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_to_variable = { poverty_monthly_change = 0.01 }
-		add_political_power = 50 #Revenue acts of 1926/1928 ?#
-	}
-}
-
-focus = {
-	id = Coolidge_USA_revenue_act_of_1926
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = 0
-	y = 1
-	
-	prerequisite = { focus = Coolidge_USA_revenue_act_of_1924 }
-	relative_position_id = Coolidge_USA_revenue_act_of_1924
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_to_variable = { poverty_monthly_change = 0.01 }
-		add_political_power = 50 #Revenue acts of 1926/1928 ?#
-	}
-}
-
-focus = {
-	id = Coolidge_USA_hoover_hands_free
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-
-	prerequisite = { focus = Coolidge_USA_economic_policy }
-	relative_position_id = Coolidge_USA_economic_policy
-
-	available_if_capitulated = no
-	
-	completion_reward = { #boost eco beyond possibilities
-			if = {
-				limit = {
-					check_variable = { GDP > 200.00}
-				}
-				set_temp_variable = { temp_econ_GDP_boost_percentage = 0.005 }
-				econ_GDP_boost_once_percentage = yes
-			}
-			else_if = {
-				limit = {
-					check_variable = { GDP > 100.00}
-				}
-				set_temp_variable = { temp_econ_GDP_boost_percentage = 0.01 }
-				econ_GDP_boost_once_percentage = yes
-			}
-			else = {
-				set_temp_variable = { temp_econ_GDP_boost_percentage = 0.05 }
-				econ_GDP_boost_once_percentage = yes
-			}
-			if = {
-				limit = {
-					check_variable = { gdp_growth > 8.0 }
-				}
-				set_temp_variable = { gdp_growth_temp = 0.05 } #already converted to billion
-				econ_gdp_growth_change = yes
-			}
-			else = {
-				set_temp_variable = { gdp_growth_temp = 0.5 } #already converted to billion
-				econ_gdp_growth_change = yes
-			}
-		hidden_effect = {
-			set_country_flag = {
-				flag = worse_deppression_five
-			value = 1
-			}	
-		}
-	}
-}
-
-focus = {
-	id = Coolidge_USA_appoint_liazess_faire_economy_positions
-	icon = GFX_focus_USA_placeholder
-
-	cost = 4
-
-	x = -1
-	y = 1
-	
-	prerequisite = { focus = Coolidge_USA_hoover_hands_free }
-	relative_position_id = Coolidge_USA_hoover_hands_free
-
-	available_if_capitulated = no
-	
-	completion_reward = { #forces a cabinet of businessmen that cant be removed
-		add_tech_bonus = {
-			bonus = 0.75
-			uses = 2
-			category = industry
-		}
-	}
-}
-
-focus = {
-	id = Coolidge_USA_cut_funding_to_economic_programs
+focus = { #please give me a better focus name
+	id = Coolidge_USA_the_nonwhites
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -2558,55 +2562,267 @@ focus = {
 	x = 1
 	y = 1
 	
-	prerequisite = { focus = Coolidge_USA_hoover_hands_free }
-	relative_position_id = Coolidge_USA_hoover_hands_free
+	prerequisite = { focus = Coolidge_USA_nobody_left_behind }
+	relative_position_id = Coolidge_USA_nobody_left_behind
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		add_political_power = 50
+		
+	}
+}
+
+focus = { #opens path tp reconsiliation
+	id = Coolidge_USA_lynching_no_longer
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 2
+	
+	prerequisite = { focus = Coolidge_USA_the_nonwhites }
+	relative_position_id = Coolidge_USA_the_nonwhites
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
 	}
 }
 
 focus = {
-	id = Coolidge_USA_hoover_rugged_self_success
+	id = Coolidge_USA_lights_in_the_tunnel
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
 	x = 0
-	y = 2
-
-	prerequisite = { focus = Coolidge_USA_hoover_hands_free }
-	relative_position_id = Coolidge_USA_hoover_hands_free
-
-	available_if_capitulated = no
-	
-	completion_reward = {
-		add_political_power = 50
-	}
-}
-
-focus = { #not a real act (No child left behind ???)
-	id = Coolidge_USA_educational_act_of_1925
-	icon = GFX_focus_USA_placeholder
-
-	cost = 6
-
-	x = 2
 	y = 1
 	
-	prerequisite = { focus = Coolidge_USA_economic_policy } 
-	relative_position_id = Coolidge_USA_economic_policy
+	prerequisite = { focus = Coolidge_USA_the_nonwhites }
+	relative_position_id = Coolidge_USA_the_nonwhites
 
 	available_if_capitulated = no
 	
 	completion_reward = {
-		TNO_improve_education_policy_effectiveness_monthly_low = yes
-		social_funding_maximal_increase_med = yes
-		social_funding_minimal_increase_med = yes
+		
 	}
 }
+
+focus = {
+	id = Coolidge_USA_the_indians
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_our_roots }
+	relative_position_id = Coolidge_USA_our_roots
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = Coolidge_USA_for_those_in_pursuit_of_happiness
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_the_indians }
+	relative_position_id = Coolidge_USA_the_indians
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = Coolidge_USA_those_with_a_vote_in_hand
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 2
+	
+	prerequisite = { focus = Coolidge_USA_the_indians }
+	relative_position_id = Coolidge_USA_the_indians
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = { #"give me your tired"
+	id = Coolidge_USA_the_poor_immigtants
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_all_are_sacred }
+	relative_position_id = Coolidge_USA_all_are_sacred
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = { # "your poor"
+	id = Coolidge_USA_your_poor
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_the_poor_immigtants }
+	relative_position_id = Coolidge_USA_the_poor_immigtants
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = { #"your huddled_masses"
+	id = Coolidge_USA_your_huddled_masses
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Coolidge_USA_the_poor_immigtants }
+	relative_position_id = Coolidge_USA_the_poor_immigtants
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+ 
+focus = { #"Your huddled masses yearning to breathe free"
+	id = Coolidge_USA_your_huddled_masses_yearning_to_breate_free
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = Coolidge_USA_your_huddled_masses }
+	prerequisite = { focus = Coolidge_USA_your_poor }
+	relative_position_id = Coolidge_USA_your_poor
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = { 
+	id = Coolidge_USA_our_roots
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = Coolidge_USA_your_huddled_masses_yearning_to_breate_free }
+	relative_position_id = Coolidge_USA_your_huddled_masses_yearning_to_breate_free
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = { 
+	id = Coolidge_USA_nobody_left_behind
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = Coolidge_USA_your_huddled_masses_yearning_to_breate_free }
+	relative_position_id = Coolidge_USA_your_huddled_masses_yearning_to_breate_free
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = { 
+	id = Coolidge_USA_the_right_to_liberty
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = Coolidge_USA_our_roots }
+	prerequisite = { focus = Coolidge_USA_nobody_left_behind }
+	relative_position_id = Coolidge_USA_nobody_left_behind
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = { 
+	id = Coolidge_USA_may_the_light_burn_ever_so_bright
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 3
+
+	prerequisite = { focus = Coolidge_USA_those_with_a_vote_in_hand }
+	prerequisite = { focus = Coolidge_USA_lynching_no_longer }
+	prerequisite = { focus = Coolidge_USA_the_right_to_liberty }
+	relative_position_id = Coolidge_USA_the_right_to_liberty
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		
+	}
+}
+
 
 #COOLIDGE EX-VICE-PRESIDENT PRESIDENCY#
 
@@ -2616,7 +2832,7 @@ focus = {
 
 	cost = 1
 
-	x = 35
+	x = 45
 	y = 0
 	
 	available_if_capitulated =  no
@@ -12011,6 +12227,66 @@ focus = {
 	}
 }
 
+#HUEY LONG#
+
+focus = {
+	id = HUE_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 235
+	y = 0
+	
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaLBJ.1
+		}
+	}
+}
+
+#ALF LANDON#
+
+focus = {
+	id = ALF_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 245
+	y = 0
+	
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaLBJ.1
+		}
+	}
+}
+
+#WILKIE#
+
+focus = {
+	id = WILKIE_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 225
+	y = 0
+	
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaLBJ.1
+		}
+	}
+}
+
 #TRUMAN#
 
 focus = {
@@ -12020,6 +12296,26 @@ focus = {
 	cost = 1
 
 	x = 250
+	y = 0
+	
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaLBJ.1
+		}
+	}
+}
+
+#DEWEY#
+
+focus = {
+	id = DEW_USA_innaugaration_speech
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 275
 	y = 0
 	
 	available_if_capitulated = no

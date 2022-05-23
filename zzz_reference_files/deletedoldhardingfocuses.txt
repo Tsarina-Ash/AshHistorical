@@ -1,0 +1,525 @@
+
+focus = {
+	id = Harding_USA_blame_game_return_to_normalcy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_innaugaration_speech }
+	relative_position_id = Harding_USA_innaugaration_speech
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		custom_effect_tooltip = destabilize_american_politics_tt
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			add_stability = 0.01
+		}
+	}
+}
+
+focus = {
+	id = Harding_USA_hot_potato
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_blame_game_return_to_normalcy }
+	relative_position_id = Harding_USA_blame_game_return_to_normalcy
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		custom_effect_tooltip = harding_begin_event_chain_tt
+		hidden_effect = {
+			country_event = {
+				id = event.eventusaHarding.2 #teapot scandal
+			}
+		}
+	}
+}
+
+focus = {
+	id = Harding_USA_internal_affairs
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -5
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_hot_potato }
+	relative_position_id = Harding_USA_hot_potato
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		set_temp_variable = { temp_econ_spending_amount = GDP }
+		multiply_temp_variable = { temp_econ_spending_amount = 0.01 }
+		econ_spend_money_once_effect_raw_money = yes
+		TNO_improve_poverty_high = yes
+	}
+}
+
+focus = {
+	id = Harding_USA_dealing_with_anti_war_prisoners
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = Harding_USA_internal_affairs }
+	relative_position_id = Harding_USA_internal_affairs
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_stability_factor = 0.5
+		add_war_support_factor = -0.5
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}
+		}
+	}
+}
+
+focus = {
+	id = Harding_USA_leonidas_dyers_federal_anti_lynching_bill
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_internal_affairs }
+	relative_position_id = Harding_USA_internal_affairs
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#advances civil rights and prison system to modern and reformist
+	}
+}
+
+focus = {
+	id = Harding_USA_per_centum_act_of_1921
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -2
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_internal_affairs }
+	relative_position_id = Harding_USA_internal_affairs
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#increases governmnet income is a TAX LAW
+	}
+}
+
+focus = {
+	id = Harding_USA_immigration_act_of_1924
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_per_centum_act_of_1921 }
+	relative_position_id = Harding_USA_per_centum_act_of_1921
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#decreases immigration idea and lowers gain on everything
+		hidden_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.01
+			}
+		}
+	}
+}
+
+focus = {
+	id = Harding_USA_return_to_normalcy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_hot_potato }
+	relative_position_id = Harding_USA_hot_potato
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		unlock_decision_category_tooltip = harding_memes
+	}
+}
+
+focus = {
+	id = Harding_USA_voyage_of_understanding
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 3
+	
+	prerequisite = { focus = Harding_USA_return_to_normalcy }
+	relative_position_id = Harding_USA_return_to_normalcy
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		unlock_decision_category_tooltip = harding_voyage_of_understanding
+	}
+}
+
+focus = {
+	id = Harding_USA_finalize_formal_peace_treaty
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -2
+	y = 1
+	
+	available = { always = no }
+
+	prerequisite = { focus = Harding_USA_return_to_normalcy }
+	relative_position_id = Harding_USA_return_to_normalcy
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#GERMAN PEACE TREATY
+	}
+}
+
+
+focus = {
+	id = Harding_USA_reassure_south_america
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = Harding_USA_finalize_formal_peace_treaty }
+	relative_position_id = Harding_USA_finalize_formal_peace_treaty
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		custom_effect_tooltip = improves_relations_with_south_america_tt
+		hidden_effect = {
+			add_opinion_modifier = { target = MEX modifier = medium_increase }
+			add_opinion_modifier = { target = GUA modifier = medium_increase }
+			add_opinion_modifier = { target = NIC modifier = medium_increase }
+			add_opinion_modifier = { target = ELS modifier = medium_increase }
+			add_opinion_modifier = { target = HON modifier = medium_increase }
+			add_opinion_modifier = { target = COS modifier = medium_increase }
+			add_opinion_modifier = { target = PAN modifier = medium_increase }
+			add_opinion_modifier = { target = COL modifier = medium_increase }
+			add_opinion_modifier = { target = VEN modifier = medium_increase }
+			add_opinion_modifier = { target = PRU modifier = medium_increase }
+			add_opinion_modifier = { target = ECU modifier = medium_increase }
+			add_opinion_modifier = { target = BOL modifier = medium_increase }
+			add_opinion_modifier = { target = BRA modifier = medium_increase }	
+			add_opinion_modifier = { target = CHL modifier = medium_increase }
+			add_opinion_modifier = { target = ARG modifier = medium_increase }
+			add_opinion_modifier = { target = ECU modifier = medium_increase }
+		}
+
+			add_to_variable = { gdp_roaring_growth_var = 0.01 }
+
+			#MEX = {
+			#	add_to_variable = { gdp_roaring_growth_var = 0.01 }
+			#}
+			#
+			#BRA = {
+			#	add_to_variable = { gdp_roaring_growth_var = 0.01 }
+			#}
+			#
+			#CUB = {
+			#	add_to_variable = { gdp_roaring_growth_var = 0.01 }
+			#}
+			#
+			#VEN = {
+			#	add_to_variable = { gdp_roaring_growth_var = 0.01 }
+			#}
+
+			set_temp_variable = { temp_econ_spending_amount = GDP }
+			multiply_temp_variable = { temp_econ_spending_amount = 0.04 }
+			econ_spend_money_once_effect_raw_money = yes
+
+			597 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				set_temp_variable = { state_value_multiplier_temp = 1.1 }
+				econ_state_value_change_multiply_specified_state = yes
+				add_state_modifier = {
+					modifier = {
+						state_GDP_growth_factor_modifier = 0.10
+					}
+				}
+			}
+			597 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				set_temp_variable = { state_value_multiplier_temp = 1.1 }
+				econ_state_value_change_multiply_specified_state = yes
+				add_state_modifier = {
+					modifier = {
+						state_GDP_growth_factor_modifier = 0.10
+					}
+				}
+			}
+			597 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				set_temp_variable = { state_value_multiplier_temp = 1.1 }
+				econ_state_value_change_multiply_specified_state = yes
+				add_state_modifier = {
+					modifier = {
+						state_GDP_growth_factor_modifier = 0.10
+					}
+				}
+			}
+			597 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				set_temp_variable = { state_value_multiplier_temp = 1.1 }
+				econ_state_value_change_multiply_specified_state = yes
+				add_state_modifier = {
+					modifier = {
+						state_GDP_growth_factor_modifier = 0.10
+					}
+				}
+			}
+			597 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				set_temp_variable = { state_value_multiplier_temp = 1.1 }
+				econ_state_value_change_multiply_specified_state = yes
+				add_state_modifier = {
+					modifier = {
+						state_GDP_growth_factor_modifier = 0.10
+					}
+				}
+			}
+		}
+	}
+
+focus = {
+	id = Harding_USA_tackling_disarmament
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_finalize_formal_peace_treaty }
+	relative_position_id = Harding_USA_finalize_formal_peace_treaty
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		#focuses on disarming army rather than industry
+	}
+}
+
+focus = {
+	id = Harding_USA_reduce_reparations
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_finalize_formal_peace_treaty }
+	relative_position_id = Harding_USA_finalize_formal_peace_treaty
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = Harding_USA_abandon_the_idea_of_the_league
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_return_to_normalcy }
+	relative_position_id = Harding_USA_return_to_normalcy
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaHarding.4
+		}
+		add_stability = 0.02
+		hidden_effect = {
+
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+
+			set_country_flag = {
+				flag = abandoned_the_league_of_nations
+			value = 1
+			}	
+		}
+	}
+}
+
+focus = {
+	id = Harding_USA_can_everyone_just_be_friends
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_abandon_the_idea_of_the_league }
+	relative_position_id = Harding_USA_abandon_the_idea_of_the_league
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaHarding.4
+		}
+
+	}
+}
+
+focus = {
+	id = Harding_USA_economy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 2
+
+	x = 4
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_hot_potato }
+	relative_position_id = Harding_USA_hot_potato
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaHarding.1 
+		}
+
+	}
+}
+
+focus = {
+	id = Harding_USA_tax_cuts
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_economy }
+	relative_position_id = Harding_USA_economy
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+		set_temp_variable = { business_tax_temp = -0.1 }
+		econ_business_tax_rate_change = yes
+		set_temp_variable = { gdp_growth_temp = 1.5 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { temp_econ_GDP_boost_percentage = 0.02 }
+		econ_GDP_boost_once_percentage = yes
+	}
+}
+
+focus = { #massive investment- harding is supposed to die before this focus completes
+	id = Harding_USA_federal_highway_act_of_1921
+	icon = GFX_focus_USA_placeholder
+
+	cost = 15
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = Harding_USA_economy }
+	relative_position_id = Harding_USA_economy
+
+	available_if_capitulated = no
+	
+	completion_reward = {
+
+		hidden_effect = {
+		}
+	}
+}
