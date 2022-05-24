@@ -46,33 +46,34 @@ focus_tree = {
 # S = Socialist
 
 #1920 pres election (not much variation from hist because it is election year# (May Add Socialist Party ?)
-#Wilson (D) Pres
-#James Cox (D) Pres
-#FDR (D) Vice 
-#Harding (R)
-#Leonard Wood (R)
-#Cooldige (R) Vice
+#Wilson (D) Pres [Added]
+#James Cox (D) Pres [WIP]
+#FDR (D) Vice [WIP]
+#Harding (R) [Added]
+#Leonard Wood (R) [Added]
+#Cooldige (R) Vice [Added]
 
 #1924 pres election (May add More parties and candidates)
-#John W Davis (D) Pres
-#Al Smith (D) Pres
-#Charles W Bryan  (D) Vice 
-#Robert M La Follete (P) Pres /only spawns in if Robert doesnt win republican primaries
-#Burton K Wheeler (P) Vice /only spawns in if Robert doesnt win republican primaries
-#Calvin Coolidge (R) Pres
-#Robert M La Follete (R) Pres /pulls a tedy roosevelt and splits party if doesnt get primary 
-#Frank Lorren Owen (R) Pres
-#Charles G Dawes (R) Vice 
+#John W Davis (D) Pres [WIP]
+#Al Smith (D) Pres [WIP]
+#Charles W Bryan  (D) Vice [WIP] 
+#Robert M La Follete (P) Pres /only spawns in if Robert doesnt win republican primaries [WIP]
+#Burton K Wheeler (P) Vice /only spawns in if Robert doesnt win republican primaries [WIP]
+#Calvin Coolidge (R) Pres [Added]
+#Robert M La Follete (R) Pres /pulls a tedy roosevelt and splits party if doesnt get primary [WIP]
+#Frank Lorren Owen (R) Pres [WIP]
+#Charles G Dawes (R) Vice [WIP]
 
 #1928 pres election (May add More parties and candidates)
-#Herbert Hoover (R) Pres
-#Frank Orren Lowden (R) Pres
-#Charles Curtis (R) Pres
-#Charles Curtis (R) Vice
+#Herbert Hoover (R) Pres [Added]
+#Frank Orren Lowden (R) Pres [WIP]
+#Charles Curtis (R) Pres [WIP]
+#Charles Curtis (R) Vice [WIP]
+#Al Smith (D) Pres [WIP]
+#FDR (D) Pres [WIP]
+#Joseph T Robbinson (D) Vice [WIP]
 
-#Al Smith (D) Pres
-#FDR (D) Pres
-#Joseph T Robbinson (D) Vice 
+#1932 pres election (May add More parties and candidates)
 
 #RESOURCES USED#
 
