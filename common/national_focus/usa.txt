@@ -39,11 +39,13 @@ focus_tree = {
 #Wendel Wilkie#
 #Huey Long#
 #Thomas Dewey#
+#Jay Lovestone# - #Added by Dina
 
 # D = Democrat
 # R = Republican
 # P = Progressive
 # S = Socialist
+# C = Communist
 
 #1920 pres election (not much variation from hist because it is election year# (May Add Socialist Party ?)
 #Wilson (D) Pres [Added]
@@ -63,6 +65,7 @@ focus_tree = {
 #Robert M La Follete (R) Pres /pulls a tedy roosevelt and splits party if doesnt get primary [WIP]
 #Frank Lorren Owen (R) Pres [WIP]
 #Charles G Dawes (R) Vice [WIP]
+#Jay Lovestone (S/C) Pres /only possible if the communist party succeeds in forming a mass Farmer-Labor Party and the CPPA supports the Communist Party [WIP]
 
 #1928 pres election (May add More parties and candidates)
 #Herbert Hoover (R) Pres [Added]
@@ -114,6 +117,14 @@ focus_tree = {
 #https://en.wikipedia.org/wiki/First_100_days_of_Franklin_D._Roosevelt%27s_presidency#
 #https://en.wikipedia.org/wiki/Central_Valley_Project#
 #https://en.wikipedia.org/wiki/Puerto_Rico_Reconstruction_Administration#
+
+#Alt-Hist Jay Lovestone# - #Added by Dina
+#https://en.wikipedia.org/wiki/Jay_Lovestone#Background_and_early_life#
+#https://en.wikipedia.org/wiki/Nikolai_Bukharin# - help with figuring out potential policies
+#https://en.wikipedia.org/wiki/Socialist_Party_of_America#
+#https://en.wikipedia.org/wiki/Conference_for_Progressive_Political_Action#
+#https://en.wikipedia.org/wiki/Communist_Party_USA#
+#https://en.wikipedia.org/wiki/Lovestoneites#
 
 #Game Knowledge#
 #https://hoi4.paradoxwikis.com/National_Focus_modding#
