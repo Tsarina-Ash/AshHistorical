@@ -20,6 +20,32 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
+	#Legacy Factories
+
+	arms_factory = {
+		show_on_map = 6
+		base_cost = 7200
+		base_cost_conversion = 4000
+		military_production = 1
+		icon_frame = 1
+		max_level = 800
+		shares_slots = yes
+		value = 8
+		infrastructure_construction_effect = yes
+	}
+
+	industrial_complex = {
+		show_on_map = 6
+		base_cost = 10800
+		base_cost_conversion = 9000
+		general_production = 1
+		icon_frame = 2
+		max_level = 800
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+	}
+
 	#Power Plants
 
 	nuclear_reactor = {
