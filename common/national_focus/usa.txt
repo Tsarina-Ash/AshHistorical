@@ -125,6 +125,8 @@ focus_tree = {
 #https://en.wikipedia.org/wiki/Conference_for_Progressive_Political_Action#
 #https://en.wikipedia.org/wiki/Communist_Party_USA#
 #https://en.wikipedia.org/wiki/Lovestoneites#
+#https://en.wikipedia.org/wiki/New_Economic_Policy#
+#https://en.wikipedia.org/wiki/Right_Opposition#
 
 #Game Knowledge#
 #https://hoi4.paradoxwikis.com/National_Focus_modding#
@@ -12296,6 +12298,7 @@ focus = {
 		country_event = {
 			id = event.usaJLS.1
 		}
+		set_country_flag = SOC_USA_socalists_in_power
 	}
 }
 focus = {
@@ -12304,7 +12307,10 @@ focus = {
 	prerequisite = { focus = JLS_USA_innaugaration_speech}
 	mutually_exclusive = { focus = JLS_USA_separate_from_the_soviet_union}
 	available = {
-		#Nikolai Bukharin is in charge or he maintains a strong position in the USSR (isn't pruged)
+		OR = {
+			#Nikolai Bukharin is in charge or he maintains a strong position in the USSR (isn't pruged)
+			#Lenin Avoids Death and successfully impliments his New Economic Policy
+		}
 	}
 	cost = 4
 
@@ -12348,7 +12354,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		
+		unlock_decision_category_tooltip = JLS_USA_foriegn_relations
 	}
 }
 focus = {
@@ -12406,6 +12412,22 @@ focus = {
 	prerequisite = { focus = JLS_USA_innaugaration_speech}
 	cost = 4
 
+	x = 4
+	y = 1
+	relative_position_id = JLS_USA_innaugaration_speech
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		custom_effect_tooltip = SOC_USA_calm_conservative_tensions_tt
+	}
+}
+focus = {
+	id = JLS_USA_restructure_american_industry
+	icon = GFX_focus_USA_placeholder
+	prerequisite = { focus = JLS_USA_innaugaration_speech}
+	cost = 4
+
 	x = 6
 	y = 1
 	relative_position_id = JLS_USA_innaugaration_speech
@@ -12413,23 +12435,24 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
+		add_stability = -0.1
 	}
 }
 focus = {
 	id = JLS_USA_support_the_unions
 	icon = GFX_focus_USA_placeholder
 	prerequisite = { focus = JLS_USA_american_exceptionalism}
+	prerequisite = { focus = JLS_USA_restructure_american_industry}
 	cost = 4
 
-	x = 0
+	x = -2
 	y = 1
 	relative_position_id = JLS_USA_american_exceptionalism
 
 	available_if_capitulated = no
 
 	completion_reward = {
-
+		custom_effect_tooltip = JLS_USA_increased_economic_stability_tt
 	}
 }
 focus = {
@@ -12438,14 +12461,14 @@ focus = {
 	prerequisite = { focus = JLS_USA_support_the_unions}
 	cost = 4
 
-	x = -2
+	x = -1
 	y = 1
 	relative_position_id = JLS_USA_support_the_unions
 
 	available_if_capitulated = no
 
 	completion_reward = {
-
+		custom_effect_tooltip = SOC_USA_worsen_conservative_tensions_tt
 	}
 }
 focus = {
@@ -12461,7 +12484,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
+		custom_effect_tooltip = SOC_USA_worsen_conservative_tensions_tt
 	}
 }
 focus = {
@@ -12477,13 +12500,165 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		
+		add_stability = 0.05
 	}
 }
 focus = {
-	id = JLS_USA_national_workers_deal
+	id = JLS_USA_fair_wages_act
 	icon = GFX_focus_USA_placeholder
 	prerequisite = { focus = JLS_USA_american_exceptionalism}
+	prerequisite = { focus = JLS_USA_restructure_american_industry}
+	cost = 4
+
+	x = 0
+	y = 1
+	relative_position_id = JLS_USA_american_exceptionalism
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		custom_effect_tooltip = JLS_USA_increased_economic_stability_tt
+	}
+}
+focus = {
+	id = JLS_USA_clamp_down_on_rampant_capitalism
+	icon = GFX_focus_USA_placeholder
+	prerequisite = { focus = JLS_USA_fair_wages_act}
+	cost = 4
+	
+	x = 0
+	y = 1
+	relative_position_id = JLS_USA_fair_wages_act
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		custom_effect_tooltip = JLS_USA_increased_economic_stability_tt
+		custom_effect_tooltip = SOC_USA_worsen_conservative_tensions_tt
+	}
+}
+focus = {
+	id = JLS_USA_justice
+	icon = GFX_focus_USA_placeholder
+	prerequisite = { focus = JLS_USA_prosecute_violent_union_busters}
+	prerequisite = { focus = JLS_USA_compensate_wounded_and_killed_strikers}
+	prerequisite = { focus = JLS_USA_clamp_down_on_rampant_capitalism}
+	cost = 4
+
+	x = 3
+	y = 1
+	relative_position_id = JLS_USA_prosecute_violent_union_busters
+
+	available_if_capitulated = no
+
+	completion_reward = {
+
+	}
+}
+focus = {
+	id = JLS_USA_new_economic_policy
+	icon = GFX_focus_USA_placeholder
+	prerequisite = { focus = JLS_USA_restructure_american_industry}
+	prerequisite = { focus = JLS_USA_american_exceptionalism}
+	cost = 4
+
+	x = 4
+	y = 1
+	relative_position_id = JLS_USA_restructure_american_industry
+
+	available_if_capitulated = no
+
+	completion_reward = {
+
+	}
+}
+focus = {
+	id = JLS_USA_reverse_the_america_plan
+	icon = GFX_focus_USA_placeholder
+	prerequisite = { focus = JLS_USA_new_economic_policy}
+	prerequisite = { focus = JLS_USA_support_the_unions}
+	cost = 4
+
+	x = -3
+	y = 1
+	relative_position_id = JLS_USA_new_economic_policy
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		custom_effect_tooltip = SOC_USA_worsen_conservative_tensions_tt
+		unlock_decision_category_tooltip = JLS_USA_reverse_the_america_plan_dcat
+	}
+}
+focus = {
+	id = JLS_USA_support_basic_industries
+	icon = GFX_focus_USA_placeholder
+	prerequisite = { focus = JLS_USA_new_economic_policy}
+	cost = 4
+
+	x = 2
+	y = 1
+	relative_position_id = JLS_USA_new_economic_policy
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		custom_effect_tooltip = JLS_USA_increased_economic_stability_tt
+	}
+}
+focus = {
+	id = JLS_USA_support_coal_miners
+	icon = GFX_focus_USA_placeholder
+	prerequisite = { focus = JLS_USA_support_basic_industries}
+	cost = 4
+
+	x = -1
+	y = 1
+	relative_position_id = JLS_USA_support_basic_industries
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		custom_effect_tooltip = JLS_USA_increased_economic_stability_tt
+	}
+}
+focus = {
+	id = JLS_USA_support_farmers
+	icon  = GFX_focus_USA_placeholder
+	prerequisite = { focus = JLS_USA_support_basic_industries}
+	cost = 4
+
+	x = 1
+	y = 1
+	relative_position_id = JLS_USA_support_basic_industries
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		custom_effect_tooltip = JLS_USA_increased_economic_stability_tt
+	}
+}
+focus = {
+	id = JLS_USA_implement_farmers_taxation
+	icon = GFX_focus_USA_placeholder
+	prerequisite = { focus = JLS_USA_support_basic_industries focus = JLS_USA_new_workers_deal}
+	cost = 4
+
+	x = 3
+	y = 1
+	relative_position_id = JLS_USA_support_basic_industries
+
+	available_if_capitulated = no
+
+	completion_reward = {
+		custom_effect_tooltip = SOC_USA_worsen_conservative_tensions_tt
+		custom_effect_tooltip = JLS_USA_if_done_without_proper_reason_there_will_be_harsh_backlash_tt
+	}
+}
+focus = {
+	id = JLS_USA_new_workers_deal
+	icon = GFX_focus_USA_placeholder
+	prerequisite = { focus = JLS_USA_new_economic_policy}
 	available = {
 		#The Great Depression has begun
 	}
@@ -12491,11 +12666,12 @@ focus = {
 
 	x = 6
 	y = 1
-	relative_position_id = JLS_USA_american_exceptionalism
+	relative_position_id = JLS_USA_new_economic_policy
 
 	available_if_capitulated = no
 
 	completion_reward = {
+		custom_effect_tooltip = SOC_USA_calm_conservative_tensions_tt
 		#Think New Deal, but even more progressive
 	}
 }
