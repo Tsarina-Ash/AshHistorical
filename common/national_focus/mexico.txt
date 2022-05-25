@@ -15,15 +15,21 @@ focus_tree = {
 
 #INDEX#
 #Carranzas / CAR#
+#Adolfo / ADH#
+
+#Calles / PEC#
 
 #Planned Political Parties#
 #PAN
 #PRI/PRM/PNR
 #PDM
 #PLM
+#PCP
 
 #Planned Presidents (Totally dont see 3 letters over and overagain *smiles in pain*)#
-#Plutarco Elías Calles (PLM) 1924-1928
+#Adolfo de la Huerta (PCP) June 1920-Novemeber 1920
+#Alvaro Obregon (PL/PLM) December 1920-1924
+#Plutarco Elias Calles (PLM) 1924-1928
 #Emilio Portes Gil (PRI) 1928-1930
 #Pascual Ortiz Rubio (PRI) 1930-1932
 #Abelardo Rodriguez (PNR/PRI) 1932-1934
@@ -43,13 +49,36 @@ focus_tree = {
 
 #Victor Carranza (Starting President)#
 #https://en.wikipedia.org/wiki/Venustiano_Carranza#
+#https://www.britannica.com/biography/Venustiano-Carranza (His Term Will End In December, Even Without Revolution)#
+
+#Alvaro Obregon#
+#https://en.wikipedia.org/wiki/%C3%81lvaro_Obreg%C3%B3n#President_of_Mexico,_1920%E2%80%931924#
+# Education Reform + Expansion Of School System
+# Created Department Of Labor
+# Kind-Of Pro Union Assisted CROM (A Union) But Cracked Down Heavily On Other Unions
+# Land Reform/Distribution
+# Got Recognition From US Gov In Exchange For Not Nationalizing Oil
+# Was Ok With Church ? But Hated By Church
+#	-- Second Term Things IRL---	#
+# Seen As Anti-Revolutionary For Running For Re-Election
+# Assasinated By Religious Person
+# Death Led To Cristero Wars
+
+#Pluctaro Calles#
+# https://en.wikipedia.org/wiki/Maximato
+# Anti Corruption
+
+#Lazarro Cardenas#
+#https://www.gob.mx/presidencia/prensa/plan-sexenal-de-lazaro-cardenas (Lazaro Cardena's Manifesto)#
 
 #Important Events#
 #https://en.wikipedia.org/wiki/Plan_of_Agua_Prieta (Manifesto for rebellion against federal government)#
+#https://www.nytimes.com/1940/03/06/archives/basis-for-oil-pact-reached-by-mexico-understanding-with-sinclair.html (Oil Pact between Mex and US)#
+#https://www.nytimes.com/1940/05/19/archives/sinclair-receives-mexicos-1000000-first-payment-is-made-to-oil.html (Oil Pact between Mex and US)#
 #https://en.wikipedia.org/wiki/Pemex (Founding of PEMEX)#
 
-
 #Some Extras#
+#https://en.wikipedia.org/wiki/Emilio_Fern%C3%A1ndez (Very Famous Actor during 40's-50's)#
 #https://en.wikipedia.org/wiki/Chespirito (Very influtential culutrally to American Southwest & Mexico)#
 
 #May add completed focuses above to give some more context# 
@@ -57,6 +86,8 @@ focus_tree = {
 
 #Carranzas#
 #Hope is that the player loses control of country fast enough that this tree doesnt matter#
+#Normal Term Ends In 12/1920#
+#Focus Tree Will Be Small#
 	focus = { #"Los Estados Desunidos De Mexico"
 		id = MEX_CAR_disunited_states_of_mexico
 		icon = GFX_focus_USA_placeholder
@@ -66,8 +97,17 @@ focus_tree = {
 		x = 0
 		y = 0
 
+		available = {
+			NOT = {
+				has_flag = mex_state_of_emergency
+			}
+		}
+	
+		cancel_if_invailid = false
+
 		completion_reward = {
 			custom_effect_tooltip = carranzas_mexican_emergency_tt
+			add_stability = 0.05
 			hidden_effect = {
 				country_event = {
 					id = event.MEX_carranzas.1
@@ -76,30 +116,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = MEX_CAR_the_economy
-		icon = GFX_focus_USA_placeholder
-
-		cost = 3
-
-		x = 4
-		y = 1
-
-		available = {
-			NOT = {
-				has_flag = mex_state_of_emergency
-			}
-		}
-		prerequisite = { focus = MEX_CAR_disunited_states_of_mexico}
-		relative_position_id = MEX_CAR_disunited_states_of_mexico
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = { #"Los Terrenos"
-		id = MEX_CAR_the_land
+	focus = { #"La Ultima Frontera"#
+		id = MEX_CAR_the_last_frontier
 		icon = GFX_focus_USA_placeholder
 
 		cost = 3
@@ -112,72 +130,9 @@ focus_tree = {
 				has_flag = mex_state_of_emergency
 			}
 		}
-		prerequisite = { focus = MEX_CAR_the_economy}
-		relative_position_id = MEX_CAR_the_economy
+	
+		cancel_if_invailid = false
 
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = MEX_CAR_urban_industrialization
-		icon = GFX_focus_USA_placeholder
-
-		cost = 3
-
-		x = 2
-		y = 1
-
-		available = {
-			NOT = {
-				has_flag = mex_state_of_emergency
-			}
-		}
-		prerequisite = { focus = MEX_CAR_the_economy}
-		relative_position_id = MEX_CAR_the_economy
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = MEX_CAR_petroleum
-		icon = GFX_focus_USA_placeholder
-
-		cost = 3
-
-		x = 5
-		y = 1
-
-		available = {
-			NOT = {
-				has_flag = mex_state_of_emergency
-			}
-		}
-		prerequisite = { focus = MEX_CAR_the_economy}
-		relative_position_id = MEX_CAR_the_economy
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = { #"El Viejo No Roba" (Anti-Corruption Tree)
-		id = MEX_CAR_he_doesnt_steal
-		icon = GFX_focus_USA_placeholder
-
-		cost = 3
-
-		x = -10
-		y = 1
-
-		available = {
-			NOT = {
-				has_flag = mex_state_of_emergency
-			}
-		}
 		prerequisite = { focus = MEX_CAR_disunited_states_of_mexico}
 		relative_position_id = MEX_CAR_disunited_states_of_mexico
 
@@ -186,13 +141,13 @@ focus_tree = {
 		}
 	}
 
-	focus = { #"Pero Deja Otros Robar"
-		id = MEX_CAR_but_he_lets_others_steal
+	focus = { #"Reforme De Los Terrenos"
+		id = MEX_CAR_land_reform
 		icon = GFX_focus_USA_placeholder
 
 		cost = 3
 
-		x = 0
+		x = 3
 		y = 1
 
 		available = {
@@ -200,121 +155,35 @@ focus_tree = {
 				has_flag = mex_state_of_emergency
 			}
 		}
-		prerequisite = { focus = MEX_CAR_he_doesnt_steal}
-		relative_position_id = MEX_CAR_he_doesnt_steal
+	
+		cancel_if_invailid = false
+
+		prerequisite = { focus = MEX_CAR_disunited_states_of_mexico}
+		relative_position_id = MEX_CAR_disunited_states_of_mexico
 
 		completion_reward = {
 
 		}
 	}
 
-	focus = { #"Want To Know Why Its Called A Mordida ?"
-		id = MEX_CAR_want_to_know_why_its_called_a_mordida
-		icon = GFX_focus_USA_placeholder
-
-		cost = 3
-
-		x = -2
-		y = 1
-
-		available = {
-			NOT = {
-				has_flag = mex_state_of_emergency
-			}
-		}
-		prerequisite = { focus = MEX_CAR_but_he_lets_others_steal}
-		relative_position_id = MEX_CAR_but_he_lets_others_steal
-
-		completion_reward = {
-
-		}
-	}
+	#Adolfo De La Huerta#
 
 	focus = { 
-		id = MEX_CAR_hunger_consumes_the_system
+		id = MEX_ADH_state_of_emergency
 		icon = GFX_focus_USA_placeholder
 
-		cost = 3
+		cost = 10
 
-		x = -2
-		y = 1
+		x = 10
+		y = 0
 
 		available = {
 			NOT = {
 				has_flag = mex_state_of_emergency
 			}
 		}
-
-		prerequisite = { focus = MEX_CAR_want_to_know_why_its_called_a_mordida}
-		relative_position_id = MEX_CAR_want_to_know_why_its_called_a_mordida
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = { 
-		id = MEX_CAR_the_system_must_change
-		icon = GFX_focus_USA_placeholder
-
-		cost = 3
-
-		x = 1
-		y = 3
-
-		available = {
-			NOT = {
-				has_flag = mex_state_of_emergency
-			}
-		}
-
-		prerequisite = { focus = MEX_CAR_systematic_failure}
-		prerequisite = { focus = MEX_CAR_want_to_know_why_its_called_a_mordida}
-		relative_position_id = MEX_CAR_want_to_know_why_its_called_a_mordida
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = { 
-		id = MEX_CAR_realizing_the_failures
-		icon = GFX_focus_USA_placeholder
-
-		cost = 3
-
-		x = 0
-		y = 1
-
-		available = {
-			NOT = {
-				has_flag = mex_state_of_emergency
-			}
-		}
-		prerequisite = { focus = MEX_CAR_but_he_lets_others_steal}
-		relative_position_id = MEX_CAR_but_he_lets_others_steal
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = { 
-		id = MEX_CAR_systematic_failure
-		icon = GFX_focus_USA_placeholder
-
-		cost = 3
-
-		x = 0
-		y = 1
-
-		available = {
-			NOT = {
-				has_flag = mex_state_of_emergency
-			}
-		}
-		prerequisite = { focus = MEX_CAR_realizing_the_failures}
-		relative_position_id = MEX_CAR_realizing_the_failures
+	
+		cancel_if_invailid = false
 
 		completion_reward = {
 
@@ -322,118 +191,436 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MEX_CAR_unity_in_peace
+		id = MEX_ADH_call_the_firefighters
 		icon = GFX_focus_USA_placeholder
-
+		
 		cost = 3
-
-		x = 2
+		
+		x = -3
 		y = 1
-
+		
 		available = {
 			NOT = {
 				has_flag = mex_state_of_emergency
 			}
 		}
-		prerequisite = { focus = MEX_CAR_but_he_lets_others_steal}
-		relative_position_id = MEX_CAR_but_he_lets_others_steal
+	
+		cancel_if_invailid = false
+
+		prerequisite = { focus = MEX_ADH_state_of_emergency}
+		relative_position_id = MEX_ADH_state_of_emergency
 
 		completion_reward = {
-
+			add_stability = 0.03
+			country_event = {
+				id = event.MEX_adolfo.1
+			}
 		}
 	}
+
+	#Pluctaro Calles#
 
 	focus = {
-		id = MEX_CAR_legacy_of_the_revolution
+		id = MEX_PEC_disunited_states_of_mexico
 		icon = GFX_focus_USA_placeholder
-
+		
 		cost = 3
-
-		x = 0
-		y = 1
-
+		
+		x = 30
+		y = 0
+		
 		available = {
 			NOT = {
 				has_flag = mex_state_of_emergency
 			}
 		}
-		prerequisite = { focus = MEX_CAR_unity_in_peace}
-		relative_position_id = MEX_CAR_unity_in_peace
+	
+		cancel_if_invailid = false
 
 		completion_reward = {
 
 		}
 	}
 
-	focus = {
-		id = MEX_CAR_reconciliation
-		icon = GFX_focus_USA_placeholder
+	focus = { #"El Viejo No Roba" (Anti-Corruption Tree)
+    id = MEX_PEC_he_doesnt_steal
+    icon = GFX_focus_USA_placeholder
 
-		cost = 3
+    cost = 3
 
-		x = -1
-		y = 2
+    x = -10
+    y = 1
 
-		available = {
-			NOT = {
-				has_flag = mex_state_of_emergency
-			}
-		}
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
 
-		prerequisite = { focus = MEX_CAR_systematic_failure}
-		relative_position_id = MEX_CAR_legacy_of_the_revolution
+    cancel_if_invailid = false
 
-		completion_reward = {
+    prerequisite = { focus = MEX_PEC_disunited_states_of_mexico}
+    relative_position_id = MEX_PEC_disunited_states_of_mexico
 
-		}
-	}
+    completion_reward = {
 
-	focus = {
-		id = MEX_CAR_uniting_families_together
-		icon = GFX_focus_USA_placeholder
+    }
+}
 
-		cost = 3
+focus = { #"Pero Deja Otros Robar"
+    id = MEX_PEC_but_he_lets_others_steal
+    icon = GFX_focus_USA_placeholder
 
-		x = 0
-		y = 3
+    cost = 3
 
-		available = {
-			NOT = {
-				has_flag = mex_state_of_emergency
-			}
-		}
-		prerequisite = { focus = MEX_CAR_legacy_of_the_revolution}
-		relative_position_id = MEX_CAR_legacy_of_the_revolution
+    x = 0
+    y = 1
 
-		completion_reward = {
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+    
+    cancel_if_invailid = false
 
-		}
-	}
+    prerequisite = { focus = MEX_PEC_he_doesnt_steal}
+    relative_position_id = MEX_PEC_he_doesnt_steal
 
-	focus = { #"Juntos Somos mas Fuerte"
-		id = MEX_CAR_stronger_together
-		icon = GFX_focus_USA_placeholder
+    completion_reward = {
 
-		cost = 3
+    }
+}
 
-		x = 0
-		y = 2
+focus = { #"Want To Know Why Its Called A Mordida ?"
+    id = MEX_PEC_want_to_know_why_its_called_a_mordida
+    icon = GFX_focus_USA_placeholder
 
-		available = {
-			NOT = {
-				has_completed_focus = MEX_CAR_those_who_pay
-			}
+    cost = 3
 
-			NOT = {
-				has_flag = mex_state_of_emergency
-			}
-		}
-		prerequisite = { focus = MEX_CAR_uniting_families_together}
-		relative_position_id = MEX_CAR_uniting_families_together
+    x = -2
+    y = 1
 
-		completion_reward = {
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+    
+    cancel_if_invailid = false
+    prerequisite = { focus = MEX_PEC_but_he_lets_others_steal}
+    relative_position_id = MEX_PEC_but_he_lets_others_steal
 
-		}
-	}
+    completion_reward = {
+
+    }
+}
+
+focus = { 
+    id = MEX_PEC_hunger_consumes_the_system
+    icon = GFX_focus_USA_placeholder
+
+    cost = 3
+
+    x = -2
+    y = 1
+
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+    
+    cancel_if_invailid = false
+
+    prerequisite = { focus = MEX_PEC_want_to_know_why_its_called_a_mordida}
+    relative_position_id = MEX_PEC_want_to_know_why_its_called_a_mordida
+
+    completion_reward = {
+
+    }
+}
+
+focus = { 
+    id = MEX_PEC_nobody_expects_the_mexican_inquisition
+    icon = GFX_focus_USA_placeholder
+
+    cost = 3
+
+    x = -2
+    y = 1
+
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+    
+    cancel_if_invailid = false
+
+
+    prerequisite = { focus = MEX_PEC_hunger_consumes_the_system}
+    relative_position_id = MEX_PEC_hunger_consumes_the_system
+
+    completion_reward = {
+
+    }
+}
+
+focus = { 
+    id = MEX_PEC_the_peoples_mexico
+    icon = GFX_focus_USA_placeholder
+
+    cost = 3
+
+    x = 1
+    y = 1
+
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+
+    cancel_if_invailid = false
+
+    prerequisite = { focus = MEX_PEC_hunger_consumes_the_system}
+    relative_position_id = MEX_PEC_hunger_consumes_the_system
+
+    completion_reward = {
+
+    }
+}
+
+focus = { 
+    id = MEX_PEC_the_system_must_change
+    icon = GFX_focus_USA_placeholder
+
+    cost = 3
+
+    x = 1
+    y = 3
+
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+
+    cancel_if_invailid = false
+
+    prerequisite = { focus = MEX_PEC_systematic_failure}
+    prerequisite = { focus = MEX_PEC_want_to_know_why_its_called_a_mordida}
+    relative_position_id = MEX_PEC_want_to_know_why_its_called_a_mordida
+
+    completion_reward = {
+
+    }
+}
+
+focus = { 
+    id = MEX_PEC_realizing_the_failures
+    icon = GFX_focus_USA_placeholder
+
+    cost = 3
+
+    x = 0
+    y = 1
+
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+
+    cancel_if_invailid = false
+
+    prerequisite = { focus = MEX_PEC_but_he_lets_others_steal}
+    relative_position_id = MEX_PEC_but_he_lets_others_steal
+
+    completion_reward = {
+
+    }
+}
+
+focus = { 
+    id = MEX_PEC_systematic_failure
+    icon = GFX_focus_USA_placeholder
+
+    cost = 3
+
+    x = 0
+    y = 1
+
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+
+    cancel_if_invailid = false
+
+    prerequisite = { focus = MEX_PEC_realizing_the_failures}
+    relative_position_id = MEX_PEC_realizing_the_failures
+
+    completion_reward = {
+
+    }
+}
+
+focus = {
+    id = MEX_PEC_unity_in_peace
+    icon = GFX_focus_USA_placeholder
+
+    cost = 3
+
+    x = 2
+    y = 1
+
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+
+    cancel_if_invailid = false
+
+    prerequisite = { focus = MEX_PEC_but_he_lets_others_steal}
+    relative_position_id = MEX_PEC_but_he_lets_others_steal
+
+    completion_reward = {
+
+    }
+}
+
+focus = {
+    id = MEX_PEC_legacy_of_the_revolution
+    icon = GFX_focus_USA_placeholder
+
+    cost = 3
+
+    x = 0
+    y = 1
+
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+
+    cancel_if_invailid = false
+
+    prerequisite = { focus = MEX_PEC_unity_in_peace}
+    relative_position_id = MEX_PEC_unity_in_peace
+
+    completion_reward = {
+
+    }
+}
+
+focus = {
+    id = MEX_PEC_reconciliation
+    icon = GFX_focus_USA_placeholder
+
+    cost = 3
+
+    x = -1
+    y = 2
+
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+
+    cancel_if_invailid = false
+
+    prerequisite = { focus = MEX_PEC_systematic_failure}
+    relative_position_id = MEX_PEC_legacy_of_the_revolution
+
+    completion_reward = {
+
+    }
+}
+
+focus = {
+    id = MEX_PEC_hmm_what_do_i_do
+    icon = GFX_focus_USA_placeholder
+
+    cost = 3
+
+    x = -1
+    y = 2
+
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+
+    cancel_if_invailid = false
+
+    prerequisite = { focus = MEX_PEC_the_system_must_change}
+    prerequisite = { focus = MEX_PEC_reconciliation}
+    relative_position_id = MEX_PEC_reconciliation
+
+    completion_reward = {
+
+    }
+}
+
+focus = {
+    id = MEX_PEC_uniting_families_together
+    icon = GFX_focus_USA_placeholder
+
+    cost = 3
+
+    x = 0
+    y = 3
+
+    available = {
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+
+    cancel_if_invailid = false
+
+    prerequisite = { focus = MEX_PEC_legacy_of_the_revolution}
+    relative_position_id = MEX_PEC_legacy_of_the_revolution
+
+    completion_reward = {
+
+    }
+}
+
+focus = { #"Juntos Somos mas Fuerte"
+    id = MEX_PEC_stronger_together
+    icon = GFX_focus_USA_placeholder
+
+    cost = 3
+
+    x = 0
+    y = 2
+
+    available = {
+        NOT = {
+            has_completed_focus = MEX_PEC_those_who_pay
+        }
+
+        NOT = {
+            has_flag = mex_state_of_emergency
+        }
+    }
+
+    cancel_if_invailid = false
+
+    prerequisite = { focus = MEX_PEC_uniting_families_together}
+    relative_position_id = MEX_PEC_uniting_families_together
+
+    completion_reward = {
+
+    }
+}
 
 }

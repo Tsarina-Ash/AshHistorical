@@ -4,6 +4,7 @@ buildings = {
 	#    if provincial = yes, then show_on_map = X is amount per each province
 	#    if provincial = no, then show_on_map = X is amount per state
 
+	#Infrastructure#
 
 	infrastructure = {
 		base_cost = 6000
@@ -19,29 +20,20 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
-	arms_factory = {
-		show_on_map = 6
-		base_cost = 12000
-		base_cost_conversion = 8000
-		military_production = 1
-		icon_frame = 2
-		max_level = 25
+	#Power Plants
+
+	nuclear_reactor = {
+		show_on_map = 1
+		base_cost = 30000
+		icon_frame = 13
+		nuclear_reactor = yes
+		nuclear_production_factor = 1
+		max_level = 10
 		shares_slots = yes
-		value = 8
+		value = 10
 		infrastructure_construction_effect = yes
 	}
 
-	industrial_complex = {
-		show_on_map = 6
-		base_cost = 12000
-		base_cost_conversion = 8000
-		general_production = 1
-		icon_frame = 1
-		max_level = 25
-		shares_slots = yes
-		value = 5
-		infrastructure_construction_effect = yes
-	}
 
 	thermoelectric_plant = {
 		show_on_map = 6
@@ -53,7 +45,9 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
-	government_building = {
+	#Government Services#
+
+	administrative_complex = {
 		show_on_map = 6
 		base_cost = 12000
 		icon_frame = 1
@@ -73,17 +67,39 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
-	nuclear_reactor = {
-		show_on_map = 1
-		base_cost = 30000
-		icon_frame = 13
-		nuclear_reactor = yes
-		nuclear_production_factor = 1
+	research_center = {
+		show_on_map = 6
+		base_cost = 12000
+		icon_frame = 1
 		max_level = 10
 		shares_slots = yes
-		value = 10
+		value = 5
 		infrastructure_construction_effect = yes
 	}
+
+	hospitals = {
+		show_on_map = 6
+		base_cost = 12000
+		icon_frame = 1
+		max_level = 10
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+	}
+
+	#MIlitary Services#
+
+	military_academy = {
+		show_on_map = 6
+		base_cost = 12000
+		icon_frame = 1
+		max_level = 10
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+	}
+
+	#Military Infrastructure#
 
 	air_base = {
 		show_on_map = 1
@@ -138,6 +154,33 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
+	radar_station = {
+		show_on_map = 1
+		base_cost = 4000
+		icon_frame = 11
+		radar = yes
+		max_level = 6 
+		damage_factor = 0.5
+		value = 4
+		centered = yes
+		allied_build = yes
+		infrastructure_construction_effect = yes
+	}
+
+	rocket_site = {
+		show_on_map = 1
+		base_cost = 7000
+		icon_frame = 12
+		rocket_production = 5
+		rocket_launch_capacity = 1
+		max_level = 5
+		shares_slots = yes
+		value = 1
+		infrastructure_construction_effect = yes
+	}
+
+	#Forts#
+
 	bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
@@ -167,6 +210,8 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
+	#Dockyards#
+
 	dockyard = {
 		show_on_map = 1
 		show_on_map_meshes = 3
@@ -181,6 +226,8 @@ buildings = {
 	}
 
 	
+	#Anti-Air#
+
 	anti_air_building = {
 		show_on_map = 3
 		base_cost = 2500
@@ -193,6 +240,8 @@ buildings = {
 		value = 1
 		infrastructure_construction_effect = yes
 	}
+
+	#Fuel/Rubber#
 
 	synthetic_refinery = {
 		show_on_map = 1
@@ -222,28 +271,4 @@ buildings = {
 		max_fuel_building = 100.0
 	}
 
-	radar_station = {
-		show_on_map = 1
-		base_cost = 4000
-		icon_frame = 11
-		radar = yes
-		max_level = 6 
-		damage_factor = 0.5
-		value = 4
-		centered = yes
-		allied_build = yes
-		infrastructure_construction_effect = yes
-	}
-
-	rocket_site = {
-		show_on_map = 1
-		base_cost = 7000
-		icon_frame = 12
-		rocket_production = 5
-		rocket_launch_capacity = 1
-		max_level = 5
-		shares_slots = yes
-		value = 1
-		infrastructure_construction_effect = yes
-	}
 }

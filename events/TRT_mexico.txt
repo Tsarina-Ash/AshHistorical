@@ -1,4 +1,5 @@
 add_namespace = MEX_carranzas
+add_namespace = MEX_adolfo
 
 country_event = { #choosing sucessor
 	id = MEX_carranzas.1
@@ -9,18 +10,16 @@ country_event = { #choosing sucessor
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	option = { #Ignacio Bonillas
-		name = MEX_carranzas.1.a
-		#leads to a coup but gives a bonus
+	option = { #Historial/Leads To Plan De Agua Prieta
+		name = MEX_carranzasAppointingIgnacioBonillas.1.a
 		hidden_effect = { recruit_character = MEX_ignacio_bonillas }
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.03
 		}
 	}
-	option = { #Adolfo de la Huerta
-		name = MEX_carranzas.1.b
-		#does nothing, but doens't lead to a coup
+	option = { 
+		name = MEX_carranzasAppointingAdolfoDeHuerta.1.a
 		add_popularity = {
 			ideology = neutrality
 			popularity = 0.03
@@ -42,10 +41,26 @@ country_event = { #generals draft of agua prieta
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	option = { 
-		name = MEX_carranzas.2.a
+	option = { #Historical/Huerta Becomes Intermediate President
+		name = MEX_carranzasFight.1.a
 	}
-	option = { 
-		name = MEX_carranzas.2.b
+
+	option = { #Huerta Become Intermediate President
+		name = MEX_carranzasScedeToDemands.1.a
+	}
+}
+
+country_event = {
+	id = MEX_adolfo.1
+	title = MEX_adolfo.1.t
+	desc = MEX_adolfo.1.d
+	#picture = GFX_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = MEX_carranzas.1.a
+
 	}
 }
