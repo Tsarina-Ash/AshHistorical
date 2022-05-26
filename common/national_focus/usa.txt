@@ -3438,12 +3438,6 @@ focus = {
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 
 	}
@@ -3463,12 +3457,6 @@ focus = {
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 
 	}
@@ -3488,12 +3476,6 @@ focus = {
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 
 	}
@@ -3513,12 +3495,6 @@ focus = {
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 
 	}
@@ -3538,12 +3514,6 @@ focus = {
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 
 	}
@@ -3563,12 +3533,6 @@ focus = {
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 
 	}
@@ -3589,12 +3553,6 @@ focus = {
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 
 	}
@@ -3614,12 +3572,6 @@ focus = {
 
 	available_if_capitulated = no	
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 
 	}
@@ -3639,12 +3591,6 @@ focus = {
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 
 	}
@@ -3664,12 +3610,6 @@ focus = { #"Crush Dixie" I need better focus names
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 
 	}
@@ -3690,12 +3630,6 @@ focus = {
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 
 	}
@@ -3716,12 +3650,6 @@ focus = { # Focus name "United We Stand" |Event/letter to enemy by Roosevelt"[Le
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 
 	}
@@ -3741,17 +3669,10 @@ focus = {
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 
 	}
 }
-
 
 #COOLIDGE EX-VICE-PRESIDENT PRESIDENCY#
 
@@ -3785,12 +3706,6 @@ focus = {
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 		country_event = {
 			id = event.usaCoolidge.2
@@ -3811,12 +3726,6 @@ focus = {
 	relative_position_id = Coolidge_USA_address_the_nation
 
 	available_if_capitulated = no		
-
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
 	
 	completion_reward = {
 		#if = has_variable {USA_roaring_twenties_variables} (
@@ -3854,12 +3763,6 @@ focus = {
 	relative_position_id = Coolidge_USA_address_the_nation
 
 	available_if_capitulated = no		
-
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3879,12 +3782,6 @@ focus = {
 	relative_position_id = Coolidge_USA_address_the_nation
 
 	available_if_capitulated = no		
-
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3904,12 +3801,6 @@ focus = {
 	relative_position_id = Coolidge_USA_moving_past_wilson
 
 	available_if_capitulated = no		
-
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3931,12 +3822,6 @@ focus = {
 
 	available_if_capitulated = no		
 
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
-	
 	completion_reward = {
 		add_political_power = 50
 	}
@@ -3955,12 +3840,6 @@ focus = {
 	relative_position_id = Coolidge_USA_address_the_nation
 
 	available_if_capitulated = no		
-
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
 	
 	completion_reward = {
 		add_political_power = 50
@@ -3982,12 +3861,6 @@ focus = {
 	
 
 	available_if_capitulated = no		
-
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4008,12 +3881,6 @@ focus = {
 	mutually_exclusive = { focus = Coolidge_USA_kiss_the_curb } 
 
 	available_if_capitulated = no		
-
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4033,12 +3900,6 @@ focus = {
 	relative_position_id = Coolidge_USA_business_as_usual
 
 	available_if_capitulated = no		
-
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4059,12 +3920,6 @@ focus = {
 	relative_position_id = Coolidge_USA_address_the_nation
 
 	available_if_capitulated = no		
-
-	available = {
-		NOT = {
-			has_flag = USA_state_of_emergency
-		}
-	}
 	
 	completion_reward = {
 		add_political_power = 50
@@ -4083,7 +3938,13 @@ focus = {
 	y = 20
 	
 	available_if_capitulated =  no
-	
+
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 		country_event = {
 			id = event.usaLeonardWood.1 #he will have a 40% chance to be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
