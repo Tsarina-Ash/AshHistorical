@@ -1834,4 +1834,64 @@ focus = {
 	}
 }
 
+#Liberal-Farmers Party Subpath
+focus = {
+	id = CAN_the_liberal_farmers_party
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 4
+	y = 1
+
+	prerequisite = { focus = CAN_a_new_party }
+	mutually_exclusive = { focus = CAN_the_farmers_party }
+	mutually_exclusive = { focus = CAN_the_conservative_farmers_party }
+	relative_position_id = CAN_a_new_party 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_the_saint_lawrence_agreement
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = CAN_the_liberal_farmers_party }
+	relative_position_id = CAN_the_liberal_farmers_party 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = CAN_promise_quebec_reform
+	icon = GFX_focus_USA_placeholder
+
+	cost = 5
+
+	x = 0
+	y = 1
+
+	prerequisite = { focus = CAN_the_saint_lawrence_agreement }
+	relative_position_id = CAN_the_saint_lawrence_agreement 
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
 }

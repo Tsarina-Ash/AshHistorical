@@ -1,0 +1,73 @@
+#Modded 
+characters={
+	#PMs
+	CAN_robert_borden = {
+		name = CAN_robert_borden 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAN/CAN_robert_borden.dds"
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			traits = { }
+			expire = "1950.6.22"
+		}
+	}
+
+	CAN_arthur_meighen = {
+		name = CAN_arthur_meighen 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAN/CAN_arthur_meighen.dds"
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			traits = { }
+			expire = "1950.6.22"
+		}
+	}
+
+	CAN_william_white = {
+		name = CAN_william_white
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAN/CAN_william_white.dds"
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			traits = { }
+			expire = "1950.6.22"
+		}
+	}
+
+
+	CAN_thomas_crerar = {
+		name = CAN_thomas_crerar 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAN/CAN_thomas_crerar.dds"
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			traits = { }
+			expire = "1950.6.22"
+		}
+	}
+
+	CAN_mackenzie_king = {
+		name = CAN_mackenzie_king 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAN/CAN_mackenzie_king.dds"
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			traits = { }
+			expire = "1950.6.22"
+		}
+	}

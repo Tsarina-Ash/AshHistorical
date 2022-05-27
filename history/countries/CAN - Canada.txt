@@ -28,8 +28,10 @@ set_stability = 0.8
 set_war_support = 0.1
 
 recruit_character = CAN_robert_borden
-recruit_character = CAN_mackenzie_king
+recruit_character = CAN_arthur_meighen
+recruit_character = CAN_william_white
 recruit_character = CAN_thomas_crerar
+recruit_character = CAN_mackenzie_king
 
 
 # Starting tech
