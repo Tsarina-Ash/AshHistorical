@@ -24,6 +24,30 @@ ideas = {
 			}
 		}
 
+		nassuve_economic_inequality = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = Economy_Military_Austerity
+			
+			rule = {
+
+			}
+			modifier = {
+				weekly_stability_factor = -0.04
+				political_power_gain = -0.1
+				
+			}
+		}
+
 		moral_diplomacy = {
 			
 			allowed = {

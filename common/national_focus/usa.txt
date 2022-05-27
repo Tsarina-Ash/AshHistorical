@@ -39,7 +39,8 @@ focus_tree = {
 #Wendel Wilkie#
 #Huey Long#
 #Thomas Dewey#
-#Jay Lovestone# - #Added by Dina
+#Barry Goldwater#
+#Adlai Stevenson#
 
 # D = Democrat
 # R = Republican
@@ -50,7 +51,8 @@ focus_tree = {
 #1920 pres election (not much variation from hist because it is election year# (May Add Socialist Party ?)
 #Wilson (D) Pres [Added]
 #James Cox (D) Pres [WIP]
-#FDR (D) Vice [WIP]
+#A Mitchel Palmer (D) [WIP]
+#FDR (D) Vice [Added]
 #Harding (R) Pres [Added]
 #Frank Lorren Owen (R) Pres [WIP]
 #Leonard Wood (R) Pres [Added]
@@ -87,6 +89,9 @@ focus_tree = {
 #https://en.wikipedia.org/wiki/Woodrow_Wilson#1920_election#
 #https://en.wikipedia.org/wiki/Woodrow_Wilson#Presidency_(1913%E2%80%931921)#
 #https://www.history.com/topics/us-presidents/woodrow-wilson#
+
+#Possible Palmer Presidency
+#https://en.wikipedia.org/wiki/A._Mitchell_Palmer
 
 #Possible James M Cox Path#
 #https://en.wikipedia.org/wiki/James_M._Cox#
@@ -3404,11 +3409,50 @@ focus = {
 	}
 }
 
+#JAMES COX PRESIDENCY#
+#https://en.wikipedia.org/wiki/James_M._Cox#
+#Focuses on domestic issues/ the economy rather than league of nations and doreign policy.#
+
+focus = { # "The Malaise Unveiled"
+	id = JMC_USA_innaugaration
+	icon = GFX_focus_generic_self_management
+
+	cost = 1
+
+	x = 20
+	y = 15
+	
+	available_if_capitulated =  no
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = JMC_USA_innaugaration }
+	relative_position_id = JMC_USA_innaugaration
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
 #FDR VICE-PRESIDENT PRESIDENCY#
 #https://www.merriam-webster.com/dictionary/fifth%20column#:~:text=Definition%20of%20fifth%20column,defense%20lines%20or%20national%20borders#
 #If a southern civil war happens or the US loses a war against Mexico#
 
-focus = {
+focus = { # "The Malaise Unveiled"
 	id = FDR_USA_EXVICE_private_innaugaration
 	icon = GFX_focus_generic_self_management
 
