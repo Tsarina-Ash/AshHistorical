@@ -3399,26 +3399,11 @@ calculate_fielded_manpower = {
 	set_variable = { cv_fighter_manpower_k = 0.02 }
 	multiply_variable = { cv_fighter_manpower_k = num_deployed_planes_with_type@cv_fighter_equipment }
 
-	set_variable = { light_stealth_manpower_k = 0.04 }
-	multiply_variable = { light_stealth_manpower_k = num_deployed_planes_with_type@light_stealth_equipment }
-
 	set_variable = { cas_manpower_k = 0.02 }
 	multiply_variable = { cas_manpower_k = num_deployed_planes_with_type@CAS_equipment }
 
 	set_variable = { cv_cas_manpower_k = 0.02 }
 	multiply_variable = { cv_cas_manpower_k = num_deployed_planes_with_type@cv_CAS_equipment }
-
-	set_variable = { mca_manpower_k = 0.02 }
-	multiply_variable = { mca_manpower_k = num_deployed_planes_with_type@mca_equipment }
-
-	set_variable = { cv_mca_manpower_k = 0.04 }
-	multiply_variable = { cv_mca_manpower_k = num_deployed_planes_with_type@cv_mca_equipment }
-
-	set_variable = { interceptor_manpower_k = 0.02 }
-	multiply_variable = { interceptor_manpower_k = num_deployed_planes_with_type@interceptor_equipment }
-
-	set_variable = { asw_helicopter_manpower_k = 0.01 }
-	multiply_variable = { asw_helicopter_manpower_k = num_deployed_planes_with_type@asw_helicopter_equipment }
 
 	set_variable = { nav_bomber_manpower_k = 0.02 }
 	multiply_variable = { nav_bomber_manpower_k = num_deployed_planes_with_type@nav_bomber_equipment }
@@ -3432,46 +3417,29 @@ calculate_fielded_manpower = {
 	set_variable = { tac_bomber_manpower_k = 0.04 }
 	multiply_variable = { tac_bomber_manpower_k = num_deployed_planes_with_type@tac_bomber_equipment }
 
-	set_variable = { tac_stealth_manpower_k = 0.06 }
-	multiply_variable = { tac_stealth_manpower_k = num_deployed_planes_with_type@tac_stealth_equipment }
-
 	set_variable = { strat_bomber_manpower_k = 0.08 }
 	multiply_variable = { strat_bomber_manpower_k = num_deployed_planes_with_type@strat_bomber_equipment }
 
-	set_variable = { strat_stealth_manpower_k = 0.1 }
-	multiply_variable = { strat_stealth_manpower_k = num_deployed_planes_with_type@strat_stealth_equipment }
-
 	set_variable = { transport_plane_manpower_k = 0.08 }
 	multiply_variable = { transport_plane_manpower_k = num_deployed_planes_with_type@transport_plane_equipment }
-
-	set_variable = { gunship_manpower_k = 0.04 }
-	multiply_variable = { gunship_manpower_k = num_deployed_planes_with_type@gunship_equipment }
 
 	set_variable = { airforce_fielded_manpower_k = 0 }
 
 	add_to_variable = { airforce_fielded_manpower_k = fighter_manpower_k }
 	#do not do cv fighters as this is navy stuff 
-	add_to_variable = { airforce_fielded_manpower_k = light_stealth_manpower_k }
 	add_to_variable = { airforce_fielded_manpower_k = cas_manpower_k }
 	# do not do CV cas as this is naval stuff 
-	add_to_variable = { airforce_fielded_manpower_k = mca_manpower_k }
 	# do not do cv MCA as this is naval stuff 
-	add_to_variable = { airforce_fielded_manpower_k = interceptor_manpower_k }
 	# do not do ASW helicopters, naval stuff
 	# DON'T do naval bombers, navy
 	# ditto ^ for CV
 	add_to_variable = { airforce_fielded_manpower_k = scout_plane_manpower_k }
 	add_to_variable = { airforce_fielded_manpower_k = tac_bomber_manpower_k }
-	add_to_variable = { airforce_fielded_manpower_k = tac_stealth_manpower_k }
 	add_to_variable = { airforce_fielded_manpower_k = strat_bomber_manpower_k }
-	add_to_variable = { airforce_fielded_manpower_k = strat_stealth_manpower_k }
 	add_to_variable = { airforce_fielded_manpower_k = transport_plane_manpower_k }
-	add_to_variable = { airforce_fielded_manpower_k = gunship_manpower_k }
 
 	set_variable = { naval_aviation_fielded_manpower_k = cv_fighter_manpower_k }
 	add_to_variable = { naval_aviation_fielded_manpower_k = cv_cas_manpower_k }
-	add_to_variable = { naval_aviation_fielded_manpower_k = cv_MCA_manpower_k }
-	add_to_variable = { naval_aviation_fielded_manpower_k = asw_helicopter_manpower_k }
 	add_to_variable = { naval_aviation_fielded_manpower_k = nav_bomber_manpower_k }
 	add_to_variable = { naval_aviation_fielded_manpower_k = cv_nav_bomber_manpower_k }
 
@@ -3491,17 +3459,8 @@ calculate_fielded_manpower = {
 
 	# now it's time to do the navy crap 
 
-	set_variable = { corvette_manpower_k = 0.125 }
-	multiply_variable = { corvette_manpower_k = num_ships_with_type@corvette }
-
-	set_variable = { frigate_manpower_k = 0.25 }
-	multiply_variable = { frigate_manpower_k = num_ships_with_type@frigate }
-
 	set_variable = { destroyer_manpower_k = 0.315 }
 	multiply_variable = { destroyer_manpower_k = num_ships_with_type@destroyer }
-
-	set_variable = { cruiser_manpower_k = 0.6 }
-	multiply_variable = { cruiser_manpower_k = num_ships_with_type@cruiser }
 
 	set_variable = { battleship_manpower_k = 2.1 }
 	multiply_variable = { battleship_manpower_k = num_ships_with_type@battleship }
@@ -3512,10 +3471,7 @@ calculate_fielded_manpower = {
 	set_variable = { submarine_manpower_k = 0.095 }
 	multiply_variable = { submarine_manpower_k = num_ships_with_type@submarine }
 
-	add_to_variable = { total_naval_manpower_fielded_k = corvette_manpower_k }
-	add_to_variable = { total_naval_manpower_fielded_k = frigate_manpower_k }
 	add_to_variable = { total_naval_manpower_fielded_k = destroyer_manpower_k }
-	add_to_variable = { total_naval_manpower_fielded_k = cruiser_manpower_k }
 	add_to_variable = { total_naval_manpower_fielded_k = battleship_manpower_k }
 	add_to_variable = { total_naval_manpower_fielded_k = carrier_manpower_k }
 	add_to_variable = { total_naval_manpower_fielded_k = submarine_manpower_k }
@@ -3538,14 +3494,6 @@ calculate_fielded_manpower = {
 	multiply_variable = { anti_air_manpower_k = num_battalions_with_type@anti_air }
 	add_to_variable = { army_fielded_manpower_k = anti_air_manpower_k }
 
-	set_variable = { laser_anti_air_manpower_k = 0.25 }
-	multiply_variable = { laser_anti_air_manpower_k = num_battalions_with_type@laser_anti_air }
-	add_to_variable = { army_fielded_manpower_k = laser_anti_air_manpower_k }
-
-	set_variable = { APC_manpower_k = 1.2 }
-	multiply_variable = { APC_manpower_k = num_battalions_with_type@APC }
-	add_to_variable = { army_fielded_manpower_k = APC_manpower_k }
-
 	set_variable = { artillery_brigade_manpower_k = 0.5 }
 	multiply_variable = { artillery_brigade_manpower_k = num_battalions_with_type@artillery_brigade }
 	add_to_variable = { army_fielded_manpower_k = artillery_brigade_manpower_k }
@@ -3567,41 +3515,13 @@ calculate_fielded_manpower = {
 	add_to_variable = { army_fielded_manpower_k = field_hospital_manpower_k }
 
 
-	set_variable = { garrison_manpower_k = 1 }
-	multiply_variable = { garrison_manpower_k = num_battalions_with_type@garrison }
-	add_to_variable = { army_fielded_manpower_k = garrison_manpower_k }
-
 	set_variable = { heavy_armor_manpower_k = 0.5 }
 	multiply_variable = { heavy_armor_manpower_k = num_battalions_with_type@heavy_armor }
 	add_to_variable = { army_fielded_manpower_k = heavy_armor_manpower_k }
 
-	set_variable = { scout_helicopter_company_manpower_k = 0.3 }
-	multiply_variable = { scout_helicopter_company_manpower_k = num_battalions_with_type@scout_helicopter_company }
-	add_to_variable = { army_fielded_manpower_k = scout_helicopter_company_manpower_k }
-
-	set_variable = { transport_helicopter_company_manpower_k = 0.3 }
-	multiply_variable = { transport_helicopter_company_manpower_k = num_battalions_with_type@transport_helicopter_company }
-	add_to_variable = { army_fielded_manpower_k = transport_helicopter_company_manpower_k }
-
-	set_variable = { attack_helicopter_company_manpower_k = 0.6 }
-	multiply_variable = { attack_helicopter_company_manpower_k = num_battalions_with_type@attack_helicopter_company }
-	add_to_variable = { army_fielded_manpower_k = attack_helicopter_company_manpower_k }
-
-	set_variable = { IFV_manpower_k = 0.5 }
-	multiply_variable = { IFV_manpower_k = num_battalions_with_type@IFV }
-	add_to_variable = { army_fielded_manpower_k =  IFV_manpower_k }
-
 	set_variable = { infantry_manpower_k = 1 }
 	multiply_variable = { infantry_manpower_k = num_battalions_with_type@infantry }
 	add_to_variable = { army_fielded_manpower_k =  infantry_manpower_k }
-
-	set_variable = { light_infantry_manpower_k = 0.8 }
-	multiply_variable = { light_infantry_manpower_k = num_battalions_with_type@light_infantry }
-	add_to_variable = { army_fielded_manpower_k =  light_infantry_manpower_k }
-
-	set_variable = { elite_infantry_manpower_k = 1 }
-	multiply_variable = { elite_infantry_manpower_k = num_battalions_with_type@elite_infantry }
-	add_to_variable = { army_fielded_manpower_k =  elite_infantry_manpower_k }
 
 	set_variable = { marine_manpower_k = 1 }
 	multiply_variable = { marine_manpower_k = num_battalions_with_type@marine }
@@ -3615,10 +3535,6 @@ calculate_fielded_manpower = {
 	multiply_variable = { motorized_manpower_k = num_battalions_with_type@motorized }
 	add_to_variable = { army_fielded_manpower_k = motorized_manpower_k }
 
-	set_variable = { kugelpanzer_manpower_k = 0.5 }
-	multiply_variable = { kugelpanzer_manpower_k = num_battalions_with_type@kugelpanzer }
-	add_to_variable = { army_fielded_manpower_k = kugelpanzer_manpower_k }
-
 	set_variable = { light_armor_manpower_k = 0.5 }
 	multiply_variable = { light_armor_manpower_k = num_battalions_with_type@light_armor }
 	add_to_variable = { army_fielded_manpower_k = light_armor_manpower_k }
@@ -3630,18 +3546,6 @@ calculate_fielded_manpower = {
 	set_variable = { maintenance_company_manpower_k = 0.5 }
 	multiply_variable = { maintenance_company_manpower_k = num_battalions_with_type@maintenance_company }
 	add_to_variable = { army_fielded_manpower_k = maintenance_company_manpower_k }
-
-	set_variable = { maus_manpower_k = 0.6 }
-	multiply_variable = { maus_manpower_k = num_battalions_with_type@maus }
-	add_to_variable = { army_fielded_manpower_k = maus_manpower_k }
-
-	set_variable = { flakmaus_manpower_k = 0.6 }
-	multiply_variable = { flakmaus_manpower_k = num_battalions_with_type@flakmaus }
-	add_to_variable = { army_fielded_manpower_k = flakmaus_manpower_k }
-
-	set_variable = { MBT_manpower_k = 0.5 }
-	multiply_variable = { MBT_manpower_k = num_battalions_with_type@MBT }
-	add_to_variable = { army_fielded_manpower_k = MBT_manpower_k }
 
 	set_variable = { medium_armor_manpower_k = 0.5 }
 	multiply_variable = { medium_armor_manpower_k = num_battalions_with_type@medium_armor }
@@ -3659,10 +3563,6 @@ calculate_fielded_manpower = {
 	multiply_variable = { engineer_manpower_k = num_battalions_with_type@engineer }
 	add_to_variable = { army_fielded_manpower_k = engineer_manpower_k }
 
-	set_variable = { air_assault_manpower_k = 0.8 }
-	multiply_variable = { air_assault_manpower_k = num_battalions_with_type@air_assault }
-	add_to_variable = { army_fielded_manpower_k = air_assault_manpower_k }
-
 	set_variable = { recon_manpower_k = 0.5 }
 	multiply_variable = { recon_manpower_k = num_battalions_with_type@recon }
 	add_to_variable = { army_fielded_manpower_k = recon_manpower_k }
@@ -3670,14 +3570,6 @@ calculate_fielded_manpower = {
 	set_variable = { mot_recon_manpower_k = 0.5 }
 	multiply_variable = { mot_recon_manpower_k = num_battalions_with_type@mot_recon }
 	add_to_variable = { army_fielded_manpower_k = mot_recon_manpower_k }
-
-	set_variable = { IFV_recon_manpower_k = 0.5 }
-	multiply_variable = { IFV_recon_manpower_k = num_battalions_with_type@IFV_recon }
-	add_to_variable = { army_fielded_manpower_k = IFV_recon_manpower_k }
-
-	set_variable = { MBT_recon_manpower_k = 0.5 }
-	multiply_variable = { MBT_recon_manpower_k = num_battalions_with_type@MBT_recon }
-	add_to_variable = { army_fielded_manpower_k = MBT_recon_manpower_k }
 
 	set_variable = { signal_company_recon_manpower_k = 0.5 }
 	multiply_variable = { signal_company_recon_manpower_k = num_battalions_with_type@signal_company }
@@ -3687,17 +3579,9 @@ calculate_fielded_manpower = {
 	multiply_variable = { light_sp_anti_air_brigade_manpower_k = num_battalions_with_type@light_sp_anti_air_brigade }
 	add_to_variable = { army_fielded_manpower_k = light_sp_anti_air_brigade_manpower_k }
 
-	set_variable = { sp_anti_air_brigade_manpower_k = 0.5 }
-	multiply_variable = { sp_anti_air_brigade_manpower_k = num_battalions_with_type@sp_anti_air_brigade }
-	add_to_variable = { army_fielded_manpower_k = sp_anti_air_brigade_manpower_k }
-
 	set_variable = { light_sp_artillery_brigade_manpower_k = 0.5 }
 	multiply_variable = { light_sp_artillery_brigade_manpower_k = num_battalions_with_type@light_sp_artillery_brigade }
 	add_to_variable = { army_fielded_manpower_k = light_sp_artillery_brigade_manpower_k }
-
-	set_variable = { sp_artillery_brigade_manpower_k = 0.5 }
-	multiply_variable = { sp_artillery_brigade_manpower_k = num_battalions_with_type@sp_artillery_brigade }
-	add_to_variable = { army_fielded_manpower_k = sp_anti_air_brigade_manpower_k }
 
 	set_variable = { super_heavy_armor_manpower_k = 0.5 }
 	multiply_variable = { super_heavy_armor_manpower_k = num_battalions_with_type@super_heavy_armor }
@@ -3863,11 +3747,11 @@ TNO_startup_econ_type = {
 		if = {
 			limit = {
 				OR = {
-					has_government = socialist
-					has_government = communist
-					has_government = esoteric_nazism
-					has_government = despotism
-					has_government = ultranationalism
+					# has_government = socialist
+					# has_government = communist
+					# has_government = esoteric_nazism
+					# has_government = despotism
+					# has_government = ultranationalism
 				}
 			}
 			set_variable = { TNO_economy_type = 3 }
@@ -3876,7 +3760,7 @@ TNO_startup_econ_type = {
 			limit = {
 				OR = {
 					has_government = fascism
-					has_government = national_socialism
+					# has_government = national_socialism
 				}
 			}
 			set_variable = { TNO_economy_type = 2 }
@@ -4437,31 +4321,6 @@ generate_state_gdps = {
 	}
 	else = {
 		multiply_variable = { state_value_factor = 0.5 }
-	}
-
-	#Industrial expertise
-	if = {
-		limit = { owner = { has_idea = tno_industrial_expertise_pre_industrial } }
-		multiply_variable = { state_value_factor = 0.7 }
-	}
-	else_if = {
-		limit = { owner = { has_idea = tno_industrial_expertise_incompetent } }
-		multiply_variable = { state_value_factor = 0.8 }
-	}
-	else_if = {
-		limit = { owner = { has_idea = tno_industrial_expertise_nascent } }
-		multiply_variable = { state_value_factor = 0.90 }
-	}
-	else_if = {
-		limit = { owner = { has_idea = tno_industrial_expertise_experienced } }
-		multiply_variable = { state_value_factor = 1 }
-	}
-	else_if = {
-		limit = { owner = { has_idea = tno_industrial_expertise_innovative } }
-		multiply_variable = { state_value_factor = 1.10 }
-	}
-	else = {
-		multiply_variable = { state_value_factor = 1 }
 	}
 
 	multiply_variable = { state_value = state_value_factor }

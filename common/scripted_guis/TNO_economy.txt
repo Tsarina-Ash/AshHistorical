@@ -2204,42 +2204,36 @@ scripted_gui = {
 				subtract_from_variable = { econ_admin_safety_slider_pct = 1 }
 				update_admin_mainslider = yes 
 				update_economy_tab = yes
-				TNO_calculate_actual_safety_policy_effectiveness = yes
 				custom_effect_tooltip = econ_admin_safety_slider_button_left_tt
 			}
 			Econ_admin_safety_slider_left_shift_click = {
 				subtract_from_variable = { econ_admin_safety_slider_pct = 10 }
 				update_admin_mainslider = yes 
 				update_economy_tab = yes
-				TNO_calculate_actual_safety_policy_effectiveness = yes
 				custom_effect_tooltip = econ_admin_safety_slider_button_left_tt
 			}
 			Econ_admin_safety_slider_left_control_click = {
 				set_variable = { econ_admin_safety_slider_pct = econ_admin_safety_minimal_pct }
 				update_admin_mainslider = yes 
 				update_economy_tab = yes
-				TNO_calculate_actual_safety_policy_effectiveness = yes
 				custom_effect_tooltip = econ_admin_safety_slider_button_left_tt
 			}
 			Econ_admin_safety_slider_right_click = {
 				add_to_variable = { econ_admin_safety_slider_pct = 1 }
 				update_admin_mainslider = yes 
 				update_economy_tab = yes
-				TNO_calculate_actual_safety_policy_effectiveness = yes
 				add_to_variable = { TNO_economy_GUI_dirty = 1 }
 			}
 			Econ_admin_safety_slider_right_shift_click = {
 				add_to_variable = { econ_admin_safety_slider_pct = 10 }
 				update_admin_mainslider = yes 
 				update_economy_tab = yes
-				TNO_calculate_actual_safety_policy_effectiveness = yes
 				add_to_variable = { TNO_economy_GUI_dirty = 1 }
 			}
 			Econ_admin_safety_slider_right_control_click = {
 				set_variable = { econ_admin_safety_slider_pct = econ_admin_safety_maximal_pct }
 				update_admin_mainslider = yes 
 				update_economy_tab = yes
-				TNO_calculate_actual_safety_policy_effectiveness = yes
 				custom_effect_tooltip = econ_admin_safety_slider_button_left_tt
 			}
 			Econ_admin_safety_set_button_real_click = {
@@ -2248,7 +2242,6 @@ scripted_gui = {
 				divide_variable = { econ_admin_safety_slider_pct = 3 }
 				update_admin_mainslider = yes 
 				update_economy_tab = yes
-				TNO_calculate_actual_safety_policy_effectiveness = yes
 				custom_effect_tooltip = econ_admin_safety_slider_button_left_tt
 			}
 

@@ -2,6 +2,12 @@
 
 economy_multiplicative_modifiers_base: "Base values"
 
+### Edited/Added by TRT ###
+
+gdp_number_display_loc:0 "[?state_value]"
+
+gdp_growth_number_display_loc:0 "[?gdp_growth]"
+
 ### NEW NEW GUI ###
 
 puCalc_gdp_text: "£production_units_texticon  §GPUs§! from §YGDP§!:"
