@@ -70,7 +70,6 @@ focus_tree = {
 #Frank Lorren Owen (R) Pres [WIP]
 #Hiriam Johnson (R) Pres [WIP]
 #Charles G Dawes (R) Vice [WIP]
-#Jay Lovestone (S/C) Pres /only possible if the communist party succeeds in forming a mass Farmer-Labor Party and the CPPA supports the Communist Party [WIP]
 
 #1928 pres election (May add More parties and candidates)
 #Herbert Hoover (R) Pres [Added]

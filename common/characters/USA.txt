@@ -5,7 +5,7 @@ characters={
 		name = USA_woodrow_wilson
 		portraits = {
 			civilian = {
-				large = ""
+				large = "gfx/leaders/USA/USA_woodrow_wilson.dds"
 			}
 		}
 		country_leader = {
@@ -33,7 +33,7 @@ characters={
 		name = USA_william_harding
 		portraits = {
 			civilian = {
-				large = ""
+				large = "gfx/leaders/USA/USA_william_harding.dds"
 			}
 		}
 		country_leader = {
@@ -61,7 +61,7 @@ characters={
 		name = USA_leonard_wood
 		portraits = {
 			civilian = {
-				large = ""
+				large = "gfx/leaders/USA/USA_leonard_wood.dds"
 			}
 		}
 		country_leader = {
