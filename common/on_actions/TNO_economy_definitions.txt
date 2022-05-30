@@ -1350,7 +1350,7 @@ on_actions = {
 				initiate_display_vars = yes
 			}
 
-			URA = {
+			URG = {
 				##Variable Initiation
 				set_variable = { GDP = 322.723 } #in billions
 				set_variable = { GDP_growth = 6.9 } #as a percentage
