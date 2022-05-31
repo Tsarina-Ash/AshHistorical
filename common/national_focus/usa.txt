@@ -29,19 +29,6 @@ focus_tree = {
 
 	continuous_focus_position = { x = 10 y = 10000 }
 
-#Plan So Far#
-
-#Alt Hist:#
-#James M Cox Path#
-#Early FDR Path#
-#Leonard Wood#
-#Alf Landon#
-#Wendel Wilkie#
-#Huey Long#
-#Thomas Dewey#
-#Barry Goldwater#
-#Adlai Stevenson#
-
 # D = Democrat
 # R = Republican
 # P = Progressive
@@ -52,7 +39,7 @@ focus_tree = {
 #Wilson (D) Pres [Added]
 #James Cox (D) Pres [WIP]
 #A Mitchel Palmer (D) [WIP]
-#FDR (D) Vice [Added]
+#FDR (D) Vice [Added/Needs Some Work]
 #Harding (R) Pres [Added]
 #Frank Lorren Owen (R) Pres [WIP]
 #Leonard Wood (R) Pres [Added]
@@ -125,16 +112,6 @@ focus_tree = {
 #https://en.wikipedia.org/wiki/Central_Valley_Project#
 #https://en.wikipedia.org/wiki/Puerto_Rico_Reconstruction_Administration#
 
-#Alt-Hist Jay Lovestone# - #Added by Dina
-#https://en.wikipedia.org/wiki/Jay_Lovestone#Background_and_early_life#
-#https://en.wikipedia.org/wiki/Nikolai_Bukharin# - help with figuring out potential policies
-#https://en.wikipedia.org/wiki/Socialist_Party_of_America#
-#https://en.wikipedia.org/wiki/Conference_for_Progressive_Political_Action#
-#https://en.wikipedia.org/wiki/Communist_Party_USA#
-#https://en.wikipedia.org/wiki/Lovestoneites#
-#https://en.wikipedia.org/wiki/New_Economic_Policy#
-#https://en.wikipedia.org/wiki/Right_Opposition#
-
 #Game Knowledge#
 #https://hoi4.paradoxwikis.com/National_Focus_modding#
 
@@ -183,7 +160,13 @@ focus = {
 	y = 0
 	
 	available_if_capitulated =  no
-	
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 		custom_effect_tooltip = wilson_ill_presidency_tt
 		hidden_effect = {
@@ -713,13 +696,10 @@ focus = {
 
 	mutually_exclusive = { focus = WILSON_USA_threathen_senators }
 
-	available = {
-		always = no
-	}
-
 	available_if_capitulated = no		
 
 	available = {
+		always = no
 		NOT = {
 			has_flag = USA_state_of_emergency
 		}
@@ -751,6 +731,12 @@ focus = {
 	
 	available_if_capitulated =  no
 	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = { country_event = { id = event.usaWilson.4 } hidden_effect = { complete_national_focus = EXTRA_WILSON_USA_foreign_policy }}
 }
 
@@ -1773,6 +1759,12 @@ focus = {
 	y = 0
 	
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 		country_event = {
@@ -1846,6 +1838,12 @@ focus = { #"house divded cannot stand"
 	relative_position_id = Harding_USA_innaugaration_speech
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2061,6 +2059,12 @@ focus = {
 	relative_position_id = Harding_USA_innaugaration_speech
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2080,6 +2084,12 @@ focus = {
 	relative_position_id = Harding_USA_encourage_private_investment
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2100,6 +2110,12 @@ focus = { #not a real act just an excuse to create an economic tree
 	relative_position_id = Harding_USA_encourage_private_investment
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2119,6 +2135,12 @@ focus = {
 	relative_position_id = Harding_USA_economic_incentives_act
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2138,6 +2160,12 @@ focus = { #"Unions ? Onions ? I See No Difference"
 	relative_position_id = Harding_USA_dealing_with_the_steel_belt
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2157,6 +2185,12 @@ focus = {
 	relative_position_id = Harding_USA_dealing_unions
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2176,6 +2210,12 @@ focus = { #need better focus name but this work for now (asks industry leaders t
 	relative_position_id = Harding_USA_car_every_five_minutes
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2195,6 +2235,12 @@ focus = {
 	relative_position_id = Harding_USA_car_every_five_minutes
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2214,6 +2260,12 @@ focus = { #may alleviate depression effects and even extend its time period of w
 	relative_position_id = Harding_USA_economic_incentives_act
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2233,6 +2285,12 @@ focus = {
 	relative_position_id = Harding_USA_dealing_with_the_agricultural_sector
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2252,6 +2310,12 @@ focus = {
 	relative_position_id = Harding_USA_assist_struggling_farmers
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2271,6 +2335,12 @@ focus = { #complete farmer relief (will have a 99% chance of failing)
 	relative_position_id = Harding_USA_loan_relief
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2290,6 +2360,12 @@ focus = {
 	relative_position_id = Harding_USA_assist_struggling_farmers
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2309,6 +2385,12 @@ focus = { #something along the lines of "more money & less gold = more inflation
 	relative_position_id = Harding_USA_encourage_private_investment
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2328,6 +2410,12 @@ focus = { #abuses position of global economic dominance hurting all global ecos 
 	relative_position_id = Harding_USA_build_up_our_reserves_of_precious_metals
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2347,6 +2435,12 @@ focus = {
 	relative_position_id = Harding_USA_rig_exchange_rates
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2366,6 +2460,12 @@ focus = {
 	relative_position_id = Harding_USA_build_up_our_reserves_of_precious_metals
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2386,6 +2486,12 @@ focus = {
 	relative_position_id = Harding_USA_increase_federal_reserve_independence
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2405,6 +2511,12 @@ focus = {
 	relative_position_id = Harding_USA_increase_federal_reserve_independence
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2424,6 +2536,12 @@ focus = {
 	relative_position_id = Harding_USA_increase_federal_reserve_independence
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2444,6 +2562,12 @@ focus = {
 	relative_position_id = Harding_USA_curbing_inflation
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2464,6 +2588,12 @@ focus = {
 	relative_position_id = Harding_USA_repudiate_unionization
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2484,6 +2614,12 @@ focus = {
 	relative_position_id = Harding_USA_tackle_abusive_practices
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 
@@ -2512,6 +2648,12 @@ focus = {
 	y = 0
 	
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 		custom_effect_tooltip = coolidge_stay_cool_tt
@@ -3408,11 +3550,65 @@ focus = {
 	}
 }
 
+#MITCHEL PALMER PRESIDENCY#
+#https://en.wikipedia.org/wiki/A._Mitchell_Palmer#
+
+focus = {
+	id = AMP_USA_innaugaration
+	icon = GFX_focus_generic_self_management
+
+	cost = 1
+
+	x = 0
+	y = 25
+	
+	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+	
+	completion_reward = {
+
+	}
+}
+
+#FRANK ORREB LOWDEN PRESIDENCY#
+#https://en.wikipedia.org/wiki/Frank_Orren_Lowden#
+
+focus = {
+	id = FLO_USA_innaugaration
+	icon = GFX_focus_generic_self_management
+
+	cost = 1
+
+	x = 0
+	y = 15
+	
+	available_if_capitulated =  no
+
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+	
+	completion_reward = {
+
+	}
+}
+
 #JAMES COX PRESIDENCY#
 #https://en.wikipedia.org/wiki/James_M._Cox#
 #Focuses on domestic issues/ the economy rather than league of nations and doreign policy.#
+#suggested simultaneously lowering income and business profits taxes. 
+#Promised to introduce national collective bargaining legislation 
+#pledged his support to the Volstead Act
+#spoke in support of Americanization to increase the immigrant's loyalty to the United States
 
-focus = { # "The Malaise Unveiled"
+focus = { # "Newsboy In Office"
 	id = JMC_USA_innaugaration
 	icon = GFX_focus_generic_self_management
 
@@ -3423,13 +3619,155 @@ focus = { # "The Malaise Unveiled"
 	
 	available_if_capitulated =  no
 	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 
 	}
 }
 
 focus = {
-	id =  JMC_USA_
+	id =  JMC_USA_how_we_get_to_freedom
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 4
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_innaugaration }
+	relative_position_id = JMC_USA_innaugaration
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_the_women_in_america
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_how_we_get_to_freedom }
+	relative_position_id = JMC_USA_how_we_get_to_freedom
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { #issues a presidential commission on status on women / similar to what jfk did irl
+	id =  JMC_USA_reaching_across_the_aisle
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	mutually_exclusive = { focus = JMC_USA_the_party_above_all } 
+	prerequisite = { focus = JMC_USA_the_women_in_america }
+	relative_position_id = JMC_USA_the_women_in_america
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_the_issues_they_face
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_the_party_above_all  focus = JMC_USA_reaching_across_the_aisle }
+	relative_position_id = JMC_USA_reaching_across_the_aisle
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_bipartisanship_by_all_means
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+
+	prerequisite = { focus = JMC_USA_reaching_across_the_aisle }
+	relative_position_id = JMC_USA_reaching_across_the_aisle
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_the_bill_amended
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_the_issues_they_face }
+	prerequisite = {  focus = JMC_USA_bipartisanship_by_all_means }
+	relative_position_id = JMC_USA_bipartisanship_by_all_means
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_the_party_above_all
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	mutually_exclusive = { focus = JMC_USA_reaching_across_the_aisle } 
+	prerequisite = { focus = JMC_USA_the_women_in_america }
+	relative_position_id = JMC_USA_the_women_in_america
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_the_bill_refined
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
@@ -3437,8 +3775,380 @@ focus = {
 	x = 0
 	y = 2
 	
+	prerequisite = { focus = JMC_USA_marching_alone }
+	prerequisite = {  focus = JMC_USA_the_party_above_all }
+	relative_position_id = JMC_USA_the_party_above_all
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+
+focus = {
+	id =  JMC_USA_marching_alone
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+
+	prerequisite = { focus = JMC_USA_the_party_above_all }
+	relative_position_id = JMC_USA_the_party_above_all
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_the_american_woman_works
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_the_bill_amended }
+	prerequisite = {  focus = JMC_USA_the_bill_refined }
+	relative_position_id = JMC_USA_the_bill_refined
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { #need a better focus name
+	id =  JMC_USA_those_who_suffer
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -4
+	y = 1
+	
 	prerequisite = { focus = JMC_USA_innaugaration }
 	relative_position_id = JMC_USA_innaugaration
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id =  JMC_USA_those_in_suits
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 2
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_those_who_suffer }
+	relative_position_id = JMC_USA_those_who_suffer
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id =  JMC_USA_cutting_taxes
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_those_in_suits }
+	relative_position_id = JMC_USA_those_in_suits
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id =  JMC_USA_the_death_of_the_tariff
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_cutting_taxes }
+	relative_position_id = JMC_USA_cutting_taxes
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id =  JMC_USA_pushing_businesses
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_the_death_of_the_tariff }
+	relative_position_id = JMC_USA_the_death_of_the_tariff
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { #lowering inflation through negotiating lower prices for less taxes
+	id =  JMC_USA_paying_their_fair_share
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_the_death_of_the_tariff }
+	relative_position_id = JMC_USA_the_death_of_the_tariff
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_ensuring_urban_supply
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_pushing_businesses }
+	prerequisite = {  focus = JMC_USA_paying_their_fair_share }
+	relative_position_id = JMC_USA_paying_their_fair_share
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id =  JMC_USA_plenty_of_prosperity_for_all
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_those_in_suits }
+	relative_position_id = JMC_USA_those_in_suits
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id =  JMC_USA_propose_union_cooperation
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 3
+	
+	prerequisite = { focus = JMC_USA_plenty_of_prosperity_for_all }
+	relative_position_id = JMC_USA_plenty_of_prosperity_for_all
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_a_free_market
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_ensuring_urban_supply }
+	prerequisite = {  focus = JMC_USA_propose_union_cooperation }
+	relative_position_id = JMC_USA_propose_union_cooperation
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_the_american_worker
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_those_who_suffer }
+	relative_position_id = JMC_USA_those_who_suffer
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_lowering_federal_wages
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	mutually_exclusive = { focus = JMC_USA_raising_federal_wages } 
+	prerequisite = { focus = JMC_USA_the_american_worker }
+	relative_position_id = JMC_USA_the_american_worker
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_raising_federal_wages
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	mutually_exclusive = { focus = JMC_USA_lowering_federal_wages } 
+	prerequisite = { focus = JMC_USA_the_american_worker }
+	relative_position_id = JMC_USA_the_american_worker
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_championing_the_economy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 3
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_raising_federal_wages }
+	prerequisite = {  focus = JMC_USA_lowering_federal_wages }
+	relative_position_id = JMC_USA_lowering_federal_wages
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_negotiating_with_the_unions
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_raising_federal_wages }
+	prerequisite = {  focus = JMC_USA_lowering_federal_wages }
+	relative_position_id = JMC_USA_lowering_federal_wages
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_for_the_betterment_of_the_united_states
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_negotiating_with_the_unions }
+	prerequisite = {  focus = JMC_USA_championing_the_economy }
+	relative_position_id = JMC_USA_championing_the_economy
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_the_american_economy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 3
+	
+	prerequisite = { focus = JMC_USA_a_free_market }
+	prerequisite = {  focus = JMC_USA_for_the_betterment_of_the_united_states }
+	relative_position_id = JMC_USA_for_the_betterment_of_the_united_states
 
 	available_if_capitulated = no		
 
@@ -3462,6 +4172,12 @@ focus = { # "The Malaise Unveiled"
 	
 	available_if_capitulated =  no
 	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 		add_political_power = 50
 	}
@@ -3480,6 +4196,12 @@ focus = {
 	relative_position_id = FDR_USA_EXVICE_private_innaugaration
 
 	available_if_capitulated = no		
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 
@@ -3499,6 +4221,12 @@ focus = {
 	relative_position_id = FDR_USA_EXVICE_united_we_stand
 
 	available_if_capitulated = no		
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 
@@ -3518,6 +4246,12 @@ focus = {
 	relative_position_id = FDR_USA_EXVICE_securing_america
 
 	available_if_capitulated = no		
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 
@@ -3537,6 +4271,12 @@ focus = {
 	relative_position_id = FDR_USA_EXVICE_locking_down_the_ports
 
 	available_if_capitulated = no		
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 
@@ -3556,6 +4296,12 @@ focus = {
 	relative_position_id = FDR_USA_EXVICE_securing_america
 
 	available_if_capitulated = no		
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 
@@ -3575,6 +4321,12 @@ focus = {
 	relative_position_id = FDR_USA_EXVICE_wrangle_traitors
 
 	available_if_capitulated = no		
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 
@@ -3595,6 +4347,12 @@ focus = {
 	relative_position_id = FDR_USA_EXVICE_community_action
 
 	available_if_capitulated = no		
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 
@@ -3614,6 +4372,12 @@ focus = {
 	relative_position_id = FDR_USA_EXVICE_united_we_stand
 
 	available_if_capitulated = no	
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 
@@ -3633,6 +4397,12 @@ focus = {
 	relative_position_id = FDR_USA_EXVICE_adressing_the_situation
 
 	available_if_capitulated = no		
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 
@@ -3652,6 +4422,12 @@ focus = { #"Crush Dixie" I need better focus names
 	relative_position_id = FDR_USA_EXVICE_adressing_the_situation
 
 	available_if_capitulated = no		
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 
@@ -3672,6 +4448,12 @@ focus = {
 	relative_position_id = FDR_USA_EXVICE_crack_down_on_dixie
 
 	available_if_capitulated = no		
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 
@@ -3692,6 +4474,12 @@ focus = { # Focus name "United We Stand" |Event/letter to enemy by Roosevelt"[Le
 	relative_position_id = FDR_USA_EXVICE_crush_the_fifth_columnists
 
 	available_if_capitulated = no		
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 
@@ -3711,6 +4499,12 @@ focus = {
 	relative_position_id = FDR_USA_EXVICE_united_we_stand_as_america
 
 	available_if_capitulated = no		
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 
@@ -3729,7 +4523,13 @@ focus = {
 	y = 0
 	
 	available_if_capitulated =  no
-	
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 		add_political_power = 50
 	}
@@ -3769,7 +4569,13 @@ focus = {
 	relative_position_id = Coolidge_USA_address_the_nation
 
 	available_if_capitulated = no		
-	
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 		#if = has_variable {USA_roaring_twenties_variables} (
 		add_to_variable = { gdp_roaring_growth_var = 0.01 }
@@ -3806,7 +4612,13 @@ focus = {
 	relative_position_id = Coolidge_USA_address_the_nation
 
 	available_if_capitulated = no		
-	
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 		add_political_power = 50
 	}
@@ -3825,7 +4637,13 @@ focus = {
 	relative_position_id = Coolidge_USA_address_the_nation
 
 	available_if_capitulated = no		
-	
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 		add_political_power = 50
 	}
@@ -3844,7 +4662,13 @@ focus = {
 	relative_position_id = Coolidge_USA_moving_past_wilson
 
 	available_if_capitulated = no		
-	
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 		add_political_power = 50
 	}
@@ -3864,6 +4688,12 @@ focus = {
 	relative_position_id = Coolidge_USA_moving_past_wilson
 
 	available_if_capitulated = no		
+	
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 
 	completion_reward = {
 		add_political_power = 50
@@ -3883,7 +4713,13 @@ focus = {
 	relative_position_id = Coolidge_USA_address_the_nation
 
 	available_if_capitulated = no		
-	
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 		add_political_power = 50
 	}
@@ -3904,7 +4740,13 @@ focus = {
 	
 
 	available_if_capitulated = no		
-	
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 		add_political_power = 50
 	}
@@ -3924,7 +4766,13 @@ focus = {
 	mutually_exclusive = { focus = Coolidge_USA_kiss_the_curb } 
 
 	available_if_capitulated = no		
-	
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 		add_political_power = 50
 	}
@@ -3943,7 +4791,13 @@ focus = {
 	relative_position_id = Coolidge_USA_business_as_usual
 
 	available_if_capitulated = no		
-	
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 		add_political_power = 50
 	}
@@ -3963,7 +4817,13 @@ focus = {
 	relative_position_id = Coolidge_USA_address_the_nation
 
 	available_if_capitulated = no		
-	
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+
 	completion_reward = {
 		add_political_power = 50
 	}
@@ -6840,6 +7700,12 @@ focus = {
 	y = 0
 	
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 		country_event = {
@@ -9451,6 +10317,12 @@ focus = { #focus named "the gold standard" ?
 	relative_position_id = HOOVER_USA_build_up_our_reserve
 	
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 		add_political_power = 50 #hopefully player only elects them in 1928, most of his time will be through events & decisions & crisis focus tree
@@ -10206,6 +11078,12 @@ focus = { #through events just a visualization for now
 	relative_position_id = FDR_USA_innaugaration_speech
 
 	available_if_capitulated =  no
+		
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
 	
 	completion_reward = {
 		add_political_power = 50
@@ -16524,7 +17402,7 @@ focus = {
 
 #JFK#
 
-focus = {
+focus = { # "Nothing Bad Ever Happens To The Kennedys"
 	id = JFK_USA_innaugaration_speech
 	icon = GFX_focus_USA_placeholder
 
@@ -16533,6 +17411,33 @@ focus = {
 	x = 350
 	y = 0
 	
+	available_if_capitulated = no		
+
+	available = {
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+	
+	completion_reward = {
+		country_event = {
+			id = event.usaLBJ.1
+		}
+	}
+}
+
+focus = { # "Farewell Sweet Prince"
+	id = JFK_USA_goodbye_sweet_prince
+	icon = GFX_focus_USA_placeholder
+
+	cost = 1
+
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = JFK_USA_innaugaration_speech }
+	relative_position_id = JFK_USA_innaugaration_speech
+
 	available_if_capitulated = no		
 
 	available = {
