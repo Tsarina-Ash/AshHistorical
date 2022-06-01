@@ -3554,7 +3554,31 @@ focus = {
 #https://en.wikipedia.org/wiki/A._Mitchell_Palmer#
 
 focus = {
-	id = AMP_USA_innaugaration
+	id = AMP_USA_its_the_economy
+	icon = GFX_focus_generic_self_management
+
+	cost = 1
+
+	x = -5
+	y = 0
+	
+	available_if_capitulated =  no
+	relative_position_id = AMP_USA_innaugaration	
+
+	available = {
+		has_completed_focus = AMP_USA_innaugaration
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = AMP_USA_innaugaration # "The Fighting Quaker"
 	icon = GFX_focus_generic_self_management
 
 	cost = 1
@@ -3570,6 +3594,74 @@ focus = {
 		}
 	}
 	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = AMP_USA_rooting_out_traitors
+	icon = GFX_focus_generic_self_management
+
+	cost = 1
+
+	x = 5
+	y = 0
+	
+	available_if_capitulated =  no
+	relative_position_id = AMP_USA_innaugaration	
+
+	available = {
+		has_completed_focus = AMP_USA_innaugaration
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+	
+	completion_reward = {
+
+	}
+}
+
+focus = { # "The Law Stand Above All"
+	id = AMP_USA_the_law_stands_above_all
+	icon = GFX_focus_generic_self_management
+
+	cost = 1
+
+	x = 7
+	y = 0
+	
+	available_if_capitulated =  no
+	relative_position_id = AMP_USA_innaugaration	
+
+	available = {
+		has_completed_focus = AMP_USA_innaugaration
+		NOT = {
+			has_flag = USA_state_of_emergency
+		}
+	}
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  AMP_USA_
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = AMP_USA_rooting_out_traitors }
+	prerequisite = {  focus = AMP_USA_the_law_stands_above_all }
+	relative_position_id = AMP_USA_the_law_stands_above_all
+
+	available_if_capitulated = no		
+
 	completion_reward = {
 
 	}
@@ -3649,13 +3741,168 @@ focus = {
 	}
 }
 
+focus = { # "In The Eyes Of The People"
+	id =  JMC_USA_legitimacy
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_how_we_get_to_freedom }
+	relative_position_id = JMC_USA_how_we_get_to_freedom
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id =  JMC_USA_american_values
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_legitimacy }
+	relative_position_id = JMC_USA_legitimacy
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { # "Loyalty To The Star Spangled Banner"
+	id =  JMC_USA_loyalty_to_america
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = JMC_USA_american_values }
+	prerequisite = { focus = JMC_USA_legitimacy }
+	relative_position_id = JMC_USA_legitimacy
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { #americanization
+	id =  JMC_USA_home_of_the_free
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -3
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_how_we_get_to_freedom }
+	relative_position_id = JMC_USA_how_we_get_to_freedom
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id =  JMC_USA_charity_with_a_price
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_home_of_the_free }
+	relative_position_id = JMC_USA_home_of_the_free
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id =  JMC_USA_the_soul_of_america
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_home_of_the_free }
+	relative_position_id = JMC_USA_home_of_the_free
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id =  JMC_USA_democracy_triumphant
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_the_soul_of_america }
+	prerequisite = { focus = JMC_USA_charity_with_a_price }
+	relative_position_id = JMC_USA_charity_with_a_price
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = { 
+	id =  JMC_USA_a_house_united
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = JMC_USA_loyalty_to_america }
+	prerequisite = { focus = JMC_USA_democracy_triumphant }
+	relative_position_id = JMC_USA_democracy_triumphant
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
 focus = {
 	id =  JMC_USA_the_women_in_america
 	icon = GFX_focus_USA_placeholder
 
 	cost = 4
 
-	x = 3
+	x = 4
 	y = 1
 	
 	prerequisite = { focus = JMC_USA_how_we_get_to_freedom }
@@ -3807,6 +4054,27 @@ focus = {
 }
 
 focus = {
+	id =  JMC_USA_the_american_woman_works_among_men
+	icon = GFX_focus_USA_placeholder
+
+	cost = 4
+
+	x = 0
+	y = 2
+	
+	prerequisite = { focus = JMC_USA_the_bill_refined }
+	prerequisite = {  focus = JMC_USA_marching_alone }
+	relative_position_id = JMC_USA_marching_alone
+	mutually_exclusive = { focus = JMC_USA_the_american_woman_works } 
+
+	available_if_capitulated = no		
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
 	id =  JMC_USA_the_american_woman_works
 	icon = GFX_focus_USA_placeholder
 
@@ -3818,6 +4086,7 @@ focus = {
 	prerequisite = { focus = JMC_USA_the_bill_amended }
 	prerequisite = {  focus = JMC_USA_the_bill_refined }
 	relative_position_id = JMC_USA_the_bill_refined
+	mutually_exclusive = { focus = JMC_USA_the_american_woman_works_among_men } 
 
 	available_if_capitulated = no		
 
@@ -3832,7 +4101,7 @@ focus = { #need a better focus name
 
 	cost = 4
 
-	x = -4
+	x = -5
 	y = 1
 	
 	prerequisite = { focus = JMC_USA_innaugaration }
