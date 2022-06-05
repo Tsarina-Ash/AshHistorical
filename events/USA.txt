@@ -53,19 +53,21 @@ news_event = {
 	is_triggered_only = yes
 
 	fire_only_once = yes
-
-	if {
-		TAG = USA {
-			option = {
-				name = wilsonassasinated.1
-					hidden_effect = {
-						retire_country_leader = yes
-					}
-			}
+	
+	option = {
+		name = wilsonassasinated.1
+		trigger = {
+			tag = USA
 		}
-		NOT {
-			option = {
-				name = wilsonassasinated.2
+		hidden_effect = {
+			retire_country_leader = yes
+		}
+	}
+	option = {
+		name = wilsonassasinated.2
+		trigger = {
+			NOT = {
+				tag = USA
 			}
 		}
 	}
@@ -81,7 +83,7 @@ news_event = {
 
 	fire_only_once = yes
 
-	if {
+	if = {
 		TAG = USA {
 			option = {
 				name = wilsondies.1
@@ -90,7 +92,7 @@ news_event = {
 					}
 			}
 		}
-		NOT {
+		NOT = {
 			option = {
 				name = wilsondies.2
 			}
@@ -108,7 +110,7 @@ news_event = {
 
 	fire_only_once = yes
 
-	if {
+	if = {
 		TAG = USA {
 			option = {
 				name = wilsonassasinatedphillipines.1
@@ -117,7 +119,7 @@ news_event = {
 					}
 			}
 		}
-		NOT {
+		NOT = {
 			option = {
 				name = wilsonassasinatedphillipines.2
 			}
@@ -135,7 +137,7 @@ news_event = {
 
 	fire_only_once = yes
 
-	if {
+	if = {
 		TAG = USA {
 			option = {
 				name = wilsondiesphillipines.1
@@ -144,7 +146,7 @@ news_event = {
 					}
 			}
 		}
-		NOT {
+		NOT = {
 			option = {
 				name = wilsondiesphillipines.2
 			}
@@ -163,7 +165,7 @@ news_event = {
 
 	fire_only_once = yes
 
-	if {
+	if = {
 		TAG = USA {
 			option = {
 				name = hardingdies.1
@@ -172,7 +174,7 @@ news_event = {
 					}
 			}
 		}
-		NOT {
+		NOT = {
 			option = {
 				name = hardingdies.2
 			}
