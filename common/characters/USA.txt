@@ -57,6 +57,20 @@ characters={
 		}
 	}
 
+	USA_james_cox = {
+		name = USA_james_cox
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/USA_james_cox.dds"
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			traits = { }
+			expire = "1945.1.1.1"
+		}
+	}
+
 	USA_leonard_wood = {
 		name = USA_leonard_wood
 		portraits = {

@@ -24,7 +24,7 @@ ideas = {
 			}
 		}
 
-		nassuve_economic_inequality = {
+		massive_economic_inequality = {
 			
 			allowed = {
 				always = no
@@ -42,7 +42,6 @@ ideas = {
 
 			}
 			modifier = {
-				weekly_stability_factor = -0.04
 				political_power_gain = -0.1
 				
 			}
@@ -259,10 +258,6 @@ ideas = {
 
 			modifier = {
 				ai_focus_peaceful_factor 100
-
-				infantry_eq_production_speed_factor = -0.2
-				anti_tank_eq_production_speed_factor = -0.2
-				artillery_eq_production_speed_factor = -0.2
 			}
 		}
 
