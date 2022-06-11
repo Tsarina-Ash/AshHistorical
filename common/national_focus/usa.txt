@@ -168,11 +168,8 @@ focus = {
 	}
 
 	completion_reward = {
-		custom_effect_tooltip = wilson_ill_presidency_tt
-		hidden_effect = {
-			country_event = {
-				id = event.event.usaWilson.1
-			}
+		country_event = {
+			id = usaWilson.1
 		}
 	}
 }
@@ -322,7 +319,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaWilson.5
+			id = usaWilson.5
 		}
 	}
 }
@@ -574,7 +571,6 @@ focus = {
 			add_stability = 0.03
 			set_temp_variable = { gdp_industry_misc_costs_var_temp = -0.01 }
 		}
-		custom_effect_tooltip = ending_palmer_raids_tt
 	}
 }
 
@@ -635,7 +631,7 @@ focus = {
 	completion_reward = { 
 		custom_effect_tooltip = dont_do_this_focus_tt
 		country_event = {
-			id = event.usaWilson.2 
+			id = usaWilson.2 
 		}
 	}
 }
@@ -707,8 +703,10 @@ focus = {
 	
 	completion_reward = {
 		add_stability = 0.02
-		country_event = { 
-			id = event.usaMajorNewsEvents.8
+		hidden_effect = {
+			country_event = { 
+				id = usaMajorNewsEvents.8
+			}
 		}
 		#splits northern voters and lose northern/western votes for wilson & party.
 	}
@@ -737,7 +735,7 @@ focus = {
 		}
 	}
 
-	completion_reward = { country_event = { id = event.usaWilson.4 } hidden_effect = { complete_national_focus = EXTRA_WILSON_USA_foreign_policy }}
+	completion_reward = { country_event = { id = usaWilson.4 } hidden_effect = { complete_national_focus = EXTRA_WILSON_USA_foreign_policy }}
 }
 
 focus = {
@@ -762,7 +760,7 @@ focus = {
 	
 	completion_reward = { 
 		country_event = { 
-			id = event.usaWilson.3 
+			id = usaWilson.3 
 		}
  	}
 }
@@ -789,10 +787,11 @@ focus = {
 	
 	completion_reward = {
 		add_stability = 0.02
-		
+	hidden_effect = {
 		country_event = { 
-			id = event.usaMajorNewsEvents.9
+			id = usaMajorNewsEvents.9
 		}
+	}
 		#unifies all political parties slightly and decreases resentment
 	}
 }
@@ -1387,7 +1386,7 @@ focus = {
 	completion_reward = {
 		hidden_effect = {
 			country_event = {
-				id = event.usaBacklash.2
+				id = usaBacklash.2
 			}
 		}
 		add_stability = 0.02
@@ -1426,7 +1425,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.eventusaWilson.7
+			id = usaWilson.7
 		}
 	}
 }
@@ -1458,7 +1457,7 @@ focus = {
 	completion_reward = {
 		#if you got isolationalist you skip this focus
 		country_event = {
-			id = event.eventusaWilson.8
+			id = usaWilson.8
 		}
 	}
 }
@@ -1578,7 +1577,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaSouthAmerica.1
+			id = usaSouthAmerica.1
 		}
 	}
 }
@@ -1741,7 +1740,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaWilson.9
+			id = usaWilson.9
 		}
 	}
 }
@@ -1768,7 +1767,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaHarding.1 #teapot scandal and railroad strike are events/decisions
+			id = usaHarding.1 #teapot scandal and railroad strike are events/decisions
 		}
 	}
 }
@@ -1871,10 +1870,10 @@ focus = {
 	}
 	
 	completion_reward = {
-		custom_effect_tooltip = harding_begin_event_chain_tt
+		custom_effect_tooltip = blaming_people_bad_tt
 		hidden_effect = {
 			country_event = {
-				id = event.eventusaHarding.2 #teapot scandal
+				id = usaHarding.2 #teapot scandal
 			}
 		}
 	}
@@ -1902,7 +1901,7 @@ focus = { #idea of league seen as tearing country apart
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaHarding.4
+			id = usaHarding.4
 		}
 		add_stability = 0.02
 		hidden_effect = {
@@ -1972,7 +1971,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaHarding.4
+			id = usaHarding.4
 		}
 
 	}
@@ -2658,7 +2657,7 @@ focus = {
 	completion_reward = {
 		custom_effect_tooltip = coolidge_stay_cool_tt
 		country_event = {
-			id = event.usaCoolidge.1 #does minimal things and after 1st term party favors hoover for buisness additudes
+			id = usaCoolidge.1 #does minimal things and after 1st term party favors hoover for buisness additudes
 		}
 	}
 }
@@ -4820,7 +4819,7 @@ focus = {
 
 	completion_reward = {
 		country_event = {
-			id = event.usaCoolidge.2
+			id = usaCoolidge.2
 		}
 	}
 }
@@ -5119,7 +5118,7 @@ focus = {
 
 	completion_reward = {
 		country_event = {
-			id = event.usaLeonardWood.1 #he will have a 40% chance to be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
+			id = usaLeonardWood.1 #he will have a 40% chance to be assasinated first year in office and suceeded by VP, if VP = wilson/coolidge they will die in office and player loses control of country for a while
 		}
 	}
 }
@@ -7953,7 +7952,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaHoover.1 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
+			id = usaHoover.1 #coolidge 2.0, LIASEZ FIARE | LOW AMOUNT OF FOCUSES MSOTLY HANDS OFF ASLEEP THE WHOLE TIME
 		}
 	}
 }
@@ -11714,7 +11713,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaFDR.1 #most focuses are just visualizations of decisions
+			id = usaFDR.1 #most focuses are just visualizations of decisions
 		}
 	}
 }
@@ -11741,7 +11740,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaFDR.2
+			id = usaFDR.2
 		}
 	}
 }
@@ -11768,7 +11767,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaFDR.3
+			id = usaFDR.3
 		}
 	}
 }
@@ -13459,7 +13458,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaFDR.4
+			id = usaFDR.4
 		}
 	}
 }
@@ -16975,7 +16974,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaLBJ.1
+			id = usaLBJ.1
 		}
 	}
 }
@@ -17001,7 +17000,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaLBJ.1
+			id = usaLBJ.1
 		}
 	}
 }
@@ -17027,7 +17026,7 @@ focus = {
 
 	completion_reward = {
 		country_event = {
-			id = event.usaJLS.1
+			id = usaJLS.1
 		}
 		set_country_flag = SOC_USA_socalists_in_power
 	}
@@ -17561,7 +17560,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaLBJ.1
+			id = usaLBJ.1
 		}
 	}
 }
@@ -17587,7 +17586,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaLBJ.1
+			id = usaLBJ.1
 		}
 	}
 }
@@ -17613,7 +17612,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaLBJ.1
+			id = usaLBJ.1
 		}
 	}
 }
@@ -17639,7 +17638,7 @@ focus = {
 	
 	completion_reward = {
 		country_event = {
-			id = event.usaLBJ.1
+			id = usaLBJ.1
 		}
 	}
 }

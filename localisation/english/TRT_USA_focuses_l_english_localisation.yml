@@ -17,46 +17,6 @@
 #
 # LBJ USA LOC # -LBJ
 
-#
-gateway_to_america: "Gateway To America"
-
-#EFFECT TOOLTIPS#
-
-
-economy_gdp_growth_tt: "Increases National GDP Growth by §G[?gdp_roaring_growth_var_temp]%§!"
-economy_misc_costs_tt: "Increased Industry Misc. Costs by §Y$[?gdp_industry_misc_costs_var_temp]§!"
-
-
-fdr_first_new_deal_tt: "Political momentumn for any programs wanting to be passed wil be high, use it wisely."
-
-#TOOLTIPS#
-
-economy_gdp_growth_tt: "Will improve competition with our companies and should rescue the agricultural industry"
-
-dont_do_this_focus_tt: "Bringing the idea of civil rights to the table may split the party and endanger national security... §RProceed with caution...§R"
-
-improves_relations_with_south_america_tt: "Improves relations with all South-American nations"
-
-wilson_liazess_faire_economists_tt: "§RAppointing laissez-faire belieiving individuals may cause harm to our country...§R"
-
-wilson_ill_presidency_tt: "A Quick Catching up on the State of the Union and the current situation."
-
-wilson_wife_president_tt: "Edith Wilson will run in Woodrow Wilson's place."
-
-ending_palmer_raids_tt: "Ending the palmer raids will prompt stability in urban settings."
-
-blaming_people_bad_tt: "Playing the blame game can be dangerous... §RBe cautious or it may backfire...§R"
-
-harding_begin_event_chain_tt: "Doing this will begin a massive event chain"
-
-coolidge_stay_cool_tt: "Gone are the days of §Bprogressivism§B, a return to normalcy is in effect."
-
-coolidge_business_as_usual_tt: "Business as usual..."
-
-destabilize_american_politics_tt: "Doing this will create instability within the political system" #work on wording
-
-demob_warning_tt: "Demobilizing too fast may cause the economy to crash and heighten racial tensions, §ttake it slow§t. Low employment and stagnation, for returning veterans §Rmay cause some unwelcome sentiments...§R"
-
 #WILSON USA LOC#
 
 WILSON_USA_ill_presidency:0 "The Ill Presidency"
@@ -81,10 +41,10 @@ WILSON_USA_force_joining:0 "Force Joining The League"
 WILSON_USA_force_joining_desc:0 "Damn them all, we're joining whether we like it or not, honoring commitments of an American hero and legend takes precedence over some hocus pocus red tape and political cost."
 
 WILSON_USA_join_the_league:0 "Stars And Stripes"
-WILSON_USA_join_the_league_desc:0 "The bill passed through congress unopposed! Right ? Our senators can't just back out of a deal we made with them right ? "
+WILSON_USA_join_the_league_desc:0 "The bill passed through congress unopposed! Right ? Our senators can't just back out of a deal we made with them right ?"
 
 WILSON_USA_compromise_with_reps:0 "The Donkey's Wheat"
-WILSON_USA_compromise_with_reps_desc:0 "While for now we hold a popular majority in congress, the Republicans do in size however most of them are akin to our ideals of a liazesse fiarre and an un-interventialist mood to the economy with promises of looking the other way and some ~perhaps~ business incetives we could pursuade them to join our side."
+WILSON_USA_compromise_with_reps_desc:0 "While for now we hold a popular majority in congress, the §RRepublicans§! do in size however most of them are akin to our ideals of a liazesse fiarre and an un-interventialist mood to the economy with promises of looking the other way and some perhaps business incetives we could pursuade them to join our side."
 
 WILSON_USA_blame_isolationists:0 "An Island With Factories"
 WILSON_USA_blame_isolationists_desc:0 "Those darn isolations!!! They pruposefully set us up for failure and backstabbed us... They will pay."
