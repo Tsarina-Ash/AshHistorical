@@ -38,4 +38,14 @@ spriteTypes = {
 		size = { x = 175 y = 9 }
 		effectFile = "gfx/FX/progress.lua"
 	}
+
+	spriteType = {
+		name = "GFX_ReformsButtons_Close_Button"
+		textureFile = "gfx/interface/reforms_gui/exit_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ReformsButtons_TabsButton"
+		textureFile = "gfx/interface/reforms_gui/reforms_tab_button.dds"
+	}
 }
