@@ -48,7 +48,7 @@ guiTypes = {
 						name = "ReformsBase_Inactive_Reforms"
 						position = { x = 50 y = 13 }
 						maxWidth = 173
-						font = "Bomb_24"
+						font = "hoi_24header"
 						format = center
 						text = EconBase_Reform_text_tt
 					}
@@ -57,7 +57,7 @@ guiTypes = {
 					#	name = "EconBase_Inactive_Social"
 					#	position = { x = 200 y = 13 }
 					#	maxWidth = 173
-					#	font = "Bomb_24"
+					#	font = "hoi_24header"
 					#	format = center
 					#	text = "Social"
 					#}
@@ -66,7 +66,7 @@ guiTypes = {
 						name = "ReformsBase_Inactive_Cabnent"
 						position = { x = 346 y = 13 }
 						maxWidth = 173
-						font = "Bomb_24"
+						font = "hoi_24header"
 						format = center
 						text = EconBase_Cabnent_text_tt
 					}
@@ -90,7 +90,7 @@ guiTypes = {
 						name = "ReformsBase_Active_Reforms"
 						position = { x = 50 y = 11 }
 						maxWidth = 173
-						font = "Bomb_24"
+						font = "hoi_24header"
 						format = center
 						text = EconBase_Reform_text_tt
 					}
@@ -99,7 +99,7 @@ guiTypes = {
 					#	name = "EconBase_Active_Social"
 					#	position = { x = 200 y = 11 }
 					#	maxWidth = 173
-					#	font = "Bomb_24"
+					#	font = "hoi_24header"
 					#	format = center
 					#	text = "Social"
 					#}
@@ -108,7 +108,7 @@ guiTypes = {
 						name = "ReformsBase_Active_Cabnent"
 						position = { x = 346 y = 11 }
 						maxWidth = 173
-						font = "Bomb_24"
+						font = "hoi_24header"
 						format = center
 						text = EconBase_Cabnent_text_tt
 					}
@@ -118,21 +118,21 @@ guiTypes = {
 			## Buttons ##
 				buttonType = { 
 					name = "ReformsBase_Button_Reforms"
-					spriteType = "GFX_EconBase_TabsButton"
+					spriteType = "GFX_ReformsButtons_TabsButton"
 					position = { x = 0 y = -2 }
 					shortcut = "shift+a"
 				}
 
 				#buttonType = {
 				#	name = "EconBase_Button_Social"
-				#	spriteType = "GFX_EconBase_TabsButton"
+				#	spriteType = "GFX_ReformsButtons_TabsButton"
 				#	position = { x = 191 y = -2 }
 				#	shortcut = "shift+r"
 				#}
 
 				buttonType = {
 					name = "ReformsBase_Button_Cabnent"
-					spriteType = "GFX_EconBase_TabsButton"
+					spriteType = "GFX_ReformsButtons_TabsButton"
 					position = { x = 286 y = -2 }
 					shortcut = "shift+s"
 				}
@@ -157,14 +157,14 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_political_reforms_txt"
 			position = { x = @btn_x_1 y = 30 }
-			font = "Bomb_24"
+			font = "hoi_24header"
 			format = center
 			text = ReformsButtons_political_reforms_tx
 		}
 		instantTextBoxType = {
 			name = "ReformsButtons_economic_reforms_txt"
 			position = { x = @btn_x_2 y = 30 }
-			font = "Bomb_24"
+			font = "hoi_24header"
 			format = center
 			text = ReformsButtons_economic_reforms_tx
 		}
@@ -173,7 +173,7 @@ guiTypes = {
 			name = "ReformsButtons_sufferage_pop_out"
 			position = { x = @btn_x_1 y = @btn_y_1 }
 			spriteType = "GFX_ReformsButtons_Button"
-			buttonFont = "Bomb_20"
+			buttonFont = "hoi_20"
 			buttonText = ReformsButtons_sufferage_pop_out_txt
 		}
 		iconType = {
@@ -192,7 +192,7 @@ guiTypes = {
 			name = "ReformsButtons_civil_rights_pop_out"
 			position = { x = @btn_x_1 y = @btn_y_2 }
 			spriteType = "GFX_ReformsButtons_Button"
-			buttonFont = "Bomb_20"
+			buttonFont = "hoi_20"
 			buttonText = ReformsButtons_civil_rights_pop_out_txt
 		}
 		iconType = {
@@ -211,7 +211,7 @@ guiTypes = {
 			name = "ReformsButtons_lgbt_rights_pop_out"
 			position = { x = @btn_x_1 y = @btn_y_3 }
 			spriteType = "GFX_ReformsButtons_Button"
-			buttonFont = "Bomb_20"
+			buttonFont = "hoi_20"
 			buttonText = ReformsButtons_lgbt_rights_pop_out_txt
 		}
 		iconType = {
@@ -230,7 +230,7 @@ guiTypes = {
 			name = "ReformsButtons_healthcare_pop_out"
 			position = { x = @btn_x_1 y = @btn_y_4 }
 			spriteType = "GFX_ReformsButtons_Button"
-			buttonFont = "Bomb_20"
+			buttonFont = "hoi_20"
 			buttonText = ReformsButtons_healthcare_pop_out_txt
 		}
 		iconType = {
@@ -249,7 +249,7 @@ guiTypes = {
 			name = "ReformsButtons_minimum_wage_pop_out"
 			position = { x = @btn_x_2 y = @btn_y_1 }
 			spriteType = "GFX_ReformsButtons_Button"
-			buttonFont = "Bomb_20"
+			buttonFont = "hoi_20"
 			buttonText = ReformsButtons_minimum_wage_pop_out_txt
 		}
 		iconType = {
@@ -268,7 +268,7 @@ guiTypes = {
 			name = "ReformsButtons_safety_regulations_pop_out"
 			position = { x = @btn_x_2 y = @btn_y_2 }
 			spriteType = "GFX_ReformsButtons_Button"
-			buttonFont = "Bomb_20"
+			buttonFont = "hoi_20"
 			buttonText = ReformsButtons_safety_regulations_pop_out_txt
 		}
 		iconType = {
@@ -287,7 +287,7 @@ guiTypes = {
 			name = "ReformsButtons_enviromental_regulations_pop_out"
 			position = { x = @btn_x_2 y = @btn_y_3 }
 			spriteType = "GFX_ReformsButtons_Button"
-			buttonFont = "Bomb_20"
+			buttonFont = "hoi_20"
 			buttonText = ReformsButtons_enviromental_regulations_pop_out_txt
 		}
 		iconType = {
@@ -306,7 +306,7 @@ guiTypes = {
 			name = "ReformsButtons_unemployment_subsidies_pop_out"
 			position = { x = @btn_x_2 y = @btn_y_4 }
 			spriteType = "GFX_ReformsButtons_Button"
-			buttonFont = "Bomb_20"
+			buttonFont = "hoi_20"
 			buttonText = ReformsButtons_unemployment_subsidies_pop_out_txt
 		}
 		iconType = {
@@ -335,14 +335,14 @@ guiTypes = {
 		buttonType = {
 			name = "ReformsButtons_political_close"
 			position = { x = 234 y = 5 }
-			spriteType = "GFX_econ_help_exit_button"
+			spriteType = "GFX_ReformsButtons_Close_Button"
 			clicksound = click_close
 		}
 
 		instantTextBoxType = {
 			name = "ReformsButtons_sufferage_title"
 			position = { x = @sw_btn_x y = @sw_ttl_y }
-			font = "Bomb_24"
+			font = "hoi_24header"
 			format = center
 			text = ReformsButtons_sufferage_title_txt
 		}
@@ -350,7 +350,7 @@ guiTypes = {
 			name = "ReformsButtons_sufferage_reform1"
 			position = { x = @sw_btn_x y = @sw_btn_y_1 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_sufferage_level1_txt
 			pdx_tooltip = ReformsButtons_sufferage_level1_tt
@@ -361,7 +361,7 @@ guiTypes = {
 			name = "ReformsButtons_sufferage_reform2"
 			position = { x = @sw_btn_x y = @sw_btn_y_2 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_sufferage_level2_txt
 			pdx_tooltip = ReformsButtons_sufferage_level2_tt
@@ -372,7 +372,7 @@ guiTypes = {
 			name = "ReformsButtons_sufferage_reform3"
 			position = { x = @sw_btn_x y = @sw_btn_y_3 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_sufferage_level3_txt
 			pdx_tooltip = ReformsButtons_sufferage_level3_tt
@@ -381,7 +381,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_sufferage_desc"
 			position = { x = @sw_desc_x y = @sw_desc_y }
-			font = "Bomb_18"
+			font = "hoi_18"
 			format = center
 			maxWidth = 258
 			text = ReformsButtons_sufferage_desc_txt
@@ -390,7 +390,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_civil_rights_title"
 			position = { x = @sw_btn_x y = @sw_ttl_y }
-			font = "Bomb_24"
+			font = "hoi_24header"
 			format = center
 			text = ReformsButtons_civil_rights_title_txt
 		}
@@ -398,7 +398,7 @@ guiTypes = {
 			name = "ReformsButtons_civil_rights_reform1"
 			position = { x = @sw_btn_x y = @sw_btn_y_1 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_civil_rights_level1_txt
 			pdx_tooltip = ReformsButtons_civil_rights_level1_tt
@@ -409,7 +409,7 @@ guiTypes = {
 			name = "ReformsButtons_civil_rights_reform2"
 			position = { x = @sw_btn_x y = @sw_btn_y_2 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_civil_rights_level2_txt
 			pdx_tooltip = ReformsButtons_civil_rights_level2_tt
@@ -420,7 +420,7 @@ guiTypes = {
 			name = "ReformsButtons_civil_rights_reform3"
 			position = { x = @sw_btn_x y = @sw_btn_y_3 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_civil_rights_level3_txt
 			pdx_tooltip = ReformsButtons_civil_rights_level3_tt
@@ -429,7 +429,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_civil_rights_desc"
 			position = { x = @sw_desc_x y = @sw_desc_y }
-			font = "Bomb_18"
+			font = "hoi_18"
 			format = center
 			maxWidth = 258
 			text = ReformsButtons_civil_rights_desc_txt
@@ -438,7 +438,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_lgbt_rights_title"
 			position = { x = @sw_btn_x y = @sw_ttl_y }
-			font = "Bomb_24"
+			font = "hoi_24header"
 			format = center
 			text = ReformsButtons_lgbt_rights_title_txt
 		}
@@ -446,7 +446,7 @@ guiTypes = {
 			name = "ReformsButtons_lgbt_rights_reform1"
 			position = { x = @sw_btn_x y = @sw_btn_y_1 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_lgbt_rights_level1_txt
 			pdx_tooltip = ReformsButtons_lgbt_rights_level1_tt
@@ -457,7 +457,7 @@ guiTypes = {
 			name = "ReformsButtons_lgbt_rights_reform2"
 			position = { x = @sw_btn_x y = @sw_btn_y_2 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_lgbt_rights_level2_txt
 			pdx_tooltip = ReformsButtons_lgbt_rights_level2_tt
@@ -468,7 +468,7 @@ guiTypes = {
 			name = "ReformsButtons_lgbt_rights_reform3"
 			position = { x = @sw_btn_x y = @sw_btn_y_3 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_lgbt_rights_level3_txt
 			pdx_tooltip = ReformsButtons_lgbt_rights_level3_tt
@@ -477,7 +477,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_lgbt_rights_desc"
 			position = { x = @sw_desc_x y = @sw_desc_y }
-			font = "Bomb_18"
+			font = "hoi_18"
 			format = center
 			maxWidth = 258
 			text = ReformsButtons_lgbt_rights_desc_txt
@@ -486,7 +486,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_healthcare_title"
 			position = { x = @sw_btn_x y = @sw_ttl_y }
-			font = "Bomb_24"
+			font = "hoi_24header"
 			format = center
 			text = ReformsButtons_healthcare_title_txt
 		}
@@ -494,7 +494,7 @@ guiTypes = {
 			name = "ReformsButtons_healthcare_reform1"
 			position = { x = @sw_btn_x y = @sw_btn_y_1 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_healthcare_level1_txt
 			pdx_tooltip = ReformsButtons_healthcare_level1_tt
@@ -505,7 +505,7 @@ guiTypes = {
 			name = "ReformsButtons_healthcare_reform2"
 			position = { x = @sw_btn_x y = @sw_btn_y_2 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_healthcare_level2_txt
 			pdx_tooltip = ReformsButtons_healthcare_level2_tt
@@ -516,7 +516,7 @@ guiTypes = {
 			name = "ReformsButtons_healthcare_reform3"
 			position = { x = @sw_btn_x y = @sw_btn_y_3 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_healthcare_level3_txt
 			pdx_tooltip = ReformsButtons_healthcare_level3_tt
@@ -525,7 +525,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_healthcare_desc"
 			position = { x = @sw_desc_x y = @sw_desc_y }
-			font = "Bomb_18"
+			font = "hoi_18"
 			format = center
 			maxWidth = 258
 			text = ReformsButtons_healthcare_desc_txt
@@ -544,14 +544,14 @@ guiTypes = {
 		buttonType = {
 			name = "ReformsButtons_economic_close"
 			position = { x = 234 y = 5 }
-			spriteType = "GFX_econ_help_exit_button"
+			spriteType = "GFX_ReformsButtons_Close_Button"
 			clicksound = click_close
 		}
 
 		instantTextBoxType = {
 			name = "ReformsButtons_minimum_wage_title"
 			position = { x = @sw_btn_x y = @sw_ttl_y }
-			font = "Bomb_24"
+			font = "hoi_24header"
 			format = center
 			text = ReformsButtons_minimum_wage_title_txt
 		}
@@ -559,7 +559,7 @@ guiTypes = {
 			name = "ReformsButtons_minimum_wage_reform1"
 			position = { x = @sw_btn_x y = @sw_btn_y_1 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_minimum_wage_level1_txt
 			pdx_tooltip = ReformsButtons_minimum_wage_level1_tt
@@ -570,7 +570,7 @@ guiTypes = {
 			name = "ReformsButtons_minimum_wage_reform2"
 			position = { x = @sw_btn_x y = @sw_btn_y_2 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_minimum_wage_level2_txt
 			pdx_tooltip = ReformsButtons_minimum_wage_level2_tt
@@ -581,7 +581,7 @@ guiTypes = {
 			name = "ReformsButtons_minimum_wage_reform3"
 			position = { x = @sw_btn_x y = @sw_btn_y_3 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_minimum_wage_level3_txt
 			pdx_tooltip = ReformsButtons_minimum_wage_level3_tt
@@ -590,7 +590,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_minimum_wage_desc"
 			position = { x = @sw_desc_x y = @sw_desc_y }
-			font = "Bomb_18"
+			font = "hoi_18"
 			format = center
 			maxWidth = 258
 			text = ReformsButtons_minimum_wage_desc_txt
@@ -599,7 +599,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_safety_regulations_title"
 			position = { x = @sw_btn_x y = @sw_ttl_y }
-			font = "Bomb_24"
+			font = "hoi_24header"
 			format = center
 			text = ReformsButtons_safety_regulations_title_txt
 		}
@@ -607,7 +607,7 @@ guiTypes = {
 			name = "ReformsButtons_safety_regulations_reform1"
 			position = { x = @sw_btn_x y = @sw_btn_y_1 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_safety_regulations_level1_txt
 			pdx_tooltip = ReformsButtons_safety_regulations_level1_tt
@@ -618,7 +618,7 @@ guiTypes = {
 			name = "ReformsButtons_safety_regulations_reform2"
 			position = { x = @sw_btn_x y = @sw_btn_y_2 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_safety_regulations_level2_txt
 			pdx_tooltip = ReformsButtons_safety_regulations_level2_tt
@@ -629,7 +629,7 @@ guiTypes = {
 			name = "ReformsButtons_safety_regulations_reform3"
 			position = { x = @sw_btn_x y = @sw_btn_y_3 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_safety_regulations_level3_txt
 			pdx_tooltip = ReformsButtons_safety_regulations_level3_tt
@@ -638,7 +638,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_safety_regulations_desc"
 			position = { x = @sw_desc_x y = @sw_desc_y }
-			font = "Bomb_18"
+			font = "hoi_18"
 			format = center
 			maxWidth = 258
 			text = ReformsButtons_safety_regulations_desc_txt
@@ -647,7 +647,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_environmental_regulations_title"
 			position = { x = @sw_btn_x y = @sw_ttl_y }
-			font = "Bomb_24"
+			font = "hoi_24header"
 			format = center
 			text = ReformsButtons_environmental_regulations_title_txt
 		}
@@ -655,7 +655,7 @@ guiTypes = {
 			name = "ReformsButtons_environmental_regulations_reform1"
 			position = { x = @sw_btn_x y = @sw_btn_y_1 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_environmental_regulations_level1_txt
 			pdx_tooltip = ReformsButtons_environmental_regulations_level1_tt
@@ -666,7 +666,7 @@ guiTypes = {
 			name = "ReformsButtons_environmental_regulations_reform2"
 			position = { x = @sw_btn_x y = @sw_btn_y_2 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_environmental_regulations_level2_txt
 			pdx_tooltip = ReformsButtons_environmental_regulations_level2_tt
@@ -677,7 +677,7 @@ guiTypes = {
 			name = "ReformsButtons_environmental_regulations_reform3"
 			position = { x = @sw_btn_x y = @sw_btn_y_3 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_environmental_regulations_level3_txt
 			pdx_tooltip = ReformsButtons_environmental_regulations_level3_tt
@@ -686,7 +686,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_environmental_regulations_desc"
 			position = { x = @sw_desc_x y = @sw_desc_y }
-			font = "Bomb_18"
+			font = "hoi_18"
 			format = center
 			maxWidth = 258
 			text = ReformsButtons_environmental_regulations_desc_txt
@@ -695,7 +695,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_unemployment_subsidies_title"
 			position = { x = @sw_btn_x y = @sw_ttl_y }
-			font = "Bomb_24"
+			font = "hoi_24header"
 			format = center
 			text = ReformsButtons_unemployment_subsidies_txt
 		}
@@ -703,7 +703,7 @@ guiTypes = {
 			name = "ReformsButtons_unemployment_subsidies_reform1"
 			position = { x = @sw_btn_x y = @sw_btn_y_1 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_unemployment_subsidies_level1_txt
 			pdx_tooltip = ReformsButtons_unemployment_subsidies_level1_tt
@@ -714,7 +714,7 @@ guiTypes = {
 			name = "ReformsButtons_unemployment_subsidies_reform2"
 			position = { x = @sw_btn_x y = @sw_btn_y_2 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_unemployment_subsidies_level2_txt
 			pdx_tooltip = ReformsButtons_unemployment_subsidies_level2_tt
@@ -725,7 +725,7 @@ guiTypes = {
 			name = "ReformsButtons_unemployment_subsidies_reform3"
 			position = { x = @sw_btn_x y = @sw_btn_y_3 }
 			spriteType = "GFX_ReformsButtons_Button"
-			font = "Bomb_20"
+			font = "hoi_20"
 			format = center
 			text = ReformsButtons_unemployment_subsidies_level3_txt
 			pdx_tooltip = ReformsButtons_unemployment_subsidies_level3_tt
@@ -734,7 +734,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "ReformsButtons_unemployment_subsidies_desc"
 			position = { x = @sw_desc_x y = @sw_desc_y }
-			font = "Bomb_18"
+			font = "hoi_18"
 			format = center
 			maxWidth = 258
 			text = ReformsButtons_unemployment_subsidies_desc_txt
